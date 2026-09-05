@@ -1,6 +1,6 @@
 # Plan and implement an identity governance strategy
 
-> SC-300 — learning path 4/4 · 203 min
+> SC-300 — learning path 4/4
 > https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/
 
 ## Modules
@@ -11,21 +11,14 @@
 - **Monitor and maintain Microsoft Entra ID** (9 units)
 
 
-
 ---
 
 # Plan and implement entitlement management
 
-_55 min · https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/_
+_https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 New users or external users joining your site need access assignments to Azure solutions. When users wait for resources, you risk losing their engagement and productivity. Explore how to entitle users to access your site and resources. In this module, you learn how to provide the appropriate access to your users, create reviews for that access, and more.
 
@@ -47,12 +40,6 @@ None.
 
 
 ## Define access packages
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/2-define-access-packages</sub>
-
-## Define access packages
-
-- 11 minutes
 
 ### Why use entitlement management?
 
@@ -114,8 +101,6 @@ With an **access package**, an administrator or delegated access package manager
 
 Access packages also include one or more *policies*. A policy defines the rules or guardrails for assignment to access package. Each policy can be used to ensure that only the appropriate users are able to request access, that there are approvers for their request, and that their access to those resources is time-limited and will expire if not renewed.
 
-![Screenshot of a list of Access packages and policies they might include.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/entitlement-management-overview-access-package.png)
-
 Within each policy, an administrator or access package manager defines the already existing users who are eligible to request access, the process to approve or deny access, and the duration of a user's access.
 
 ### When should I use access packages?
@@ -135,12 +120,6 @@ In **Access package 1**, there's only one single group as a resource. Access is 
 
 
 ## Exercise create and manage a resource catalog with Microsoft Entra entitlement management
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/3-create-manage-resource-catalog</sub>
-
-## Exercise create and manage a resource catalog with Microsoft Entra entitlement management
-
-- 12 minutes
 
 ### Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
@@ -171,11 +150,11 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 2. From **Microsoft Entra ID** home screen, select **ID Governance**.
 3. In the left menu, under **Entitlement management**, select **Catalogs**.
-4. On the top menu, select **+New Catalog**.  ![Screenshot of the Identity governance catalog page with the New catalog menu highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/identity-governance-catalog.png)
+4. On the top menu, select **+New Catalog**.
 5. In the New catalog pane, in the **Name** box, enter **Marketing**.
 6. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 7. **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
-8. Under **Enabled, select No**. You can choose to enable the catalog for immediate use. You can disable if you intend to stage it or keep it unavailable. For this exercise, the catalog doesn't need to be enabled.  ![Screenshot of the New catalog pan with the Name, Description, Enabled, and Create options highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-catalog-marketing.png)
+8. Under **Enabled, select No**. You can choose to enable the catalog for immediate use. You can disable if you intend to stage it or keep it unavailable. For this exercise, the catalog doesn't need to be enabled.
 9. Select Create.
 
 ### Add resources to a catalog
@@ -187,14 +166,14 @@ To include resources in an access package, the resources must exist in a catalog
 3. In the left navigation, under **Manage**, select **Resources**.
 4. On the menu, select + **Add resources**.
 5. In the Add resources to catalog screen, review the available options.
-6. You might not have selected any resources in Groups and Teams, Applications, or SharePoint sites. To add a resource to the catalog, select a resource category, then select a resource from that category. For this exercise, it's okay to choose any resource you have available.  ![Screenshot of the Add resources to a catalog screen within the creation of a new entitlement package.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/catalog-add-resources.png)
+6. You might not have selected any resources in Groups and Teams, Applications, or SharePoint sites. To add a resource to the catalog, select a resource category, then select a resource from that category. For this exercise, it's okay to choose any resource you have available.
 7. When finished, select **Add**. These resources can now be included in access packages within the catalog.
 
 ### Add more catalog owners
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Microsoft Entra ID**, then **ID Governance**, then **Catalogs** and then select **Marketing**.  ![Screenshot of the Roles and administrators page for the Marketing catalog. Pick your catalog owner.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/catalog-roles-admins.png)
+1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Microsoft Entra ID**, then **ID Governance**, then **Catalogs** and then select **Marketing**.
 2. On the top menu, review the available roles and then select **+ Add owner**.
 3. In the Select members pane, select your administrator account and then select **Select**.
 4. Review the newly added role in the Roles and administrators list.
@@ -205,7 +184,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. In the Marketing screen, in the left navigation, select **Overview**.
 2. On the top menu, select **Edit**.
-3. Review the setting and, under **Properties** in the **Enabled** field, select **Yes**.  ![Screenshot of the properties being enabled. Update the name of the package or its description.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-marketing-catalog.png)
+3. Review the setting and, under **Properties** in the **Enabled** field, select **Yes**.
 4. Select **Save**.
 
 ### Delete a catalog
@@ -217,12 +196,6 @@ You can delete a catalog, but only if it doesn't have any access packages.
 
 
 ## Configure entitlement management
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/4-configure-entitlement-management</sub>
-
-## Configure entitlement management
-
-- 2 minutes
 
 There are several ways that you can configure entitlement management for your organization. However, if you're just getting started, it's helpful to understand the common scenarios for administrators, catalog owners, access package managers, approvers, and requestors.
 
@@ -262,15 +235,7 @@ You can also manage access packages, catalogs, policies, requests, and assignmen
 
 ## Exercise add terms of use acceptance report
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/5-add-terms-of-use-acceptance-report</sub>
-
-## Exercise add terms of use acceptance report
-
-- 16 minutes
-
 ### What are terms of use for Entitlement Management
-
-![Screenshot of terms of use settings. You can set Name, Display Name, link to a PDF document with the terms, and some settings to ensure the user sees the terms of use.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-entitlement.png)
 
 Microsoft Entra terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
 
@@ -281,18 +246,18 @@ Once you finalize your terms of use document, use the following procedure to add
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 2. Open **ID Governance**.
 3. In the left navigation menu open Entitlement Management, then under **Terms of use**, select **Terms of use**.
-4. On the Terms of use page, on the top menu, select **+ New terms**.  ![Screenshot of the Terms of use page with New terms highlighted.  Update the terms of use as needed.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use.png)
+4. On the Terms of use page, on the top menu, select **+ New terms**.
 5. In the **Name** box, enter **Testing terms of use**. Set the name the terms-of-use in the admin center.
 6. In the **Display name** box, enter **Contoso Terms of Use**. The title that users see when they sign-in.
 7. Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise, you can choose any PDF you have. Another option is use Microsoft Word to create the terms of use doc and then save as PDF.
 8. Select the language for your terms of use document. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user sees, is based on their browser preferences.
 9. To require end users to view the terms of use before accepting them, set **Require users to expand the terms of use** to **On**.
 10. To require end users to accept your terms of use on every device they're accessing from, set **Require users to consent on every device** to **On**. Users are required to install other applications if this option is enabled.  Warning Consent on every device requires users to register each device with Microsoft Entra ID before getting access.
-11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.  ![Screenshot of the Expire consents settings to set start date, frequency, and duration.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use-create.png)  ​
+11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.    ​
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:    **Expire starting on** **Frequency** **Result**     Today's date Monthly The users must accept the terms of use and then reaccept every month, starting today.   Date in the future Monthly The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month.    For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:    **User** **First accept date** **First expire date** **Second expire date** **Third expire date**     Alice January 1 February 1 March 1 April 1   Bob January 15 February 1 March 1 April 1
 13. Use the **Duration before reacceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here's how expirations might occur for two users:    **User** **First accept date** **First expire date** **Second expire date** **Third expire date**     Alice January 1 January 31 March 2 April 1   Bob January 15 February 14 March 16 April 15
 14. Under **Conditional Access**, select **Custom policy**.    **Template** **Description**     Custom policy Select the users, groups, and apps that the terms of use apply to.   Create Conditional Access policy later Terms of use appear in the grant control list when creating a Conditional Access policy.
-15. When complete, select **Create**.  ![Screenshot of the New terms of use page with configured options highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use-create.png)  ​
+15. When complete, select **Create**.    ​
 16. When the terms of use are created, you're redirected to the Conditional Access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 17. Under **Assignments**, select **Users and groups**.
 18. On the include tab, select **Users and groups** check box.
@@ -302,7 +267,7 @@ Once you finalize your terms of use document, use the following procedure to add
 22. Under **Access controls**, select **Grant**.
 23. In the Grant pane, select **Testing terms of use** and then select **Select**.
 24. Under **Enable policy**, select **On**.
-25. When complete, select **Create**.  ![Screenshot of the Conditional Access policy with configuration options highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-conditional-access-policy.png)  ​
+25. When complete, select **Create**.    ​
 26. If you chose to use your own account, you can refresh your browser. You're prompted to sign in again. When you sign in, you again must accept the terms of use.
 
 ### View report of who accepted and declined
@@ -310,24 +275,24 @@ Once you finalize your terms of use document, use the following procedure to add
 The terms-of-use-screen shows a count of the users who accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
 1. In Microsoft Azure, in **Identity Governance**, then **Terms of use**, locate your terms of use.
-2. For the terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.  ![Screenshot of the terms of use with the Accepted and Declined columns highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-accept-decline.png)
-3. In this exercise, you might not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that accepted the terms of use.  ![Screenshot of the Terms of use consents pane listing the users that accepted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/accepted-terms-of-use.png)
-4. To view the history for an individual user, select the ellipsis to the right of the user name and then **View History**.  ![Screenshot of the View History context menu for a user.  Have a look at the user's actions with the package.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/view-history-menu.png)
-5. In the view history pane, you see a history of all the accepts, declines, and expirations.  ![Screenshot of the View History pane lists the history accepts, declines, and expirations for a user.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/view-history-pane.png)
+2. For the terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
+3. In this exercise, you might not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that accepted the terms of use.
+4. To view the history for an individual user, select the ellipsis to the right of the user name and then **View History**.
+5. In the view history pane, you see a history of all the accepts, declines, and expirations.
 
 ### What terms of use look like for users
 
-1. Once the terms of use are created and enforced, users who are in scope see the terms of use page.  ![Screenshot of an Example terms of use that appears when a user connects to the system and gets their entitlement package.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/user-terms-of-use.png)
-2. Users can view the terms of use and, if necessary, use buttons to zoom in and out.  ![Screenshot of the View of terms of use with zoom buttons, in case the user need more detail in viewing.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/zoom-buttons.png)
-3. On mobile devices, the terms of use display similar to the following example.  ![Screenshot of an Example terms of use that appears when a user signs in on a mobile device.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/mobile-terms-of-use.png)
+1. Once the terms of use are created and enforced, users who are in scope see the terms of use page.
+2. Users can view the terms of use and, if necessary, use buttons to zoom in and out.
+3. On mobile devices, the terms of use display similar to the following example.
 
 #### How users can review their terms of use
 
 Users can review and see the terms of use that they accepted by using the following procedure.
 
 1. Browse to [https://myaccount.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
-2. On the Overview page, select VIEW SETTINGS AND PRIVACY.  ![Screenshot of a popup, which says View settings and privacy. So the user sees data used and shared.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/my-account-settings-privacy.png)
-3. On the Settings and Privacy page, select the **Privacy** tab.  ![Screenshot of the settings and privacy page with organization notice highlighted. The terms of use are enforced.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/my-account-settings-privacy-organization-notes.png)
+2. On the Overview page, select VIEW SETTINGS AND PRIVACY.
+3. On the Settings and Privacy page, select the **Privacy** tab.
 4. Under **Organization’s notice**, you can review the terms of use you accepted.
 
 ### Edit terms of use details
@@ -339,7 +304,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 3. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 4. Select the terms of use you want to edit.
 5. On the top menu, select **Edit terms**.
-6. In the Edit terms of use pane, you can change the following settings:   ![Screenshot of the Identity Governance terms of use being edited. The creator can set specific terms.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-terms-of-use.png)
+6. In the Edit terms of use pane, you can change the following settings:
   - **Name** – The internal name of the ToU that isn't shared with end users.
   - **Display name** – The name that end users can see when viewing the ToU.
   - **Require users to expand the terms of use** – Set to **On** forces the end use to expand the terms of use document before accepting it.
@@ -354,20 +319,14 @@ You can be required to update the terms of use document.
 
 1. Select the terms of use you want to edit.
 2. Select **Edit terms**.
-3. In the **Language Options** table, identify the terms of use language you want to update and then, in the **Action** column, select **Update**.  ![Screenshot of the terms of use with the update option highlighted. Make the changes you need.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-terms-of-use-update.png)
+3. In the **Language Options** table, identify the terms of use language you want to update and then, in the **Action** column, select **Update**.
 4. In the Update terms of use version pane, you can upload a new version of your terms of use document.
-5. Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you don't require your users to reaccept, their previous consent stays current. Only new users who haven't consented before or whose consent expires see the new version.  ![Screenshot of the update terms of use version pane with the upload required pdf and require reaccept highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/update-terms-of-use-version.png)
+5. Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you don't require your users to reaccept, their previous consent stays current. Only new users who haven't consented before or whose consent expires see the new version.
 6. Once you upload your new pdf and decided on reaccept, select **Add**.
 7. You now see the most recent version under the Document column.
 
 
 ## Exercise manage the lifecycle of external users with Microsoft Entra identity governance
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/6-manage-lifecycle-of-external-users</sub>
-
-## Exercise manage the lifecycle of external users with Microsoft Entra identity governance
-
-- 4 minutes
 
 ### Manage the lifecycle of external users in Microsoft Entra ID Governance settings
 
@@ -376,7 +335,7 @@ You can select what happens when an external user, who was invited to your direc
 1. Sign in to the Microsoft Entra admin center as an Administrator. An account with User administrator is required to complete these tasks.
 2. Open **ID Governance**.
 3. In the left navigation menu, under **Entitlement management**, select **Settings**.
-4. On the top menu, select **Edit**.  ![Screenshot of the Identity governance settings page with manage the lifecycle of external users highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/manage-lifecycle-of-external-users.png)
+4. On the top menu, select **Edit**.
 5. In the **Manage the lifecycle of external users** section, review the different settings for external users. When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**. If a user is blocked from signing in to the directory, the user is unable to re-request the access package or request another access in this directory. Don't configure blocking them from signing in if they'll later need to request access to other access packages.
 6. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.  Note Entitlement management only removes accounts that were invited through entitlement management. Also a user is blocked from signing in. The user is removed from this directory even if that user was added to resources in this directory that weren't access package assignments. If the guest was present in this directory before receiving access package assignments, they'll remain. However, if the guest was invited through an access package assignment, they'll still be removed.
 7. If you want to remove the guest user account in this directory, you can set the number of days before it's removed. If you want to remove the guest user account as soon as they lose their last assignment to any access packages, set **Number of days before removing external user from this directory** to **0**.
@@ -384,12 +343,6 @@ You can select what happens when an external user, who was invited to your direc
 
 
 ## Configure and manage connected organizations
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/7-configure-manage-connected-organizations</sub>
-
-## Configure and manage connected organizations
-
-- 3 minutes
 
 With Microsoft Entra entitlement management, you can collaborate with people outside your organization. If you frequently collaborate with users in an external directory or domain, you can add them as a connected organization. This article describes how to add a connected organization so that you can allow users outside your organization to request resources in your directory.
 
@@ -431,12 +384,6 @@ To add an external directory or domain as a connected organization, follow the i
 
 ## Review per-user entitlements
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/8-review-per-user-entitlements</sub>
-
-## Review per-user entitlements
-
-- 3 minutes
-
 In Microsoft Entra entitlement management, you can see who has been assigned to access packages, their policy, and status. If an access package has an appropriate policy, you can also directly assign user to an access package. This article describes how to view, add, and remove assignments for access packages.
 
 ### Governance
@@ -457,7 +404,7 @@ Follow these steps to review assignments:
 
 1. In the Microsoft Entra admin center, select **ID Governance** and then select **Entitlement management**.
 2. In the left menu, select **Access packages** and then open the access package.
-3. select Assignments to see a list of active assignments.  ![Screenshot of the list of user in the access package, and their usage status of the entitlement.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/per-user-entitlement-review.png)
+3. select Assignments to see a list of active assignments.
 4. select a specific assignment to see additional details.
 5. To see a list of assignments that did not have all resource roles properly provisioned, select the filter status and select **Delivering**.
   - You can see additional details on delivery errors by locating the user's corresponding request on the Requests page.
@@ -492,24 +439,12 @@ If you find an assignment that is out of date, take action. You can remove an as
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/9-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-entitlement-management/10-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you reviewed this module, you're able to:
 
@@ -538,16 +473,10 @@ Use these resources to discover more.
 
 # Plan, implement, and manage access review
 
-_50 min · https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/_
+_https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 As your organization grows, managing who has access to what becomes increasingly difficult. Employees change roles, guests accumulate permissions they no longer need, and privileged assignments persist long after a project ends. Without a systematic process for reviewing and recertifying access, your environment accumulates risk—and audit findings quickly follow.
 
@@ -577,12 +506,6 @@ Some features of access reviews require a **Microsoft Entra ID Governance** or *
 
 
 ## Plan for access reviews
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/2-plan-for-access-reviews</sub>
-
-## Plan for access reviews
-
-- 18 minutes
 
 ### What is an access review?
 
@@ -862,12 +785,6 @@ Microsoft Entra ID Premium P2 licenses aren't required for users with the Global
 
 ## Create access reviews for groups and apps
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/3-create-access-reviews-for-groups-apps</sub>
-
-## Create access reviews for groups and apps
-
-- 12 minutes
-
 Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Microsoft Entra ID to create access reviews for group members or application access. If you need to routinely review access, you can also create recurring access reviews.
 
 ### Prerequisites
@@ -879,14 +796,14 @@ Access to groups and applications for employees and guests changes over time. To
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an **Identity Governance Administrator**.
 2. Browse to **ID Governance** > **Access reviews**.
-3. Select **New access review** to create a new access review.  ![Screenshot of the Access reviews pane in Identity Governance.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-reviews.png)
+3. Select **New access review** to create a new access review.
 4. On the Access reviews template screen, select **Review access to a resource type**.
-5. In the **Select what to review** box, select the resource you want to review.  ![Screenshot of the Create an access review - Review name and description dialog.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/select-what-review.png)
+5. In the **Select what to review** box, select the resource you want to review.
 6. If you selected **Teams + Groups**, you have two options:
   - **All Microsoft 365 groups with guest users**. Select this option if you want to create recurring reviews on all your guest users across all your Microsoft Teams and Microsoft 365 groups in your organization. You can choose to exclude certain groups by selecting **Select group(s) to exclude**.
-  - **Select teams + groups**. Select this option if you want to specify a finite set of teams or groups to review. A list of groups to choose from appears on the side of the screen.  ![Screenshot of the Teams and groups settings. Pick your groups to exclude.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/teams-groups.png)    ![Screenshot of the Teams and groups chosen in the user interface. Selected items are excluded.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/teams-groups-detailed.png)
+  - **Select teams + groups**. Select this option if you want to specify a finite set of teams or groups to review. A list of groups to choose from appears on the side of the screen.
 
-7. If you selected **Applications**, select one or more applications.  ![Screenshot of The interface displayed if you chose applications rather than groups.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/select-application-detailed.png)
+7. If you selected **Applications**, select one or more applications.
 8. Select a scope for the review. Your options are:  If you're reviewing group membership, you can also target only inactive users. In the **Users scope** section, select **Inactive users (on tenant level)** and specify the number of days inactive (up to 730 days).
   - **Guest users only**. Limits the review to Microsoft Entra B2B guest users in your directory.
   - **Everyone**. Scopes the review to all user objects associated with the resource.  Note If you selected **All Microsoft 365 groups with guest users**, your only option is to review **Guest users only**.
@@ -898,9 +815,9 @@ Access to groups and applications for employees and guests changes over time. To
   - **Users review their own access**
   - **Managers of users**. If you choose **Managers of users** or **Group owner(s)**, you can also specify a fallback reviewer. Fallback reviewers are asked to complete a review when the user has no manager in the directory or the group has no owner.
 
-11. In the **Specify recurrence of review** section, you can specify a frequency such as **Weekly, Monthly, Quarterly, Semi-annually, Annually**. You then specify a **Duration**, which defines how long a review is open for input from reviewers. For example, the maximum duration that you can set for a monthly review is 27 days to avoid overlapping reviews. You might want to shorten the duration to ensure that your reviewers input is applied earlier. Next, you can select a **Start date** and **End date**.  ![Screenshot of the Choose how often the review should happen. Admins should set a reasonable timeline.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/frequency.png)
+11. In the **Specify recurrence of review** section, you can specify a frequency such as **Weekly, Monthly, Quarterly, Semi-annually, Annually**. You then specify a **Duration**, which defines how long a review is open for input from reviewers. For example, the maximum duration that you can set for a monthly review is 27 days to avoid overlapping reviews. You might want to shorten the duration to ensure that your reviewers input is applied earlier. Next, you can select a **Start date** and **End date**.
 12. Select **Next: Settings**.
-13. In the **Upon completion settings**, you can specify what happens after the review completes.  ![Screenshot of the Create an access review - upon completion settings.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/upon-completion-settings-new.png)   If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that aren't reviewed by the reviewer within the review period. This setting doesn't change users who were reviewed manually. If the final reviewers' decision is Deny, then the user's access is removed.  Use the Action to apply on denied **guest** users to specify what happens to guest users if they're denied.
+13. In the **Upon completion settings**, you can specify what happens after the review completes.     If you want to automatically remove access for denied users, set **Auto apply results to resource** to **Enable**. If you want to manually apply the results when the review completes, set the switch to **Disable**. Use the **If reviewers don't respond** list to specify what happens for users that aren't reviewed by the reviewer within the review period. This setting doesn't change users who were reviewed manually. If the final reviewers' decision is Deny, then the user's access is removed.  Use the Action to apply on denied **guest** users to specify what happens to guest users if they're denied.
   - No change - Leave user's access unchanged
   - Remove access - Remove user's access
   - Approve access - Approve user's access
@@ -910,7 +827,7 @@ Access to groups and applications for employees and guests changes over time. To
   - **Block user from signing in for 30 days, then remove user from the tenant** blocks the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user is disabled. If there's no action taken on the disabled user accounts, they're deleted from the tenant.
   - Action to apply on denied guest users isn't configurable on reviews scoped to more than guest users. It's also not configurable for reviews of all Microsoft 365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
 
-14. In the **Enable review decision helpers** section, choose whether your reviewer receives recommendations during the review process.  ![Screenshot of the Enable decision helpers options. Offer recommendations to the reviewers.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/helpers.png)
+14. In the **Enable review decision helpers** section, choose whether your reviewer receives recommendations during the review process.
 15. In the **Advanced settings** section, you can choose the following
   - Set **Justification required** to **Enable** to require the reviewer to supply a reason for approval.
   - Set **email notifications** to **Enable** to have Microsoft Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.
@@ -920,13 +837,11 @@ Access to groups and applications for employees and guests changes over time. To
 
 16. Select **Next: Review + Create**.
 17. Name the access review. Optionally, give the review a description. The name and description are shown to the reviewers.
-18. Review the information and select **Create**.  ![Screenshot of the create review screen. Overview of the access review that finished creation.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/create-review.png)
+18. Review the information and select **Create**.
 
 ### Start the access review
 
 Once you specified the settings for an access review, select **Start**. The access review appears in your list with an indicator of its status.
-
-![Screenshot of the List of access reviews and their status. Review the status of each item.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-reviews-list.png)
 
 By default, Microsoft Entra ID sends an email to reviewers shortly after the review starts. If you choose not to have Microsoft Entra ID send the email, be sure to inform the reviewers that an access review is waiting for them to complete. You can show them the instructions for how to review access to groups or applications. If your review is for guests to review their own access, show them the instructions for how to review access for yourself to groups or applications.
 
@@ -954,12 +869,6 @@ You can also create access reviews using APIs. What you do to manage access revi
 
 ## Create and configure access reviews programmatically
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/4-create-configure-access-review-programs</sub>
-
-## Create and configure access reviews programmatically
-
-- 3 minutes
-
 Microsoft Entra access reviews are a feature of Microsoft Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
 
 To create an access review using Graph, call the Graph API to create an access review schedule definition. The caller must either be a user with at least the **Identity Governance Administrator** role with an application that has the delegated `AccessReview.ReadWrite.All` permission, or an application with the `AccessReview.ReadWrite.All` application permission.
@@ -985,19 +894,13 @@ During each step you can use the API to create the access review, assign it, che
 
 ## Monitor access review findings
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/5-monitor-findings</sub>
-
-## Monitor access review findings
-
-- 4 minutes
-
 Microsoft Entra ID simplifies how enterprises manage access to groups and applications with Microsoft Entra access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Microsoft Entra access reviews.
 
 ### Perform access review using My Apps
 
 You can start the access review process from the notification email or by going directly to the site.
 
-1. **Email**:  ![Screenshot that shows an example email from Microsoft to review access to a group.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-review-email.png)
+1. **Email**:
 2. Select the **Start review** link to open the access review.
 3. **If you don't have the email**, you can find your pending access reviews by following these steps:
   1. Sign in to the My Access portal at [https://myaccess.microsoft.com](https://myaccess.microsoft.com/).
@@ -1040,12 +943,6 @@ To accept recommendations:
 
 ## Automate access review management tasks
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/6-automate-management-tasks</sub>
-
-## Automate access review management tasks
-
-- 2 minutes
-
 You can choose to have access removal automated by setting the **Auto apply results to resource** to **Enable**. Once the review is completed and ends, users not approved by the reviewer are automatically removed from the resource—or kept with continued access. Access removal could mean removing their group membership, their application assignment, or revoking their right to elevate to a privileged role.
 
 ### Take recommendations
@@ -1072,12 +969,6 @@ When creating an Access Review for groups or applications, you can choose to let
 
 ## Configure recurring access reviews
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/7-configure-recurring-access-reviews</sub>
-
-## Configure recurring access reviews
-
-- 2 minutes
-
 Access reviews can be set to occur on a recurring basis. Name your access review, select a start date, frequency, duration, and specify when the series ends—you can choose **Never**, a specific end date, or a set number of occurrences. Reviewers are notified at the start of each review. Reviewers can approve or deny access with a friendly interface and with the help of smart recommendations.
 
 Why are recurring access reviews important? Because of lifecycle management. Everything that starts needs to have an end date. Between the start and end, we need to ensure permissions are what we need them to be. Not too much, not too little. And we regularly ask an owner if everything is still what they want it to be. With recurrence, we make sure this checking is done regularly.
@@ -1087,19 +978,11 @@ After a recurring review series starts, you can update its settings or reviewers
 
 ## Explore the Access Review Agent in Microsoft Entra
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/7a-access-review-agent</sub>
-
-## Explore the Access Review Agent in Microsoft Entra
-
-- 5 minutes
-
 Historically, access reviews are a manual process that can lead to potential errors and mistakes. Reviewers don't always have access to records and data to make review decisions, and often don't have enough time to complete the review. What if there was an agent that could help with the task?
 
 ### Access Review Agent in Microsoft Entra
 
 Empower your reviewers to make fast and accurate access decisions. The Access Review Agent with Microsoft Entra ID Governance delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
-
-![Screenshot showing the configuration screen for the Access Review Agent.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-review-agent-identity.png)
 
 #### How the agent works
 
@@ -1160,24 +1043,12 @@ To update an existing access review for the Access Review Agent, perform the fol
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/8-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access-review/9-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 After completing this module, you're able to:
 
@@ -1207,16 +1078,10 @@ Use these resources to discover more.
 
 # Plan and implement privileged access
 
-_62 min · https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/_
+_https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 To increase the security of your Azure solution, you must ensure that administrative roles are protected and managed. Explore how to use Privileged Identity Management (PIM) to protect your data and resources. In this module, you learn how to create an access strategy. Then you configure and assign PIM roles and resources, and manage emergency-access accounts.
 
@@ -1241,12 +1106,6 @@ None
 
 
 ## Define a privileged access strategy for administrative users
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/2-define-strategy-for-administrative-users</sub>
-
-## Define a privileged access strategy for administrative users
-
-- 10 minutes
 
 ### What is Privileged identity management (PIM)?
 
@@ -1317,13 +1176,11 @@ For Microsoft Entra roles, it's common for organizations to assign the Global Ad
 Follow these steps to implement the principle of least privilege for your Microsoft Entra roles.
 
 1. Understand the granularity of the roles by reading and understanding the available Microsoft Entra administrator roles. You and your team should also reference administrator roles by identity task in Microsoft Entra ID, which explains the least privileged role for specific tasks.
-2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.  ![Screenshot of the Discovery and insights page to reduce exposure via privileged roles.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/new-preview-page-6eed0acb.png)
+2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
 3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Microsoft Entra ID. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
 4. For all other Microsoft Entra roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
 
 To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Microsoft Entra roles in Privileged Identity Management," you can set up an access review for every Microsoft Entra ID role that has one or more members.
-
-![Screenshot of the Create an access review pane for Microsoft Entra roles, within Privileged Identity Manager.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/create-access-review-ed0391c1.png)
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
 
@@ -1475,12 +1332,6 @@ The following table describes each of the settings.
 
 ## Configure Privileged Identity Management for Azure resources
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/3-configure-privileged-identity-management-for-azure-resources</sub>
-
-## Configure Privileged Identity Management for Azure resources
-
-- 2 minutes
-
 Using Microsoft Entra PIM, you can improve the protection of your Azure resources. This is helpful to:
 
 - Organizations that already use PIM to protect Microsoft Entra roles.
@@ -1492,22 +1343,16 @@ When you first set up PIM for Azure resources, you need to discover and select t
 
 1. Sign in to the Microsoft Entra admin center.
 2. Open **Microsoft Entra Privileged Identity Management**.
-3. Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.  ![Screenshot of the Azure resources page of the Privileged Identity Management.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discover-resources-first-run-00821624.png)
-4. If another administrator in your organization is already managing Azure resources in PIM, you'll see a list of the resources that are currently being managed.  ![Screenshot of the resource filters within the Azure resources page. Resources that are one currently managed.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discover-resources-c841472f.png)
-5. Select **Discover resources** to launch the discovery experience.  ![Screenshot of the Discovery resource page within the Azure resources. Search for resources.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-pane-6bf54db9.png)
+3. Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.
+4. If another administrator in your organization is already managing Azure resources in PIM, you'll see a list of the resources that are currently being managed.
+5. Select **Discover resources** to launch the discovery experience.
 6. On the **Discovery** page, use **Resource state filter** and Select resource type to filter the management groups or subscriptions you have write permission to. It's probably easiest to start with **All** initially. You can search for and select management group or subscription resources to manage in PIM. When you manage a management group or a subscription in PIM, you can also manage its child resources.  Note When you add a new child Azure resource to a PIM-managed management group, you can bring the child resource under management by searching for it in PIM.
 7. Select any unmanaged resources that you want to manage.
-8. Select **Manage resource** to start managing the selected resources.  ![Screenshot of the discovery manage resources page within Azure resources.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-manage-resource-d33f42f8.png)
-9. If you see a message to confirm the onboarding of the selected resource for management, select **Yes**  ![Screenshot of a message to confirm the onboarding of the selected resource for management.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-manage-resource-message-6e433e30.png)
+8. Select **Manage resource** to start managing the selected resources.
+9. If you see a message to confirm the onboarding of the selected resource for management, select **Yes**
 
 
 ## Exercise configure Privileged Identity Management for Microsoft Entra roles
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/4-configure-privileged-identity-management-for-azure-active-directory-roles</sub>
-
-## Exercise configure Privileged Identity Management for Microsoft Entra roles
-
-- 10 minutes
 
 ### Configure Microsoft Entra role settings
 
@@ -1518,7 +1363,7 @@ Follow these steps to open the settings for a Microsoft Entra role.
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
 2. Search for and then select **Microsoft Entra Privileged Identity Management.**
 3. In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
-4. On the Quick start page, in the left navigation, select **Settings.**  ![Screenshot of the Microsoft Entra roles page with the Settings menu highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-roles-settings-bfd346da.png)
+4. On the Quick start page, in the left navigation, select **Settings.**
 5. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 6. In the results, select **Compliance Administrator**.
 7. Review the role-setting details information.
@@ -1527,20 +1372,14 @@ Follow these steps to open the settings for a Microsoft Entra role.
 
 If setting multiple approvers, approval completes as soon as one of them approves or denies. You can't require approval from at least two users. To require approval to activate a role, follow these steps.
 
-1. In the Role setting details page, on the top menu, select **Edit**.  ![Screenshot of the top portion of the Role setting details -Compliance Administrator page with Edit highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-edit-compliance-role-a95707aa.png)
+1. In the Role setting details page, on the top menu, select **Edit**.
 2. In the Edit role setting – Compliance Administrator screen, select the **Require approval to activate** check box.
 3. Select **Select approvers**.
-4. In the Select a member pane, select your administrator account, and then select **Select**.  ![Screenshot of the edit role settings dialog and select a member pane with the selected members highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-add-approver-b44ec980.png)
+4. In the Select a member pane, select your administrator account, and then select **Select**.
 5. Once you have configured the role settings, select **Update** to save your changes.
 
 
 ## Exercise assign Microsoft Entra roles in Privileged Identity Management
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/5-assign-azure-active-directory-roles-privileged-identity-management</sub>
-
-## Exercise assign Microsoft Entra roles in Privileged Identity Management
-
-- 10 minutes
 
 With Microsoft Entra ID, a Global administrator can make permanent Microsoft Entra admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
 
@@ -1554,11 +1393,11 @@ Follow these steps to make a user eligible for a Microsoft Entra admin role.
 2. Search for and then select **Microsoft Entra Privileged Identity Management.**
 3. In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
 4. On the Quick start page, in the left navigation, select **Roles**.
-5. On the top menu, select **+ Add assignments.**  ![Screenshot of the Microsoft Entra roles with Add assignments menu highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-assign-role-e3e1744f.png)
+5. On the top menu, select **+ Add assignments.**
 6. In the Add assignments pane, on the **Membership** tab, review the settings.
 7. Select the **Select role** menu and then select **Compliance Administrator**. You can use the **Search role by name** filter to help located a role.
 8. Under **Select member(s),** select **No members selected**.
-9. In the Select a member pane, select your administrator account, and then select **Select**.  ![Screenshot of the select a member pane with a selected member highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-add-role-assignment-38075706.png)
+9. In the Select a member pane, select your administrator account, and then select **Select**.
 10. In the Add assignments screen, select **Next**.
 11. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
   - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multifactor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
@@ -1571,9 +1410,9 @@ Follow these steps to make a user eligible for a Microsoft Entra admin role.
 When you need to assume a Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1. On the Privileged Identity Management screen, in the left navigation menu, select **My roles.**
-2. In the My roles pane, review the list of eligible assignments.  ![Screenshot of the My roles with eligible role assignments highlighted. Pick the role you need.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/my-roles-57af22c4.png)
+2. In the My roles pane, review the list of eligible assignments.
 3. In the Compliance Administrator role row, select **Activate**.
-4. In the Activate – Compliance Administrator pane, select **Additional verification required,** and then follow the instructions to provide extra security verification. You're required to authenticate only once per session.  ![Screenshot of a popup to activate the compliance administrator.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-activate-role-f10cc7f1.png)
+4. In the Activate – Compliance Administrator pane, select **Additional verification required,** and then follow the instructions to provide extra security verification. You're required to authenticate only once per session.
 5. After you've completed the security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
 6. Select **Activate**.
 
@@ -1592,19 +1431,13 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 Follow these steps to update or remove an existing role assignment.
 
 1. In the Open Microsoft Entra Privileged Identity Management then Microsoft Entra roles screen, in the left navigation, select **Assignments**.
-2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.  ![Screenshot of the options listed in the action column of the Compliance Administrator.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-edit-role-assignments-53cb448a.png)
+2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
 3. Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
 4. Select **Remove**.
 5. In the **Remove** dialog box, review the information, and then select **Yes**.
 
 
 ## Exercise assign Azure resource roles in Privileged Identity Management
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/6-assign-azure-resource-roles-privileged-identity-management</sub>
-
-## Exercise assign Azure resource roles in Privileged Identity Management
-
-- 8 minutes
 
 ### Assign Azure resource roles
 
@@ -1622,10 +1455,10 @@ Follow these steps to make a user eligible for an Azure resource role.
 2. Search for and then select **Microsoft Entra Privileged Identity Management.**
 3. In the Privileged Identity Management menu, in the left navigation, select **Azure resources.**
 4. On the top menu, select **Discover resources**.
-5. In the Azure resources – Discovery screen, select your subscription and then, on the top menu, select **Manage resource**.  ![Screenshot of the Azure resources discovery screen with the subscription and manage resource highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-azure-resource-management-b548cd25.png)
+5. In the Azure resources – Discovery screen, select your subscription and then, on the top menu, select **Manage resource**.
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 7. When onboarding completes, close the Azure resources – Discovery screen.
-8. In the Azure resources screen, select the resource you just added.  ![Screenshot displaying the recently added Azure resource.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-azure-resource-overview-b09e5a4e.png)
+8. In the Azure resources screen, select the resource you just added.
 9. In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 10. On the top menu, select + **Add assignments**.
 11. In the **Add assignments dialog**, select the **Select role** menu and then select **API Management Service Contributor.**
@@ -1655,12 +1488,6 @@ Follow these steps to update or remove an existing role assignment.
 
 ## Plan and configure Privileged Access Groups
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/7-plan-configure-privileged-access-groups</sub>
-
-## Plan and configure Privileged Access Groups
-
-- 3 minutes
-
 In Privileged Identity Management (PIM), you can now assign eligibility for membership or ownership of privileged access groups. You can assign Microsoft Entra ID built-in roles to cloud groups and use PIM to manage group member and owner eligibility and activation. With the privileged access groups preview, you can give workload-specific administrators quick access to multiple roles with a single just-in-time request.
 
 **Example**: Your **Tier 0 Office Admins** might need just-in-time access to the **Exchange Admin**, **Office Apps Admin**, **Teams Admin**, and **Search Admin** roles to thoroughly investigate incidents daily.
@@ -1671,16 +1498,7 @@ You can create a role-assignable group called “Tier 0 Office Admins”, and ma
 
 Some organizations use tools like Microsoft Entra business-to-business (B2B) collaboration to invite their partners as guests to their Microsoft Entra organization. Instead of a single just-in-time policy for all assignments to a privileged role, you can create two different privileged access groups with their own policies. You can enforce less strict requirements for your trusted employees, and stricter requirements like approval workflow for your partners when they request activation into their assigned role.
 
-![Screenshot of the Privileged Identity Manager with the Groups Assignments page open.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-groups-assignments-f64567b1.png)
-
-
 ## Analyze Privileged Identity Management audit history and reports
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/8-analyze-privileged-identity-management-audit-history-reports</sub>
-
-## Analyze Privileged Identity Management audit history and reports
-
-- 8 minutes
 
 With PIM, you can view activity, activations, and audit history for privileged access group members and owners within your Microsoft Entra organization.
 
@@ -1696,7 +1514,7 @@ Follow these steps to view the audit history for privileged access groups.
 2. Select **Groups**.
 3. Select the privileged access group you want to view audit history for.
 4. Under **Activity**, select **Resource audit**.
-5. Filter the history using a predefined date or custom range.  ![Screenshot of the Resource audit list with the available filters displayed.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/groups-resource-audit-aa44dac0.png)
+5. Filter the history using a predefined date or custom range.
 
 ### View my audit
 
@@ -1706,16 +1524,10 @@ Follow these steps to view the audit history for privileged access groups.
 2. Select **Groups**.
 3. Select the privileged access group you want to view audit history for.
 4. Under **Activity**, select **My audit**.
-5. Filter the history using a predefined date or custom range.  ![Screenshot of the Audit list for the current user. Review the history to see the activity.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/my-audit-time-1e4b43f0.png)
+5. Filter the history using a predefined date or custom range.
 
 
 ## Create and manage emergency access accounts
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/9-create-manage-emergency-access-accounts</sub>
-
-## Create and manage emergency access accounts
-
-- 7 minutes
 
 It's important that you prevent being accidentally locked out of your Microsoft Entra ID. With Microsoft Entra ID, you can't sign in or activate another user's account as an administrator. You can mitigate the chance of accidental lack of administrative access. The secret, create two or more *emergency access accounts* in your organization.
 
@@ -1781,24 +1593,12 @@ These steps should be performed at regular intervals and for key changes:
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/10-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-privileged-access/11-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you reviewed this module, you're able to:
 
@@ -1827,16 +1627,10 @@ To learn more about these topics, review these links.
 
 # Monitor and maintain Microsoft Entra ID
 
-_36 min · https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/_
+_https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Microsoft Entra ID audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 
@@ -1859,12 +1653,6 @@ None
 
 
 ## Analyze and investigate sign-in logs to troubleshoot access issues
-
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/2-analyze-investigate-sign-logs-to-troubleshoot-access-issues</sub>
-
-## Analyze and investigate sign-in logs to troubleshoot access issues
-
-- 10 minutes
 
 The reporting architecture in Microsoft Entra ID consists of the following components:
 
@@ -1896,11 +1684,7 @@ The user sign-ins report provides answers to the following questions:
 
 On the Azure portal menu, select **Microsoft Entra ID**, or search for and select **Microsoft Entra ID** from any page.
 
-![Screenshot of the Select Microsoft Entra ID screen, so you can modify the settings.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/select-azure-active-directory.png)
-
 Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
-
-![Screenshot of the Sign-ins selected from the Monitoring menu. Track what report you want to review.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-ins-azure-active-directory.png)
 
 It takes up to two hours for sign-in records to show up in the portal.
 
@@ -1915,27 +1699,19 @@ A sign-ins log has a default list view that shows the:
 - Application the user has signed in to
 - Sign-in status
 - Status of the risk detection
-- Status of the multifactor authentication (MFA) requirement  ![Screenshot shows the Office 365 SharePoint Online Sign-ins.  Check for activity that might be concerning.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-activity.png)
+- Status of the multifactor authentication (MFA) requirement
 
 You can customize the list view by selecting Columns in the toolbar.
 
-![Screenshot of the Columns option in the Sign-ins page. Add and remove the content items you need.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns-option.png)
-
 The Columns dialog gives you access to the selectable attributes. In a sign-in report, you can't have fields that have more than one value for a given sign-in request as column. For example, the rule is true for authentication details, Conditional Access data, and network location.
 
-![Screenshot of the Columns dialog box where you can select attributes. The attributes give you troubleshooting information.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns-2.png)
-
 Select an item in the list view to get more detailed information.
-
-![Screenshot shows a detailed information view. Get the details from the report on sign-ins.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/basic-sign.png)
 
 Customers can now troubleshoot Conditional Access policies through all sign-in reports. When an admin selects the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reports-faq).
 
 ### Filter sign-in activities
 
 First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Microsoft Entra ID provides you with a broad range of other filters you can set:
-
-![Screenshot of the Add filters option. Use the filters to sort through large amounts of data.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/add-filters-option.png)
 
 **Request ID** - The ID of the request you care about.
 
@@ -1962,8 +1738,6 @@ First, narrow down the reported data to a level that works for you. Second, filt
 **Resource ID** - The ID of the service used for the sign-in.
 
 **Client app** - The type of the client app used to connect to your tenant:
-
-![Screenshot of the Client app filter.  See specific details about your client information.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/client-app-filter.png)
 
 | **Name** | **Modern authentication** | **Description** |
 |---|---|---|
@@ -2000,8 +1774,6 @@ First, narrow down the reported data to a level that works for you. Second, filt
 
 Select the **Download** option to create a CSV or JSON file of the most recent 250,000 records. Start with **Download Sign-ins** if you want to work with the data outside the Azure portal.
 
-![Screenshot of the Download button.  Use this dialog to get a CSV or JSON file of your sign-in data.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/download-2.png)
-
 Important
 
 The number of records you can download is constrained by the [Microsoft Entra ID report retention policies](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reference-reports-data-retention).
@@ -2018,8 +1790,6 @@ Microsoft Entra ID and the Azure portal both provide you with additional entry p
 #### Users sign-in data in Identity Protection
 
 The user sign-in graph in the **Identity Protection** overview page shows weekly aggregations of sign-ins. The default for the period is 30 days.
-
-![Screenshot of a graph of Sign-ins over a month. Visual representation can help you see potential issues.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-ins-over-month.png)
 
 Select a day in the sign-in graph, you get an overview of the sign-in activities for this day.
 
@@ -2046,8 +1816,6 @@ When the admin selects an item, you get more details about the sign-in operation
 
 On the **Users** page, you get a complete overview of all user sign-ins by selecting **Sign-ins** in the **Activity** section.
 
-![Screenshot of the Activity section where you can select Sign-ins. Pick the activity you need to review.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/activity-section.png)
-
 ### Usage of managed applications
 
 With an application-centric view of your sign-in data, you can answer questions such as:
@@ -2058,15 +1826,9 @@ With an application-centric view of your sign-in data, you can answer questions 
 
 The entry point to this data is the top three applications in your organization. The data is contained within the last 30 days report in the **Overview** section under **Enterprise applications**.
 
-![Screenshot of the dialog where you can select Overview. You can then pick usage data and other graphs.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/select-overview.png)
-
 The app-usage graphs weekly aggregations of sign-ins for your top three applications in a given time period. The default time period is 30 days.
 
-![Screenshot of the App usage for a one month period. Select a time period to review the data.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/graph-chart.png)
-
 If you want to, you can set the focus on a specific application.
-
-![Screenshot of the Reporting screen.  Use this to select the details you want to report on and review.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/single-app-usage-graph.png)
 
 When you select a day in the app usage graph, you get a detailed list of the sign-in activities.
 
@@ -2081,12 +1843,6 @@ You can also access the Microsoft 365 activity logs programmatically by using th
 
 ## Review and monitor Microsoft Entra audit logs
 
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/3-review-monitor-azure-active-directory-audit-logs</sub>
-
-## Review and monitor Microsoft Entra audit logs
-
-- 6 minutes
-
 The Microsoft Entra audit logs provide records of system activities for compliance. To access the audit report, select **Audit logs** in the **Monitoring** section of **Microsoft Entra ID**.
 
 An audit log has a default list view that shows the:
@@ -2096,19 +1852,13 @@ An audit log has a default list view that shows the:
 - Category and name of the activity (*what*)
 - Status of the activity (success or failure)
 - Target
-- Initiator/actor (who) of an activity  ![Screenshot of the available Audit logs you can review to ensure your systems are running effectively.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/list-view.png)
+- Initiator/actor (who) of an activity
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
-![Screenshot of the Audit columns, so you can pick the specific data you need to see in your report.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns.png)
-
 Custom columns enables you to display other fields or remove fields that are already displayed.
 
-![Screenshot of the Remove fields dialog. Set up the reports to show and review just the data you need.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/column-select.png)
-
 Select an item in the list view to get more detailed information.
-
-![Screenshot of the select item dialog. What detailed information do you need?](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/details.png)
 
 ### Filtering audit logs
 
@@ -2120,7 +1870,7 @@ You can filter the audit data on the following fields:
 - Status
 - Target
 - Initiated by (Actor)
-- Date range  ![Screenshot of the Filter object dialog.  Use the filters to organize and review the data.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/filter.png)
+- Date range
 
 The **Service** filter allows you to select from a drop-down list of the following services:
 
@@ -2191,8 +1941,6 @@ When you select a custom timeframe, you can configure a start time and an end ti
 
 You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Microsoft Entra report retention policies.
 
-![Screenshot of the Download data. Get the data in a CSV or JSON file to help you work offline.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/download.png)
-
 ### Audit logs shortcuts
 
 In addition to **Microsoft Entra ID**, the Azure portal provides you with two other entry points to audit data:
@@ -2215,11 +1963,7 @@ With user and group-based audit reports, you can get answers to questions such a
 
 If you want to review only auditing data that is related to users, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
 
-![Screenshot of the User dialog.  You can pick specific users to manage.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/users.png)
-
 If you want to review only auditing data that is related to groups, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Groups** tab. This entry point has **GroupManagement** as preselected category.
-
-![Screenshot of the Filter groups. You can set up group management details for auditing.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/groups.png)
 
 #### Enterprise applications audit logs
 
@@ -2233,8 +1977,6 @@ With application-based audit reports, you can get answers to questions such as:
 
 If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** screen. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-![Screenshot of the Enterprise applications logs for auditing. You can and should audit all details.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/enterprise-applications.png)
-
 ### Microsoft 365 activity logs
 
 You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Microsoft Entra activity logs share numerous directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
@@ -2242,15 +1984,7 @@ You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Ev
 
 ## Exercise connect data from Microsoft Entra ID to Microsoft Sentinel
 
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/4-connect-data-from-azure-active-directory-to-azure-sentinel</sub>
-
-## Exercise connect data from Microsoft Entra ID to Microsoft Sentinel
-
-- 5 minutes
-
 In this unit we take a look at what is Microsoft Sentinel?
-
-![Screenshot of Azure Sentinel screenshot that shows the initial configuration screen that allows you to create a new KQL (Kusto Query Language) queries.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/azure-sentinel.png)
 
 A security information and event management (SIEM) aggregates and analyzes activity. A security orchestration automation and remediation (SOAR) tool collects data on security threats and responds. Microsoft Sentinel is a scalable, cloud-native SIEM, and SOAR solution. Microsoft Sentinel is your birds-eye view across the enterprise alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
@@ -2282,18 +2016,12 @@ Use these instructions if you don't already have a workspace available to Micros
 You can use Microsoft Sentinel's built-in connector to collect data from Microsoft Entra ID and stream it into Microsoft Sentinel. The connector allows you to stream [sign in logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. In Microsoft Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
-2. In the **Data connectors** list, select **Microsoft Entra ID** and then select **Open connector page**.  ![Screenshot of the data connectors screen with the Microsoft Entra ID connector and Open Connector page highlighted.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sentinel-add-azure-active-directory-connector.png)
-3. Under **Configuration**, select the **Microsoft Entra Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.  ![Screenshot of the logs collected by Azure Sentinel selections highlighted.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sentinel-configure-azure-active-directory-connector.png)
+2. In the **Data connectors** list, select **Microsoft Entra ID** and then select **Open connector page**.
+3. Under **Configuration**, select the **Microsoft Entra Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
 4. Close the Microsoft Entra ID connector page.
 
 
 ## Export logs to third-party security information and event management system
-
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/5-export-logs-to-third-party-security-information</sub>
-
-## Export logs to third-party security information and event management system
-
-- 6 minutes
 
 Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Microsoft Defender for Cloud, have onboarded to Azure Monitor and are producing relevant security logs.
 
@@ -2330,12 +2058,6 @@ The security of your Azure environment is always top priority on the Azure team,
 
 ## Analyze Microsoft Entra workbooks and reporting
 
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/6-analyze-azure-active-directory-workbooks-reporting</sub>
-
-## Analyze Microsoft Entra workbooks and reporting
-
-- 2 minutes
-
 With the usage and insights report, you can get an application-centric view of your sign-in data. You can find answers to the following questions:
 
 - What are the most used applications in my organization?
@@ -2356,7 +2078,7 @@ In addition, any user (non-admins) can access their own sign-ins.
 
 1. Navigate to the Azure portal.
 2. Select the right directory, then select **Microsoft Entra ID** and choose **Enterprise applications**.
-3. From the **Activity** section, select **Usage and insights** to open the report.  ![Screenshot of the Usage and Insights selected from the Activity section. Use the logs to find the data you need.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/main-menu.png)
+3. From the **Activity** section, select **Usage and insights** to open the report.
 
 ### Use the report
 
@@ -2368,20 +2090,9 @@ You can also set the focus on a specific application. Select **view sign-in acti
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
-![Screenshot of Usage and Insights for Application activity where you can select a range and view sign-in activity for different apps.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/usage-insights-report.png)
-
-
 ## Monitor security posture with Identity Secure Score
-
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/7-monitor-security-posture-identity-secure-score</sub>
-
-## Monitor security posture with Identity Secure Score
-
-- 3 minutes
 
 The identity secure score is percentage that functions as an indicator for how aligned you are with Microsoft's best practice recommendations for security. Each improvement action in identity secure score is tailored to your specific configuration.
-
-![Screenshot of overview page of the Identity Secure Score. Look at the percentage score for your company.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/identity-secure-score-overview.png)
 
 The score helps you to:
 
@@ -2421,24 +2132,12 @@ Your score improves for configuring recommended security features or performing 
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/8-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/9-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Once you implemented an identity solution in Azure, you have to monitor it. There are several tools from Microsoft Sentinel to log files to support your organization in this process.
 

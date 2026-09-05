@@ -1,6 +1,6 @@
 # Implémenter la gestion des accès pour les applications
 
-> SC-300 — learning path 3/4 · 154 min
+> SC-300 — learning path 3/4
 > https://learn.microsoft.com/fr-fr/training/paths/implement-access-management-for-apps/
 
 ## Modules
@@ -11,21 +11,14 @@
 - **Inscrire des applications à l’aide de Microsoft Entra ID** (9 units)
 
 
-
 ---
 
 # Planifier et concevoir l’intégration des applications d’entreprise pour l’authentification unique
 
-_42 min · https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/_
+_https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/1-introduction</sub>
-
-## Présentation
-
-- 2 minutes
 
 Dans ce module, vous découvrez les applications utilisées dans votre environnement. Ensuite, vous concevez et implémentez des rôles de gestion des accès et de gestion des applications. En outre, vous configurez des applications SaaS préintégrates (galerie).
 
@@ -46,12 +39,6 @@ Dans ce module, vous allez :
 
 
 ## Découvrez les applications à l'aide du rapport d'applications Microsoft Defender pour Cloud Apps et Active Directory Federation Services.
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/2-discover-apps-use-microsoft-cloud-app-security-app-report</sub>
-
-## Découvrez les applications à l'aide du rapport d'applications Microsoft Defender pour Cloud Apps et Active Directory Federation Services.
-
-- 1 minute
 
 Pour commencer à apprendre à protéger les applications cloud, vous devez d’abord découvrir ce que cloud Access Security Broker (CASB) est. Découvrez ensuite l’implémentation Microsoft de CASB.
 
@@ -74,8 +61,6 @@ Microsoft Defender pour Cloud Apps intègre la visibilité à votre cloud en :
 - Vous aider à garder un contrôle continu en définissant et en affinant continuellement les politiques.   ![Diagramme de l’architecture Microsoft Defender pour Cloud Apps. Comment les applications sont trouvées et gérées.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/proxy-architecture.png)
 
 #### Découverte du Cloud
-
-![Capture d’écran du rapport MDCA Cloud Discovery. Le rapport indique le nombre d’applications découvertes.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/cloud-discovery-screenshot.png)
 
 Cloud Discovery utilise vos journaux de trafic pour découvrir et analyser dynamiquement les applications cloud que votre organisation utilise. Pour créer un rapport instantané de l’utilisation du cloud de votre organisation, chargez manuellement les fichiers de journal à partir de vos pare-feu ou proxies pour analyse. Pour configurer des rapports continus, utilisez les collecteurs de journaux Microsoft Defender for Cloud Apps afin de transférer régulièrement vos journaux.
 
@@ -110,11 +95,7 @@ Vous pouvez utiliser Microsoft Defender pour Cloud Apps pour sanctionner ou annu
 
 Si vous disposez d’un répertoire local qui contient des comptes d’utilisateur, vous disposez probablement de nombreuses applications auxquelles les utilisateurs s’authentifient. Chacune de ces applications est configurée pour permettre aux utilisateurs d’accéder à l’aide de leurs identités. Les utilisateurs peuvent également s’authentifier directement auprès de votre annuaire Active Directory local. Active Directory Federation Services (AD FS) est un service d’identité local basé sur des normes. AD FS étend la possibilité d’utiliser la fonctionnalité d’authentification unique (SSO) entre les partenaires professionnels approuvés sans que les utilisateurs se connectent séparément à chaque application - fédération. De nombreuses organisations ont des applications SaaS (Software as a Service) ou des applications métier personnalisées fédérées directement à AD FS, ainsi que des applications Microsoft 365 et Microsoft Entra ID.
 
-![Capture d’écran des applications disponibles directement localement. Autres données de prise en charge sur l’utilisation de l’application.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/app-integration-before-migration.png)
-
 Pour renforcer la sécurité des applications, votre objectif est de disposer d’un ensemble unique de contrôles d’accès et de stratégies dans vos environnements locaux et cloud.
-
-![Capture d’écran des mêmes applications connectées via Microsoft Entra ID, après avoir utilisé la détection des applications.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/app-integration-after-migration.png)
 
 De nombreuses organisations utilisent AD FS pour fournir l’authentification unique aux applications cloud. Le déplacement de vos applications AD FS vers Microsoft Entra ID pour l’authentification offre des avantages significatifs, en particulier en termes de gestion des coûts, de gestion des risques, de productivité, de conformité et de gouvernance. Toutefois, comprendre quelles applications sont compatibles avec Microsoft Entra ID et identifier des étapes de migration spécifiques peut prendre beaucoup de temps.
 
@@ -137,7 +118,7 @@ Le rapport d’activité de l’application AD FS est disponible dans le portail
 
 1. Connectez-vous au portail Azure avec un rôle d’administrateur qui a accès aux données d’activité d’application AD FS (administrateur, lecteur de rapport, lecteur de sécurité, administrateur d’application ou administrateur d’application cloud).
 2. Sélectionnez **l’ID Microsoft Entra**, puis sélectionnez **Applications d’entreprise**.
-3. Sous **Activité**, sélectionnez **Utilisation et insights**, puis sélectionnez **l’activité d’application AD FS** pour ouvrir la liste de toutes les applications AD FS de votre organisation.   ![Capture d’écran de l’activité de l’application AD FS. Suivez l’application dont vous disposez.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/active-directory-federation-services-application-activity.png)
+3. Sous **Activité**, sélectionnez **Utilisation et insights**, puis sélectionnez **l’activité d’application AD FS** pour ouvrir la liste de toutes les applications AD FS de votre organisation.
 4. Pour chaque application dans la liste d’activités de l’application AD FS, affichez **l’état de migration** :
 
 - **Prêt à migrer** signifie que la configuration de l’application AD FS est entièrement prise en charge dans l’ID Microsoft Entra et peut être migrée as-is.
@@ -146,12 +127,6 @@ Le rapport d’activité de l’application AD FS est disponible dans le portail
 
 
 ## Configurer des connecteurs sur des applications
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/3-configure-connectors-apps</sub>
-
-## Configurer des connecteurs sur des applications
-
-- 7 minutes
 
 Les connecteurs d'applications utilisent les API des fournisseurs d'applications pour permettre une meilleure visibilité et un meilleur contrôle par Microsoft Defender pour les applications cloud sur les applications auxquelles vous vous connectez. Microsoft Defender pour Cloud Apps (MDCA) utilise les API fournies par le fournisseur de cloud. Toutes les communications entre Defender for Cloud Apps et les applications connectées sont chiffrées à l’aide du protocole HTTPS. Chaque service a sa propre infrastructure et ses propres limitations d’API, telles que la limitation, les limites d’API, les fenêtres d’API de décalage dynamique du temps, etc. Microsoft Defender for Cloud Apps travaillé avec les services pour optimiser l’utilisation des API et fournir les meilleures performances. Compte tenu des différentes limitations imposées aux API, Defender pour Cloud Apps utilise la capacité autorisée. Certaines opérations, telles que l'analyse de tous les fichiers du locataire, nécessitent de nombreuses API, elles sont donc réparties sur une période plus longue. Attendez-vous à ce que certaines politiques s'exécutent pendant plusieurs heures ou plusieurs jours.
 
@@ -180,12 +155,6 @@ Les connexions peuvent prendre un certain temps en fonction de la taille du loca
 
 ## L’exercice implémente la gestion des accès pour les applications
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/4-implement-access-management-for-apps</sub>
-
-## L’exercice implémente la gestion des accès pour les applications
-
-- 3 minutes
-
 ### Créer un compte Azure et ajouter des licences d’essai Microsoft Entra ID Premium P2
 
 Les tâches de cet exercice et les exercices de ce parcours d'apprentissage exigent que vous disposiez déjà d'un abonnement Azure que vous pouvez utiliser ou que vous vous inscriviez à un compte d'essai Azure. Si vous disposez déjà de votre propre abonnement Azure, vous ignorez cette tâche et passez à la suivante.
@@ -209,8 +178,8 @@ Ici, vous ajoutez une application Entreprise que vous pouvez utiliser pour l’e
 1. Connectez-vous au [Centre d'administration Microsoft Entra](https://entra.microsoft.com/) à l'aide d'un compte administrateur général.
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le **menu Identité**, sous **Applications**, sélectionnez **Applications d’entreprise**.
-4. Dans le volet **Applications d’entreprise** , sélectionnez **+ Nouvelle application**.   ![Capture d’écran de l’écran Applications d’entreprise avec Nouvelle application mise en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/new-enterprise-application.png)
-5. Dans la page **Parcourir la galerie Microsoft Entra** , dans la zone **Application de recherche** , entrez **GitHub**.   ![Capture d’écran de l’écran de navigation de la galerie d’ID Microsoft Entra, avec la zone de recherche surlignée.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/azure-active-directory-gallery-search.png)
+4. Dans le volet **Applications d’entreprise** , sélectionnez **+ Nouvelle application**.
+5. Dans la page **Parcourir la galerie Microsoft Entra** , dans la zone **Application de recherche** , entrez **GitHub**.
 6. Dans les résultats, sélectionnez **GitHub Enterprise Cloud – Compte Entreprise**.
 7. Dans **GitHub Enterprise Cloud – Compte Entreprise**, passez en revue les paramètres, puis sélectionnez **Créer**.
 8. Une fois le compte créé, vous êtes redirigé vers l’écran **GitHub Enterprise Cloud – Compte Entreprise** .
@@ -222,17 +191,11 @@ Attribuez votre compte d’administrateur à l’application récemment ajoutée
 1. Dans l’écran **GitHub Enterprise Cloud – Compte Entreprise** , dans la page **Vue d’ensemble** , sous **Bien démarrer**, sélectionnez **1. Affecter des utilisateurs et des groupes**. Vous pouvez également sélectionner **Utilisateurs et groupes** dans le volet de navigation gauche, sous **Gérer**.
 2. Dans la page **Utilisateurs et groupes** , dans le menu, sélectionnez **+Ajouter un utilisateur/groupe**.
 3. Dans la boîte de dialogue **Ajouter une affectation** , sélectionnez **Utilisateurs et groupes**.
-4. Dans le volet **Utilisateurs et groupes** , sélectionnez votre compte d’administrateur, puis **sélectionnez**.   ![Capture d’écran de l’ajout d’une attribution de compte d’utilisateur à une application avec le bouton Sélectionner mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/add-app-assignment.png)
+4. Dans le volet **Utilisateurs et groupes** , sélectionnez votre compte d’administrateur, puis **sélectionnez**.
 5. Sélectionnez **Attribuer**.
 
 
 ## Concevoir et implémenter des rôles de gestion des applications
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/5-design-implement-app-management-roles</sub>
-
-## Concevoir et implémenter des rôles de gestion des applications
-
-- 7 minutes
 
 Cette unité explique comment utiliser des autorisations accordées par des rôles personnalisés dans Microsoft Entra ID pour répondre à vos besoins de gestion des applications. Dans Microsoft Entra ID, vous pouvez déléguer les autorisations de création et de gestion des applications en :
 
@@ -307,33 +270,21 @@ Conseils lors de la création et de l’utilisation de rôles personnalisés pou
 
 ## Exercice : créer un rôle personnalisé pour gérer l’inscription d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/6-create-custom-role-manage-app-registration</sub>
-
-## Exercice : créer un rôle personnalisé pour gérer l’inscription d’application
-
-- 8 minutes
-
 Créez un rôle personnalisé qui peut être utilisé pour accorder l’accès pour gérer les inscriptions d’applications.
 
 1. Connectez-vous au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) à l’aide d’un compte Administrateur.
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le menu **Identité** , ouvrez le menu **Rôles et administrateurs** , puis sélectionnez **Rôles et administrateurs.**
-4. Dans l’écran **Rôles et administrateurs** , dans le menu, sélectionnez **Nouveau rôle personnalisé.** ![Capture d’écran de l’écran Rôles et administrateurs avec l’option Nouveau menu rôle personnalisé mise en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/new-custom-role.png)
+4. Dans l’écran **Rôles et administrateurs** , dans le menu, sélectionnez **Nouveau rôle personnalisé.**
 5. Dans la boîte de dialogue **Nouveau rôle personnalisé** , sous l’onglet **Informations de base** , dans la zone nom, entrez **Mon rôle d’application personnalisé**.
 6. Passez en revue les options restantes, puis sélectionnez **Suivant**.
 7. Sous l’onglet **Autorisations** , passez en revue les autorisations disponibles.
 8. Dans la zone **Rechercher par nom d’autorisation ou description** , entrez les informations d’identification.
-9. Dans les résultats, sélectionnez **Gérer** les autorisations, puis sélectionnez **Suivant**. ![Capture d’écran de l’onglet Autorisations pour un nouveau rôle personnalisé avec la recherche, la gestion des autorisations et Suivant mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/custom-role-permissions.png)
+9. Dans les résultats, sélectionnez **Gérer** les autorisations, puis sélectionnez **Suivant**.
 10. Passez en revue les modifications, puis sélectionnez **Créer.**
 
 
 ## Configurer des applications SaaS de galerie préintégrées
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/7-configure-pre-integrated-gallery-saas-apps</sub>
-
-## Configurer des applications SaaS de galerie préintégrées
-
-- 5 minutes
 
 Comme vous le savez, Microsoft Entra ID dispose d’une galerie qui contient des milliers d’applications préintégrées. De nombreuses applications utilisées par votre organisation sont probablement déjà dans la galerie. Si une application est ajoutée à votre locataire Microsoft Entra, vous pouvez configurer les propriétés de l’application, gérer l’accès utilisateur à l’application et configurer l’authentification unique afin que les utilisateurs puissent se connecter à l’application avec leurs informations d’identification Microsoft Entra. Cette unité vous montre comment configurer les propriétés de l’application.
 
@@ -357,7 +308,7 @@ Pour modifier les propriétés de l’application :
 3. Dans le centre d’administration Microsoft Entra, sélectionnez **Applications d’entreprise**. Ensuite, recherchez et sélectionnez l’application que vous souhaitez configurer.
 4. Dans la section **Gérer**, sélectionnez **Propriétés** pour ouvrir le volet **Propriétés** à des fins de modification.
 5. Sélectionnez l’icône pour charger le logo.
-6. Ensuite, vous avez terminé, sélectionnez **Enregistrer**. ![Capture d’écran de l’écran Propriétés montrant comment modifier le logo. La taille du logo est importante.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/change-logo.png)
+6. Ensuite, vous avez terminé, sélectionnez **Enregistrer**.
 
 ### Ajouter des notes
 
@@ -365,16 +316,10 @@ Vous pouvez utiliser le champ notes pour ajouter toutes les informations pertine
 
 1. Dans le centre d’administration Microsoft Entra, sélectionnez **Applications d’entreprise**. Ensuite, recherchez et sélectionnez l’application que vous souhaitez configurer.
 2. Dans la section **Gérer**, sélectionnez **Propriétés** pour ouvrir le volet **Propriétés** à des fins de modification.
-3. Mettez à jour le champ Notes, sélectionnez **Enregistrer**. ![Capture d’écran de l’écran Propriétés qui montre comment modifier les notes. Ces notes aident vos utilisateurs à savoir quand et comment utiliser les applications.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/notes-application.png)
+3. Mettez à jour le champ Notes, sélectionnez **Enregistrer**.
 
 
 ## Implémenter et gérer des stratégies pour les applications OAuth
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/8-implement-manage-policies-oauth-apps</sub>
-
-## Implémenter et gérer des stratégies pour les applications OAuth
-
-- 4 minutes
 
 Outre l’examen existant des applications OAuth connectées à votre environnement, vous pouvez définir des stratégies d’autorisation afin d’obtenir des notifications automatisées lorsqu’une application OAuth répond à certains critères. Par exemple, vous pouvez être alerté automatiquement lorsqu’il existe des applications qui nécessitent un niveau d’autorisation élevé et qui ont été autorisées par plus de 50 utilisateurs. Les stratégies d’application OAuth vous permettent d’examiner les autorisations demandées par chaque application et les utilisateurs qui les ont autorisés pour Office 365 et d’autres applications OAuth. Vous pouvez également marquer ces autorisations comme approuvées ou interdites. Si vous les marquez comme interdites, l’application d’entreprise correspondante est désactivée.
 
@@ -387,7 +332,7 @@ Outre l’examen existant des applications OAuth connectées à votre environnem
 
 - Par exemple, vous pouvez afficher toutes les applications qui demandent l’autorisation de modifier des calendriers dans votre boîte aux lettres.
 
-1. Sélectionnez la **nouvelle stratégie** dans le bouton de recherche. ![Capture d’écran du site Microsoft Defender pour Cloud Apps avec la boîte de dialogue Stratégie OAuth ouverte.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/oauth-policy-dialog.png)
+1. Sélectionnez la **nouvelle stratégie** dans le bouton de recherche.
 2. Vous pouvez utiliser le filtre **Community** pour savoir si l’autorisation d’accès à cette application est courante, peu courante ou rare.
   - Ce filtre peut être utile si une de vos application est rare et si elle demande l’autorisation avec un niveau de gravité élevé, ou si elle demande l’autorisation à de nombreux utilisateurs.
 
@@ -402,24 +347,12 @@ Vous pouvez également créer la stratégie en sélectionnant **Contrôle** suiv
 
 ## Évaluation des modules
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/9-knowledge-check</sub>
-
-## Évaluation des modules
-
-- 3 minutes
-
 Choisissez la meilleure réponse pour chacune des questions.
 
 ### Vérifiez vos connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-design-integration-of-enterprise-apps-for-sso/10-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 2 minutes
 
 Après avoir terminé ce module, vous pouvez :
 
@@ -443,16 +376,10 @@ Utilisez ces ressources pour approfondir vos connaissances :
 
 # Implémenter et surveiller l’intégration des applications d’entreprise pour l’authentification unique
 
-_41 min · https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/_
+_https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 Dans ce module, vous allez apprendre à implémenter des personnalisations de jetons et à implémenter et à configurer des paramètres de consentement. Vous allez également apprendre à intégrer des applications locales à l’aide du proxy d’application Microsoft Entra, ainsi qu’à intégrer des applications saaS (software as a service) personnalisées pour l’authentification unique (SSO). Enfin, vous allez découvrir comment implémenter l’approvisionnement d’utilisateurs d’applications et surveiller et auditer l’accès aux applications d’entreprise intégrées Microsoft Entra ID.
 
@@ -475,12 +402,6 @@ Dans ce module, vous allez :
 
 
 ## Implémenter des personnalisations de jetons
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/2-implement-token-customizations</sub>
-
-## Implémenter des personnalisations de jetons
-
-- 1 minute
 
 Vous pouvez spécifier la durée de vie d’un jeton émis par la plateforme d’identités Microsoft. En outre, vous pouvez définir des durées de vie de jetons pour toutes les applications de votre organisation, pour une application multilocataire (plusieurs organisations) ou pour un principal de service spécifique dans votre organisation. Dans Microsoft Entra ID, un objet de stratégie représente un ensemble de règles appliquées à des applications individuelles ou à toutes les applications d’une organisation. Chaque type de stratégie comporte une structure unique avec un ensemble de propriétés qui sont ensuite appliquées aux objets auxquels elles sont affectées.
 
@@ -519,16 +440,7 @@ Vous pouvez utiliser des revendications facultatives pour :
 
 Bien que les revendications facultatives soient prises en charge dans les jetons au format v1.0, v2.0 et SAML, elles révèlent leur pleine valeur surtout lors de la transition de v1.0 à v2.0. L’un des objectifs de la plateforme d’identités Microsoft est de réduire les tailles de jetons pour garantir des performances optimales par les clients. Ainsi, plusieurs revendications précédemment incluses dans les jetons d’accès et d’ID ne sont plus présentes dans les jetons v2.0 et doivent être demandées spécifiquement pour chaque application.
 
-![Capture d’écran de la configuration des rôles et revendications personnalisés pour le jeton S A M L émis lorsque vous configurez l’authentification.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/token-configuration-claims.png)
-
-
 ## Implémenter et configurer les paramètres de consentement
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/3-implement-configure-consent-settings</sub>
-
-## Implémenter et configurer les paramètres de consentement
-
-- 1 minute
 
 Vous pouvez intégrer vos applications à la plateforme d’identités Microsoft pour permettre aux utilisateurs de se connecter avec leur compte professionnel ou scolaire et d’accéder aux données de l’organisation pour fournir des expériences riches basées sur les données.
 
@@ -549,7 +461,7 @@ En choisissant les stratégies de consentement d’application qui s’appliquen
 - **Désactiver le consentement de l’utilisateur** : les utilisateurs ne peuvent pas accorder d’autorisations aux applications. Les utilisateurs peuvent continuer à se connecter aux applications auxquelles ils ont déjà consenti ou qui sont consentis par les administrateurs en leur nom, mais ils ne seront pas autorisés à consentir à de nouvelles autorisations ou à de nouvelles applications en leur propre nom. Seuls les utilisateurs qui ont reçu un rôle d’annuaire qui incluent l’autorisation d’accorder le consentement pourront donner leur consentement à de nouvelles applications.
 - **Les utilisateurs peuvent donner leur consentement aux applications à partir de [serveurs de publication vérifiés](https://learn.microsoft.com/fr-fr/azure/active-directory/develop/publisher-verification-overview)ou de votre organisation, mais uniquement pour les autorisations que vous choisissez** : tous les utilisateurs peuvent uniquement donner leur consentement aux applications publiées par un éditeur vérifié et des applications inscrites dans votre locataire. Les utilisateurs ne peuvent donner leur consentement qu’aux autorisations que vous avez classifiées en tant que `low impact`. Vous devez [classer les autorisations](https://learn.microsoft.com/fr-fr/azure/active-directory/manage-apps/configure-permission-classifications) pour choisir les autorisations auxquelles les utilisateurs sont autorisés à donner leur consentement.
 - **Les utilisateurs peuvent donner leur consentement à toutes les applications** : cette option permet à tous les utilisateurs de donner leur consentement à toute autorisation qui ne nécessite pas le consentement de l’administrateur pour une application.
-- **Stratégie de consentement d’application personnalisée** : pour plus d’options sur les conditions régissant le consentement des utilisateurs, vous pouvez [créer des stratégies de consentement d’application personnalisées](https://learn.microsoft.com/fr-fr/azure/active-directory/manage-apps/manage-app-consent-policies) et les configurer pour qu’elles s’appliquent au consentement de l’utilisateur. ![Capture d’écran de la boîte de dialogue Paramètres de consentement utilisateur dans le processus d’inscription des applications d’entreprise.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/set-for-all-users.png)
+- **Stratégie de consentement d’application personnalisée** : pour plus d’options sur les conditions régissant le consentement des utilisateurs, vous pouvez [créer des stratégies de consentement d’application personnalisées](https://learn.microsoft.com/fr-fr/azure/active-directory/manage-apps/manage-app-consent-policies) et les configurer pour qu’elles s’appliquent au consentement de l’utilisateur.
 
 ### Consentement progressif basé sur les risques
 
@@ -567,12 +479,6 @@ Les administrateurs doivent évaluer attentivement toutes les demandes de consen
 
 
 ## Intégrer des applications locales avec le proxy d’application Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/4-integrate-premises-apps-use-azure-active-directory-application-proxy</sub>
-
-## Intégrer des applications locales avec le proxy d’application Microsoft Entra
-
-- 4 minutes
 
 **Qu’est-ce que le Proxy d’application ?** Le Proxy d’application est une fonctionnalité de Microsoft Entra ID qui permet aux utilisateurs d’accéder à des applications web locales à partir d’un client distant. Le proxy d’application inclut à la fois le service proxy d’application qui s’exécute dans le cloud et le connecteur proxy d’application qui s’exécute sur un serveur local. Microsoft Entra ID, le service Proxy d'application et le connecteur Proxy d’application fonctionnent ensemble pour transmettre en toute sécurité le jeton de connexion utilisateur Microsoft Entra ID à l'application Web.
 
@@ -608,12 +514,6 @@ Lancer et interagir avec ce guide interactif pour en savoir plus sur l’activat
 
 ## Intégrer des applications SaaS personnalisées pour l’authentification unique
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/5-integrate-custom-saas-single-sign</sub>
-
-## Intégrer des applications SaaS personnalisées pour l’authentification unique
-
-- 20 minutes
-
 ![Diagramme de l’ID Microsoft Entra étant le fournisseur d’authentification unique pour les applications cloud. Les utilisateurs et les utilisateurs externes se connectent à l’ID Microsoft Entra, puis se connectent aux applications cloud.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/app-single-sign-on.png)
 
 - Vous pouvez utiliser Microsoft Entra ID comme système d’identité pour n’importe quelle application. De nombreuses applications sont déjà préconfigurées et peuvent être configurées avec un effort minimal. Ces applications préconfigurées sont publiées dans la galerie d’applications Microsoft Entra ID.
@@ -635,12 +535,6 @@ Si vous avez une application que vous souhaitez intégrer à l’ID Microsoft En
 
 
 ## Implémenter le provisionnement d’utilisateurs basé sur l’application
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/6-implement-application-user-provisioning</sub>
-
-## Implémenter le provisionnement d’utilisateurs basé sur l’application
-
-- 1 minute
 
 Dans Microsoft Entra ID, le terme approvisionnement d’applications fait référence à la création automatique d’identités et de rôles utilisateur dans les applications [SaaS](https://azure.microsoft.com/overview/what-is-saas/) (Cloud) auxquelles les utilisateurs ont besoin d’accéder. Outre la création d’identités utilisateur, l’approvisionnement automatique inclut la maintenance et la suppression des identités utilisateur au fur et à mesure que l’état ou les rôles changent. Un scénario courant consiste à approvisionner un utilisateur Microsoft Entra dans des applications telles que [Dropbox](https://learn.microsoft.com/fr-fr/azure/active-directory/saas-apps/dropboxforbusiness-provisioning-tutorial), [Salesforce](https://learn.microsoft.com/fr-fr/azure/active-directory/saas-apps/salesforce-provisioning-tutorial), [ServiceNow](https://learn.microsoft.com/fr-fr/azure/active-directory/saas-apps/servicenow-provisioning-tutorial), etc.
 
@@ -666,8 +560,6 @@ Les applications de la galerie Microsoft Entra ID prennent en charge l’approvi
 
 Dans la galerie Microsoft Entra ID, les applications qui prennent en charge l’approvisionnement automatique sont désignées par une icône **d’approvisionnement** .
 
-![Capture d’écran de l’icône Provisionnement dans la galerie d’applications. Sélectionnez cette option pour démarrer le processus d’approvisionnement.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/browse-gallery.png)
-
 Le mode d’approvisionnement pris en charge par une application est également visible sous l’onglet **Approvisionnement** une fois que vous avez ajouté l’application à vos **applications d’entreprise**.
 
 ### Système de gestion des identités inter-domaines
@@ -689,12 +581,6 @@ Le schéma d’objet utilisateur standard et les API REST pour la gestion défin
 
 ## Surveiller et auditer l’accès aux applications d’entreprise intégrées Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/7-monitor-audit-access-azure-active-directory-integrated-applications</sub>
-
-## Surveiller et auditer l’accès aux applications d’entreprise intégrées Microsoft Entra
-
-- 5 minutes
-
 Avec les rapports d’ID Microsoft Entra, vous pouvez obtenir les informations nécessaires pour déterminer la façon dont votre environnement fonctionne. Avec le rapport d’utilisation et d’insights, vous pouvez obtenir une vue centrée sur l’application de vos données de connexion et trouver des réponses aux questions suivantes :
 
 - Quelles sont les principales applications utilisées dans l’organisation ?
@@ -707,8 +593,6 @@ Avec les rapports d’ID Microsoft Entra, vous pouvez obtenir les informations n
 2. Sélectionnez le menu Identité, puis sélectionnez **Applications** et choisissez **Applications d’entreprise**.
 3. Dans la section **Activité** , sélectionnez **Utilisation et insights** pour ouvrir le rapport.
 
-![Capture d’écran de l’utilisation et des insights sélectionnés dans la section Activité. Utilisez le rapport pour obtenir des insights.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/main-menu.png)
-
 ### Utiliser le rapport
 
 Le rapport d’utilisation et d’insights affiche la liste des applications avec une ou plusieurs tentatives de connexion et vous permet de trier le nombre de connexions réussies, les connexions ayant échoué et le taux de réussite.
@@ -718,8 +602,6 @@ La sélection de **voir plus** en bas de la liste vous permet d’afficher davan
 Vous pouvez également définir le focus sur une application spécifique. Sélectionnez **afficher l’activité de connexion** pour afficher l’activité de connexion au fil du temps pour l’application et les erreurs principales.
 
 Lorsque vous sélectionnez un jour dans le graphique d’utilisation des applications, vous obtenez une liste détaillée des activités de connexion pour l’application.
-
-![Capture d’écran de l’utilisation et des informations pour l'activité des applications où vous pouvez sélectionner une plage et visualiser l'activité de connexion pour différentes applications.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/usage-and-insights-report.png)
 
 ### Journaux d’audit
 
@@ -734,19 +616,11 @@ Un journal d’audit a une vue de liste par défaut qui affiche :
 - la cible
 - l’initiateur/intervenant d’une activité (qui)
 
-![Capture d’écran d’un exemple de journaux d’audit. Vous pouvez utiliser les valeurs courantes indiquées ci-dessus, telles que la date et l’état.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/list-view.png)
-
 Vous pouvez personnaliser le mode Liste en cliquant sur **Colonnes** dans la barre d’outils.
-
-![Capture d’écran de la liste des colonnes d’audit disponibles. Configurez le rapport en fonction de vos besoins.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/columns.png)
 
 Cela vous permet d’afficher d’autres champs ou de supprimer des champs déjà affichés.
 
-![Capture d’écran des colonnes du journal d’audit. Certains des champs ont été sélectionnés pour Supprimer.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/column-select.png)
-
 Sélectionnez un élément dans la vue sous forme de liste pour obtenir des informations plus détaillées.
-
-![Capture d’écran des journaux d’audit, après la personnalisation. Un exemple d’élément de données est l’élément sélectionné.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/details.png)
 
 ### Journaux d’audit d’applications d’entreprise
 
@@ -760,16 +634,7 @@ Les rapports d’audit basés sur les applications vous permettent d’obtenir d
 
 Si vous souhaitez consulter les données d’audit associées à vos applications, vous pouvez trouver une vue filtrée sous **Journaux d’audit** dans la section **Activité** de l’écran **Applications d’entreprise**. Dans ce point d’entrée, **Applications d’entreprise** est présélectionné comme **Type d'application**.
 
-![Capture d’écran des applications d’entreprise. Le type d’application pour la création de rapports a été sélectionné.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/enterprise-applications.png)
-
-
 ## Créer et gérer des collections d’applications
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/8-create-manage-application-collections</sub>
-
-## Créer et gérer des collections d’applications
-
-- 3 minutes
 
 Vos utilisateurs peuvent utiliser le portail Mes applications pour afficher et démarrer les applications cloud auxquelles ils ont accès. Par défaut, toutes les applications auxquelles un utilisateur peut accéder sont répertoriées sur une seule page. Pour mieux organiser cette page pour vos utilisateurs, si vous disposez d’une licence Microsoft Entra ID Premium P1 ou P2, vous pouvez configurer des collections. Avec une collection, vous pouvez regrouper des applications associées (par exemple, par rôle de travail, tâche ou projet). Ensuite, ils s’affichent sous un onglet distinct pour faciliter l’utilisation. Une collection applique essentiellement un filtre aux applications auxquelles un utilisateur peut déjà accéder, de sorte que l’utilisateur voit uniquement ces applications dans la collection qui lui ont été affectées.
 
@@ -825,24 +690,12 @@ Procédez comme suit pour créer une collection.
 
 ## Contrôle des connaissances
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/9-knowledge-check</sub>
-
-## Contrôle des connaissances
-
-- 3 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Résumé et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/10-summary-resources</sub>
-
-## Résumé et ressources
-
-- 2 minutes
 
 Après avoir terminé ce module, vous pouvez :
 
@@ -868,16 +721,10 @@ Utilisez ces ressources pour en savoir plus.
 
 # Implémenter l’inscription d’application
 
-_48 min · https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/_
+_https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 Dans ce module, vous planifiez votre stratégie d’inscription d’application métier, implémentez les inscriptions d’applications et configurez les autorisations d’application.
 
@@ -897,12 +744,6 @@ Dans ce module, vous allez découvrir les points suivants :
 
 
 ## Planifier votre stratégie d’inscription d’application métier
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/2-plan-your-line-business-application-registration-strategy</sub>
-
-## Planifier votre stratégie d’inscription d’application métier
-
-- 2 minutes
 
 Cette unité explique pourquoi les applications s’intègrent à Microsoft Entra ID. Ajoutez des applications à Microsoft Entra ID pour appliquer un ou plusieurs des services qu'il fournit, notamment :
 
@@ -1073,22 +914,10 @@ La création d’excellentes applications multilocataires peut s’avérer diffi
 
 ## Implémenter l’inscription d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/3-implement-application-registration</sub>
-
-## Implémenter l’inscription d’application
-
-- 1 minute
-
 Chaque application pour laquelle vous souhaitez que la plateforme d’identités Microsoft effectue une gestion des identités et des accès (IAM) doit être inscrite. Inscrivez une application dans le portail Azure afin que la plateforme d’identités Microsoft puisse fournir des services d’authentification et d’autorisation pour votre application et ses utilisateurs. Qu’il s’agisse d’une application cliente, comme une application web ou mobile, ou d’une API web qui sauvegarde une application cliente, l’inscription elle établit une relation d’approbation entre votre application et le fournisseur d’identité, la plateforme d’identités Microsoft.
 
 
 ## Inscrire une application
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/4-register-application</sub>
-
-## Inscrire une application
-
-- 12 minutes
 
 L’inscription de votre application établit une relation d’approbation entre votre application et la plateforme d’identités Microsoft. L’approbation est unidirectionnelle : votre application approuve la plateforme d’identités Microsoft, et non le contraire.
 
@@ -1096,7 +925,7 @@ L’inscription de votre application établit une relation d’approbation entre
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le menu **Identité**, sous **Applications**, sélectionnez **Inscriptions d’applications.**
 4. Dans la page **Inscriptions d’applications**, dans le menu, sélectionnez **+ Nouvelle inscription**.
-5. Dans la boîte de dialogue **Inscrire une application**, inscrivez une application nommée **Demo App** en utilisant les valeurs par défaut. Vous n’avez pas besoin d’entrer l’URI de redirection. ![Capture de l’écran Inscrire une application avec le nom et les paramètres par défaut mis en évidence.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/register-application.png)
+5. Dans la boîte de dialogue **Inscrire une application**, inscrivez une application nommée **Demo App** en utilisant les valeurs par défaut. Vous n’avez pas besoin d’entrer l’URI de redirection.
 6. Une fois terminé, vous serez redirigé vers l’écran de **Demo app**.
 
 ### Ajouter un URI de redirection
@@ -1114,7 +943,7 @@ Pour configurer des paramètres d’application en fonction de la plateforme ou 
 1. Sélectionnez votre application dans les **Inscriptions d’applications** dans le Portail Azure.
 2. Sous **Gérer**, sélectionnez **Authentification**.
 3. Sous **Configurations de plateformes**, sélectionnez **Ajouter une plateforme**.
-4. Dans **Configurer des plateformes**, sélectionnez la vignette correspondant à votre type d’application (plateforme) pour configurer ses paramètres. ![Capture d’écran du volet Configuration de la plateforme dans le centre d’administration Microsoft Entra.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/configure-platforms.png)     **Plateforme** **Paramètres de configuration**     Le Web Entrez un **URI de redirection** pour votre application, qui est l’emplacement où la plateforme d’identités Microsoft redirige le client d’un utilisateur et envoie des jetons de sécurité après authentification. Sélectionnez cette plateforme pour les applications web standard qui s’exécutent sur un serveur.   Application monopage Entrez un **URI de redirection** pour votre application, qui est l’emplacement où la plateforme d’identités Microsoft redirige le client d’un utilisateur et envoie des jetons de sécurité après authentification. Sélectionnez cette plateforme si vous générez une application web côté client dans JavaScript ou avec un framework comme Angular, Vue.js, React.js ou Blazor WebAssembly.   iOS/macOS Entrez l'**ID d’ensemble** d'applications, qui se trouve dans XCode dans *Info.plist* ou « Paramètres du build ». Un URI de redirection est généré pour vous lorsque vous spécifiez un ID d’ensemble.   Android Entrez le **nom du package** d’application, que vous trouverez dans le fichier AndroidManifest.xml, puis générez et entrez le **code de hachage de la signature**. Un URI de redirection est généré pour vous lorsque vous spécifiez ces paramètres.   Applications de bureau et mobiles Sélectionnez l’un des **URI de redirection suggérés** ou spécifiez un **URI de redirection personnalisé**. Pour les applications de bureau, nous vous recommandons : https://login.microsoftonline.com/common/oauth2/nativeclientSélectionner cette plateforme pour les applications mobiles qui n’utilisent pas la dernière bibliothèque d’authentification Microsoft (MSAL) ou qui n’utilisent pas de répartiteur. Sélectionnez également cette plateforme pour les applications de bureau.
+4. Dans **Configurer des plateformes**, sélectionnez la vignette correspondant à votre type d’application (plateforme) pour configurer ses paramètres.      **Plateforme** **Paramètres de configuration**     Le Web Entrez un **URI de redirection** pour votre application, qui est l’emplacement où la plateforme d’identités Microsoft redirige le client d’un utilisateur et envoie des jetons de sécurité après authentification. Sélectionnez cette plateforme pour les applications web standard qui s’exécutent sur un serveur.   Application monopage Entrez un **URI de redirection** pour votre application, qui est l’emplacement où la plateforme d’identités Microsoft redirige le client d’un utilisateur et envoie des jetons de sécurité après authentification. Sélectionnez cette plateforme si vous générez une application web côté client dans JavaScript ou avec un framework comme Angular, Vue.js, React.js ou Blazor WebAssembly.   iOS/macOS Entrez l'**ID d’ensemble** d'applications, qui se trouve dans XCode dans *Info.plist* ou « Paramètres du build ». Un URI de redirection est généré pour vous lorsque vous spécifiez un ID d’ensemble.   Android Entrez le **nom du package** d’application, que vous trouverez dans le fichier AndroidManifest.xml, puis générez et entrez le **code de hachage de la signature**. Un URI de redirection est généré pour vous lorsque vous spécifiez ces paramètres.   Applications de bureau et mobiles Sélectionnez l’un des **URI de redirection suggérés** ou spécifiez un **URI de redirection personnalisé**. Pour les applications de bureau, nous vous recommandons : https://login.microsoftonline.com/common/oauth2/nativeclientSélectionner cette plateforme pour les applications mobiles qui n’utilisent pas la dernière bibliothèque d’authentification Microsoft (MSAL) ou qui n’utilisent pas de répartiteur. Sélectionnez également cette plateforme pour les applications de bureau.
 5. Sélectionnez **Configurer** pour effectuer la configuration de la plateforme.
 
 ### Ajouter des informations d’identification
@@ -1122,8 +951,6 @@ Pour configurer des paramètres d’application en fonction de la plateforme ou 
 Les informations d’identification sont utilisées par les applications clientes confidentielles qui accèdent à une API web. Les applications web, les autres API web ou les applications de type service et démon sont des exemples de clients confidentiels. Les informations d’identification permettent à votre application de s’authentifier de façon autonome, sans qu’aucune interaction utilisateur ne soit nécessaire au moment de l’exécution.
 
 Vous pouvez ajouter des certificats et des secrets clients (une chaîne) en tant qu’informations d’identification à votre inscription d’application cliente confidentielle.
-
-![Capture d’écran du Portail Azure montrant le volet Certificats et secrets dans une inscription d’application.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-05-app-reg-04-credentials.png)
 
 ### Ajouter un certificat
 
@@ -1159,7 +986,7 @@ Tout d’abord, effectuez les étapes suivantes pour créer un exemple d’éten
 1. Connectez-vous au portail Azure.
 2. Si vous avez accès à plusieurs locataires, utilisez le filtre **Répertoire + abonnement** dans le menu du haut pour sélectionner le locataire contenant l’inscription de votre application cliente.
 3. Sélectionnez **Microsoft Entra ID**, puis **Inscriptions d'applications**, puis sélectionnez l'inscription d'application de votre API.
-4. Sélectionnez **Exposer une API**, puis **Ajouter une étendue**. ![Capture d’écran du volet Exposer une API d’une inscription d’application dans le centre d’administration Microsoft Entra.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-02-expose-api.png)
+4. Sélectionnez **Exposer une API**, puis **Ajouter une étendue**.
 5. Vous êtes invité à définir un **URI d’ID d’application** si vous n’en avez pas encore configuré un. L’URI d’ID d’application, qui doit être globalement unique, fait office de préfixe pour les étendues que vous référencerez dans le code de votre API. Vous pouvez utiliser la valeur par défaut fournie, qui se présente sous la forme `api://`, ou spécifier un URI plus lisible comme `https://contoso.com/api`.
 6. Spécifiez ensuite les attributs de l’étendue dans le volet **Ajouter une étendue**. Pour cette procédure pas à pas, vous pouvez utiliser les exemples de valeurs ou spécifier les vôtres.    **Champ** **Description** **Exemple**     Nom de l’étendue Nom de votre étendue. Une convention d’affectation de noms d’étendue courante est resource.operation.constraint. Employees.Read.All   Qui peut donner son consentement L’administrateur détermine si cette étendue peut être consentie par des utilisateurs ou si le consentement d’un administrateur est nécessaire. Sélectionnez Administrateurs uniquement pour des autorisations à privilèges élevés. Administrateurs et utilisateurs   Nom d’affichage du consentement de l’administrateur Courte description de l’objectif de l’étendue que seuls les administrateurs verront. Accès en lecture seule aux enregistrements des employés   Description du consentement de l’administrateur Description plus détaillée de l’autorisation accordée par l’étendue que seuls les administrateurs verront. Autorisez l’application à avoir un accès en lecture seule à toutes les données de l’employé.   Nom d’affichage du consentement de l’utilisateur Courte description de l’objectif de l’étendue. Affichée aux utilisateurs uniquement si vous définissez *Qui peut donner son consentement sur Administrateurs et utilisateurs*. Accès en lecture seule à vos enregistrements sur les employés   Description du consentement de l’utilisateur Description plus détaillée de l’autorisation accordée par l’étendue. Affichée aux utilisateurs uniquement si vous définissez *Qui peut donner son consentement sur Administrateurs et utilisateurs*. Autorisez l’application à avoir un accès en lecture seule à vos données sur l’employé.
 7. Définissez l’**État** sur **Activé**, puis sélectionnez **Ajouter une étendue**.
@@ -1188,8 +1015,6 @@ Pour ajouter l’exemple d’étendue « Employees.Write.All », effectuez les �
 
 Si vous avez correctement ajouté les deux exemples d’étendues décrits dans les sections précédentes, ils apparaissent dans le volet **Exposer une API** de l’inscription d’application de votre API web, semblable à cette image :
 
-![Capture d’écran du volet Exposer une API montrant deux étendues exposées à attribuer dans l’inscription d’application.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-03-scopes-list.png)
-
 Comme indiqué dans l’image, la chaîne complète d’une étendue est la concaténation de l’**URI d’ID d’application** de votre API web et du **Nom de l’étendue**.
 
 Par exemple, si l’URI d’ID d’application de votre API web est `https://contoso.com/api` et si le nom de l’étendue est Employees.Read.All, l’étendue complète est :
@@ -1213,12 +1038,6 @@ Vous pouvez exposer des étendues supplémentaires ultérieurement si nécessair
 
 
 ## Configurer l’autorisation pour une application
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/5-configure-application-permission</sub>
-
-## Configurer l’autorisation pour une application
-
-- 1 minute
 
 Les administrateurs devront configurer les autorisations et le consentement dans le point de terminaison de la plateforme d’identités Microsoft.
 
@@ -1303,8 +1122,6 @@ Remarque
 
 À ce stade, les autorisations offline_access (« Maintenir l’accès aux données auxquelles vous avez accordé l’accès ») et user.read (« Connectez-vous et lisez votre profil ») sont automatiquement incluses dans le consentement initial d’une application. Ces autorisations sont généralement requises pour les fonctionnalités d’application appropriées ; offline_access donne à l’application l’accès aux jetons d’actualisation, critiques pour les applications natives et web, tandis que user.read donne accès à la sous-revendication, ce qui permet au client ou à l’application d’identifier correctement l’utilisateur au fil du temps et d’accéder aux informations utilisateur rudimentaires.
 
-![Capture d’écran de la boîte de dialogue consentement du compte professionnel. Les utilisateurs doivent accepter de poursuivre l’application.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/work-account-consent.png)
-
 Lorsque l’utilisateur approuve la demande d’autorisation, le consentement est enregistré et l’utilisateur n’a pas à consentir à nouveau sur les connexions suivantes à l’application.
 
 ### Demande de consentement pour un locataire entier
@@ -1313,12 +1130,6 @@ Souvent, lorsqu’une organisation achète une licence ou un abonnement pour une
 
 
 ## Accorder le consentement administrateur au niveau locataire à des applications
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/6-grant-tenant-wide-admin-consent-application</sub>
-
-## Accorder le consentement administrateur au niveau locataire à des applications
-
-- 5 minutes
 
 Pour les applications développées par votre organisation ou inscrites directement dans votre locataire Microsoft Entra, vous pouvez accorder le consentement administrateur au niveau locataire à partir de « Inscriptions d'applications » dans le Portail Azure.
 
@@ -1329,9 +1140,9 @@ Le fait d’accorder le consentement administrateur au niveau locataire à une a
 Pour accorder le consentement administrateur à l’échelle des locataires, vous devez vous connecter en tant qu’utilisateur autorisé à donner son consentement au nom de l’organisation. Cela inclut l’administrateur de rôle privilégié. Un utilisateur peut également être autorisé à accorder un consentement à l’échelle des locataires s’il reçoit un rôle d’annuaire personnalisé qui inclut l’autorisation d’accorder des autorisations aux applications.
 
 1. Dans un exercice précédent, vous avez créé une application nommée Demo App. Si nécessaire, dans Microsoft Azure, accédez à **l’ID Microsoft Entra** , puis **aux inscriptions** d’applications, puis à l’application de démonstration.
-2. Dans l’écran **de l’application de démonstration** , recherchez et copiez et enregistrez chaque **ID d’application (client)** et les valeurs **d’ID d’annuaire (locataire)** afin de pouvoir les utiliser ultérieurement.   ![Capture d’écran de l’écran de démonstration de l’application avec l’ID d’annuaire mis en surbrillance pour son utilisation dans votre inscription.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/demo-app-directory-id.png)
+2. Dans l’écran **de l’application de démonstration** , recherchez et copiez et enregistrez chaque **ID d’application (client)** et les valeurs **d’ID d’annuaire (locataire)** afin de pouvoir les utiliser ultérieurement.
 3. Dans le volet de navigation gauche, sous **Gérer**, sélectionnez **autorisations d’API**.
-4. Sous **Autorisations configurées**, sélectionnez **Accorder le consentement de l’administrateur**.   ![Capture d’écran montrant la page d’autorisation de l’API avec l’option Accorder le consentement administrateur pour Contoso mise en évidence.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/api-permissions-admin-consent.png)
+4. Sous **Autorisations configurées**, sélectionnez **Accorder le consentement de l’administrateur**.
 5. Passez en revue la boîte de dialogue, puis sélectionnez **Oui.**
 
 Avertissement
@@ -1344,7 +1155,7 @@ Vous pouvez accorder le consentement administrateur au niveau locataire via Appl
 
 1. Dans Microsoft Azure, accédez à **l’ID Microsoft Entra**, aux **applications d’entreprise**, puis **à l’application de démonstration**.
 2. Dans l’écran **De démonstration de l’application** , dans le volet de navigation gauche, sous **Sécurité,** sélectionnez **Autorisations.**
-3. Sous **Autorisations**, sélectionnez **Accorder le consentement de l’administrateur.**   ![Capture d’écran montrant la page des autorisations d’application de démonstration avec l’option Accorder le consentement administrateur pour Contoso mise en évidence.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/grant-admin-consent-enterprise-app.png)
+3. Sous **Autorisations**, sélectionnez **Accorder le consentement de l’administrateur.**
 4. Lorsque vous y êtes invité, connectez-vous à l’aide de votre compte Administrateur de rôle privilégié.
 5. Dans la boîte de dialogue **Autorisations demandées** , passez en revue les informations, puis sélectionnez **Accepter**.
 
@@ -1434,12 +1245,6 @@ scope=
 
 ## Implémenter l’autorisation d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/7-implement-application-authorization</sub>
-
-## Implémenter l’autorisation d’application
-
-- 2 minutes
-
 **Les rôles d’application** sont utilisés pour attribuer des autorisations aux utilisateurs. Vous définissez des rôles d’application à l’aide du portail Azure. Lorsqu'un utilisateur se connecte à l'application, Microsoft Entra ID émet une demande de rôles pour chaque rôle attribué à l'utilisateur individuellement et en fonction de son appartenance à un groupe.
 
 Il existe deux façons de déclarer des rôles d’application à l’aide du portail Azure :
@@ -1449,12 +1254,6 @@ Il existe deux façons de déclarer des rôles d’application à l’aide du po
 
 
 ## Exercice : ajouter des rôles à une application et recevoir des jetons
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/8-add-app-roles-application-receive-tokens</sub>
-
-## Exercice : ajouter des rôles à une application et recevoir des jetons
-
-- 10 minutes
 
 Vous pouvez déclarer des rôles d’application à l’aide de l’interface utilisateur des rôles d’application.
 
@@ -1467,7 +1266,7 @@ Pour créer un rôle d’application à l’aide de l’interface utilisateur du
 1. Connectez-vous au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) à l’aide d’un compte Administrateur.
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le menu **Identité** , sous **Applications,** sélectionnez **Inscriptions d’applications**.
-4. Sélectionnez **Rôles d’application**, puis **Créer un rôle d’application**.   ![Capture d’écran de l’Assistant Configuration des rôles d’application avec l'option 'Créer un rôle d'application' mise en surbrillance.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/app-roles-create-app-role.png)
+4. Sélectionnez **Rôles d’application**, puis **Créer un rôle d’application**.
 5. Dans le volet **Créer un rôle d’application**, dans la zone **Nom d’affichage**, entrez **Rédacteur de sondage**.
 6. Sous **Autoriser les types de membres**, sélectionnez **Utilisateur/Groupes**.
 7. Dans la zone **Valeur** , entrez **Survey.Create**.
@@ -1498,12 +1297,6 @@ Pour affecter des utilisateurs et des groupes à des rôles à l’aide du porta
 
 ## Gérer et surveiller l’application à l’aide de la gouvernance des applications
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/9-manage-monitor-application-app-governance</sub>
-
-## Gérer et surveiller l’application à l’aide de la gouvernance des applications
-
-- 1 minute
-
 Les cyberattaques sont devenues de plus en plus sophistiquées pour exploiter les applications que vous avez déployées dans vos infrastructures locales et cloud. Les cyberattaques établissent un point de départ pour l’escalade de privilèges, le mouvement latéral et l’exfiltration de vos données. Pour comprendre les risques potentiels et arrêter ces types d’attaques, vous devez obtenir une visibilité claire sur la posture de conformité des applications de votre organisation. Ensuite, vous devez rechercher quand une application présente des comportements anormales et pour répondre lorsque ces comportements présentent des risques pour votre environnement, vos données et vos utilisateurs.
 
 La fonctionnalité complémentaire de gouvernance des applications à Defender pour Cloud Apps est une fonctionnalité de sécurité et de gestion des stratégies conçue pour les applications compatibles OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph. La gouvernance des applications offre une visibilité, une correction et une gouvernance complètes sur la façon dont ces applications et leurs utilisateurs accèdent, utilisent et partagent vos données sensibles stockées dans Microsoft 365 par le biais d’insights actionnables et d’alertes et d’actions de stratégie automatisées.
@@ -1532,24 +1325,12 @@ Pour activer la synchronisation de la gouvernance des applications avec Defender
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/10-knowledge-check</sub>
-
-## Évaluation du module
-
-- 10 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Résumé et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-app-registration/11-summary-resources</sub>
-
-## Résumé et ressources
-
-- 3 minutes
 
 Maintenant que vous avez passé en revue ce module, vous pouvez :
 
@@ -1570,16 +1351,10 @@ Pour explorer avec plus de profondeur, utilisez ces ressources :
 
 # Inscrire des applications à l’aide de Microsoft Entra ID
 
-_23 min · https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/_
+_https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 L’enregistrement des applications dans Microsoft Entra ID est le processus permettant au système d’identité de reconnaître les applications utilisées. De cette façon, vous pouvez confirmer que l’utilisateur a accès à l’application et que l’application a accès à toutes les ressources nécessaires. Vous assurez la sécurité et la confidentialité des utilisateurs, des applications et de vos données.
 
@@ -1607,12 +1382,6 @@ L’objectif de ce module est de vous apprendre à inscrire votre application av
 
 
 ## Planifier une inscription d’application
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/2-plan-app-registration</sub>
-
-## Planifier une inscription d’application
-
-- 3 minutes
 
 L’inscription des applications dans Microsoft Entra ID consiste à faire en sorte que votre système d’identité sache quelles applications sont utilisées. Vous pouvez confirmer que l’utilisateur a accès à l’application et que l’application a accès à toutes les ressources nécessaires. L’inscription des applications garantit la sécurité et la confidentialité des utilisateurs, des applications et de vos données.
 
@@ -1678,12 +1447,6 @@ Le consentement est le processus d’octroi d’une autorisation de propriétair
 
 
 ## Explorer des objets d’application et des principaux de service
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/3-explore-application-objects-service-principals</sub>
-
-## Explorer des objets d’application et des principaux de service
-
-- 3 minutes
 
 Une fois l’inscription de l’application terminée, vous disposez d’une instance globale unique de l’application (l’objet d’application) qui se trouve dans votre locataire ou répertoire domestique. Vous disposez également d’un ID global unique pour votre application (l’ID d’application/client). Dans le Centre d’administration Microsoft Entra, vous pouvez ensuite ajouter des secrets ou des certificats et des périmètres pour que votre application fonctionne, personnaliser l'apparence de votre application dans la fenêtre de connexion.
 
@@ -1766,12 +1529,6 @@ Lorsque vous travaillez avec des identités de charge de travail (identités non
 
 ## Créer des inscriptions d’applications
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/4-create-app-registrations</sub>
-
-## Créer des inscriptions d’applications
-
-- 3 minutes
-
 Ce module démontre l'enregistrement d'une application dans Microsoft Entra ID à l'aide d'une application à page unique (SPA). Pour inscrire une application à page unique dans la plateforme d’identités Microsoft, procédez comme suit. Le processus est simple et ne nécessite que quelques informations.
 
 Note
@@ -1780,7 +1537,7 @@ Cet exemple utilise une application monopage, mais le processus d’inscription 
 
 ### Créer l'enregistrement de l'application
 
-![Capture d’écran du Centre d’administration Microsoft Entra avec la boîte de dialogue d’inscription d’application ouverte.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/entra-app-registration-40420a82-0148f11f-11175fff.png)  Les étapes sont basées sur le Centre d’administration Microsoft Entra :
+  Les étapes sont basées sur le Centre d’administration Microsoft Entra :
 
 1. Connectez-vous au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) avec les autorisations appropriées (au moins le rôle Développeur d’applications).
 2. Sous le menu **Identité** , développez le menu **Applications** .
@@ -1826,12 +1583,6 @@ Note
 
 ## Configurer l’authentification d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/5-configure-app-authentication</sub>
-
-## Configurer l’authentification d’application
-
-- 3 minutes
-
 Les paramètres de chaque type d’application, y compris les URI de redirection, sont configurés dans les **configurations de plateforme** dans le Centre d’administration Microsoft Entra. Certaines plateformes, telles que les applications **web** et **monopage**, vous obligent à spécifier manuellement un URI de redirection. Pour d’autres plateformes, telles que **mobile et bureau**, vous pouvez sélectionner parmi les URI de redirection générés pour vous lorsque vous configurez leurs autres paramètres.
 
 Important
@@ -1844,7 +1595,7 @@ Pour configurer les paramètres d’application en fonction de la plateforme ou 
 2. Sélectionnez votre application.
 3. Sous **Gérer**, sélectionnez **Authentification**.
 4. Sous **Configurations de la** plateforme, sélectionnez **Ajouter une plateforme**.
-5. Sous **Configurer des plateformes**, sélectionnez la vignette de votre type d’application (plateforme) pour configurer ses paramètres.   ![Capture d’écran de l’inscription de l’application, de l’authentification, de l’ajout d’un écran de sélection de plateforme.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-add-platform-a68858c7-7a4b2033-834d30fe.png)       **Plateforme**  **Paramètres de configuration**     Le Web Entrez un **URI de redirection** pour votre application web côté serveur. Cet URI est l’emplacement où la plateforme d’identités Microsoft redirige les utilisateurs et envoie des jetons de sécurité après l’authentification. Vous pouvez également configurer des URL de déconnexion de canal frontal et des paramètres de jeton.   Application à page unique Entrez un **URI de redirection** pour votre application JavaScript côté client (Angular, React, Vue.jsou Blazor WebAssembly). Utilise le flux de code d’autorisation avec la clé de preuve pour l’échange de code (PKCE) pour renforcer la sécurité. Vous pouvez également configurer des URL de déconnexion de front-channel.   iOS / macOS Entrez **l’ID de bundle d’application**. Recherchez-le dans **les paramètres de build** ou dans Xcode dans *Info.plist*. Un URI de redirection est généré automatiquement pour vous.   Android Entrez le **nom du package** d’application (trouvé dans *AndroidManifest.xml*) et générez le **hachage signature**. Un URI de redirection est généré automatiquement pour vous.   Applications de bureau et mobiles Sélectionnez les **URI de redirection** suggérés ou spécifiez **des URI de redirection personnalisés**. Pour les applications de bureau avec navigateur incorporé : `https://login.microsoftonline.com/common/oauth2/nativeclient`. Pour les applications de bureau avec navigateur système : `http://localhost`. Choisissez en fonction des exigences de votre bibliothèque d’authentification.
+5. Sous **Configurer des plateformes**, sélectionnez la vignette de votre type d’application (plateforme) pour configurer ses paramètres.          **Plateforme**  **Paramètres de configuration**     Le Web Entrez un **URI de redirection** pour votre application web côté serveur. Cet URI est l’emplacement où la plateforme d’identités Microsoft redirige les utilisateurs et envoie des jetons de sécurité après l’authentification. Vous pouvez également configurer des URL de déconnexion de canal frontal et des paramètres de jeton.   Application à page unique Entrez un **URI de redirection** pour votre application JavaScript côté client (Angular, React, Vue.jsou Blazor WebAssembly). Utilise le flux de code d’autorisation avec la clé de preuve pour l’échange de code (PKCE) pour renforcer la sécurité. Vous pouvez également configurer des URL de déconnexion de front-channel.   iOS / macOS Entrez **l’ID de bundle d’application**. Recherchez-le dans **les paramètres de build** ou dans Xcode dans *Info.plist*. Un URI de redirection est généré automatiquement pour vous.   Android Entrez le **nom du package** d’application (trouvé dans *AndroidManifest.xml*) et générez le **hachage signature**. Un URI de redirection est généré automatiquement pour vous.   Applications de bureau et mobiles Sélectionnez les **URI de redirection** suggérés ou spécifiez **des URI de redirection personnalisés**. Pour les applications de bureau avec navigateur incorporé : `https://login.microsoftonline.com/common/oauth2/nativeclient`. Pour les applications de bureau avec navigateur système : `http://localhost`. Choisissez en fonction des exigences de votre bibliothèque d’authentification.
 6. Sélectionnez **Configurer** pour terminer la configuration de la plateforme.
 
 Note
@@ -1872,12 +1623,6 @@ Note
 
 ## Configurez les autorisations d’API
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/6-configure-api-permissions</sub>
-
-## Configurez les autorisations d’API
-
-- 3 minutes
-
 La plateforme d’identités Microsoft met en œuvre le protocole d’autorisation OAuth 2.0. OAuth 2.0 est une méthode par le biais de laquelle une application externe peut accéder aux ressources hébergées sur le web pour le compte d’un utilisateur. Toute ressource hébergée sur le web qui s’intègre à la plateforme d’identités Microsoft a un identificateur de ressource ou **un URI d’ID d’application**. Il en va de même pour toutes les ressources externes intégrées à la plateforme d’identités Microsoft.
 
 Toutes ces ressources peuvent également définir un ensemble **d’autorisations** (également **appelées étendues**) qui peuvent être utilisées pour diviser les fonctionnalités de cette ressource en blocs plus petits. Par exemple, Microsoft Graph dispose des autorisations nécessaires pour effectuer les tâches suivantes (entre autres) :
@@ -1898,8 +1643,6 @@ Important
 
 Les autorisations déléguées fonctionnent pour le compte de l’utilisateur connecté, ce qui signifie que l’application ne peut accéder qu’aux données auxquelles l’utilisateur lui-même peut accéder. Cela fournit une couche de sécurité supplémentaire au-delà des autorisations de l’application.
 
-![Capture d’écran de l’écran de configuration des autorisations de l’API d’inscription d’application, Microsoft Graph a accordé l’autorisation user.read.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-add-api-permission-ae399591-ac6c0fd4-e2bdf3cb.png)
-
 1. Connectez-vous au **Centre d’administration Microsoft Entra**.
 2. Sélectionnez **Applications** , **inscriptions d’applications**, puis votre application cliente.
 3. Sélectionnez **des autorisations d’API** , puis **ajoutez une autorisation**>**Microsoft Graph**.
@@ -1916,12 +1659,6 @@ Il s’agit des étendues **OpenID Connect** de base couramment demandées par l
 
 ## Créer des rôles d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/7-create-app-roles</sub>
-
-## Créer des rôles d’application
-
-- 3 minutes
-
 **Les rôles d’application** sont une fonctionnalité puissante que vous pouvez et devez configurer lors de l’exécution d’une inscription d’application. Un rôle d’application est une revendication personnalisée qui peut être appliquée aux utilisateurs, groupes ou applications. La revendication apparaît dans le jeton généré lorsqu’un utilisateur s’authentifie pour une application. Les données de rôle d’application dans le jeton peuvent ensuite être utilisées dans l’application à des fins d’autorisation.
 
 **Principaux avantages :**
@@ -1931,8 +1668,6 @@ Il s’agit des étendues **OpenID Connect** de base couramment demandées par l
 - **Code simplifié** : votre application peut rechercher des revendications de rôle spécifiques au lieu de mapper des groupes à des autorisations
 
 Pour tirer parti de cette fonctionnalité, vous définissez des rôles d’application qui autorisent les utilisateurs et les groupes en tant que types de membres. Comme indiqué dans l’écran suivant, sélectionnez **Utilisateurs/Groupes** pour les **types de membres autorisés** lors de la création de rôles d’application.
-
-![Capture d’écran de la création de rôles d’application dans l’enregistrement d’application de Microsoft Entra ID.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-create-app-roles-78b223c5-a47f3b92-45495f05.png)
 
 ### Affichage des rôles d’application dans les jetons
 
@@ -1975,24 +1710,12 @@ Une fois que l’administrateur de l’application a créé des rôles d’appli
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/8-knowledge-check</sub>
-
-## Évaluation du module
-
-- 3 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Résumé
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/register-apps-use-microsoft-entra-id/9-summary</sub>
-
-## Résumé
-
-- 1 minute
 
 L’inscription d’applications dans Microsoft Entra ID est le processus fondamental d’établissement d’une configuration d’identité pour votre application au sein de la plateforme d’identités Microsoft. Ce processus garantit l’intégration sécurisée et assure un contrôle précis sur l’authentification et l’autorisation.
 

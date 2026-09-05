@@ -1,6 +1,6 @@
 # Planifier et implémenter une stratégie de gouvernance des identités
 
-> SC-300 — learning path 4/4 · 203 min
+> SC-300 — learning path 4/4
 > https://learn.microsoft.com/fr-fr/training/paths/plan-implement-identity-governance-strategy/
 
 ## Modules
@@ -11,21 +11,14 @@
 - **Surveiller et gérer Microsoft Entra ID** (9 units)
 
 
-
 ---
 
 # Planifier et implémenter la gestion des droits d’utilisation
 
-_55 min · https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/_
+_https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 De nouveaux utilisateurs ou utilisateurs externes qui rejoignent votre site ont besoin d’affectations d’accès pour Azure solutions. Lorsque les utilisateurs attendent des ressources, vous risquez de perdre leur engagement et leur productivité. Découvrez comment faire en sorte que les utilisateurs accèdent à votre site et à vos ressources. Dans ce module, vous allez apprendre à fournir l’accès approprié à vos utilisateurs, à créer des révisions pour cet accès et plus encore.
 
@@ -47,12 +40,6 @@ Aucun.
 
 
 ## Définir des packages d’accès
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/2-define-access-packages</sub>
-
-## Définir des packages d’accès
-
-- 11 minutes
 
 ### Pourquoi utiliser la gestion des droits d’utilisation ?
 
@@ -114,8 +101,6 @@ Avec un **package d’accès**, un administrateur ou un gestionnaire délégué 
 
 Les packages d’accès incluent également une ou plusieurs *stratégies*. Une stratégie définit les règles ou barrières mises en place pour l’affectation d’un package d’accès. Chaque stratégie peut être utilisée pour s’assurer que seuls les utilisateurs appropriés sont en mesure de demander l’accès, qu’il existe des approbateurs pour leur requête, et que leur accès à ces ressources est limité dans le temps et qu’il expirera s’il n’est pas renouvelé.
 
-![Capture d’écran d’une liste de packages d’accès et de stratégies qu’ils peuvent inclure.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/entitlement-management-overview-access-package.png)
-
 Dans chaque stratégie, un administrateur ou un gestionnaire de package d’accès définit les utilisateurs existants qui sont éligibles à la demande d’accès, le processus d’approbation ou de refus d’accès et la durée de l’accès d’un utilisateur.
 
 ### Quand utiliser des packages d’accès ?
@@ -135,12 +120,6 @@ Dans **le package d'accès 1**, il n’y a qu’un seul groupe en tant que resso
 
 
 ## Exercice : création et gestion d’un catalogue de ressources avec une gestion des droits d’utilisation de Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/3-create-manage-resource-catalog</sub>
-
-## Exercice : création et gestion d’un catalogue de ressources avec une gestion des droits d’utilisation de Microsoft Entra
-
-- 12 minutes
 
 ### Créer un compte Azure et ajouter des licences d’essai Microsoft Entra ID Premium P2
 
@@ -171,11 +150,11 @@ Un catalogue est un conteneur de ressources et de packages d’accès. Vous cré
 
 2. Dans l’écran d’accueil de **Microsoft Entra ID**, sélectionnez **Gouvernance des identités**.
 3. Dans le menu de gauche, sous **Gestion des droits d'utilisation**, sélectionnez **Catalogues**.
-4. Dans le menu supérieur, sélectionnez **+Nouveau catalogue**.   ![Capture d’écran de la page du catalogue de gouvernance des identités avec le menu Nouveau catalogue mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/identity-governance-catalog.png)
+4. Dans le menu supérieur, sélectionnez **+Nouveau catalogue**.
 5. Dans le volet Nouveau catalogue, dans la zone **Nom** , entrez **Marketing**.
 6. Dans la zone **Description**, entrez **Pour les utilisateurs du service marketing**. Les utilisateurs verront ces informations dans les détails d’un package d’accès.
 7. **Activé pour les utilisateurs externes** permet aux utilisateurs des répertoires externes sélectionnés d’être en mesure de demander des packages d’accès dans ce catalogue. Aucune modification ne sera apportée à ce paramètre.
-8. Sous **Activé, sélectionnez Non**. Vous pouvez choisir d’activer le catalogue pour un usage immédiat. Vous pouvez le désactiver si vous envisagez de l’indexer ou de le garder indisponible. Dans le cadre de cet exercice, il n’est pas nécessaire d’activer le catalogue.   ![Capture d’écran du volet Nouveau catalogue avec les options Nom, Description, Activé et Créer mises en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-catalog-marketing.png)
+8. Sous **Activé, sélectionnez Non**. Vous pouvez choisir d’activer le catalogue pour un usage immédiat. Vous pouvez le désactiver si vous envisagez de l’indexer ou de le garder indisponible. Dans le cadre de cet exercice, il n’est pas nécessaire d’activer le catalogue.
 9. Sélectionnez Créer.
 
 ### Ajouter des ressources à un catalogue
@@ -187,14 +166,14 @@ Pour inclure des ressources dans un package d’accès, les ressources doivent e
 3. Dans le volet de navigation de gauche, sous **Gérer**, sélectionnez **Ressources**.
 4. Dans le menu, sélectionnez + **Ajouter des ressources**.
 5. Dans l’écran Ajouter des ressources au catalogue, passez en revue les options disponibles.
-6. Vous n’avez peut-être pas sélectionné de ressources dans des groupes et des équipes, des applications ou des sites SharePoint. Pour ajouter une ressource au catalogue, sélectionnez une catégorie de ressources, puis sélectionnez une ressource dans cette catégorie. Pour cet exercice, vous pouvez choisir n’importe quelle ressource disponible.   ![Capture d’écran de Ajouter des ressources à un catalogue lors de la création d’un nouveau package de droits d’utilisation.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/catalog-add-resources.png)
+6. Vous n’avez peut-être pas sélectionné de ressources dans des groupes et des équipes, des applications ou des sites SharePoint. Pour ajouter une ressource au catalogue, sélectionnez une catégorie de ressources, puis sélectionnez une ressource dans cette catégorie. Pour cet exercice, vous pouvez choisir n’importe quelle ressource disponible.
 7. Lorsque vous avez terminé, sélectionnez **Ajouter**. Ces ressources peuvent désormais être incluses dans des packages d’accès du catalogue.
 
 ### Ajouter plus de propriétaires de catalogue
 
 L’utilisateur qui a créé un catalogue devient le premier propriétaire de catalogue. Pour déléguer la gestion d’un catalogue, vous ajoutez des utilisateurs au rôle de propriétaire de catalogue. Ainsi, les responsabilités de la gestion du catalogue sont mieux partagées.
 
-1. Dans le catalogue marketing, dans le menu de navigation de gauche, sélectionnez Rôles et administrateurs. Au besoin, dans le portail Azure, accédez à **Microsoft Entra ID**, **Gouvernance des identités**, puis **Catalogues** et sélectionnez **Marketing**.   ![Capture d’écran de la page Rôles et administrateurs du catalogue Marketing. Choisissez le propriétaire de votre catalogue.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/catalog-roles-admins.png)
+1. Dans le catalogue marketing, dans le menu de navigation de gauche, sélectionnez Rôles et administrateurs. Au besoin, dans le portail Azure, accédez à **Microsoft Entra ID**, **Gouvernance des identités**, puis **Catalogues** et sélectionnez **Marketing**.
 2. Dans le menu supérieur, passez en revue les rôles disponibles, puis sélectionnez **+ Ajouter un propriétaire**.
 3. Dans le volet Sélectionner un membre, sélectionnez votre compte administrateur, puis sélectionnez **Sélectionner**.
 4. Examinez le rôle qui vient d’être ajouté dans la liste rôles et administrateurs.
@@ -205,7 +184,7 @@ Vous pouvez modifier le nom et la description d’un catalogue. Les utilisateurs
 
 1. Dans l’écran Marketing, dans le volet de navigation de gauche, sélectionnez **Vue d’ensemble**.
 2. Dans le menu du haut, sélectionnez **Modifier**.
-3. Vérifiez le paramètre et, sous **Propriétés** dans le champ **Activé**, sélectionnez **Oui**.   ![Capture d’écran des propriétés activées. Mettez à jour le nom du package ou sa description.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-marketing-catalog.png)
+3. Vérifiez le paramètre et, sous **Propriétés** dans le champ **Activé**, sélectionnez **Oui**.
 4. Sélectionnez **Enregistrer**.
 
 ### Supprimer un catalogue
@@ -217,12 +196,6 @@ Vous pouvez supprimer un catalogue, mais seulement s’il ne contient pas de pac
 
 
 ## Configurer la gestion des droits d’utilisation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/4-configure-entitlement-management</sub>
-
-## Configurer la gestion des droits d’utilisation
-
-- 2 minutes
 
 Il existe plusieurs façons de configurer la gestion des droits d’utilisation pour votre organisation. Toutefois, si vous venez de commencer, il est utile de comprendre les scénarios courants pour les administrateurs, les propriétaires de catalogue, les gestionnaires de package d’accès, les approbateurs et les demandeurs.
 
@@ -262,15 +235,7 @@ Vous pouvez également gérer les packages d’accès, les catalogues, les strat
 
 ## Exercice : ajouter un rapport d’acceptation des conditions d’utilisation.
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/5-add-terms-of-use-acceptance-report</sub>
-
-## Exercice : ajouter un rapport d’acceptation des conditions d’utilisation.
-
-- 16 minutes
-
 ### Quelles sont les conditions d’utilisation de la gestion des droits d’utilisation
-
-![Capture d’écran des paramètres de conditions générales. Vous pouvez définir le nom, le nom d’affichage, un lien vers un document PDF avec les conditions et quelques paramètres pour faire en sorte que l’utilisateur voie les conditions d’utilisation.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-entitlement.png)
 
 Les politiques de conditions d'utilisation de Microsoft Entra utilisent le format PDF pour présenter le contenu. Le fichier PDF peut contenir n'importe quel contenu, tel que des documents de contrats existants, ce qui vous permet de collecter les accords des utilisateurs finaux lors de la connexion des utilisateurs. Pour prendre en charge les utilisateurs sur les appareils mobiles, il est recommandé d’utiliser une taille de police de 24 points dans le fichier PDF. N’oubliez pas que les documents PDF des conditions d’utilisation peuvent contenir un contrat de licence utilisateur final (CLUF). L’utilisateur doit l’accepter avant d’accéder aux ressources en fonction de ses paramètres de droit d’utilisation.
 
@@ -281,18 +246,18 @@ Une fois que vous avez finalisé votre document de conditions d’utilisation, u
 1. Connectez-vous au [Centre d'administration Microsoft Entra](https://entra.microsoft.com/) en tant qu'administrateur général.
 2. Ouvrez **Gouvernance des ID**.
 3. Dans le menu de navigation de gauche, ouvrez Gestion des droits d'utilisation, puis, sous **Conditions d'utilisation**, sélectionnez **Conditions d'utilisation**.
-4. Dans la page Conditions d’utilisation, dans le menu supérieur, sélectionnez **+ Nouvelles conditions**. ![Capture d’écran de la page Conditions d’utilisation avec Nouveaux termes mis en surbrillance. Mettez à jour les conditions d’utilisation en fonction des besoins.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use.png)
+4. Dans la page Conditions d’utilisation, dans le menu supérieur, sélectionnez **+ Nouvelles conditions**.
 5. Dans la zone **Nom**, entrez **Conditions d’utilisation du test**. Définissez le nom des conditions d’utilisation dans le Centre d’administration.
 6. Dans la zone **Nom d’affichage**, entrez **Conditions d’utilisation de contoso**. Le titre que les utilisateurs voient quand ils se connectent.
 7. Cochez la **case du document Conditions d'utilisation**, recherchez votre PDF de conditions d’utilisation finalisé et sélectionnez-le. Pour cet exercice, vous pouvez choisir n'importe quel PDF. Une autre option consiste à utiliser Microsoft Word pour créer un document de conditions d’utilisation, puis à l’enregistrer au format PDF.
 8. Sélectionnez la langue de votre document Conditions d’utilisation. L’option de langue vous permet de charger plusieurs conditions d’utilisation, chacune dans une langue différente. La version des conditions d’utilisation qu’un utilisateur final voit est basée sur ses préférences de navigateur.
 9. Pour obliger les utilisateurs finaux à afficher les conditions d’utilisation avant de les accepter, **définissez Exiger que les utilisateurs étendent les conditions d’utilisation** sur **On**.
 10. Pour exiger que les utilisateurs finaux acceptent vos conditions d’utilisation sur chaque appareil auquel ils accèdent, **définissez Exiger que les utilisateurs consentent sur chaque appareil** sur **Activé**. Les utilisateurs doivent installer d'autres applications si cette option est activée.  Avertissement Le consentement sur chaque appareil nécessite que les utilisateurs enregistrent chaque appareil avec l'ID Microsoft Entra avant d’obtenir l’accès.
-11. Si vous voulez faire expirer les consentements pour les conditions d’utilisation selon une planification, définissez **Faire expirer les consentements** sur **Activé**. Lorsque la valeur est on, deux paramètres de planification supplémentaires sont affichés. ![Capture d’écran des paramètres d’expiration des consentements pour définir la date de début, la fréquence et la durée.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use-create.png)
+11. Si vous voulez faire expirer les consentements pour les conditions d’utilisation selon une planification, définissez **Faire expirer les consentements** sur **Activé**. Lorsque la valeur est on, deux paramètres de planification supplémentaires sont affichés.
 12. Utilisez les paramètres **Expiration commençant le** et **Fréquence** pour spécifier la planification régissant l’expiration des conditions d’utilisation. Le tableau suivant présente deux exemples de paramètres et leur résultat :    **Expire à partir du** **Fréquence** **Résultat**     Date du jour Tous les mois À compter d’aujourd’hui, les utilisateurs doivent accepter les conditions d’utilisation et les accepter à nouveau chaque mois.   Date future Tous les mois À compter d’aujourd’hui, les utilisateurs doivent accepter les conditions d’utilisation. Quand la date future survient, les consentements expirent. Les utilisateurs doivent alors réaccepter les conditions d’utilisation chaque mois.    Par exemple, si vous définissez l’expiration à compter du **1er janvier** et la fréquence **mensuelle, voici** comment les expirations peuvent se produire pour deux utilisateurs :    **Utilisateur** **Date d’acceptation initiale** **Première date d’expiration** **Deuxième date d’expiration** **Troisième date d’expiration**     Alice 1er janvier 1er février 1er mars 1er avril   Bob 15 janvier 1er février 1er mars 1er avril
 13. Utilisez le paramètre **Durée avant nouvelle acceptation requise (jours)** pour spécifier le nombre de jours au bout duquel l’utilisateur doit réaccepter les conditions d’utilisation. Ce paramètre permet aux utilisateurs de suivre leur propre planification. Par exemple, si vous définissez la durée sur **30** jours, voici comment les expirations peuvent se produire pour deux utilisateurs :    **Utilisateur** **Date d’acceptation initiale** **Première date d’expiration** **Deuxième date d’expiration** **Troisième date d’expiration**     Alice 1er janvier 31 janvier 2 mars 1er avril   Bob 15 janvier 14 février 16 mars 15 avril
 14. Sous **Accès conditionnel**, sélectionnez **Stratégie personnalisée**.    **Modèle** **Description**     Stratégie personnalisée Sélectionnez les utilisateurs, les groupes et les applications auxquels les conditions d’utilisation s’appliquent.   Créer la stratégie d’accès conditionnel plus tard Les conditions d’utilisation apparaissent dans la liste des contrôles d’octroi lors de la création d’une stratégie d’accès conditionnel.
-15. Lorsque vous avez terminé, sélectionnez **Créer**. ![Capture d’écran de la page Nouvelles conditions d’utilisation avec les options configurées mises en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/new-terms-of-use-create.png)
+15. Lorsque vous avez terminé, sélectionnez **Créer**.
 16. Lorsque les conditions d’utilisation sont créées, vous êtes redirigé vers la page de stratégie d’accès conditionnel. Dans la page, dans la zone **Nom**, entrez **Appliquer les conditions d’utilisation**.
 17. Sous **Affectations**, sélectionnez **Utilisateurs et groupes**.
 18. Dans l’onglet inclure, activez la case à cocher **Utilisateurs et groupes**.
@@ -302,7 +267,7 @@ Une fois que vous avez finalisé votre document de conditions d’utilisation, u
 22. Sous **Contrôles d’accès**, sélectionnez **Accorder**.
 23. Dans le volet Grant, sélectionnez **Test des conditions d’utilisation**, puis sélectionnez **Sélectionner**.
 24. Sous **Activer une stratégie**, sélectionnez **Activé**.
-25. Lorsque vous avez terminé, sélectionnez **Créer**. ![Capture d’écran de la stratégie d’accès conditionnel avec les options de configuration mises en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-conditional-access-policy.png)
+25. Lorsque vous avez terminé, sélectionnez **Créer**.
 26. Si vous avez choisi d’utiliser votre propre compte, vous pouvez actualiser votre navigateur. Vous êtes invité à vous reconnecter. Lorsque vous vous connectez, vous devez à nouveau accepter les conditions d’utilisation.
 
 ### Afficher le rapport des personnes acceptées et refusées
@@ -310,24 +275,24 @@ Une fois que vous avez finalisé votre document de conditions d’utilisation, u
 L’écran de conditions d’utilisation indique le nombre d’utilisateurs qui ont accepté et refusé. Ce nombre, ainsi que le nom des personnes ayant accepté ou refusé, sont stockés pour toute la durée de vie des conditions d’utilisation.
 
 1. Dans Microsoft Azure, dans **Gouvernance des identités**, puis **Conditions d’utilisation**, recherchez vos conditions d’utilisation.
-2. Cliquez sur les chiffres situés sous **Accepté**et **Refusé** pour voir qui a accepté et qui a refusé les conditions d’utilisation. ![Capture d’écran des conditions d’utilisation avec les colonnes Acceptées et Refusées mises en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/terms-of-use-accept-decline.png)
-3. Dans cet exercice, vous pouvez ne pas avoir de conditions d'utilisation acceptées ou refusées. Dans l’exemple suivant, la valeur **acceptée** a été sélectionnée. Vous pouvez voir les informations des utilisateurs signalés pour ceux qui ont accepté les conditions d’utilisation. ![Capture d’écran du volet Consentements des conditions d’utilisation répertoriant les utilisateurs acceptés.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/accepted-terms-of-use.png)
-4. Pour afficher l’historique d’un utilisateur individuel, sélectionnez les points de suspension à droite du nom d’utilisateur, puis **Affichez l’historique**. ![Capture d’écran du menu contextuel Afficher l’historique pour un utilisateur. Examinez les actions de l’utilisateur avec le package.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/view-history-menu.png)
-5. Le volet Afficher l’historique présente l’historique des acceptations, des refus et des expirations. ![Capture d’écran du volet Afficher l’historique listant les acceptations, les refus et les délais d’expiration associés à un utilisateur.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/view-history-pane.png)
+2. Cliquez sur les chiffres situés sous **Accepté**et **Refusé** pour voir qui a accepté et qui a refusé les conditions d’utilisation.
+3. Dans cet exercice, vous pouvez ne pas avoir de conditions d'utilisation acceptées ou refusées. Dans l’exemple suivant, la valeur **acceptée** a été sélectionnée. Vous pouvez voir les informations des utilisateurs signalés pour ceux qui ont accepté les conditions d’utilisation.
+4. Pour afficher l’historique d’un utilisateur individuel, sélectionnez les points de suspension à droite du nom d’utilisateur, puis **Affichez l’historique**.
+5. Le volet Afficher l’historique présente l’historique des acceptations, des refus et des expirations.
 
 ### À quoi ressemblent les conditions d’utilisation pour les utilisateurs
 
-1. Une fois les conditions d’utilisation créées et appliquées, les utilisateurs qui sont concernés voient la page des conditions d’utilisation. ![Capture d’écran d’un exemple de conditions d’utilisation qui s’affiche lorsqu’un utilisateur se connecte au système et obtient son package de droits d’utilisation.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/user-terms-of-use.png)
-2. Les utilisateurs peuvent afficher les conditions d’utilisation et, si nécessaire, utiliser les boutons pour effectuer un zoom avant ou arrière. ![Capture d’écran de l’affichage des conditions d’utilisation avec des boutons de zoom, dans le cas où l’utilisateur a besoin de plus de détails dans l’affichage.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/zoom-buttons.png)
-3. Sur les appareils mobiles, les conditions d’utilisation s’affichent comme dans l’exemple suivant. ![Capture d’écran d’un exemple de conditions d’utilisation qui s’affichent lorsqu’un utilisateur se connecte sur un appareil mobile.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/mobile-terms-of-use.png)
+1. Une fois les conditions d’utilisation créées et appliquées, les utilisateurs qui sont concernés voient la page des conditions d’utilisation.
+2. Les utilisateurs peuvent afficher les conditions d’utilisation et, si nécessaire, utiliser les boutons pour effectuer un zoom avant ou arrière.
+3. Sur les appareils mobiles, les conditions d’utilisation s’affichent comme dans l’exemple suivant.
 
 #### Comment les utilisateurs peuvent consulter leurs conditions d’utilisation
 
 Les utilisateurs peuvent consulter et voir les conditions d’utilisation qu’ils ont acceptées à l’aide de la procédure suivante.
 
 1. Accédez à [https://myaccount.microsoft.com](https://myapps.microsoft.com/), puis connectez-vous à l’aide de votre compte d’utilisateur.
-2. Sur la page vue d’ensemble, sélectionnez AFFICHER LES PARAMÈTRES ET LA CONFIDENTIALITÉ. ![Capture d’écran d’une fenêtre contextuelle, qui indique Afficher les paramètres et la confidentialité. Ainsi, l’utilisateur voit les données utilisées et partagées.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/my-account-settings-privacy.png)
-3. Dans la page Paramètres et confidentialité, sélectionnez l’onglet **Confidentialité** . ![Capture d’écran de la page Paramètres et confidentialité avec la notification de l’organisation mise en évidence. Les conditions d’utilisation sont appliquées.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/my-account-settings-privacy-organization-notes.png)
+2. Sur la page vue d’ensemble, sélectionnez AFFICHER LES PARAMÈTRES ET LA CONFIDENTIALITÉ.
+3. Dans la page Paramètres et confidentialité, sélectionnez l’onglet **Confidentialité** .
 4. Sous **l’avis de l’organisation**, vous pouvez passer en revue les conditions d’utilisation que vous avez acceptées.
 
 ### Modifier les détails des conditions d’utilisation
@@ -339,7 +304,7 @@ Vous pouvez modifier certains détails des conditions d’utilisation, mais il n
 3. Dans le menu de navigation de gauche, sous **Conditions d’utilisation**, sélectionnez **Conditions d’utilisation**.
 4. Sélectionnez les conditions d’utilisation à modifier.
 5. Dans le menu du haut, sélectionnez **Modifier**.
-6. Dans le volet Modifier les conditions d’utilisation, vous pouvez changer les éléments suivants :  ![Capture d’écran des conditions d’utilisation de la gouvernance des identités en cours de modification. Le créateur peut définir des conditions spécifiques.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-terms-of-use.png)
+6. Dans le volet Modifier les conditions d’utilisation, vous pouvez changer les éléments suivants :
   - **Nom** : nom interne du toU qui n’est pas partagé avec les utilisateurs finaux.
   - **Nom d'affichage** – nom que les utilisateurs finaux peuvent voir lors de l’affichage des CGU.
   - **Exiger que les utilisateurs étendent les conditions d’utilisation** : défini **sur On** force l’utilisation définitive pour développer le document de conditions d’utilisation avant de l’accepter.
@@ -354,20 +319,14 @@ Vous pouvez être amené à mettre à jour le document de conditions d'utilisati
 
 1. Sélectionnez les conditions d’utilisation à modifier.
 2. Sélectionnez **Modifier les conditions**.
-3. Dans le tableau **Options de langue**, identifiez les conditions d’utilisation que vous souhaitez mettre à jour, puis, dans la colonne **Action**, sélectionnez **Mettre à jour**. ![Capture d’écran des conditions d’utilisation avec l’option de mise à jour mise en surbrillance. Apportez les modifications dont vous avez besoin.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/edit-terms-of-use-update.png)
+3. Dans le tableau **Options de langue**, identifiez les conditions d’utilisation que vous souhaitez mettre à jour, puis, dans la colonne **Action**, sélectionnez **Mettre à jour**.
 4. Dans le volet Mettre à jour les conditions d’utilisation de la version, vous pouvez télécharger une nouvelle version du document sur les conditions d’utilisation.
-5. Il existe également une option à bascule **Exiger une nouvelle acceptation** si vous souhaitez obliger les utilisateurs à accepter cette nouvelle version la prochaine fois qu’ils se connectent. Si vous n’avez pas besoin que vos utilisateurs réacceptent, leur consentement précédent reste actif. Seuls les nouveaux utilisateurs qui n’ont pas consenti avant ou dont le consentement expire voir la nouvelle version. ![Capture d’écran du volet de mise à jour de version des conditions d’utilisation avec chargement du fichier pdf requis et Demander une nouvelle acceptation en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/update-terms-of-use-version.png)
+5. Il existe également une option à bascule **Exiger une nouvelle acceptation** si vous souhaitez obliger les utilisateurs à accepter cette nouvelle version la prochaine fois qu’ils se connectent. Si vous n’avez pas besoin que vos utilisateurs réacceptent, leur consentement précédent reste actif. Seuls les nouveaux utilisateurs qui n’ont pas consenti avant ou dont le consentement expire voir la nouvelle version.
 6. Une fois que vous avez téléchargé votre nouveau pdf et que vous avez décidé de le réaccepter, sélectionnez **Ajouter**.
 7. Vous voyez maintenant la version la plus récente sous la colonne Document.
 
 
 ## Exercice : gérer le cycle de vie des utilisateurs externes avec la gouvernance des identités Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/6-manage-lifecycle-of-external-users</sub>
-
-## Exercice : gérer le cycle de vie des utilisateurs externes avec la gouvernance des identités Microsoft Entra
-
-- 4 minutes
 
 ### Gérer le cycle de vie des utilisateurs externes dans les paramètres de Gouvernance des ID Microsoft Entra
 
@@ -376,7 +335,7 @@ Vous pouvez sélectionner ce qui se passe lorsqu’un utilisateur externe, qui a
 1. Connectez-vous au Centre d’administration Microsoft Entra en tant qu’administrateur. Un compte avec l’administrateur d’utilisateurs est requis pour effectuer ces tâches.
 2. Ouvrez **Gouvernance des ID**.
 3. Dans le menu de navigation de gauche, sous **Gestion des droits d’utilisation**, sélectionnez **Paramètres**.
-4. Dans le menu du haut, sélectionnez **Modifier**. ![Capture d’écran de la page des paramètres de gouvernance des identités avec Gérer le cycle de vie des utilisateurs externes en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/manage-lifecycle-of-external-users.png)
+4. Dans le menu du haut, sélectionnez **Modifier**.
 5. Dans la section **Gérer le cycle de vie des utilisateurs externes**, sélectionnez les différents paramètres pour les utilisateurs externes. Si, lorsqu’un utilisateur externe perd sa dernière attribution aux packages d’accès, vous souhaitez l’empêcher de se connecter à cet annuaire, définissez **Empêcher l'utilisateur externe de se connecter à cet annuaire** sur **Oui**. Si un utilisateur est bloqué de se connecter à l’annuaire, l’utilisateur ne peut pas demander à nouveau le package d’accès ou demander un autre accès dans ce répertoire. Ne configurez pas leur blocage de la connexion s’ils devront ultérieurement demander l’accès à d’autres packages d’accès.
 6. Si, lorsqu’un utilisateur externe perd sa dernière attribution aux packages d’accès, vous souhaitez supprimer son compte d’utilisateur invité dans ce répertoire, définissez **Supprimer l’utilisateur externe**sur **Oui**.  Remarque La gestion des droits d'utilisation supprime uniquement les comptes qui ont été invités par l’intermédiaire de la gestion des droits d'utilisation. Un utilisateur est également bloqué pour se connecter. L’utilisateur est supprimé de ce répertoire même si cet utilisateur a été ajouté aux ressources de ce répertoire qui n’ont pas accès aux affectations de package. Si l’invité était présent dans ce répertoire avant de recevoir des attributions de package d’accès, il sera conservé. Toutefois, si l’invité a été invité par le biais d’une attribution de package d’accès, il sera toujours supprimé.
 7. Si vous souhaitez supprimer le compte d’utilisateur invité du répertoire, vous pouvez définir le nombre de jours avant sa suppression. Si vous souhaitez supprimer le compte d’utilisateur invité dès qu’il perd la dernière attribution à un package d’accès, définissez **Nombre de jours avant la suppression de l’utilisateur externe de cet annuaire** sur **0**.
@@ -384,12 +343,6 @@ Vous pouvez sélectionner ce qui se passe lorsqu’un utilisateur externe, qui a
 
 
 ## Configurer et gérer des organisations connectées
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/7-configure-manage-connected-organizations</sub>
-
-## Configurer et gérer des organisations connectées
-
-- 3 minutes
 
 Avec la gestion des droits d’utilisation Microsoft Entra, vous pouvez collaborer avec des personnes extérieures à votre organisation. Si vous collaborez fréquemment avec des utilisateurs dans un répertoire ou domaine externe, vous pouvez les ajouter en tant qu'organisation connectée. Cet article explique comment ajouter une organisation connectée afin de permettre aux utilisateurs extérieurs à votre organisation de demander des ressources dans votre annuaire.
 
@@ -431,12 +384,6 @@ Pour ajouter un répertoire ou un domaine externe en tant qu'organisation connec
 
 ## Passer en revue les droits par utilisateur
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/8-review-per-user-entitlements</sub>
-
-## Passer en revue les droits par utilisateur
-
-- 3 minutes
-
 Dans la gestion des droits d'utilisation Microsoft Entra, vous pouvez voir qui a été affecté aux packages d’accès, ainsi que leur stratégie et leur état. Si un package d’accès a une stratégie appropriée, vous pouvez également affecter directement l’utilisateur à un package d’accès. Cet article explique comment afficher, ajouter et supprimer des affectations pour des packages d’accès.
 
 ### Gouvernance
@@ -457,7 +404,7 @@ Procédez comme suit pour passer en revue les affectations :
 
 1. Dans le Centre d'administration Microsoft Entra, sélectionnez **Gouvernance des ID**, puis **gestion des droits d'utilisation**.
 2. Dans le menu de gauche, sélectionnez **Packages d’accès**, puis ouvrez le package d'accès.
-3. Sélectionnez Affectations pour afficher une liste des affectations actives.   ![Capture d’écran de la liste des utilisateurs dans le package d’accès, et de l’état de leur utilisation du droit.](https://learn.microsoft.com../../wwl-sci/plan-implement-entitlement-management/media/per-user-entitlement-review.png)
+3. Sélectionnez Affectations pour afficher une liste des affectations actives.
 4. Sélectionnez une affectation spécifique pour voir plus de détails.
 5. Pour afficher une liste des affectations dont les rôles de ressources n’étaient pas correctement provisionnés, sélectionnez le filtre d’état puis **Livraison en cours**.
   - Vous pouvez voir des détails supplémentaires sur les erreurs de remise en recherchant la requête correspondante de l'utilisateur sur la page Requêtes.
@@ -492,24 +439,12 @@ Si vous identifiez une affectation obsolète, prenez les mesures qui s’imposen
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/9-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Contrôle des connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-entitlement-management/10-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 Maintenant que vous avez passé en revue ce module, vous pouvez :
 
@@ -538,16 +473,10 @@ Utilisez ces ressources pour approfondir vos connaissances.
 
 # Planifier, implémenter et gérer la révision d’accès
 
-_50 min · https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/_
+_https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 À mesure que votre organisation se développe, la gestion de qui a accès à quoi devient difficile. Les employés modifient les rôles, les invités accumulent les autorisations dont ils n’ont plus besoin et les affectations privilégiées persistent longtemps après la fin d’un projet. Sans processus systématique d’examen et de recertification de l’accès, votre environnement accumule les risques et les résultats d’audit suivent rapidement.
 
@@ -577,12 +506,6 @@ Certaines fonctionnalités des révisions d’accès nécessitent un abonnement 
 
 
 ## Planifier des révisions d’accès
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/2-plan-for-access-reviews</sub>
-
-## Planifier des révisions d’accès
-
-- 18 minutes
 
 ### Qu’est-ce qu’une révision d’accès ?
 
@@ -862,12 +785,6 @@ Les licences Microsoft Entra ID Premium P2 ne sont pas requises pour les utilisa
 
 ## Créer des révisions d’accès pour les groupes et les applications
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/3-create-access-reviews-for-groups-apps</sub>
-
-## Créer des révisions d’accès pour les groupes et les applications
-
-- 12 minutes
-
 L’accès aux groupes et aux applications pour les employés et les invités change au fil du temps. Pour réduire le risque associé aux attributions d'accès obsolètes, les administrateurs peuvent utiliser Microsoft Entra ID pour créer des révisions d'accès pour les membres du groupe ou l'accès aux applications. Si vous devez régulièrement passer en revue les accès, vous pouvez aussi créer des révisions d’accès périodiques.
 
 ### Prérequis
@@ -879,14 +796,14 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
 
 1. Connectez-vous au [centre d’administration de Microsoft Entra](https://entra.microsoft.com) en tant qu’**administrateur de la gouvernance des identités** au minimum.
 2. Accédez à **Gouvernance d’ID**>**Revues d’accès**.
-3. Sélectionnez **Nouvelle révision d’accès** pour créer une révision d’accès.   ![Capture d’écran du volet Révisions d’accès dans Gouvernance des identités.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-reviews.png)
+3. Sélectionnez **Nouvelle révision d’accès** pour créer une révision d’accès.
 4. Dans l’écran du modèle Révisions d’accès, sélectionnez **Vérifier l’accès à un type de ressource**.
-5. Dans la zone **Sélectionner les éléments à réviser** , sélectionnez la ressource que vous souhaitez examiner.   ![Capture d’écran de la boîte de dialogue Créer une révision d’accès - Vérifier le nom et la description.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/select-what-review.png)
+5. Dans la zone **Sélectionner les éléments à réviser** , sélectionnez la ressource que vous souhaitez examiner.
 6. Si vous avez sélectionné **Teams + Groupes**, vous avez deux options :
   - **Tous les groupes Microsoft 365 avec des utilisateurs invités**. Sélectionnez cette option si vous souhaitez créer des révisions périodiques sur tous vos utilisateurs invités dans tous vos groupes Microsoft Teams et Microsoft 365 dans votre organisation. Vous pouvez choisir d’exclure certains groupes en sélectionnant **Sélectionner des groupes à exclure**.
-  - **Sélectionner les équipes + groupes**. Sélectionnez cette option si vous souhaitez spécifier un ensemble fini d’équipes ou de groupes à examiner. Une liste de groupes à choisir apparaît sur le côté de l’écran.   ![Capture d’écran des paramètres d’équipes et groupes. Choisissez vos groupes à exclure.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/teams-groups.png)     ![Capture d’écran des équipes et des groupes choisis dans l’interface utilisateur. Les éléments sélectionnés sont exclus.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/teams-groups-detailed.png)
+  - **Sélectionner les équipes + groupes**. Sélectionnez cette option si vous souhaitez spécifier un ensemble fini d’équipes ou de groupes à examiner. Une liste de groupes à choisir apparaît sur le côté de l’écran.
 
-7. Si vous avez sélectionné **Applications**, sélectionnez une ou plusieurs applications.   ![Capture d’écran de l’interface affichée si vous avez choisi des applications plutôt que des groupes.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/select-application-detailed.png)
+7. Si vous avez sélectionné **Applications**, sélectionnez une ou plusieurs applications.
 8. Sélectionnez une étendue pour la révision. Les options disponibles sont :  Si vous examinez l’appartenance au groupe, vous pouvez également cibler uniquement les utilisateurs inactifs. Dans la section **Étendue Utilisateurs** , sélectionnez **Utilisateurs inactifs (au niveau du locataire)** et spécifiez le nombre de jours inactifs (jusqu’à 730 jours).
   - **Utilisateurs invités uniquement**. Limite la révision aux utilisateurs invités Microsoft Entra B2B dans votre annuaire.
   - **Tout le monde**. Limite la révision à tous les objets utilisateur associés à la ressource.  Note Si vous avez sélectionné **tous les groupes Microsoft 365 avec des utilisateurs invités**, votre seule option consiste à passer en revue **les utilisateurs invités uniquement**.
@@ -898,9 +815,9 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
   - **Les utilisateurs passent en revue leur propre accès**
   - **Gestionnaires d’utilisateurs**. Si vous choisissez **Gestionnaires d’utilisateurs** ou **propriétaires de groupe**, vous pouvez également spécifier un réviseur de secours. Les réviseurs de secours sont sollicités pour effectuer une révision lorsque l’utilisateur ne dispose pas de responsable dans l’annuaire ou lorsque le groupe n’a pas de propriétaire.
 
-11. Dans la section **Spécifier la périodicité de la révision**, vous pouvez spécifier une fréquence **hebdomadaire, mensuelle, trimestrielle, semestrielle ou annuelle**. Vous spécifiez ensuite une **durée**, qui définit la durée pendant laquelle une révision est ouverte pour l’entrée des réviseurs. Par exemple, la durée maximale d’une révision mensuelle est de 27 jours, ce qui permet d’éviter le chevauchement des révisions. Vous pouvez raccourcir cette durée pour vous assurer que la contribution de vos réviseurs est prise en compte plus tôt. Ensuite, vous pouvez sélectionner une **date de début** et une **date de fin**.   ![Capture d’écran de la fréquence à laquelle la révision doit se produire. Les administrateurs doivent définir une chronologie raisonnable.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/frequency.png)
+11. Dans la section **Spécifier la périodicité de la révision**, vous pouvez spécifier une fréquence **hebdomadaire, mensuelle, trimestrielle, semestrielle ou annuelle**. Vous spécifiez ensuite une **durée**, qui définit la durée pendant laquelle une révision est ouverte pour l’entrée des réviseurs. Par exemple, la durée maximale d’une révision mensuelle est de 27 jours, ce qui permet d’éviter le chevauchement des révisions. Vous pouvez raccourcir cette durée pour vous assurer que la contribution de vos réviseurs est prise en compte plus tôt. Ensuite, vous pouvez sélectionner une **date de début** et une **date de fin**.
 12. Sélectionnez **Suivant : Paramètres**.
-13. Dans **Paramètres une fois l’opération terminée**, vous pouvez spécifier ce qui se produit une fois la révision terminée.   ![Capture d’écran de la commande Créer une révision d’accès - Paramètres de saisie semi-automatique.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/upon-completion-settings-new.png)   Si vous voulez supprimer automatiquement l’accès pour les utilisateurs qui ont été refusés, définissez **Appliquer automatiquement les résultats à la ressource** sur **Activer**. Si vous voulez appliquer manuellement les résultats quand la révision est terminée, cliquez sur **Désactiver**. Utilisez la liste **Si les réviseurs ne répondent pas** pour spécifier ce qui se passe pour les utilisateurs qui ne sont pas vérifiés par le réviseur au cours de la révision. Ce paramètre ne modifie pas les utilisateurs qui ont été examinés manuellement. Si la décision finale des réviseurs est Refuser, l’accès de l’utilisateur est supprimé.  Utilisez l’action à appliquer aux utilisateurs **invités** refusés pour spécifier ce qui arrive aux utilisateurs invités s’ils sont refusés.
+13. Dans **Paramètres une fois l’opération terminée**, vous pouvez spécifier ce qui se produit une fois la révision terminée.      Si vous voulez supprimer automatiquement l’accès pour les utilisateurs qui ont été refusés, définissez **Appliquer automatiquement les résultats à la ressource** sur **Activer**. Si vous voulez appliquer manuellement les résultats quand la révision est terminée, cliquez sur **Désactiver**. Utilisez la liste **Si les réviseurs ne répondent pas** pour spécifier ce qui se passe pour les utilisateurs qui ne sont pas vérifiés par le réviseur au cours de la révision. Ce paramètre ne modifie pas les utilisateurs qui ont été examinés manuellement. Si la décision finale des réviseurs est Refuser, l’accès de l’utilisateur est supprimé.  Utilisez l’action à appliquer aux utilisateurs **invités** refusés pour spécifier ce qui arrive aux utilisateurs invités s’ils sont refusés.
   - Aucune modification : laisser l’accès de l’utilisateur inchangé
   - Supprimer l’accès : supprimer l’accès de l’utilisateur
   - Approuver l’accès : approuver l’accès de l’utilisateur
@@ -910,7 +827,7 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
   - **Bloquer la connexion de l’utilisateur pendant 30 jours, puis supprimer l’utilisateur du locataire** empêche les utilisateurs refusés de se connecter au locataire, quel que soit leur accès à d’autres ressources. En cas d’erreur ou si un administrateur décide de réactiver l’accès d’un utilisateur, il peut le faire dans les 30 jours suivant la désactivation de l’utilisateur. S’il n’y a aucune action effectuée sur les comptes d’utilisateur désactivés, ils sont supprimés du locataire.
   - L’action à appliquer sur les utilisateurs invités refusés n’est pas configurable sur les révisions dont la portée est plus large que celle des utilisateurs invités. Elle n’est pas non plus configurable pour les révisions de tous les groupes Microsoft 365 avec des utilisateurs invités. Lorsqu’elle n’est pas configurable, l’option par défaut de suppression de l’appartenance de l’utilisateur à la ressource est utilisée sur les utilisateurs refusés.
 
-14. Dans la section **Activer les décideurs de révision** , choisissez si votre réviseur reçoit des recommandations pendant le processus de révision.   ![Capture d’écran des options Activer les aides à la décision. Proposer des recommandations aux réviseurs.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/helpers.png)
+14. Dans la section **Activer les décideurs de révision** , choisissez si votre réviseur reçoit des recommandations pendant le processus de révision.
 15. Dans la section **Paramètres avancés**, vous pouvez choisir les options suivantes :
   - Définissez **Justification obligatoire** sur **Activer** afin d’exiger que le réviseur indique un motif d’approbation.
   - Définissez **Notifications par e-mail** sur **Activer** pour que Microsoft Entra ID envoie des notifications par e-mail aux réviseurs quand une révision d’accès commence et aux administrateurs quand une révision s’achève.
@@ -920,13 +837,11 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
 
 16. Sélectionnez **Suivant : Vérifier + Créer**.
 17. Nommez la révision d’accès. Si vous le souhaitez, vous pouvez fournir une description de cette révision. Le nom et la description sont montrés aux évaluateurs.
-18. Vérifiez les informations, puis sélectionnez **Créer**.   ![Capture d’écran de la page de création d’une révision. Vue d’ensemble d’une révision d’accès finalisée.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/create-review.png)
+18. Vérifiez les informations, puis sélectionnez **Créer**.
 
 ### Démarrer la révision d’accès
 
 Une fois que vous avez spécifié les paramètres d’une révision d’accès, sélectionnez **Démarrer**. La révision d’accès apparaît dans votre liste avec un indicateur de son état.
-
-![Capture d’écran de la liste des révisions d’accès et de leur état. Passez en revue l’état de chaque élément.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-reviews-list.png)
 
 Par défaut, Microsoft Entra ID envoie un e-mail aux réviseurs peu de temps après le début de la révision. Si vous choisissez de ne pas laisser Microsoft Entra ID envoyer l'e-mail, assurez-vous d'informer les réviseurs qu'une révision d'accès les attend. Vous pouvez leur montrer les instructions relatives à la révision d’accès aux groupes ou aux applications. Si votre révision s’adresse à des invités qui doivent réviser leur propre accès, donnez-leur des instructions sur la méthode à suivre pour réviser leur accès à des groupes ou à des applications.
 
@@ -954,12 +869,6 @@ Vous pouvez également créer des révisions d’accès avec des API. Ce que vou
 
 ## Créer et configurer des révisions d’accès par programmation
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/4-create-configure-access-review-programs</sub>
-
-## Créer et configurer des révisions d’accès par programmation
-
-- 3 minutes
-
 Les révisions d'accès Microsoft Entra sont une caractéristique de la gouvernance des ID Microsoft Entra. Les révisions d’accès permettent de s’assurer que les bonnes identités ont les droits d’accès pour les ressources appropriées dans l’organisation. Les révisions d'accès peuvent être implémentées par programme à l'aide de l'API des révisions d'accès dans Microsoft Graph.
 
 Pour créer une révision d’accès à l’aide de Graph, appelez l’API Graph pour créer une définition de planification de révision d’accès. L’appelant doit être un utilisateur disposant au moins du rôle **Administrateur de gouvernance** des identités avec une application disposant de l’autorisation déléguée `AccessReview.ReadWrite.All` ou d’une application disposant de l’autorisation `AccessReview.ReadWrite.All` d’application.
@@ -985,19 +894,13 @@ Ce module d’apprentissage ne recrée pas la méthode pas à pas pour utiliser 
 
 ## Surveiller les résultats de la révision d’accès
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/5-monitor-findings</sub>
-
-## Surveiller les résultats de la révision d’accès
-
-- 4 minutes
-
 Microsoft Entra ID simplifie la manière dont les entreprises gèrent l’accès aux groupes et aux applications avec les révisions d’accès Microsoft Entra. D’autres services Microsoft en ligne, comme Microsoft 365, peuvent également être gérés avec des révisions d’accès Microsoft Entra.
 
 ### Effectuer une révision d’accès à l’aide de Mes applications
 
 Vous pouvez démarrer le processus de révision d’accès à partir de l’e-mail de notification ou en accédant directement au site.
 
-1. **E-mail** :   ![Capture d’écran représentant un exemple d’e-mail de Microsoft pour la révision d’accès à un groupe.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-review-email.png)
+1. **E-mail** :
 2. Sélectionnez le lien **Démarrer la révision** pour ouvrir la révision d’accès.
 3. **Si vous n’avez pas reçu l’e-mail**, vous trouverez les révisions d’accès en attente en procédant comme suit :
   1. Connectez-vous au portail My Access à [https://myaccess.microsoft.com](https://myaccess.microsoft.com/).
@@ -1040,12 +943,6 @@ Pour accepter les recommandations :
 
 ## Automatiser les tâches de gestion de la révision d’accès
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/6-automate-management-tasks</sub>
-
-## Automatiser les tâches de gestion de la révision d’accès
-
-- 2 minutes
-
 Vous pouvez choisir d’avoir la suppression d’accès automatisée en définissant l’application automatique des **résultats à la ressource** pour **activer**. Une fois la révision terminée et terminée, les utilisateurs non approuvés par le réviseur sont automatiquement supprimés de la ressource ou conservés avec un accès continu. La suppression d’accès peut signifier la suppression de l’appartenance à leur groupe, de leur assignation d'application ou la révocation de leur droit d’accéder à un rôle privilégié.
 
 ### Accepter les recommandations
@@ -1072,12 +969,6 @@ Lorsque vous créez une révision d’accès pour des groupes ou des application
 
 ## Configurer des révisions d’accès récurrentes
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/7-configure-recurring-access-reviews</sub>
-
-## Configurer des révisions d’accès récurrentes
-
-- 2 minutes
-
 Les révisions d’accès peuvent être définies de manière récurrente. Nommez votre révision d’accès, sélectionnez une date de début, une fréquence, une durée et spécifiez quand la série se termine : vous pouvez choisir **Jamais**, une date de fin spécifique ou un nombre défini d’occurrences. Les réviseurs sont avertis au début de chaque révision. Les réviseurs peuvent approuver ou refuser l’accès avec une interface conviviale et avec l’aide de recommandations intelligentes.
 
 Pourquoi les révisions d’accès périodiques sont-elles importantes ? En raison de la gestion du cycle de vie. Tout ce qui commence doit avoir une date de fin. Entre le début et la fin, nous devons vérifier que les autorisations sont bien ce qu’elles doivent être. Ni trop, ni trop peu. Nous demandons aussi régulièrement à un propriétaire si tout est bien toujours comme il le souhaite. Avec la périodicité, nous nous assurons que cette vérification est effectuée régulièrement.
@@ -1087,19 +978,11 @@ Une fois qu’une série de révisions périodiques démarre, vous pouvez mettre
 
 ## Explorer l’agent de révision d’accès dans Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/7a-access-review-agent</sub>
-
-## Explorer l’agent de révision d’accès dans Microsoft Entra
-
-- 5 minutes
-
 Historiquement, les révisions d’accès sont un processus manuel qui peut entraîner des erreurs et des erreurs potentielles. Les réviseurs n’ont pas toujours accès aux enregistrements et aux données pour prendre des décisions de révision et n’ont souvent pas suffisamment de temps pour terminer la révision. Que se passe-t-il s’il y avait un agent qui pouvait aider à la tâche ?
 
 ### Agent de révision d'accès dans Microsoft Entra
 
 Permettre à vos réviseurs de prendre des décisions d’accès rapides et précises. L’agent de révision d’accès avec Microsoft Entra ID Governance fournit des insights et des recommandations afin que les réviseurs puissent effectuer leur travail par le biais d’une conversation simple, directement dans Microsoft Teams.
-
-![Capture d’écran montrant l’écran de configuration de l’agent de révision d’accès.](https://learn.microsoft.com../../wwl-sci/plan-implement-manage-access-review/media/access-review-agent-identity.png)
 
 #### Fonctionnement de l’agent
 
@@ -1160,24 +1043,12 @@ Pour mettre à jour une révision d’accès existante pour l’agent de révisi
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/8-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access-review/9-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 Une fois ce module terminé, vous pouvez :
 
@@ -1207,16 +1078,10 @@ Utilisez ces ressources pour approfondir vos connaissances.
 
 # Planifier et implémenter un accès privilégié
 
-_62 min · https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/_
+_https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 Pour renforcer la sécurité de votre solution de Azure, vous devez vous assurer que les rôles d’administration sont protégés et gérés. Découvrez comment utiliser Privileged Identity Management (PIM) pour protéger vos données et ressources. Dans ce module, vous allez apprendre à créer une stratégie d’accès. Ensuite, vous configurez et affectez des rôles et des ressources PIM, et gérez les comptes d’accès d’urgence.
 
@@ -1241,12 +1106,6 @@ Aucun
 
 
 ## Définir une stratégie d’accès privilégié pour les utilisateurs administratifs
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/2-define-strategy-for-administrative-users</sub>
-
-## Définir une stratégie d’accès privilégié pour les utilisateurs administratifs
-
-- 10 minutes
 
 ### Qu’est-ce que Privileged Identity Management (PIM) ?
 
@@ -1317,13 +1176,11 @@ Pour les rôles Microsoft Entra, il est courant pour les organisations d’attri
 Suivez ces étapes pour implémenter le principe de privilège minimum pour vos rôles Microsoft Entra.
 
 1. Comprendre la granularité des rôles en lisant et en comprenant les rôles d’administrateur Microsoft Entra disponibles. Vous et votre équipe devez également référencer des rôles d’administrateur par tâche d’identité dans l’ID Microsoft Entra, ce qui explique le rôle le moins privilégié pour des tâches spécifiques.
-2. Répertoriez qui a des rôles privilégiés dans votre organisation. Vous pouvez utiliser PIM Discovery et Insights (version préliminaire) pour réduire votre exposition. ![Capture d’écran de la page Découverte et insights pour réduire l’exposition via des rôles privilégiés.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/new-preview-page-6eed0acb.png)
+2. Répertoriez qui a des rôles privilégiés dans votre organisation. Vous pouvez utiliser PIM Discovery et Insights (version préliminaire) pour réduire votre exposition.
 3. Pour tous les administrateurs généraux de votre organisation, découvrez pourquoi ils ont besoin du rôle. Supprimez-les ensuite du rôle Administrateur général et attribuez des rôles intégrés ou des rôles personnalisés avec des privilèges inférieurs à l’intérieur de l’ID Microsoft Entra. Pour l’instant, Microsoft n’a qu’environ 10 administrateurs disposant du rôle Administrateur général.
 4. Pour tous les autres rôles Microsoft Entra, passez en revue la liste des affectations, identifiez les administrateurs qui n’ont plus besoin du rôle et supprimez-les de leurs attributions.
 
 Pour automatiser les deux dernières étapes, vous pouvez utiliser les révisions d’accès dans PIM. En suivant les étapes décrites dans « Démarrer une révision d’accès pour les rôles Microsoft Entra dans Privileged Identity Management », vous pouvez configurer une révision d’accès pour chaque rôle d’ID Microsoft Entra qui a un ou plusieurs membres.
-
-![Capture d’écran du volet Créer une révision d’accès pour les rôles Microsoft Entra, dans Privileged Identity Manager.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/create-access-review-ed0391c1.png)
 
 Définissez les réviseurs sur **Membres (soi-même)**. Tous les utilisateurs du rôle recevront un e-mail leur demandant de confirmer qu’ils ont besoin de l’accès. En outre, activez **Exiger une raison d’approbation** dans les paramètres avancés afin que les utilisateurs doivent indiquer pourquoi ils ont besoin du rôle. En fonction de ces informations, vous pouvez supprimer les utilisateurs des rôles inutiles ou les déléguer à des rôles d’administrateur plus précis.
 
@@ -1475,12 +1332,6 @@ Le tableau suivant décrit chacun des paramètres.
 
 ## Configurer Privileged Identity Management pour les ressources Azure
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/3-configure-privileged-identity-management-for-azure-resources</sub>
-
-## Configurer Privileged Identity Management pour les ressources Azure
-
-- 2 minutes
-
 À l’aide de Microsoft Entra PIM, vous pouvez améliorer la protection de vos ressources Azure. Ceci est utile pour :
 
 - Organisations qui utilisent déjà PIM pour protéger les rôles Microsoft Entra.
@@ -1492,22 +1343,16 @@ Lorsque vous configurez PIM pour les ressources Azure pour la première fois, vo
 
 1. Connectez-vous au Centre d’administration Microsoft Entra.
 2. Ouvrez **Microsoft Entra Privileged Identity Management**.
-3. Si c’est la première fois que vous utilisez PIM pour des **ressources Azure**, vous voyez s’afficher un volet **Découvrir les ressources**. ![Capture d’écran de la page ressources Azure de Privileged Identity Management.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discover-resources-first-run-00821624.png)
-4. Si un autre administrateur de votre organisation gère déjà des ressources Azure dans PIM, vous verrez une liste des ressources actuellement gérées. ![Capture d’écran des filtres de ressources dans la page ressources Azure. Ressources actuellement gérées.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discover-resources-c841472f.png)
-5. Sélectionnez **Découvrir des ressources** pour lancer l'expérience de découverte. ![Capture d’écran de la page de ressources de découverte dans les ressources Azure. Recherchez des ressources.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-pane-6bf54db9.png)
+3. Si c’est la première fois que vous utilisez PIM pour des **ressources Azure**, vous voyez s’afficher un volet **Découvrir les ressources**.
+4. Si un autre administrateur de votre organisation gère déjà des ressources Azure dans PIM, vous verrez une liste des ressources actuellement gérées.
+5. Sélectionnez **Découvrir des ressources** pour lancer l'expérience de découverte.
 6. Dans la page **Découverte**, utilisez **filtre d’état des ressources** et sélectionnez le type de ressource pour filtrer les groupes d’administration ou les abonnements auxquels vous avez l’autorisation d’écriture. Le plus simple est probablement de commencer avec **Tous**. Vous pouvez rechercher et sélectionner des ressources de groupe d’administration ou d’abonnement à gérer dans PIM. Lorsque vous gérez un groupe d’administration ou un abonnement dans PIM, vous pouvez également gérer ses ressources enfants.  Remarque Lorsque vous ajoutez une nouvelle ressource Azure enfant à un groupe d’administration géré par PIM, vous pouvez mettre la ressource enfant sous gestion en la recherchant dans PIM.
 7. Sélectionnez les ressources non managées que vous souhaitez gérer.
-8. Sélectionnez **Gérer la ressource** pour commencer à gérer les ressources sélectionnées. ![Capture d’écran de la page de gestion des ressources de découverte dans les ressources Azure.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-manage-resource-d33f42f8.png)
-9. Si vous voyez un message pour confirmer l’intégration de la ressource sélectionnée pour la gestion, sélectionnez **Oui** ![Capture d’écran d’un message pour confirmer l’intégration de la ressource sélectionnée pour la gestion.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/discovery-manage-resource-message-6e433e30.png)
+8. Sélectionnez **Gérer la ressource** pour commencer à gérer les ressources sélectionnées.
+9. Si vous voyez un message pour confirmer l’intégration de la ressource sélectionnée pour la gestion, sélectionnez **Oui**
 
 
 ## Exercice de configuration de Privileged Identity Management pour les rôles Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/4-configure-privileged-identity-management-for-azure-active-directory-roles</sub>
-
-## Exercice de configuration de Privileged Identity Management pour les rôles Microsoft Entra
-
-- 10 minutes
 
 ### Configurer les paramètres de rôle Microsoft Entra
 
@@ -1518,7 +1363,7 @@ Suivez ces étapes pour ouvrir les paramètres d’un rôle Microsoft Entra.
 1. Connectez-vous au centre d’administration Microsoft Entra  en tant qu’administrateur client.
 2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
 3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Microsoft Entra.**
-4. Dans la page Démarrage rapide, dans le volet de navigation gauche, sélectionnez **Paramètres.** ![Capture d’écran de la page Rôles Microsoft Entra avec le menu Paramètres mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-roles-settings-bfd346da.png)
+4. Dans la page Démarrage rapide, dans le volet de navigation gauche, sélectionnez **Paramètres.**
 5. Passez en revue la liste des rôles, puis, dans la **Recherche par nom de rôle**, entrez **Compliance**.
 6. Dans les résultats, sélectionnez **Administrateur de conformité**.
 7. Passez en revue les informations détaillées sur les paramètres de rôle.
@@ -1527,20 +1372,14 @@ Suivez ces étapes pour ouvrir les paramètres d’un rôle Microsoft Entra.
 
 Si vous définissez plusieurs approbateurs, l’approbation se termine dès qu’un d’eux approuve ou refuse. Vous ne pouvez pas exiger l’approbation d’au moins deux utilisateurs. Pour exiger l’approbation d’activer un rôle, procédez comme suit.
 
-1. Dans la page détails du paramètre de rôle, dans le menu supérieur, sélectionnez **Modifier**. ![Capture d’écran de la partie supérieure des détails du paramètre de rôle -Compliance page Administrateur avec Modification mise en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-edit-compliance-role-a95707aa.png)
+1. Dans la page détails du paramètre de rôle, dans le menu supérieur, sélectionnez **Modifier**.
 2. Dans le paramètre Modifier le rôle – Écran Administrateur de conformité, cochez la case **Exiger l’approbation pour activer**.
 3. Sélectionnez **Sélectionner des approbateurs**.
-4. Dans le volet Sélectionner un membre, sélectionnez votre compte d’administrateur, puis sélectionnez **Sélectionner**. ![Capture d’écran de la boîte de dialogue Modifier les paramètres du rôle et sélectionner un volet membre avec les membres sélectionnés mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-add-approver-b44ec980.png)
+4. Dans le volet Sélectionner un membre, sélectionnez votre compte d’administrateur, puis sélectionnez **Sélectionner**.
 5. Une fois que vous avez configuré les paramètres de rôle, sélectionnez **Mettre à jour** pour enregistrer vos modifications.
 
 
 ## Exercice d’attribution de rôles Microsoft Entra dans Privileged Identity Management
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/5-assign-azure-active-directory-roles-privileged-identity-management</sub>
-
-## Exercice d’attribution de rôles Microsoft Entra dans Privileged Identity Management
-
-- 10 minutes
 
 Avec l’ID Microsoft Entra, un administrateur général peut effectuer des attributions de rôle d’administrateur Microsoft Entra permanentes. Ces attributions de rôles peuvent être créées à l’aide du portail Azure ou à l’aide de commandes PowerShell.
 
@@ -1554,11 +1393,11 @@ Suivez ces étapes pour rendre un utilisateur éligible à un rôle d’administ
 2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
 3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Microsoft Entra.**
 4. Sur la page Démarrage rapide, dans le volet de navigation de gauche, sélectionnez **Rôles.**
-5. Dans le menu supérieur, sélectionnez **+ Ajouter des affectations.** ![Capture d’écran des rôles Microsoft Entra avec le menu ](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-assign-role-e3e1744f.png)
+5. Dans le menu supérieur, sélectionnez **+ Ajouter des affectations.**
 6. Dans le volet Ajouter des affectations, sous l’onglet **Appartenance**, passez en revue les paramètres.
 7. Sélectionnez le menu **Sélectionner le rôle**, puis **Administrateur de conformité**. Vous pouvez utiliser le filtre **Rechercher un rôle par nom** pour vous aider à localiser un rôle.
 8. Sous **Sélectionner des membres**, sélectionnez **Aucun membre sélectionné**.
-9. Dans le volet Sélectionner un membre, sélectionnez votre compte d’administrateur, puis sélectionnez **Sélectionner**. ![Capture d’écran du volet Sélectionner un membre avec un membre sélectionné mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-add-role-assignment-38075706.png)
+9. Dans le volet Sélectionner un membre, sélectionnez votre compte d’administrateur, puis sélectionnez **Sélectionner**.
 10. Dans l’écran Ajouter des affectations, sélectionnez **Suivant**.
 11. Sous l’onglet Paramètres , sous **type d’affectation**, passez en revue les options disponibles. Pour cette tâche, utilisez le paramètre par défaut.
   - Les attributions éligibles nécessitent que le membre du rôle effectue une action pour utiliser le rôle. Les actions peuvent inclure l’exécution d’une vérification de l’authentification multifacteur (MFA), la fourniture d’une justification métier ou la demande d’approbation auprès d’approbateurs désignés.
@@ -1571,9 +1410,9 @@ Suivez ces étapes pour rendre un utilisateur éligible à un rôle d’administ
 Lorsque vous devez assumer un rôle Microsoft Entra, vous pouvez demander l’activation en ouvrant **Mes rôles** dans Privileged Identity Management.
 
 1. Dans l’écran Privileged Identity Management, dans le menu de navigation de gauche, sélectionnez **Mes rôles.**
-2. Dans le volet Mes rôles, passez en revue la liste des affectations éligibles. ![Capture d'écran de Mes rôles avec les attributions de rôles éligibles mises en surbrillance. Choisissez le rôle dont vous avez besoin.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/my-roles-57af22c4.png)
+2. Dans le volet Mes rôles, passez en revue la liste des affectations éligibles.
 3. Dans la ligne du rôle Administrateur de conformité, sélectionnez **Activer**.
-4. Dans le volet Activer – Administrateur de conformité, sélectionnez **vérification supplémentaire requise,** puis suivez les instructions pour fournir une vérification de sécurité supplémentaire. Vous devez vous authentifier une seule fois par session. ![Capture d’écran d’une fenêtre contextuelle pour activer l’administrateur de conformité.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-activate-role-f10cc7f1.png)
+4. Dans le volet Activer – Administrateur de conformité, sélectionnez **vérification supplémentaire requise,** puis suivez les instructions pour fournir une vérification de sécurité supplémentaire. Vous devez vous authentifier une seule fois par session.
 5. Une fois la vérification de sécurité terminée, dans le volet Activer – Administrateur de conformité, dans la zone **Motif**, entrez la justification de l’activation de ce rôle.
 6. Sélectionnez **Activer**.
 
@@ -1592,19 +1431,13 @@ Pour certains rôles, l’étendue des autorisations accordées peut être limit
 Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle existante.
 
 1. Dans l’écran Ouvrir Microsoft Entra Privileged Identity Management, puis Rôles Microsoft Entra, dans le volet de navigation de gauche, sélectionnez **Attributions**.
-2. Dans la liste **Affectations**, pour l’Administrateur de la conformité, passez en revue les options de la colonne **Action** . ![Capture d’écran des options répertoriées dans la colonne d’action de l’administrateur de conformité.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-edit-role-assignments-53cb448a.png)
+2. Dans la liste **Affectations**, pour l’Administrateur de la conformité, passez en revue les options de la colonne **Action** .
 3. Sélectionnez **mettre à jour** et passez en revue les options disponibles dans le volet Paramètres d’appartenance. Une fois terminé, fermez le volet.
 4. Sélectionnez **Supprimer**.
 5. Dans la boîte de dialogue **Supprimer**, passez en revue les informations, puis sélectionnez **Oui**.
 
 
 ## Exercice pour assigner des rôles de ressources Azure dans la Gestion des Identités Privilégiées
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/6-assign-azure-resource-roles-privileged-identity-management</sub>
-
-## Exercice pour assigner des rôles de ressources Azure dans la Gestion des Identités Privilégiées
-
-- 8 minutes
 
 ### Attribuer des rôles de ressources Azure
 
@@ -1622,10 +1455,10 @@ Suivez ces étapes pour rendre un utilisateur éligible à un rôle de ressource
 2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
 3. Dans le menu Privileged Identity Management, dans le volet de navigation gauche, sélectionnez **ressources Azure.**
 4. Dans le menu supérieur, sélectionnez **Découvrir les ressources**.
-5. Dans l’écran Ressources Azure – Découverte, sélectionnez votre abonnement, puis, dans le menu supérieur, sélectionnez **Gérer la ressource**. ![Capture d’écran de l’écran de découverte des ressources Azure avec l’abonnement et la gestion des ressources mise en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-azure-resource-management-b548cd25.png)
+5. Dans l’écran Ressources Azure – Découverte, sélectionnez votre abonnement, puis, dans le menu supérieur, sélectionnez **Gérer la ressource**.
 6. Dans la boîte de dialogue **Intégration de la ressource sélectionnée pour la gestion**, passez en revue les informations, puis sélectionnez **OK**.
 7. Une fois l’intégration terminée, fermez les ressources Azure – Écran découverte.
-8. Dans l’écran ressources Azure, sélectionnez la ressource que vous venez d’ajouter. ![Capture d’écran montrant la ressource Azure récemment ajoutée.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-identity-management-azure-resource-overview-b09e5a4e.png)
+8. Dans l’écran ressources Azure, sélectionnez la ressource que vous venez d’ajouter.
 9. Dans le menu de navigation de gauche, sous **Gérer**, sélectionnez **Rôles** pour afficher la liste des rôles pour les ressources Azure.
 10. Dans le menu supérieur, sélectionnez + **Ajouter des tâches**.
 11. Dans la boîte de dialogue **Ajouter des affectations**, sélectionnez le menu **Sélectionner un rôle**, puis sélectionnez **Contributeur du service gestion des API.**
@@ -1655,12 +1488,6 @@ Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle exi
 
 ## Planifier et configurer des groupes d’accès privilégiés
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/7-plan-configure-privileged-access-groups</sub>
-
-## Planifier et configurer des groupes d’accès privilégiés
-
-- 3 minutes
-
 Dans Privileged Identity Management (PIM), vous pouvez désormais attribuer l’éligibilité à l’appartenance ou à la propriété des groupes d’accès privilégiés. Vous pouvez affecter des rôles intégrés d’ID Microsoft Entra aux groupes cloud et utiliser PIM pour gérer l’éligibilité et l’activation des membres du groupe et des propriétaires. Avec la préversion des groupes d’accès privilégié, vous pouvez accorder aux administrateurs spécifiques à une charge de travail un accès rapide à plusieurs rôles avec une seule requête juste-à-temps.
 
 **Exemple** : vos **administrateurs Office de niveau 0** peuvent avoir besoin d’un accès juste-à-temps à **l’administrateur Exchange**, à **l’administrateur Office**, à **l’administrateur Teams** et aux rôles **d’administrateur de recherche** pour examiner minutieusement les incidents quotidiennement.
@@ -1671,16 +1498,7 @@ Vous pouvez créer un groupe assignable de rôles appelé « Administrateurs Off
 
 Certaines organisations utilisent des outils comme Microsoft Entra business-to-business (B2B) collaboration pour inviter leurs partenaires en tant qu’invités à leur organisation Microsoft Entra. Au lieu d’utiliser une seule stratégie juste-à-temps pour toutes les attributions à un rôle privilégié, vous pouvez créer deux groupes d’accès privilégié différents avec leurs propres stratégies. Vous pouvez appliquer des exigences moins strictes pour vos employés de confiance, et des exigences plus strictes, comme un flux de travail d'approbation, pour vos partenaires lorsqu'ils demandent l'activation dans le rôle qui leur est attribué.
 
-![Capture d’écran de Privileged Identity Manager avec la page Affectations de groupes ouverte.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/privileged-groups-assignments-f64567b1.png)
-
-
 ## Analyser l’historique et les rapports d’audit Privileged Identity Management
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/8-analyze-privileged-identity-management-audit-history-reports</sub>
-
-## Analyser l’historique et les rapports d’audit Privileged Identity Management
-
-- 8 minutes
 
 Avec PIM, vous pouvez afficher l’activité, les activations et l’historique d’audit pour les membres et les propriétaires de groupe d’accès privilégié au sein de votre organisation Microsoft Entra.
 
@@ -1696,7 +1514,7 @@ Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès
 2. Sélectionnez **Groupes**.
 3. Sélectionnez le groupe d’accès privilégié pour lequel vous souhaitez afficher l’historique d’audit.
 4. Sous **Activité**, sélectionnez **Audit des ressources**.
-5. Filtrez l’historique à l’aide d’une date prédéfinie ou d’une plage personnalisée.   ![Capture d’écran de la liste d’audit des ressources avec les filtres disponibles affichés.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/groups-resource-audit-aa44dac0.png)
+5. Filtrez l’historique à l’aide d’une date prédéfinie ou d’une plage personnalisée.
 
 ### Afficher mon audit
 
@@ -1706,16 +1524,10 @@ Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès
 2. Sélectionnez **Groupes**.
 3. Sélectionnez le groupe d’accès privilégié pour lequel vous souhaitez afficher l’historique d’audit.
 4. Sous **Activité**, sélectionnez **Mon audit**.
-5. Filtrez l’historique à l’aide d’une date prédéfinie ou d’une plage personnalisée.   ![Capture d’écran de la liste d’audit de l’utilisateur actuel. Passez en revue l’historique pour voir l’activité.](https://learn.microsoft.com../../wwl-sci/plan-implement-privileged-access/media/my-audit-time-1e4b43f0.png)
+5. Filtrez l’historique à l’aide d’une date prédéfinie ou d’une plage personnalisée.
 
 
 ## Créer et gérer des comptes d’accès d’urgence
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/9-create-manage-emergency-access-accounts</sub>
-
-## Créer et gérer des comptes d’accès d’urgence
-
-- 7 minutes
 
 Il est important que vous empêchez d’être verrouillé accidentellement hors de votre ID Microsoft Entra. Avec l’ID Microsoft Entra, vous ne pouvez pas vous connecter ni activer le compte d’un autre utilisateur en tant qu’administrateur. Vous pouvez atténuer le risque d’absence accidentelle d’accès administratif. Le secret, créez au moins deux comptes d’accès d’urgence  dans votre organisation.
 
@@ -1781,24 +1593,12 @@ Ces étapes doivent être effectuées à intervalles réguliers et pour les modi
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/10-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Contrôler vos connaissances
 
 
 ## Résumé et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-privileged-access/11-summary-resources</sub>
-
-## Résumé et ressources
-
-- 1 minute
 
 Maintenant que vous avez passé en revue ce module, vous pouvez :
 
@@ -1827,16 +1627,10 @@ Pour en savoir plus sur ces rubriques, consultez ces liens.
 
 # Surveiller et gérer Microsoft Entra ID
 
-_36 min · https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/_
+_https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 Les journaux d'audit et de diagnostic de Microsoft Entra ID fournissent une vue détaillée de la façon dont les utilisateurs accèdent à votre solution Azure. Découvrez comment surveiller, dépanner et analyser les données de connexion.
 
@@ -1859,12 +1653,6 @@ Aucun
 
 
 ## Analyser et examiner les journaux de connexion pour résoudre les problèmes d’accès
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/2-analyze-investigate-sign-logs-to-troubleshoot-access-issues</sub>
-
-## Analyser et examiner les journaux de connexion pour résoudre les problèmes d’accès
-
-- 10 minutes
 
 L'architecture de génération de rapports dans Microsoft Entra ID se compose des composants suivants :
 
@@ -1896,11 +1684,7 @@ Le rapport de connexions des utilisateurs permet de répondre aux questions suiv
 
 Dans le menu du Portail Azure, sélectionnez **Microsoft Entra ID** ou recherchez et sélectionnez **Microsoft Entra ID** dans n’importe quelle page.
 
-![Capture d’écran de l’écran Sélectionner Microsoft Entra ID, afin de pouvoir modifier les paramètres.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/select-azure-active-directory.png)
-
 Sous **Surveillance**, sélectionnez **Connexions** pour ouvrir le Rapport de connexions.
-
-![Capture d’écran des connexions sélectionnées dans le menu Monitoring. Suivez le rapport que vous souhaitez examiner.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-ins-azure-active-directory.png)
 
 Deux heures peuvent s'écouler avant que les enregistrements de connexion n'apparaissent dans le portail.
 
@@ -1915,27 +1699,19 @@ Un journal de connexions comporte un affichage de liste par défaut qui indique 
 - L’application à laquelle l’utilisateur s’est connecté
 - État de la connexion
 - État de la détection de risque
-- État de l’exigence de l’authentification multifacteur (MFA) ![Capture d’écran montrant les connexions Office 365 SharePoint Online. Recherchez toute activité qui peut être inquiétante.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-activity.png)
+- État de l’exigence de l’authentification multifacteur (MFA)
 
 Vous pouvez personnaliser la vue de liste en sélectionnant Colonnes dans la barre d’outils.
 
-![Capture d’écran de l’option Colonnes dans la page Connexions. Ajoutez et supprimez les éléments de contenu dont vous avez besoin.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns-option.png)
-
 La boîte de dialogue Colonnes vous permet d’accéder aux attributs sélectionnables. Dans un rapport de connexion, vous ne pouvez pas avoir de champs qui contiennent plusieurs valeurs pour une demande de connexion donnée sous forme de colonne. C’est par exemple le cas pour les détails d’authentification, les données d’accès conditionnel et l’emplacement réseau.
 
-![Capture d’écran de la boîte de dialogue Colonnes dans laquelle vous pouvez sélectionner des attributs. Les attributs vous fournissent des informations de résolution des problèmes.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns-2.png)
-
 Sélectionnez un élément dans la vue sous forme de liste pour obtenir des informations plus détaillées.
-
-![Capture d’écran montrant une vue d’informations détaillée. Obtenez les détails de l’état sur les connexions.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/basic-sign.png)
 
 Les clients peuvent maintenant résoudre les problèmes de stratégies d’accès conditionnel grâce à tous les rapports de connexion. Les clients peuvent examiner l’état de l’accès conditionnel et consulter en détail les stratégies applicables à la connexion et les résultats de chaque stratégie lorsqu’un administrateur sélectionne l’onglet Accès conditionnel pour obtenir un rapport de connexion. Pour en savoir plus, consultez le [Forum aux questions sur les informations de l’accès conditionnel dans toutes les connexions](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reports-faq).
 
 ### Filtrer les activités de connexion
 
 Commencez par réduire les données signalées jusqu’au niveau qui vous convient. Ensuite, filtrez les données de connexions en utilisant le champ de date comme filtre par défaut. Microsoft Entra ID fournit une large gamme de filtres supplémentaires que vous pouvez définir :
-
-![Capture d’écran de l’option Ajouter des filtres. Utilisez les filtres pour trier les grandes quantités de données.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/add-filters-option.png)
 
 **ID de demande** : ID de la demande qui vous intéresse.
 
@@ -1962,8 +1738,6 @@ Commencez par réduire les données signalées jusqu’au niveau qui vous convie
 **ID de ressource** : ID du service utilisé pour la connexion.
 
 **Application cliente** – Type de l’application cliente utilisée pour se connecter à votre locataire :
-
-![Capture d’écran du filtre d’application cliente. Consultez des détails spécifiques sur vos informations client.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/client-app-filter.png)
 
 | **Name** (Nom) | **Authentification moderne** | **Description** |
 |---|---|---|
@@ -2000,8 +1774,6 @@ Commencez par réduire les données signalées jusqu’au niveau qui vous convie
 
 Sélectionnez l’option **Télécharger** pour créer un fichier CSV ou JSON des 250 000 enregistrements les plus récents. Commencez par **Télécharger des connexions** si vous souhaitez utiliser les données en dehors du portail Azure.
 
-![Capture d’écran du bouton Télécharger. Utilisez cette boîte de dialogue pour obtenir un fichier CSV ou JSON de vos données de connexion.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/download-2.png)
-
 Important
 
 Le nombre d'enregistrements que vous pouvez télécharger est limité par les [politiques de rétention de rapport Microsoft Entra ID](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reference-reports-data-retention).
@@ -2018,8 +1790,6 @@ Microsoft Entra ID et le Portail Azure vous offrent d’autres points d’entré
 #### Données des connexions des utilisateurs dans Identity Protection
 
 Le graphique des connexions des utilisateurs figurant sur la page de présentation **Identity Protection** affiche les agrégations hebdomadaires des connexions. La période par défaut est de 30 jours.
-
-![Capture d’écran d’un graphe de connexions sur un mois. La représentation visuelle peut vous aider à voir les problèmes potentiels.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sign-ins-over-month.png)
 
 Lorsque vous sélectionnez un jour dans le graphique des connexions, vous obtenez une liste détaillée des activités de connexion correspondantes.
 
@@ -2046,8 +1816,6 @@ Lorsque l’administrateur sélectionne un lien, vous obtenez plus d’informati
 
 Sur la page **Utilisateurs**, vous obtenez une vue d’ensemble complète de toutes les connexions des utilisateurs en sélectionnant **Connexions** dans la section **Activité**.
 
-![Capture d’écran de la section Activité dans laquelle vous pouvez sélectionner des connexions. Sélectionnez l’activité que vous devez passer en revue.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/activity-section.png)
-
 ### Utilisation des applications gérées
 
 En disposant d’une vue centrée sur les applications de vos données de connexion, vous pouvez répondre aux questions telles que :
@@ -2058,15 +1826,9 @@ En disposant d’une vue centrée sur les applications de vos données de connex
 
 Le point d’entrée de ces données correspond aux trois principales applications de votre organisation. Les données sont contenues dans le rapport sur les 30 derniers jours dans la section **Vue d’ensemble** sous **Applications d’entreprise**.
 
-![Capture d’écran de la boîte de dialogue dans laquelle vous pouvez sélectionner Vue d’ensemble. Vous pouvez ensuite choisir des données d’utilisation et d’autres graphes.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/select-overview.png)
-
 Les graphiques d’utilisation des applications affiche les agrégations hebdomadaires des connexions pour vos trois principales applications au cours d’une période donnée. La valeur par défaut de cette période est de 30 jours.
 
-![Capture d’écran de l’utilisation de l’application pendant une période d’un mois. Sélectionnez une période pour passer en revue les données.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/graph-chart.png)
-
 Si vous le souhaitez, vous pouvez définir la focalisation sur une application spécifique.
-
-![Capture d’écran de l’écran Création de rapports. Utilisez-le pour sélectionner les détails à signaler et examiner.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/single-app-usage-graph.png)
 
 Lorsque vous sélectionnez un jour dans le graphique d’utilisation des applications, vous obtenez une liste détaillée des activités de connexion.
 
@@ -2081,12 +1843,6 @@ Vous pouvez également accéder par programme aux journaux d’activité de Micr
 
 ## Examiner et surveiller les journaux d’audit Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/3-review-monitor-azure-active-directory-audit-logs</sub>
-
-## Examiner et surveiller les journaux d’audit Microsoft Entra
-
-- 6 minutes
-
 Les journaux d’audit Microsoft Entra fournissent des enregistrements des activités du système pour la conformité. Pour accéder au rapport d’audit, sélectionnez **Journaux d’audit** dans la section **Supervision** de **Microsoft Entra ID**.
 
 Un journal de connexions comporte un affichage de liste par défaut qui indique :
@@ -2096,19 +1852,13 @@ Un journal de connexions comporte un affichage de liste par défaut qui indique 
 - Catégorie et nom de l’activité (*laquelle*)
 - État de l’activité (réussite ou échec)
 - Cible
-- Initiateur/intervenant d’une activité (qui)   ![Capture d’écran des journaux d’audit disponibles que vous pouvez examiner pour vous assurer que vos systèmes s’exécutent efficacement.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/list-view.png)
+- Initiateur/intervenant d’une activité (qui)
 
 Vous pouvez personnaliser le mode Liste en cliquant sur **Colonnes** dans la barre d’outils.
 
-![Capture d’écran des colonnes d’audit. Vous pouvez ainsi choisir les données spécifiques que vous devez voir dans votre rapport.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/columns.png)
-
 Les colonnes personnalisées vous permettent d’afficher d’autres champs ou de supprimer des champs déjà affichés.
 
-![Capture d’écran de la boîte de dialogue Supprimer les champs. Configurez les rapports pour afficher et examiner uniquement les données dont vous avez besoin.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/column-select.png)
-
 Sélectionnez un élément dans la vue sous forme de liste pour obtenir des informations plus détaillées.
-
-![Capture d’écran de la boîte de dialogue Sélectionner l’élément. De quelles informations détaillées avez-vous besoin ?](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/details.png)
 
 ### Filtrage des journaux d’audit
 
@@ -2120,7 +1870,7 @@ Vous pouvez filtrer les données d’audit des champs suivants :
 - Statut
 - Cible
 - Initié par (intervenant)
-- Plage de dates   ![Capture d’écran de la boîte de dialogue Filtrer l’objet. Utilisez les filtres pour organiser et examiner les données.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/filter.png)
+- Plage de dates
 
 Le filtre **Service** vous permet de sélectionner les services suivants dans une liste déroulante :
 
@@ -2191,8 +1941,6 @@ Lorsque vous sélectionnez une plage personnalisée, vous pouvez configurer une 
 
 Vous pouvez également télécharger les données filtrées, jusqu’à 250 000 enregistrements, en sélectionnant le bouton **Télécharger**. Vous pouvez télécharger les journaux d’activité au format CSV ou JSON. Le nombre d’enregistrements que vous pouvez télécharger est limité par les stratégies de rétention de rapport Microsoft Entra.
 
-![Capture d’écran du téléchargement des données. Obtenez les données dans un fichier CSV ou JSON pour vous aider à travailler hors connexion.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/download.png)
-
 ### Raccourcis de journaux d’audit
 
 Outre **l’ID Microsoft Entra**, le portail Azure vous fournit deux autres points d’entrée pour auditer les données :
@@ -2215,11 +1963,7 @@ Les rapports d’audit basés sur les utilisateurs et les groupes vous permetten
 
 Si vous souhaitez simplement consulter les données d’audit connexes aux utilisateurs, vous pouvez filtrer l’affichage dans **Journaux d’audit** dans la section **Surveillance** de l’onglet **Utilisateurs**. La catégorie présélectionnée de ce point d'entrée est **UserManagement**.
 
-![Capture d’écran de la boîte de dialogue Utilisateur. Vous pouvez choisir des utilisateurs spécifiques à gérer.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/users.png)
-
 Si vous souhaitez simplement consulter les données d’audit connexes aux groupes, vous pouvez filtrer l’affichage dans **Journaux d’audit** dans la section **Surveillance** de l’onglet **Groupes**. La catégorie présélectionnée de ce point d'entrée est **GroupManagement**.
-
-![Capture d’écran des groupes de filtres. Vous pouvez configurer les détails de gestion de groupe pour l’audit.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/groups.png)
 
 #### Journaux d’audit d’applications d’entreprise
 
@@ -2233,8 +1977,6 @@ Les rapports d’audit basés sur les applications vous permettent d’obtenir d
 
 Si vous souhaitez consulter les données d’audit associées à vos applications, vous pouvez trouver une vue filtrée sous **Journaux d’audit** dans la section **Activité** de l’écran **Applications d’entreprise**. Dans ce point d’entrée, **Applications d’entreprise** est présélectionné comme **Type d'application**.
 
-![Capture d’écran des journaux des applications d’entreprise pour l’audit. Vous pouvez et devez auditer tous les détails.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/enterprise-applications.png)
-
 ### Journaux d’activité Microsoft 365
 
 Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d’administration Microsoft 365. Même si les journaux d’activité Microsoft 365 et Microsoft Entra partagent de nombreuses ressources d’annuaire, seul le Centre d’administration Microsoft 365 fournit une vue complète des journaux d’activité Microsoft 365. Vous pouvez également accéder par programme aux journaux d’activité de Microsoft 365 en utilisant les API de gestion Microsoft 365.
@@ -2242,15 +1984,7 @@ Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d�
 
 ## Exercice : connexion de données de Microsoft Entra ID à Microsoft Sentinel
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/4-connect-data-from-azure-active-directory-to-azure-sentinel</sub>
-
-## Exercice : connexion de données de Microsoft Entra ID à Microsoft Sentinel
-
-- 5 minutes
-
 Dans cette unité, nous examinons ce qu’est Microsoft Sentinel ?
-
-![Capture d’écran d’Azure Sentinel montrant l’écran de configuration initiale qui vous permet de créer une requête KQL (Kusto Query Language).](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/azure-sentinel.png)
 
 Un système de gestion des informations et des événements de sécurité (SIEM) agrège et analyse l'activité. Un outil d'orchestration de la sécurité, d'automatisation et de remédiation (SOAR) collecte les données sur les menaces de sécurité et y réagit. Microsoft Sentinel est à la fois un outil SIEM natif Cloud scalable et une solution SOAR. Microsoft Sentinel vous offre une vue d’ensemble de l’organisation, ce qui réduit le stress lié aux attaques de plus en plus sophistiquées, aux volumes croissants d’alertes et aux longs délais de résolution.
 
@@ -2282,18 +2016,12 @@ Utilisez ces instructions si vous n’avez pas encore d’espace de travail disp
 Vous pouvez utiliser un connecteur Microsoft Sentinel intégré pour collecter des données à partir de Microsoft Entra ID et les diffuser en continu dans Microsoft Sentinel. Le connecteur vous permet d’envoyer en streaming des [journaux de connexion](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-sign-ins) et des [journaux d’audit](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. Dans Microsoft Sentinel, dans le menu de navigation à gauche, sous **Configuration**, sélectionnez **Connecteurs de données**.
-2. Dans la liste des **Connecteurs de données**, sélectionnez **Microsoft Entra ID**, puis **Ouvrir la page du connecteur**. ![Capture d’écran de l’écran des connecteurs de données avec le connecteur Microsoft Entra ID et la page Ouvrir un connecteur mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sentinel-add-azure-active-directory-connector.png)
-3. Sous **Configuration**, cochez les cases **Journaux de connexion Microsoft Entra** et **Journaux d'audit**, puis sélectionnez **Appliquer les modifications**. ![Capture d’écran des journaux collectés par les sélections Azure Sentinel mises en surbrillance.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/sentinel-configure-azure-active-directory-connector.png)
+2. Dans la liste des **Connecteurs de données**, sélectionnez **Microsoft Entra ID**, puis **Ouvrir la page du connecteur**.
+3. Sous **Configuration**, cochez les cases **Journaux de connexion Microsoft Entra** et **Journaux d'audit**, puis sélectionnez **Appliquer les modifications**.
 4. Fermez la page du connecteur Microsoft Entra ID.
 
 
 ## Exporter les journaux vers un système de gestion des événements et des informations de sécurité tiers
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/5-export-logs-to-third-party-security-information</sub>
-
-## Exporter les journaux vers un système de gestion des événements et des informations de sécurité tiers
-
-- 6 minutes
 
 Depuis l’introduction d’Azure Monitor, des Strides significatives ont été apportés pour consolider les services Azure sur un pipeline de journalisation unique. La plupart des principaux services Azure, y compris Azure Resource Manager et Microsoft Defender pour le cloud, ont été intégrés à Azure Monitor et produisent des journaux de sécurité pertinents.
 
@@ -2330,12 +2058,6 @@ La sécurité de votre environnement Azure est toujours prioritaire sur l’équ
 
 ## Analyser des classeurs et des rapports Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/6-analyze-azure-active-directory-workbooks-reporting</sub>
-
-## Analyser des classeurs et des rapports Microsoft Entra
-
-- 2 minutes
-
 Le rapport d’utilisation et d’insights vous fournit une vue centrée sur les applications de vos données de connexion. Vous y trouverez des réponses aux questions suivantes :
 
 - Quelles sont les principales applications dans mon organisation ?
@@ -2356,7 +2078,7 @@ De plus, tous les utilisateurs (non administrateurs) peuvent accéder à leurs p
 
 1. Accédez au portail Azure.
 2. Sélectionnez l’annuaire approprié, puis **Microsoft Entra ID** et choisissez **Applications d’entreprise**.
-3. Dans la section **Activité**, sélectionnez **Utilisation et insights** pour ouvrir le rapport. ![Capture d’écran de l’utilisation et des aperçus sélectionnés dans la section Activité. Utilisez les journaux pour rechercher les données dont vous avez besoin.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/main-menu.png)
+3. Dans la section **Activité**, sélectionnez **Utilisation et insights** pour ouvrir le rapport.
 
 ### Utiliser le rapport
 
@@ -2368,20 +2090,9 @@ Vous pouvez également définir le focus sur une application spécifique. Sélec
 
 Lorsque vous sélectionnez un jour dans le graphique d’utilisation des applications, vous obtenez une liste détaillée des activités de connexion pour l’application.
 
-![Capture d’écran de la section Utilisation et Aperçus pour l’activité des applications, où vous pouvez sélectionner une plage et afficher l’activité de connexion pour différentes applications.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/usage-insights-report.png)
-
-
 ## Surveiller la posture de sécurité avec le score d'identité sécurisée
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/7-monitor-security-posture-identity-secure-score</sub>
-
-## Surveiller la posture de sécurité avec le score d'identité sécurisée
-
-- 3 minutes
 
 Le degré de sécurisation Identity Secure Score est un pourcentage qui indique dans quelle mesure vous respectez les suggestions de meilleures pratiques de Microsoft en matière de sécurité. Chaque action d’amélioration du score d’identité sécurisée est adaptée à votre configuration spécifique.
-
-![Capture d’écran de la page de vue d’ensemble du score d’identité sécurisée. Examinez le pourcentage du score pour votre entreprise.](https://learn.microsoft.com../../wwl-sci/monitor-maintain-azure-active-directory/media/identity-secure-score-overview.png)
 
 Le score vous aide à :
 
@@ -2421,24 +2132,12 @@ Votre score s’améliore lorsque vous configurez des fonctionnalités de sécur
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/8-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/9-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 Une fois que vous avez implémenté une solution d’identité dans Azure, vous devez la surveiller. Il existe plusieurs outils dans Microsoft Sentinel pour enregistrer des fichiers afin de soutenir votre organisation dans ce processus.
 

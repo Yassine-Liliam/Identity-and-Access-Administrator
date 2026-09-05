@@ -1,6 +1,6 @@
 # Implémenter une solution de gestion des accès et des authentifications
 
-> SC-300 — learning path 2/4 · 298 min
+> SC-300 — learning path 2/4
 > https://learn.microsoft.com/fr-fr/training/paths/implement-authentication-access-management-solution/
 
 ## Modules
@@ -13,21 +13,14 @@
 - **Déployer et configurer Accès global sécurisé Microsoft Entra** (10 units)
 
 
-
 ---
 
 # Sécurisez les utilisateurs Microsoft Entra avec l’authentification multifacteur
 
-_38 min · https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/_
+_https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/1-introduction</sub>
-
-## Présentation
-
-- 3 minutes
 
 Imaginez que vous êtes ingénieur sécurité d’une grande usine de fabrication. Votre entreprise honore plusieurs gros contrats avec des sociétés de matériel électronique grand public connues, dont Microsoft. Les clients vous envoient leurs conceptions confidentielles, que vous stockez ensuite dans votre infrastructure Azure. Nombreux sont les hackers qui rêveraient de mettre la main sur ces créations nouvelle génération. C’est votre travail pour les protéger.
 
@@ -48,12 +41,6 @@ Dans ce module, vous avez :
 
 
 ## Qu’est-ce que l’authentification multifacteur Microsoft Entra ?
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/2-azure-multi-factor-authentication</sub>
-
-## Qu’est-ce que l’authentification multifacteur Microsoft Entra ?
-
-- 10 minutes
 
 La protection de vos ressources cloud est l’un des principaux objectifs des groupes de sécurité. L’un des moyens les plus courants qu’emploient les utilisateurs non autorisés pour obtenir un accès aux systèmes consiste à se procurer un nom d’utilisateur et un mot de passe valide. Azure peut contribuer à réduire ce risque grâce à plusieurs fonctionnalités de Microsoft Entra ID, notamment :
 
@@ -97,12 +84,6 @@ L’authentification multifacteur est fournie avec les offres suivantes :
 
 ## Planifiez votre déploiement de l’authentification multifacteur
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/3-planning-mfa</sub>
-
-## Planifiez votre déploiement de l’authentification multifacteur
-
-- 7 minutes
-
 Avant de démarrer à déployer l’authentification multifacteur Microsoft Entra, vous devez décider de plusieurs choses.
 
 Tout d’abord, déployez MFA par vague. Commencez avec un petit groupe d’utilisateurs pilotes pour évaluer la complexité de votre environnement et identifier les problèmes de configuration ou les applications ou appareils non pris en charge. Élargissez ce groupe au fur et à mesure et évaluez les résultats après chaque passage jusqu’à ce que l’intégralité de votre entreprise soit incluse.
@@ -142,12 +123,6 @@ Vous pouvez également inviter les utilisateurs à s’inscrire à la MFA lorsqu
 
 ## Exercice : activer l’authentification multifacteur Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/4-exercise-mfa</sub>
-
-## Exercice : activer l’authentification multifacteur Microsoft Entra
-
-- 8 minutes
-
 Vous pouvez passer en revue les étapes de base nécessaires à la configuration et à l’activation de l’authentification multifacteur Microsoft Entra avec des stratégies conditionnelles. *Gardez en tête qu’un vrai déploiement nécessite une grande réflexion et une planification importante*. Assurez-vous d’évaluer les liens de la documentation à la fin de ce module avant d’activer l’authentification multifacteur dans vos environnements.
 
 Important
@@ -159,15 +134,15 @@ Pour cet exercice, vous avez besoin de Microsoft Entra ID P1 ou P2. Vous pouvez 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/) à l’aide d’un compte d’administrateur d’authentification.
 2. Recherchez **l'ID Microsoft Entra** et accédez au tableau de bord Microsoft Entra ID.
 3. Sélectionnez **Sécurité** dans le menu de gauche.
-4. Sous le menu **Gérer**, sélectionnez **Authentification multifacteur**. Vous trouvez ici des options pour l’authentification multifacteur.   ![Capture d’écran montrant les options MFA dans le tableau de bord.](https://learn.microsoft.commedia/4-mfa-options.png)
-5. Sous **Configurer**, sélectionnez **Paramètres informatiques supplémentaires de l’authentification multifacteur**. Dans la page obtenue, vous pouvez voir toutes les options MFA pour Azure sous **Paramètres du service**.   ![Capture d’écran montrant la configuration MFA.](https://learn.microsoft.commedia/4-set-mfa.png)   Ici, vous pouvez activer ou désactiver les *mots de passe d’application*, ce qui permet aux utilisateurs de créer des mots de passe uniques de compte pour les applications qui ne prennent pas en charge l’authentification multifacteur. Cette fonctionnalité permet à l’utilisateur de s’authentifier avec son identité Microsoft Entra en utilisant un mot de passe différent propre à cette application.
+4. Sous le menu **Gérer**, sélectionnez **Authentification multifacteur**. Vous trouvez ici des options pour l’authentification multifacteur.
+5. Sous **Configurer**, sélectionnez **Paramètres informatiques supplémentaires de l’authentification multifacteur**. Dans la page obtenue, vous pouvez voir toutes les options MFA pour Azure sous **Paramètres du service**.      Ici, vous pouvez activer ou désactiver les *mots de passe d’application*, ce qui permet aux utilisateurs de créer des mots de passe uniques de compte pour les applications qui ne prennent pas en charge l’authentification multifacteur. Cette fonctionnalité permet à l’utilisateur de s’authentifier avec son identité Microsoft Entra en utilisant un mot de passe différent propre à cette application.
 
 ### Configurer les règles d’accès conditionnel pour la MFA
 
 Examinez ensuite comment configurer des règles de la stratégie d’accès conditionnel afin que les utilisateurs invités utilisent l’authentification multifacteur pour accéder à des applications spécifiques sur votre réseau.
 
 1. Revenez au Portail Azure, puis sélectionnez **Microsoft Entra ID**>**Sécurité**>**Accès conditionnel**.
-2. Dans le menu supérieur, sélectionnez **Créer une stratégie**.   ![Capture d’écran mettant en évidence le bouton Nouvelle stratégie dans le Portail Azure.](https://learn.microsoft.commedia/4-new-policy.png)
+2. Dans le menu supérieur, sélectionnez **Créer une stratégie**.
 3. Nommez votre stratégie, par exemple *Tous les invités*.
 4. Sous **Utilisateurs**, sélectionnez **0 utilisateur et groupe sélectionné**.
   1. Sous **Inclure**, choisissez **Sélectionner les utilisateurs et les groupes**.
@@ -186,32 +161,22 @@ Examinez ensuite comment configurer des règles de la stratégie d’accès cond
   1. Assurez-vous que **Accorder l’accès** est sélectionné.
   2. Sélectionnez l’option **Exiger l’authentification multifacteur** et choisissez **Sélectionner**. Cette option applique l’authentification multifacteur.
 
-8. Définissez l’option **Activer la stratégie** sur **Activée**, puis sélectionnez **Créer**.   ![Capture d’écran montrant la boîte de dialogue complète Ajouter une stratégie.](https://learn.microsoft.commedia/4-create-policy.png)
+8. Définissez l’option **Activer la stratégie** sur **Activée**, puis sélectionnez **Créer**.
 
 L’authentification multifacteur est maintenant activée pour vos applications sélectionnées. La prochaine fois qu’un utilisateur ou un invité tente de se connecter à cette application, il va être invité à s’inscrire à l’authentification multifacteur.
 
 
 ## Configurer des méthodes d’authentification multifacteur
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/5-configure-authentication-methods</sub>
-
-## Configurer des méthodes d’authentification multifacteur
-
-- 6 minutes
-
 Comme nous l’avons vu précédemment dans ce module, il est recommandé d’autoriser les utilisateurs à sélectionner plusieurs méthodes d’authentification au cas où leur méthode principale ne serait pas disponible.
 
 Quand un utilisateur se connecte pour la première fois à un service qui exige MFA, il est invité à spécifier sa méthode d’authentification multifacteur préférée, comme indiqué dans la capture d’écran suivante :
-
-![Capture d’écran montrant les informations d’inscription.](https://learn.microsoft.commedia/5-setup-user.png)
 
 Conseil
 
 Si vous avez suivi l’exercice précédent et activé MFA pour un compte et une application, vous pouvez essayer d’accéder à cette application avec le compte d’utilisateur spécifié. Vous devez voir le flux précédent.
 
 Une fois l’inscription effectuée, chaque fois que l’utilisateur se connecte à un service ou une application qui exige MFA, le processus de connexion Azure l’invite à entrer les informations d’authentification, comme le montre l’image suivante :
-
-![Capture d’écran qui décrit la demande d’informations d’authentification supplémentaires via l’une des quatre méthodes.](https://learn.microsoft.commedia/5-identity-options.png)
 
 ### Méthodes d’authentification Azure
 
@@ -292,28 +257,16 @@ Certaines applications qui ne sont pas des navigateurs ne prennent pas en charge
 
 Microsoft Entra ID propose une vue**Utilisation & Insights** dans la section **Supervision** où vous pouvez surveiller l’activité des méthodes d’authentification. À partir de là, vous pouvez voir l’adoption de MFA et SSPR :
 
-![Capture d’écran montrant la vue Métriques pour MFA.](https://learn.microsoft.commedia/5-monitor-auth-methods.png)
-
 En plus des chiffres d’inscription d’ensemble, vous pouvez voir si les inscriptions ont réussi ou échoué par méthode d’authentification. Cet état de fait vous permet de comprendre les méthodes d’authentification que vos utilisateurs ont le plus inscrites et celles qui sont les plus faciles à inscrire. Ces données sont calculées sur la base des 30 derniers jours des journaux d’audit des expériences d’inscription des informations de sécurité et d’inscription SSPR.
 
 Vous pouvez aller plus dans le détail et voir les dernières informations d’audit des inscriptions pour chaque utilisateur en cliquant sur le graphique.
 
-![Capture d’écran montrant les détails d’inscriptions.](https://learn.microsoft.commedia/5-auth-registration-details.png)
-
 Vous pouvez également en savoir plus sur l’utilisation de SSPR dans votre organisation en consultant l’onglet **Utilisation** de la vue principale, comme montré dans l’image suivante :
-
-![Capture d’écran montrant les métriques d’utilisation de SSPR.](https://learn.microsoft.commedia/5-sspr-usage.png)
 
 ### Contrôle des connaissances
 
 
 ## Résumé
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/secure-aad-users-with-mfa/6-summary</sub>
-
-## Résumé
-
-- 4 minutes
 
 Avec l’authentification multifacteur Microsoft Entra, vous pouvez être sûr que, quand des utilisateurs se connectent pour accéder à vos données et systèmes confidentiels, ils sont ceux qu’ils disent qu’ils sont. Microsoft Entra ID vous permet de créer des stratégies pour vous assurer que des applications spécifiques sont protégées, tout en permettant à d’autres systèmes plus ouverts de rester plus faciles à pénétrer. De plus, vous pouvez utiliser d’autres services, tels que Microsoft Entra ID Protection et Azure Smart Lockout, pour protéger intégralement la surface d’exposition de vos identités.
 
@@ -330,16 +283,10 @@ Pour en savoir plus sur des sujets que nous avons examinés dans ce module, cons
 
 # Gérer l’authentification des utilisateurs
 
-_52 min · https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/_
+_https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 L’une des principales fonctionnalités d’une plateforme d’identités consiste à vérifier, ou authentifier, les informations d’identification quand l’utilisateur se connecte à un appareil, à une application ou à un service. Dans Microsoft Entra ID, l'authentification ne se limite pas à la vérification d'un nom d'utilisateur et d'un mot de passe. Pour améliorer la sécurité et réduire le recours à l’assistance du support technique, l’authentification Microsoft Entra comprend les composants suivants :
 
@@ -366,15 +313,7 @@ Dans ce module, vous allez :
 
 ## Administrer les méthodes d’authentification FIDO2 et sans mot de passe
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/2-administer-fido2-passwordless-authentication-methods</sub>
-
-## Administrer les méthodes d’authentification FIDO2 et sans mot de passe
-
-- 4 minutes
-
 Dans le cadre de l'expérience de connexion pour les comptes dans Microsoft Entra ID, les utilisateurs peuvent vérifier leur identité de plusieurs manières. Par le passé, un nom d’utilisateur et un mot de passe étaient les moyens les plus courants pour qu’un utilisateur fournisse des informations d’identification. Grâce aux fonctionnalités d'authentification et de sécurité modernes de Microsoft Entra ID, ce mot de passe de base peut être complété ou remplacé par des méthodes d'authentification plus sécurisées.
-
-![Capture d’écran des avantages et des méthodes d’authentification préférées dans Microsoft Entra ID.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/authentication-methods.png)
 
 Les méthodes d’authentification sans mot de passe telles que Windows Hello, les clés de sécurité FIDO2 et l’application Microsoft Authenticator permettent les événements de connexion les plus sécurisés.
 
@@ -470,8 +409,6 @@ L’Alliance FIDO (Fast Identity Online) permet de promouvoir les spécification
 
 Dans l’exemple ci-dessous, un utilisateur a déjà approvisionné sa clé de sécurité FIDO2. L’utilisateur peut choisir de se connecter sur le web avec sa clé de sécurité FIDO2 dans un navigateur pris en charge par Windows 10 version 1903 ou ultérieure, ou Windows 11.
 
-![Capture d’écran de la connexion avec la clé de sécurité pour Microsoft Edge. Excellent processus de vérification multifacteur.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/fast-identity-windows-edge-sign-in.png)
-
 ### Configuration requise pour le déploiement cloud uniquement
 
 - Windows 10 version 1511 ou ultérieure, ou Windows 11
@@ -484,19 +421,11 @@ Dans l’exemple ci-dessous, un utilisateur a déjà approvisionné sa clé de s
 
 ## Explorer l’application Authenticator et les jetons OATH
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/3-explore-authenticator-app-oath-tokens</sub>
-
-## Explorer l’application Authenticator et les jetons OATH
-
-- 3 minutes
-
 L'application Microsoft Entra Authenticator fournit un niveau de sécurité supplémentaire pour votre compte Microsoft Entra ID professionnel ou scolaire, ou pour votre compte Microsoft. Elle est disponible pour Android et iOS. Avec l’application Microsoft Authenticator, les utilisateurs peuvent s’authentifier sans mot de passe lors de la connexion, ou comme option de vérification supplémentaire lors de la réinitialisation de mot de passe en libre-service ou d’événements d’authentification multifacteur.
 
 Les utilisateurs peuvent recevoir une notification par le biais de l'application mobile leur permettant d'accepter ou de refuser. Ils peuvent également utiliser l'application Authenticator pour générer un code de vérification OATH pouvant être saisi dans une interface de connexion. Si vous activez à la fois la notification et le code de vérification, les utilisateurs s’enregistrant sur l’application Authenticator peuvent utiliser une des deux méthodes pour vérifier leur identité.
 
 ### Application Microsoft Authenticator
-
-![Capture d’écran de l’écran de vérification de la connexion que l’utilisateur voit lors de la vérification de l’authentification avec l’application.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/authenticator-app.png)
 
 L’application Authenticator offre un niveau élevé de sécurité et évite à l’utilisateur de devoir fournir un mot de passe lors de la connexion. L’application Authenticator peut aider à empêcher tout accès non autorisé aux comptes et à arrêter les transactions frauduleuses. Une notification Push est envoyée à votre smartphone ou tablette pour une sécurité supplémentaire. Les utilisateurs voient la notification et, si elle est légitime, sélectionnent Vérifier. Sinon, ils peuvent sélectionner Refuser.
 
@@ -504,20 +433,12 @@ L'application Authenticator peut être utilisée comme jeton logiciel pour gén�
 
 ### Ouvrir des jetons d’authentification (OATH)
 
-![Capture de l’écran de configuration du jeton OATH (authentification ouverte) à l’intérieur de l’authentification multifacteur. Configurez des jetons à l’aide de logiciels ou de matériels.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/oath-token-menu.png)
-
 Les mots de passe à usage unique et durée définie (TOTP) OATH forment une norme ouverte qui spécifie le mode de génération des codes de mot de passe (OTP) à usage unique. Les mots de passe à usage unique et durée définie OATH peuvent être implémentés à l’aide de logiciels ou de matériels permettant de générer des codes. L’identifiant Microsoft Entra ne prend pas en charge les HOTP OATH, une norme de génération de code différente. Les jetons logiciels OATH sont généralement des applications telles que l’application Microsoft Authenticator et d’autres applications d’authentification. Microsoft Entra ID génère la clé secrète, ou la valeur de départ, qui est entrée dans l’application et utilisée pour générer chaque code OTP.
 
 L’application Authenticator génère automatiquement des codes lorsqu’elle est configurée pour effectuer des notifications push, afin que l’utilisateur dispose d’une sauvegarde, même si son appareil n’a pas de connectivité. Les applications tierces qui utilisent les TOTP OATH pour générer des codes peuvent également être utilisées.
 
 
 ## Implémenter une solution d’authentification basée sur Windows Hello Entreprise
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/4-implement-authentication-solution-based-windows-hello-for-business</sub>
-
-## Implémenter une solution d’authentification basée sur Windows Hello Entreprise
-
-- 3 minutes
 
 Dans Windows 10, Windows Hello Entreprise remplace les mots de passe par une authentification à deux facteurs forte sur les PC et appareils mobiles. Cette authentification se compose d’un nouveau type d’informations d’identification utilisateur qui sont liées à un appareil et utilise un code biométriques ou un code PIN. Windows Hello Entreprise permet aux utilisateurs de s’authentifier auprès d’un compte Active Directory ou Microsoft Entra.
 
@@ -589,12 +510,6 @@ La conception de Pluton supprime le potentiel d'attaque de ce canal de communica
 
 ## Excercice de configuration et de déploiement de la réinitialisation du mot de passe en libre-service
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/5-exercise-configure-deploy-self-service-password-reset</sub>
-
-## Excercice de configuration et de déploiement de la réinitialisation du mot de passe en libre-service
-
-- 15 minutes
-
 La réinitialisation de mot de passe en libre-service (SSPR) de Microsoft Entra permet aux utilisateurs de modifier ou de réinitialiser leur mot de passe, sans intervention d'un administrateur ou d'un service d'assistance. Si le compte d’un utilisateur est verrouillé ou si ce dernier oublie son mot de passe, il peut suivre des invites afin de se débloquer et de reprendre son travail. Cette fonctionnalité réduit les appels au support technique et la perte de productivité quand l’utilisateur ne parvient pas à se connecter à son appareil ou à une application.
 
 ### Avantages de la réinitialisation de mot de passe en libre-service
@@ -610,8 +525,6 @@ Licences requises :
 - Comptes locaux – Un utilisateur doit être inscrit à la réinitialisation de mot de passe en libre-service et disposer d'une licence Microsoft Entra ID Premium P1 ou P2, ou d'une licence Microsoft 365 Business Premium.
 
 ### Activer la réinitialisation du mot de passe en libre-service
-
-![Capture d’écran de la boîte de dialogue Réinitialisation de mot de passe en libre-service de Microsoft Entra ID. La fonctionnalité SSPR est activée pour un groupe d’utilisateurs appelé groupe de tests SSPR.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/enable-password-reset.png)
 
 Étapes de base permettant d’activer la réinitialisation du mot de passe en libre-service :
 
@@ -643,8 +556,6 @@ Vous voulez d’abord déployer SSPR sur un ensemble limité d’utilisateurs po
 4. Créez un nouveau groupe à l’aide des informations suivantes :    **Paramètre** **Valeur**     Type de groupe Sécurité   Nom du groupe SSPRTesters   Description du groupe Testeurs du déploiement de SSPR   Type d’appartenance Attribué   Membres Monica Thompson
 5. Sélectionnez **Créer.**
 
-![Capture d’écran de l’écran Nouveau groupe avec le type de groupe, le nom du groupe et le bouton Créer en surbrillance.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/create-self-service-password-reset-security-group.png)
-
 ### Activer la réinitialisation du mot de passe en libre-service
 
 Activez SSPR pour le groupe.
@@ -654,7 +565,7 @@ Activez SSPR pour le groupe.
 3. Dans la boîte de dialogue Réinitialisation du mot de passe de la page **Propriétés**, sous **Réinitialisation du mot de passe en libre-service activée**, sélectionnez **Sélectionné**.
 4. Sélectionnez **Sélectionner un groupe**.
 5. Dans le volet Stratégie de réinitialisation de mot de passe par défaut, sélectionnez le groupe **SSPRTesters** .
-6. Dans la boîte de dialogue Réinitialisation du mot de passe de la page **Propriétés**, sélectionnez **Enregistrer**. ![Capture d’écran affichant la page des propriétés de réinitialisation du mot de passe.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/enable-password-reset-for-selected-group.png)
+6. Dans la boîte de dialogue Réinitialisation du mot de passe de la page **Propriétés**, sélectionnez **Enregistrer**.
 7. Sous **Gérer**, sélectionnez et passez en revue les valeurs par défaut pour les paramètres **Méthodes d’authentification**, **Inscription**, **Notifications**et **Personnalisation** .
 
 ### S’inscrire à la réinitialisation de mot de passe en libre-service
@@ -665,7 +576,7 @@ Maintenant que la configuration SSPR est terminée, inscrivez un numéro de tél
 2. Connectez-vous en tant que `MonicaT@organization-domain-name.onmicrosoft.com` avec le mot de passe que vous avez noté précédemment. Remplacez nom de domaine de l’organisation par votre nom de domaine.
 3. Lorsque vous êtes invité à mettre à jour votre mot de passe, entrez un nouveau mot de passe de votre choix. Veillez à enregistrer le nouveau mot de passe.
 4. Dans la boîte de dialogue **Informations supplémentaires requises** , sélectionnez **Suivant**.
-5. Dans la page Protéger votre compte, activez l’option **Téléphone** ou sélectionnez le lien **Je veux configurer une autre méthode**. ![Capture d’écran affichant la page Protéger votre compte avec la boîte de dialogue Choisir une autre méthode.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/keep-your-account-secure-page.png)
+5. Dans la page Protéger votre compte, activez l’option **Téléphone** ou sélectionnez le lien **Je veux configurer une autre méthode**.
 6. Dans cet exemple, vous allez utiliser l’option Téléphone. Entrez les détails de votre téléphone mobile.
 7. Sélectionnez **M’envoyer un code par SMS**.
 8. Quand vous recevez le code sur votre téléphone mobile, entrez-le dans la zone de texte.
@@ -679,8 +590,8 @@ Vérifions maintenant si l’utilisateur peut réinitialiser son mot de passe.
 1. Ouvrez un autre navigateur ou ouvrez une session de navigateur InPrivate ou Incognito, puis accédez à [https://aka.ms/sspr](https://aka.ms/sspr). Cela permet de s’assurer que vous serez invité à vous authentifier comme utilisateur.
 2. Dans la zone **E-mail, téléphone ou Skype**, entrez `MonicaT@organization-domain-name.onmicrosoft.com`, puis sélectionnez Suivant. Remplacez nom de domaine de l’organisation par votre nom de domaine.
 3. Dans l’écran Saisie du mot de passe, sélectionnez **Mot de passe oublié**.
-4. Dans la page Récupérer dans votre compte, renseignez les informations demandées, puis sélectionnez **Suivant**. ![Capture d’écran de la page Retournez sur votre compte avec e-mail ou nom d’utilisateur, boîte captcha.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/get-back-into-your-account-page.png)
-5. Dans la tâche **Étape de vérification 1** , sélectionnez **envoyer un SMS à mon téléphone mobile** ou **Appeler mon téléphone mobile**, entrez votre numéro de téléphone, puis sélectionnez **Texte**. ![Capture d’écran de l’étape de vérification 1 avec les méthodes de contact, la case du numéro de téléphone et le bouton de texte en surbrillance.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/self-service-password-reset-verification-step.png)
+4. Dans la page Récupérer dans votre compte, renseignez les informations demandées, puis sélectionnez **Suivant**.
+5. Dans la tâche **Étape de vérification 1** , sélectionnez **envoyer un SMS à mon téléphone mobile** ou **Appeler mon téléphone mobile**, entrez votre numéro de téléphone, puis sélectionnez **Texte**.
 6. Entrez votre code de vérification, puis sélectionnez **Suivant**.
 7. À l’étape Choisir un nouveau mot de passe, entrez un mot de passe et confirmez votre nouveau mot de passe.
 8. Lorsque vous avez terminé, sélectionnez **Terminer**.
@@ -690,12 +601,6 @@ Vérifions maintenant si l’utilisateur peut réinitialiser son mot de passe.
 
 
 ## Déployer et gérer la protection par mot de passe
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/6-deploy-manage-password-protection</sub>
-
-## Déployer et gérer la protection par mot de passe
-
-- 12 minutes
 
 Les utilisateurs créent souvent des mots de passe basés sur des mots locaux courants, par exemple une école, une équipe de sport ou une personne célèbre. Ces mots de passe sont faciles à deviner et offrent une faible protection contre les attaques par dictionnaire. Pour appliquer des mots de passe forts au sein de votre organisation, la protection par mot de passe Microsoft Entra fournit une liste globale et personnalisée de mots de passe interdits. Toute demande de changement de mot de passe échoue si le mot de passe correspond à une entrée de la liste personnalisée de mots de passe interdits.
 
@@ -891,12 +796,6 @@ L’applet de commande `Get-AzureADPasswordProtectionDCAgent` peut être utilis�
 
 ## Configurer des seuils de verrouillage intelligent
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/7-configure-smart-lockout-thresholds</sub>
-
-## Configurer des seuils de verrouillage intelligent
-
-- 2 minutes
-
 Le verrouillage intelligent permet d'éviter que des acteurs malveillants essaient de deviner les mots de passe de vos utilisateurs ou utilisent des méthodes de force brute pour rentrer dans vos systèmes. Le verrouillage intelligent peut reconnaître les connexions provenant d’utilisateurs validés et les traiter différemment de celles des attaquants et autres sources inconnues. Le verrouillage intelligent empêche les attaquants de pénétrer dans le système, tout en permettant à vos utilisateurs d’accéder à leurs comptes et de travailler.
 
 ### Fonctionnement du verrouillage intelligent
@@ -926,12 +825,6 @@ Si vous souhaitez, par exemple, que la durée du verrouillage intelligent soit s
 
 ## Exercice – gérer les valeurs de verrouillage intelligentes de Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/8-exercise-manage-azure-active-directory-smart-lockout-values</sub>
-
-## Exercice – gérer les valeurs de verrouillage intelligentes de Microsoft Entra
-
-- 3 minutes
-
 ### Gérer les valeurs de verrouillage intelligent de Microsoft Entra
 
 En fonction des exigences de votre organisation, vous pouvez personnaliser les valeurs du verrouillage intelligent Microsoft Entra. Pour personnaliser les paramètres de verrouillage intelligent en vue de répondre aux besoins de votre organisation, vos utilisateurs doivent disposer d'une licence Microsoft Entra ID Premium P1 ou plus élevée.
@@ -939,7 +832,7 @@ En fonction des exigences de votre organisation, vous pouvez personnaliser les v
 1. Connectez-vous au [centre d’administration Microsoft Entra](https://entra.microsoft.com/) avec un compte administrateur général.
 2. Ouvrez le menu du portail, puis sélectionnez **Protection**.
 3. Dans le menu Protection, sélectionnez **Méthodes d'authentification**.
-4. Dans le menu Méthodes d'authentification, sélectionnez **Protection par mot de passe**. ![Capture d’écran de la boîte de dialogue Méthodes d’authentification avec les sélections mises en surbrillance pour accéder à l’authentification par mot de passe.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/browse-password-protection.png)
+4. Dans le menu Méthodes d'authentification, sélectionnez **Protection par mot de passe**.
 5. Dans les paramètres de protection par mot de passe, dans la zone **Durée du verrouillage en secondes**, définissez la valeur sur 120.
 6. En regard de **Mode**, sélectionnez **Appliqué**.
 7. Enregistrez vos modifications.
@@ -952,12 +845,6 @@ Votre compte est temporairement verrouillé pour éviter toute utilisation non a
 
 
 ## Implémenter l'authentification Kerberos et basée sur un certificat dans Microsoft Entra ID
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/9-implement-kerberos-certificate-based-authentication-azure-ad</sub>
-
-## Implémenter l'authentification Kerberos et basée sur un certificat dans Microsoft Entra ID
-
-- 3 minutes
 
 Vous pouvez fournir l’authentification unique pour les applications locales publiées via le proxy d’application. Les applications sont sécurisées avec l’authentification Windows intégrée. L’accès à ces applications nécessitent un ticket Kerberos. Le proxy d’application utilise la délégation Kerberos contrainte (KCD) pour prendre en charge ces applications. Vous pouvez activer l’authentification unique sur vos applications avec l’authentification Windows intégrée. Donnez aux connecteurs de proxy d’application l’autorisation dans Active Directory d’emprunter l’identité des utilisateurs. Les connecteurs utilisent cette autorisation pour envoyer et recevoir des jetons en leur nom.
 
@@ -986,12 +873,6 @@ Avant de commencer avec l’authentification unique pour les applications avec l
 
 ## Configurer l'authentification utilisateur Microsoft Entra pour les machines virtuelles
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/10-configure-azure-ad-user-authentication-virtual-machines</sub>
-
-## Configurer l'authentification utilisateur Microsoft Entra pour les machines virtuelles
-
-- 3 minutes
-
 Les organisations peuvent désormais améliorer la sécurité des machines virtuelles Windows et Linux dans Azure en y intégrant l’authentification Microsoft Entra. Vous pouvez maintenant utiliser Microsoft Entra ID comme plateforme d’authentification principale pour vous connecter à :
 
 - Windows Server 2022, 2025 ou version ultérieure installée avec Expérience de bureau.
@@ -1014,8 +895,6 @@ Pour utiliser la connexion Microsoft Entra sur une machine virtuelle Windows dan
 - Commencer par activer l’option de connexion Microsoft Entra pour votre machine virtuelle Windows.
 - Configurer ensuite les attributions de rôles Azure pour les utilisateurs autorisés à se connecter à la machine virtuelle.
 
-![Capture d’écran de la boîte de dialogue Créer ou configurer une machine virtuelle Windows. La case Se connecter avec Microsoft Entra ID est cochée.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/azure-authentication-windows-machine.png)
-
 #### Configurer la connexion à Microsoft Entra pour les machines virtuelles Linux
 
 Vous pouvez activer la connexion Microsoft Entra pour toutes les distributions Linux prises en charge mentionnées en utilisant le portail Azure. Par exemple, pour créer une machine virtuelle Ubuntu Server 18.04 LTS dans Azure avec authentification Microsoft Entra ID :
@@ -1029,24 +908,12 @@ Vous pouvez activer la connexion Microsoft Entra pour toutes les distributions L
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/11-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Vérifiez vos connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-user-authentication/12-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 Maintenant que vous avez parcouru ce module, vous devez être capable de :
 
@@ -1076,16 +943,10 @@ Pour en savoir plus sur les idées que nous avons vues dans ce module, consultez
 
 # Planifier, implémenter et administrer l’accès conditionnel
 
-_65 min · https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/_
+_https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 L’accès conditionnel offre une granularité précise de contrôle sur les utilisateurs et les identités qui peuvent effectuer des activités spécifiques, accéder aux ressources et garantir la sécurité des données et des systèmes. Avec l’introduction du contrôle des identités pour Microsoft Entra, désormais étendu aux agents IA, vous appliquez les mêmes principes Confiance nulle aux identités d'agents que ceux que vous appliquez aux utilisateurs et aux identités de charge de travail.
 
@@ -1105,19 +966,13 @@ Dans ce module, vous allez découvrir les points suivants :
 
 ## Planifier les paramètres de sécurité par défaut
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/2-plan-security-defaults</sub>
-
-## Planifier les paramètres de sécurité par défaut
-
-- 2 minutes
-
 La gestion de la sécurité peut s’avérer ardue lorsque les attaques courantes liées aux identités, telles que la pulvérisation de mot de passe, la relecture et le hameçonnage, deviennent monnaie courante. Les paramètres de sécurité par défaut fournissent des paramètres par défaut sécurisés que Microsoft gère pour le compte des organisations afin de garantir la sécurité des clients jusqu’à ce que les organisations soient prêtes à gérer leur propre histoire de sécurité des identités. Les paramètres de sécurité par défaut fournissent des paramètres de sécurité préconfigurés, tels que :
 
 - Exiger que tous les utilisateurs s’inscrivent pour l’authentification multifacteur.
 - Exigez des administrateurs qu’ils effectuent l’authentification multifacteur.
 - En restreignant les protocoles d’authentification hérités.
 - Exigez des utilisateurs qu’ils effectuent l’authentification multifacteur, lorsque cela est nécessaire.
-- En protégeant des activités privilégiées, telles que l’accès au Portail Azure.   ![Capture d’écran du centre d’administration Microsoft Entra avec le bouton bascule pour activer les paramètres de sécurité par défaut.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/security-defaults-azure-active-directory-portal.png)
+- En protégeant des activités privilégiées, telles que l’accès au Portail Azure.
 
 ### Disponibilité
 
@@ -1184,12 +1039,6 @@ Lorsque les paramètres de sécurité par défaut sont activés dans votre locat
 
 ## Exercice - Utiliser les paramètres de sécurité par défaut
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/3-exercise-work-with-security-defaults</sub>
-
-## Exercice - Utiliser les paramètres de sécurité par défaut
-
-- 3 minutes
-
 Dans cet exercice, essayez d’activer les paramètres de sécurité par défaut.
 
 Remarque
@@ -1199,7 +1048,7 @@ Les valeurs par défaut de sécurité sont activées sur les nouveaux abonnement
 Pour activer les paramètres de sécurité par défaut dans votre répertoire :
 
 1. Accédez au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) et connectez-vous en tant qu’administrateur de sécurité ou administrateur d’accès conditionnel.
-2. Sélectionnez l’icône hamburger du menu Afficher le portail, puis Identité – Vue d’ensemble. ![Capture d’écran du menu du centre d’administration Microsoft Entra avec Identité – Vue d’ensemble – Propriétés sélectionné.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/azure-portal-menu-azure-active-directory.png)
+2. Sélectionnez l’icône hamburger du menu Afficher le portail, puis Identité – Vue d’ensemble.
 3. Dans le volet de navigation de gauche, dans la section Gérer, sélectionnez **Propriétés**.
 4. En bas de la boite de dialogue Propriétés, sélectionnez **Gérer les paramètres de sécurité par défaut**.
 5. Affectez la valeur **Oui** à **Activer les paramètres de sécurité par défaut** à l’aide du bouton bascule.
@@ -1214,17 +1063,11 @@ Pour désactiver les paramètres de sécurité par défaut dans votre répertoir
 1. Accédez au [portail Azure](https://portal.azure.com/) et connectez-vous à l’aide d’un compte Administrateur pour l’annuaire.
 2. Sélectionnez l’icône hamburger du menu Afficher le portail, puis Microsoft Entra ID.
 3. En bas de la boite de dialogue Propriétés, sélectionnez **Gérer les paramètres de sécurité par défaut**.
-4. Définissez **Activer les paramètres de sécurité par défaut** sur **Non** à l’aide du bouton bascule. ![Capture d’écran montrant les paramètres de sécurité par défaut désactivés et la sélection du motif obligatoire pour la désactivation.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/security-defaults-disable-before-conditional-access.png)
+4. Définissez **Activer les paramètres de sécurité par défaut** sur **Non** à l’aide du bouton bascule.
 5. Sélectionnez **Enregistrer**.
 
 
 ## Planifier les stratégies d’accès conditionnel
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/4-plan-conditional-access-policies</sub>
-
-## Planifier les stratégies d’accès conditionnel
-
-- 8 minutes
 
 La planification de votre déploiement d’accès conditionnel joue un rôle capital dans la réussite de la stratégie d’accès de votre organisation pour les applications et les ressources.
 
@@ -1249,8 +1092,6 @@ Les avantages du déploiement de l’accès conditionnel sont les suivants :
 ### Comprendre les composants des stratégies d’accès conditionnel
 
 Les stratégies d’accès conditionnel sont des instructions de type si-alors : si une affectation est remplie, alors appliquer ces contrôles d’accès. Lorsque l’administrateur configure des politiques d’AC, les conditions sont *appelées affectations*. Les stratégies d’accès conditionnel vous permettent d’appliquer des contrôles d’accès aux applications de votre organisation, en fonction de certaines affectations.
-
-![Capture d’écran de la boîte de dialogue d’accès conditionnel avec l’écran de création de stratégie ouvert pour la configuration.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-policy.png)
 
 Les affectations définissent les utilisateurs et les groupes qui doivent être concernés par la stratégie, les applications cloud ou les actions auxquelles la stratégie s’applique, ainsi que les conditions dans lesquelles la stratégie s’applique. Les paramètres de contrôle d’accès octroient ou bloquent l’accès à différentes applications cloud et peuvent permettre des expériences limitées dans des applications cloud spécifiques.
 
@@ -1354,12 +1195,6 @@ Le plan de test est important pour comparer les résultats attendus et les résu
 
 
 ## Implémenter les contrôles et les attributions de la stratégie d'accès conditionnel
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/5-implement-conditional-access-policies-controls-assignments</sub>
-
-## Implémenter les contrôles et les attributions de la stratégie d'accès conditionnel
-
-- 8 minutes
 
 L’accès conditionnel est une fonctionnalité avancée de l’ID Microsoft Entra qui vous permet de spécifier des stratégies détaillées qui contrôlent qui peuvent accéder à vos ressources. À l’aide de l’accès conditionnel, vous pouvez protéger vos applications en limitant l’accès des utilisateurs en fonction de signaux tels que l’appartenance au groupe, la conformité des appareils, l’emplacement réseau et les risques de connexion.
 
@@ -1540,11 +1375,7 @@ Les stratégies d’accès conditionnel sont des outils puissants. Nous vous rec
 
 ### Conditions d'utilisation de l'accès conditionnel (CGU)
 
-![capture d’écran de la boîte de dialogue Identity Governance dans laquelle créer des conditions d’utilisation pour vos solutions cloud.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-terms-identity-governance.png)
-
 Vous pouvez créer des conditions d’utilisation (TOU) pour votre site dans les outils de gouvernance des identités (Identity Governance). Lancez l’application de gouvernance des identités et choisissez **Conditions d’utilisation** dans le menu. Vous devez fournir un fichier PDF incluant les conditions pour l’utilisateur. Vous pouvez configurer plusieurs règles, par exemple, déterminer quand les conditions expireront ou si l'utilisateur doit les ouvrir avant de les accepter. Une fois qu’une règle est créée, vous pouvez élaborer une règle conditionnelle personnalisée directement dans la gouvernance de l’identité. Vous pouvez également enregistrer les conditions et utiliser l’accès conditionnel dans Microsoft Entra ID. Pour créer des conditions d’utilisation, vous renseignez la boîte de dialogue ci-dessus.
-
-![Capture d’écran de la page de configuration de l’accès conditionnel Microsoft Entra qui montre comment ajouter des règles de conditions d’utilisation pour pouvoir accéder aux ressources.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/terms-of-use-conditional-access.png)
 
 La liaison du consentement (accepter les conditions d’utilisation avant l’accès) et l’accès conditionnel prennent de plus en plus d’ampleur. Les organisations ont la possibilité de contraindre un utilisateur à accepter les conditions d’utilisation. En outre, les organisations peuvent faire expirer le consentement donné, ou modifier les conditions d’utilisation et redemander l’accord de l’utilisateur.
 
@@ -1556,12 +1387,6 @@ Si vous souhaitez obtenir le consentement des utilisateurs avant qu’ils ne pui
 
 ## Exercice - Implémenter des contrôles et des affectations de stratégie d’accès conditionnel
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/6-exercise-implement-conditional-access-policies-roles-assignments</sub>
-
-## Exercice - Implémenter des contrôles et des affectations de stratégie d’accès conditionnel
-
-- 10 minutes
-
 Dans cet exercice, créez une stratégie d’accès conditionnel.
 
 L’accès conditionnel Microsoft Entra est une fonctionnalité avancée de Microsoft Entra ID vous permettant de spécifier des stratégies détaillées qui contrôlent les utilisateurs pouvant accéder à vos ressources. Avec l’accès conditionnel, vous pouvez protéger vos applications en limitant l’accès des utilisateurs en fonction d’éléments tels que les groupes, le type d’appareil, l’emplacement et le rôle.
@@ -1570,7 +1395,7 @@ L’accès conditionnel Microsoft Entra est une fonctionnalité avancée de Micr
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Ensuite, sélectionnez **Protection**.
 4. Dans le panneau Sécurité, dans le volet de navigation de gauche, sélectionnez **Accès conditionnel**.
-5. Dans le menu supérieur, sélectionnez **+Créer une stratégie**.   ![Capture d’écran du panneau Accès conditionnel avec Nouvelle stratégie mis en surbrillance](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-new-policy.png)
+5. Dans le menu supérieur, sélectionnez **+Créer une stratégie**.
 6. Dans la zone **Nom**, entrez **Accès conditionnel aux applications de test**. Il s’agit du nom utilisé dans le cadre de cet exercice. Vous pouvez choisir un autre nom si vous le souhaitez.
 7. Sous **Affectations**, sélectionnez **Utilisateurs et groupes**.
 8. Dans l’onglet inclure, activez la case à cocher **Utilisateurs et groupes**.
@@ -1589,27 +1414,19 @@ Cette stratégie est configurée pour l’exercice uniquement et est utilisée p
 
 1. Sous **Activer la stratégie**, sélectionnez **Activé**, puis sélectionnez **Créer**.
 
-![Capture d’écran d’une nouvelle stratégie d’accès conditionnel avec Activer et Créer mis en évidence.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-conditional-access-policy.png)
-
 ### Tester la stratégie d’accès conditionnel
 
 Vous devez tester vos stratégies d’accès conditionnel pour vous assurer qu’elles fonctionnent comme prévu.
 
 1. Ouvrez un nouvel onglet de navigateur, puis accédez à **[https://myapps.microsoft.com](https://myapps.microsoft.com)**.
 2. Vos informations d’identification doivent être transmises.
-3. Vérifiez que vous ne parvenez pas à accéder à votre page Mes applications.   ![Capture d’écran de l’accès aux ressources bloqué en raison d’une stratégie d’accès conditionnel activée.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/test-conditional-access-policy.png)    Remarque Si vous êtes connecté, fermez l’onglet, attendez 1 à 2 minutes, puis réessayez.
+3. Vérifiez que vous ne parvenez pas à accéder à votre page Mes applications.       Remarque Si vous êtes connecté, fermez l’onglet, attendez 1 à 2 minutes, puis réessayez.
 4. Fermez l’onglet et revenez au panneau Accès conditionnel.
 5. Sélectionnez la stratégie **Accès conditionnel aux applications de test**.
 6. Sous **Activer la stratégie**, sélectionnez **Désactivé**, puis sélectionnez **Enregistrer**.
 
 
 ## Tester et résoudre les problèmes des stratégies d’accès conditionnel
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/7-test-troubleshooting-conditional-access-policies</sub>
-
-## Tester et résoudre les problèmes des stratégies d’accès conditionnel
-
-- 3 minutes
 
 L’infrastructure d’accès conditionnel vous offre une grande flexibilité de configuration. Toutefois, une grande souplesse signifie également que vous devez examiner soigneusement chaque stratégie de configuration avant de la mettre en œuvre afin d’éviter des résultats indésirables. Dans ce contexte, prêtez une attention particulière à l’affectation d’ensembles complets comme **tous les utilisateurs / groupes / applications cloud**.
 
@@ -1629,8 +1446,6 @@ Les organisations doivent éviter les configurations suivantes :
 
 Vous devez tout d’abord consulter le message d’erreur qui s’affiche. Pour les problèmes de connexion lors de l’utilisation d’un navigateur web, la page d’erreur elle-même contient des informations détaillées. Ces informations décrivent uniquement le problème et suggèrent une solution.
 
-![Capture d’écran de l’erreur de connexion - Appareil conforme requis. Avec un bouton pour annuler ou avoir plus d’informations.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-1.png)
-
 Dans l’erreur ci-dessus, le message indique que l’application est accessible uniquement à partir d’appareils ou d’applications clientes qui respectent la stratégie de gestion des appareils mobiles de l’entreprise. Dans le cas présent, l’application et l’appareil ne sont pas conformes à cette stratégie.
 
 ### Événements de connexion à Microsoft Entra
@@ -1638,8 +1453,6 @@ Dans l’erreur ci-dessus, le message indique que l’application est accessible
 La deuxième méthode permettant d’obtenir des informations détaillées sur l’interruption de connexion consiste à passer en revue les événements de connexion Microsoft Entra pour savoir quelles stratégies d’accès conditionnel ont été appliquées et pourquoi.
 
 Obtenez plus d’informations sur le problème en cliquant sur **Plus de détails** dans la page d’erreur initiale. Cliquez sur **Plus de détails** pour afficher des informations de dépannage utiles lors de la recherche de l’événement d’échec spécifique que l’utilisateur a vu dans les événements de connexion Microsoft Entra ou lors de l’ouverture d’un incident de support auprès de Microsoft.
-
-![Capture d’écran montrant plus de détails d'une interruption de connexion au navigateur web due à l’accès conditionnel.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-2.png)
 
 Procédez comme suit pour trouver quelles stratégies d’accès conditionnel ont été appliquées et pourquoi :
 
@@ -1650,7 +1463,7 @@ Procédez comme suit pour trouver quelles stratégies d’accès conditionnel on
     1. ID de corrélation lorsque vous avez un événement spécifique à examiner.
     2. Accès conditionnel pour voir l’échec et la réussite de la stratégie. Pour limiter les résultats, restreignez votre filtre afin de n’afficher que les échecs.
     3. Nom d’utilisateur pour afficher des informations relatives à des utilisateurs spécifiques.
-    4. Date limitée à la période en question. ![Capture d’écran du message d’erreur. L’utilisateur sélectionne le filtre Accès conditionnel dans le journal des connexions.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-3.png)
+    4. Date limitée à la période en question.
 
 4. Une fois que l’événement de connexion qui correspond à l’échec de connexion de l’utilisateur a été trouvé, sélectionnez l’onglet **Accès conditionnel**. Cet onglet affiche la ou les stratégies spécifiques qui ont abouti à l’interruption de la connexion.
   1. Les informations de l’onglet **Dépannage et support** indiquent clairement pourquoi une connexion a échoué, par exemple un appareil ne respectant pas les exigences de conformité.
@@ -1661,32 +1474,18 @@ Procédez comme suit pour trouver quelles stratégies d’accès conditionnel on
 
 La sélection des points de suspension sur le côté droit de la politique lors d’un événement de connexion fait apparaître les détails de la politique. Les administrateurs peuvent ainsi obtenir des informations supplémentaires sur la raison pour laquelle une stratégie a été correctement appliquée ou non.
 
-![Capture d’écran de l’onglet Accès conditionnel aux événements de connexion. En attente de l’entrée de l’utilisateur.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-5.png)
-
-![Capture d’écran des Détails de la stratégie (préversion) dans l’accès conditionnel Microsoft Entra.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/policy-details.png)
-
 Le côté gauche fournit les détails collectés lors de la connexion et le côté droit indique si ces détails répondent aux exigences des stratégies d’accès conditionnel appliquées. Les stratégies d’accès conditionnel s’appliquent uniquement lorsque toutes les conditions sont satisfaites ou non configurées.
 
 Si les informations de l’événement ne suffisent pas à comprendre les résultats de la connexion ou à ajuster la stratégie pour obtenir les résultats souhaités, il est possible d’ouvrir un incident de support. Accédez à l’onglet **Dépannage et support** de cet événement de connexion, puis sélectionnez **Créer une demande de support**.
-
-![Capture d'écran de l'onglet « Dépannage et assistance » de l'événement de connexion. L'assistant permet de résoudre les problèmes.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-6.png)
 
 Lors de l’envoi de l’incident, fournissez l’ID de la demande, ainsi que l’heure et la date de l’événement de connexion dans les détails d’envoi de l’incident. Ces informations permettent au support Microsoft de trouver l’événement qui vous intéresse.
 
 
 ## Implémenter des contrôles d’application
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/8-implement-application-controls</sub>
-
-## Implémenter des contrôles d’application
-
-- 4 minutes
-
 Le contrôle d’application par accès conditionnel permet de superviser et de contrôler en temps réel les sessions et accès utilisateur aux applications en fonction des stratégies d’accès et de session. Les stratégies d’accès et de session s’utilisent sur le portail Microsoft Defender for Cloud Apps pour affiner davantage les filtres et définir les mesures à prendre pour un utilisateur.
 
 ### Contrôle d‘application par accès conditionnel
-
-![Capture d’écran du contrôle d’application d’accès conditionnel sélectionné dans l’Assistant Accès conditionnel.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-app-control.png)
 
 Le contrôle d’application par accès conditionnel utilise une architecture de proxy inverse et il est intégré de manière unique à l’accès conditionnel Microsoft Entra. L’accès conditionnel Microsoft Entra vous permet d’appliquer des contrôles d’accès aux applications de votre organisation en fonction de certaines conditions. Les conditions définissent à qui (utilisateur ou groupe d’utilisateurs), à quoi (quelles applications cloud) et où (quels emplacements et réseaux) s’applique une stratégie d’accès conditionnel. Une fois que vous avez déterminé les conditions, vous pouvez router les utilisateurs vers Microsoft Defender for Cloud Apps afin de protéger les données avec un contrôle d’application par accès conditionnel en appliquant des contrôles d’accès et de session.
 
@@ -1855,12 +1654,6 @@ Si vous appliquez une stratégie de gestion MAM à l’utilisateur sans définir
 
 ## Implémenter la gestion des sessions et l’évaluation continue de l’accès
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/9-implement-session-management</sub>
-
-## Implémenter la gestion des sessions et l’évaluation continue de l’accès
-
-- 3 minutes
-
 Dans les déploiements complexes, les organisations peuvent avoir besoin de limiter les sessions d’authentification. Certains scénarios peuvent inclure les éléments suivants :
 
 - L’accès aux ressources à partir d’un appareil non géré ou partagé.
@@ -1925,8 +1718,6 @@ Une session de navigateur persistante permet aux utilisateurs de rester connect�
 
 Utilisez l’outil What-If (Scénarios) pour simuler une connexion de l’utilisateur vers l’application cible et d’autres conditions en fonction de la configuration de votre stratégie. Les contrôles de gestion de session d’authentification s’affichent dans le résultat de l’outil.
 
-![Capture d’écran des résultats de l’outil Conditional Access What If.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-what-if-tool-result.png)
-
 ### Déploiement de stratégie
 
 Pour vous assurer que votre stratégie fonctionne comme prévu, la meilleure pratique recommandée consiste à la tester avant de la déployer en production. Dans l’idéal, utilisez un locataire de test pour vérifier si votre nouvelle stratégie fonctionne comme prévu.
@@ -1959,12 +1750,6 @@ L’évaluation continue de l’accès offre plusieurs avantages clés.
 
 ## Exercice - Configurer des contrôles de session d’authentification
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/10-exercise-configure-authentication-session-controls</sub>
-
-## Exercice - Configurer des contrôles de session d’authentification
-
-- 10 minutes
-
 Dans cet exercice, vous allez configurer les contrôles de fréquence de connexion à l’aide d’une stratégie d’accès conditionnel.
 
 1. Connectez-vous au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) à l’aide d’un compte Administrateur.
@@ -1972,8 +1757,6 @@ Dans cet exercice, vous allez configurer les contrôles de fréquence de connexi
 3. Dans le menu Identité, sélectionnez ensuite **Protection**.
 4. Dans le menu Protection, sélectionnez **Accès conditionnel**.
 5. Dans le menu supérieur, sélectionnez **Nouvelle stratégie**.
-
-![Capture d’écran du panneau Accès conditionnel avec l’élément Nouvelle stratégie mis en évidence.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-new-policy.png)
 
 1. Dans la zone **Nom**, entrez **Fréquence de connexion**.
 2. Sous **Affectations**, sélectionnez **Utilisateurs et groupes**.
@@ -1988,16 +1771,7 @@ Dans cet exercice, vous allez configurer les contrôles de fréquence de connexi
 11. Sélectionnez le menu des unités, sélectionnez **Jours**, puis sélectionnez **Sélectionner**.
 12. Sous **Activer la stratégie**, sélectionnez **Rapport uniquement**, puis sélectionnez **Créer**.
 
-![Capture d’écran d’une nouvelle stratégie d’accès conditionnel avec les paramètres de stratégie mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-session-conditional-access-policy.png)
-
-
 ## Agent d’optimisation de l’accès conditionnel Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/11-implement-continuous-access-evaluation</sub>
-
-## Agent d’optimisation de l’accès conditionnel Microsoft Entra
-
-- 10 minutes
 
 L’agent d’optimisation de l’accès conditionnel vous permet de vous assurer que tous les utilisateurs sont protégés par la stratégie. Il recommande des stratégies et des modifications basées sur les meilleures pratiques alignées sur l’apprentissage Confiance Zéro et Microsoft.
 
@@ -2030,16 +1804,10 @@ L’agent d’optimisation de l’accès conditionnel analyse votre client à la
 
 ### Donner à l’agent d’optimisation de l’accès conditionnel une tentative
 
-[![Capture d’écran de la page d’accueil de la simulation interactive.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/simulation-conditional-access-agent.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
+[](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
 
 
 ## Évaluation du module
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/12-knowledge-check</sub>
-
-## Évaluation du module
-
-- 2 minutes
 
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
@@ -2047,12 +1815,6 @@ Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/plan-implement-administer-conditional-access/13-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 À l’issue de ce module, vous pourrez :
 
@@ -2086,16 +1848,10 @@ Pour en savoir plus sur la technologie de ce module, consultez les liens suivant
 
 # Gérer Microsoft Entra Identity Protection
 
-_55 min · https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/_
+_https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 La protection de l’identité des utilisateurs en surveillant leur utilisation et leurs modèles de connexion garantit une solution cloud sécurisée. Découvrez comment concevoir et implémenter Microsoft Entra Identity Protection.
 
@@ -2116,12 +1872,6 @@ Dans ce module, vous allez :
 
 
 ## Passer en revue les principes fondamentaux de Identity Protection
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/2-review-identity-protection-basics</sub>
-
-## Passer en revue les principes fondamentaux de Identity Protection
-
-- 4 minutes
 
 La protection de l’identité est un service qui permet aux organisations d’afficher l'état de sécurité de n’importe quel compte. Les organisations peuvent accomplir trois tâches clés :
 
@@ -2187,15 +1937,9 @@ L'utilisation de cette caractéristique requiert une licence Microsoft Entra ID 
 
 ## Implémenter et gérer une stratégie de risque d’utilisateur
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/3-implement-manage-user-risk-policy</sub>
-
-## Implémenter et gérer une stratégie de risque d’utilisateur
-
-- 6 minutes
-
 Il existe deux stratégies de risque qui peuvent être activées dans l’annuaire :
 
-- **Stratégie de connexion à risque** : La stratégie de connexion à risque détecte les actions suspectes qui accompagnent la connexion. Elle se concentre sur l'activité de connexion elle-même et analyse la probabilité que la connexion ait été effectuée par une personne autre que l'utilisateur. ![Capture d’écran de la page de vue d’ensemble de la sécurité permettant d’activer les stratégies de risque utilisateur et de connexion.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/identity-protection-security-overview.png)
+- **Stratégie de connexion à risque** : La stratégie de connexion à risque détecte les actions suspectes qui accompagnent la connexion. Elle se concentre sur l'activité de connexion elle-même et analyse la probabilité que la connexion ait été effectuée par une personne autre que l'utilisateur.
 - **Stratégie d’utilisateur à risque** : La stratégie d’utilisateur à risque détecte la probabilité de compromission d’un compte d’utilisateur en détectant les événements à risque atypiques du comportement de l’utilisateur.
 
 Ensemble, les deux stratégies automatisent la réponse aux détections de risques dans votre environnement et permettent aux utilisateurs de résoudre eux-mêmes des problèmes quand des risques sont détectés.
@@ -2225,19 +1969,13 @@ Les emplacements réseau approuvés qui ont été configurés sont utilisés par
 
 ## Exercice – Activer la stratégie de connexion à risque
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/4-exercise-enable-sign-risk-policy</sub>
-
-## Exercice – Activer la stratégie de connexion à risque
-
-- 10 minutes
-
 ### Activer la stratégie de risque utilisateur
 
 1. Connectez-vous au [centre d’administration Microsoft Entra](https://entra.microsoft.com/) avec un compte administrateur général.
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le menu Identité, sélectionnez **Protection**.
 4. Dans le panneau Sécurité, dans le volet de navigation de gauche, sélectionnez **Protection de l’identité**.
-5. Dans le panneau Protection de l’identité, dans le volet de navigation de gauche, sélectionnez Stratégie de risque utilisateur. ![Capture d’écran de la page Stratégie d’utilisateur à risque et chemin de navigation mis en évidence.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/browse-identity-protection.png)
+5. Dans le panneau Protection de l’identité, dans le volet de navigation de gauche, sélectionnez Stratégie de risque utilisateur.
 6. Sous **Affectations**, sélectionnez **Tous les utilisateurs** et passez en revue les options disponibles. Vous pouvez sélectionner **Tous les utilisateurs** ou **Sélectionner des personnes et des groupes** si vous limitez votre déploiement. En outre, vous pouvez choisir d’exclure des utilisateurs de la stratégie.
 7. Sous **Risque de l’utilisateur**, sélectionnez **Bas et supérieur**.
 8. Dans le volet Risque de l’utilisateur, sélectionnez **Élevé**, puis sélectionnez **Terminé**.
@@ -2264,12 +2002,6 @@ La recommandation de Microsoft consiste à Autoriser l’accès et à Exiger la 
 
 ## Exercice : configurer la stratégie d’inscription de l’authentification multifacteur Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/5-exercise-configure-multi-factor-authentication-registration-policy</sub>
-
-## Exercice : configurer la stratégie d’inscription de l’authentification multifacteur Microsoft Entra
-
-- 5 minutes
-
 ### Configuration de la stratégie
 
 L'authentification multifacteur permet de vérifier l'identité d'une personne en utilisant plus qu'un nom d'utilisateur et un mot de passe. Cette stratégie fournit une deuxième couche de sécurité aux connexions d’utilisateur. Pour que les utilisateurs puissent répondre aux invites MFA, ils doivent d'abord s'inscrire à l'authentification multifacteur.
@@ -2278,19 +2010,13 @@ L'authentification multifacteur permet de vérifier l'identité d'une personne e
 2. Ouvrez le menu du portail, puis sélectionnez **Identité**.
 3. Dans le menu Identité, sélectionnez **Protection**.
 4. Dans le panneau Sécurité, dans le volet de navigation de gauche, sélectionnez **Protection de l’identité**.
-5. Dans le panneau Protection des identités, dans le volet de navigation gauche, sélectionnez **Politique d'inscription d'authentification multifacteur**. ![Capture d’écran de la page de politique d’inscription à l'authentification multifacteur (MFA) avec chemin de navigation mis en surbrillance.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/browse-registration-policy.png)
+5. Dans le panneau Protection des identités, dans le volet de navigation gauche, sélectionnez **Politique d'inscription d'authentification multifacteur**.
 6. Sous **Affectations**, sélectionnez **Tous les utilisateurs** et passez en revue les options disponibles. Vous pouvez sélectionner **Tous les utilisateurs** ou **Sélectionner des personnes et des groupes** si vous limitez votre déploiement. En outre, vous pouvez choisir d’exclure des utilisateurs de la stratégie.
 7. Sous **Contrôles**, remarquez que l'option **Inscription obligatoire à l'authentification multifacteur pour Microsoft Entra ID** est sélectionnée et ne peut pas être modifiée.
 8. Sous **Appliquer la politique**, sélectionnez **Activer** puis **Enregistrer**.
 
 
 ## Surveiller, examiner et corriger les utilisateurs à risque
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/6-monitor-investigate-remediate-elevated-risky-users</sub>
-
-## Surveiller, examiner et corriger les utilisateurs à risque
-
-- 16 minutes
 
 ### Examiner les risques
 
@@ -2309,8 +2035,6 @@ Chaque rapport démarre avec une liste de toutes les détections pour la périod
 La sélection d’entrées individuelles permet d’ajouter davantage d’entrées en haut du rapport, telles que la possibilité de confirmer une connexion comme compromise ou sécurisée, de confirmer qu’un utilisateur est compromis ou d’ignorer le risque de l’utilisateur.
 
 La sélection d’entrées individuelles développe une fenêtre de détails sous les détections. L’affichage des détails permet aux administrateurs d’investiguer et d’effectuer des actions lors de chaque détection.
-
-![Capture d’écran du rapport Protection des identités montrant les connexions à risque et les détails.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/identity-protection-risky-sign-ins-report.png)
 
 #### Utilisateurs à risque
 
@@ -2587,12 +2311,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskD
 
 ## Mettre en œuvre la sécurité des identités de charge de travail
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/7-implement-security-workload-identities</sub>
-
-## Mettre en œuvre la sécurité des identités de charge de travail
-
-- 3 minutes
-
 Microsoft Entra Identity Protection a toujours aidé à protéger les utilisateurs en détectant, en investiguant et en corrigeant les risques liés à l’identité. La protection des identités a étendu ces fonctionnalités aux identités de charge de travail pour protéger les applications, les principaux de service et les identités managées.
 
 Une identité de charge de travail est une identité qui permet à une application ou à un principal de service d’accéder à des ressources, parfois dans le contexte d’un utilisateur. Ces identités de charge de travail diffèrent des comptes d’utilisateur traditionnels car elles :
@@ -2631,12 +2349,6 @@ Pour utiliser le risque lié à l’identité de charge de travail, notamment le
 
 ## Explorer Microsoft Defender pour Identity
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/8-explore-microsoft-defender-identity</sub>
-
-## Explorer Microsoft Defender pour Identity
-
-- 1 minute
-
 Microsoft Defender pour Identity (anciennement Azure Protection avancée contre les menaces) est une solution de sécurité basée sur le cloud. Defender pour Identity utilise vos signaux Active Directory locales pour identifier, détecter et investiguer des menaces avancées, des identités compromises et des actions internes malveillantes dirigées contre votre entreprise. Defender pour Identity permet aux analystes SecOp et aux professionnels de la sécurité chargés de détecter les attaques avancées dans les environnements hybrides de :
 
 - Surveiller les utilisateurs, ainsi que le comportement et les activités des entités avec une analytique basée sur l’apprentissage
@@ -2659,12 +2371,6 @@ Defender pour Identity est constitué des composants suivants :
 
 
 ## Explorer l’agent de gestion des risques liés à l’identité
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/8a-identity-risk-management-agent</sub>
-
-## Explorer l’agent de gestion des risques liés à l’identité
-
-- 5 minutes
 
 L’agent Identity Risk Management dans Microsoft Entra ID Protection fournit des fonctionnalités de gestion proactive des risques en analysant le comportement de l’utilisateur. L’agent suggère ensuite des actions pour atténuer les risques potentiels d’identité. Vous pouvez configurer les paramètres pour répondre aux besoins de votre organisation. En utilisant un modèle de langage volumineux, l’agent aide les administrateurs de sécurité à examiner et à répondre aux activités à risque avant qu’ils n’entraînent des incidents de sécurité.
 
@@ -2755,24 +2461,12 @@ La page détails de l’utilisateur à risque fournit une nouvelle vue Agent, qu
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/9-knowledge-check</sub>
-
-## Évaluation du module
-
-- 3 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Contrôle des connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/manage-azure-active-directory-identity-protection/10-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 1 minute
 
 Maintenant que vous avez parcouru ce module, vous devez être capable de :
 
@@ -2801,16 +2495,10 @@ Utilisez ces ressources pour approfondir vos connaissances.
 
 # Implémenter le Gestionnaire d’accès pour des ressources Azure
 
-_30 min · https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/_
+_https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/1-introduction</sub>
-
-## Présentation
-
-- 3 minutes
 
 Ce module explique comment attribuer et gérer l’accès à des ressources dans Azure en utilisant des rôles Azure. Quand vous créez une ressource, vous voulez être sûr que seul un accès spécifique est accordé aux utilisateurs et aux groupes. Accordez aux utilisateurs qui doivent accéder à des données ou à une ressource les autorisations nécessaires. Comment pouvez-vous contrôler l’accès ? En attribuant un rôle avec les autorisations spécifiques nécessaires. Il existe des rôles Azure intégrés et vous pouvez créer des rôles personnalisés en fonction des besoins.
 
@@ -2832,12 +2520,6 @@ Aucun
 
 
 ## Affecter des rôles Azure
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/2-assign-azure-roles</sub>
-
-## Affecter des rôles Azure
-
-- 3 minutes
 
 Le contrôle d’accès en fonction du rôle Azure (Azure RBAC) est le système d’autorisation que vous utilisez pour gérer l’accès aux ressources Azure. Pour accorder l’accès, vous devez attribuer des rôles aux utilisateurs, aux groupes, aux principaux de service ou aux identités managées avec une étendue particulière. Étapes principales à suivre lors de l’attribution d’un rôle Azure :
 
@@ -2866,8 +2548,6 @@ Le contrôle d’accès en fonction du rôle Azure (Azure RBAC) est le système 
 
 #### Attribuer un rôle Azure à partir du portail
 
-![Capture d’écran du portail Azure qui montre un exemple de groupe de ressources, avec Attribuer un rôle sélectionné.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/assign-role-resource-group.png)
-
 Que vous soyez dans la section Utilisateur, Groupe, Groupe de ressources ou Abonnement, vous utilisez la page Gestion des accès (IAM) pour attribuer les droits. Le nom officiel est la gestion des identités et des accès (IAM) et apparaît à plusieurs emplacements dans le portail Azure.
 
 #### Attribuer un rôle Azure avec un script
@@ -2891,17 +2571,9 @@ az role assignment create --assignee "{assignee}" \
 
 ## Configurer des rôles Azure personnalisés
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/3-configure-custom-azure-roles</sub>
-
-## Configurer des rôles Azure personnalisés
-
-- 3 minutes
-
 Si les rôles intégrés Azure ne répondent pas aux besoins spécifiques de votre organisation, vous pouvez créer vos propres rôles personnalisés Azure. Tout comme les rôles intégrés, vous pouvez attribuer des rôles personnalisés à des utilisateurs, des groupes et des principaux de service dans des étendues de groupe d’administration (en préversion uniquement), d’abonnement et de groupe de ressources. Les rôles personnalisés sont stockés dans une instance Microsoft Entra ID et peuvent être partagés entre les abonnements. Chaque annuaire peut avoir jusqu’à 5 000 rôles personnalisés. Vous pouvez créer des rôles personnalisés à l’aide du portail Azure, d’Azure PowerShell, d’Azure CLI ou de l’API REST.
 
 #### Créer le rôle personnalisé à partir de l’interface utilisateur
-
-![Capture d’écran de l’écran Microsoft Entra ID avec une nouvelle boîte de dialogue de rôle personnalisé. Sélectionnez les attributs dont vous souhaitez disposer.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/new-custom-role.png)
 
 Vous attribuez un rôle personnalisé à un utilisateur, un groupe ou une autre ressource comme vous le feriez pour un rôle intégré. Votre administrateur contrôle exactement les fonctionnalités auxquelles le rôle personnalisé a accès. Le principe du privilège minimum vous permet de sélectionner seulement les fonctionnalités dont vous avez besoin. Pour créer le rôle personnalisé :
 
@@ -2947,12 +2619,6 @@ L’astérisque (`*`) est utilisé comme caractère générique. Si vous devez a
 
 ## Créer et configurer des identités managées
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/4-create-configure-managed-identities</sub>
-
-## Créer et configurer des identités managées
-
-- 3 minutes
-
 Une problématique courante lors de la création d’une solution cloud est la gestion des secrets, des informations d’identification, des certificats et des clés. Ces éléments sécurisés sont utilisés pour sécuriser la communication entre les services. Les identités managées permettent aux développeurs de ne plus avoir à gérer ces informations d’identification.
 
 Bien que les développeurs puissent stocker en toute sécurité les secrets dans Azure Key Vault, les services ont besoin d’un moyen d’accéder à Azure Key Vault. Les identités managées fournissent une identité gérée automatiquement dans Microsoft Entra ID, que les applications utilisent pour se connecter aux ressources. L’identité managée prend en charge l’authentification via Microsoft Entra ID. Les applications peuvent utiliser des identités managées pour obtenir des jetons Microsoft Entra sans avoir à gérer les informations d’identification.
@@ -2972,8 +2638,6 @@ Bien que les développeurs puissent stocker en toute sécurité les secrets dans
 Rappelez-vous toujours que les identités managées sont affectées à une application. Vous devez donc configurer et gérer l’identité au sein des services utilisés. Si vous avez une application s’exécutant sur une machine virtuelle (Linux ou Windows), c’est ici que ajoutez et configurez l’identité. Si vous utilisez une identité managée avec une application cloud, une fonction ou un service d’application, vous la configurez et vous la gérez à cet endroit. Examinons l’ajout d’une identité managée à une application cloud en utilisant App Service.
 
 #### Identité managée dans le portail Azure pour un App Service
-
-![Capture de l’écran App Services sur le portail Azure. L’option Ajouter une identité affectée par l’utilisateur est mise en évidence.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-azure-portal.png)
 
 Les étapes de base pour créer et ajouter une identité à votre application sont les suivantes :
 
@@ -3014,12 +2678,6 @@ Comme mentionné au début de cette page, quand vous créez une application, vou
 
 ## Accéder aux ressources Azure avec des identités managées
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/5-access-managed-identities</sub>
-
-## Accéder aux ressources Azure avec des identités managées
-
-- 3 minutes
-
 Les identités managées pour les ressources Azure sont une fonctionnalité de Microsoft Entra ID. Chaque service Azure qui prend en charge les identités managées est soumis à leur propre chronologie. Assurez-vous de passer en revue l’état Disponibilité des identités gérées pour votre ressource et les problèmes connus avant de commencer. Après avoir configuré une ressource Azure avec une identité managée, vous pouvez accorder à cette identité un accès à une autre ressource.
 
 #### Ajouter un accès à d’autres ressources
@@ -3029,19 +2687,13 @@ Une fois que vous avez activé l’identité managée sur une ressource Azure, t
 1. Connectez-vous au portail Azure en utilisant un compte associé à l’abonnement Azure sous lequel vous avez configuré l’identité managée.
 2. Accédez à la ressource souhaitée sur laquelle vous voulez modifier le contrôle d’accès. Dans cet exemple, nous offrons donnons à une machine virtuelle Azure l’accès à un compte de stockage : nous accédons donc au compte de stockage.
 3. Sélectionnez Contrôle d’accès (IAM).
-4. Sélectionnez Ajouter > Ajouter une attribution de rôle pour ouvrir la page Ajouter une attribution de rôle.   ![Capture d’écran montrant l’ajout d’un nouveau rôle à une identité managée dans la page Compte de stockage du portail Azure.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-role-assignment.png)
+4. Sélectionnez Ajouter > Ajouter une attribution de rôle pour ouvrir la page Ajouter une attribution de rôle.
 5. Choisissez le rôle Propriétaire, Contributeur ou Lecteur, en fonction des règles de privilège minimum pour les besoins de vos applications.
-6. Sélectionnez l’identité managée que vous voulez affecter.   ![Capture d’écran montrant le choix de l’identité managée à laquelle attribuer le rôle et l’accès dans la page coffre de clés du portail Azure.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-select.png)
+6. Sélectionnez l’identité managée que vous voulez affecter.
 7. Effectuez l’affectation avec l’option **Vérifier + affecter**.
 
 
 ## Analyser les autorisations des rôles Azure
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/6-analyze-azure-role-permissions</sub>
-
-## Analyser les autorisations des rôles Azure
-
-- 3 minutes
 
 Qu’est-ce qu’une autorisation ? La définition de l’autorisation dans le dictionnaire est **le consentement ou l’autorisation d’effectuer une action spécifique**. Dans Microsoft Entra ID, vous disposez d'autorisations pour chacune des opérations que vous pouvez effectuer. L’autorisation peut aller de l’affichage de vos paramètres à la possibilité de modifier votre configuration. Ensuite, passez à l’octroi d’autorisations pour ajouter ou supprimer des utilisateurs, etc. Il existe deux endroits principaux où l’autorisation peut être attribuée : au niveau de l’utilisateur ou du groupe. Elle finit toutefois au final par passer par l’utilisateur. Pour ce qui est des utilisateurs, il existe les utilisateurs membres et les utilisateurs invités. Les autorisations par défaut pour l’utilisateur invité sont légèrement inférieures à celles d’un utilisateur membre.
 
@@ -3060,10 +2712,6 @@ Il s’agit simplement d’un petit sous-ensemble, afin de montrer les différen
 
 #### Contrôle des autorisations - ajouter et restreindre
 
-| **Paramètres utilisateur** | **Rôles et administrateurs** |
-|---|---|
-| ![Capture d’écran des paramètres utilisateur de Microsoft Entra, où des autorisations peuvent être restreintes.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-users.png) | ![Capture de l’écran de Rôles et administrateurs dans Microsoft Entra ID. Liste des rôles qui peuvent être appliqués.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-role-admin.png) |
-
 Vous pouvez utiliser les **Paramètres utilisateur** dans le menu Gérer de Microsoft Entra ID pour restreindre ou contrôler les autorisations par défaut des utilisateurs par défaut. Vous pouvez également utiliser des rôles et des administrateurs pour ajouter de nouvelles autorisations à vos utilisateurs et groupes. Utilisez toujours le concept de privilège minimum et assurez-vous que les utilisateurs ont uniquement les droits dont ils ont besoin. Dans les paramètres utilisateur, vous pouvez restreindre la capacité de l’utilisateur à :
 
 - Inscrire des applications
@@ -3075,8 +2723,6 @@ En ajoutant des rôles à un compte d’utilisateur ou à un groupe donné, vous
 
 #### Exploration des autorisations disponibles
 
-![Capture d’écran du lecteur de définition d’attribut, montrant les autorisations accordées par un rôle intégré.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-attribute-reader.png)
-
 Vous voulez accorder seulement les autorisations dont un utilisateur a besoin. Veillez donc à connaître toutes les autorisations accordées quand vous attribuez un rôle. Vous pouvez voir la liste des autorisations dans le **lecteur de définition d’attribut**. Pour l’ouvrir, lancez Microsoft Entra ID, puis ouvrez l’écran **Rôles et administrateurs**. Sélectionnez ensuite un rôle, puis ouvrez sa page de description dans le menu de points de suspension (...). Selon le rôle que vous avez choisi, vous verrez un nombre plus ou moins important d’autorisations. Deux ensembles d’autorisations :
 
 - Autorisations des rôles
@@ -3085,19 +2731,11 @@ Vous voulez accorder seulement les autorisations dont un utilisateur a besoin. V
 
 ## Configurer des stratégies RBAC Azure Key Vault
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/7-configure-azure-key-vault-role-based-access-control-policies</sub>
-
-## Configurer des stratégies RBAC Azure Key Vault
-
-- 3 minutes
-
 Vous pouvez accorder l’accès à Azure Key Vault en utilisant le contrôle d’accès en fonction du rôle (RBAC) ou en utilisant des stratégies d’accès Key Vault. Les deux méthodes fonctionnent pour protéger vos secrets, vos certificats et vos clés. Les stratégies d’accès vous donnent un contrôle un peu plus précis, mais peuvent être plus difficiles à gérer. Choisissez la meilleure option en fonction de vos besoins en matière de posture de sécurité.
 
 #### Attribuer une stratégie d’accès Key Vault
 
 Une stratégie d’accès Key Vault détermine si un utilisateur, une application ou un groupe peut effectuer des opérations sur des secrets, des clés et des certificats Key Vault. Vous pouvez attribuer des stratégies d’accès à l’aide du portail Azure, d’Azure CLI ou d’Azure PowerShell. Le coffre de clés prend en charge jusqu’à 1024 entrées de stratégie d’accès, chaque entrée accordant un ensemble distinct d’autorisations à un principal de sécurité particulier. En raison de cette limitation, nous vous recommandons d’attribuer des stratégies d’accès, autant que possible, à des groupes d’utilisateurs plutôt qu’à des utilisateurs individuels. L’utilisation de groupes facilite grandement la gestion des autorisations pour plusieurs personnes au sein de votre organisation.
-
-![Capture d’écran des options de stratégie d’accès Key Vault qui peuvent être activées et affectées.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-access-policy.png)
 
 1. Ouvrez **Key Vault** dans le portail Azure.
 2. Sélectionnez votre coffre de clés ou créez-en un.
@@ -3113,8 +2751,8 @@ Le RBAC Azure permet aux utilisateurs de gérer les autorisations de clé, de se
 
 Deux actions sont nécessaires pour utiliser des rôles afin d’accéder à des données dans votre coffre de clés.
 
-1. Activez le contrôle d’accès en fonction du rôle dans votre coffre de clés.   ![Capture d’écran des stratégies d’accès au coffre de clés, avec le contrôle d’accès en fonction du rôle sélectionné.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-role-based-access.png)
-2. Ouvrez **Identité et accès (IAM)** du coffre de clés dans le menu. Ensuite, attribuez le rôle comme vous l’avez fait dans d’autres scénarios, par exemple celui de l’identité managée.   ![Capture d’écran de la gestion des coffre de clés, avec l’écran Identité et accès (IAM) ouvert.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-assign-role.png)
+1. Activez le contrôle d’accès en fonction du rôle dans votre coffre de clés.
+2. Ouvrez **Identité et accès (IAM)** du coffre de clés dans le menu. Ensuite, attribuez le rôle comme vous l’avez fait dans d’autres scénarios, par exemple celui de l’identité managée.
 
 | **Rôle intégré** | **Description** |
 |---|---|
@@ -3129,12 +2767,6 @@ Deux actions sont nécessaires pour utiliser des rôles afin d’accéder à des
 
 
 ## Récupérer des objets auprès d’Azure Key Vault
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/8-retrieve-objects-from-azure-key-vault</sub>
-
-## Récupérer des objets auprès d’Azure Key Vault
-
-- 3 minutes
 
 Azure Key Vault est un outil sécurisé pour stocker des secrets, des clés et des certificats. Une fois stockés, ces éléments peuvent être utilisés par les utilisateurs et les applications pour effectuer des actions et des opérations selon une méthode sécurisée. Le processus de récupération de ces ressources est commun. Nous allons donc voir comment examiner un secret provenant d’un coffre de clés.
 
@@ -3151,8 +2783,6 @@ Pour ajouter un secret au coffre, procédez comme suit :
 #### Récupérer un secret en utilisant le portail Azure
 
 Le processus est simple. Ouvrez votre coffre de clés, puis ouvrez le secret que vous avez créé. Sélectionnez le bouton **Afficher la valeur du secret**.
-
-![Capture d’écran de l’Azure Key Vault, avec un secret ouvert et l’option Afficher la valeur secrète sélectionnée. Vous pouvez lire ou copier la valeur en texte brut.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-view-secret.png)
 
 #### Récupérer un secret en utilisant l’interface CLI ou PowerShell
 
@@ -3177,24 +2807,12 @@ Si vous créez une application qui a besoin d’accéder à des secrets, des cer
 
 ## Contrôle des connaissances
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/10-knowledge-check</sub>
-
-## Contrôle des connaissances
-
-- 3 minutes
-
 Choisissez la meilleure réponse à chacune des questions ci-dessous.
 
 ### Contrôler vos connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/implement-access-management-for-azure-resources/11-summary-resources</sub>
-
-## Récapitulatif et ressources
-
-- 3 minutes
 
 Quand vous créez une ressource, vous voulez être sûr que seul un accès spécifique est accordé aux utilisateurs et aux groupes. Dans ce module, vous avez appris les différentes méthodes pour attribuer et contrôler l’accès à des ressources Azure.
 
@@ -3221,16 +2839,10 @@ Dans ce module, vous avez appris à :
 
 # Déployer et configurer Accès global sécurisé Microsoft Entra
 
-_58 min · https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/_
+_https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/_
 
 
 ## Présentation
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/1-introduction</sub>
-
-## Présentation
-
-- 1 minute
 
 Les travailleurs d’aujourd’hui sont passés d’un environnement de bureau traditionnel à la possibilité de travailler depuis presque n’importe où. Ce changement du lieu de travail nécessite un périmètre réseau établi dans le cloud et qui prenne en compte les identités. Ce périmètre prenant en compte les identités est appelé Security Service Edge (SSE). La solution SSE de Microsoft inclut Accès Internet Microsoft Entra et Accès privé Microsoft Entra, qui sont désignés ensemble sous le nom d’Accès global sécurisé. Cette solution est fondée sur les principes de Confiance Zéro, qui met l’accent sur le privilège minimum, la vérification explicite et une hypothèse de violation pour garantir la sécurité à l’ère du cloud.
 
@@ -3240,12 +2852,6 @@ Dans ce module, vous découvrez comment implémenter Accès privé Microsoft Ent
 
 
 ## Explorer l'accès global sécurisé
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/2-explore-global-secure-access</sub>
-
-## Explorer l'accès global sécurisé
-
-- 5 minutes
 
 ![Diagramme du flux de processus de haut niveau pour l’accès sécurisé global dans Microsoft Entra. Microsoft Entra Private Access et Internet Access sont les passerelles vers les ressources.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/global-secure-access-diagram.png)
 
@@ -3295,12 +2901,6 @@ Il est recommandé de visiter le [Centre d’aide confiance zéro](https://learn
 
 ## Déployer et configurer l'accès Internet Microsoft Entra
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/3-deploy-configure-internet-access</sub>
-
-## Déployer et configurer l'accès Internet Microsoft Entra
-
-- 10 minutes
-
 Quatre grandes étapes sont nécessaires pour déployer l'accès Internet Microsoft Entra au sein de votre entreprise. Une fois ces quatre étapes terminées, les utilisateurs ayant installé le client d’accès sécurisé global sur leur appareil Windows peuvent accéder en toute sécurité aux ressources Microsoft depuis n’importe quel emplacement. Les stratégies d’accès conditionnel pour Microsoft trafic sont appliquées uniquement lorsque l’utilisateur dispose du client Global Secure Access. Le trafic Microsoft est accessible via une connectivité réseau à distance sans le client Global Secure Access, mais la stratégie d’accès conditionnel n’est pas appliquée sur ce trajet.
 
 ##### Étapes
@@ -3313,8 +2913,6 @@ Quatre grandes étapes sont nécessaires pour déployer l'accès Internet Micros
 | 4. Activez la signalisation améliorée d’accès sécurisé global et l’accès conditionnel. | Utilisez l’accès conditionnel et l’accès sécurisé global pour empêcher les attaques. |
 
 ### Activez le profil de transfert de trafic Microsoft.
-
-![Capture d’écran du profil de trafic Microsoft activé. Active trois stratégies de trafic, une stratégie d’accès conditionnel et l’affectation de groupe.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/traffic-profile-enabled.png)
 
 1. Connectez-vous au Centre d’administration Microsoft Entra en tant qu’administrateur d’accès sécurisé global.
 2. Accédez à Accès global sécurisé > Connecter > Redirection du trafic.
@@ -3425,12 +3023,6 @@ Le client d'accès global sécurisé installé sur les appareils, ou les utilisa
 
 
 ## Déployer et configurer Accès privé Microsoft Entra
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/4-deploy-configure-private-access</sub>
-
-## Déployer et configurer Accès privé Microsoft Entra
-
-- 8 minutes
 
 Comme pour la configuration d’Accès Internet Microsoft Entra, quatre grandes étapes sont nécessaires pour déployer Accès privé Microsoft Entra au sein de votre entreprise. Une fois ces quatre étapes effectuées, les utilisateurs disposant d’un appareil Windows sur lequel le client Accès global sécurisé est installé peuvent se connecter à vos ressources principales via une application Accès rapide et un connecteur de réseau privé.
 
@@ -3578,8 +3170,6 @@ Maintenant que votre application Accès rapide est configurée, vos ressources p
 
 Le profil de transfert du trafic Accès privé achemine le trafic vers votre réseau privé via le client Global Secure Access. L’activation de ce profil de transfert de trafic permet aux travailleurs distants de se connecter à des ressources internes sans aucun VPN. Avec les fonctionnalités d’Accès privé Microsoft Entra, vous pouvez contrôler les ressources privées à tunneliser via le service et appliquer des stratégies d’accès conditionnel pour sécuriser l’accès à ces services. Une fois vos configurations en place, vous pouvez afficher et gérer toutes ces configurations à partir d’un seul emplacement.
 
-![Capture d’écran de la page Accès global sécurisé Microsoft Entra avec l’accès privé activé.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/enable-private-access.png)
-
 1. Connectez-vous au Centre d’administration Microsoft Entra.
 2. Accédez à Accès global sécurisé > Connecter > Transfert du trafic.
 3. Cochez la case Profil Accès privé.
@@ -3605,14 +3195,6 @@ Vous pouvez installer le client Android à la place en utilisant Microsoft Intun
 
 
 ## Découvrir comment utiliser le tableau de bord pour piloter Accès global sécurisé
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/5-explore-global-secure-access-dashboard</sub>
-
-## Découvrir comment utiliser le tableau de bord pour piloter Accès global sécurisé
-
-- 7 minutes
-
-![Capture d’écran de la page du tableau de bord Accès global sécurisé avec des exemples de données pour plusieurs points de données différents.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/dashboard-global-secure-access.png)
 
 Pour accéder au tableau de bord :
 
@@ -3695,12 +3277,6 @@ Les widgets d’état de l’appareil affichent les appareils actifs et inactifs
 
 ## Créer des réseaux distants pour les utiliser avec Accès global sécurisé
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/6-create-remote-networks</sub>
-
-## Créer des réseaux distants pour les utiliser avec Accès global sécurisé
-
-- 5 minutes
-
 Les réseaux distants sont des emplacements distants, telles que des filiales, ou des réseaux qui nécessitent une connectivité Internet. La configuration des réseaux distants connecte vos utilisateurs dans des emplacements distants à l’Accès global sécurisé. Une fois qu’un réseau distant est configuré, vous pouvez attribuer un profil de transfert de trafic pour gérer le trafic réseau de votre entreprise. Global Secure Access fournit une connectivité réseau à distance, ce qui vous permet d’appliquer des stratégies de sécurité réseau à votre trafic sortant.
 
 Il existe plusieurs façons de connecter des réseaux distants à Global Secure Access. En résumé, vous créez un tunnel IPSec (Internet Protocol Security) entre un routeur principal, appelé équipement local du client (CPE), sur votre réseau distant et le point de terminaison Global Secure Access le plus proche. Tout le trafic internet est acheminé via le routeur principal du réseau distant pour l’évaluation de la stratégie de sécurité dans le cloud. L’installation d’un client n’est pas requise sur des appareils individuels.
@@ -3738,12 +3314,6 @@ Avec les données de connexion Microsoft, mettez à jour la configuration du rou
 
 
 ## Utiliser l’accès conditionnel avec l'accès global sécurisé
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/7-use-conditional-access</sub>
-
-## Utiliser l’accès conditionnel avec l'accès global sécurisé
-
-- 10 minutes
 
 Après avoir déployé votre accès sécurisé global, vous pouvez utiliser l’accès conditionnel pour ajouter d’autres couches de sécurité et de protection. Les organisations qui utilisent l'accès conditionnel conjointement avec l'accès global sécurisé peuvent empêcher les accès malveillants aux applications Microsoft, aux applications SaaS et aux applications métiers privées en utilisant plusieurs conditions pour assurer une défense en profondeur. Ces conditions peuvent inclure la conformité de l’appareil, l’emplacement et d’autres éléments pour assurer la protection contre l’usurpation de l’identité de l’utilisateur ou le vol de jetons.
 
@@ -3812,7 +3382,7 @@ Vous pouvez créer une stratégie d’accès conditionnel pour vos applications 
 3. Sélectionnez une application dans la liste.
 4. Sélectionnez Accès conditionnel dans le menu latéral. Toutes les stratégies d’accès conditionnel existantes s’affichent dans une liste.
 5. Sélectionnez Créer une stratégie. L'application sélectionnée apparaît dans les détails des ressources cibles.
-6. Configurez les conditions, les contrôles d'accès et assignez les utilisateurs et groupes selon les besoins.   ![Capture d'écran d'une section de la boîte de dialogue d'accès conditionnel montrant que la stratégie est alignée sur l'accès global sécurisé.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/conditional-access-quick-access.png)
+6. Configurez les conditions, les contrôles d'accès et assignez les utilisateurs et groupes selon les besoins.
 
 Le sélecteur Accès rapide et Accès privé est ajouté à partir de l'accès global sécurisé.
 
@@ -3843,12 +3413,6 @@ Les stratégies d’accès conditionnel sont des outils puissants. Nous vous rec
 
 
 ## Explorez les journaux et les options de supervision avec Global Secure Access
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/8-explore-logs-monitor-operations</sub>
-
-## Explorez les journaux et les options de supervision avec Global Secure Access
-
-- 6 minutes
 
 Vous devez surveiller l’activité du trafic transitant par vos réseaux. Les journaux d’accès sécurisé global fournissent des points de données que vous pouvez examiner pour obtenir des insights sur votre trafic réseau.
 
@@ -3929,24 +3493,12 @@ Journaux de trafic et journaux d’intégrité réseau distants : ces journaux s
 
 ## Évaluation du module
 
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/9-knowledge-check</sub>
-
-## Évaluation du module
-
-- 4 minutes
-
 Choisissez la meilleure réponse à chacune des questions.
 
 ### Contrôle des connaissances
 
 
 ## Récapitulatif et ressources
-
-<sub>https://learn.microsoft.com/fr-fr/training/modules/deploy-configure-microsoft-entra-global-secure-access/10-summary</sub>
-
-## Récapitulatif et ressources
-
-- 2 minutes
 
 Dans ce module, vous avez appris à configurer et à gérer la solution SSE (Security Service Edge) de Microsoft via Microsoft Entra Global Secure Access. Cette solution complète fournit un accès sécurisé à n’importe quelle application ou ressource n’importe où en fusionnant les contrôles d’accès réseau, d’identité et de point de terminaison dans une plateforme unifiée fournie par le cloud.
 

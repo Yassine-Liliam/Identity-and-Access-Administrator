@@ -1,6 +1,6 @@
 # Implement an identity management solution using Microsoft Entra ID
 
-> SC-300 — learning path 1/4 · 256 min
+> SC-300 — learning path 1/4
 > https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/
 
 ## Modules
@@ -11,21 +11,14 @@
 - **Implement and manage hybrid identity** (11 units)
 
 
-
 ---
 
 # Implement initial configuration of Microsoft Entra ID
 
-_50 min · https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/_
+_https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 In this module, you learn how to configure and manage a Microsoft Entra tenant. You explore Microsoft Entra roles, custom domains, and company branding options. In addition, you learn how to configure delegation by using administrative units and configure several tenant-wide settings within Microsoft Entra ID.
 
@@ -47,14 +40,6 @@ Prior usage experience with the Azure portal user interface or the Microsoft Ent
 
 ## Configure company brand
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/2-configure-company-brand</sub>
-
-## Configure company brand
-
-- 3 minutes
-
-![Screenshot of the Microsoft Entra ID Company Branding page. You can pick a default language, a corporate logo, and over values.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/company-brand.png)
-
 You can use your organization's logo and custom color schemes to provide a consistent experience on your sign-in pages. Your sign-in pages appear when users sign in to your organization's web-based apps, such as Microsoft 365, which uses Microsoft Entra ID as your identity provider. Adding custom branding requires you to have either **Microsoft Entra ID premium P1, P2, or Office 365 (for Office 365 apps)** license.
 
 To set the company branding, open up the Microsoft Entra ID page in the Azure portal. Then launch **Company branding** from the Manage menu. A premium license is required for the menu option to be present.
@@ -69,12 +54,6 @@ To set the company branding, open up the Microsoft Entra ID page in the Azure po
 
 
 ## Configure and manage Microsoft Entra roles
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/3-configure-manage-roles</sub>
-
-## Configure and manage Microsoft Entra roles
-
-- 7 minutes
 
 Microsoft Entra ID is Microsoft’s cloud-based identity and access management service, which helps your employee's sign-in and access resources in:
 
@@ -116,8 +95,6 @@ Microsoft Entra roles are used to manage Microsoft Entra resources in a director
 |   | Monitors service health |   |
 
 In the Azure portal, you can see the list of Microsoft Entra roles on the **Roles and administrators** screen.
-
-![Screenshot of the Microsoft Entra roles on the Roles and administrators window in Microsoft Entra ID manage menu of the Azure portal.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/directory-admin-roles.png)
 
 ### Differences between Azure roles and Microsoft Entra roles
 
@@ -168,18 +145,16 @@ Note
 
 If you have a Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
-![Screenshot of Privileged Identity Manager for users assigned Global Admin and have a Premium P2 license.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/privileged-identity-management-manages-roles.png)
-
 ### Create and assign a custom role in Microsoft Entra ID
 
 This section describes how to create new custom roles in Microsoft Entra ID. For the basics of custom roles, see the [custom roles overview](https://learn.microsoft.com/en-us/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
 
 Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Microsoft Entra ID overview page.
 
-1. Select **Microsoft Entra ID** - **Roles and administrators** - **New custom role**.  ![Screenshot of Create or edit custom roles from the Roles and administrators page.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/new-custom-role.png)
-2. On the **Basics** tab, provide a name and description for the role and then select **Next**.  ![Screenshot of the basics tab. You provide a name and description for a custom role on the Basics tab.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/basics-tab.png)
+1. Select **Microsoft Entra ID** - **Roles and administrators** - **New custom role**.
+2. On the **Basics** tab, provide a name and description for the role and then select **Next**.
 3. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
-4. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update` permission.  ![Screenshot of the Select the permissions for a custom role on the Permissions tab.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/permissions-tab.png)
+4. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update` permission.
 5. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
 6. On the **Review + create** tab, review the permissions and select **Create**.
 
@@ -187,12 +162,6 @@ Your custom role shows up in the list of available roles to assign.
 
 
 ## Exercise manage users roles
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/4-exercise-manage-users-roles</sub>
-
-## Exercise manage users roles
-
-- 8 minutes
 
 You need to assign extra permissions to one of your newly created administrators. In this exercise, you'll create a user account to use in the exercises.
 
@@ -229,8 +198,8 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 
 1. In Microsoft Entra ID, All users screen, select **Adele Vance**.
 2. On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
-3. Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.  ![Screenshot of the Assigned roles page Adele Vance.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/directory-role-select-role.png)
-4. Select **+ Add Assignment.**  ![Screenshot of the Assigned roles page - showing the selected role of Application administrator.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/directory-role-select-app-admin.png)
+3. Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
+4. Select **+ Add Assignment.**
 
 The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
@@ -242,18 +211,12 @@ If you need to remove the role assignment from a user, you can also do that from
 
 1. In Microsoft Entra ID, select **Users - All User**, and then select the user getting the role assignment removed. For example, *Adele Vance*.
 2. Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
-3. On the far right side of the screen, select **Remove**. Then select **Yes** option when prompted for confirmation.  ![Screenshot of the Remove assignments dialog box with Yes highlighted.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/directory-role-remove-role.png)
+3. On the far right side of the screen, select **Remove**. Then select **Yes** option when prompted for confirmation.
 
 The Application administrator role is removed from the user and it no longer appears on the **Adele Vance – Assigned roles** page.
 
 
 ## Configure delegation by using administrative units
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/5-configure-delegation-administrative-units</sub>
-
-## Configure delegation by using administrative units
-
-- 7 minutes
 
 Administrative units are Microsoft Entra ID resources that can be containers for other Microsoft Entra resources. An administrative unit can contain only users, groups, and devices.
 
@@ -365,12 +328,6 @@ Attackers who get control of privileged accounts can do tremendous damage. Alway
 
 ## Analyze Microsoft Entra role permissions
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/6-analyze-azure-ad-role-permissions</sub>
-
-## Analyze Microsoft Entra role permissions
-
-- 3 minutes
-
 What is a permission? The dictionary definition of permission is the **consent or authorization to perform a specific action**. In Microsoft Entra ID, you have permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you have both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
 
 #### Sample of the default permissions for users
@@ -388,10 +345,6 @@ This is just a small subset, to show differences. If you want a full list of the
 
 #### Controlling permissions - add and restrict
 
-| **User settings** | **Roles and administrators** |
-|---|---|
-| ![Screenshot of the Microsoft Entra ID user settings, where permissions can be restricted.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/permission-users.png) | ![Screenshot of the Roles and administrators screen in Microsoft Entra ID. List of roles that can be applied.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/permissions-role-admin.png) |
-
 You can use the **User Settings** inside of Microsoft Entra ID – Manage menu to restrict or control the default permissions of the default users. Or you can use Roles and administrators to add new permissions onto your users and group. Always use the concept of Least Privilege and make sure the users only have the rights they need. In User settings you can restrict the user's ability to:
 
 - Register applications
@@ -403,8 +356,6 @@ By adding roles to a given user account or group, you can add permissions on to 
 
 #### Exploring available permissions
 
-![Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/permissions-attribute-reader.png)
-
 If possible, you only want to grant the minimum permissions a user needs. So be sure to know what all permissions are granted when you assign a role. You can see the list of permissions in the description of each role. To open, launch Microsoft Entra ID, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu. Depending on the role you chose, you'll see a large or small number of permissions. Two sets of permissions:
 
 - Role permissions
@@ -412,12 +363,6 @@ If possible, you only want to grant the minimum permissions a user needs. So be 
 
 
 ## Configure and manage custom domains
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/7-configure-manage-custom-domains</sub>
-
-## Configure and manage custom domains
-
-- 10 minutes
 
 A domain name is a part of the identifier for many Microsoft Entra ID resources: it's part of a user name or email address for a user, part of the address for a group, and is sometimes part of the app ID URI for an application. A resource in Microsoft Entra ID can include a domain name that's owned by the organization that contains the resource. Only a Global Administrator can manage domains in Microsoft Entra ID.
 
@@ -433,9 +378,9 @@ The primary domain is the default domain name for a new user when you create a n
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's an Administrator for the organization.
 2. Select **Microsoft Entra ID.**
-3. Select **Custom domain names**.  ![Screenshot of the Add custom user dialog box. Opening the user management page.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/add-custom-domain.png)
+3. Select **Custom domain names**.
 4. Select the name of the domain that you want to be the primary domain.
-5. Select the **Make primary** command. Confirm your choice when prompted.  ![Screenshot of the configure domain dialog. You can make a domain name the primary.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/make-primary-domain.png)
+5. Select the **Make primary** command. Confirm your choice when prompted.
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
 
@@ -488,12 +433,6 @@ An error is returned when:
 
 ## Configure tenant-wide setting
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/8-configure-tenant-wide-options</sub>
-
-## Configure tenant-wide setting
-
-- 4 minutes
-
 Tenant-wide settings are the configuration options that apply to all resources within your tenant as the name implies. These tenant wide options are set in specific places, to control the look, feel, and configuration of your tenant and its members. The below menu options are based on the Microsoft Entra admin center.
 
 Tenant-wide option
@@ -511,8 +450,6 @@ Tenant-wide option
   - Where you define what task an external guest user can perform like inviting more guest users
 
 ### Configure tenant-wide user settings
-
-![Screenshot of the User settings screen in Microsoft Entra ID.  Use it to configure what users can do.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/user-settings-azure-active-directory.png)
 
 In Microsoft Entra ID, all users are granted a set of default permissions. A user’s access consists of the type of user, their role assignments, and their ownership of individual objects. The default user permissions can be changed only in user settings in Microsoft Entra ID.
 
@@ -559,8 +496,6 @@ Microsoft is making **Security Defaults** available to everyone. The goal is to 
 
 ### Configure the external user options
 
-![Screenshot of the Microsoft Entra ID manage external user settings dialog.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/external-user-settings-azure-active-directory.png)
-
 Here you configure the actions that external users can take while using the cloud resources of your tenant.
 
 - **Guest user access** - Guest users can be given rights to where they operate almost as a full user, to restriction where they can only look at their own content.
@@ -568,8 +503,6 @@ Here you configure the actions that external users can take while using the clou
 - **Guest self-service up** - Allow guest to partake in self-service options for users.
 
 ### Configure tenant properties for the directory
-
-![Screenshot of the Microsoft Entra ID properties dialog box. Configure the definition of your tenant.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/tenant-properties-azure-active-directory.png)
 
 Set the basic values that define the look at feel of your tenant within Microsoft Entra ID.
 
@@ -584,16 +517,10 @@ Set the basic values that define the look at feel of your tenant within Microsof
 
 ## Exercise - setting tenant-wide properties
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/9-exercise-set-tenant-wide-properties</sub>
-
-## Exercise - setting tenant-wide properties
-
-- 4 minutes
-
 Your goal is to change the tenant display name.
 
 1. Browse to the [Azure portal](https://portal.azure.com/) and sign in using an Administrator account for the directory.
-2. Select the **Show portal menu** hamburger icon and then select **Microsoft Entra ID**.  ![Screenshot of the Azure portal menu with Microsoft Entra ID selected.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/azure-portal-menu-azure-active-directory.png)
+2. Select the **Show portal menu** hamburger icon and then select **Microsoft Entra ID**.
 3. In the left navigation, in the Manage section, select **Properties**.
 4. In the **Name** box, change the tenant name. For example, Contoso Marketing Company can be changed to Contoso Marketing Company 2.
 5. Select **Save** to update the tenant properties.
@@ -607,14 +534,14 @@ Your goal is to change the tenant display name.
 
 Just as the Country / region is found in the Microsoft Entra ID Properties dialog, so is the location information.
 
-1. In the **Properties** screen, under **Tenant properties**, locate **Location** and review the information.  ![Screenshot of the Microsoft Entra ID Properties with the Country or region settings highlighted.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/azure-active-directory-properties-country-location.png)
+1. In the **Properties** screen, under **Tenant properties**, locate **Location** and review the information.
 
 #### Find the tenant ID
 
 Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft Entra ID is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
 1. In the **Microsoft Entra ID** screen, in the Manage section, select **Properties**.
-2. Under **Tenant properties**, locate **Tenant ID**. Tenant ID is your unique tenant identifier.  ![Screenshot of the Tenant properties page with the Tenant ID box highlighted.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/portal-tenant-identifier.png)
+2. Under **Tenant properties**, locate **Tenant ID**. Tenant ID is your unique tenant identifier.
 
 #### Change the Technical contact, add your privacy info, Global privacy contact, and Privacy statement URL
 
@@ -628,24 +555,16 @@ You add your organization's privacy information in the **Properties** area of Mi
 
 1. In the **Microsoft Entra ID** screen, in the Manage section, select **Properties**.
 
-![Screenshot of the tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/properties-area.png)
-
 1. Add your privacy info for your employees:
 
 - **Technical contact**. Type the email address for the person to contact for technical support within your organization.
 - **Global privacy contact**. Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts the administrator who owns the tenant.
-- **Privacy statement URL**. Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.  ![Screenshot of the B 2 B Collaboration Review permissions box with Accept / Cancel buttons.](https://learn.microsoft.com../../wwl-sci/implement-initial-configuration-of-azure-active-directory/media/active-directory-privacy-statement-contact.png)
+- **Privacy statement URL**. Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
 
 1. Select **Save**.
 
 
 ## Knowledge check
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/10-knowledge-check</sub>
-
-## Knowledge check
-
-- 2 minutes
 
 Choose the best response for each of the questions below.
 
@@ -653,12 +572,6 @@ Choose the best response for each of the questions below.
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-initial-configuration-of-azure-active-directory/11-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you reviewed this module, you're able to:
 
@@ -687,16 +600,10 @@ Use these resources to discover more.
 
 # Create, configure, and manage identities
 
-_64 min · https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/_
+_https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Transitioning workloads to the cloud involves more than just moving servers, websites, and data. Companies need to think about how to secure those resources by defining authorized users. Next, companies need to ensure that users only have access to data that they need, that user authorization is limited only to the services available to them, and that users only perform operations authorized for them to perform. Access to cloud-based workloads is controlled centrally in two ways. First by providing a definitive identity for each user that they use for every service. Second by ensuring employees and vendors have enough access to do their jobs.
 
@@ -721,12 +628,6 @@ In this module, you:
 
 ## Create, configure, and manage users
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/2-users</sub>
-
-## Create, configure, and manage users
-
-- 2 minutes
-
 Every user who needs access to resources needs a user account in Microsoft Entra ID. A user account contains all the information needed to authenticate the user during the sign-on process. Once authenticated, Microsoft Entra ID builds an access token to authorize the user and determine what resources they can access and what they can do with those resources.
 
 You use the **Microsoft Entra admin center** to work with user objects. Keep in mind that you can only work with a single directory at a time. You can use the **Directory + Subscription** panel to switch directories. The admin center also has a **Switch directory** button in the toolbar, which makes it easy to switch to another available directory.
@@ -734,8 +635,6 @@ You use the **Microsoft Entra admin center** to work with user objects. Keep in 
 ### View users
 
 To view the Microsoft Entra users, select the **Users** entry under **Identity**, then open the **All Users** view. Take a minute to access the admin center and view your users. Notice the **User Type** column to see members and guests, as the following figure depicts.
-
-![Screenshot of the All Users page of Microsoft Entra ID. See users and information about them.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/all-users-dialog.png)
 
 Typically, Microsoft Entra ID defines users in three ways:
 
@@ -745,12 +644,6 @@ Typically, Microsoft Entra ID defines users in three ways:
 
 
 ## Exercise - assign licenses to users
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/3-exercise-assign-licenses-users</sub>
-
-## Exercise - assign licenses to users
-
-- 5 minutes
 
 **Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription for at [Try Azure for Free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
@@ -769,7 +662,7 @@ You can skip creating this user if you created the same user in the earlier modu
 1. Browse to the Microsoft Entra admin center screen.
 2. In the left navigation, under **Identity**, select **Groups** and then **All groups**.
 3. In the Groups screen, on the menu, select **New group**.
-4. Create a group using the following information:    **Setting** **Value**     Group type Security   Group name Marketing   Membership type Assigned   Owners Assign your own administrator account as the group owner   Members Chris Green     ![Screenshot of the new group creation page in Microsoft Entra ID. Create new groups and add members.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/create-group.png)
+4. Create a group using the following information:    **Setting** **Value**     Group type Security   Group name Marketing   Membership type Assigned   Owners Assign your own administrator account as the group owner   Members Chris Green
 5. When complete, verify the group named **Marketing** is shown in the **All groups** list.
 
 ### Assign a license to a group
@@ -808,19 +701,13 @@ You must have one of the following roles to restore or permanently delete users.
 
 ## Exercise - restore or remove deleted users
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/4-exercise-restore-remove-deleted-users</sub>
-
-## Exercise - restore or remove deleted users
-
-- 5 minutes
-
 **Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
 ### Remove a user from Microsoft Entra ID
 
 1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/).
 2. In the left navigation, under **Identity**, select **Users**.
-3. In the **Users** list, select the check box for a user to delete. For example, select **Chris Green**.  Tip Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you'll only be managing that individual user.   ![Screenshot of Microsoft Entra ID all users' list with one user check box selected.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/remove-user.png)
+3. In the **Users** list, select the check box for a user to delete. For example, select **Chris Green**.  Tip Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you'll only be managing that individual user.
 4. With the user account selected, on the menu, select **Delete user**.
 5. Review the dialog box and then select **OK**.
 
@@ -838,12 +725,6 @@ You can see all the users that were deleted less than 30 days ago. These users c
 
 ## Create, configure, and manage groups
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/5-groups</sub>
-
-## Create, configure, and manage groups
-
-- 3 minutes
-
 A Microsoft Entra group helps organize users, which makes it easier to manage permissions. Using groups lets the resource owner (or Microsoft Entra directory owner), assign a set of access permissions to all the members of the group, instead of having to provide the rights one-by-one. Groups let you define a security boundary and then add and remove specific users to grant or deny access with a minimum amount of effort. Even better, Microsoft Entra ID supports the ability to define membership based on rules - such as what department a user works in, or the job title they have.
 
 Microsoft Entra ID allows you to define two different types of groups.
@@ -854,8 +735,6 @@ Microsoft Entra ID allows you to define two different types of groups.
 ### View available groups
 
 You can view all groups through the **Groups** item under **Identity** in the Microsoft Entra admin center. A new Microsoft Entra ID deployment has no groups defined.
-
-![Screenshot of the Microsoft Entra ID view all groups page. Shows a list of several groups.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/groups-1.png)
 
 The second characteristic of a group that you need to be aware of is the **Membership Type**. This specifies how individual members are added to the group. The three types are:
 
@@ -869,18 +748,10 @@ With dynamic membership, Microsoft Entra ID automatically adds or removes users 
 
 Dynamic membership requires a **Microsoft Entra ID P1** license (or Intune for Education for device-based rules).
 
-![Screenshot of the Dynamic Group membership rule generator. Set up a rule that includes members from a specific place.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/sc300-dynamic-groups.png)
-
 For example, you can create a rule that automatically adds all users whose **Department** attribute equals "Marketing" to a Marketing security group, keeping membership current without manual updates.
 
 
 ## Exercise - add groups in Microsoft Entra ID
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/6-exercise-add-groups-azure-active-directory</sub>
-
-## Exercise - add groups in Microsoft Entra ID
-
-- 2 minutes
 
 **Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
@@ -889,18 +760,12 @@ For example, you can create a rule that automatically adds all users whose **Dep
 1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com).
 2. In the left navigation, under **Identity**, select **Groups**.
 3. In the Groups page, on the menu, select **New group**.
-4. Create a group using the following information:    **Setting** **Value**     Group type Microsoft 365   Group name Northwest Sales   Membership type Assigned   Owners Assign your own administrator account as the group owner   Members Assign a member of this group     ![Screenshot of the New Group page with Group type, Group name, Owners, and Members highlighted.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/create-office-365-group.png)
+4. Create a group using the following information:    **Setting** **Value**     Group type Microsoft 365   Group name Northwest Sales   Membership type Assigned   Owners Assign your own administrator account as the group owner   Members Assign a member of this group
 5. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
 6. You have to refresh the **All groups** a couple of times for the new group to show up.
 
 
 ## Configure and manage device registration
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/7-configure-manage-device-registration</sub>
-
-## Configure and manage device registration
-
-- 9 minutes
 
 With the proliferation of devices of all shapes and sizes and the proliferation of bring-your-own-device (BYOD), IT professionals are faced with two somewhat opposing goals:
 
@@ -1024,12 +889,6 @@ For organizations planning new hybrid deployments, use Cloud Kerberos Trust to e
 
 ## Manage licenses
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/8-manage-licenses</sub>
-
-## Manage licenses
-
-- 5 minutes
-
 Microsoft paid cloud services, such as Microsoft 365, Enterprise Mobility + Security, Dynamics 365, and other similar products, require licenses. These licenses are assigned to each user who needs access to these services. To manage licenses, administrators use the [Microsoft 365 admin center](https://admin.microsoft.com/) or PowerShell and Microsoft Graph API. Microsoft Entra ID is the underlying infrastructure that supports identity management for all Microsoft cloud services. Microsoft Entra ID stores information about license assignment states for users.
 
 Without group-based licensing, assigning licenses at the individual user level makes large-scale management difficult. For example, to add or remove user licenses based on organizational changes, such as users joining or leaving the organization or a department, an administrator often must write a complex PowerShell script. This script makes individual calls to the cloud service.
@@ -1065,12 +924,6 @@ For group license assignment, any users without a usage location specified inher
 
 
 ## Exercise - change group license assignments
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/9-exercise-change-group-license-assignments</sub>
-
-## Exercise - change group license assignments
-
-- 10 minutes
 
 **Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
@@ -1250,11 +1103,7 @@ Here is what the migration process could look like:
 
 - This is the expected user state during migration:
 
-![Screenshot of the Licenses page. See the license has direct assignments to some users, and that it has inherited users from a group.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/expected-user-state.png)
-
 1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here's an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
-
-![Screenshot of the Licenses page in Microsoft Entra ID after the migration is completed.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/direct-licenses-removed.png)
 
 ### Change license assignments for a user or group in Microsoft Entra ID
 
@@ -1270,12 +1119,6 @@ Before you update the license assignments, verify certain assumptions are true f
 
 
 ## Exercise - change user license assignments
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/10-exercise-change-user-license-assignments</sub>
-
-## Exercise - change user license assignments
-
-- 5 minutes
 
 **Exercise environment needs** - this lab assumes you have a basic Microsoft Entra tenant with at least User Administrator rights to complete it. You can get a free trial subscription at [Try Microsoft Azure for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 
@@ -1301,14 +1144,6 @@ License assignment to individual users is managed through the Microsoft 365 admi
 
 
 ## Create custom security attributes
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/11-create-custom-security-attributes</sub>
-
-## Create custom security attributes
-
-- 4 minutes
-
-![Screenshot of the Custom Security Attributes dialog. Create new security attributes of type String, Integer, or Boolean.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/custom-security-attributes.png)
 
 ### What is a custom security attribute?
 
@@ -1342,12 +1177,6 @@ Custom security attributes are **not** supported in Microsoft Entra Domain Servi
 
 ## Explore automatic user creation
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/12-explore-automatic-user-creation</sub>
-
-## Explore automatic user creation
-
-- 2 minutes
-
 ![Diagram of the process flow for auto user provisioning in Microsoft Entra ID. Auto provision users and groups.](https://learn.microsoft.com../../wwl-sci/create-configure-manage-identities/media/automatic-user-provisioning.png)
 
 #### Components of SCIM (System for Cross-Domain Identity Management)
@@ -1370,24 +1199,12 @@ Not all HR systems expose a SCIM endpoint. For these scenarios, Microsoft Entra 
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/13-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/create-configure-manage-identities/14-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 You completed this module, you are able to:
 
@@ -1416,16 +1233,10 @@ Use these resources to discover more:
 
 # Implement and manage external identities
 
-_72 min · https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/_
+_https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Being able to invite external users to use your Azure resources is a great benefit, but it needs to be done in a secure way. This module is designed to help you understand how to enable secure B2B collaboration scenarios with users outside your organization, including managing external collaboration settings in Microsoft Entra ID and inviting users individually or in bulk. You will also learn about managing external user accounts and configuring identity providers.
 
@@ -1446,12 +1257,6 @@ None
 
 ## Describe guest access and Business to Business accounts
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/2-describe-guest-access-business-to-business-accounts</sub>
-
-## Describe guest access and Business to Business accounts
-
-- 3 minutes
-
 ![Diagram of allowing external users to join your Microsoft Entra tenant as a guest user.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/guest-user-diagram.png)
 
 #### Define guest users
@@ -1470,12 +1275,6 @@ B2B collaboration is a capability of Microsoft Entra External Identities that le
 
 
 ## Manage external collaboration
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/3-collaboration</sub>
-
-## Manage external collaboration
-
-- 5 minutes
 
 Microsoft Entra External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Microsoft Entra ID to keep your resources protected.
 
@@ -1530,12 +1329,6 @@ By default, all users, including guests, can invite guest users.
 
 ## Exercise - configure external collaboration
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/4-exercise-configure-external-collaboration</sub>
-
-## Exercise - configure external collaboration
-
-- 5 minutes
-
 ### Configure external collaboration settings
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
@@ -1557,7 +1350,7 @@ Note
 6. No one in organization can invite guests: Set to restrict all guest user invites by members.
 7. Users in the **Guest Inviter role** can invite guests, if admin users can invite guest.
 
-![Screenshot of the guest invite settings with the Guests can invite set to No and highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/guest-invite-settings.png)  ​
+  ​
  12. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
 Important
@@ -1568,12 +1361,6 @@ You can create either an allowlist or a blocklist. You can't set up both types o
 
 
 ## Invite external users - individually and in bulk
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/5-invite-external-users-individually-bulk</sub>
-
-## Invite external users - individually and in bulk
-
-- 4 minutes
 
 As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Microsoft Entra ID, with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
 
@@ -1601,8 +1388,6 @@ If you use Microsoft Entra B2B collaboration to work with external partners, you
 
 Download and fill in the bulk upload CSV template to help you successfully invite Microsoft Entra ID guest users in bulk. The CSV template you download might look like this example:
 
-![Screenshot of a common CSV file opened in spreadsheet format.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/understand-template.png)
-
 #### CSV template structure
 
 This CSV template will always open with two rows of existing data. The rows in a downloaded CSV template are as follows:
@@ -1621,20 +1406,12 @@ This CSV template will always open with two rows of existing data. The rows in a
 
 ## Exercise - add guest users to directory
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/6-exercise-add-guest-users-to-directory</sub>
-
-## Exercise - add guest users to directory
-
-- 5 minutes
-
 In this exercise, you need to add guest users to the directory.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a user who is assigned a limited administrator directory role or the Guest Inviter role.
 2. Select **Identity**
 3. Under **Users**, select **All Users**.
 4. Select **New user - Invite external user**.
-
-![Screenshot of the Users screen with the New guest user menu option selected.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/new-guest-user-menu-selection.png)
 
 1. On the New user page, select **Invite user** and then add your information as the guest user.
 2. Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Microsoft Entra ID does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
@@ -1646,18 +1423,12 @@ After you send the invitation, the user account is automatically added to the di
 
 ## Exercise - invite guest users bulk
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/7-exercise-invite-guest-users-bulk</sub>
-
-## Exercise - invite guest users bulk
-
-- 7 minutes
-
 Use this exercise to learn to invite guest users in bulk.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an account that is a User administrator in the organization.
 2. In the navigation pane, select **Identity**.
 3. Under **Users**, select **All Users**.
-4. On the All users screen, on the menu, select **Bulk operations - Bulk invite**.  ![Screenshot of the All user page with the Bulk operations and Bulk invite menu options highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/bulk-invite-option.png)  ​
+4. On the All users screen, on the menu, select **Bulk operations - Bulk invite**.    ​
 5. In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
 6. Using an editor to view the CSV file, review the template.
 
@@ -1666,22 +1437,16 @@ Note
 - **Email address to invite** - The user who will receive an invitation.
 - **Redirection url** - The URL to which the invited user is forwarded after accepting the invitation.
 
-1. Open the .csv template and add a line for each guest user. Required values are:  ![Screenshot of the example bulk invite guests template CSV.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/template-csv.png)  ​
+1. Open the .csv template and add a line for each guest user. Required values are:    ​
 2. Save the file.
 3. On the Bulk invite users page, under **Upload your csv file**, browse to the file. When you select the file, validation of the .csv file starts.
-4. After the file contents are validated, you'll see **File uploaded successfully**. If there are errors, you must fix them before you can submit the job.  ![Screenshot of the Bulk invite users with File uploaded successfully message highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/bulk-invite-users-upload-csv.png)  ​
+4. After the file contents are validated, you'll see **File uploaded successfully**. If there are errors, you must fix them before you can submit the job.    ​
 5. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
-6. To view the job status, select **view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.  ![Screenshot of the results of a bulk operation. You see the success and fail statistics of the operation.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/bulk-operations-results.png)  ​
+6. To view the job status, select **view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.    ​
 7. When the job completes, you'll see a notification that the bulk operation succeeded.
 
 
 ## Demo - manage guest users in Microsoft Entra ID
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/8-demo-invite-guest-users-to-app</sub>
-
-## Demo - manage guest users in Microsoft Entra ID
-
-- 3 minutes
 
 [Launch the click through demo](https://mslearn.cloudguides.com/guides/Manage%20Guest%20User%20Access%20in%20Azure%20AD%20for%20B2B%20Collaboration?azure-portal=true)
 
@@ -1689,12 +1454,6 @@ In this interactive guide, you’ll learn how to manage guest user access in Mic
 
 
 ## Manage external user accounts in Microsoft Entra ID
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/9-user-accounts-azure-active-directory</sub>
-
-## Manage external user accounts in Microsoft Entra ID
-
-- 9 minutes
 
 Microsoft Entra B2B collaboration users are added as guest users to the directory, and guest permissions in the directory are restricted by default. Your business might need some guest users to fill higher-privilege roles in your organization. To support defining higher-privilege roles, guest users can be added to any roles you desire, based on your organization's needs.
 
@@ -1731,8 +1490,6 @@ Typically, a Microsoft Entra B2B user and guest user are synonymous. Therefore, 
 
 #### Filter for guest users in the directory
 
-![Screenshot of the Microsoft Entra ID User's screen showing the filter for guest users.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/filter-guest-users.png)
-
 #### Convert UserType
 
 It's possible to convert UserType from Member to Guest and vice-versa by using PowerShell. However, the UserType property represents the user's relationship to the organization. Therefore, you should change this property only if the relationship of the user to the organization changes. If the relationship of the user changes, should the user principal names (UPN) change? Should the user continue to have access to the same resources? Should a mailbox be assigned? We don't recommend changing the UserType by using PowerShell as an atomic activity. Also, in case this property becomes immutable by using PowerShell, we don't recommend taking a dependency on this value.
@@ -1740,8 +1497,6 @@ It's possible to convert UserType from Member to Guest and vice-versa by using P
 ### Remove guest user limitations
 
 There might be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Remove the limitation in the user settings within Microsoft Entra ID menu.
-
-![Screenshot of the External users option in the user settings. Choose what restrictions are set for external users.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/remove-guest-limitations.png)
 
 ### Dynamic groups and Microsoft Entra B2B collaboration
 
@@ -1753,14 +1508,6 @@ The appropriate Microsoft Entra ID Premium P1 or P2 licensing is required to cre
 
 
 ## Manage external users in Microsoft 365 workloads
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/10-manage-external-users-microsoft-365-workloads</sub>
-
-## Manage external users in Microsoft 365 workloads
-
-- 3 minutes
-
-![Screenshot of the Microsoft 365 admin center, opened to the guest users page.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/admin-center-guest-users.png)
 
 Similar to Microsoft Entra ID, Microsoft 365 can invite guest users into the directory for collaboration purposes. Those users show in the user list as external, and have limited to no rights in Microsoft 365. However, they can be assigned collaboration rights to any Microsoft 365 workload. Guest users can even be given licenses to allow them to perform specific operations.
 
@@ -1795,12 +1542,6 @@ Tools to manage Microsoft 365 guest users:
 
 ## Exercise - explore dynamic groups
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/11-exercise-explore-dynamic-groups</sub>
-
-## Exercise - explore dynamic groups
-
-- 8 minutes
-
 The goal of this exercise is to create a dynamic group with all users as members.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with an account that is assigned the User administrator role in the tenant.
@@ -1814,21 +1555,11 @@ The goal of this exercise is to create a dynamic group with all users as members
 9. In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box: user.objectId -ne null
 10. Select **OK**. The rule appears in the Rule syntax box.
 
-![Screenshot of the dynamic group membership rules screen with rule syntax highlighted. Exist in Microsoft Entra ID.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/dynamic-group-membership-rule.png)
-
 1. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
 2. On the New group page, select **Create** to create the group.
 
 
 ## Implement and manage Microsoft Entra Verified ID
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/12-implement-manager-entra-verified-id</sub>
-
-## Implement and manage Microsoft Entra Verified ID
-
-- 3 minutes
-
-![Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/entra-verified-identity.png)
 
 #### What is Entra Verified ID?
 
@@ -1856,12 +1587,6 @@ Note that these are just the general steps needed to deploy the Microsoft Entra 
 
 
 ## Configure identity providers
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/13-configure-identity-providers</sub>
-
-## Configure identity providers
-
-- 10 minutes
 
 Direct federation is now called **SAML/WS-Fed identity provider** (IdP) federation. You can set up federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up SAML/WS-Fed IdP federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Microsoft Entra tenant and start collaborating with you. There's no need for the guest user to create a separate Microsoft Entra account.
 
@@ -1948,8 +1673,6 @@ When you send an invitation to Google Gmail users, the guest users should access
 
 Guest users who see a *header too long* error can clear their cookies or open a private or incognito window and try to sign in again.
 
-![Screenshot of shows the Google sign-in page. Users have to sign-in for access.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-sign-in.png)
-
 ### Deprecation of WebView sign-in support
 
 Google is deprecating embedded web-view sign-in support (Starting September 30, 2021). If your apps authenticate users with an embedded web-view and you're using Google federation with Microsoft Entra B2C or Microsoft Entra B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
@@ -1990,25 +1713,23 @@ First, create a new project in the Google Developers Console to obtain a client 
 2. Accept the terms of service if you're prompted to do so.
 3. Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
 
-![Screenshot of the New Project page within the Google developers page.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-new-project.png)  ​
+  ​
  4. On the **APIs and Services** page, select **View** under your new project. 5. Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**. 6. Select **External**, and then select **Create**. 7. On the **OAuth consent screen**, enter an **Application name**:
 
-![Screenshot of the Google OAuth consent screen. Users have to confirm their usage.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-oauth-consent-screen.png)  ​
+  ​
  8. Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
 
-![Screenshot of the Authorized domains section, showing with Google domains are valid.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-oauth-authorized-domains.png)  ​
+  ​
  9. Select **Save**. 10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
 
-![Screenshot of the Google APIs Create credentials menu. Configure your credentials here.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-api-credentials.png)  ​
+  ​
  11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
 
 - `https://login.microsoftonline.com`
 - `https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp` (where **tenant ID** is your tenant ID in Azure)
 
-![Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-create-oauth-client-id.png)  ​
+  ​
  12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
-
-![Screenshot of the OAuth client ID and client secret. Set your access secret.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-auth-client-id-secret.png)
 
 ### Step 2: Configure Google federation in Microsoft Entra ID
 
@@ -2021,7 +1742,7 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 3. Select **All identity providers**, and then select the **Google** button.
 4. Enter the client ID and client secret you obtained earlier. Select **Save**:
 
-![Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-identity-provider.png)  ​
+  ​
 
 ### How do I remove Google federation?
 
@@ -2034,7 +1755,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 3. Select **All identity providers**.
 4. On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
 
-![Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/google-social-identity-providers.png)  ​
+  ​
  5. Select **Yes** to confirm the deletion.
 
 ### Add Facebook as an identity provider for external identities
@@ -2088,7 +1809,7 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 5. For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
 6. For the **Client secret**, enter the **App Secret** that you recorded.
 
-![Screenshot of the Add social identity provider page. Pick your social media provider.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/add-social-identity-provider-page.png)  ​
+  ​
  7. Select **Save**.
 
 ### How do I remove Facebook federation?
@@ -2106,15 +1827,7 @@ You can delete your Facebook federation setup. If you do so, any users who have 
 
 ## Implement cross-tenant access controls
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/14-implement-cross-tenant-access-controls</sub>
-
-## Implement cross-tenant access controls
-
-- 3 minutes
-
 Microsoft Entra organizations can use external identities cross-tenant access settings to manage how they collaborate with other Microsoft Entra organizations or Microsoft clouds. Cross-tenant access settings give you granular control over how external Microsoft Entra organizations collaborate with you, **inbound access**. You can also control how your users collaborate with external Microsoft Entra organizations, **outbound access**.
-
-![Screenshot of the Microsoft Entra ID external identities cross-tenant access controls dialog. Configure inbound and outbound access.](https://learn.microsoft.com../../wwl-sci/implement-manage-external-identities/media/cross-tenant-access.png)
 
 #### Manage inbound and outbound settings
 
@@ -2144,24 +1857,12 @@ Currently, B2B direct connect capabilities work with Teams shared channels. When
 
 ## Knowledge check
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/15-knowledge-check</sub>
-
-## Knowledge check
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-external-identities/16-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you reviewed this module, you're able to:
 
@@ -2186,16 +1887,10 @@ Use these resources to discover more:
 
 # Implement and manage hybrid identity
 
-_70 min · https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/_
+_https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Hybrid identity allows corporations to have identity solutions that span on-premises and cloud-based environments. This capability provides unified authentication and authorization capabilities to resources regardless of their location.
 
@@ -2224,12 +1919,6 @@ None
 
 
 ## Plan, design, and implement Microsoft Entra Connect
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/2-plan-design-implement-azure-active-directory-connect</sub>
-
-## Plan, design, and implement Microsoft Entra Connect
-
-- 12 minutes
 
 Microsoft Entra Connect is a solution that bridges an organizations on-premises Active Directory with your cloud-based Microsoft Entra ID. IT can synchronize identities from on-premises into Azure and ensures a consistent identity across both platforms. This connection enables services like password hash synchronization, pass-through authentication, and seamless single sign-on (SSO).
 
@@ -2288,9 +1977,9 @@ When you choose this authentication method, Microsoft Entra ID hands off the aut
 
 The following diagrams outline the high-level architecture components required for each authentication method you can use with your Microsoft Entra hybrid identity solution. They provide an overview to help you compare the differences between the solutions.
 
-- Simplicity of a password hash synchronization solution:  ![Screenshot of Microsoft Entra hybrid identity with password hash synchronization enabled.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/azure-active-directory-authentication-2.png)
-- Agent requirements of pass-through authentication, using two agents for redundancy:  ![Screenshot of Microsoft Entra hybrid identity with pass-through authentication enabled.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/azure-active-directory-authentication-3.png)
-- Components required for federation in your perimeter and internal network of your organization:  ![Screenshot of the Microsoft Entra hybrid identity with federated authentication selected.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/azure-active-directory-authentication-4.png)
+- Simplicity of a password hash synchronization solution:
+- Agent requirements of pass-through authentication, using two agents for redundancy:
+- Components required for federation in your perimeter and internal network of your organization:
 
 ### Recommendations
 
@@ -2394,12 +2083,6 @@ With Microsoft Entra Connect cloud sync, provisioning from AD to Microsoft Entra
 
 ## Implement manage password hash synchronization (PHS)
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/3-password-hash-synchronization</sub>
-
-## Implement manage password hash synchronization (PHS)
-
-- 2 minutes
-
 ### How password hash synchronization works
 
 Password hash synchronization is one of the sign-in methods used to accomplish hybrid identity. Microsoft Entra Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Microsoft Entra instance.
@@ -2417,8 +2100,6 @@ If there are multiple connectors, it's possible to disable password hash sync fo
 ### Enable password hash synchronization
 
 When you install Microsoft Entra Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Microsoft Entra Connect, password hash synchronization is available on the user sign-in page.
-
-![Screenshot of Microsoft Entra Connect with the Password Hash Synchronization option selected.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/password-hash-connect-setting.png)
 
 ### Password hash synchronization and Federal Information Processing standard
 
@@ -2451,18 +2132,10 @@ Configure PingFederate with Microsoft Entra Connect to set up federation with th
 
 After you choose to set up federation by using PingFederate in AD Connect, you're asked to verify the domain you want to federate. Select the domain from the drop-down menu.
 
-![Screenshot of Microsoft Entra Connect interface showing the domain you want to create a federation with.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/pingfederate-domain.png)
-
 Configure PingFederate as the federation server for each federated Azure domain. Then select Export Settings to share this information with your PingFederate administrator. The federation server administrator updates the configuration and provides the PingFederate server URL and port number so that Microsoft Entra Connect can verify the metadata settings.
 
 
 ## Implement manage pass-through authentication (PTA)
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/4-pass-through-authentication</sub>
-
-## Implement manage pass-through authentication (PTA)
-
-- 8 minutes
 
 Microsoft Entra pass-through authentication allows your users to sign in to both on-premises and cloud-based applications by using the same passwords. Pass-through authentication signs users in by validating their passwords directly against on-premises Active Directory.
 
@@ -2472,11 +2145,7 @@ Enable pass-through authentication through [Microsoft Entra Connect](https://lea
 
 If you're installing Microsoft Entra Connect for the first time, choose the [custom installation path](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom). At the **User sign-in** page, choose **Pass-through authentication** as the **Sign On method**. On successful completion, a pass-through authentication agent is installed on the same server as Microsoft Entra Connect. In addition, the pass-through authentication feature is enabled on your tenant.
 
-![Screenshot of the Microsoft Entra Connect user interface. The User sign-in option is selected and the user has choices of different types of sign-in options.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/single-sign-on.png)
-
 If you have already installed Microsoft Entra Connect by using the express installation or the custom installation path, select the **Change user sign-in** task on Microsoft Entra Connect, and then select **Next**. Then select **Pass-through authentication** as the sign-in method. On successful completion, a pass-through authentication agent is installed on the same server as Microsoft Entra Connect and the feature is enabled on your tenant.
-
-![Screenshot of the Microsoft Entra Connect Tasks screen when you can select how users sign into Microsoft Entra ID after the on-premises connection is made.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/change-user-sign-in.png)
 
 Important
 
@@ -2484,12 +2153,6 @@ Pass-through authentication is a tenant-level feature. Turning it on affects the
 
 
 ## Explore pass-through authentication and seamless single sign-on (SSO)
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/5-demo-manage-pass-through-authentication-seamless-single-sign</sub>
-
-## Explore pass-through authentication and seamless single sign-on (SSO)
-
-- 14 minutes
 
 Microsoft Entra seamless single sign-on (seamless SSO) automatically signs in users from their network-connected corporate desktops. Seamless SSO provides your users with easy access to cloud-based applications without needing any other on-premises components.
 
@@ -2540,12 +2203,6 @@ The sign-in flow on a native client is as follows:
 
 ## Implement and manage federation
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/6-federation</sub>
-
-## Implement and manage federation
-
-- 1 minute
-
 Federation can use a new or existing on-premises Active Directory farm in Windows Server 2012 R2 (or later), and Microsoft Entra Connect enable users to log into Microsoft Entra resources using their on-premises password.
 
 ![Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared sign in.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/sc300-federation-flow-diagram.png)
@@ -2565,8 +2222,6 @@ Deploying to an AD FS farm, you need:
 - The machine that you run the wizard on to be able to connect to any other machines that you want to install AD FS or Web Application Proxy on by using Windows Remote Management.
 
 ### Set up your federation using Microsoft Entra Connect to connect to an AD FS farm
-
-![Screenshot of Microsoft Entra Connect application showing the create and connect to an AD FS farm dialog.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/sc300-federation-setup-dialog.png)
 
 **Specify the AD FS servers** - Specify the servers where you want to install AD FS. You can add one or more servers, depending on your capacity needs. Before you set up this configuration, join all AD FS servers to Active Directory. This step isn't required for the Web Application Proxy servers. Microsoft recommends installing a single AD FS server for test and pilot deployments. After the initial configuration, you can add and deploy more servers to meet your scaling needs by running Microsoft Entra Connect again.
 
@@ -2602,12 +2257,6 @@ Device writeback is used to enable device-based conditional Access for ADFS-prot
 
 ## Trouble-shoot synchronization errors
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/7-trouble-shoot-synchronization-errors</sub>
-
-## Trouble-shoot synchronization errors
-
-- 10 minutes
-
 Errors could occur when identity data is synchronized from Windows Server Active Directory (AD DS) to Microsoft Entra ID. This section provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors. This section includes the common error types, but doesn't cover all the possible errors.
 
 With the latest version of Microsoft Entra Connect, a report of Synchronization Errors is available in the [Azure portal](https://aka.ms/aadconnecthealth) as part of Microsoft Entra Connect Health for sync.
@@ -2617,8 +2266,6 @@ Microsoft Entra Connect performs three types of operations from the directories 
 ### Errors during export to Microsoft Entra ID
 
 The following section describes different types of synchronization errors that can occur during the export operation to Microsoft Entra ID using the Microsoft Entra connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Microsoft Entra ID indicate that the operation (add, update, delete etc.,) attempted by Microsoft Entra Connect (Sync Engine) on Microsoft Entra directory failed.
-
-![Screenshot of the Export Errors Overview page in Microsoft Entra Connect.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/export-errors-overview.png)
 
 ### Data mismatch errors
 
@@ -2825,8 +2472,6 @@ An **Existing Admin Role Conflict** will occur on a user object during synchroni
 
 Microsoft Entra Connect isn't allowed to soft-match a user object from on-premises AD with a user object in Microsoft Entra ID that has an administrative role assigned to it.
 
-![Screenshot of the Microsoft Entra Connect screen with the Existing Admin field selected.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/exist-admin.png)
-
 #### How to fix
 
 To resolve this issue do the following:
@@ -2842,12 +2487,6 @@ You can assign the administrative role to the existing user object again after t
 
 
 ## Implement Microsoft Entra Connect Health
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/8-implement-azure-active-directory-connect-health</sub>
-
-## Implement Microsoft Entra Connect Health
-
-- 12 minutes
 
 Microsoft Entra Connect Health provides monitoring of your on-premises identity infrastructure. It enables you to maintain a reliable connection to Microsoft 365 and Microsoft Online Services. This reliability is achieved by providing monitoring capabilities for your key identity components. Also, it makes the key data points about these components easily accessible.
 
@@ -2891,15 +2530,9 @@ Your Active Directory Federation Server (AD FS) server should be different from 
 
 Before you install the agent, make sure your AD FS server host name is unique and isn't present in the AD FS service. To start the agent installation, double-click the *.exe* file that you downloaded. In the first window, select **Install**.
 
-![Screenshot of the installation window for the Azure Microsoft Entra Connect Health AD  FS agent.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/install-1.png)
-
 After the installation finishes, select **Configure Now**.
 
-![Screenshot of the installation window for the confirmation message for the Microsoft Entra Connect Health AD FS agent installation.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/install-2.png)
-
 A PowerShell window opens to start the agent registration process. When you're prompted, sign in by using a Microsoft Entra ID account that has permissions to register the agent. By default, the global admin account has permissions.
-
-![Screenshot of the sign in window for Microsoft Entra Connect Health AD FS.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/install-3.png)
 
 After you sign in, PowerShell continues. When it finishes, you can close PowerShell. The configuration is complete.
 
@@ -2907,15 +2540,11 @@ At this point, the agent services should start automatically to allow the agent 
 
 If you haven't met all of the prerequisites, warnings appear in the PowerShell window. Be sure to complete the requirements before you install the agent. The following screenshot shows an example of these warnings.
 
-![Screenshot of the Microsoft Entra Connect Health AD FS configure script. You can customize if needed.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/install-4.png)
-
 To verify that the agent was installed, look for the following services on the server. If you completed the configuration, they should already be running. Otherwise, they're stopped until the configuration is complete.
 
 - Microsoft Entra Connect Health AD FS Diagnostics Service
 - Microsoft Entra Connect Health AD FS Insights Service
 - Microsoft Entra Connect Health AD FS Monitoring Service
-
-![Screenshot of the Microsoft Entra Connect Health AD FS services. Deploy only the services you need.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/install-5.png)
 
 ### Install the agent for Sync
 
@@ -2926,8 +2555,6 @@ To verify the agent has been installed, look for the following services on the s
 - Microsoft Entra Connect Health Sync Insights Service
 - Microsoft Entra Connect Health Sync Monitoring Service
 
-![Screenshot of the running Microsoft Entra Connect Health for Sync services on the server.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/services.png)
-
 Note
 
 Remember that you must have Microsoft Entra ID Premium to use Microsoft Entra Connect Health. If you don't have Microsoft Entra ID Premium, you can't complete the configuration in the Azure portal.
@@ -2935,19 +2562,11 @@ Remember that you must have Microsoft Entra ID Premium to use Microsoft Entra Co
 
 ## Manage Microsoft Entra Health
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/9-manage-azure-active-directory-connect-health</sub>
-
-## Manage Microsoft Entra Health
-
-- 7 minutes
-
 This section describes various operations you can perform by using Microsoft Entra Connect Health.
 
 ### Enable email notifications
 
 You can configure the Microsoft Entra Connect Health service to send email notifications when alerts indicate that your identity infrastructure isn't healthy. This occurs when an alert is generated, and when it's resolved.
-
-![Screenshot of Microsoft Entra Connect Health email notification settings. Enter your admin's email.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/email-notifications-discover.png)
 
 Note
 
@@ -2994,8 +2613,6 @@ Microsoft Entra Connect Health for Active Directory Federation Services (AD FS) 
 1. Open the **Server** screen from the **Server List** dialog by selecting the server name to be removed.
 2. On the **Server** screen, from the action bar, select **Delete**.
 
-![Screenshot of Microsoft Entra Connect Health delete server. Only keep servers that are active.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/delete-server-2.png)
-
 1. Confirm by typing the server name in the confirmation box.
 2. Select **Delete**.
 
@@ -3022,8 +2639,6 @@ When you're deleting a service instance, be aware of the following:
 
 1. Open the **Service** screen from the **Service List** dialog by selecting the service identifier (farm name) that you want to remove.
 2. On the **Service** screen, from the action bar, select **Delete**.
-
-![Screenshot of Microsoft Entra Connect Health delete service. Remove unwanted services.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/delete-server.png)
 
 1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
 2. Select **Delete**.
@@ -3065,16 +2680,10 @@ To allow a user access at the *all service instances* level within Microsoft Ent
 
 1. From the **Configure** section, select **Users**.
 
-![Screenshot of Microsoft Entra Connect Health resource sidebar. Add the users you need.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/start-role-based-access-control.png)
-
 1. Select **Add**.
 2. In the **Select a role** pane, select a role (for example, **Owner**).
 
-![Screenshot of Microsoft Entra Connect Health and Azure RBAC configure menu.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/role-based-access-control-add.png)
-
 1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. select **Select**.
-
-![Screenshot of Microsoft Entra Connect Health and Azure RBAC and new users highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/role-based-access-control-select-users.png)
 
 1. Select **OK**.
 2. After the role assignment is complete, the users and groups appear in the list.
@@ -3088,13 +2697,9 @@ Now the listed users and groups have access, according to their assigned roles.
 1. After you assign permissions, a user can access Microsoft Entra Connect Health by going [here](https://aka.ms/aadconnecthealth).
 2. On the screen, the user can pin the screen, or different parts of it, to the dashboard. Select the **Pin to dashboard** icon.
 
-![Screenshot of Microsoft Entra Connect Health and Azure RBAC pin dialog, with pin icon highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/role-based-access-control-pin-blade.png)
-
 #### Remove users or groups
 
 You can remove a user or a group added to Microsoft Entra Connect Health and Azure RBAC. Select the user or group with the secondary action, and select **Remove**.
-
-![Screenshot of Microsoft Entra Connect Health and Azure RBAC with Remove highlighted.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/role-based-access-control-remove.png)
 
 ### Diagnose and remediate duplicated attribute sync errors
 
@@ -3121,8 +2726,6 @@ Occasionally, you might find that an existing user loses the **Source Anchor**. 
 When an existing user is a cloud-only object, you can also see the conflicting user synchronized to Microsoft Entra ID. The user can't be matched in sync to the existing object. There's no direct way to remap the **Source Anchor**.
 
 As an example, the existing object in Microsoft Entra ID preserves the license of Joe. A newly synchronized object with a different **Source Anchor** occurs in a duplicated attribute state in Microsoft Entra ID. Changes for Joe in on-premises Active Directory won't be applied to Joe’s original user (existing object) in Microsoft Entra ID.
-
-![Screenshot of the Diagnose sync error orphaned object scenario. Track down objects that are orphaned.](https://learn.microsoft.com../../wwl-sci/implement-manage-hybrid-identity/media/identity-fix-orphaned-case.png)
 
 ### Diagnostic and troubleshooting steps in Connect Health
 
@@ -3161,24 +2764,12 @@ From the Azure portal, take a few steps to identify specific fixable scenarios:
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/10-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-manage-hybrid-identity/11-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you reviewed this module, you're able to:
 

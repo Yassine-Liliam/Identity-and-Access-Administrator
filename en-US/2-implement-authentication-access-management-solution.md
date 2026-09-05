@@ -1,6 +1,6 @@
 # Implement an authentication and access management solution
 
-> SC-300 — learning path 2/4 · 298 min
+> SC-300 — learning path 2/4
 > https://learn.microsoft.com/en-us/training/paths/implement-authentication-access-management-solution/
 
 ## Modules
@@ -13,21 +13,14 @@
 - **Deploy and Configure Microsoft Entra Global Secure Access** (10 units)
 
 
-
 ---
 
 # Secure Microsoft Entra users with multifactor authentication
 
-_38 min · https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/_
+_https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/1-introduction</sub>
-
-## Introduction
-
-- 3 minutes
 
 Imagine that you're a security engineer for a large manufacturing firm. Your company works on several big contracts for popular personal electronics companies, including Microsoft. Clients send you their confidential designs, which are then stored in your Azure infrastructure. Plenty of hackers would love to get their hands on the next-generation designs. It's your job to protect them.
 
@@ -48,12 +41,6 @@ In this module, you:
 
 
 ## What is Microsoft Entra multifactor authentication?
-
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/2-azure-multi-factor-authentication</sub>
-
-## What is Microsoft Entra multifactor authentication?
-
-- 10 minutes
 
 Protecting your cloud assets is one of the main goals for security groups. One of the primary ways unauthorized users get access to systems is by obtaining a valid username and password. Azure can help mitigate this risk with several features of Microsoft Entra ID, including:
 
@@ -97,12 +84,6 @@ Multifactor authentication comes as part of the following offerings:
 
 ## Plan your multifactor authentication deployment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/3-planning-mfa</sub>
-
-## Plan your multifactor authentication deployment
-
-- 7 minutes
-
 Before you start deploying Microsoft Entra multifactor authentication, there are several things you should decide.
 
 First, consider rolling out MFA in waves. Start with a small group of pilot users to evaluate the complexity of your environment and identify any setup issues or unsupported apps or devices. Then, broaden that group over time, and evaluate the results with each pass until your entire company is enrolled.
@@ -142,12 +123,6 @@ You can also prompt users to register for MFA when they try to use an applicatio
 
 ## Exercise - Enable Microsoft Entra multifactor authentication
 
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/4-exercise-mfa</sub>
-
-## Exercise - Enable Microsoft Entra multifactor authentication
-
-- 8 minutes
-
 You can walk through the basic steps necessary to configure and enable Microsoft Entra multifactor authentication using Conditional policies. *Keep in mind that a real deployment requires significant thought and planning*. Make sure that you review the documentation links at the end of this module before you enable MFA for your environments.
 
 Important
@@ -159,15 +134,15 @@ You need Microsoft Entra ID P1 or P2 for this exercise. You can use a [30-day fr
 1. Sign in to the [Azure portal](https://portal.azure.com/) using an Authentication Administrator account.
 2. Search for **Microsoft Entra ID** and navigate to the Microsoft Entra ID dashboard.
 3. Select **Security** in the left-hand menu.
-4. Under the **Manage** menu, select **Multifactor authentication**. Here, you find options for multifactor authentication.  ![Screenshot showing MFA options in the dashboard.](https://learn.microsoft.commedia/4-mfa-options.png)
-5. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.  ![Screenshot showing MFA configuration.](https://learn.microsoft.commedia/4-set-mfa.png)   You can enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Microsoft Entra identity, using a different password specific to that app.
+4. Under the **Manage** menu, select **Multifactor authentication**. Here, you find options for multifactor authentication.
+5. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.     You can enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Microsoft Entra identity, using a different password specific to that app.
 
 ### Set up Conditional Access rules for MFA
 
 Next, examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Azure portal and select **Microsoft Entra ID** > **Security** > **Conditional Access**.
-2. Select **Create new policy** from the top menu.  ![Screenshot highlighting the New Policy button in the Azure portal.](https://learn.microsoft.commedia/4-new-policy.png)
+2. Select **Create new policy** from the top menu.
 3. Name your policy, for example, *All guests*.
 4. Under **Users**, select **0 users and groups selected**.
   1. Under **Include**, choose **Select users and groups**.
@@ -186,32 +161,22 @@ Next, examine how to set up Conditional Access policy rules that would enforce M
   1. Make sure that **Grant access** is selected.
   2. Select **Require multifactor authentication** and choose **Select**. This option enforces MFA.
 
-8. Set **Enable policy** to **On**, and then **Create**.  ![Screenshot showing the complete Add Policy dialog.](https://learn.microsoft.commedia/4-create-policy.png)
+8. Set **Enable policy** to **On**, and then **Create**.
 
 MFA is now enabled for your selected applications. The next time a user or guest tries to sign into that app, they're prompted to register for MFA.
 
 
 ## Configure multifactor authentication methods
 
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/5-configure-authentication-methods</sub>
-
-## Configure multifactor authentication methods
-
-- 6 minutes
-
 As mentioned earlier in the module, we recommend that users to be able to select more than one authentication method in case their primary method is unavailable.
 
 When a user signs into a service that requires MFA the first time, they're asked to register their preferred multifactor authentication method as shown in the following screenshot:
-
-![Screenshot showing the registration information.](https://learn.microsoft.commedia/5-setup-user.png)
 
 Tip
 
 If you followed the previous exercise and turned on MFA for an account and app, you can try accessing that app with the given user account. You should see the preceding flow.
 
 Once they register, each time users sign into a service or app that requires MFA, the Azure sign-in process prompts for the authentication information as shown in the following image:
-
-![Screenshot that depicts asking for additional authentication information via one of four methods.](https://learn.microsoft.commedia/5-identity-options.png)
 
 ### Azure Authentication Methods
 
@@ -292,28 +257,16 @@ Certain non-browser apps don't support Microsoft Entra multifactor authenticatio
 
 Microsoft Entra ID includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
 
-![Screenshot showing the metrics view for MFA.](https://learn.microsoft.commedia/5-monitor-auth-methods.png)
-
 In addition to the overall registration numbers, you can also see the success and failure of registrations per authentication method. This fact allows you to understand which authentication methods your users most commonly registered and which ones are easy for them to register. This data is calculated using the last 30 days of audit logs from the combined security info registration and SSPR registration experiences.
 
 You can drill down and see the latest registration audit information for each user by clicking the chart.
 
-![Screenshot showing the registration details.](https://learn.microsoft.commedia/5-auth-registration-details.png)
-
 You can also learn more about SSPR usage in your organization through the **Usage** tab on the main view, as shown in the following image:
-
-![Screenshot showing the SSPR usage metrics.](https://learn.microsoft.commedia/5-sspr-usage.png)
 
 ### Check your knowledge
 
 
 ## Summary
-
-<sub>https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/6-summary</sub>
-
-## Summary
-
-- 4 minutes
 
 Using Microsoft Entra multifactor authentication, you can ensure that when users sign in to access your confidential systems and data, they are who they say they are. Microsoft Entra ID allows you to create policies to ensure that specific apps are protected, while allowing more public systems to remain easier to get to. In addition, you can use other services such as Microsoft Entra ID Protection and Azure Smart Lockout to fully protect your identity surface area.
 
@@ -330,16 +283,10 @@ To learn more about some of the topics examined in this module, check out the fo
 
 # Manage user authentication
 
-_52 min · https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/_
+_https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. In Microsoft Entra ID, authentication involves more than just verifying a username and password. To improve security and reduce the need for help desk assistance, Microsoft Entra authentication includes the following components:
 
@@ -366,15 +313,7 @@ In this module, you will:
 
 ## Administer FIDO2 and passwordless authentication methods
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/2-administer-fido2-passwordless-authentication-methods</sub>
-
-## Administer FIDO2 and passwordless authentication methods
-
-- 4 minutes
-
 As part of the sign-in experience for accounts in Microsoft Entra ID, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Microsoft Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
-
-![Screenshot of the strengths and preferred authentication methods in Microsoft Entra ID.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/authentication-methods.png)
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
@@ -470,8 +409,6 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 In the example below a user has already provisioned their FIDO2 security key. The user can choose to sign in on the web with their FIDO2 security key inside of a supported browser on Windows 10 version 1903 or higher or Windows 11.
 
-![Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/fast-identity-windows-edge-sign-in.png)
-
 ### Prerequisites for cloud-only deployment
 
 - Windows 10, version 1511 or later or Windows 11
@@ -484,19 +421,11 @@ In the example below a user has already provisioned their FIDO2 security key. Th
 
 ## Explore Authenticator app and OATH tokens
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/3-explore-authenticator-app-oath-tokens</sub>
-
-## Explore Authenticator app and OATH tokens
-
-- 3 minutes
-
 The Microsoft Entra Authenticator app provides an additional level of security to your Microsoft Entra ID work or school account or your Microsoft account and is available for Android and iOS. With the Microsoft Authenticator app, users can authenticate in a passwordless way during sign-in, or as an additional verification option during self-service password reset (SSPR) or multifactor authentication events.
 
 Users might receive a notification through the mobile app for them to approve or deny, or use the Authenticator app to generate an OATH verification code that can be entered in a sign-in interface. If you enable both a notification and verification code, users who register the Authenticator app can use either method to verify their identity.
 
 ### Microsoft Authenticator app
-
-![Screenshot of the sign-in verification screen the user sees when verifying authentication with the app.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/authenticator-app.png)
 
 The Authenticator app provides a high level of security, and removes the need for the user to provide a password at sign-in. The Authenticator app can help prevent unauthorized access to accounts and stop fraudulent transactions. A push notification is sent to your smartphone or tablet for extra security. Users view the notification, and if it's legitimate, select Verify. Otherwise, they can select Deny.
 
@@ -504,20 +433,12 @@ The Authenticator app can be used as a software token to generate an OATH verifi
 
 ### Open Authentication (OATH) tokens
 
-![Screenshot of the OATH (Open Authentication) token setup screen inside of multifactor authentication. Configure tokens using software or hardware.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/oath-token-menu.png)
-
 OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. Microsoft Entra ID doesn't support OATH HOTP, a different code generation standard. Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
 
 The Authenticator app automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. Third-party applications that use OATH TOTP to generate codes can also be used.
 
 
 ## Implement an authentication solution based on Windows Hello for Business
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/4-implement-authentication-solution-based-windows-hello-for-business</sub>
-
-## Implement an authentication solution based on Windows Hello for Business
-
-- 3 minutes
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. Windows Hello for Business lets user authenticate to an Active Directory or Microsoft Entra account.
 
@@ -589,12 +510,6 @@ The Pluton design removes the potential for that communication channel to be att
 
 ## Exercise configure and deploy self-service password reset
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/5-exercise-configure-deploy-self-service-password-reset</sub>
-
-## Exercise configure and deploy self-service password reset
-
-- 15 minutes
-
 Microsoft Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or helpdesk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ### Benefits of self-service password reset
@@ -610,8 +525,6 @@ Licensing requirements:
 - On-premises accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID Premium P1 or P2 license or a Microsoft 365 Business Premium license.
 
 ### Enable self-service password reset
-
-![Screenshot of Microsoft Entra ID configure Self-Service Password Reset dialog. SSPR feature is being enabled for a group of users called SSPR Test Group.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/enable-password-reset.png)
 
 Basic steps to enable self-service password reset:
 
@@ -643,8 +556,6 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 4. Create a new group using the following information:    **Setting** **Value**     Group type Security   Group name SSPRTesters   Group description Testers of SSPR rollout   Membership type Assigned   Members Monica Thompson
 5. Select **Create.**
 
-![Screenshot of the New Group screen with group type, group name, and create highlighted.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/create-self-service-password-reset-security-group.png)
-
 ### Enable self-service password reset
 
 Enable SSPR for the group.
@@ -654,7 +565,7 @@ Enable SSPR for the group.
 3. On the Password reset dialog **Properties** page, under **Self-service password reset enabled**, select **Selected**.
 4. Select **Select group**.
 5. In the Default password reset policy pane, select the **SSPRTesters** group.
-6. On the Password reset dialog, **Properties** page, select **Save**.  ![Screenshot image displaying the Password reset properties page.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/enable-password-reset-for-selected-group.png)
+6. On the Password reset dialog, **Properties** page, select **Save**.
 7. Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
 
 ### Register for self-service password reset
@@ -665,7 +576,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 2. Sign in as `MonicaT@organization-domain-name.onmicrosoft.com` with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3. When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4. In the **More information required** dialog box, select **Next**.
-5. On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.  ![Screenshot displaying the Keep your account secure page with the Choose a different method dialog.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/keep-your-account-secure-page.png)
+5. On the Keep your account-secure page, user the **Phone** option or select the **I want to set up a different method** link.
 6. In this example, you'll use the Phone option. Enter your mobile phone details.
 7. Select **Text me a code**.
 8. When you receive the code on your mobile phone, enter the code in the text box and then select Next.
@@ -679,8 +590,8 @@ Now let's test whether the user can reset their password.
 1. Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/sspr](https://aka.ms/sspr). This is to ensure you well be prompted for user authentication.
 2. In the **Email, phone, or Skype** box, enter `MonicaT@organization-domain-name.onmicrosoft.com` and then select Next. Replace the organization-domain-name with your domain name.
 3. On the Enter password page, select **Forgot my password**.
-4. On the Get back into your account page, complete the requested information and then select **Next**.  ![Screenshot of the Get back into your account page with Email or Username, captcha box.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/get-back-into-your-account-page.png)
-5. In the **verification step 1** task, select **Text my mobile phone** or **Call my mobile phone**, enter your phone number and then select **Text**.  ![Screenshot of verification step 1 with contact methods, phone number box, and text button highlighted.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/self-service-password-reset-verification-step.png)
+4. On the Get back into your account page, complete the requested information and then select **Next**.
+5. In the **verification step 1** task, select **Text my mobile phone** or **Call my mobile phone**, enter your phone number and then select **Text**.
 6. Enter your verification code and then select **Next**.
 7. Choose a new password step, enter a password and then confirm your new password.
 8. When complete, select **Finish**.
@@ -690,12 +601,6 @@ Now let's test whether the user can reset their password.
 
 
 ## Deploy and manage password protection
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/6-deploy-manage-password-protection</sub>
-
-## Deploy and manage password protection
-
-- 12 minutes
 
 Users often create passwords that use common local words such as a school, sports team, or famous person. These passwords are easy to guess and weak against dictionary-based attacks. To enforce strong passwords in your organization, Microsoft Entra Password Protection provides a global and custom banned password list. A password change request fails if there's a match in these banned passwords list.
 
@@ -891,12 +796,6 @@ The `Get-AzureADPasswordProtectionDCAgent` cmdlet might be used to query the sof
 
 ## Configure smart lockout thresholds
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/7-configure-smart-lockout-thresholds</sub>
-
-## Configure smart lockout thresholds
-
-- 2 minutes
-
 Smart lockout helps prevent bad actors who try to guess your users' passwords or use brute-force methods to get in. Smart lockout can recognize sign-ins that come from valid users and treat them differently than ones of attackers and other unknown sources. Attackers get locked out, while your users continue to access their accounts and be productive.
 
 ### How smart lockout works
@@ -926,12 +825,6 @@ For example, if you want your smart lockout duration to be higher than AD DS, th
 
 ## Exercise - Manage Microsoft Entra smart lockout values
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/8-exercise-manage-azure-active-directory-smart-lockout-values</sub>
-
-## Exercise - Manage Microsoft Entra smart lockout values
-
-- 3 minutes
-
 ### Manage Microsoft Entra smart lockout values
 
 Based on your organizational requirements, you can customize the Microsoft Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID Premium P1 or higher licenses for your users.
@@ -939,7 +832,7 @@ Based on your organizational requirements, you can customize the Microsoft Entra
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Protection**.
 3. On the Protection menu, select **Authentication Methods**.
-4. On Authentications methods menu, select **Password protection**.  ![Screenshot of the Authentication methods dialog with the highlighted selections to browse to Password authentication.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/browse-password-protection.png)
+4. On Authentications methods menu, select **Password protection**.
 5. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to 120.
 6. Next to **Mode**, select **Enforced**.
 7. Save your changes.
@@ -952,12 +845,6 @@ Your account is temporarily locked to prevent unauthorized use. Try again later,
 
 
 ## Implement Kerberos and certificate-based authentication in Microsoft Entra ID
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/9-implement-kerberos-certificate-based-authentication-azure-ad</sub>
-
-## Implement Kerberos and certificate-based authentication in Microsoft Entra ID
-
-- 3 minutes
 
 You can provide single sign-on for on-premises applications published through Application Proxy. The apps are secured with integrated Windows authentication. These applications require a Kerberos ticket for access. Application Proxy uses Kerberos Constrained Delegation (KCD) to support these applications. You can enable single sign-on to your applications using integrated Windows authentication. Give the Application Proxy connectors permission in Active Directory to impersonate users. The connectors use this permission to send and receive tokens on their behalf.
 
@@ -986,12 +873,6 @@ Before you get started with single sign-on for integrated windows authentication
 
 ## Configure Microsoft Entra user authentication for virtual machines
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/10-configure-azure-ad-user-authentication-virtual-machines</sub>
-
-## Configure Microsoft Entra user authentication for virtual machines
-
-- 3 minutes
-
 Organizations can now improve the security of Windows and Linux virtual machines (VMs) in Azure by integrating with Microsoft Entra authentication. You can now use Microsoft Entra ID as a core authentication platform to connect to:
 
 - Windows Server 2022, 2025, or later installed with Desktop Experience.
@@ -1014,8 +895,6 @@ To use Microsoft Entra sign-in for Windows VM in Azure, you must:
 - First enable the Microsoft Entra sign-in option for your Windows VM.
 - Then configure Azure role assignments for users who are authorized to sign into the VM.
 
-![Screenshot of create or configure Windows virtual machine dialog.  The checkbox for Login with Microsoft Entra ID is selected.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/azure-authentication-windows-machine.png)
-
 #### Configure Microsoft Entra sign-in for Linux VMs
 
 You can enable Microsoft Entra sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Microsoft Entra ID authentication:
@@ -1029,24 +908,12 @@ You can enable Microsoft Entra sign-in for any of the supported Linux distributi
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/11-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/12-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you have reviewed this module, you should be able to:
 
@@ -1076,16 +943,10 @@ To learn more about some of the idea we've examined in this module, check out th
 
 # Plan, implement, and administer Conditional Access
 
-_65 min · https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/_
+_https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Conditional Access gives a fine granularity of control over which users and identities can perform specific activities, access resources, and ensure data and systems are safe. With the introduction of Microsoft Entra Agent ID control, now extends to AI agents—you apply the same Zero Trust principles to agent identities that you apply to users and workload identities.
 
@@ -1105,19 +966,13 @@ In this module, you will:
 
 ## Plan security defaults
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/2-plan-security-defaults</sub>
-
-## Plan security defaults
-
-- 2 minutes
-
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
 - Requiring all users to register for multifactor authentication.
 - Requiring administrators to perform multifactor authentication.
 - Blocking legacy authentication protocols.
 - Requiring users to perform multifactor authentication when necessary.
-- Protecting privileged activities like access to the Azure portal.  ![Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/security-defaults-azure-active-directory-portal.png)
+- Protecting privileged activities like access to the Azure portal.
 
 ### Availability
 
@@ -1184,12 +1039,6 @@ After security defaults are enabled in your tenant, all authentication requests 
 
 ## Exercise - Work with security defaults
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/3-exercise-work-with-security-defaults</sub>
-
-## Exercise - Work with security defaults
-
-- 3 minutes
-
 In this exercise, try enabling security defaults.
 
 Note
@@ -1199,7 +1048,7 @@ Security Defaults are enabled on new subscriptions, so you can review the proces
 To enable security defaults in your directory:
 
 1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/) and sign in as a Security administrator, or a Conditional Access administrator.
-2. Select the Show portal menu hamburger icon and then select Identity - Overview.  ![Screenshot of the Microsoft Entra admin center menu with Identity - Overview - Properties selected.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/azure-portal-menu-azure-active-directory.png)
+2. Select the Show portal menu hamburger icon and then select Identity - Overview.
 3. In the left navigation, in the Manage section, select **Properties**.
 4. At the bottom of the Properties dialog, select **Manage Security defaults**.
 5. Set the **Enable Security defaults** toggle to **Yes.**
@@ -1214,17 +1063,11 @@ To disable security defaults in your directory:
 1. Browse to the [Azure portal](https://portal.azure.com/) and sign in using an Administrator account for the directory.
 2. Select the Show portal menu hamburger icon and then select Microsoft Entra ID.
 3. At the bottom of the Properties dialog, select **Manage Security defaults**.
-4. Set the **Enable security defaults** toggle to **No**.  ![Screenshot of the security defaults being disabled and selection of the required reason for disabling.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/security-defaults-disable-before-conditional-access.png)
+4. Set the **Enable security defaults** toggle to **No**.
 5. Select **Save**.
 
 
 ## Plan Conditional Access policies
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/4-plan-conditional-access-policies</sub>
-
-## Plan Conditional Access policies
-
-- 8 minutes
 
 Planning your Conditional Access deployment is critical to achieving your organization's access strategy for apps and resources.
 
@@ -1249,8 +1092,6 @@ The benefits of deploying CA are:
 ### Understand Conditional Access policy components
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When the admin configures CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
-
-![Screenshot of the conditional access dialog with the policy creation screen open for configuration.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-policy.png)
 
 Assignments define the users and groups to be affected by the policy, the cloud apps or actions to which the policy will apply, and the conditions under which the policy will apply. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
 
@@ -1354,12 +1195,6 @@ The test plan is important to have a comparison between the expected results and
 
 
 ## Implement Conditional Access policy controls and assignments
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/5-implement-conditional-access-policies-controls-assignments</sub>
-
-## Implement Conditional Access policy controls and assignments
-
-- 8 minutes
 
 Conditional Access is an advanced capability of Microsoft Entra ID that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on signals like group membership, device compliance, network location, and sign-in risk.
 
@@ -1540,11 +1375,7 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
 
 ### Conditional Access Terms of Use (TOU)
 
-![Screenshot of the Identity Governance dialog to create new Terms of Use for your cloud solutions.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-terms-identity-governance.png)
-
 You can create Terms of Use (TOU) for your site in the Identity Governance tools. Launch the identity governance app, and choose **Terms of use** from the menu. You have to supply a PDF file with the terms for the user. You can set up several rules like when the terms will expire, or whether the user has to open them before accepting. Once created, you can build a custom conditional rule right in identity governance. Or you can save the terms and use Conditional Access in Microsoft Entra ID. To create new Terms of use you fill in the above dialog.
-
-![Screenshot of the Microsoft Entra conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/terms-of-use-conditional-access.png)
 
 The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use. Additionally, organizations can expire the consent given or change the terms of use, and request the user attests again.
 
@@ -1556,12 +1387,6 @@ Before accessing certain cloud apps in your environment, you might want to get c
 
 ## Exercise - Implement Conditional Access policies roles and assignments
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/6-exercise-implement-conditional-access-policies-roles-assignments</sub>
-
-## Exercise - Implement Conditional Access policies roles and assignments
-
-- 10 minutes
-
 In this exercise, create a conditional access policy.
 
 Microsoft Entra Conditional Access is an advanced feature of Microsoft Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
@@ -1570,7 +1395,7 @@ Microsoft Entra Conditional Access is an advanced feature of Microsoft Entra ID 
 2. Open the portal menu and then select **Identity**.
 3. Then select **Protection**.
 4. On the Security blade, in the left navigation, select **Conditional access**.
-5. On the top menu, select **+ Create new policy**.  ![Screenshot of the Conditional Access blade with New policy highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-new-policy.png)
+5. On the top menu, select **+ Create new policy**.
 6. In the **Name** box, enter **Test app conditional access**. This is the name being using for this exercise, you can choose another name if you wish.
 7. Under **Assignments**, select **Users and groups**.
 8. On the Include tab, select the **Users and groups** check box.
@@ -1589,27 +1414,19 @@ This policy is being configured for the exercise only and is being used to quick
 
 1. Under **Enable policy**, select **On**, and then select **Create**.
 
-![Screenshot of a new conditional access policy with enable and create highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-conditional-access-policy.png)
-
 ### Test the conditional access policy
 
 You should test your conditional access policies to ensure they working as expected.
 
 1. Open a new browser tab and then browse to **[https://myapps.microsoft.com](https://myapps.microsoft.com)**.
 2. Your credentials should be passed through.
-3. Verify you are prevented from successfully accessing your My Apps page.  ![Screenshot of the blocked resource access due to an enabled conditional access policy.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/test-conditional-access-policy.png)    Note If you are signed in, close the tab, wait 1-2 minutes, and then retry.
+3. Verify you are prevented from successfully accessing your My Apps page.      Note If you are signed in, close the tab, wait 1-2 minutes, and then retry.
 4. Close the tab and return to the Conditional Access blade.
 5. Select the **Test app conditional access** policy.
 6. Under **Enable policy**, select **Off** and then select **Save**.
 
 
 ## Test and troubleshoot Conditional Access policies
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/7-test-troubleshooting-conditional-access-policies</sub>
-
-## Test and troubleshoot Conditional Access policies
-
-- 3 minutes
 
 The Conditional Access framework provides you with great configuration flexibility. However, great flexibility also means that you should carefully review each configuration policy before releasing it to avoid undesirable results. In this context, you should pay special attention to assignments affecting complete sets such as **all users / groups / cloud apps**.
 
@@ -1629,8 +1446,6 @@ Organizations should avoid the following configurations:
 
 The first way is to review the error message that appears. For problems signing in when using a web browser, the error page itself has detailed information. This information alone describes what the problem is and suggests a solution.
 
-![Screenshot of the Sign-in error - compliant device required. With a button to cancel or get more information.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-1.png)
-
 In the above error, the message states that the application can only be accessed from devices or client applications that meet the company's mobile device management policy. In this case, the application and device don't meet that policy.
 
 ### Microsoft Entra sign-in events
@@ -1638,8 +1453,6 @@ In the above error, the message states that the application can only be accessed
 The second method to get detailed information about the sign-in interruption is to review the Microsoft Entra sign-in events to see which Conditional Access policy or policies were applied and why.
 
 Find more information about the problem by clicking **More Details** in the initial error page. Clicking **More Details** will reveal troubleshooting information that's helpful when searching the Microsoft Entra sign-in events for the specific failure event the user saw or when opening a support incident with Microsoft.
-
-![Screenshot of the More details from a Conditional Access interrupted web browser sign-in.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-2.png)
 
 To find out which Conditional Access policy or policies applied and why, do the following steps:
 
@@ -1650,7 +1463,7 @@ To find out which Conditional Access policy or policies applied and why, do the 
     1. Correlation ID when you have a specific event to investigate.
     2. Conditional access to see policy failure and success. Scope your filter to show only failures to limit results.
     3. Username to see information related to specific users.
-    4. Date scoped to the time frame in question.  ![Screenshot of the error message screen. User is selecting the Conditional access filter in the sign-ins log.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-3.png)
+    4. Date scoped to the time frame in question.
 
 4. Once the sign-in event that corresponds to the user's sign-in failure has been found select the **Conditional Access** tab, the tab will show the specific policy or policies that resulted in the sign-in interruption.
   1. Information in the **Troubleshooting and support** tab provides a clear reason as to why a sign-in failed, such as a device that didn't meet compliance requirements.
@@ -1661,32 +1474,18 @@ To find out which Conditional Access policy or policies applied and why, do the 
 
 Selecting the ellipsis on the right side of the policy in a sign-in event brings up policy details. This gives administrators additional information about why a policy was successfully applied or not.
 
-![Screenshot of the Sign-in event Conditional Access tab. Waiting for user input.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-5.png)
-
-![Screenshot of the Policy details (preview) screen in Microsoft Entra conditional access.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/policy-details.png)
-
 The left side provides details collected at sign-in, and the right side provides details of whether those details satisfy the requirements of the applied Conditional Access policies. Conditional Access policies only apply when all conditions are satisfied or not configured.
 
 If the information in the event isn't enough to understand the sign-in results or adjust the policy to get desired results, then a support incident can be opened. Navigate to that sign-in event's **Troubleshooting and support** tab and select **Create a new support request**.
-
-![Screenshot of The Troubleshooting and support tab of the Sign-in event. Wizard helps fix issues.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/image-6.png)
 
 When submitting the incident, provide the request ID and time and date from the sign-in event in the incident submission details. This information will allow Microsoft support to find the event you're concerned about.
 
 
 ## Implement application controls
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/8-implement-application-controls</sub>
-
-## Implement application controls
-
-- 4 minutes
-
 Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies. Access and session policies are used within the Microsoft Defender for Cloud Apps portal to further refine filters and set actions to be taken on a user.
 
 ### Conditional Access App Control
-
-![Screenshot of the Conditional Access App Control selected in the conditional access wizard.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-app-control.png)
 
 Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Microsoft Entra Conditional Access. Microsoft Entra Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
 
@@ -1855,12 +1654,6 @@ If you apply a MAM policy to the user without setting the device state, the user
 
 ## Implement session management and continuous access evaluation
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/9-implement-session-management</sub>
-
-## Implement session management and continuous access evaluation
-
-- 3 minutes
-
 In complex deployments, organizations might have a need to restrict authentication sessions. Some scenarios might include:
 
 - Resource access from an unmanaged or shared device.
@@ -1925,8 +1718,6 @@ A persistent browser session allows users to remain signed in after closing and 
 
 Use the What-If tool to simulate a sign-in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
-![Screenshot of the Conditional Access What If tool results.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-what-if-tool-result.png)
-
 ### Policy deployment
 
 To make sure that your policy works as expected, the recommended best practice is to test it before rolling it out into production. Ideally, use a test tenant to verify whether your new policy works as intended.
@@ -1959,12 +1750,6 @@ There are several key benefits to continuous access evaluation.
 
 ## Exercise - Configure authentication session controls
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/10-exercise-configure-authentication-session-controls</sub>
-
-## Exercise - Configure authentication session controls
-
-- 10 minutes
-
 In this exercise you will configure sign in frequency controls using a conditional access policy.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using an Administrator account.
@@ -1972,8 +1757,6 @@ In this exercise you will configure sign in frequency controls using a condition
 3. On the Identity menu, then select **Protection**.
 4. On the Protection menu, select **Conditional access**.
 5. On the top menu, select **New policy**.
-
-![Screenshot of the Conditional Access blade with New policy highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-new-policy.png)
 
 1. In the **Name** box, enter **Sign in frequency**.
 2. Under **Assignments**, select **Users and groups**.
@@ -1988,16 +1771,7 @@ In this exercise you will configure sign in frequency controls using a condition
 11. Select the units menu, select **Days**, and then select **Select**.
 12. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
-![Screenshot of the new conditional access policy with policy settings highlighted.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/create-session-conditional-access-policy.png)
-
-
 ## Microsoft Entra Conditional Access Optimization agent
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/11-implement-continuous-access-evaluation</sub>
-
-## Microsoft Entra Conditional Access Optimization agent
-
-- 10 minutes
 
 The Conditional Access optimization agent helps you ensure all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft learning.
 
@@ -2030,16 +1804,10 @@ The Conditional Access optimization agent scans your tenant for new users and ap
 
 ### Give the Conditional Access optimization agent a try
 
-[![Screenshot of the landing page for the interactive simulation.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/simulation-conditional-access-agent.png)](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
+[](https://microsoftlearning.github.io/click-throughs/docs/IG/interactive_guide_explore_conditional_access_optimization_agent_web/story.html)
 
 
 ## Module assessment
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/12-knowledge-check</sub>
-
-## Module assessment
-
-- 2 minutes
 
 Choose the best response for each of the questions below.
 
@@ -2047,12 +1815,6 @@ Choose the best response for each of the questions below.
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-conditional-access/13-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 After completing this module, you are able to:
 
@@ -2086,16 +1848,10 @@ To learn more about the technology in this module, check out the following links
 
 # Manage Microsoft Entra Identity Protection
 
-_55 min · https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/_
+_https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Protecting users' identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity Protection.
 
@@ -2116,12 +1872,6 @@ In this module, you will:
 
 
 ## Review identity protection basics
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/2-review-identity-protection-basics</sub>
-
-## Review identity protection basics
-
-- 4 minutes
 
 Identity Protection is a service that enables organizations to view the security posture of any account. Organizations can accomplish three key tasks:
 
@@ -2187,15 +1937,9 @@ Using this feature requires a Microsoft Entra ID Premium P2 license.
 
 ## Implement and manage user risk policy
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/3-implement-manage-user-risk-policy</sub>
-
-## Implement and manage user risk policy
-
-- 6 minutes
-
 There are two risk policies that can be enabled in the directory:
 
-- **Sign-in risk policy**: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity itself and analyzes the probability that the sign-in was performed by some other than the user.  ![Screenshot of the Security overview page to enable user and sign-in risk policies.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/identity-protection-security-overview.png)
+- **Sign-in risk policy**: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity itself and analyzes the probability that the sign-in was performed by some other than the user.
 - **User risk policy**: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
 
 Both policies work to automate the response to risk detections in your environment and allow users to self-remediate when risk is detected.
@@ -2225,19 +1969,13 @@ Configured trusted network locations are used by Identity Protection in some ris
 
 ## Exercise enable sign-in risk policy
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/4-exercise-enable-sign-risk-policy</sub>
-
-## Exercise enable sign-in risk policy
-
-- 10 minutes
-
 ### Enable user risk policy
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the Identity menu, select **Protection**.
 4. On the Security blade, in the left navigation, select **Identity protection**.
-5. In the Identity protection blade, in the left navigation, select User risk policy.  ![Screenshot of the User risk policy page and highlighted browsing path.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/browse-identity-protection.png)
+5. In the Identity protection blade, in the left navigation, select User risk policy.
 6. Under **Assignments**, select **All users** and review the available options. You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
 7. Under **User risk**, select **Low and above**.
 8. In the User risk pane, select **High** and then select **Done**.
@@ -2264,12 +2002,6 @@ Microsoft's recommendation is to Allow access and Require password change.
 
 ## Exercise configure Microsoft Entra multifactor authentication registration policy
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/5-exercise-configure-multi-factor-authentication-registration-policy</sub>
-
-## Exercise configure Microsoft Entra multifactor authentication registration policy
-
-- 5 minutes
-
 ### Policy configuration
 
 Multifactor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for multifactor authentication.
@@ -2278,19 +2010,13 @@ Multifactor authentication provides a means to verify who you are using more tha
 2. Open the portal menu and then select **Identity**.
 3. On the Identity men, select **Protection**.
 4. On the Security blade, in the left navigation, select **Identity protection**.
-5. In the Identity protection blade, in the left navigation, select **Multifactor authentication registration policy**.  ![Screenshot of the MFA registration policy page with browsing path highlighted.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/browse-registration-policy.png)
+5. In the Identity protection blade, in the left navigation, select **Multifactor authentication registration policy**.
 6. Under **Assignments**, select **All users** and review the available options. You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
 7. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
 8. Under **Enforce Policy**, select **Enabled** and then select **Save**.
 
 
 ## Monitor, investigate, and remediate elevated risky users
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/6-monitor-investigate-remediate-elevated-risky-users</sub>
-
-## Monitor, investigate, and remediate elevated risky users
-
-- 16 minutes
 
 ### Investigate risk
 
@@ -2309,8 +2035,6 @@ Each report launches with a list of all detections for the period shown at the t
 Selecting individual entries enables more entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
-
-![Screenshot of the Identity Protection report showing risky sign-ins and details.](https://learn.microsoft.com../../wwl-sci/manage-azure-active-directory-identity-protection/media/identity-protection-risky-sign-ins-report.png)
 
 #### Risky users
 
@@ -2587,12 +2311,6 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskD
 
 ## Implement security for workload identities
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/7-implement-security-workload-identities</sub>
-
-## Implement security for workload identities
-
-- 3 minutes
-
 Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.
 
 A workload identity is an identity that allows an application or service principal access to resources, sometimes in the context of a user. These workload identities differ from traditional user accounts as they:
@@ -2631,12 +2349,6 @@ Using **Conditional Access for workload identities**, you can block access for s
 
 ## Explore Microsoft Defender for Identity
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/8-explore-microsoft-defender-identity</sub>
-
-## Explore Microsoft Defender for Identity
-
-- 1 minute
-
 Microsoft Defender for Identity (formerly Azure Advanced Threat Protection) is a cloud-based security solution. Defender for identity uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Defender for Identity enables SecOp analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
 
 - Monitor users, entity behavior, and activities with learning-based analytics
@@ -2659,12 +2371,6 @@ Defender for Identity consists of the following components:
 
 
 ## Explore the Identity Risk Management Agent
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/8a-identity-risk-management-agent</sub>
-
-## Explore the Identity Risk Management Agent
-
-- 5 minutes
 
 The Identity Risk Management Agent in Microsoft Entra ID Protection provides proactive risk management capabilities by analyzing user behavior. The agent then suggests actions to mitigate potential identity risks. You can configure the settings to meet your organization's needs. By using a Large Language Model, the agent helps security administrators review and respond to risky activities before they lead to security incidents.
 
@@ -2755,24 +2461,12 @@ The Risky user details page provides a new Agent view, which presents agent find
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/9-knowledge-check</sub>
-
-## Module assessment
-
-- 3 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/10-summary-resources</sub>
-
-## Summary and resources
-
-- 1 minute
 
 Now that you have reviewed this module, you should be able to:
 
@@ -2801,16 +2495,10 @@ Use these resources to discover more.
 
 # Implement access management for Azure resources
 
-_30 min · https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/_
+_https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/1-introduction</sub>
-
-## Introduction
-
-- 3 minutes
 
 This module will cover how to assign and manage access to resources in Azure using Azure roles. When you create a resource, you want to know that only specific access is granted to users and groups. Only allow users that need to access data or a resource, the permissions to do so. How can you control access? By assigning a role with the specific permissions needed. There are built-in Azure roles and you can create custom-roles as needed.
 
@@ -2832,12 +2520,6 @@ None
 
 
 ## Assign Azure roles
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/2-assign-azure-roles</sub>
-
-## Assign Azure roles
-
-- 3 minutes
 
 Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope. Primary steps to follow when assigning an Azure role:
 
@@ -2866,8 +2548,6 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 #### Assign an Azure role from the portal
 
-![Screenshot of the Azure portal. It shows a sample resource group with the Assign Role selected.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/assign-role-resource-group.png)
-
 Whether you are in the User, Group, Resource Group, or Subscription you use the Access content (IAM) page to make the assign. The official name is identity and access management (IAM) and appears in several locations in the Azure portal.
 
 #### Assign an Azure role with script
@@ -2891,17 +2571,9 @@ az role assignment create --assignee "{assignee}" \
 
 ## Configure custom Azure roles
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/3-configure-custom-azure-roles</sub>
-
-## Configure custom Azure roles
-
-- 3 minutes
-
 If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in a Microsoft Entra ID and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 #### Create the custom role from the user interface
-
-![Screenshot of the Microsoft Entra ID screen with a new custom role dialog. Select the attributes you want to role to have.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/new-custom-role.png)
 
 You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
 
@@ -2947,12 +2619,6 @@ The asterisk (`*`) is used as a wildcard. If you need to assign all of the **rea
 
 ## Create and configure managed identities
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/4-create-configure-managed-identities</sub>
-
-## Create and configure managed identities
-
-- 3 minutes
-
 A common challenge when creating a cloud solution is the management of secrets, credentials, certificates, and keys. These secure elements are used to secure communication between services. Managed identities eliminate the need for developers to manage these credentials.
 
 While developers can securely store the secrets in Azure Key Vault, services need a way to access Azure Key Vault. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources. The managed identity supports authentication via Microsoft Entra ID. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials.
@@ -2972,8 +2638,6 @@ While developers can securely store the secrets in Azure Key Vault, services nee
 Always remember that managed identities are assigned to an application. So, you need to configure and manage the identity within the services they're being used. If you have an application running in a virtual machine (Linux or Windows), then you add and configure the identity there. If you're using a managed identity with a cloud-app, function, or app service, then you configure and manage it there. Let's look at adding a managed identity to a cloud-built app using the App Service.
 
 #### Managed identity in Azure portal for an App Service
-
-![Screenshot of the Azure portal in the App Services screen.  Add a user-assigned identity is highlighted.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-azure-portal.png)
 
 The basic steps, to create and add an identity to your app, are:
 
@@ -3014,12 +2678,6 @@ As stated at the beginning of this page, when you build an app, you need a metho
 
 ## Access Azure resources with managed identities
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/5-access-managed-identities</sub>
-
-## Access Azure resources with managed identities
-
-- 3 minutes
-
 Managed identities for Azure resources are a feature of Microsoft Entra ID. Each Azure service that supports managed-identities are subject to their own timeline. Make sure you review the availability status of managed identities for your resource and known issues before you begin. After you've configured an Azure resource with a managed identity, you can give the managed identity access to another resource.
 
 #### Add access to other resources
@@ -3029,19 +2687,13 @@ After you've enabled managed identity on an Azure resource, such as an Azure App
 1. Sign in to the Azure portal using an account associated with the Azure subscription under which you've configured the managed identity.
 2. Navigate to the desired resource on which you want to modify access control. In this example, we're giving an Azure virtual machine access to a storage account, so we navigate to the storage account.
 3. Select Access control (IAM).
-4. Select Add > Add role assignment to open the Add role assignment page.  ![Screenshot of the Azure portal in the storage account page, adding a new role to a managed identity.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-role-assignment.png)
+4. Select Add > Add role assignment to open the Add role assignment page.
 5. Pick the Owner, Contributor, or Reader based on the least privilege rules for your applications needs.
-6. Select the managed identity you want assigned.  ![Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/managed-identity-select.png)
+6. Select the managed identity you want assigned.
 7. Complete the assignment with the **Review + assign** option.
 
 
 ## Analyze Azure role permissions
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/6-analyze-azure-role-permissions</sub>
-
-## Analyze Azure role permissions
-
-- 3 minutes
 
 What is a permission? The dictionary definition of permission is the **consent or authorization to perform a specific action**. In Microsoft Entra ID, you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
 
@@ -3060,10 +2712,6 @@ This is just a small subset, to show differences. If you want a full list of the
 
 #### Controlling permissions - add and restrict
 
-| **User settings** | **Roles and administrators** |
-|---|---|
-| ![Screenshot of the Microsoft Entra user settings, where permissions can be restricted.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-users.png) | ![Screenshot of the Roles and administrators screen in Microsoft Entra ID. List of roles that can be applied.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-role-admin.png) |
-
 You can use the **User Settings** inside of Microsoft Entra ID – Manage menu to restrict or control the default permissions of the default users. Or you can use Roles and administrators to add new permissions onto your users and group. Always use the concept of Least Privilege and make sure the users only have the rights they need. In User settings you can restrict the user's ability to:
 
 - Register applications
@@ -3075,8 +2723,6 @@ By adding roles to a given user account or group, you can add permissions on to 
 
 #### Exploring available permissions
 
-![Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/permissions-attribute-reader.png)
-
 You only want to grant the permissions a user needs. So be careful to know what all permissions are granted when you assign a role. You can see the list of permissions in the **Attribute definition reader**. To open it, launch Microsoft Entra ID, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu. Depending on the role you chose, you'll see a large number of permissions or possibly a small number. Two sets of permissions:
 
 - Role permissions
@@ -3085,19 +2731,11 @@ You only want to grant the permissions a user needs. So be careful to know what 
 
 ## Configure Azure Key Vault RBAC policies
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/7-configure-azure-key-vault-role-based-access-control-policies</sub>
-
-## Configure Azure Key Vault RBAC policies
-
-- 3 minutes
-
 You can grant access to Azure Key Vault using either role-based access control (RBAC) or using Key Vault access policies. Either method works to protect your secrets, certificates, and keys. Access policies give you a little more granular control, but can be harder to manage. Choose the best option based on your security posture needs.
 
 #### Assign a Key Vault access policy
 
 A Key Vault access policy determines whether a user, application, or group, can perform operations on Key Vault secrets, keys, and certificates. You can assign access policies using the Azure portal, the Azure CLI, or Azure PowerShell. Key vault supports up to 1024 access policy entries, with each entry granting a distinct set of permissions to a particular security principal. Because of this limitation, we recommend assigning access policies to groups of users, where possible, rather than individual users. Using groups makes it much easier to manage permissions for multiple people in your organization.
-
-![Screenshot of Key Vault access policy options that can be enabled and assigned.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-access-policy.png)
 
 1. Open **Key Vault** in the Azure portal.
 2. Select your key vault or create a new one.
@@ -3113,8 +2751,8 @@ Azure RBAC allows users to manage Key, Secrets, and Certificates permissions. It
 
 There are two actions required to use roles to access data within your Key Vault.
 
-1. Enable role-based access control in your key vault.  ![Screenshot of the key vault access policies screen, with the allow role-based access control selected.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-role-based-access.png)
-2. Open key vault **Identity and Access (IAM)** from the menu. Then assign the role as you've done in other scenarios; like managed identity.  ![Screenshot of the key vault management screen with the Identity and Access (IAM) screen open.  Ready to assign a role.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-assign-role.png)
+1. Enable role-based access control in your key vault.
+2. Open key vault **Identity and Access (IAM)** from the menu. Then assign the role as you've done in other scenarios; like managed identity.
 
 | **Built-in role** | **Description** |
 |---|---|
@@ -3129,12 +2767,6 @@ There are two actions required to use roles to access data within your Key Vault
 
 
 ## Retrieve objects from Azure Key Vault
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/8-retrieve-objects-from-azure-key-vault</sub>
-
-## Retrieve objects from Azure Key Vault
-
-- 3 minutes
 
 Azure Key Vault is a secure tool for storing secrets, keys, and certificate. Once stored, these items can be used by users and applications to perform actions and operations in a secure method. The process to retrieve any of these resources is common. So we'll look at how to review a secret from a key vault.
 
@@ -3151,8 +2783,6 @@ To add a secret to the vault, follow the steps:
 #### Retrieve a secret using the Azure portal
 
 This process is simple. Open your key vault, then open the secret you created. Select the **Show secret value** button.
-
-![Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.](https://learn.microsoft.com../../wwl-sci/implement-access-management-for-azure-resources/media/key-vault-view-secret.png)
 
 #### Retrieve a secret using CLI or PowerShell
 
@@ -3177,24 +2807,12 @@ If you're building an application that needs access to your key vault secrets, c
 
 ## Knowledge check
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/10-knowledge-check</sub>
-
-## Knowledge check
-
-- 3 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-access-management-for-azure-resources/11-summary-resources</sub>
-
-## Summary and resources
-
-- 3 minutes
 
 When you create a resource, you want to know that only specific access is granted to users and groups. In this module you learned the different methods to assign and control access to Azure resources.
 
@@ -3221,16 +2839,10 @@ During this module you have learned to:
 
 # Deploy and Configure Microsoft Entra Global Secure Access
 
-_58 min · https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/_
+_https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 The modern workforce transitioned from traditional office settings to working from nearly anywhere. The transition in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era.
 
@@ -3240,12 +2852,6 @@ In this module, you learn how to implement Microsoft Entra Private and Microsoft
 
 
 ## Explore Global Secure Access
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/2-explore-global-secure-access</sub>
-
-## Explore Global Secure Access
-
-- 5 minutes
 
 ![Diagram of the high level process flow for Global Secure Access in Microsoft Entra. Microsoft Entra Private Access and Internet Access are the gateways to resources.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/global-secure-access-diagram.png)
 
@@ -3295,12 +2901,6 @@ It's recommended that you visit the [Zero Trust Guidance Center](https://learn.m
 
 ## Deploy and configure Microsoft Entra Internet Access
 
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/3-deploy-configure-internet-access</sub>
-
-## Deploy and configure Microsoft Entra Internet Access
-
-- 10 minutes
-
 There are four main steps for getting Microsoft Entra Internet Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on their Windows device can securely access Microsoft resources from anywhere. Conditional Access policies for Microsoft traffic are only enforced when the user has the Global Secure Access client. Microsoft traffic is accessible through remote network connectivity without the Global Secure Access client, but the Conditional Access policy isn't enforced in that path.
 
 ##### Steps
@@ -3313,8 +2913,6 @@ There are four main steps for getting Microsoft Entra Internet Access deployed w
 | 4. Enable enhanced Global Secure Access signaling and Conditional Access. | Use Conditional Access and Global Secure Access to prevent attacks. |
 
 ### Enable Microsoft traffic forwarding profile
-
-![Screenshot of the Microsoft traffic profile enabled. Enables three traffic policies, a conditional access policy, and user - group assignment.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/traffic-profile-enabled.png)
 
 1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Traffic forwarding.
@@ -3425,12 +3023,6 @@ The Global Secure Access Client installed on devices or users behind configured 
 
 
 ## Deploy and configure Microsoft Entra Private Access
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/4-deploy-configure-private-access</sub>
-
-## Deploy and configure Microsoft Entra Private Access
-
-- 8 minutes
 
 Similar to configuring Microsoft Entra Internet Access, there are four main steps for getting Microsoft Entra Private Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on a Windows device can connect to your primary resources, through a Quick Access app, and private network connector.
 
@@ -3578,8 +3170,6 @@ Now that you have your Quick Access app configured, your private resources added
 
 The Private Access traffic forwarding profile routes traffic to your private network through the Global Secure Access Client. Enabling this traffic forwarding profile allows remote workers to connect to internal resources without a VPN. With the features of Microsoft Entra Private Access, you can control which private resources to tunnel through the service and apply Conditional Access policies to secure access to those services. Once your configurations are in place, you can view and manage all of those configurations from one place.
 
-![Screenshot of the Microsoft Entra Global Secure Access page with the Private Access enabled.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/enable-private-access.png)
-
 1. Sign in to the Microsoft Entra admin center.
 2. Browse to Global Secure Access > Connect > Traffic forwarding.
 3. Select the checkbox for Private access profile.
@@ -3605,14 +3195,6 @@ You can install the Android client instead using either Microsoft Intune or Micr
 
 
 ## Explore how to use the Dashboard to drive Global Secure Access
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/5-explore-global-secure-access-dashboard</sub>
-
-## Explore how to use the Dashboard to drive Global Secure Access
-
-- 7 minutes
-
-![Screenshot of the Global Secure Access dashboard page with some sample data for several different datapoints.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/dashboard-global-secure-access.png)
 
 To access the dashboard:
 
@@ -3695,12 +3277,6 @@ The Device status widgets display the active and inactive devices that you deplo
 
 ## Create remote networks for use with Global Secure Access
 
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/6-create-remote-networks</sub>
-
-## Create remote networks for use with Global Secure Access
-
-- 5 minutes
-
 Remote networks are remote locations, such as a branch office, or networks that require internet connectivity. Setting up remote networks connects your users in remote locations to Global Secure Access. Once a remote network is configured, you can assign a traffic forwarding profile to manage your corporate network traffic. Global Secure Access provides remote network connectivity so you can apply network security policies to your outbound traffic.
 
 There are multiple ways to connect remote networks to Global Secure Access. In a nutshell, you're creating an Internet Protocol Security (IPSec) tunnel between a core router, known as the customer premises equipment (CPE), at your remote network and the nearest Global Secure Access endpoint. All internet-bound traffic is routed through the core router of the remote network for security policy evaluation in the cloud. Installation of a client isn't required on individual devices.
@@ -3738,12 +3314,6 @@ With the Microsoft connection data, it's time to update the on-premises router c
 
 
 ## Use Conditional Access with Global Secure Access
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/7-use-conditional-access</sub>
-
-## Use Conditional Access with Global Secure Access
-
-- 10 minutes
 
 After deploying your Global Secure Access, you can use Conditional Access to add more layers of security and protection. Organizations who use Conditional Access along with the Global Secure Access, can prevent malicious access to Microsoft apps, SaaS apps, and private line-of-business (LoB) apps using multiple conditions to provide defense-in-depth. These conditions might include device compliance, location, and more to provide protection against user identity or token theft.
 
@@ -3812,7 +3382,7 @@ You can create a Conditional Access policy for your Quick Access or Private Acce
 3. Select an application from the list.
 4. Select Conditional Access from the side menu. Any existing Conditional Access policies appear in a list.
 5. Select Create new policy. The selected app appears in the Target resources details.
-6. Configure the conditions, access controls, and assign users and groups as needed.  ![Screenshot of a small portion of the Conditional Access dialog showing the policy is aligned to Global Secure Access.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/conditional-access-quick-access.png)
+6. Configure the conditions, access controls, and assign users and groups as needed.
 
 You see the addition of the Quick Access and Private Access selector from Global Secure Access.
 
@@ -3843,12 +3413,6 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
 
 
 ## Explore logs and monitoring options with Global Secure Access
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/8-explore-logs-monitor-operations</sub>
-
-## Explore logs and monitoring options with Global Secure Access
-
-- 6 minutes
 
 You need to monitor the activity of the traffic flowing through your networks. Global Secure Access logs, provide data points you can review to gain insights into your network traffic.
 
@@ -3929,24 +3493,12 @@ Traffic logs and remote network health logs: These logs are retained within the 
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/9-knowledge-check</sub>
-
-## Module assessment
-
-- 4 minutes
-
 Choose the best response for each of the questions.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/10-summary</sub>
-
-## Summary and resources
-
-- 2 minutes
 
 In this module, you learned how to configure and manage Microsoft's Security Service Edge (SSE) solution through Microsoft Entra Global Secure Access. This comprehensive solution provides secure access to any app or resource from anywhere by merging network, identity, and endpoint access controls into a unified cloud-delivered platform.
 

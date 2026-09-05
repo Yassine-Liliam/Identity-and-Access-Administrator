@@ -1,6 +1,6 @@
 # Implement access management for apps
 
-> SC-300 — learning path 3/4 · 154 min
+> SC-300 — learning path 3/4
 > https://learn.microsoft.com/en-us/training/paths/implement-access-management-for-apps/
 
 ## Modules
@@ -11,21 +11,14 @@
 - **Register apps using Microsoft Entra ID** (9 units)
 
 
-
 ---
 
 # Plan and design the integration of enterprise apps for SSO
 
-_42 min · https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/_
+_https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/1-introduction</sub>
-
-## Introduction
-
-- 2 minutes
 
 In this module, you discover apps used within your environment. Then, you design and implement access management and app management roles. In addition, you configure preintegrated (gallery) SaaS apps.
 
@@ -46,12 +39,6 @@ In this module, you:
 
 
 ## Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/2-discover-apps-use-microsoft-cloud-app-security-app-report</sub>
-
-## Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report
-
-- 1 minute
 
 To start learning how to protect cloud apps, you first need to learn what Cloud Access Security Broker (CASB) is. Then, learn what the Microsoft implementation of CASB is.
 
@@ -74,8 +61,6 @@ Microsoft Defender for Cloud Apps integrates visibility with your cloud by:
 - Helping you have continuous control by setting and continually fine-tuning policies.  ![Diagram of Microsoft Defender for Cloud Apps architecture. How are apps found and managed.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/proxy-architecture.png)
 
 #### Cloud Discovery
-
-![Screenshot of the MDCA Cloud Discovery report. Report shows how many apps have been discovered.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/cloud-discovery-screenshot.png)
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Microsoft Defender for Cloud Apps log collectors to periodically forward your logs.
 
@@ -110,11 +95,7 @@ You can use Microsoft Defender for Cloud Apps to sanction or unsanction apps in 
 
 If you have an on-premises directory that contains user accounts, you likely have many applications to which users authenticate. Each of these apps is configured for users to access using their identities. Users can also authenticate directly with your on-premises Active Directory. Active Directory Federation Services (AD FS) is a standards-based on-premises identity service. AD FS extends the ability to use single-sign-on (SSO) functionality between trusted business partners without requiring users to sign in separately to each application - federation. Many organizations have software as a service (SaaS) or custom line-of-business (LOB) apps federated directly to AD FS, alongside Microsoft 365 and Microsoft Entra ID based apps.
 
-![Screenshot of the Applications available directly on-premises. Other supporting data on app usage.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/app-integration-before-migration.png)
-
 To increase application security, your goal is to have a single set of access controls and policies across your on-premises and cloud environments.
-
-![Screenshot of the same Applications connected through Microsoft Entra ID, after using app discovery.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/app-integration-after-migration.png)
 
 Many organizations use AD FS to provide SSO to cloud applications. Moving your AD FS applications to Microsoft Entra ID for authentication provides significant benefits, especially in terms of cost management, risk management, productivity, compliance, and governance. But understanding which applications are compatible with Microsoft Entra ID and identifying specific migration steps can be time consuming.
 
@@ -137,7 +118,7 @@ The AD FS application activity report is available in the Azure portal under Mic
 
 1. Sign in to the Azure portal with an admin role that has access to AD FS application activity data (administrator, report reader, security reader, application administrator, or cloud application administrator).
 2. Select **Microsoft Entra ID**, and then select **Enterprise applications**.
-3. Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.  ![Screenshot of AD FS application activity. Track what application you have.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/active-directory-federation-services-application-activity.png)
+3. Under **Activity**, select **Usage and insights**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
 4. For each application in the AD FS application activity list, view the **Migration status**:
 
 - **Ready to migrate** means the AD FS application configuration is fully supported in Microsoft Entra ID and can be migrated as-is.
@@ -146,12 +127,6 @@ The AD FS application activity report is available in the Azure portal under Mic
 
 
 ## Configure connectors to apps
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/3-configure-connectors-apps</sub>
-
-## Configure connectors to apps
-
-- 7 minutes
 
 App connectors use the APIs of app providers to enable greater visibility and control by Microsoft Defender for Cloud Apps over the apps you connect to. Microsoft Defender for Cloud Apps (MDCA) uses the APIs provided by the cloud provider. All communication between Defender for Cloud Apps and connected apps is encrypted using HTTPS. Each service has its own framework and API limitations such as throttling, API limits, dynamic time-shifting API windows, and others. Microsoft Defender for Cloud Apps worked with the services to optimize the usage of the APIs and to provide the best performance. Taking into account different limitations services impose on the APIs, the Defender for Cloud Apps uses the allowed capacity. Some operations, such as scanning all files in the tenant, require numerous APIs so they're spread over a longer period. Expect some policies to run for several hours or several days.
 
@@ -180,12 +155,6 @@ Connections might take some time depending on the size of the tenant, the number
 
 ## Exercise implement access management for apps
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/4-implement-access-management-for-apps</sub>
-
-## Exercise implement access management for apps
-
-- 3 minutes
-
 ### Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
 
 The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you skip this task and continue to the next.
@@ -209,8 +178,8 @@ Here, you add an Enterprise app that you can use for the exercise.
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global Administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the **Identity menu**, under **Applications**, select **Enterprise applications**.
-4. In the **Enterprise applications** pane, select **+ New application**.  ![Screenshot of the Enterprise applications screen with New application highlighted.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/new-enterprise-application.png)
-5. In the **Browse Microsoft Entra Gallery** page, in the **Search application** box, enter **GitHub**.  ![Screenshot of the browse Microsoft Entra ID Gallery screen with the search box highlighted.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/azure-active-directory-gallery-search.png)
+4. In the **Enterprise applications** pane, select **+ New application**.
+5. In the **Browse Microsoft Entra Gallery** page, in the **Search application** box, enter **GitHub**.
 6. In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 7. In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create**.
 8. Once the account is created, you're redirected to the **GitHub Enterprise Cloud – Enterprise Account** screen.
@@ -222,17 +191,11 @@ Assign your administrator account to the recently added app.
 1. On the **GitHub Enterprise Cloud – Enterprise Account** screen, on the **Overview** page, under **Getting Started**, select **1. Assign users and groups**. Alternatively, in the left navigation, under **Manage**, you can select **Users and groups**.
 2. On the **Users and groups** page, on the menu, select **+Add user/group**.
 3. On the **Add Assignment** dialog, select **Users and groups**.
-4. In the **Users and groups** pane, select your administrator account and then **Select**.  ![Screenshot of add a user account assignment to an app with the Select button highlighted.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/add-app-assignment.png)
+4. In the **Users and groups** pane, select your administrator account and then **Select**.
 5. Select **Assign**.
 
 
 ## Design and implement app management roles
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/5-design-implement-app-management-roles</sub>
-
-## Design and implement app management roles
-
-- 7 minutes
 
 This unit describes how to use permissions granted by custom roles in Microsoft Entra ID to address your application management needs. In Microsoft Entra ID, you can delegate application creation and management permissions by:
 
@@ -307,33 +270,21 @@ Tips when creating and using custom roles for delegating application management:
 
 ## Exercise create a custom role to manage app registration
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/6-create-custom-role-manage-app-registration</sub>
-
-## Exercise create a custom role to manage app registration
-
-- 8 minutes
-
 Create a new custom role that can be used to grant access to manage app registrations.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using an Administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the **Identity** menu, then open **Roles and admins** menu, and select **Roles and administrators.**
-4. On the **Roles and administrators** screen, on the menu, select **New custom role.**  ![Screenshot of the Roles and administrators screen with the New custom role menu option highlighted.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/new-custom-role.png)
+4. On the **Roles and administrators** screen, on the menu, select **New custom role.**
 5. In the **New custom role** dialog, on the **Basics** tab, in the name box, enter **My custom app role**.
 6. Review the remaining options and then select **Next**.
 7. On the **Permissions** tab, review the available permissions.
 8. In the **Search by permission name or description** box, enter credentials.
-9. In the results, select the **Manage** permissions and then select **Next**.  ![Screenshot of the New custom role Permissions tab with search, manage permissions, and Next highlighted.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/custom-role-permissions.png)
+9. In the results, select the **Manage** permissions and then select **Next**.
 10. Review the changes and then select **Create.**
 
 
 ## Configure preintegrated gallery SaaS apps
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/7-configure-pre-integrated-gallery-saas-apps</sub>
-
-## Configure preintegrated gallery SaaS apps
-
-- 5 minutes
 
 As you know, Microsoft Entra ID has a gallery that contains thousands of pre-integrated applications. Many of the applications your organization uses are probably already in the gallery. If an app is added to your Microsoft Entra tenant, you can configure properties for the app, manage user access to the app, and configure SSO so users can sign in to the app with their Microsoft Entra credentials. This unit will show you how to configure properties for the app.
 
@@ -357,7 +308,7 @@ To edit the app properties:
 3. In the Microsoft Entra admin center, select **Enterprise applications**. Then find and select the application you want to configure.
 4. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 5. Select the icon to upload the logo.
-6. Then you're finished, select **Save**.  ![Screenshot of the Properties screen that shows how to change the logo. Size of the logo is important.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/change-logo.png)
+6. Then you're finished, select **Save**.
 
 ### Add notes
 
@@ -365,16 +316,10 @@ You can use the notes field to add any information that is relevant for the mana
 
 1. In the Microsoft Entra admin center, select **Enterprise applications**. Then find and select the application you want to configure.
 2. In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
-3. Update the Notes field, select **Save**.  ![Screenshot of the Properties screen that shows how to change the notes. These notes help your users know when and how to use the apps.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/notes-application.png)
+3. Update the Notes field, select **Save**.
 
 
 ## Implement and manage policies for OAuth apps
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/8-implement-manage-policies-oauth-apps</sub>
-
-## Implement and manage policies for OAuth apps
-
-- 4 minutes
 
 In addition to the existing investigation of OAuth apps connected to your environment, you can set permission policies so that you get automated notifications when an OAuth app meets certain criteria. For example, you can automatically be alerted when there are apps that require a high permission level and were authorized by more than 50 users. OAuth app policies enable you to investigate which permissions each app requested and which users authorized them for Office 365, and other OAuth apps. You're also able to mark these permissions as approved or banned. Marking them as banned will disable the correlating Enterprise Application.
 
@@ -387,7 +332,7 @@ In addition to the existing investigation of OAuth apps connected to your enviro
 
 - For example, you can view all apps that request Permission to Modify calendars in your mailbox.
 
-1. Select the **New policy** from search button.  ![Screenshot of the Microsoft Defender for Cloud Apps site with the OAuth Policy dialog open.](https://learn.microsoft.com../../wwl-sci/plan-design-integration-of-enterprise-apps-for-sso/media/oauth-policy-dialog.png)
+1. Select the **New policy** from search button.
 2. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare.
   - This filter can be helpful if you have an app that's rare and requests permission that has a high severity level or requests permission from many users.
 
@@ -402,24 +347,12 @@ Alternatively, you can also create the policy by selecting **Control** followed 
 
 ## Module Assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/9-knowledge-check</sub>
-
-## Module Assessment
-
-- 3 minutes
-
 Choose the best response for each of the questions.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/plan-design-integration-of-enterprise-apps-for-sso/10-summary-resources</sub>
-
-## Summary and resources
-
-- 2 minutes
 
 After finishing this module, you're able to:
 
@@ -443,16 +376,10 @@ Use these resources to discover more:
 
 # Implement and monitor the integration of enterprise apps for SSO
 
-_41 min · https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/_
+_https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 In this module, you learn how to implement token customizations and implement and configure consent settings. You also learn how to integrate on-premises apps by using Microsoft Entra application proxy, and also integrate custom software as a service (SaaS) apps for single-sign-on (SSO). Finally, you explore how to implement application user provisioning and monitor and audit access to Microsoft Entra ID integrated enterprise applications.
 
@@ -475,12 +402,6 @@ In this module, you:
 
 
 ## Implement token customizations
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/2-implement-token-customizations</sub>
-
-## Implement token customizations
-
-- 1 minute
 
 You can specify the lifetime of a token issued by Microsoft identity platform. Additionally, you can set token lifetimes for all apps in your organization, for a multitenant (multiple organizations) application, or for a specific service principal in your organization. In Microsoft Entra ID, a policy object represents a set of rules that are enforced on individual applications or on all applications in an organization. Each policy type has a unique structure, with a set of properties that are applied to objects to which they're assigned.
 
@@ -519,16 +440,7 @@ You can use optional claims to:
 
 While optional claims are supported in both v1.0 and v2.0 format tokens, and SAML tokens, they provide most of their value when moving from v1.0 to v2.0. One of the goals of the Microsoft identity platform is smaller token sizes to ensure optimal performance by clients. As a result, several claims formerly included in the access and ID tokens are no longer present in v2.0 tokens and must be asked for specifically on a per-application basis.
 
-![Screenshot of the Configure custom roles and claims for the S A M L token issued when you configure sign-sign-on.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/token-configuration-claims.png)
-
-
 ## Implement and configure consent settings
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/3-implement-configure-consent-settings</sub>
-
-## Implement and configure consent settings
-
-- 1 minute
 
 You can integrate your applications with the Microsoft identity platform to allow users to sign in with their work or school account and access the organization's data to deliver rich data-driven experiences.
 
@@ -549,7 +461,7 @@ By choosing which app consent policies apply for all users, you can set limits o
 - **Disable user consent** – Users can't grant permissions to applications. Users can continue to sign into apps they had previously consented to or that are consented to by administrators on their behalf, but they'll not be allowed to consent to new permissions or to new apps on their own. Only users who have been granted a directory role that includes the permission to grant consent will be able to consent to new apps.
 - **Users can consent to apps from [verified publisher](https://learn.microsoft.com/en-us/azure/active-directory/develop/publisher-verification-overview)s or your organization, but only for permissions you choose**– All users can only consent to apps that were published by a verified publisher and apps that are registered in your tenant. Users can only consent to the permissions you have classified as `low impact`. You must [classify permissions](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/configure-permission-classifications) to choose which permissions users are allowed to consent to.
 - **Users can consent to all apps** – This option allows all users to consent to any permission that doesn't require administrator consent for any application.
-- **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.  ![Screenshot of the User consent settings dialog in the enterprise apps registration process.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/set-for-all-users.png)
+- **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.
 
 ### Risk-based step-up consent
 
@@ -567,12 +479,6 @@ Administrators should evaluate all consent requests carefully before approving a
 
 
 ## Integrate on-premises apps with Microsoft Entra application proxy
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/4-integrate-premises-apps-use-azure-active-directory-application-proxy</sub>
-
-## Integrate on-premises apps with Microsoft Entra application proxy
-
-- 4 minutes
 
 **What is Application Proxy?** Application Proxy is a feature of Microsoft Entra ID that enables users to access on-premises web applications from a remote client. Application Proxy includes both the Application Proxy service that runs in the cloud, and the Application Proxy connector that runs on an on-premises server. Microsoft Entra ID, the Application Proxy service, and the Application Proxy connector work together to securely pass the user sign-on token from Microsoft Entra ID to the web application.
 
@@ -608,12 +514,6 @@ Launch and interact with this Interactive Guide to learn more about enabling int
 
 ## Integrate custom SaaS apps for single sign-on
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/5-integrate-custom-saas-single-sign</sub>
-
-## Integrate custom SaaS apps for single sign-on
-
-- 20 minutes
-
 ![Diagram of Microsoft Entra ID being the single-sign-on provider for cloud apps. User and external users log into Microsoft Entra ID, then connect to cloud applications.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/app-single-sign-on.png)
 
 - You can use Microsoft Entra ID as your identity system for just about any app. Many apps are already pre-configured and can be set up with minimal effort. These pre-configured apps are published in the Microsoft Entra ID App Gallery.
@@ -635,12 +535,6 @@ If you have an application that you want to integrate with Microsoft Entra ID to
 
 
 ## Implement application-based user provisioning
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/6-implement-application-user-provisioning</sub>
-
-## Implement application-based user provisioning
-
-- 1 minute
 
 In Microsoft Entra ID, the term app provisioning refers to automatically creating user identities and roles in the cloud ([SaaS](https://azure.microsoft.com/overview/what-is-saas/)) applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. A common scenario is provisioning a Microsoft Entra user into applications like [Dropbox](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/dropboxforbusiness-provisioning-tutorial), [Salesforce](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/salesforce-provisioning-tutorial), [ServiceNow](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/servicenow-provisioning-tutorial), and more.
 
@@ -666,8 +560,6 @@ Applications in the Microsoft Entra ID gallery support either manual or automati
 
 In the Microsoft Entra ID gallery, applications that support automatic provisioning are designated by a **Provisioning** icon.
 
-![Screenshot of the Provisioning icon in the application gallery.  Select to start the provisioning process.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/browse-gallery.png)
-
 The provisioning mode supported by an application is also visible on the **Provisioning** tab once you've added the application to your **Enterprise apps**.
 
 ### System for Cross-domain Identity Management
@@ -689,12 +581,6 @@ The standard user object schema and REST APIs for management defined in SCIM 2.0
 
 ## Monitor and audit access to Microsoft Entra integrated enterprise applications
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/7-monitor-audit-access-azure-active-directory-integrated-applications</sub>
-
-## Monitor and audit access to Microsoft Entra integrated enterprise applications
-
-- 5 minutes
-
 With Microsoft Entra ID reports, you can get the information needed to determine how your environment is doing. With the usage and insights report, you can get an application-centric view of your sign-in data and find answers to the following questions:
 
 - What are the top used applications in the organization?
@@ -707,8 +593,6 @@ With Microsoft Entra ID reports, you can get the information needed to determine
 2. Select the Identity menu, then select **Applications** and choose **Enterprise applications**.
 3. From the **Activity** section, select **Usage & insights** to open the report.
 
-![Screenshot of the Usage and insights selected from the Activity section. Use the report to gain insights.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/main-menu.png)
-
 ### Use the report
 
 The usage and insights report shows the list of applications with one or more sign-in attempts and allows you to sort by the number of successful sign-ins, failed sign-ins, and the success rate.
@@ -718,8 +602,6 @@ Selecting **load more** at the bottom of the list allows you to view more applic
 You can also set the focus on a specific application. Select **view sign-in activity** to see the sign-in activity over time for the application and the top errors.
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
-
-![Screenshot of the Usage and insights for Application activity where you can select a range and view sign-in activity for different apps.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/usage-and-insights-report.png)
 
 ### Audit logs
 
@@ -734,19 +616,11 @@ An audit log has a default list view that shows:
 - the target
 - the initiator/actor (who) of an activity
 
-![Screenshot of a sample Audit logs. You can work with the common values noted above, like date and status.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/list-view.png)
-
 You can customize the list view by clicking **Columns** in the toolbar.
-
-![Screenshot of the list of available Audit columns. Configure the report based on your needs.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/columns.png)
 
 This enables you to display other fields or remove fields that are already displayed.
 
-![Screenshot of the audit log columns. Some of the fields have been selected to Remove.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/column-select.png)
-
 Select an item in the list view to get more detailed information.
-
-![Screenshot of the audit logs, after customizing. A sample item of data is the selected item.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/details.png)
 
 ### Enterprise applications audit logs
 
@@ -760,16 +634,7 @@ With application-based audit reports, you can get answers to questions such as:
 
 If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** screen. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-![Screenshot of the Enterprise applications. The application type for reporting has been selected.](https://learn.microsoft.com../../wwl-sci/implement-monitor-integration-of-enterprise-apps-for-sso/media/enterprise-applications.png)
-
-
 ## Create and manage application collections
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/8-create-manage-application-collections</sub>
-
-## Create and manage application collections
-
-- 3 minutes
 
 Your users can use the My Apps portal to view and start the cloud-based applications they have access to. By default, all the applications a user can access are listed together on a single page. To better organize this page for your users, if you have a Microsoft Entra ID Premium P1, or P2 license you can set up collections. With a collection, you can group together applications that are related (for example, by job role, task, or project). Then they display on a separate tab for easy usage. A collection essentially applies a filter to the applications a user can already access, so the user sees only those applications in the collection that have been assigned to them.
 
@@ -825,24 +690,12 @@ Follow these steps to create a collection.
 
 ## Knowledge check
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/9-knowledge-check</sub>
-
-## Knowledge check
-
-- 3 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-monitor-integration-of-enterprise-apps-for-sso/10-summary-resources</sub>
-
-## Summary and resources
-
-- 2 minutes
 
 After finishing this module, you're able to:
 
@@ -868,16 +721,10 @@ Use these resources to discover more.
 
 # Implement app registration
 
-_48 min · https://learn.microsoft.com/en-us/training/modules/implement-app-registration/_
+_https://learn.microsoft.com/en-us/training/modules/implement-app-registration/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 In this module, you plan your line-of-business application registration strategy, implement application registrations, and configure application permissions.
 
@@ -897,12 +744,6 @@ In this module, you will:
 
 
 ## Plan your line of business application registration strategy
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/2-plan-your-line-business-application-registration-strategy</sub>
-
-## Plan your line of business application registration strategy
-
-- 2 minutes
 
 This unit looks at why applications integrate with Microsoft Entra ID. Add applications to Microsoft Entra ID to apply one or more of the services it provides, including:
 
@@ -1073,22 +914,10 @@ Building great multitenant apps can be challenging because of the number of diff
 
 ## Implement application registration
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/3-implement-application-registration</sub>
-
-## Implement application registration
-
-- 1 minute
-
 Each application you want the Microsoft identity platform to perform identity and access management (IAM) for must be registered. Register an app in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for your application and its users. Whether it's a client application, like a web or mobile app, or a web API that backs a client app, registering it establishes a trust relationship between your application and the identity provider, the Microsoft identity platform.
 
 
 ## Register an application
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/4-register-application</sub>
-
-## Register an application
-
-- 12 minutes
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
@@ -1096,7 +925,7 @@ Registering your application establishes a trust relationship between your app a
 2. Open the portal menu and then select **Identity**.
 3. On the **Identity** menu, under **Applications**, select **App registrations.**
 4. On the **App registrations** page, on the menu, select **+ New registration**.
-5. On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.  ![Screenshot of the Register an application screen with the name and default settings highlighted.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/register-application.png)
+5. On the **register an application** dialog, register an app named **Demo app** using the default values. You don't need to enter the redirect URI.
 6. When complete, you'll be directed to the **Demo app** screen.
 
 ### Add a redirect URI
@@ -1114,7 +943,7 @@ To configure application settings based on the platform or device you're targeti
 1. Select your application in **App registrations** in the Azure portal.
 2. Under **Manage**, select **Authentication**.
 3. Under **Platform configurations**, select **Add a platform**.
-4. In **Configure platforms**, select the tile for your application type (platform) to configure its settings.  ![Screenshot of the Platform configuration pane in the Microsoft Entra admin center.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/configure-platforms.png)      **Platform** **Configuration settings**     Web Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication. Select this platform for standard web applications that run on a server.   Single-page application Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication. Select this platform if you're building a client-side web app in JavaScript or with a framework like Angular, Vue.js, React.js, or Blazor WebAssembly.   iOS/macOS Enter the app **Bundle ID**, found in XCode in *Info.plist* or Build Settings.A redirect URI is generated for you when you specify a Bundle ID.   Android Enter the app **Package name**, which you can find in the AndroidManifest.xml file, and generate and enter the **Signature hash**.A redirect URI is generated for you when you specify these settings.   Mobile and desktop applications Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**.For desktop applications, we recommend:https://login.microsoftonline.com/common/oauth2/nativeclient Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or aren't using a broker. Also select this platform for desktop applications.
+4. In **Configure platforms**, select the tile for your application type (platform) to configure its settings.        **Platform** **Configuration settings**     Web Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication. Select this platform for standard web applications that run on a server.   Single-page application Enter a **Redirect URI** for your app, the location where Microsoft identity platform redirects a user's client and sends security tokens after authentication. Select this platform if you're building a client-side web app in JavaScript or with a framework like Angular, Vue.js, React.js, or Blazor WebAssembly.   iOS/macOS Enter the app **Bundle ID**, found in XCode in *Info.plist* or Build Settings.A redirect URI is generated for you when you specify a Bundle ID.   Android Enter the app **Package name**, which you can find in the AndroidManifest.xml file, and generate and enter the **Signature hash**.A redirect URI is generated for you when you specify these settings.   Mobile and desktop applications Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**.For desktop applications, we recommend:https://login.microsoftonline.com/common/oauth2/nativeclient Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or aren't using a broker. Also select this platform for desktop applications.
 5. Select **Configure** to complete the platform configuration.
 
 ### Add credentials
@@ -1122,8 +951,6 @@ To configure application settings based on the platform or device you're targeti
 Credentials are used by confidential client applications that access a web API. Examples of confidential clients include web apps, other web APIs, and service-type and daemon-type applications. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime.
 
 You can add both certificates and client secrets (a string) as credentials to your confidential client app registration.
-
-![Screenshot of Azure portal showing the Certificates and secrets pane in app registration.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-05-app-reg-04-credentials.png)
 
 ### Add a certificate
 
@@ -1159,7 +986,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 1. Sign in to the Azure portal.
 2. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
 3. Select **Microsoft Entra ID**, then **App registrations**, and then select your API's app registration.
-4. Select **Expose an API**, then **Add a scope**.  ![Screenshot of an app registration's Expose an API pane in the Microsoft Entra admin center.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-02-expose-api.png)
+4. Select **Expose an API**, then **Add a scope**.
 5. You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form `api://` , or specify a more readable URI like `https://contoso.com/api`.
 6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.    **Field** **Description** **Example**     Scope name The name of your scope. A common scope naming convention is resource.operation.constraint. Employees.Read.All   Who can consent The admin chooses if this scope can be consented to by users, or if admin consent is required. Select Admins only for higher-privileged permissions. Admins and users   Admin consent display name A short description of the scope's purpose that only admins will see. Read-only access to employee records   Admin consent description A more detailed description of the permission granted by the scope that only admins will see. Allow the application to have read-only access to all employee data.   User consent display name A short description of the scope's purpose. Shown to users only if you set the *Who can consent to Admins and users*. Read-only access to your employee records   User consent description A more detailed description of the permission granted by the scope. Shown to users only if you set the *Who can consent to Admins and users*. Allow the application to have read-only access to your employee data.
 7. Set the **State** to **Enabled**, and then select **Add scope**.
@@ -1188,8 +1015,6 @@ To add the Employees.Write.All example scope, follow the steps above and specify
 
 If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
-![Screenshot of the Expose an API pane showing two exposed scopes for assignment in the app registration.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/portal-03-scopes-list.png)
-
 As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
 For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is:
@@ -1213,12 +1038,6 @@ You can expose additional scopes later as necessary. Consider that your web API 
 
 
 ## Configure permission for an application
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/5-configure-application-permission</sub>
-
-## Configure permission for an application
-
-- 1 minute
 
 Admins will need to configure permissions and consent in the Microsoft identity platform endpoint.
 
@@ -1303,8 +1122,6 @@ Note
 
 At this time, the offline_access ("Maintain access to data you have given it access to") and user.read ("Sign you in and read your profile") permissions are automatically included in the initial consent to an application. These permissions are generally required for proper app functionality; offline_access gives the app access to refresh tokens, critical for native and web apps, while user.read gives access to the sub claim, allowing the client or app to correctly identify the user over time and access rudimentary user information.
 
-![Screenshot of the work account consent dialog. Users must agree to proceed with the application.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/work-account-consent.png)
-
 When the user approves the permission request, consent is recorded, and the user doesn't have to consent again on subsequent sign-ins to the application.
 
 ### Requesting consent for an entire tenant
@@ -1313,12 +1130,6 @@ Often, when an organization purchases a license or subscription for an applicati
 
 
 ## Grant tenant-wide admin consent to applications
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/6-grant-tenant-wide-admin-consent-application</sub>
-
-## Grant tenant-wide admin consent to applications
-
-- 5 minutes
 
 For applications your organization has developed or for those that are registered directly in your Microsoft Entra tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
@@ -1329,9 +1140,9 @@ Granting tenant-wide admin consent to an application will grant the app and the 
 Granting tenant-wide admin consent requires you to sign in as a user that is authorized to consent on behalf of the organization. This includes Privileged Role Administrator. A user can also be authorized to grant tenant-wide consent if they're assigned a custom directory role that includes the permission to grant permissions to applications.
 
 1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.
-2. On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.  ![Screenshot of the Demo app screen with the directory ID highlighted for usage in your registration.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/demo-app-directory-id.png)
+2. On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
 3. In the left navigation, under **Manage**, select **API permissions**.
-4. Under **Configured permissions**, select **Grant admin consent**.  ![Screenshot of the API permission page with Grant admin consent for Contoso highlighted.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/api-permissions-admin-consent.png)
+4. Under **Configured permissions**, select **Grant admin consent**.
 5. Review the dialogue box, and then select **Yes.**
 
 Warning
@@ -1344,7 +1155,7 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 
 1. In Microsoft Azure, browse to **Microsoft Entra ID**, then **Enterprise applications**, and then **Demo app**.
 2. On the **Demo app** screen, in the left navigation, under **Security,** select **Permissions.**
-3. Under **Permissions**, select **Grant admin consent.**  ![Screenshot of the Demo app permissions page with Grant admin consent for Contoso highlighted.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/grant-admin-consent-enterprise-app.png)
+3. Under **Permissions**, select **Grant admin consent.**
 4. When prompted, sign in using your Privileged Role Administrator account.
 5. In the **Permissions requested** dialog box, review the information and then select **Accept**.
 
@@ -1434,12 +1245,6 @@ At this point, Microsoft Entra ID requires a tenant administrator to sign in to 
 
 ## Implement application authorization
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/7-implement-application-authorization</sub>
-
-## Implement application authorization
-
-- 2 minutes
-
 **Application roles** are used to assign permissions to users. You define app roles by using the Azure portal. When a user signs into the application, Microsoft Entra ID emits a roles claim for each role that the user has been granted individually to the user and from their group membership.
 
 There are two ways to declare app roles by using the Azure portal:
@@ -1449,12 +1254,6 @@ There are two ways to declare app roles by using the Azure portal:
 
 
 ## Exercise add app roles to an application and receive tokens
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/8-add-app-roles-application-receive-tokens</sub>
-
-## Exercise add app roles to an application and receive tokens
-
-- 10 minutes
 
 You can declare app roles using the app roles UI.
 
@@ -1467,7 +1266,7 @@ To create an app role by using the Azure portal's user interface:
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using an Administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the **Identity** menu, under **Applications,** select **App registrations**.
-4. Select **App roles**, and then select **Create app role**.  ![Screenshot of the  app roles configuration wizard with create app role highlighted.](https://learn.microsoft.com../../wwl-sci/implement-app-registration/media/app-roles-create-app-role.png)
+4. Select **App roles**, and then select **Create app role**.
 5. In the **Create app role** pane, in the **Display name** box, enter **Survey Writer**.
 6. Under **Allow member types**, select **User/Groups**.
 7. In the **Value** box, enter **Survey.Create**.
@@ -1498,12 +1297,6 @@ To assign users and groups to roles by using the Azure portal:
 
 ## Manage and monitor application by using app governance
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/9-manage-monitor-application-app-governance</sub>
-
-## Manage and monitor application by using app governance
-
-- 1 minute
-
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures. Cyberattacks establish a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture. Then you need to look for when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
 The app governance add-on feature to Defender for Cloud Apps is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
@@ -1532,24 +1325,12 @@ To enable app governance sync with Defender for Cloud Apps, follow these steps:
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/10-knowledge-check</sub>
-
-## Module assessment
-
-- 10 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary and resources
-
-<sub>https://learn.microsoft.com/en-us/training/modules/implement-app-registration/11-summary-resources</sub>
-
-## Summary and resources
-
-- 3 minutes
 
 Now that you reviewed this module, you're able to:
 
@@ -1570,16 +1351,10 @@ To explore with more depth, use these resources:
 
 # Register apps using Microsoft Entra ID
 
-_23 min · https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/_
+_https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/_
 
 
 ## Introduction
-
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/1-introduction</sub>
-
-## Introduction
-
-- 1 minute
 
 Application registration in Microsoft Entra ID is the process of ensuring that the identity system is aware of what applications are used. This way you can confirm the user has access to the app and that the app has access to any needed resources. You ensure the security and privacy of users, apps, and your data.
 
@@ -1607,12 +1382,6 @@ The goal of this module is to teach you how to register your application with Mi
 
 
 ## Plan for app registration
-
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/2-plan-app-registration</sub>
-
-## Plan for app registration
-
-- 3 minutes
 
 Application registration in Microsoft Entra ID is the process of ensuring that your identity system is aware of what applications are used. You can confirm the user has access to the app and that the app has access to any needed resources. App registration ensures the security and privacy of users, apps, and your data.
 
@@ -1678,12 +1447,6 @@ Consent is the process of a resource owner granting authorization for a client a
 
 
 ## Explore application objects and service principals
-
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/3-explore-application-objects-service-principals</sub>
-
-## Explore application objects and service principals
-
-- 3 minutes
 
 After completing the app registration, you have a globally unique instance of the app (the application object) that lives within your home tenant or directory. You also have a globally unique ID for your app (the app/client ID). In the Microsoft Entra admin center, you can then add secrets or certificates and scopes to make your app work, customize the branding of your app in the sign-in dialog, and more.
 
@@ -1766,12 +1529,6 @@ When working with workload identities (non-human identities like applications), 
 
 ## Create app registrations
 
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/4-create-app-registrations</sub>
-
-## Create app registrations
-
-- 3 minutes
-
 This unit demonstrates registering an application in Microsoft Entra ID using a single-page application (SPA). To register a single-page application in the Microsoft identity platform, complete the following steps. The process is straightforward and requires only a few pieces of information.
 
 Note
@@ -1780,7 +1537,7 @@ This example uses a single-page application, but the core registration process i
 
 ### Create the app registration
 
-![Screenshot of the Microsoft Entra admin center with the new app registration dialog open.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/entra-app-registration-40420a82-0148f11f-11175fff.png)  Steps are based on the Microsoft Entra admin center:
+  Steps are based on the Microsoft Entra admin center:
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) with appropriate permissions (at least Application Developer role).
 2. Under the **Identity** menu, expand the **Applications** menu.
@@ -1826,12 +1583,6 @@ Note
 
 ## Configure app authentication
 
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/5-configure-app-authentication</sub>
-
-## Configure app authentication
-
-- 3 minutes
-
 The settings for each application type, including redirect URIs, are configured in **Platform configurations** in the Microsoft Entra admin center. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like **mobile and desktop**, you can select from redirect URIs generated for you when you configure their other settings.
 
 Important
@@ -1844,7 +1595,7 @@ To configure application settings based on the platform or device you're targeti
 2. Select your application.
 3. Under **Manage**, select **Authentication**.
 4. Under **Platform configurations**, select **Add a platform**.
-5. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings.  ![Screenshot of the app registration, authentication, add a platform selection screen.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-add-platform-a68858c7-7a4b2033-834d30fe.png)      **Platform** **Configuration settings**     Web Enter a **Redirect URI** for your server-side web application. This URI is where the Microsoft identity platform redirects users and sends security tokens after authentication. You can also configure front-channel sign out URLs and token settings.   Single-page application Enter a **Redirect URI** for your client-side JavaScript application (Angular, React, Vue.js, or Blazor WebAssembly). Uses authorization code flow with Proof Key for Code Exchange (PKCE) for enhanced security. You can also configure front-channel sign out URLs.   iOS / macOS Enter the app **Bundle ID**. Find it in **Build Settings** or in Xcode in *Info.plist*. A redirect URI is automatically generated for you.   Android Enter the app **Package name** (found in *AndroidManifest.xml*) and generate the **Signature hash**. A redirect URI is automatically generated for you.   Mobile and desktop applications Select from suggested **Redirect URIs** or specify **Custom redirect URIs**. For desktop apps with embedded browser: `https://login.microsoftonline.com/common/oauth2/nativeclient`. For desktop apps with system browser: `http://localhost`. Choose based on your authentication library requirements.
+5. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings.        **Platform** **Configuration settings**     Web Enter a **Redirect URI** for your server-side web application. This URI is where the Microsoft identity platform redirects users and sends security tokens after authentication. You can also configure front-channel sign out URLs and token settings.   Single-page application Enter a **Redirect URI** for your client-side JavaScript application (Angular, React, Vue.js, or Blazor WebAssembly). Uses authorization code flow with Proof Key for Code Exchange (PKCE) for enhanced security. You can also configure front-channel sign out URLs.   iOS / macOS Enter the app **Bundle ID**. Find it in **Build Settings** or in Xcode in *Info.plist*. A redirect URI is automatically generated for you.   Android Enter the app **Package name** (found in *AndroidManifest.xml*) and generate the **Signature hash**. A redirect URI is automatically generated for you.   Mobile and desktop applications Select from suggested **Redirect URIs** or specify **Custom redirect URIs**. For desktop apps with embedded browser: `https://login.microsoftonline.com/common/oauth2/nativeclient`. For desktop apps with system browser: `http://localhost`. Choose based on your authentication library requirements.
 6. Select **Configure** to complete the platform configuration.
 
 Note
@@ -1872,12 +1623,6 @@ Note
 
 ## Configure API permissions
 
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/6-configure-api-permissions</sub>
-
-## Configure API permissions
-
-- 3 minutes
-
 The Microsoft identity platform implements the OAuth 2.0 authorization protocol. OAuth 2.0 is a method through which an external app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or **Application ID URI**. The same is true for any external resources integrated with the Microsoft identity platform.
 
 Any of these resources can also define a set of **permissions** (also called **scopes**) that can be used to divide the functionality of that resource into smaller chunks. As an example, Microsoft Graph has permissions to do the following tasks (among others):
@@ -1898,8 +1643,6 @@ Important
 
 Delegated permissions operate on behalf of the signed-in user, meaning the app can only access data that the user themselves could access. This provides an additional security layer beyond just the app's permissions.
 
-![Screenshot of the app registration API permissions configuration screen Microsoft Graph granted the user.read permission.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-add-api-permission-ae399591-ac6c0fd4-e2bdf3cb.png)
-
 1. Sign in to the **Microsoft Entra admin center**.
 2. Select **Applications** then **App registrations**, and then select your client application.
 3. Select **API permissions** then **Add a permission** > **Microsoft Graph**.
@@ -1916,12 +1659,6 @@ These are the basic **OpenID Connect** scopes commonly requested by most applica
 
 ## Create app roles
 
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/7-create-app-roles</sub>
-
-## Create app roles
-
-- 3 minutes
-
 **App roles** are a powerful feature you can and should configure when performing an app registration. An app role is a custom claim that can be applied to users, groups, or applications. The claim appears in the token generated when a user authenticates for an app. The app role data in the token can then be used in the application for authorization purposes.
 
 **Key Benefits:**
@@ -1931,8 +1668,6 @@ These are the basic **OpenID Connect** scopes commonly requested by most applica
 - **Simplified Code**: Your application can check for specific role claims instead of mapping groups to permissions
 
 To take advantage of this feature, you define app roles that allow users and groups as member types. As shown in the following screen, select **Users/Groups** for **Allowed member types** when creating app roles.
-
-![Screenshot of create app roles in app registration of Microsoft Entra ID.](https://learn.microsoft.com../../wwl-sci/register-apps-use-microsoft-entra-id/media/app-registration-create-app-roles-78b223c5-a47f3b92-45495f05.png)
 
 ### How App Roles Appear in Tokens
 
@@ -1975,24 +1710,12 @@ After the application admin creates app roles in your app's registration, IT adm
 
 ## Module assessment
 
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/8-knowledge-check</sub>
-
-## Module assessment
-
-- 3 minutes
-
 Choose the best response for each of the questions below.
 
 ### Check your knowledge
 
 
 ## Summary
-
-<sub>https://learn.microsoft.com/en-us/training/modules/register-apps-use-microsoft-entra-id/9-summary</sub>
-
-## Summary
-
-- 1 minute
 
 App registration in Microsoft Entra ID is the foundational process of establishing an identity configuration for your application within the Microsoft identity platform. This process ensures secure integration and provides fine-grained control over authentication and authorization.
 
