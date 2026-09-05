@@ -8,7 +8,7 @@
 - **Plan and implement entitlement management** (10 units)
 - **Plan, implement, and manage access review** (10 units)
 - **Plan and implement privileged access** (11 units)
-- **Monitor and maintain Microsoft Entra ID** (9 units)
+- **Monitor and maintain Entra ID** (9 units)
 
 
 ---
@@ -30,7 +30,7 @@ By the end of this module, you will be able to:
 - Define access packages.
 - Plan, implement, and manage entitlements.
 - Implement and manage terms of use.
-- Manage the lifecycle of external users in Microsoft Entra Identity Governance settings.
+- Manage the lifecycle of external users in Entra Identity Governance settings.
 - Configure and manage connected organizations.
 - Review per-user entitlements.
 
@@ -48,11 +48,11 @@ Enterprise organizations often face challenges when managing employee access to 
 - Users don't know what access they should have, and even if they do, they can have difficulty locating the right individuals to approve their access
 - Once users find and receive access to a resource, they hold on to access longer than is required for business purposes
 
-These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Microsoft Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
+These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
 
 This video provides an overview of entitlement management and its value:
 
-**Watch this video to learn more about Microsoft Entra entitlement management**
+**Watch this video to learn more about Entra entitlement management**
 
 ### What can I do with entitlement management?
 
@@ -74,7 +74,7 @@ Before exploring entitlement management and its documentation in depth, you shou
 | assignment | An assignment of an access package to a user ensures the user has all the resource roles of that access package. Access package assignments typically have a time limit before they expire. |
 | catalog | A container of related resources and access packages. Catalogs are used for delegation so non-administrators can create their own access packages. Catalog owners can add resources they own to a catalog. |
 | catalog creator | A collection of users who are authorized to create new catalogs. When a non-administrator user who is authorized to be a catalog creator creates a new catalog, they automatically become the owner of that catalog. |
-| connected organization | An external Microsoft Entra directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access. |
+| connected organization | An external Entra directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access. |
 | policy | A set of rules that defines the access lifecycle, such as how users get access, who can approve, and how long users have access through an assignment. A policy is linked to an access package. For example, an access package could have two policies: one for employees to request access and a second for external users to request access. |
 | resource | An asset, such as an Office group, a security group, an application, or a SharePoint Online site, with a role that a user can be granted permissions to. |
 | resource directory | A directory that has one or more resources to share. |
@@ -82,35 +82,35 @@ Before exploring entitlement management and its documentation in depth, you shou
 
 ### What are access packages and what resources can I manage with them?
 
-Entitlement management introduces to Microsoft Entra ID the concept of an *access package*. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages are used to govern access for your internal employees and users outside your organization. You can manage user access to the following resources with entitlement management:
+Entitlement management introduces to Entra ID the concept of an *access package*. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages are used to govern access for your internal employees and users outside your organization. You can manage user access to the following resources with entitlement management:
 
-- Membership of Microsoft Entra security groups.
+- Membership of Entra security groups.
 - Membership of Microsoft 365 Groups and Teams.
-- Assignment to Microsoft Entra enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
+- Assignment to Entra enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
 - Membership of SharePoint Online sites.
 
-You can also control access to other resources that rely upon Microsoft Entra security groups or Microsoft 365 Groups. For example, you can provide:
+You can also control access to other resources that rely upon Entra security groups or Microsoft 365 Groups. For example, you can provide:
 
 - Licenses for Microsoft 365 by using a security group in an access package and configuring group-based licensing for that group.
 - Access to manage Azure resources by using a security group in an access package and creating an Azure role assignment for that group.
-- Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
+- Access to manage Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
 
 ### How do I control who gets access?
 
 With an **access package**, an administrator or delegated access package manager lists the resources (groups, apps, and sites) and the roles the users need for those resources.
 
-Access packages also include one or more *policies*. A policy defines the rules or guardrails for assignment to access package. Each policy can be used to ensure that only the appropriate users are able to request access, that there are approvers for their request, and that their access to those resources is time-limited and will expire if not renewed.
+Access packages also include one or more *policies*. A policy defines the rules or guardrails for assignment to access package. Each policy ensures that only the appropriate users can request access, that their request has approvers, and that their access to those resources is time-limited and expires if not renewed.
 
-Within each policy, an administrator or access package manager defines the already existing users who are eligible to request access, the process to approve or deny access, and the duration of a user's access.
+Within each policy, an administrator or access package manager defines three things: which already existing users are eligible to request access, the process to approve or deny access, and the duration of a user's access.
 
 ### When should I use access packages?
 
 Access packages don't replace other mechanisms for access assignment. They're most appropriate in situations such as when:
 
-- Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department.
+- Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to give all employees an Exchange Online mailbox. Access packages then cover the situations where employees need additional access, such as reading departmental resources from another department.
 - Access requires the approval of an employee's manager or other designated individuals.
 - Departments wish to manage their own access policies for their resources without IT involvement.
-- Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Microsoft Entra B2B to access another organization's resources.
+- Two or more organizations are collaborating on a project, so multiple users from one organization need to be brought in via Entra B2B to access another organization's resources.
 
 The following diagram shows an example of the elements in entitlement management:
 
@@ -119,9 +119,9 @@ The following diagram shows an example of the elements in entitlement management
 In **Access package 1**, there's only one single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access. **Access package 2** includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.
 
 
-## Exercise create and manage a resource catalog with Microsoft Entra entitlement management
+## Exercise create and manage a resource catalog with Entra entitlement management
 
-### Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
+### Create an Azure account and add Entra ID Premium P2 trial licenses
 
 The tasks in this exercise require an Azure subscription. You also find the exercises in this learning path need an Azure subscription. If you don't already have one, you can sign up for an Azure trial account. If you already have your own Azure subscription, you can skip this task.
 
@@ -129,26 +129,26 @@ The tasks in this exercise require an Azure subscription. You also find the exer
 2. Scroll down through the page to learn more about the benefits and free services available.
 3. Select **Start free**.
 4. Use the wizard to sign up for your Azure trial subscription.
-5. You need a Microsoft Entra ID P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
+5. You need an Entra ID P2 license to complete some of the exercises. In the organization you created, search for and then select **Entra ID**.
 6. In the left navigation menu, select **Getting started**.
-7. Under Getting started with Microsoft Entra ID, select **Get a free trial for Microsoft Entra ID Premium**.
-8. In the Activate pane, under **Microsoft Entra ID PREMIUM P2**, select **Free trial** and then select **Activate**.
+7. Under Getting started with Entra ID, select **Get a free trial for Entra ID Premium**.
+8. In the Activate pane, under **Entra ID PREMIUM P2**, select **Free trial** and then select **Activate**.
 9. In the navigation menu on the left, select **Overview**.
-10. Refresh the browser until you see Microsoft Entra ID Premium P2 under the organization name. It takes a couple of minutes.
+10. Refresh the browser until you see Entra ID Premium P2 under the organization name. It takes a couple of minutes.
 11. The license takes a few minutes to activate. You need to sign out and sign back into Microsoft Azure. Try restarting if you encounter problems with expected features not being available.
 
 ### Create a catalog
 
 A catalog is a container of resources and access packages. You create a catalog when you want to group related resources and access packages. Whoever creates the catalog becomes the first catalog owner. A catalog owner can add other catalog owners.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as an Administrator.
-  - Microsoft Entra ID Premium P1, P2, EMS E3, or EMS E5 subscription.
-  - If you don't have one of these subscriptions, you can get Microsoft Entra ID Premium or enable Microsoft Entra ID Premium trial.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as an Administrator.
+  - Entra ID Premium P1, P2, EMS E3, or EMS E5 subscription.
+  - If you don't have one of these subscriptions, you can get Entra ID Premium or enable Entra ID Premium trial.
   - One of the following administrator accounts for the directory you want to configure:
     - Security Administrator
     - Conditional Access Administrator
 
-2. From **Microsoft Entra ID** home screen, select **ID Governance**.
+2. From **Entra ID** home screen, select **ID Governance**.
 3. In the left menu, under **Entitlement management**, select **Catalogs**.
 4. On the top menu, select **+New Catalog**.
 5. In the New catalog pane, in the **Name** box, enter **Marketing**.
@@ -159,7 +159,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 ### Add resources to a catalog
 
-To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Microsoft Entra security groups. The applications can be Microsoft Entra enterprise applications, including both SaaS applications and your own applications federated to Microsoft Entra ID. The sites can be SharePoint Online sites or SharePoint Online site collections.
+To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Entra security groups. The applications can be Entra enterprise applications, including both SaaS applications and your own applications federated to Entra ID. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
 1. On the Identity Governance screen, if necessary, select **Catalogs**.
 2. In the **Catalogs** list, select **Marketing**.
@@ -173,7 +173,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Microsoft Entra ID**, then **ID Governance**, then **Catalogs** and then select **Marketing**.
+1. In the Marketing catalog, in the left navigation menu, select Roles and administrators. If necessary, in the Azure portal, browse to **Entra ID**, then **ID Governance**, then **Catalogs** and then select **Marketing**.
 2. On the top menu, review the available roles and then select **+ Add owner**.
 3. In the Select members pane, select your administrator account and then select **Select**.
 4. Review the newly added role in the Roles and administrators list.
@@ -237,13 +237,13 @@ You can also manage access packages, catalogs, policies, requests, and assignmen
 
 ### What are terms of use for Entitlement Management
 
-Microsoft Entra terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
+Entra terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point. Remember that terms of use PDF documents can contain an End User License Agreement (EULA). The user has to commit to before access resources based on their entitlement settings.
 
 ### Add terms of use
 
 Once you finalize your terms of use document, use the following procedure to add it.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 2. Open **ID Governance**.
 3. In the left navigation menu open Entitlement Management, then under **Terms of use**, select **Terms of use**.
 4. On the Terms of use page, on the top menu, select **+ New terms**.
@@ -252,7 +252,7 @@ Once you finalize your terms of use document, use the following procedure to add
 7. Select the **Terms of use document box**, browse to your finalized terms of use PDF, and select it. For this exercise, you can choose any PDF you have. Another option is use Microsoft Word to create the terms of use doc and then save as PDF.
 8. Select the language for your terms of use document. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user sees, is based on their browser preferences.
 9. To require end users to view the terms of use before accepting them, set **Require users to expand the terms of use** to **On**.
-10. To require end users to accept your terms of use on every device they're accessing from, set **Require users to consent on every device** to **On**. Users are required to install other applications if this option is enabled.  Warning Consent on every device requires users to register each device with Microsoft Entra ID before getting access.
+10. To require end users to accept your terms of use on every device they're accessing from, set **Require users to consent on every device** to **On**. Users are required to install other applications if this option is enabled.  Warning Consent on every device requires users to register each device with Entra ID before getting access.
 11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.    ​
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:    **Expire starting on** **Frequency** **Result**     Today's date Monthly The users must accept the terms of use and then reaccept every month, starting today.   Date in the future Monthly The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month.    For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:    **User** **First accept date** **First expire date** **Second expire date** **Third expire date**     Alice January 1 February 1 March 1 April 1   Bob January 15 February 1 March 1 April 1
 13. Use the **Duration before reacceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here's how expirations might occur for two users:    **User** **First accept date** **First expire date** **Second expire date** **Third expire date**     Alice January 1 January 31 March 2 April 1   Bob January 15 February 14 March 16 April 15
@@ -299,7 +299,7 @@ Users can review and see the terms of use that they accepted by using the follow
 
 You can edit some details of terms of use, but you can't modify an existing document. The following procedure describes how to edit the details.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 2. Open ID Governance and the select **Entitlement management**.
 3. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 4. Select the terms of use you want to edit.
@@ -326,41 +326,41 @@ You can be required to update the terms of use document.
 7. You now see the most recent version under the Document column.
 
 
-## Exercise manage the lifecycle of external users with Microsoft Entra identity governance
+## Exercise manage the lifecycle of external users with Entra identity governance
 
-### Manage the lifecycle of external users in Microsoft Entra ID Governance settings
+### Manage the lifecycle of external users in Entra ID Governance settings
 
 You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This situation can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they're blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
-1. Sign in to the Microsoft Entra admin center as an Administrator. An account with User administrator is required to complete these tasks.
+1. Sign in to the Entra admin center as an Administrator. An account with User administrator is required to complete these tasks.
 2. Open **ID Governance**.
 3. In the left navigation menu, under **Entitlement management**, select **Settings**.
 4. On the top menu, select **Edit**.
-5. In the **Manage the lifecycle of external users** section, review the different settings for external users. When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**. If a user is blocked from signing in to the directory, the user is unable to re-request the access package or request another access in this directory. Don't configure blocking them from signing in if they'll later need to request access to other access packages.
-6. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.  Note Entitlement management only removes accounts that were invited through entitlement management. Also a user is blocked from signing in. The user is removed from this directory even if that user was added to resources in this directory that weren't access package assignments. If the guest was present in this directory before receiving access package assignments, they'll remain. However, if the guest was invited through an access package assignment, they'll still be removed.
-7. If you want to remove the guest user account in this directory, you can set the number of days before it's removed. If you want to remove the guest user account as soon as they lose their last assignment to any access packages, set **Number of days before removing external user from this directory** to **0**.
+5. In the **Manage the lifecycle of external users** section, review the different settings for external users. To block an external user from signing in to this directory once they lose their last assignment to any access packages, set the **Block external user from signing in to this directory** to **Yes**. If a user is blocked from signing in to the directory, the user is unable to re-request the access package or request another access in this directory. Don't configure blocking them from signing in if they'll later need to request access to other access packages.
+6. To remove an external user's guest account in this directory once they lose their last assignment to any access packages, set **Remove external** user to **Yes**.  Note Entitlement management only removes accounts that were invited through entitlement management. Also a user is blocked from signing in. The user is removed from this directory even if that user was added to resources in this directory that weren't access package assignments. If the guest was present in this directory before receiving access package assignments, they'll remain. However, if the guest was invited through an access package assignment, they'll still be removed.
+7. If you want to remove the guest user account in this directory, you can set the number of days before it's removed. To remove the guest user account as soon as they lose their last assignment to any access packages, set **Number of days before removing external user from this directory** to **0**.
 8. If you made any changes, select **Save**.
 
 
 ## Configure and manage connected organizations
 
-With Microsoft Entra entitlement management, you can collaborate with people outside your organization. If you frequently collaborate with users in an external directory or domain, you can add them as a connected organization. This article describes how to add a connected organization so that you can allow users outside your organization to request resources in your directory.
+With Entra entitlement management, you can collaborate with people outside your organization. If you frequently collaborate with users in an external directory or domain, you can add them as a connected organization. This article describes how to add a connected organization so that you can allow users outside your organization to request resources in your directory.
 
 ### What is a connected organization?
 
-A connected organization is another organization that you have a relationship with. In order for the users in that organization to be able to access your resources, such as your SharePoint Online sites or apps, you'll need a representation of that organization's users in that directory. Because in most cases the users in that organization aren't already in your Microsoft Entra directory, you can use entitlement management to bring them into your Microsoft Entra directory as needed.
+A connected organization is another organization that you have a relationship with. For the users in that organization to access your resources, such as your SharePoint Online sites or apps, you need a representation of that organization's users in that directory. Because in most cases the users in that organization aren't already in your Entra directory, you can use entitlement management to bring them into your Entra directory as needed.
 
 There are three ways that entitlement management lets you specify the users that form a connected organization. It could be
 
-- users in another Microsoft Entra directory (from any Microsoft cloud),
-- users in another non-Microsoft Entra directory that has been configured for direct federation, or
-- users in another non-Microsoft Entra directory, whose email addresses all have the same domain name in common.
+- users in another Entra directory (from any Microsoft cloud),
+- users in another non-Entra directory that has been configured for direct federation, or
+- users in another non-Entra directory, whose email addresses all have the same domain name in common.
 
 ### Add a connected organization
 
 To add an external directory or domain as a connected organization, follow the instructions in this section. **Prerequisite role:** Identity Governance administrator, or User administrator
 
-1. In the **Microsoft Entra admin center**, select **ID Governance**, and then select **Entitlement management**.
+1. In the **Entra admin center**, select **ID Governance**, and then select **Entitlement management**.
 2. In the left pane, select **Connected organizations**, and then select **+ Add connected organization**.
 3. Select the **Basics** tab, and then enter a display name and description for the organization.
   - The state will automatically be set to Configured when you create a new connected organization. For more information about state properties, see State properties of connected organizations
@@ -368,10 +368,10 @@ To add an external directory or domain as a connected organization, follow the i
 4. Select the **Directory + domain** tab, and then select **Add directory + domain**.
   - The Select directories + domains pane opens.
 
-5. In the search box, enter a domain name to search for the Microsoft Entra directory or domain. Be sure to enter the entire domain name.
+5. In the search box, enter a domain name to search for the Entra directory or domain. Be sure to enter the entire domain name.
   - Confirm that the organization name and authentication type are correct.
 
-6. Select **Add** to add the Microsoft Entra directory or domain. Currently, you can add only one directory or domain per connected organization.
+6. Select **Add** to add the Entra directory or domain. Currently, you can add only one directory or domain per connected organization.
 7. After you've added the directory or domain, select Select.
   - The organization appears in the list.
 
@@ -384,7 +384,7 @@ To add an external directory or domain as a connected organization, follow the i
 
 ## Review per-user entitlements
 
-In Microsoft Entra entitlement management, you can see who has been assigned to access packages, their policy, and status. If an access package has an appropriate policy, you can also directly assign user to an access package. This article describes how to view, add, and remove assignments for access packages.
+In Entra entitlement management, you can see who has been assigned to access packages, their policy, and status. If an access package has an appropriate policy, you can also directly assign user to an access package. This article describes how to view, add, and remove assignments for access packages.
 
 ### Governance
 
@@ -402,7 +402,7 @@ Following the rules of **zero trust** you review your entitlement packages regul
 
 Follow these steps to review assignments:
 
-1. In the Microsoft Entra admin center, select **ID Governance** and then select **Entitlement management**.
+1. In the Entra admin center, select **ID Governance** and then select **Entitlement management**.
 2. In the left menu, select **Access packages** and then open the access package.
 3. select Assignments to see a list of active assignments.
 4. select a specific assignment to see additional details.
@@ -430,7 +430,7 @@ $assignments | ft Id,AssignmentState,TargetId,{$_.Target.DisplayName}
 
 If you find an assignment that is out of date, take action. You can remove an assignment that a user or an administrator had previously requested.
 
-1. In the Microsoft Entra admin center, select **ID Governance** and then select **Entitlement management**.
+1. In the Entra admin center, select **ID Governance** and then select **Entitlement management**.
 2. In the left menu, select **Access packages** and then open the access package.
 3. In the left menu, select **Assignments**.
 4. select the check box next to the user whose assignment you want to remove from the access package.
@@ -452,21 +452,21 @@ Now that you reviewed this module, you're able to:
 - Define access packages.
 - Plan, implement, and manage entitlements.
 - Implement and manage terms of use.
-- Manage the lifecycle of external users in Microsoft Entra ID Governance settings.
+- Manage the lifecycle of external users in Entra ID Governance settings.
 - Configure and manage connected organization.
 - Review per user entitlements.
 
-In this module, you learned how to manage permissions and access for your internal and external users in order to protect the security of your company information. Through hands on exercises you created an Azure account, created and managed a catalog of resources, added terms of use and acceptance reporting, and managed the lifecycle of external users. Armed with this new knowledge, you can now implement access reviews in your own organization.
+In this module, you learned how to manage permissions and access for your internal and external users in order to protect the security of your company information. Through hands on exercises, you created an Azure account, created and managed a catalog of resources, added terms of use and acceptance reporting, and managed the lifecycle of external users. Armed with this new knowledge, you can now implement access reviews in your own organization.
 
 ### Resources
 
 Use these resources to discover more.
 
 - FAQs [https://learn.microsoft.com/azure/active-directory/conditional-access/terms-of-use](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use)
-- [What is Microsoft Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-overview)
-- [Common scenarios in Microsoft Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-scenarios)
-- [Review assignments in Microsoft Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-access-package-assignments)
-- [Add a connected organization in Microsoft Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-organization)
+- [What is Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-overview)
+- [Common scenarios in Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-scenarios)
+- [Review assignments in Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-access-package-assignments)
+- [Add a connected organization in Entra entitlement management](https://learn.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-organization)
 
 
 ---
@@ -480,9 +480,9 @@ _https://learn.microsoft.com/en-us/training/modules/plan-implement-manage-access
 
 As your organization grows, managing who has access to what becomes increasingly difficult. Employees change roles, guests accumulate permissions they no longer need, and privileged assignments persist long after a project ends. Without a systematic process for reviewing and recertifying access, your environment accumulates risk—and audit findings quickly follow.
 
-Microsoft Entra access reviews give you a structured way to manage user access drift. They let you schedule periodic reviews of group memberships, application assignments, and privileged role assignments, then automate the outcome—removing access that reviewers deny—without manual follow-up.
+Entra access reviews give you a structured way to manage user access drift. They let you schedule periodic reviews of group memberships, application assignments, and privileged role assignments, then automate the outcome—removing access that reviewers deny—without manual follow-up.
 
-In this module, you plan for and implement access reviews in Microsoft Entra ID Governance. You learn why access reviews matter to your organization's security posture. You learn to create and configure them for different resource types, and how to monitor and automate their outcomes. You also explore the Access Review Agent, which uses AI to guide reviewers through the process directly in Microsoft Teams.
+In this module, you plan for and implement access reviews in Entra ID Governance. You learn why access reviews matter to your organization's security posture. You learn to create and configure them for different resource types, and how to monitor and automate their outcomes. You also explore the Access Review Agent, which uses AI to guide reviewers through the process directly in Microsoft Teams.
 
 ### Learning objectives
 
@@ -498,18 +498,18 @@ By the end of this module, you are able to:
 
 ### Prerequisites
 
-- Knowledge of Microsoft Entra user creation and access management
+- Knowledge of Entra user creation and access management
 
 Note
 
-Some features of access reviews require a **Microsoft Entra ID Governance** or **Microsoft Entra Suite** subscription. Some capabilities work with a Microsoft Entra ID P2 subscription. Confirm your licensing before deployment.
+Some features of access reviews require a **Entra ID Governance** or **Entra Suite** subscription. Some capabilities work with an Entra ID P2 subscription. Confirm your licensing before deployment.
 
 
 ## Plan for access reviews
 
 ### What is an access review?
 
-An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access reviews help ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Access reviews are a feature of Microsoft Entra ID Governance and require a **Microsoft Entra ID Governance** or **Microsoft Entra Suite** subscription. Some capabilities work with a Microsoft Entra ID P2 subscription.
+An **Access Review** as the name implies, is a planned review of the access needs, rights, and history of user access. Access reviews help ensure that the right people have the right access to the right resources. They mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity. Access reviews are a feature of Entra ID Governance and require a **Entra ID Governance** or **Entra Suite** subscription. Some capabilities work with an Entra ID P2 subscription.
 
 Consider your organizational needs to determine the strategy for deploying access reviews in your environment.
 
@@ -523,9 +523,9 @@ When technology projects fail, they typically do so due to mismatched expectatio
 - **Business units** manage projects and own applications. This team reviews and approves or denies access to groups and applications for internal and external users.
 - **Corporate governance** ensures that the organization follows internal policy and complies with regulations.  Note For reviews requiring manual evaluations, be sure to plan for adequate reviewers and review cycles that meet your policy and compliance needs. If review cycles are too frequent, or there are too few reviewers, quality is lost and too many or too few people have access.
 
-### What is Microsoft Entra ID Governance?
+### What is Entra ID Governance?
 
-Microsoft Entra ID Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides capabilities to ensure that the right people have the right access to the right resources, and helps you mitigate access risk by protecting, monitoring, and auditing access to critical assets—while ensuring employee and business partner productivity.
+Entra ID Governance enables you to balance your organization's need for security and employee productivity with the right processes and visibility. It provides capabilities that give the right people the right access to the right resources. It also helps you mitigate access risk by protecting, monitoring, and auditing access to critical assets—while keeping employees and business partners productive.
 
 Identity Governance gives organizations the ability to complete tasks across employees, business partners and vendors, and across services and applications both on-premises and in clouds. Specifically, it's intended to help organizations address these four key questions:
 
@@ -541,21 +541,21 @@ We encourage customers to initially pilot access reviews with a small group and 
 In your pilot, we recommend that you:
 
 - Start with reviews where the results aren't automatically applied, and you can control the implications.
-- Ensure that all users have valid email addresses listed in Microsoft Entra ID and that they receive email communication to take the appropriate action.
+- Ensure that all users have valid email addresses listed in Entra ID and that they receive email communication to take the appropriate action.
 - Document any access removed as a part of the pilot in case you need to quickly restore it.
 - Monitor audit logs to ensure all events are properly audited.
 
 #### What resource types can be reviewed?
 
-Once you integrate your organization’s resources with Microsoft Entra ID (such as users, applications, and groups), they can be managed and reviewed.
+Once you integrate your organization’s resources with Entra ID (such as users, applications, and groups), they can be managed and reviewed.
 
 Typical targets for review include:
 
-- User access to applications integrated with Microsoft Entra ID for single sign-on (such as SaaS, line-of-business).
-- Group membership (synchronized to Microsoft Entra ID, or created in Microsoft Entra ID or Microsoft 365, including Microsoft Teams).
+- User access to applications integrated with Entra ID for single sign-on (such as SaaS, line-of-business).
+- Group membership (synchronized to Entra ID, or created in Entra ID or Microsoft 365, including Microsoft Teams).
 - Access Package that groups resources (groups, apps, and sites) into a single package to manage access.
-- Microsoft Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
-- Custom data resources (preview)—access rights managed through external resource types connected to Microsoft Entra ID Governance.
+- Entra roles and Azure Resource roles as defined in Privileged Identity Management (PIM).
+- Custom data resources (preview)—access rights managed through external resource types connected to Entra ID Governance.
 
 #### Who creates and manages access reviews?
 
@@ -566,11 +566,11 @@ The administrative role required to create, manage, or read an Access Review dep
 | Group or application | Global Administrator | Global administrator |
 |   | User Administrator | Global reader |
 |   | Identity Governance administrator | User administrator |
-|   | Privileged Role administrator (only does review for Microsoft Entra assignable groups) | Identity Governance Administrator |
+|   | Privileged Role administrator (only does review for Entra assignable groups) | Identity Governance Administrator |
 |   | Group owner | Privileged Role Administrator |
 |   |   | Security reader |
 |   |   | Group owner |
-| Microsoft Entra role | Global Administrator |   |
+| Entra role | Global Administrator |   |
 |   | Privileged Role Administrator | Global administrator |
 |   |   | Global reader |
 |   |   | User administrator |
@@ -631,9 +631,9 @@ To create an access review policy, you must have the following information.
 
 ### Plan access reviews for access packages
 
-Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you might want to create an Access Package that includes all the applications that developers in your organization need, or all applications to which external users should have access. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
+Access packages can vastly simplify your governance and Access Review strategy. An Access Package is a bundle of all the resources with the access a user needs to work on a project or perform their task. For example, you might create an Access Package that includes all the applications developers in your organization need, or all applications external users should have access to. An administrator or delegated Access Package manager then groups the resources (groups or apps) and the roles the users need for those resources.
 
-When creating an Access Package, you can create one or more access policies that set conditions for which users can request an Access Package, what the approval process looks like, and how often a person would have to re-request access. Access reviews are configured while creating or editing an Access Package policy.
+When creating an Access Package, you can create one or more access policies. They set the conditions for which users can request an Access Package, what the approval process looks like, and how often a person has to re-request access. Access reviews are configured while creating or editing an Access Package policy.
 
 ### Plan access reviews for groups
 
@@ -652,9 +652,9 @@ Group membership reviewed by:
 
 We recommend that group owners review membership, as they're best situated to know who needs access. Ownership of groups differs with the type of group.
 
-- Groups that are created in Microsoft 365 and Microsoft Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources that are in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
-- Groups created manually in the Microsoft Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s "Owners" section or via Graph.
-- Groups that are synchronized from on-premises Active Directory can't have an owner in Microsoft Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.  Note We recommend defining business policies that define how groups are created to ensure clear group ownership and accountability for regular review of membership.
+- Groups that are created in Microsoft 365 and Entra ID have one or more well-defined owners. In most cases, these owners make perfect reviewers for their own groups as they know who should have access. For example, Microsoft Teams uses Microsoft 365 Groups as the underlying authorization model to grant users access to resources in SharePoint, Exchange, OneNote, or other Microsoft 365 services. The creator of the team automatically becomes an owner and should be responsible for attesting to the membership of that group.
+- Groups created manually in the Entra admin center portal or via scripting through Microsoft Graph might not necessarily have owners defined. We recommend that you define them either through the admin portal in the group’s "Owners" section or via Graph.
+- Groups that are synchronized from on-premises Active Directory can't have an owner in Entra ID. When creating an Access Review for them, you should select individuals who are best suited to decide on membership in them.  Note We recommend defining business policies that define how groups are created to ensure clear group ownership and accountability for regular review of membership.
 
 #### Review membership of exclusion groups in CA policies
 
@@ -666,7 +666,7 @@ To minimize manual work and associated potential errors, consider using Dynamic 
 
 #### Review access to on-premises groups
 
-Access reviews can't change the group membership of groups that you synchronize from on-premises with Microsoft Entra Connect. With synced groups, the source of authority is on-premises. You can still use access reviews to schedule and maintain regular reviews of on-premises groups. Reviewers take action in the on-premises group. This strategy keeps access reviews as the tool for all reviews. You can use the results from an Access Review on on-premises groups and process them further. The data is available in a CSV file or from Microsoft Graph.
+Access reviews can't change the group membership of groups that you synchronize from on-premises with Entra Connect. With synced groups, the source of authority is on-premises. You can still use access reviews to schedule and maintain regular reviews of on-premises groups. Reviewers take action in the on-premises group. This strategy keeps access reviews as the tool for all reviews. You can use the results from an Access Review on on-premises groups and process them further. The data is available in a CSV file or from Microsoft Graph.
 
 ### Plan access reviews for applications
 
@@ -681,13 +681,13 @@ We recommend you plan reviews for applications in the following scenarios:
 
 #### Reviewers for an application
 
-Access reviews can be for the members of a group or for users who were assigned to an application. Applications in Microsoft Entra ID don't necessarily have an owner, which is why the option for selecting the application owner as a reviewer isn't possible. You can further scope a review to review only guest users assigned to the application, rather than reviewing all access.
+Access reviews can be for the members of a group or for users who were assigned to an application. Applications in Entra ID don't necessarily have an owner, which is why the option for selecting the application owner as a reviewer isn't possible. You can further scope a review to review only guest users assigned to the application, rather than reviewing all access.
 
-### Plan review of Microsoft Entra ID and Azure resource roles
+### Plan review of Entra ID and Azure resource roles
 
-Privileged Identity Management (PIM) simplifies how enterprises manage privileged access to resources in Microsoft Entra ID. This keeps the list of privileged roles, both in Microsoft Entra ID and Azure resources, smaller and increases the overall security of the directory.
+Privileged Identity Management (PIM) simplifies how enterprises manage privileged access to resources in Entra ID. This keeps the list of privileged roles, both in Entra ID and Azure resources, smaller and increases the overall security of the directory.
 
-Access reviews allow reviewers to attest whether users still need to be in a role. Just like access reviews for Access Packages, reviews for Microsoft Entra roles and Azure resource are integrated into the PIM admin user experience. We recommend you review the following role assignments regularly:
+Access reviews allow reviewers to attest whether users still need to be in a role. Just like access reviews for Access Packages, reviews for Entra roles and Azure resource are integrated into the PIM admin user experience. We recommend you review the following role assignments regularly:
 
 - Global Administrator
 - User Administrator
@@ -698,7 +698,7 @@ Access reviews allow reviewers to attest whether users still need to be in a rol
 
 ### Deploy access reviews
 
-After you prepare a strategy and a plan to review access for resources integrated with Microsoft Entra ID, deploy and manage reviews by using the resources listed.
+After you prepare a strategy and a plan to review access for resources integrated with Entra ID, deploy and manage reviews by using the resources listed.
 
 #### Review access packages
 
@@ -708,11 +708,11 @@ To reduce the risk of stale access, administrators can enable periodic reviews o
 
 Employees' and guests' access needs to groups and applications likely change over time. To reduce the risk associated with stale access assignments, administrators can create access reviews for group members or application access.
 
-You can create access reviews for group members or application access, perform access reviews for members of a group or users with access to an application, allow members to review their own access to a group or an application, view access reviews, and take action for on-premises groups with PowerShell.
+You can create access reviews for group members or application access, and perform those reviews for members of a group or users with access to an application. You can also let members review their own access to a group or an application, view access reviews, and take action for on-premises groups with PowerShell.
 
-#### Review Microsoft Entra roles
+#### Review Entra roles
 
-To reduce the risk associated with stale role assignments, you should regularly review access of privileged Microsoft Entra roles.
+To reduce the risk associated with stale role assignments, you should regularly review access of privileged Entra roles.
 
 #### Review Azure resource roles
 
@@ -733,7 +733,7 @@ Popular access reviews tasks to automate using the Graph API for access reviews 
 
 ### Monitor access reviews
 
-Access reviews activities are recorded and available from the Microsoft Entra audit logs. You can filter the audit data on the category, activity type, and date range. Here's a sample query:
+Access reviews activities are recorded and available from the Entra audit logs. You can filter the audit data on the category, activity type, and date range. Here's a sample query:
 
 | **Category** | **Policy** |
 |---|---|
@@ -747,7 +747,7 @@ Access reviews activities are recorded and available from the Microsoft Entra au
 |   | Apply decision |
 | Date range | Seven days |
 
-For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend you export your Microsoft Entra Audit Logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
+For more advanced queries and analysis of access reviews, and to track changes and completion of reviews, we recommend exporting your Entra Audit Logs to Azure Log Analytics or Azure Event Hubs. When logs are stored in Azure Log Analytics, you can use the powerful analytics language and build your own dashboards.
 
 ### Plan communications
 
@@ -771,7 +771,7 @@ Upon selecting Start review, reviewers are directed to the MyAccess portal for g
 
 ### How many licenses must you have?
 
-A Microsoft Entra ID Premium P2 license is required for each member or guest user who:
+An Entra ID Premium P2 license is required for each member or guest user who:
 
 - Is assigned as a reviewer
 - Performs a self-review
@@ -780,21 +780,21 @@ A Microsoft Entra ID Premium P2 license is required for each member or guest use
 
 Licenses aren't required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply review decisions.
 
-Microsoft Entra ID Premium P2 licenses aren't required for users with the Global Administrator or User Administrator roles who set up access reviews, configure settings, or apply the decisions from the reviews.
+Entra ID Premium P2 licenses aren't required for Global Administrators or User Administrators who set up access reviews, configure settings, or apply the decisions from the reviews.
 
 
 ## Create access reviews for groups and apps
 
-Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Microsoft Entra ID to create access reviews for group members or application access. If you need to routinely review access, you can also create recurring access reviews.
+Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Entra ID to create access reviews for group members or application access. If you need to routinely review access, you can also create recurring access reviews.
 
 ### Prerequisites
 
-- Microsoft Entra ID Governance or Microsoft Entra Suite (Microsoft Entra ID Premium P2 provides limited capabilities)
+- Entra ID Governance or Entra Suite (Entra ID Premium P2 provides limited capabilities)
 - Identity Governance Administrator or Global Administrator
 
 ### Create one or more access reviews
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least an **Identity Governance Administrator**.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com) as at least an **Identity Governance Administrator**.
 2. Browse to **ID Governance** > **Access reviews**.
 3. Select **New access review** to create a new access review.
 4. On the Access reviews template screen, select **Review access to a resource type**.
@@ -805,7 +805,7 @@ Access to groups and applications for employees and guests changes over time. To
 
 7. If you selected **Applications**, select one or more applications.
 8. Select a scope for the review. Your options are:  If you're reviewing group membership, you can also target only inactive users. In the **Users scope** section, select **Inactive users (on tenant level)** and specify the number of days inactive (up to 730 days).
-  - **Guest users only**. Limits the review to Microsoft Entra B2B guest users in your directory.
+  - **Guest users only**. Limits the review to Entra B2B guest users in your directory.
   - **Everyone**. Scopes the review to all user objects associated with the resource.  Note If you selected **All Microsoft 365 groups with guest users**, your only option is to review **Guest users only**.
 
 9. Select **Next: Reviews**.
@@ -824,14 +824,14 @@ Access to groups and applications for employees and guests changes over time. To
   - Take recommendations - Take the system's recommendation on denying or approving the user's continued access
 
   - **Remove user’s membership from the resource** removes denied user’s access to the group or application being reviewed. Tenant sign-in continues to work.
-  - **Block user from signing in for 30 days, then remove user from the tenant** blocks the denied users from signing in to the tenant, regardless if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user is disabled. If there's no action taken on the disabled user accounts, they're deleted from the tenant.
+  - **Block user from signing in for 30 days, then remove user from the tenant** blocks the denied users from signing in to the tenant, even if they have access to other resources. If there was a mistake or if an admin decides to re-enable one’s access, they can do so within 30 days after the user is disabled. If there's no action taken on the disabled user accounts, they're deleted from the tenant.
   - Action to apply on denied guest users isn't configurable on reviews scoped to more than guest users. It's also not configurable for reviews of all Microsoft 365 groups with guest users. When not configurable, the default option of removing user's membership from the resource is used on denied users.
 
 14. In the **Enable review decision helpers** section, choose whether your reviewer receives recommendations during the review process.
 15. In the **Advanced settings** section, you can choose the following
   - Set **Justification required** to **Enable** to require the reviewer to supply a reason for approval.
-  - Set **email notifications** to **Enable** to have Microsoft Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.
-  - Set **Reminders** to **Enable** to have Microsoft Entra ID send reminders of access reviews in progress to reviewers who haven't completed their review. These reminders are half-way through the duration of the review.
+  - Set **email notifications** to **Enable** to have Entra ID send email notifications to reviewers when an access review starts, and to administrators when a review completes.
+  - Set **Reminders** to **Enable** to have Entra ID send reminders of access reviews in progress to reviewers who haven't completed their review. These reminders are half-way through the duration of the review.
   - The content of the email sent to reviewers is autogenerated based on the review details, such as review name, resource name, and due date. If you need to communicate additional information, such as extra instructions or contact information, specify these details in the **Additional content for reviewer email** section. The information you enter is included in the invitation and reminder emails sent to assigned reviewers.
   - Select **Access Review Agent (Preview)** to allow reviewers to complete the access review in Microsoft Teams using natural language, insights, and recommendations. This option requires more setup—see the Access Review Agent unit for details.
 
@@ -843,7 +843,7 @@ Access to groups and applications for employees and guests changes over time. To
 
 Once you specified the settings for an access review, select **Start**. The access review appears in your list with an indicator of its status.
 
-By default, Microsoft Entra ID sends an email to reviewers shortly after the review starts. If you choose not to have Microsoft Entra ID send the email, be sure to inform the reviewers that an access review is waiting for them to complete. You can show them the instructions for how to review access to groups or applications. If your review is for guests to review their own access, show them the instructions for how to review access for yourself to groups or applications.
+By default, Entra ID sends an email to reviewers shortly after the review starts. If you choose not to have Entra ID send the email, be sure to inform the reviewers that an access review is waiting for them to complete. You can show them the instructions for how to review access to groups or applications. If your review is for guests to review their own access, show them the instructions for how to review access for yourself to groups or applications.
 
 If you assigned guests as reviewers and they haven't accepted the invite, they don't receive an email from access reviews because they must first accept the invitation.
 
@@ -864,14 +864,14 @@ If you assigned guests as reviewers and they haven't accepted the invite, they d
 
 ### Create reviews via APIs
 
-You can also create access reviews using APIs. What you do to manage access reviews of groups and application users in the Microsoft Entra admin center can also be done using Microsoft Graph APIs.
+You can also create access reviews using APIs. What you do to manage access reviews of groups and application users in the Entra admin center can also be done using Microsoft Graph APIs.
 
 
 ## Create and configure access reviews programmatically
 
-Microsoft Entra access reviews are a feature of Microsoft Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
+Entra access reviews are a feature of Entra ID Governance. Access reviews help to ensure that the right identities have the right access to the right resources in the organization. Access reviews can be implemented programmatically using the access reviews API in Microsoft Graph.
 
-To create an access review using Graph, call the Graph API to create an access review schedule definition. The caller must either be a user with at least the **Identity Governance Administrator** role with an application that has the delegated `AccessReview.ReadWrite.All` permission, or an application with the `AccessReview.ReadWrite.All` application permission.
+To create an access review using Graph, call the Graph API to create an access review schedule definition. The caller must be either a user with at least the **Identity Governance Administrator** role, using an application that has the delegated `AccessReview.ReadWrite.All` permission, or an application with the `AccessReview.ReadWrite.All` application permission.
 
 You can also create an access review in PowerShell with the `New-MgIdentityGovernanceAccessReviewDefinition` cmdlet from the Microsoft Graph PowerShell cmdlets for Identity Governance module.
 
@@ -879,7 +879,7 @@ The access reviews API in Microsoft Graph enables organizations to audit and att
 
 ### Access Review API for security groups
 
-This learning module doesn't recreate the step-by-step method to use the API, to get that information see the article - [Review access to security groups using access reviews APIs.](https://learn.microsoft.com/en-us/graph/tutorial-accessreviews-securitygroup) To review guest access in Microsoft 365 groups via API, see [Review access to Microsoft 365 groups using access reviews APIs](https://learn.microsoft.com/en-us/graph/tutorial-accessreviews-m365group). Here are the high-level steps that need to be performed.
+This learning module doesn't recreate the step-by-step method to use the API. For that information, see the article [Review access to security groups using access reviews APIs.](https://learn.microsoft.com/en-us/graph/tutorial-accessreviews-securitygroup) To review guest access in Microsoft 365 groups via API, see [Review access to Microsoft 365 groups using access reviews APIs](https://learn.microsoft.com/en-us/graph/tutorial-accessreviews-m365group). Here are the high-level steps that need to be performed.
 
 1. Create an access review for the security group
 2. List instances of the access review
@@ -894,7 +894,7 @@ During each step you can use the API to create the access review, assign it, che
 
 ## Monitor access review findings
 
-Microsoft Entra ID simplifies how enterprises manage access to groups and applications with Microsoft Entra access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Microsoft Entra access reviews.
+Entra ID simplifies how enterprises manage access to groups and applications with Entra access reviews. Other Microsoft Online Services such as Microsoft 365 can also be managed with Entra access reviews.
 
 ### Perform access review using My Apps
 
@@ -949,7 +949,7 @@ You can choose to have access removal automated by setting the **Auto apply resu
 
 The recommendations are displayed to reviewers as part of the reviewer experience and indicate a person's last sign-in to the tenant or last access to an application. This information helps reviewers make the right access decision. Selecting "Take recommendations" follows the access review recommendations. At the end of an access review, the system applies these recommendations automatically for users that reviewers failed to respond to.
 
-Recommendations are based on the criteria in the access review. For example, if you configure the review to remove access with no sign-in for 30 days, it recommends that all users who fit that criterion be removed—applies to both interactive and non-interactive sign-ins. Recommendations can also be based on **peer outlier** analysis—if a user doesn't have the same access as others in their reporting structure, the system recommends denial. Microsoft is continually working on enhancing recommendations.
+Recommendations are based on the criteria in the access review. For example, if you configure the review to remove access with no sign-in for 30 days, it recommends removing all users who fit that criterion. This applies to both interactive and non-interactive sign-ins. Recommendations can also be based on **peer outlier** analysis—if a user doesn't have the same access as others in their reporting structure, the system recommends denial. Microsoft is continually working on enhancing recommendations.
 
 ### Review guest user access
 
@@ -960,11 +960,11 @@ External identities can be granted access to company resources through one of th
 - Added to a group.
 - Invited to Teams.
 - Assigned to an enterprise application or access package.
-- Assigned a privileged role in Microsoft Entra ID or in an Azure subscription.
+- Assigned a privileged role in Entra ID or in an Azure subscription.
 
-This [sample script](https://github.com/microsoft/access-reviews-samples/tree/master/ExternalIdentityUse) shows where external identities invited into the tenant are used. You can see external users' group membership, role assignments, and application assignments in Microsoft Entra ID. The script won't show any assignments outside of Microsoft Entra ID, such as direct rights assignment to SharePoint resources, without the use of groups.
+This [sample script](https://github.com/microsoft/access-reviews-samples/tree/master/ExternalIdentityUse) shows where external identities invited into the tenant are used. You can see external users' group membership, role assignments, and application assignments in Entra ID. The script won't show any assignments outside of Entra ID, such as direct rights assignment to SharePoint resources, without the use of groups.
 
-When creating an Access Review for groups or applications, you can choose to let the reviewer focus on **Everyone with access**, or **Guest users only**. By selecting Guest users only, reviewers are provided a focused list of external identities from Microsoft Entra B2B that have access to the resource.
+When creating an Access Review for groups or applications, you can choose to let the reviewer focus on **Everyone with access**, or **Guest users only**. By selecting Guest users only, reviewers are provided a focused list of external identities from Entra B2B that have access to the resource.
 
 
 ## Configure recurring access reviews
@@ -976,17 +976,17 @@ Why are recurring access reviews important? Because of lifecycle management. Eve
 After a recurring review series starts, you can update its settings or reviewers at any time. When updating, you can apply changes to just the **Current** instance (the active review) or to the **Series** (all future recurrences). For example, if a reviewer leaves the organization, update the Series to replace them for all upcoming reviews. If you only need to adjust settings for the review in progress, update the Current instance instead.
 
 
-## Explore the Access Review Agent in Microsoft Entra
+## Explore the Access Review Agent in Entra
 
 Historically, access reviews are a manual process that can lead to potential errors and mistakes. Reviewers don't always have access to records and data to make review decisions, and often don't have enough time to complete the review. What if there was an agent that could help with the task?
 
-### Access Review Agent in Microsoft Entra
+### Access Review Agent in Entra
 
-Empower your reviewers to make fast and accurate access decisions. The Access Review Agent with Microsoft Entra ID Governance delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
+Empower your reviewers to make fast and accurate access decisions. The Access Review Agent with Entra ID Governance delivers insights and recommendations so reviewers can complete their work through a simple conversation, right inside Microsoft Teams.
 
 #### How the agent works
 
-The Access Review Agent proactively scans for active access reviews in your tenant. The agent then analyzes identified reviews by gathering extra insights, and generates a recommendation (approve / deny). The recommendation also includes a justification summary for each decision. The agent guides reviewers, in natural language, through the review process in Microsoft Teams. As the agent guides them through the review, they're able to review the agent's reasoning behind the recommendations, ask questions in the context of the review itself, and finally make their own informed decision. The agents recommendation (approve / deny) for each decision relies on a deterministic scoring mechanism powered by multiple signals.
+The Access Review Agent proactively scans for active access reviews in your tenant. The agent then analyzes identified reviews by gathering extra insights, and generates a recommendation (approve / deny). The recommendation also includes a justification summary for each decision. The agent guides reviewers, in natural language, through the review process in Microsoft Teams. As the agent guides them through the review, they can examine the agent's reasoning behind the recommendations, ask questions in the context of the review itself, and finally make their own informed decision. The agents recommendation (approve / deny) for each decision relies on a deterministic scoring mechanism powered by multiple signals.
 
 ##### The agent considers the following signals:
 
@@ -1000,11 +1000,11 @@ The Access Review Agent proactively scans for active access reviews in your tena
 
 #### Prerequisites
 
-To use the Access Review Agent in Microsoft Entra, you need:
+To use the Access Review Agent in Entra, you need:
 
-- Microsoft Entra ID Governance *or* Microsoft Entra Suite licenses.
+- Entra ID Governance *or* Entra Suite licenses.
 - Onboard to Security Copilot with at least one security compute unit (SCU).
-- Admins must have at least all the following roles to set up and manage the agent in the Microsoft Entra admin center:
+- Admins must have at least all the following roles to set up and manage the agent in the Entra admin center:
   - Identity Governance Administrator
   - Lifecycle Workflows Administrator
   - Security Copilot Contributor in Security Copilot
@@ -1013,11 +1013,11 @@ To use the Access Review Agent in Microsoft Entra, you need:
 
 #### Limitations
 
-Once agents are started, they can't be stopped or paused. It might take a few minutes to run. We recommend running the agent from the Microsoft Entra admin center.
+Once agents are started, they can't be stopped or paused. It might take a few minutes to run. We recommend running the agent from the Entra admin center.
 
 ### Enabling the Access Review Agent
 
-1. With an account that has at least all the following roles, sign in to the Microsoft Entra admin center:
+1. With an account that has at least all the following roles, sign in to the Entra admin center:
   - Identity Governance Administrator
   - Lifecycle Workflows Administrator
   - Security Copilot Contributor
@@ -1033,7 +1033,7 @@ Once agents are started, they can't be stopped or paused. It might take a few mi
 
 To update an existing access review for the Access Review Agent, perform the following steps:
 
-1. Sign in to the Microsoft Entra admin center as at least an Identity Governance Administrator.
+1. Sign in to the Entra admin center as at least an Identity Governance Administrator.
 2. Browse to **ID Governance** then **Access reviews**.
 3. Select the access review you want the agent to support.
 4. On the access review overview page, select **Settings** under **Manage** (one time review), or **Settings** under **Series** (recurring review).
@@ -1068,7 +1068,7 @@ Use these resources to discover more.
 
 - [What are Access Reviews?](https://learn.microsoft.com/en-us/entra/id-governance/access-reviews-overview)
 - [Manage user and guest access with Access Reviews](https://learn.microsoft.com/en-us/entra/id-governance/manage-access-review)
-- [Review your access to resources with Microsoft Entra Access Reviews](https://learn.microsoft.com/en-us/entra/id-governance/self-access-review)
+- [Review your access to resources with Entra Access Reviews](https://learn.microsoft.com/en-us/entra/id-governance/self-access-review)
 - [Access review API overview](https://learn.microsoft.com/en-us/entra/id-governance/create-access-review#create-an-access-review-programmatically)
 - [Access Review Agent](https://learn.microsoft.com/en-us/entra/id-governance/access-review-agent)
 - [Review access to security groups using access reviews APIs](https://learn.microsoft.com/en-us/graph/tutorial-accessreviews-securitygroup)
@@ -1098,7 +1098,7 @@ By the end of this module, you are able to:
 - Create and manage emergency access accounts.
 - Configure privileged access groups
 
-Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Microsoft Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.
+Organizations want to minimize the number of people who have access to secure information or resources. Minimizing access reduces the chance of a malicious actor getting that access. It can also help prevent an authorized user inadvertently impacting a sensitive resource. However, users still need to carry out privileged operations in Entra ID, Azure, Microsoft 365, or SaaS apps. Organizations can give users just-in-time privileged access to Azure resources. Then can track and manage the need for oversight of what those users are doing with their administrator privileges.
 
 ### Prerequisites
 
@@ -1109,13 +1109,13 @@ None
 
 ### What is Privileged identity management (PIM)?
 
-PIM is a service in Microsoft Entra ID, for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Microsoft Entra ID, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
+PIM is a service in Entra ID, for managing access to privileged resources. PIM enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Entra ID, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
 
 ### What does PIM do?
 
 PIM provides time-based and approval-based role activation to access resources. This helps to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
 
-- Provide just-in-time privileged access to Microsoft Entra ID and Azure resources
+- Provide just-in-time privileged access to Entra ID and Azure resources
 - Assign time-bound access to resources using start and end dates
 - Require approval to activate privileged roles
 - Enforce Azure Multifactor Authentication to activate any role
@@ -1132,7 +1132,7 @@ PIM requires a Premium P2 license.
 
 ### Identify your stakeholders
 
-The following section helps you identify all the stakeholders who are involved in the project. You'll look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Microsoft Entra roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
+The following section helps you identify all the stakeholders who are involved in the project. You'll look at who needs to approve, review, or stay informed. It includes separate tables for deploying PIM for Entra roles and PIM for Azure roles. Add stakeholders to the following table as appropriate for your organization.
 
 SO = Approval on this project
 
@@ -1140,7 +1140,7 @@ R = Review this project and provide input
 
 I = Informed of this project
 
-#### Stakeholders: Privileged Identity Management for Microsoft Entra roles
+#### Stakeholders: Privileged Identity Management for Entra roles
 
 | **Name** | **Role** | **Action** |
 |---|---|---|
@@ -1163,24 +1163,24 @@ I = Informed of this project
 
 As part of the planning process, prepare PIM by following our "Start using Privileged Identity Management" article. PIM gives you access to some features that are designed to help with your deployment.
 
-If your goal is to deploy PIM for Azure resources, follow our "Discover Azure resources to manage in Privileged Identity Management" article. Only owners of subscriptions and management groups can bring these resources under management by PIM. After it's under management, the PIM functionality is available for owners at all levels, including management group, subscription, resource group, and resource. If you're a Global Administrator trying to deploy PIM for your Azure resources, you can elevate access to manage all Azure subscriptions to give yourself access to all Azure resources in the directory for discovery. However, we advise that you get approval from each of your subscription owners before managing their resources with PIM.
+If your goal is to deploy PIM for Azure resources, follow our "Discover Azure resources to manage in Privileged Identity Management" article. Only owners of subscriptions and management groups can bring these resources under management by PIM. After it's under management, the PIM functionality is available for owners at all levels, including management group, subscription, resource group, and resource. If you're a Global Administrator trying to deploy PIM for your Azure resources, you can elevate access to manage all Azure subscriptions. That gives you access to all Azure resources in the directory for discovery. However, we advise that you get approval from each of your subscription owners before managing their resources with PIM.
 
 ### Enforce principle of least privilege
 
-It's important to make sure that you've enforced the principle of least privilege in your organization for both your Microsoft Entra ID and your Azure roles.
+It's important to make sure that you've enforced the principle of least privilege in your organization for both your Entra ID and your Azure roles.
 
 #### Plan least privilege delegation
 
-For Microsoft Entra roles, it's common for organizations to assign the Global Administrator role to a number of administrators when most administrators only need one or two specific and less-powerful administrator roles. With a large number of Global Administrators or other high-privilege roles, it's hard to track your privileged role assignments closely enough.
+For Entra roles, organizations commonly assign the Global Administrator role to a number of administrators, when most of them only need one or two specific and less-powerful administrator roles. With a large number of Global Administrators or other high-privilege roles, it's hard to track your privileged role assignments closely enough.
 
-Follow these steps to implement the principle of least privilege for your Microsoft Entra roles.
+Follow these steps to implement the principle of least privilege for your Entra roles.
 
-1. Understand the granularity of the roles by reading and understanding the available Microsoft Entra administrator roles. You and your team should also reference administrator roles by identity task in Microsoft Entra ID, which explains the least privileged role for specific tasks.
+1. Understand the granularity of the roles by reading and understanding the available Entra administrator roles. You and your team should also reference administrator roles by identity task in Entra ID, which explains the least privileged role for specific tasks.
 2. List who has privileged roles in your organization. You can use the PIM Discovery and insights (preview) to reduce your exposure.
-3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Microsoft Entra ID. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
-4. For all other Microsoft Entra roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
+3. For all Global Administrators in your organization, find out why they need the role. Then remove them from the Global Administrator role and assign built-in roles or custom roles with lower privilege inside Entra ID. FYI, Microsoft currently only has about 10 administrators with the Global Administrator role.
+4. For all other Entra roles, review the list of assignments, identify administrators who no longer need the role, and remove them from their assignments.
 
-To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Microsoft Entra roles in Privileged Identity Management," you can set up an access review for every Microsoft Entra ID role that has one or more members.
+To automate the last two steps, you can use access reviews in PIM. Following the steps in "Start an access review for Entra roles in Privileged Identity Management," you can set up an access review for every Entra ID role that has one or more members.
 
 Set the reviewers to **Members (self)**. All users in the role will receive an email asking them to confirm that they need the access. Also, turn on **Require reason on approval** in the advanced settings so that users must state why they need the role. Based on this information, you can remove users from unnecessary roles or delegate them to more granular administrator roles.
 
@@ -1190,21 +1190,21 @@ Access reviews rely on emails to notify people to review their access to the rol
 
 For Azure subscriptions and resources, you can set up a similar Access review process to review the roles in each subscription or resource. The goal of this process is to minimize Owner and User Access Administrator assignments attached to each subscription or resource and to remove unnecessary assignments. However, organizations often delegate such tasks to the owner of each subscription or resource because they have a better understanding of the specific roles (especially custom roles).
 
-If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can elevate access to manage all Azure subscriptions, to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
+If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can elevate access to manage all Azure subscriptions, which gets you access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
 
-Users with the Owner role for an Azure subscription can also use access reviews for Azure resources to audit and remove unnecessary role assignments similar to the process described earlier for Microsoft Entra roles.
+Users with the Owner role for an Azure subscription can also use access reviews for Azure resources to audit and remove unnecessary role assignments, much like the process described earlier for Entra roles.
 
 ### Decide which role assignments should be protected by Privileged Identity Management
 
 After cleaning up privileged role assignments in your organization, you'll need to decide which roles to protect with PIM.
 
-If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure Multifactor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Microsoft Entra audit event logs.
+If a role is protected by PIM, eligible users assigned to it must elevate to use the privileges granted by the role. The elevation process might also include obtaining approval, using Azure Multifactor Authentication, and providing the reason they're activating. PIM can also track elevations through notifications and the PIM and Entra audit event logs.
 
-Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Microsoft Entra roles and Azure roles.
+Choosing which roles to protect with PIM can be difficult and will be different for each organization. This section provides our best practices for Entra roles and Azure roles.
 
-#### Microsoft Entra roles
+#### Entra roles
 
-It's important to prioritize protecting Microsoft Entra roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Microsoft Entra roles managed by PIM are:
+It's important to prioritize protecting Entra roles that have the most permissions. Based on usage patterns among all PIM customers, the top 10 Entra roles managed by PIM are:
 
 - Global Administrator
 - Security Administrator
@@ -1215,7 +1215,7 @@ It's important to prioritize protecting Microsoft Entra roles that have the most
 - Security Reader
 - Service Administrator
 - Billing Administrator
-- Skype for Business Administrator  Tip Microsoft recommends you manage all your Global Administrators and Security Administrators using PIM as a first step, because they are the users who can do the most harm when compromised.
+- Skype for Business Administrator  Tip Microsoft recommends managing all your Global Administrators and Security Administrators with PIM as a first step, because they can do the most harm when compromised.
 
 It's important to consider the most sensitive data and permissions for your organization. As an example, some organizations want to protect their Power BI Administrator role or their Teams Administrator role using PIM, since they can access data and change core workflows.
 
@@ -1234,7 +1234,7 @@ When deciding which role assignments should be managed using PIM for Azure resou
 - Resources that host the most sensitive data.
 - Resources that core customer-facing applications depend on.
 
-If you're a Global Administrator having trouble deciding which subscriptions and resources are most important, you should contact subscription owners in your organization to gather a list of resources managed by each subscription. Then, work with the subscription owners to group the resources based on severity level in the case they're compromised (low, medium, high). Prioritize managing resources with PIM based on this severity level.
+If you're a Global Administrator having trouble deciding which subscriptions and resources are most important, contact the subscription owners in your organization to gather a list of the resources each subscription manages. Then, work with the subscription owners to group the resources based on severity level in the case they're compromised (low, medium, high). Prioritize managing resources with PIM based on this severity level.
 
 Tip
 
@@ -1261,28 +1261,28 @@ Manually keeping track of who is assigned to a role and managing their assignmen
 
 #### You want to delegate assigning the role
 
-A group owner can manage membership for a group. For Microsoft Entra ID role-assignable groups, only the Privileged Role Administrator, the Global Administrator, and the group owners can manage group membership. When an admin adds new members to the group, the member gets access to the roles to which the group is assigned whether the assignment is eligible or active. Use group owners to delegate the management of group membership for an assigned role to reduce the breadth of privilege required.
+A group owner can manage membership for a group. For Entra ID role-assignable groups, only the Privileged Role Administrator, the Global Administrator, and the group owners can manage group membership. When an admin adds new members to the group, the member gets access to the roles to which the group is assigned whether the assignment is eligible or active. Use group owners to delegate the management of group membership for an assigned role to reduce the breadth of privilege required.
 
 Tip
 
-Microsoft recommends that you bring Microsoft Entra ID role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
+Microsoft recommends that you bring Entra ID role-assignable groups under management by PIM. After a role-assignable group is brought under management by PIM, it's called a privileged access group. Use PIM to require group owners to activate their Owner role assignment before they can manage group membership.
 
 ### Decide which role assignments should be permanent or eligible
 
-Once you've decided the list of roles to be managed by PIM, you must decide which users should get the eligible role versus the permanently active role. **Permanently active roles are the normal roles assigned through Microsoft Entra ID and Azure resources, while eligible roles can only be assigned in PIM.**
+Once you've decided the list of roles to be managed by PIM, you must decide which users should get the eligible role versus the permanently active role. **Permanently active roles are the normal roles assigned through Entra ID and Azure resources, while eligible roles can only be assigned in PIM.**
 
-Microsoft recommends you've zero permanently active assignments for both Microsoft Entra roles and Azure roles other than the recommended two break-glass emergency access accounts, which should have the permanent Global Administrator role.
+Microsoft recommends zero permanently active assignments for both Entra roles and Azure roles, apart from the two recommended break-glass emergency access accounts, which should have the permanent Global Administrator role.
 
 Even though we recommend zero standing-administrators, it's sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
 
-- Frequency of elevation – If the user only needs the privileged assignment once, they shouldn’t have the permanent assignment. On the other hand, if the user needs the role for their day-to-day job and using PIM would greatly reduce their productivity, they can be considered for the permanent role.
-- Cases specific to your organization – If the person being given the eligible role is from a distant team or a high-ranking executive to the point that communicating and enforcing the elevation process is difficult, they can be considered for the permanent role.  Tip Microsoft recommends you to set up recurring access reviews for users with permanent role assignments.
+- Frequency of elevation – If the user only needs the privileged assignment once, they shouldn’t have the permanent assignment. On the other hand, a user can be considered for the permanent role if they need it for their day-to-day job and PIM would greatly reduce their productivity.
+- Cases specific to your organization – The person being given the eligible role may be from a distant team, or a high-ranking executive, to the point that communicating and enforcing the elevation process is difficult. They can be considered for the permanent role.  Tip Microsoft recommends you to set up recurring access reviews for users with permanent role assignments.
 
 ### Draft your Privileged Identity Management settings
 
 Before you implement your PIM solution, it's good practice to draft your PIM settings for every privileged role your organization uses. This section has some examples of PIM settings for particular roles; they are for reference only and might be different for your organization. Each of these settings is explained in detail with Microsoft’s recommendations after the tables.
 
-#### Privileged Identity Management settings for Microsoft Entra roles
+#### Privileged Identity Management settings for Entra roles
 
 | **Setting** | **Global Administrator** | **Exchange Administrator** | **Helpdesk Administrator** |
 |---|---|---|---|
@@ -1320,29 +1320,29 @@ The following table describes each of the settings.
 | Require approval | Whether the eligible user needs to get approval to activate the role. |
 |   | **Microsoft recommends** that you set up approval for roles with the most permission. Based on usage patterns of all PIM customers, Global Administrator, User Administrator, Exchange Administrator, Security Administrator, and Password Administrator are the most common roles with approval required. |
 | Approver | If approval is required to activate the eligible role, list the people who should approve the request. By default, PIM sets the approver to be all users who are privileged role administrators whether they are permanent or eligible. |
-|   | If a user is both eligible for a Microsoft Entra role and an approver of the role, they will not be able to approve themselves. |
+|   | If a user is both eligible for an Entra role and an approver of the role, they will not be able to approve themselves. |
 |   | **Microsoft recommends** that you choose approvers to be users who are most knowledgeable about the role and its frequent users rather than a Global Administrator. |
 | Activation duration | The length of time a user will be activated in the role before it will expire. |
 | Permanent admin | List of users who will be a permanent administrator for the role (never have to activate). |
 |   | **Microsoft recommends** you have zero standing administrator for all roles except for Global Administrators. |
-| Active admin | For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Microsoft Entra roles because you can set an expiration time for when the user will lose this role. |
+| Active admin | For Azure resources, active administrator is the list of users who will never have to activate to use the role. This list is not referred to as permanent administrator like in Entra roles because you can set an expiration time for when the user will lose this role. |
 | Active expiration | Active role assignments for Azure roles expire after the configured duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently active. |
 | Eligible expiration | Eligible role assignments for Azure roles expire after this duration. You can choose from 15 days, 1 month, 3 months, 6 months, 1 year or permanently eligible. |
 
 
 ## Configure Privileged Identity Management for Azure resources
 
-Using Microsoft Entra PIM, you can improve the protection of your Azure resources. This is helpful to:
+Using Entra PIM, you can improve the protection of your Azure resources. This is helpful to:
 
-- Organizations that already use PIM to protect Microsoft Entra roles.
+- Organizations that already use PIM to protect Entra roles.
 - Management group and subscription owners who are trying to secure production resources.
 
 When you first set up PIM for Azure resources, you need to discover and select the resources to protect with PIM. There's no limit to the number of resources that you can manage with PIM. However, we recommend starting with your most critical production resources.
 
 ### Discover resources
 
-1. Sign in to the Microsoft Entra admin center.
-2. Open **Microsoft Entra Privileged Identity Management**.
+1. Sign in to the Entra admin center.
+2. Open **Entra Privileged Identity Management**.
 3. Select **Azure resources**.If this is your first time using PIM for Azure resources, you'll see a **Discover resources** page.
 4. If another administrator in your organization is already managing Azure resources in PIM, you'll see a list of the resources that are currently being managed.
 5. Select **Discover resources** to launch the discovery experience.
@@ -1352,17 +1352,17 @@ When you first set up PIM for Azure resources, you need to discover and select t
 9. If you see a message to confirm the onboarding of the selected resource for management, select **Yes**
 
 
-## Exercise configure Privileged Identity Management for Microsoft Entra roles
+## Exercise configure Privileged Identity Management for Entra roles
 
-### Configure Microsoft Entra role settings
+### Configure Entra role settings
 
 #### Open role settings
 
-Follow these steps to open the settings for a Microsoft Entra role.
+Follow these steps to open the settings for an Entra role.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
-2. Search for and then select **Microsoft Entra Privileged Identity Management.**
-3. In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2. Search for and then select **Entra Privileged Identity Management.**
+3. In the Privileged Identity Management screen, in the left navigation, select **Entra roles.**
 4. On the Quick start page, in the left navigation, select **Settings.**
 5. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 6. In the results, select **Compliance Administrator**.
@@ -1379,19 +1379,19 @@ If setting multiple approvers, approval completes as soon as one of them approve
 5. Once you have configured the role settings, select **Update** to save your changes.
 
 
-## Exercise assign Microsoft Entra roles in Privileged Identity Management
+## Exercise assign Entra roles in Privileged Identity Management
 
-With Microsoft Entra ID, a Global administrator can make permanent Microsoft Entra admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
+With Entra ID, a Global administrator can make permanent Entra admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
 
-The Microsoft Entra Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Microsoft Entra admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
+The Entra Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Entra admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
 
 ### Assign a role
 
-Follow these steps to make a user eligible for a Microsoft Entra admin role.
+Follow these steps to make a user eligible for an Entra admin role.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
-2. Search for and then select **Microsoft Entra Privileged Identity Management.**
-3. In the Privileged Identity Management screen, in the left navigation, select **Microsoft Entra roles.**
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2. Search for and then select **Entra Privileged Identity Management.**
+3. In the Privileged Identity Management screen, in the left navigation, select **Entra roles.**
 4. On the Quick start page, in the left navigation, select **Roles**.
 5. On the top menu, select **+ Add assignments.**
 6. In the Add assignments pane, on the **Membership** tab, review the settings.
@@ -1405,9 +1405,9 @@ Follow these steps to make a user eligible for a Microsoft Entra admin role.
 
 12. Review the remaining settings and then select **Assign**.
 
-### Activate your Microsoft Entra roles
+### Activate your Entra roles
 
-When you need to assume a Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
+When you need to assume an Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1. On the Privileged Identity Management screen, in the left navigation menu, select **My roles.**
 2. In the My roles pane, review the list of eligible assignments.
@@ -1420,17 +1420,17 @@ When you need to assume a Microsoft Entra role, you can request activation by op
 
 For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
 
-1. Browse to the Privileged Identity Management screen, and in the left navigation menu, select **Microsoft Entra roles.**
+1. Browse to the Privileged Identity Management screen, and in the left navigation menu, select **Entra roles.**
 2. In the Roles pane, on the top menu, select **+ Add assignments.**
 3. In the Add assignments screen, select the **Select role** menu, and then select **User administrator.**
-4. Select the **Scope type** menu and review the available options. For now, you'll use the **Directory** scope type.  Tip Go to [Manage administrative units in Microsoft Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/roles/administrative-units) to find more information about the administrative unit scope type.
+4. Select the **Scope type** menu and review the available options. For now, you'll use the **Directory** scope type.  Tip Go to [Manage administrative units in Entra ID](https://learn.microsoft.com/en-us/azure/active-directory/roles/administrative-units) to find more information about the administrative unit scope type.
 5. Similar to assigning a role without a restricted scope. Add members, and complete the settings options. For now, select **Cancel**.
 
 ### Update or remove an existing role assignment
 
 Follow these steps to update or remove an existing role assignment.
 
-1. In the Open Microsoft Entra Privileged Identity Management then Microsoft Entra roles screen, in the left navigation, select **Assignments**.
+1. In the Open Entra Privileged Identity Management then Entra roles screen, in the left navigation, select **Assignments**.
 2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
 3. Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
 4. Select **Remove**.
@@ -1441,7 +1441,7 @@ Follow these steps to update or remove an existing role assignment.
 
 ### Assign Azure resource roles
 
-Microsoft Entra Privileged Identity Management (PIM) can manage the built-in Azure resource roles, as well as custom roles, including (but not limited to):
+Entra Privileged Identity Management (PIM) can manage the built-in Azure resource roles, as well as custom roles, including (but not limited to):
 
 - Owner
 - User Access Administrator
@@ -1451,8 +1451,8 @@ Microsoft Entra Privileged Identity Management (PIM) can manage the built-in Azu
 
 Follow these steps to make a user eligible for an Azure resource role.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
-2. Search for and then select **Microsoft Entra Privileged Identity Management.**
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) as a tenant administrator.
+2. Search for and then select **Entra Privileged Identity Management.**
 3. In the Privileged Identity Management menu, in the left navigation, select **Azure resources.**
 4. On the top menu, select **Discover resources**.
 5. In the Azure resources – Discovery screen, select your subscription and then, on the top menu, select **Manage resource**.
@@ -1477,7 +1477,7 @@ Follow these steps to make a user eligible for an Azure resource role.
 
 Follow these steps to update or remove an existing role assignment.
 
-1. Open **Microsoft Entra Privileged Identity Management**.
+1. Open **Entra Privileged Identity Management**.
 2. Select **Azure resources**.
 3. Select the resource you want to manage to open its overview page.
 4. Under **Manage**, select **Assignments**.
@@ -1488,19 +1488,19 @@ Follow these steps to update or remove an existing role assignment.
 
 ## Plan and configure Privileged Access Groups
 
-In Privileged Identity Management (PIM), you can now assign eligibility for membership or ownership of privileged access groups. You can assign Microsoft Entra ID built-in roles to cloud groups and use PIM to manage group member and owner eligibility and activation. With the privileged access groups preview, you can give workload-specific administrators quick access to multiple roles with a single just-in-time request.
+In Privileged Identity Management (PIM), you can now assign eligibility for membership or ownership of privileged access groups. You can assign Entra ID built-in roles to cloud groups and use PIM to manage group member and owner eligibility and activation. With the privileged access groups preview, you can give workload-specific administrators quick access to multiple roles with a single just-in-time request.
 
 **Example**: Your **Tier 0 Office Admins** might need just-in-time access to the **Exchange Admin**, **Office Apps Admin**, **Teams Admin**, and **Search Admin** roles to thoroughly investigate incidents daily.
 
-You can create a role-assignable group called “Tier 0 Office Admins”, and make it eligible for assignment to the four roles previously mentioned (or any Microsoft Entra built-in roles). Then you enable it for Privileged Access in the group’s Activity section. Once enabled for privileged access, you can assign your admins and owners to the group. When the admins elevate the group into the roles, your staff will have permissions from all four Microsoft Entra roles.
+You can create a role-assignable group called “Tier 0 Office Admins”, and make it eligible for assignment to the four roles previously mentioned (or any Entra built-in roles). Then you enable it for Privileged Access in the group’s Activity section. Once enabled for privileged access, you can assign your admins and owners to the group. When the admins elevate the group into the roles, your staff will have permissions from all four Entra roles.
 
 ### Require different policies for each role assignable group
 
-Some organizations use tools like Microsoft Entra business-to-business (B2B) collaboration to invite their partners as guests to their Microsoft Entra organization. Instead of a single just-in-time policy for all assignments to a privileged role, you can create two different privileged access groups with their own policies. You can enforce less strict requirements for your trusted employees, and stricter requirements like approval workflow for your partners when they request activation into their assigned role.
+Some organizations use tools like Entra business-to-business (B2B) collaboration to invite their partners as guests to their Entra organization. Instead of a single just-in-time policy for all assignments to a privileged role, you can create two different privileged access groups with their own policies. You can enforce less strict requirements for your trusted employees, and stricter requirements like approval workflow for your partners when they request activation into their assigned role.
 
 ## Analyze Privileged Identity Management audit history and reports
 
-With PIM, you can view activity, activations, and audit history for privileged access group members and owners within your Microsoft Entra organization.
+With PIM, you can view activity, activations, and audit history for privileged access group members and owners within your Entra organization.
 
 If your organization has outsourced management functions to a service provider who uses [Azure delegated resource management](https://learn.microsoft.com/en-us/azure/lighthouse/concepts/azure-delegated-resource-management), role assignments authorized by that service provider won't be shown here.
 
@@ -1510,7 +1510,7 @@ Follow these steps to view the audit history for privileged access groups.
 
 ### **Resource audit** gives you a view of all activity associated with your privileged access groups.
 
-1. Open **Microsoft Entra Privileged Identity Management**.
+1. Open **Entra Privileged Identity Management**.
 2. Select **Groups**.
 3. Select the privileged access group you want to view audit history for.
 4. Under **Activity**, select **Resource audit**.
@@ -1520,7 +1520,7 @@ Follow these steps to view the audit history for privileged access groups.
 
 **My audit** enables you to view your personal role activity for a privileged access group.
 
-1. Open **Microsoft Entra Privileged Identity Management**.
+1. Open **Entra Privileged Identity Management**.
 2. Select **Groups**.
 3. Select the privileged access group you want to view audit history for.
 4. Under **Activity**, select **My audit**.
@@ -1529,19 +1529,19 @@ Follow these steps to view the audit history for privileged access groups.
 
 ## Create and manage emergency access accounts
 
-It's important that you prevent being accidentally locked out of your Microsoft Entra ID. With Microsoft Entra ID, you can't sign in or activate another user's account as an administrator. You can mitigate the chance of accidental lack of administrative access. The secret, create two or more *emergency access accounts* in your organization.
+It's important that you prevent being accidentally locked out of your Entra ID. With Entra ID, you can't sign in or activate another user's account as an administrator. You can mitigate the chance of accidental lack of administrative access. The secret, create two or more *emergency access accounts* in your organization.
 
 Emergency access accounts are highly privileged, and they aren't assigned to specific individuals. Emergency access accounts are limited to emergency or "break glass"' scenarios where normal administrative accounts can't be used. We recommend that you restrict access to emergency account. Use the accounts only when it's necessary.
 
-This article provides guidelines for managing emergency access accounts in Microsoft Entra ID.
+This article provides guidelines for managing emergency access accounts in Entra ID.
 
 ### Why use an emergency access account
 
 An organization might need to use an emergency access account in the following situations:
 
-- The user accounts are federated, and federation is currently unavailable because of a cell-network break or an identity-provider outage. For example, if the identity provider host in your environment has gone down, users might be unable to sign in when Microsoft Entra ID redirects to their identity provider.
-- The administrators are registered through Microsoft Entra Multifactor Authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multifactor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these authentication-methods are the only two authentication mechanisms that they registered.
-- The person with the most recent Global Administrator access has left the organization. Microsoft Entra ID prevents the last Global Administrator account from being deleted, but it doesn't prevent the account from being deleted or disabled on-premises. Either situation might make the organization unable to recover the account.
+- The user accounts are federated, and federation is currently unavailable because of a cell-network break or an identity-provider outage. For example, if the identity provider host in your environment has gone down, users might be unable to sign in when Entra ID redirects to their identity provider.
+- The administrators are registered through Entra Multifactor Authentication. All their individual devices are unavailable or the service is unavailable. Users might be unable to complete multifactor authentication to activate a role. For example, a cell network outage is preventing them from answering phone calls or receiving text messages. Especially when these authentication-methods are the only two authentication mechanisms that they registered.
+- The person with the most recent Global Administrator access has left the organization. Entra ID prevents the last Global Administrator account from being deleted, but it doesn't prevent the account from being deleted or disabled on-premises. Either situation might make the organization unable to recover the account.
 - Unforeseen circumstances such as a natural disaster emergency, during which a mobile phone or other networks might be unavailable.
 
 ### Create emergency access accounts
@@ -1550,16 +1550,16 @@ Create two or more emergency access accounts. These accounts should be cloud-onl
 
 When an admin configures emergency accounts, the following requirements must be met:
 
-- The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Microsoft Entra ID.
+- The emergency access accounts shouldn't be associated with any individual user in the organization. Make sure that your accounts aren't connected with any employee-supplied mobile phones, hardware tokens that travel with individual employees, or other employee-specific credentials. This precaution covers instances where an individual employee is unreachable when the credential is needed. Any registered devices need to be kept in known, secure location. These locations need multiple means of communicating with Entra ID.
 - The authentication mechanism used for an emergency access account should be distinct. Keep it separate from that used by your other administrative accounts, including other emergency-access accounts. For example, if your normal administrator sign-in is via on-premises MFA, then multifactor authentication would be a different mechanism. However, if multifactor authentication is your primary part of authentication for your administrative accounts, then consider a different approach for emergency-accounts. Try things such as using Conditional Access with a third-party MFA provider via Custom controls.
 - The device or credential must not expire or be in scope of automated cleanup due to lack of use.
 - You should make the Global Administrator role assignment permanent for your emergency access accounts.
 
 #### Exclude at least one account from phone-based multifactor authentication
 
-To reduce the risk of an attack resulting from a compromised password, Microsoft Entra ID recommends that you require multifactor authentication for all individual users. This group includes administrators and all others (for example, financial officers) whose compromised account would have a significant opportunity to cause harm.
+To reduce the risk of an attack resulting from a compromised password, Entra ID recommends that you require multifactor authentication for all individual users. This group includes administrators and all others (for example, financial officers) whose compromised account would have a significant opportunity to cause harm.
 
-However, at least one of your emergency access accounts shouldn't have the same multifactor authentication mechanism as your other non-emergency accounts. This includes third-party multifactor authentication solutions. If you have a Conditional Access policy to require multifactor authentication for every administrator for Microsoft Entra ID and other connected software as a service (SaaS) apps, you should exclude emergency access accounts from this requirement, and configure a different mechanism instead. Additionally, you should make sure the accounts don't have a per-user multifactor authentication policy.
+However, at least one of your emergency access accounts shouldn't have the same multifactor authentication mechanism as your other non-emergency accounts. This includes third-party multifactor authentication solutions. You may have a Conditional Access policy requiring multifactor authentication for every administrator for Entra ID and other connected software as a service (SaaS) apps. Exclude emergency access accounts from that requirement, and configure a different mechanism for them instead. Additionally, you should make sure the accounts don't have a per-user multifactor authentication policy.
 
 #### Exclude at least one account from Conditional Access policies
 
@@ -1567,7 +1567,7 @@ During an emergency, you don't want a policy to potentially block your access to
 
 ### Federation guidance
 
-Another option for organizations that use AD Domain Services and ADFS or similar identity provider to federate to Microsoft Entra ID, is to configure an emergency access account whose MFA claim could be supplied by that identity provider. For example, the emergency access account could be backed by a certificate and key pair such as one stored on a smartcard. When that user is authenticated to AD, ADFS can supply a claim to Microsoft Entra ID indicating that the user has met MFA requirements. Even with this approach, organizations must still have cloud-based emergency access accounts in case federation can't be established.
+Organizations that use AD Domain Services and ADFS, or a similar identity provider, to federate to Entra ID have another option: configure an emergency access account whose MFA claim could be supplied by that identity provider. For example, the emergency access account could be backed by a certificate and key pair such as one stored on a smartcard. When that user is authenticated to AD, ADFS can supply a claim to Entra ID indicating that the user has met MFA requirements. Even with this approach, organizations must still have cloud-based emergency access accounts in case federation can't be established.
 
 ### Monitor sign in and audit logs
 
@@ -1582,13 +1582,13 @@ When you train staff members to use emergency access accounts and validate the e
 - Ensure that administrators and security officers who might need to perform these steps during an emergency are trained on the process.
 - Update the account credentials, in particular any passwords, for your emergency access accounts, and then validate that the emergency access accounts can sign in and perform administrative tasks.
 - Ensure that users haven't registered multifactor authentication or self-service password reset (SSPR) to any individual user’s device or personal details.
-- If the accounts are registered for multifactor authentication to a device, for use during sign-in or role activation, ensure that the device is accessible to all administrators who might need to use it during an emergency. Also verify that the device can communicate through at least two network paths that don't share a common failure mode. For example, the device can communicate to the internet through both a facility's wireless network and a cell provider network.
+- If the accounts are registered for multifactor authentication to a device, for use during sign-in or role activation, make sure that device is accessible to all administrators who might need it during an emergency. Also verify that the device can communicate through at least two network paths that don't share a common failure mode. For example, the device can communicate to the internet through both a facility's wireless network and a cell provider network.
 
 These steps should be performed at regular intervals and for key changes:
 
 - At least every 90 days
 - When there has been a recent change in IT staff, such as a job change, a departure, or a new hire
-- When the Microsoft Entra subscriptions in the organization have changed
+- When the Entra subscriptions in the organization have changed
 
 
 ## Module assessment
@@ -1603,7 +1603,7 @@ Choose the best response for each of the questions below.
 Now that you reviewed this module, you're able to:
 
 - Define a privileged access strategy for administrative users (resources, roles, approvals, thresholds).
-- Configure PIM for Microsoft Entra roles.
+- Configure PIM for Entra roles.
 - Configure PIM for Azure resources.
 - Assign roles.
 - Manage PIM requests.
@@ -1611,7 +1611,7 @@ Now that you reviewed this module, you're able to:
 - Create and manage emergency access accounts.
 - Configure privileged access groups
 
-In this module, you learned how to develop a privileged access strategy. This included steps such as identifying stakeholders, deciding on role assignments, and identifying groups to assign roles. You assigned Microsoft Entra roles in PIM and learned how to analyze audit history and reports. Armed with this new knowledge, you can now implement privileged access in your organization.
+In this module, you learned how to develop a privileged access strategy. This included steps such as identifying stakeholders, deciding on role assignments, and identifying groups to assign roles. You assigned Entra roles in PIM and learned how to analyze audit history and reports. Armed with this new knowledge, you can now implement privileged access in your organization.
 
 ### Resources
 
@@ -1625,25 +1625,25 @@ To learn more about these topics, review these links.
 
 ---
 
-# Monitor and maintain Microsoft Entra ID
+# Monitor and maintain Entra ID
 
 _https://learn.microsoft.com/en-us/training/modules/monitor-maintain-azure-active-directory/_
 
 
 ## Introduction
 
-Microsoft Entra ID audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
+Entra ID audit and diagnostic logs provide a rich view into how users are accessing your Azure solution. Learn to monitor, troubleshoot, and analyze sign-in data.
 
 ### Learning objectives
 
 By the end of this module, you're able to:
 
 - Analyze and investigate sign-in logs to troubleshoot access issues.
-- Review and monitor Microsoft Entra audit logs.
-- Enable and integrate Microsoft Entra diagnostic logs with Log Analytics / Microsoft Sentinel.
+- Review and monitor Entra audit logs.
+- Enable and integrate Entra diagnostic logs with Log Analytics / Microsoft Sentinel.
 - Export sign-in and audit logs to a third-party SIEM tool.
-- Review Microsoft Entra activity by using Log Analytics / Microsoft Sentinel, excluding KQL use.
-- Analyze Microsoft Entra workbooks/reporting.
+- Review Entra activity by using Log Analytics / Microsoft Sentinel, excluding KQL use.
+- Analyze Entra workbooks/reporting.
 - Monitor security posture with identity secure score.
 - Configure notifications.
 
@@ -1654,7 +1654,7 @@ None
 
 ## Analyze and investigate sign-in logs to troubleshoot access issues
 
-The reporting architecture in Microsoft Entra ID consists of the following components:
+The reporting architecture in Entra ID consists of the following components:
 
 - **Activity**
   - **Sign-ins** - Information about the usage of managed applications and user sign-in activities.
@@ -1670,9 +1670,9 @@ The reporting architecture in Microsoft Entra ID consists of the following compo
 - Users in the Security Administrator, Security Reader or Administrator, Global Reader, and Report Reader roles
 - Any user (non-admins) can access their own sign-ins
 
-#### What Microsoft Entra license do you need to access sign-in activity?
+#### What Entra license do you need to access sign-in activity?
 
-The sign-in activity report is available in all editions of Microsoft Entra ID and can also be accessed through the Microsoft Graph API.
+The sign-in activity report is available in all editions of Entra ID and can also be accessed through the Microsoft Graph API.
 
 ### Sign-ins report
 
@@ -1682,7 +1682,7 @@ The user sign-ins report provides answers to the following questions:
 - How many users have signed in over a week?
 - What’s the status of these sign-ins?
 
-On the Azure portal menu, select **Microsoft Entra ID**, or search for and select **Microsoft Entra ID** from any page.
+On the Azure portal menu, select **Entra ID**, or search for and select **Entra ID** from any page.
 
 Under **Monitoring**, select **Sign-ins** to open the Sign-ins report.
 
@@ -1707,11 +1707,11 @@ The Columns dialog gives you access to the selectable attributes. In a sign-in r
 
 Select an item in the list view to get more detailed information.
 
-Customers can now troubleshoot Conditional Access policies through all sign-in reports. When an admin selects the Conditional Access tab for a sign-in record, customers can review the Conditional Access status and dive into the details of the policies that applied to the sign-in and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reports-faq).
+Customers can now troubleshoot Conditional Access policies through all sign-in reports. When an admin selects the Conditional Access tab for a sign-in record, customers can review the Conditional Access status. They can also dive into the details of the policies that applied to the sign-in, and the result for each policy. For more information, see the [FAQ about CA information in all sign-ins](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reports-faq).
 
 ### Filter sign-in activities
 
-First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Microsoft Entra ID provides you with a broad range of other filters you can set:
+First, narrow down the reported data to a level that works for you. Second, filter sign-in data using date field as default filter. Entra ID provides you with a broad range of other filters you can set:
 
 **Request ID** - The ID of the request you care about.
 
@@ -1776,13 +1776,13 @@ Select the **Download** option to create a CSV or JSON file of the most recent 2
 
 Important
 
-The number of records you can download is constrained by the [Microsoft Entra ID report retention policies](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+The number of records you can download is constrained by the [Entra ID report retention policies](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ### Sign-ins data shortcuts
 
-Microsoft Entra ID and the Azure portal both provide you with additional entry points to sign-in data:
+Entra ID and the Azure portal both provide you with additional entry points to sign-in data:
 
-- Identity Protection, found in Microsoft Entra ID - Security - Identity Protection
+- Identity Protection, found in Entra ID - Security - Identity Protection
 - Users
 - Groups
 - Enterprise applications
@@ -1812,7 +1812,7 @@ When the admin selects an item, you get more details about the sign-in operation
 - IP address
 - Date
 - MFA Required
-- Sign-in status  Note IP addresses are issued in such a way that there is no definitive connection between an IP address and where the computer with that address is physically located. Mapping IP addresses is complicated by the fact that mobile providers and VPNs issue IP addresses from central pools that are often very far from where the client device is actually used. Currently in Microsoft Entra reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
+- Sign-in status  Note IP addresses are issued in such a way that there is no definitive connection between an IP address and the physical location of the computer using it. Mapping IP addresses is also complicated because mobile providers and VPNs issue IP addresses from central pools, often very far from where the client device is actually used. Currently in Entra reports, converting an IP address to a physical location is a best effort based on traces, registry data, reverse look-ups, and other information.
 
 On the **Users** page, you get a complete overview of all user sign-ins by selecting **Sign-ins** in the **Activity** section.
 
@@ -1836,14 +1836,14 @@ The **Sign-ins** option gives you a complete overview of all sign-in events to y
 
 ### Microsoft 365 activity logs
 
-You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Microsoft 365 activity and Microsoft Entra activity logs share a significant number of the directory resources. Only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs.
+You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Microsoft 365 activity and Entra activity logs share a significant number of the directory resources. Only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs.
 
 You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
 
 
-## Review and monitor Microsoft Entra audit logs
+## Review and monitor Entra audit logs
 
-The Microsoft Entra audit logs provide records of system activities for compliance. To access the audit report, select **Audit logs** in the **Monitoring** section of **Microsoft Entra ID**.
+The Entra audit logs provide records of system activities for compliance. To access the audit report, select **Audit logs** in the **Monitoring** section of **Entra ID**.
 
 An audit log has a default list view that shows the:
 
@@ -1875,7 +1875,7 @@ You can filter the audit data on the following fields:
 The **Service** filter allows you to select from a drop-down list of the following services:
 
 - All
-- Microsoft Entra Management UX
+- Entra Management UX
 - Access Reviews
 - Account Provisioning
 - Application Proxy
@@ -1939,11 +1939,11 @@ The **Date range** filter enables to you to define a timeframe for the returned 
 
 When you select a custom timeframe, you can configure a start time and an end time.
 
-You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Microsoft Entra report retention policies.
+You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Entra report retention policies.
 
 ### Audit logs shortcuts
 
-In addition to **Microsoft Entra ID**, the Azure portal provides you with two other entry points to audit data:
+In addition to **Entra ID**, the Azure portal provides you with two other entry points to audit data:
 
 - Users and groups
 - Enterprise applications
@@ -1961,9 +1961,9 @@ With user and group-based audit reports, you can get answers to questions such a
 - Have the owners of a group been changed?
 - What licenses were assigned to a group or a user?
 
-If you want to review only auditing data that is related to users, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
+To review only auditing data related to users, use the filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
 
-If you want to review only auditing data that is related to groups, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Groups** tab. This entry point has **GroupManagement** as preselected category.
+To review only auditing data related to groups, use the filtered view under **Audit logs** in the **Monitoring** section of the **Groups** tab. This entry point has **GroupManagement** as preselected category.
 
 #### Enterprise applications audit logs
 
@@ -1979,10 +1979,10 @@ If you want to review audit data related to your applications, you can find a fi
 
 ### Microsoft 365 activity logs
 
-You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Microsoft Entra activity logs share numerous directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
+You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Entra activity logs share numerous directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
 
 
-## Exercise connect data from Microsoft Entra ID to Microsoft Sentinel
+## Exercise connect data from Entra ID to Microsoft Sentinel
 
 In this unit we take a look at what is Microsoft Sentinel?
 
@@ -1995,10 +1995,10 @@ A security information and event management (SIEM) aggregates and analyzes activ
 
 ### Prerequisites
 
-- A Microsoft Entra ID P1 or P2 license is required to ingest sign-in logs into Microsoft Sentinel. Any Microsoft Entra ID license (Free/O365/P1/P2) is sufficient to ingest the other log types. Additional per-gigabyte charges might apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.
+- An Entra ID P1 or P2 license is required to ingest sign-in logs into Microsoft Sentinel. Any Entra ID license (Free/O365/P1/P2) is sufficient to ingest the other log types. Additional per-gigabyte charges might apply for Azure Monitor (Log Analytics) and Microsoft Sentinel.
 - Your user must be assigned the Microsoft Sentinel Contributor role on the workspace.
 - Your user must be assigned the Security Administrator role on the tenant you want to stream the logs from.
-- Your user must have read and write permissions to the Microsoft Entra diagnostic settings to be able to see the connection status.
+- Your user must have read and write permissions to the Entra diagnostic settings to be able to see the connection status.
 
 ### Create and add a Microsoft Sentinel workspace
 
@@ -2011,23 +2011,23 @@ Use these instructions if you don't already have a workspace available to Micros
 5. Use the following information to create a new log analytics workspace:    **Setting** **Value**     Subscription Use your current subscription.   Resource group Use an existing resource group or create a new one.   Name Lab-workspace-yourinitialsanddate.    The workspace must be a globally unique value.   Pricing tier Pay-as-you-go
 6. When complete, select your new workspace and then select **Add** to add the workspace to Microsoft Sentinel.
 
-### Connect to Microsoft Entra ID
+### Connect to Entra ID
 
-You can use Microsoft Sentinel's built-in connector to collect data from Microsoft Entra ID and stream it into Microsoft Sentinel. The connector allows you to stream [sign in logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs).
+You can use Microsoft Sentinel's built-in connector to collect data from Entra ID and stream it into Microsoft Sentinel. The connector allows you to stream [sign in logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins) and [audit logs](https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. In Microsoft Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
-2. In the **Data connectors** list, select **Microsoft Entra ID** and then select **Open connector page**.
-3. Under **Configuration**, select the **Microsoft Entra Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
-4. Close the Microsoft Entra ID connector page.
+2. In the **Data connectors** list, select **Entra ID** and then select **Open connector page**.
+3. Under **Configuration**, select the **Entra Sign in logs** and **Audit logs** checkboxes and then select **Apply changes**.
+4. Close the Entra ID connector page.
 
 
 ## Export logs to third-party security information and event management system
 
 Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Microsoft Defender for Cloud, have onboarded to Azure Monitor and are producing relevant security logs.
 
-The integration process has also been simplified with key capabilities like security information and event management (SIEM) tools, such as routing data to a single Azure Event Hubs and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
+Integration with key capabilities like security information and event management (SIEM) tools is also simpler now: you can route data to a single Azure Event Hubs and enable multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
 
-Azure has also partnered with the top SIEM partners to build connectors that get the data from Azure Monitor into those tools. These connectors consume data routed to Azure Event Hubs by Azure Monitor – a simple, scalable, and manageable approach for delivering log data to an external application, and the Microsoft recommended approach for integrating Azure with SIEM tools going forward.
+Azure has also partnered with the top SIEM partners to build connectors that get the data from Azure Monitor into those tools. These connectors consume data routed to Azure Event Hubs by Azure Monitor: a simple, scalable, and manageable approach for delivering log data to an external application. It's also the Microsoft recommended approach for integrating Azure with SIEM tools going forward.
 
 We’ve continued to support customers who are using the Azure Log Integration tool (AzLog) to integrate with these same SIEMs. AzLog was initially released to help customers navigate the complex process of consolidating, translating, and forwarding logs from a variety of Azure services to a SIEM tool. At the time, Azure Monitor didn’t exist, and there was very little standardization in terms of how Azure services exposed log data to customers. Some dumped data into a storage account, others exposed an API, etc.
 
@@ -2045,18 +2045,18 @@ The table below indicates what you should do based on the SIEM tool(s) you're us
 
 Today, Azure Monitor’s SIEM integration capabilities can’t do everything the Azure Log Integration tool could do. Below is our roadmap for addressing known gaps between what you could accomplish with Azure Log Integration and what you can accomplish with Azure Monitor.
 
-**Microsoft Entra logs** – Microsoft Entra logs are the only log type directly integrated with AzLog that aren’t yet available in Azure Monitor.
+**Entra logs** – Entra logs are the only log type directly integrated with AzLog that aren’t yet available in Azure Monitor.
 
 **Integrate Azure VM logs** – AzLog provided the option to integrate your Azure VM guest operating system logs (e.g., Windows Security Events) with select SIEMs. Azure Monitor has agents available for Linux and Windows that are capable of routing OS logs to an Azure Event Hubs, but end-to-end integration with SIEMs is nontrivial.
 
-**End-to-end setup** – AzLog has a script that automates the end-to-end setup of log sources. While Azure Monitor offers the ability to script out creation of diagnostic settings, we’re partnering with the Azure Policy team to deliver seamless enablement via Resource Manager policies that ensure log data is being routed from all sources.
+**End-to-end setup** – AzLog has a script that automates the end-to-end setup of log sources. Azure Monitor already offers the ability to script out creation of diagnostic settings. On top of that, we’re partnering with the Azure Policy team to deliver seamless enablement via Resource Manager policies, which ensure log data is routed from all sources.
 
 **Integration with other SIEM tools** – AzLog provided a generic capability to push standardized Azure logs in JSON format to disk. While other SIEM tools weren’t officially supported by AzLog, this offered a way to easily get log data into tools such as LogRhythm. Our recommendation for customers using AzLog for these tools is to work with the producer of that tool to provide an Azure Monitor Event Hubs integration.
 
-The security of your Azure environment is always top priority on the Azure team, both in terms of how we engineer the Azure platform and in terms of the capabilities we provide for you for securing your own assets on that platform. Moving SIEM integration to Azure Monitor is a step towards enabling you to manageably secure your applications on Azure at scale.
+The security of your Azure environment is always top priority on the Azure team, both in how we engineer the Azure platform and in the capabilities we provide for you to secure your own assets on it. Moving SIEM integration to Azure Monitor is a step towards enabling you to manageably secure your applications on Azure at scale.
 
 
-## Analyze Microsoft Entra workbooks and reporting
+## Analyze Entra workbooks and reporting
 
 With the usage and insights report, you can get an application-centric view of your sign-in data. You can find answers to the following questions:
 
@@ -2068,8 +2068,8 @@ With the usage and insights report, you can get an application-centric view of y
 
 To access the data from the usage and insights report, you need:
 
-- A Microsoft Entra tenant.
-- A Microsoft Entra ID P1 or P2 license.
+- An Entra tenant.
+- An Entra ID P1 or P2 license.
 - A user in the Security Administrator, Security Reader or Report Reader roles.
 
 In addition, any user (non-admins) can access their own sign-ins.
@@ -2077,12 +2077,12 @@ In addition, any user (non-admins) can access their own sign-ins.
 ### Access the usage and insights report
 
 1. Navigate to the Azure portal.
-2. Select the right directory, then select **Microsoft Entra ID** and choose **Enterprise applications**.
+2. Select the right directory, then select **Entra ID** and choose **Enterprise applications**.
 3. From the **Activity** section, select **Usage and insights** to open the report.
 
 ### Use the report
 
-The usage and insights report shows the list of applications with one or more sign-in attempts, and allows you to sort by the number of successful sign-ins, failed sign-ins, and the success rate.
+The usage and insights report lists the applications with one or more sign-in attempts. You can sort it by the number of successful sign-ins, failed sign-ins, and the success rate.
 
 Clicking **load more** at the bottom of the list allows you to view additional applications on the page. You can select the date range to view all applications that have been used within the range.
 
@@ -2114,16 +2114,16 @@ By following the improvement actions, you can:
 
 ### How do I get my secure score?
 
-The identity secure score is available in all editions of Microsoft Entra ID. Organizations can access their identity secure score, with the following steps:
+The identity secure score is available in all editions of Entra ID. Organizations can access their identity secure score, with the following steps:
 
 1. Azure portal.
-2. Microsoft Entra ID.
+2. Entra ID.
 3. Security.
 4. Identity Secure Score.
 
 ### How are controls scored?
 
-Controls can be scored in two ways. Some are scored in a binary fashion - you get 100% of the score if you have the feature or setting configured based on our recommendation. Other scores are calculated as a percentage of the total configuration. For example, if the improvement recommendation states you’ll get a maximum of 10.71% if you protect all your users with MFA and you only have 5 of 100 total users protected, you would be given a partial score around 0.53% (5 protected / 100 total * 10.71% maximum = 0.53% partial score).
+Controls can be scored in two ways. Some are scored in a binary fashion - you get 100% of the score if you have the feature or setting configured based on our recommendation. Other scores are calculated as a percentage of the total configuration. For example, an improvement recommendation might state you’ll get a maximum of 10.71% if you protect all your users with MFA. If only 5 of your 100 total users are protected, you would be given a partial score around 0.53% (5 protected / 100 total * 10.71% maximum = 0.53% partial score).
 
 ### How should I interpret my score?
 
@@ -2144,19 +2144,19 @@ Once you implemented an identity solution in Azure, you have to monitor it. Ther
 Now that you reviewed this module, you're able to:
 
 - Analyze and investigate sign-in logs to troubleshoot access issues.
-- Review and monitor Microsoft Entra audit logs.
-- Enable and integrate Microsoft Entra diagnostic logs with Log Analytics / Microsoft Sentinel.
+- Review and monitor Entra audit logs.
+- Enable and integrate Entra diagnostic logs with Log Analytics / Microsoft Sentinel.
 - Export sign-in and audit logs to a third-party SIEM tool.
-- Review Microsoft Entra activity by using Log Analytics / Microsoft Sentinel, excluding KQL use.
-- Analyze Microsoft Entra workbooks/reporting.
+- Review Entra activity by using Log Analytics / Microsoft Sentinel, excluding KQL use.
+- Analyze Entra workbooks/reporting.
 - Monitor security posture with identity secure score.
 - Configure notifications.
 
-In this module, you learned how to monitor and maintain your Microsoft Entra ID through analyzing logs of all types.
+In this module, you learned how to monitor and maintain your Entra ID through analyzing logs of all types.
 
 To go deeper, have a look at these articles:
 
 - [What is Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/overview)
 - [Microsoft Sentinel data connectors](https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources)
 - [Kusto Query Language in Microsoft Sentinel](https://learn.microsoft.com/en-us/kusto/query)
-- [Identity secure score in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score)
+- [Identity secure score in Entra ID](https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-identity-secure-score)

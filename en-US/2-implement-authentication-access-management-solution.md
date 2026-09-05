@@ -5,17 +5,17 @@
 
 ## Modules
 
-- **Secure Microsoft Entra users with multifactor authentication** (6 units)
+- **Secure Entra users with multifactor authentication** (6 units)
 - **Manage user authentication** (12 units)
 - **Plan, implement, and administer Conditional Access** (13 units)
-- **Manage Microsoft Entra Identity Protection** (11 units)
+- **Manage Entra Identity Protection** (11 units)
 - **Implement access management for Azure resources** (10 units)
-- **Deploy and Configure Microsoft Entra Global Secure Access** (10 units)
+- **Deploy and Configure Entra Global Secure Access** (10 units)
 
 
 ---
 
-# Secure Microsoft Entra users with multifactor authentication
+# Secure Entra users with multifactor authentication
 
 _https://learn.microsoft.com/en-us/training/modules/secure-aad-users-with-mfa/_
 
@@ -30,35 +30,35 @@ You did significant work in hardening your network and ensuring that only the ri
 
 In this module, you:
 
-- Learn about Microsoft Entra multifactor authentication (MFA).
-- Create a plan to deploy Microsoft Entra multifactor authentication.
-- Turn on Microsoft Entra multifactor authentication for users and specific apps.
+- Learn about Entra multifactor authentication (MFA).
+- Create a plan to deploy Entra multifactor authentication.
+- Turn on Entra multifactor authentication for users and specific apps.
 
 ### Prerequisites
 
 - Basic knowledge of the Azure portal
-- Basic knowledge of Microsoft Entra ID
+- Basic knowledge of Entra ID
 
 
-## What is Microsoft Entra multifactor authentication?
+## What is Entra multifactor authentication?
 
-Protecting your cloud assets is one of the main goals for security groups. One of the primary ways unauthorized users get access to systems is by obtaining a valid username and password. Azure can help mitigate this risk with several features of Microsoft Entra ID, including:
+Protecting your cloud assets is one of the main goals for security groups. One of the primary ways unauthorized users get access to systems is by obtaining a valid username and password. Azure can help mitigate this risk with several features of Entra ID, including:
 
 - **Password complexity rules**: These rules force users to generate harder-to-guess passwords.
 - **Password expiration rules**: You can force users to change their passwords on a periodic basis and avoid using previously used passwords.
 - **Self-service password reset (SSPR)**: This approach allows users to self-serve and reset their password if they forget it without involving an IT department.
-- **Microsoft Entra ID Protection**: To help protect your organization's identities, you can configure risk-based policies that automatically respond to risky behaviors. These policies can either automatically block the behaviors or initiate remediation, including requiring password changes.
-- **Microsoft Entra password protection**: You can block commonly used and compromised passwords by using a global banned-password list.
-- **Microsoft Entra smart lockout**: Smart lockout helps to lock out malicious hackers who are trying to guess your user passwords or use brute-force methods to get in. It recognizes sign-ins coming from valid users and treats them differently than the sign-ins of malicious hackers and other unknown sources.
-- **Microsoft Entra application proxy**: You can provision security-enhanced remote access to on-premises web applications.
+- **Entra ID Protection**: To help protect your organization's identities, you can configure risk-based policies that automatically respond to risky behaviors. These policies can either automatically block the behaviors or initiate remediation, including requiring password changes.
+- **Entra password protection**: You can block commonly used and compromised passwords by using a global banned-password list.
+- **Entra smart lockout**: Smart lockout helps to lock out malicious hackers who are trying to guess your user passwords or use brute-force methods to get in. It recognizes sign-ins coming from valid users and treats them differently than the sign-ins of malicious hackers and other unknown sources.
+- **Entra application proxy**: You can provision security-enhanced remote access to on-premises web applications.
 - **Single sign-on (SSO)**: You can enable SSO access to your applications, including thousands of preintegrated SaaS apps.
-- **Microsoft Entra Connect**: Create and manage a single identity for each user across your hybrid enterprise, keeping users, groups, and devices in sync.
+- **Entra Connect**: Create and manage a single identity for each user across your hybrid enterprise, keeping users, groups, and devices in sync.
 
-These approaches are all great options that deter someone *guessing* or brute-forcing a password. However, sometimes passwords are obtained through social engineering or poor physical security practices, like putting your password on a sticky note under your keyboard! In these cases, these features don't stop an intrusion. Instead, security administrators want to turn to *Microsoft Entra multifactor authentication*.
+These approaches are all great options that deter someone *guessing* or brute-forcing a password. However, sometimes passwords are obtained through social engineering or poor physical security practices, like putting your password on a sticky note under your keyboard! In these cases, these features don't stop an intrusion. Instead, security administrators want to turn to *Entra multifactor authentication*.
 
-### What is Microsoft Entra multifactor authentication?
+### What is Entra multifactor authentication?
 
-Microsoft Entra multifactor authentication (MFA) supplies added security for your identities by requiring two or more elements for full authentication.
+Entra multifactor authentication (MFA) supplies added security for your identities by requiring two or more elements for full authentication.
 
 These elements fall into three categories:
 
@@ -68,31 +68,31 @@ These elements fall into three categories:
 
 ![Conceptual art showing the pieces of MFA.](https://learn.microsoft.commedia/2-mfa-example.png)
 
-Using Microsoft Entra multifactor authentication improves identity security by limiting the impact of password exposure. To fully authenticate, a malicious hacker also needs a second factor such as the user's phone, fingerprint, or face. Multifactor authentication should always be enabled because it's the most effective way to prevent unauthorized sign-in.
+Using Entra multifactor authentication improves identity security by limiting the impact of password exposure. To fully authenticate, a malicious hacker also needs a second factor such as the user's phone, fingerprint, or face. Multifactor authentication should always be enabled because it's the most effective way to prevent unauthorized sign-in.
 
-Microsoft Entra multifactor authentication is the Microsoft two-step verification solution. Microsoft Entra multifactor authentication helps safeguard access to data and applications while meeting user demand for a simple sign-in process. It delivers strong authentication for a range of verification methods, including phone call, text message, or mobile app verification.
+Entra multifactor authentication is the Microsoft two-step verification solution. Entra multifactor authentication helps safeguard access to data and applications while meeting user demand for a simple sign-in process. It delivers strong authentication for a range of verification methods, including phone call, text message, or mobile app verification.
 
-The security of Microsoft Entra multifactor authentication lies in its layered approach. Requiring multiple authentication factors presents a significant challenge for malicious hackers. Even if a malicious hacker manages to learn the user's password, it's useless without also possessing the trusted device. If the user loses the device, a person who finds it can't use it without the user's password.
+The security of Entra multifactor authentication lies in its layered approach. Requiring multiple authentication factors presents a significant challenge for malicious hackers. Even if a malicious hacker manages to learn the user's password, it's useless without also possessing the trusted device. If the user loses the device, a person who finds it can't use it without the user's password.
 
 ### How to get multifactor authentication?
 
 Multifactor authentication comes as part of the following offerings:
 
-- **Microsoft Entra ID P1 or P2** or **Microsoft 365 Business**: Both of these offerings support Microsoft Entra multifactor authentication using [security defaults](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multifactor authentication.
-- **Microsoft Entra ID Free** or standalone **Microsoft 365** licenses: Both use [security defaults](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multifactor authentication for your users and administrators.
+- **Entra ID P1 or P2** or **Microsoft 365 Business**: Both of these offerings support Entra multifactor authentication using [security defaults](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) to require multifactor authentication.
+- **Entra ID Free** or standalone **Microsoft 365** licenses: Both use [security defaults](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) that require multifactor authentication for your users and administrators.
 
 
 ## Plan your multifactor authentication deployment
 
-Before you start deploying Microsoft Entra multifactor authentication, there are several things you should decide.
+Before you start deploying Entra multifactor authentication, there are several things you should decide.
 
 First, consider rolling out MFA in waves. Start with a small group of pilot users to evaluate the complexity of your environment and identify any setup issues or unsupported apps or devices. Then, broaden that group over time, and evaluate the results with each pass until your entire company is enrolled.
 
-Next, make sure to create a full communication plan. Microsoft Entra multifactor authentication has several user-interaction requirements, including a registration process. Keep users informed every step of the way. Let them know what they're required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all) to help draft your communications, including posters and email templates.
+Next, make sure to create a full communication plan. Entra multifactor authentication has several user-interaction requirements, including a registration process. Keep users informed every step of the way. Let them know what they're required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all) to help draft your communications, including posters and email templates.
 
-### Microsoft Entra multifactor authentication policies
+### Entra multifactor authentication policies
 
-Microsoft Entra multifactor authentication is enforced with *Conditional Access* policies. Conditional Access policies are `IF-THEN` statements. *IF* a user wants to access a resource, *THEN* they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multifactor authentication to access it. Other common access requests that might require MFA include:
+Entra multifactor authentication is enforced with *Conditional Access* policies. Conditional Access policies are `IF-THEN` statements. *IF* a user wants to access a resource, *THEN* they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multifactor authentication to access it. Other common access requests that might require MFA include:
 
 - IF a specific cloud application is accessed.
 - IF a user is accessing a specific network.
@@ -101,7 +101,7 @@ Microsoft Entra multifactor authentication is enforced with *Conditional Access*
 
 ### Deciding supported authentication methods
 
-When you turn on Microsoft Entra multifactor authentication, you can choose the authentication methods that you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
+When you turn on Entra multifactor authentication, you can choose the authentication methods that you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
 
 | Method | Description |
 |---|---|
@@ -116,32 +116,32 @@ Administrators can enable one or more of these options. Then users can opt in to
 
 ### Selecting an authentication method
 
-Finally, you must decide how users register their selected methods. The easiest approach is to use *Microsoft Entra ID Protection*. If your organization has a license for Identity Protection, you can configure it to prompt users to register for MFA the next time they sign in.
+Finally, you must decide how users register their selected methods. The easiest approach is to use *Entra ID Protection*. If your organization has a license for Identity Protection, you can configure it to prompt users to register for MFA the next time they sign in.
 
-You can also prompt users to register for MFA when they try to use an application or service that requires multifactor authentication. Finally, you can enforce registration using a Conditional Access policy applied to an Azure group containing all users in your organization. This approach requires some manual work to periodically review the group to remove registered users. For some useful scripts to automate some of this process, see [Plan a Microsoft Entra multifactor authentication deployment](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted#enforcing-registration).
+You can also prompt users to register for MFA when they try to use an application or service that requires multifactor authentication. Finally, you can enforce registration using a Conditional Access policy applied to an Azure group containing all users in your organization. This approach requires some manual work to periodically review the group to remove registered users. For some useful scripts to automate some of this process, see [Plan an Entra multifactor authentication deployment](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted#enforcing-registration).
 
 
-## Exercise - Enable Microsoft Entra multifactor authentication
+## Exercise - Enable Entra multifactor authentication
 
-You can walk through the basic steps necessary to configure and enable Microsoft Entra multifactor authentication using Conditional policies. *Keep in mind that a real deployment requires significant thought and planning*. Make sure that you review the documentation links at the end of this module before you enable MFA for your environments.
+You can walk through the basic steps necessary to configure and enable Entra multifactor authentication using Conditional policies. *Keep in mind that a real deployment requires significant thought and planning*. Make sure that you review the documentation links at the end of this module before you enable MFA for your environments.
 
 Important
 
-You need Microsoft Entra ID P1 or P2 for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/trial/get-started-active-directory/) to try this feature out, or just read through the following instructions to understand the flow.
+You need Entra ID P1 or P2 for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/trial/get-started-active-directory/) to try this feature out, or just read through the following instructions to understand the flow.
 
 ### Configure multifactor authentication options
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using an Authentication Administrator account.
-2. Search for **Microsoft Entra ID** and navigate to the Microsoft Entra ID dashboard.
+2. Search for **Entra ID** and navigate to the Entra ID dashboard.
 3. Select **Security** in the left-hand menu.
 4. Under the **Manage** menu, select **Multifactor authentication**. Here, you find options for multifactor authentication.
-5. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.     You can enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Microsoft Entra identity, using a different password specific to that app.
+5. Under **Configure**, select **Additional cloud-based multifactor authentication settings**. On the resulting page, you can see all the MFA options for Azure under **Service Settings**.     You can enable or disable *app passwords* here, which allow users to create unique account passwords for apps that don't support multifactor authentication. This feature lets the user authenticate with their Entra identity, using a different password specific to that app.
 
 ### Set up Conditional Access rules for MFA
 
 Next, examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Azure portal and select **Microsoft Entra ID** > **Security** > **Conditional Access**.
+1. Switch back to the Azure portal and select **Entra ID** > **Security** > **Conditional Access**.
 2. Select **Create new policy** from the top menu.
 3. Name your policy, for example, *All guests*.
 4. Under **Users**, select **0 users and groups selected**.
@@ -176,27 +176,27 @@ Tip
 
 If you followed the previous exercise and turned on MFA for an account and app, you can try accessing that app with the given user account. You should see the preceding flow.
 
-Once they register, each time users sign into a service or app that requires MFA, the Azure sign-in process prompts for the authentication information as shown in the following image:
+Once they register, the Azure sign-in process prompts users for the authentication information every time they sign into a service or app that requires MFA, as shown in the following image:
 
 ### Azure Authentication Methods
 
-As you saw earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR), which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Microsoft Entra multifactor authentication to ease the burden on IT staff.
+As you saw earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR), which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Entra multifactor authentication to ease the burden on IT staff.
 
 The following table lists the authentication methods and the services that can use them.
 
 | Authentication method | Services |
 |---|---|
-| **Password** | Microsoft Entra multifactor authentication and SSPR |
+| **Password** | Entra multifactor authentication and SSPR |
 | **Security questions** | SSPR |
 | **Email address** | SSPR |
-| **Windows Hello for Business** | Microsoft Entra multifactor authentication and SSPR |
-| **FIDO2 Security Key** | Microsoft Entra multifactor authentication and SSPR |
-| **Microsoft Authenticator app** | Microsoft Entra multifactor authentication and SSPR |
-| **OATH hardware token** | Microsoft Entra multifactor authentication and SSPR |
-| **OATH software token** | Microsoft Entra multifactor authentication and SSPR |
-| **Text message** | Microsoft Entra multifactor authentication and SSPR |
-| **Voice call** | Microsoft Entra multifactor authentication and SSPR |
-| **App passwords** | Microsoft Entra multifactor authentication in certain cases |
+| **Windows Hello for Business** | Entra multifactor authentication and SSPR |
+| **FIDO2 Security Key** | Entra multifactor authentication and SSPR |
+| **Microsoft Authenticator app** | Entra multifactor authentication and SSPR |
+| **OATH hardware token** | Entra multifactor authentication and SSPR |
+| **OATH software token** | Entra multifactor authentication and SSPR |
+| **Text message** | Entra multifactor authentication and SSPR |
+| **Voice call** | Entra multifactor authentication and SSPR |
+| **App passwords** | Entra multifactor authentication in certain cases |
 
 #### Password
 
@@ -212,7 +212,7 @@ This method is available only for non-administrative accounts that use Self-Serv
 
 #### Email address
 
-This method is available only in SSPR. We recommend that you avoid the use of an email account that doesn't require the users Microsoft Entra password to access it.
+This method is available only in SSPR. We recommend that you avoid the use of an email account that doesn't require the users Entra password to access it.
 
 #### Windows Hello for Business
 
@@ -224,7 +224,7 @@ FIDO2 security keys are an unphishable, standards-based, and passwordless authen
 
 Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices but could also use Bluetooth or NFC.
 
-FIDO2 security keys can be used to sign in to their Microsoft Entra ID or Microsoft Entra hybrid joined Windows 10 devices. They can get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
+FIDO2 security keys can be used to sign in to their Entra ID or Entra hybrid joined Windows 10 devices. They can get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers.
 
 #### Microsoft Authenticator app
 
@@ -235,11 +235,11 @@ This method is available for Android and iOS. Users can [register their mobile a
 
 #### OATH hardware tokens
 
-**OATH** is an open standard that specifies how to generate one-time password codes. Microsoft Entra ID supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Secret keys are limited to 128 characters, which might not be compatible with all tokens.
+**OATH** is an open standard that specifies how to generate one-time password codes. Entra ID supports the use of OATH-TOTP `SHA-1` tokens of the 30-second or 60-second variety. Customers can get these tokens from the vendor of their choice. Secret keys are limited to 128 characters, which might not be compatible with all tokens.
 
 #### OATH software tokens
 
-Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
+Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
 
 #### Text message
 
@@ -247,15 +247,15 @@ Azure sends a verification code to a mobile phone using SMS. The user must enter
 
 #### Voice call
 
-Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. This option isn't available to the free/trial Microsoft Entra tier.
+Azure uses an automated voice system to call the number and the owner uses the keypad to confirm the authentication. This option isn't available to the free/trial Entra tier.
 
 #### App password
 
-Certain non-browser apps don't support Microsoft Entra multifactor authentication. If users are enabled for Microsoft Entra multifactor authentication and try to use nonbrowser apps, they're unable to authenticate. The app password allows users to continue to authenticate.
+Certain non-browser apps don't support Entra multifactor authentication. If users are enabled for Entra multifactor authentication and try to use nonbrowser apps, they're unable to authenticate. The app password allows users to continue to authenticate.
 
 ### Monitoring adoption
 
-Microsoft Entra ID includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
+Entra ID includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
 
 In addition to the overall registration numbers, you can also see the success and failure of registrations per authentication method. This fact allows you to understand which authentication methods your users most commonly registered and which ones are easy for them to register. This data is calculated using the last 30 days of audit logs from the combined security info registration and SSPR registration experiences.
 
@@ -268,14 +268,14 @@ You can also learn more about SSPR usage in your organization through the **Usag
 
 ## Summary
 
-Using Microsoft Entra multifactor authentication, you can ensure that when users sign in to access your confidential systems and data, they are who they say they are. Microsoft Entra ID allows you to create policies to ensure that specific apps are protected, while allowing more public systems to remain easier to get to. In addition, you can use other services such as Microsoft Entra ID Protection and Azure Smart Lockout to fully protect your identity surface area.
+Using Entra multifactor authentication, you can ensure that when users sign in to access your confidential systems and data, they are who they say they are. Entra ID allows you to create policies to ensure that specific apps are protected, while allowing more public systems to remain easier to get to. In addition, you can use other services such as Entra ID Protection and Azure Smart Lockout to fully protect your identity surface area.
 
 ### Further reading
 
 To learn more about some of the topics examined in this module, check out the following links to documentation.
 
-- [What is Microsoft Entra ID Protection?](https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection)
-- [Plan a Microsoft Entra multifactor authentication deployment](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
+- [What is Entra ID Protection?](https://learn.microsoft.com/en-us/entra/id-protection/overview-identity-protection)
+- [Plan an Entra multifactor authentication deployment](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
 - [Reset your work or school password using security info](https://support.microsoft.com/account-billing/reset-your-work-or-school-password-using-security-info-23dde81f-08bb-4776-ba72-e6b72b9dda9e)
 
 
@@ -288,7 +288,7 @@ _https://learn.microsoft.com/en-us/training/modules/manage-user-authentication/_
 
 ## Introduction
 
-One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. In Microsoft Entra ID, authentication involves more than just verifying a username and password. To improve security and reduce the need for help desk assistance, Microsoft Entra authentication includes the following components:
+One of the main features of an identity platform is to verify, or authenticate, credentials when a user signs in to a device, application, or service. In Entra ID, authentication involves more than just verifying a username and password. To improve security and reduce the need for help desk assistance, Entra authentication includes the following components:
 
 - Self-service password reset
 - Multifactor authentication
@@ -297,7 +297,7 @@ One of the main features of an identity platform is to verify, or authenticate, 
 - Passwordless authentication
 - Authentication to virtual machines
 
-This module examines these components and explains how to plan, implement, and manage user authentication in Microsoft Entra ID.
+This module examines these components and explains how to plan, implement, and manage user authentication in Entra ID.
 
 ### Learning objectives
 
@@ -308,12 +308,12 @@ In this module, you will:
 - Configure and deploy self-service password reset.
 - Deploy and manage password protection and smart lockouts.
 - Implement Kerberos and certificate-based authentication.
-- Configure Microsoft Entra user authentication to virtual machines.
+- Configure Entra user authentication to virtual machines.
 
 
 ## Administer FIDO2 and passwordless authentication methods
 
-As part of the sign-in experience for accounts in Microsoft Entra ID, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Microsoft Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
+As part of the sign-in experience for accounts in Entra ID, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
@@ -325,7 +325,7 @@ Simplify the user on-boarding experience by registering for both MFA and self-se
 
 When you deploy features like multifactor authentication in your organization, review the available authentication methods. Choose the methods that meet or exceed your requirements in terms of security, usability, and availability. Where possible, use authentication methods with the highest level of security.
 
-The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
+The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Entra ID:
 
 ![Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/authentication-method-strength-security.png)
 
@@ -365,7 +365,7 @@ All of these authentication methods can be configured in the Azure portal and in
 
 Note
 
-In Microsoft Entra ID, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using multifactor authentication.
+In Entra ID, a password is often one of the primary authentication methods. You can't disable the password authentication method. If you use a password as the primary authentication factor, increase the security of sign-in events using multifactor authentication.
 
 The following verification methods can be used in certain scenarios:
 
@@ -375,15 +375,15 @@ The following verification methods can be used in certain scenarios:
 
 ### What is FIDO2
 
-The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can be used to sign into their Microsoft Entra ID or hybrid Microsoft Entra joined Windows 10 or 11 devices and get single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can sign users into their Entra ID or hybrid Entra joined Windows 10 or 11 devices, then give them single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for very security sensitive enterprises, and for scenarios or employees where a phone can't or won't be used as a second factor.
 
 - FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
 - Fast Identity Online (FIDO) is an open specification for passwordless authentication
-- FIDO allows users and organizations to leverage the specification to sign into their resources without a username or password using an external security key or a platform key built into a device
+- FIDO lets users and organizations use the specification to sign into their resources without a username or password, with an external security key or a platform key built into a device
 
 ### Enable FIDO2 security key method
 
-1. Sign into the Microsoft Entra admin center.
+1. Sign into the Entra admin center.
 2. Browse to **Protection** - **Authentication methods** - **Authentication method policy**.
 3. Under the method **FIDO2 Security Key**, choose the following options:
   - **Enable** - Yes or No
@@ -402,28 +402,28 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 7. Choose **USB device** or **NFC device**.
 8. Have your key ready and choose **Next**.
 9. A box will appear and ask the user to create/enter a PIN for your security key and then perform the required gesture for the key, either biometric or touch.
-10. The user will be returned to the combined registration experience and asked to provide a meaningful name for the key so the user can identify which one if they have multiple. Select **Next**.
+10. The user returns to the combined registration experience and is asked to give the key a meaningful name, so they can tell it apart if they have several. Select **Next**.
 11. Select **Done** to complete the process.
 
 #### Sign in with passwordless credential
 
-In the example below a user has already provisioned their FIDO2 security key. The user can choose to sign in on the web with their FIDO2 security key inside of a supported browser on Windows 10 version 1903 or higher or Windows 11.
+In the example below a user has already provisioned their FIDO2 security key. The user can also sign in on the web with their FIDO2 security key, inside a supported browser on Windows 10 version 1903 or higher, or Windows 11.
 
 ### Prerequisites for cloud-only deployment
 
 - Windows 10, version 1511 or later or Windows 11
 - Microsoft Azure account
-- Microsoft Entra ID
+- Entra ID
 - Multifactor authentication
 - Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
-- Microsoft Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
+- Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Entra ID
 
 
 ## Explore Authenticator app and OATH tokens
 
-The Microsoft Entra Authenticator app provides an additional level of security to your Microsoft Entra ID work or school account or your Microsoft account and is available for Android and iOS. With the Microsoft Authenticator app, users can authenticate in a passwordless way during sign-in, or as an additional verification option during self-service password reset (SSPR) or multifactor authentication events.
+The Entra Authenticator app provides an additional level of security to your Entra ID work or school account or your Microsoft account and is available for Android and iOS. With the Microsoft Authenticator app, users can authenticate in a passwordless way during sign-in, or as an additional verification option during self-service password reset (SSPR) or multifactor authentication events.
 
-Users might receive a notification through the mobile app for them to approve or deny, or use the Authenticator app to generate an OATH verification code that can be entered in a sign-in interface. If you enable both a notification and verification code, users who register the Authenticator app can use either method to verify their identity.
+Users might receive a notification through the mobile app to approve or deny. They can also use the Authenticator app to generate an OATH verification code and enter it in a sign-in interface. If you enable both a notification and verification code, users who register the Authenticator app can use either method to verify their identity.
 
 ### Microsoft Authenticator app
 
@@ -433,14 +433,14 @@ The Authenticator app can be used as a software token to generate an OATH verifi
 
 ### Open Authentication (OATH) tokens
 
-OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. Microsoft Entra ID doesn't support OATH HOTP, a different code generation standard. Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Microsoft Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
+OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. Entra ID doesn't support OATH HOTP, a different code generation standard. Software OATH tokens are typically applications such as the Microsoft Authenticator app and other authenticator apps. Entra ID generates the secret key, or seed, that's input into the app and used to generate each OTP.
 
 The Authenticator app automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. Third-party applications that use OATH TOTP to generate codes can also be used.
 
 
 ## Implement an authentication solution based on Windows Hello for Business
 
-In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. Windows Hello for Business lets user authenticate to an Active Directory or Microsoft Entra account.
+In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN. Windows Hello for Business lets user authenticate to an Active Directory or Entra account.
 
 Windows Hello addresses the following problems with passwords:
 
@@ -454,12 +454,12 @@ Windows Hello addresses the following problems with passwords:
 ### How Windows Hello for Business works: key points
 
 - Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
-- Identity provider (such as Active Directory, Microsoft Entra ID, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
+- During the registration step, the identity provider (such as Active Directory, Entra ID, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account.
 - Keys can be generated in hardware (TPM (Trusted Platform Module) 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
 - Two-factor authentication is the combination of a key or certificate tied to a device. Then something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture doesn't roam between devices and isn't shared with the server. Biometrics templates are stored locally on a device. The PIN is never stored or shared.
 - The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
 - PIN entry and biometric gesture both trigger Windows 10 to use the private key to cryptographically sign data that is sent to the identity provider. The identity provider verifies the user's identity and authenticates the user.
-- Personal (Microsoft account) and corporate (Active Directory or Microsoft Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+- Personal (Microsoft account) and corporate (Active Directory or Entra ID) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
 - Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
 ### Creating security groups
@@ -468,11 +468,11 @@ Windows Hello for Business uses several security groups to simplify the deployme
 
 Important
 
-If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the Create the KeyCredentials Admins Security Group. Domains that include Windows Server 2016 domain controllers use the KeyAdmins group, which is created during the installation of the first Windows Server 2016 domain controller.
+Skip the Create the KeyCredentials Admins Security Group if your environment has one or more Windows Server 2016 domain controllers in the domain where you deploy Windows Hello for Business. Domains that include Windows Server 2016 domain controllers use the KeyAdmins group, which is created during the installation of the first Windows Server 2016 domain controller.
 
 #### Create the KeyCredential Admins security group
 
-Microsoft Entra Connect synchronizes the public key on the user object created during provisioning. You assign write and read permission to this group to the Active Directory attribute. This will ensure the Microsoft Entra Connect service can add and remove keys as part of its normal workflow.
+Entra Connect synchronizes the public key on the user object created during provisioning. You assign write and read permission to this group to the Active Directory attribute. This will ensure the Entra Connect service can add and remove keys as part of its normal workflow.
 
 1. Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 2. Open **Active Directory Users and Computers**.
@@ -510,7 +510,7 @@ The Pluton design removes the potential for that communication channel to be att
 
 ## Exercise configure and deploy self-service password reset
 
-Microsoft Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or helpdesk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or helpdesk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ### Benefits of self-service password reset
 
@@ -521,24 +521,24 @@ There are many benefits for the user and the organization to enabling self-servi
 
 Licensing requirements:
 
-- Cloud based accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID Premium P1 or P2 license or a Microsoft 365 Business Standard license is required.
-- On-premises accounts - A user has to be enrolled into self-service password reset, and that a Microsoft Entra ID Premium P1 or P2 license or a Microsoft 365 Business Premium license.
+- Cloud based accounts - The user has to be enrolled into self-service password reset, and an Entra ID Premium P1 or P2 license, or a Microsoft 365 Business Standard license, is required.
+- On-premises accounts - The user has to be enrolled into self-service password reset, and an Entra ID Premium P1 or P2 license, or a Microsoft 365 Business Premium license, is required.
 
 ### Enable self-service password reset
 
 Basic steps to enable self-service password reset:
 
 1. Sign in to the Azure portal using an account with global administrator permissions.
-2. Search for and select Microsoft Entra ID, then select Password reset from the menu on the left side.
+2. Search for and select Entra ID, then select Password reset from the menu on the left side.
 3. From the Properties page, under the option Self-service password reset, select Select group
-4. Browse for and select your Microsoft Entra group, like SSPR-Test-Group, then choose Select.
+4. Browse for and select your Entra group, like SSPR-Test-Group, then choose Select.
 5. To enable SSPR for the chosen group, select Save.
 
 ### Add a new user
 
 Create a user account that will be added to a security group.
 
-1. In the Microsoft Entra organization you created, under **Manage**, select **Users** then select **New User**.
+1. In the Entra organization you created, under **Manage**, select **Users** then select **New User**.
 2. The User pane now appears. Enter the following values:
   - User name: MonicaT
   - Name: Monica Thompson
@@ -550,7 +550,7 @@ Create a user account that will be added to a security group.
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the Identity menu, select **Groups**, then select **+ New Group**.
 4. Create a new group using the following information:    **Setting** **Value**     Group type Security   Group name SSPRTesters   Group description Testers of SSPR rollout   Membership type Assigned   Members Monica Thompson
@@ -560,7 +560,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1. Browse back to the Microsoft Entra admin center screen.
+1. Browse back to the Entra admin center screen.
 2. Under **Protection**, select **Password reset**.  Important If the Password reset page still displays the message Get a free Premium trial to use this feature, wait for a few minutes and then refresh the page.
 3. On the Password reset dialog **Properties** page, under **Self-service password reset enabled**, select **Selected**.
 4. Select **Select group**.
@@ -602,9 +602,9 @@ Now let's test whether the user can reset their password.
 
 ## Deploy and manage password protection
 
-Users often create passwords that use common local words such as a school, sports team, or famous person. These passwords are easy to guess and weak against dictionary-based attacks. To enforce strong passwords in your organization, Microsoft Entra Password Protection provides a global and custom banned password list. A password change request fails if there's a match in these banned passwords list.
+Users often create passwords that use common local words such as a school, sports team, or famous person. These passwords are easy to guess and weak against dictionary-based attacks. To enforce strong passwords in your organization, Entra Password Protection provides a global and custom banned password list. A password change request fails if there's a match in these banned passwords list.
 
-Microsoft Entra Password Protection is designed with the following principles in mind:
+Entra Password Protection is designed with the following principles in mind:
 
 - Domain controllers (DCs) never have to communicate directly with the internet.
 - No new network ports are opened on DCs.
@@ -612,44 +612,44 @@ Microsoft Entra Password Protection is designed with the following principles in
 - No minimum AD DS domain or forest functional level (DFL/FFL) is required.
 - The software doesn't create or require accounts in the AD DS domains that it protects.
 - User clear-text passwords never leave the DC, either during password validation operations or at any other time.
-- The software isn't dependent on other Microsoft Entra features. For example, Microsoft Entra password hash sync (PHS) isn't related or required for Microsoft Entra Password Protection.
+- The software isn't dependent on other Entra features. For example, Entra password hash sync (PHS) isn't related or required for Entra Password Protection.
 - Incremental deployment is supported, however the password policy is only enforced where the Domain Controller Agent (DC Agent) is installed.
 
-### Create an Azure account and add Microsoft Entra ID Premium P2 trial licenses
+### Create an Azure account and add Entra ID Premium P2 trial licenses
 
-The tasks in this exercise and the exercises in this learning path require you to already have and Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
+This exercise, and the others in this learning path, need an Azure subscription. Use one you already have, or sign up for an Azure trial account. If you already have your own Azure subscription, you might skip this task and continue to the next.
 
 1. In a web browser, go to the [Azure portal](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
 2. Scroll down through the page to learn more about the benefits and free services available.
 3. Select **Start free**.
 4. Use the wizard to sign up for your Azure trial subscription.
-5. You'll need to a Microsoft Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Microsoft Entra ID**.
+5. You'll need to an Entra P2 license to complete some of the exercises. In the organization you created, search for and then select **Entra ID**.
 6. In the left navigation menu, select **Getting started**.
-7. Under Getting started with Microsoft Entra, select **Get a free trial for Microsoft Entra Premium**.
-8. In the Activate pane, under **Microsoft Entra Premium P2**, select **Free trial** and then select **Activate**.
+7. Under Getting started with Entra, select **Get a free trial for Entra Premium**.
+8. In the Activate pane, under **Entra Premium P2**, select **Free trial** and then select **Activate**.
 9. In the navigation menu on the left, select **Overview**.
-10. Refresh the browser until you see Microsoft Entra Premium P2 under the organization name. It might take a couple of minutes.
+10. Refresh the browser until you see Entra Premium P2 under the organization name. It might take a couple of minutes.
 11. You might need to sign out and sign back into Microsoft Azure if you encounter any problems with expected features not being available.
 
-### How Microsoft Entra Password Protection works
+### How Entra Password Protection works
 
-The on-premises Microsoft Entra Password Protection components work as follows:
+The on-premises Entra Password Protection components work as follows:
 
-1. Each Microsoft Entra Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
-2. Each DC Agent service for Microsoft Entra Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
-3. The DC Agent service is responsible for initiating the download of a new password policy from Microsoft Entra. The first step is to locate a Microsoft Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
-4. When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Microsoft Entra, and then returns the response to the DC Agent service.
-5. After the DC Agent service receives a new password policy from Microsoft Entra, the service stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
-6. The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Microsoft Entra via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
+1. Each Entra Password Protection proxy-service-instance advertises itself to the DCs in the forest by creating a *serviceConnectionPoint* object in Active Directory.
+2. Each DC Agent service for Entra Password Protection also creates a *serviceConnectionPoint* object in Active Directory. This object is used primarily for reporting and diagnostics.
+3. The DC Agent service is responsible for initiating the download of a new password policy from Entra. The first step is to locate an Entra Password Protection proxy-service by querying the forest for proxy *serviceConnectionPoint* objects.
+4. When an available proxy service is found, the DC Agent sends a password policy download request to the proxy service. The proxy service in turn sends the request to Entra, and then returns the response to the DC Agent service.
+5. After the DC Agent service receives a new password policy from Entra, it stores the policy in a dedicated folder at the root of its domain *sysvol* folder share. The DC Agent service also monitors this folder in case newer policies replicate in from other DC Agent services in the domain.
+6. The DC Agent service always requests a new policy at service startup. After the DC Agent service is started, it checks the age of the current locally available policy hourly. If the policy is older than one hour, the DC Agent requests a new policy from Entra via the proxy service, as described previously. If the current policy isn't older than one hour, the DC Agent continues to use that policy.
 7. When password change events are received by a DC, the cached policy is used to determine if the new password is accepted or rejected.
 
-To protect your on-premises Active Directory Domain Services (AD DS) environment, you can install and configure Microsoft Entra Password Protection to work with your on-premises DC. This unit shows you how to install and register the Microsoft Entra Password Protection proxy-service and Microsoft Entra Password Protection DC agent in your on-premises environment.
+To protect your on-premises Active Directory Domain Services (AD DS) environment, you can install and configure Entra Password Protection to work with your on-premises DC. This unit shows you how to install and register the Entra Password Protection proxy-service and Entra Password Protection DC agent in your on-premises environment.
 
 ### Deployment strategy
 
-The following diagram shows how the basic components of Microsoft Entra Password Protection work together in an on-premises Active Directory environment:
+The following diagram shows how the basic components of Entra Password Protection work together in an on-premises Active Directory environment:
 
-![Diagram of How Microsoft Entra Password Protection components work together.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/azure-active-directory-password-protection.png)
+![Diagram of How Entra Password Protection components work together.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/azure-active-directory-password-protection.png)
 
 We recommend that you start deployments in *audit* mode. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log. After you deploy the proxy-servers and DC agents in audit mode, monitor the change the password policy will have on users when the policy is enforced.
 
@@ -659,96 +659,96 @@ During the audit stage, many organizations find that the following situations ap
 - Users often use unsecure passwords.
 - They need to inform users about the upcoming change in security enforcement, and how to choose more secure passwords.
 
-It's also possible for stronger password validation to affect your existing Active Directory domain controller deployment automation. We recommend that at least one DC promotion and one DC demotion happen during the audit period evaluation to help uncover issues such as weak passwords preventing promotion and demotion.
+It's also possible for stronger password validation to affect your existing Active Directory domain controller deployment automation. We recommend at least one DC promotion and one DC demotion during the audit period evaluation. They help uncover issues such as weak passwords preventing promotion and demotion.
 
 After the feature has been running in audit mode for a reasonable period, you can switch the configuration from *Audit* to *Enforce* to require more secure passwords. Additional monitoring during this time is a good idea.
 
 Important
 
-Microsoft Entra Password Protection can only validate passwords during password change or set operations. Passwords that were accepted and stored in Active Directory prior to the deployment of Microsoft Entra Password Protection will never be validated and will continue working as is. Over time, all users and accounts will eventually start using Microsoft Entra Password Protection-validated passwords as their existing passwords expire. Accounts configured with "password never expires" are exempt from this.
+Entra Password Protection can only validate passwords during password change or set operations. Passwords that were accepted and stored in Active Directory prior to the deployment of Entra Password Protection will never be validated and will continue working as is. Over time, all users and accounts will eventually start using Entra Password Protection-validated passwords as their existing passwords expire. Accounts configured with "password never expires" are exempt from this.
 
 #### Multiple forest considerations
 
-There are no additional requirements to deploy Microsoft Entra Password Protection across multiple forests.
+There are no additional requirements to deploy Entra Password Protection across multiple forests.
 
-Each forest is independently configured. Each Microsoft Entra Password Protection proxy can only support domain controllers from the forest that it's joined to.
+Each forest is independently configured. Each Entra Password Protection proxy can only support domain controllers from the forest that it's joined to.
 
-The Microsoft Entra Password Protection software in any forest is unaware of password protection software that's deployed in other forests, regardless of Active Directory trust configurations.
+The Entra Password Protection software in any forest is unaware of password protection software that's deployed in other forests, regardless of Active Directory trust configurations.
 
 #### Read-only domain controller considerations
 
-Password change or set events aren't processed and persisted on read-only domain controllers (RODCs). Instead, they're forwarded to writable domain controllers. You don't have to install the Microsoft Entra Password Protection DC agent software on RODCs.
+Password change or set events aren't processed and persisted on read-only domain controllers (RODCs). Instead, they're forwarded to writable domain controllers. You don't have to install the Entra Password Protection DC agent software on RODCs.
 
-Further, it's not supported to run the Microsoft Entra Password Protection proxy-service on a read-only domain controller.
+Further, it's not supported to run the Entra Password Protection proxy-service on a read-only domain controller.
 
 #### High availability considerations
 
-The main concern for password protection is the availability of Microsoft Entra Password Protection proxy servers when the DCs in a forest try to download new policies or other data from Azure. Each Microsoft Entra Password Protection DC agent uses a simple round-robin-style algorithm when deciding which proxy server to call. The agent skips proxy servers that aren't responding.
+The main concern for password protection is whether the Entra Password Protection proxy servers are available when the DCs in a forest try to download new policies or other data from Azure. Each Entra Password Protection DC agent uses a simple round-robin-style algorithm when deciding which proxy server to call. The agent skips proxy servers that aren't responding.
 
-For most fully connected Active Directory deployments that have healthy replication of both directory and sysvol folder state, two Microsoft Entra Password Protection proxy servers is enough to ensure availability. This configuration results in timely download of new policies and other data. You can deploy additional Microsoft Entra Password Protection proxy servers if desired.
+For most fully connected Active Directory deployments that have healthy replication of both directory and sysvol folder state, two Entra Password Protection proxy servers is enough to ensure availability. This configuration results in timely download of new policies and other data. You can deploy additional Entra Password Protection proxy servers if desired.
 
-The design of the Microsoft Entra Password Protection DC agent software mitigates the usual problems that are associated with high availability. The Microsoft Entra Password Protection DC agent maintains a local cache of the most recently downloaded password policy. Even if all registered proxy servers become unavailable, the Microsoft Entra Password Protection DC agents continue to enforce their cached password policy.
+The design of the Entra Password Protection DC agent software mitigates the usual problems that are associated with high availability. The Entra Password Protection DC agent maintains a local cache of the most recently downloaded password policy. Even if all registered proxy servers become unavailable, the Entra Password Protection DC agents continue to enforce their cached password policy.
 
-A reasonable update frequency for password policies in a large deployment is usually days, not hours or less. So, brief outages of the proxy servers don't cause problems for Microsoft Entra Password Protection.
+A reasonable update frequency for password policies in a large deployment is usually days, not hours or less. So, brief outages of the proxy servers don't cause problems for Entra Password Protection.
 
 ### Deployment requirements
 
 Licensing requirements for AD Password Protection are as follows:
 
-| **Users** | **Microsoft Entra Password Protection with global banned password list** | **Microsoft Entra Password Protection with custom banned password list** |
+| **Users** | **Entra Password Protection with global banned password list** | **Entra Password Protection with custom banned password list** |
 |---|---|---|
-| Cloud-only users | Microsoft Entra Free | Microsoft Entra Premium P1 or P2 |
-| Users synchronized from on-premises AD DS | Microsoft Entra Premium P1 or P2 | Microsoft Entra Premium P1 or P2 |
+| Cloud-only users | Entra Free | Entra Premium P1 or P2 |
+| Users synchronized from on-premises AD DS | Entra Premium P1 or P2 | Entra Premium P1 or P2 |
 
 The following core requirements apply:
 
-- You need an account that has Active Directory domain administrator privileges in the forest root domain to register the Windows Server Active Directory forest with Microsoft Entra.
+- You need an account that has Active Directory domain administrator privileges in the forest root domain to register the Windows Server Active Directory forest with Entra.
 - The Key Distribution Service must be enabled on all domain controllers in the domain that run Windows Server 2012. By default, this service is enabled via manual trigger start.
-- Network connectivity must exist between at least one domain controller in each domain and at least one server that hosts the proxy service for Microsoft Entra Password Protection. This connectivity must allow the domain controller to access RPC endpoint mapper port 135 and the RPC server port on the proxy service.
+- Network connectivity must exist between at least one domain controller in each domain and at least one server that hosts the proxy service for Entra Password Protection. This connectivity must allow the domain controller to access RPC endpoint mapper port 135 and the RPC server port on the proxy service.
   - By default, the RPC server port is a dynamic RPC port, but it can be configured to use a static port.
 
-- All machines where the Microsoft Entra Password Protection proxy-service will be installed must have network access to the following endpoints:
+- All machines where the Entra Password Protection proxy-service will be installed must have network access to the following endpoints:
 
 | **Endpoint** | **Purpose** |
 |---|---|
 | `https://login.microsoftonline.com` | Authentication requests |
-| `https://enterpriseregistration.windows.net` | Microsoft Entra Password Protection functionality |
+| `https://enterpriseregistration.windows.net` | Entra Password Protection functionality |
 
-#### Microsoft Entra Password Protection DC agent
+#### Entra Password Protection DC agent
 
-The following requirements apply to the Microsoft Entra Password Protection DC agent:
+The following requirements apply to the Entra Password Protection DC agent:
 
-- All machines where the Microsoft Entra Password Protection DC agent software will be installed must run Windows Server 2012 R2 or later.
+- All machines where the Entra Password Protection DC agent software will be installed must run Windows Server 2012 R2 or later.
   - The Active Directory domain or forest doesn't need to be at Windows Server 2012 R2 domain functional level (DFL) or forest functional level (FFL). There's no minimum DFL or FFL required for either the DC agent or proxy software to run.
 
-- All machines that run the Microsoft Entra Password Protection DC agent must have .NET 4.7.2 installed.
-- Any Active Directory domain that runs the Microsoft Entra Password Protection DC agent service must use Distributed File System Replication (DFSR) for sysvol replication.
+- All machines that run the Entra Password Protection DC agent must have .NET 4.7.2 installed.
+- Any Active Directory domain that runs the Entra Password Protection DC agent service must use Distributed File System Replication (DFSR) for sysvol replication.
 
-#### Microsoft Entra Password Protection proxy service
+#### Entra Password Protection proxy service
 
-The following requirements apply to the Microsoft Entra Password Protection proxy-service:
+The following requirements apply to the Entra Password Protection proxy-service:
 
-- All machines where the Microsoft Entra Password Protection proxy-service will be installed must run Windows Server 2012 R2 or later.  Note The Microsoft Entra Password Protection proxy-service deployment is a mandatory requirement for deploying Microsoft Entra Password Protection even though the domain controller may have outbound direct internet connectivity.
-- All machines where the Microsoft Entra Password Protection proxy-service will be installed must have .NET 4.7.2 installed.
-- All machines that host the Microsoft Entra Password Protection proxy-service must be configured to grant domain controllers the ability to sign into the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
-- All machines that host the Microsoft Entra Password Protection proxy-service must be configured to allow outbound TLS 1.2 HTTP traffic.
-- A *Global Administrator* account is required to register the Microsoft Entra Password Protection proxy-service for the first time in a given tenant. Subsequent proxy and forest registrations can use an account with at least the *Security Administrator* role.
-- Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.  Warning Microsoft Entra Password Protection proxy and Microsoft Entra Application Proxy install different versions of the Microsoft Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Doing so will prevent the Agent Updater service from contacting Azure for software updates, so you should never install Microsoft Entra Password Protection Proxy and Application Proxy on the same machine.
+- All machines where the Entra Password Protection proxy-service will be installed must run Windows Server 2012 R2 or later.  Note The Entra Password Protection proxy-service deployment is a mandatory requirement for deploying Entra Password Protection even though the domain controller may have outbound direct internet connectivity.
+- All machines where the Entra Password Protection proxy-service will be installed must have .NET 4.7.2 installed.
+- All machines that host the Entra Password Protection proxy-service must be configured to grant domain controllers the ability to sign into the proxy service. This ability is controlled via the "Access this computer from the network" privilege assignment.
+- All machines that host the Entra Password Protection proxy-service must be configured to allow outbound TLS 1.2 HTTP traffic.
+- A *Global Administrator* account is required to register the Entra Password Protection proxy-service for the first time in a given tenant. Subsequent proxy and forest registrations can use an account with at least the *Security Administrator* role.
+- Network access must be enabled for the set of ports and URLs specified in the Application Proxy environment setup procedures.  Warning Entra Password Protection proxy and Entra Application Proxy install different versions of the Entra Connect Agent Updater service, which is why the instructions refer to Application Proxy content. These different versions are incompatible when installed side by side. Never install Entra Password Protection Proxy and Application Proxy on the same machine: doing so prevents the Agent Updater service from contacting Azure for software updates.
 
 ### Download required software
 
-Two installers are required for an on-premises Microsoft Entra Password Protection deployment:
+Two installers are required for an on-premises Entra Password Protection deployment:
 
-- Microsoft Entra Password Protection DC agent (*AzureADPasswordProtectionDCAgentSetup.msi*)
-- Microsoft Entra Password Protection proxy (*AzureADPasswordProtectionProxySetup.exe*)
+- Entra Password Protection DC agent (*AzureADPasswordProtectionDCAgentSetup.msi*)
+- Entra Password Protection proxy (*AzureADPasswordProtectionProxySetup.exe*)
 
 ### Install and configure the proxy service
 
-The Microsoft Entra Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Microsoft Entra Password Protection proxy-service communicates with Microsoft Entra to maintain a copy of the global and customer banned password lists for your Microsoft Entra tenant.
+The Entra Password Protection proxy-service is typically on a member server in your on-premises AD DS environment. Once installed, the Entra Password Protection proxy-service communicates with Entra to maintain a copy of the global and customer banned password lists for your Entra tenant.
 
 ### Install the DC agent service
 
-To install the Microsoft Entra Password Protection DC agent service, run the `AzureADPasswordProtectionDCAgentSetup.msi` package.
+To install the Entra Password Protection DC agent service, run the `AzureADPasswordProtectionDCAgentSetup.msi` package.
 
 You can automate the software installation by using standard MSI procedures, as shown in the following example:
 
@@ -761,29 +761,29 @@ The `/norestart` flag can be omitted if you prefer to have the installer automat
 
 The software installation, or uninstallation, requires a restart. This requirement is because password filter DLLs are only loaded or unloaded by a restart.
 
-The installation of on-premises Microsoft Entra Password Protection is complete after the DC agent software is installed on a domain controller and that computer is rebooted. No other configuration is required or possible. Password change events against the on-premises DCs use the configured banned password lists from Microsoft Entra.
+The installation of on-premises Entra Password Protection is complete after the DC agent software is installed on a domain controller and that computer is rebooted. No other configuration is required or possible. Password change events against the on-premises DCs use the configured banned password lists from Entra.
 
 Tip
 
-You can install the Microsoft Entra Password Protection DC agent on a machine that's not yet a domain controller. In this case, the service starts and runs but remains inactive until the machine is promoted to be a domain controller.
+You can install the Entra Password Protection DC agent on a machine that's not yet a domain controller. In this case, the service starts and runs but remains inactive until the machine is promoted to be a domain controller.
 
 ### Upgrading the proxy service
 
-The Microsoft Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Microsoft Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and might be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
+The Entra Password Protection proxy-service supports automatic upgrade. Automatic upgrade uses the Entra Connect Agent Updater service, which is installed side by side with the proxy service. Automatic upgrade is on by default and might be enabled or disabled using the `Set-AzureADPasswordProtectionProxyConfiguration` cmdlet.
 
 The current setting can be queried using the `Get-AzureADPasswordProtectionProxyConfiguration` cmdlet. We recommend that the automatic upgrade setting always is enabled.
 
-The `Get-AzureADPasswordProtectionProxy` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection proxy-servers in a forest.
+The `Get-AzureADPasswordProtectionProxy` cmdlet might be used to query the software version of all currently installed Entra Password Protection proxy-servers in a forest.
 
 #### Manual upgrade process
 
 A manual upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionProxySetup.exe` software installer. The latest version of the software is available on the Microsoft Download Center.
 
-It's not required to uninstall the current version of the Microsoft Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade might be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
+It's not required to uninstall the current version of the Entra Password Protection proxy-service—the installer performs an in-place upgrade. No reboot should be required when upgrading the proxy service. The software upgrade might be automated using standard MSI procedures, such as `AzureADPasswordProtectionProxySetup.exe /quiet`.
 
 ### Upgrading the DC agent
 
-When a newer version of the Microsoft Entra Password Protection DC agent software is available, the upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionDCAgentSetup.msi` software package. The latest version of the software is available on the Microsoft Download Center.
+When a newer version of the Entra Password Protection DC agent software is available, the upgrade is accomplished by running the latest version of the `AzureADPasswordProtectionDCAgentSetup.msi` software package. The latest version of the software is available on the Microsoft Download Center.
 
 It's not required to uninstall the current version of the DC agent software—the installer performs an in-place upgrade. A reboot is always required when upgrading the DC agent software. This requirement is caused by core Windows behavior.
 
@@ -791,7 +791,7 @@ The software upgrade might be automated using standard MSI procedures, such as `
 
 You might omit the `/norestart` flag if you prefer to have the installer automatically reboot the machine.
 
-The `Get-AzureADPasswordProtectionDCAgent` cmdlet might be used to query the software version of all currently installed Microsoft Entra Password Protection DC agents in a forest.
+The `Get-AzureADPasswordProtectionDCAgent` cmdlet might be used to query the software version of all currently installed Entra Password Protection DC agents in a forest.
 
 
 ## Configure smart lockout thresholds
@@ -806,30 +806,30 @@ Smart lockout tracks the last three bad-password hashes to avoid incrementing th
 
 Federated deployments that use AD FS 2016 and AF FS 2019 can enable similar benefits using AD FS Extranet Lockout and Extranet Smart Lockout.
 
-Smart lockout is always on, for all Microsoft Entra ID customers, with these default settings that offer the right mix of security and usability. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID Premium P1 or higher licenses for your users.
+Smart lockout is always on, for all Entra ID customers, with these default settings that offer the right mix of security and usability. Customization of the smart lockout settings, with values specific to your organization, requires Entra ID Premium P1 or higher licenses for your users.
 
 Using smart lockout doesn't guarantee that a genuine user is never locked out. When smart lockout locks a user account, we try our best to not lock out the genuine user. The lockout service attempts to ensure that bad actors can't gain access to a genuine user account. The following considerations apply:
 
-- Each Microsoft Entra data center tracks lockouts independently. A user has (`threshold\_limit * datacenter\_count`) number of attempts, if the user hits each data center.
+- Each Entra data center tracks lockouts independently. A user has (`threshold\_limit * datacenter\_count`) number of attempts, if the user hits each data center.
 - Smart lockout uses *familiar location* versus *unfamiliar location* to differentiate between a bad actor and the genuine user. Unfamiliar and familiar locations both have separate lockout counters.
 
-Smart lockout can be integrated with hybrid deployments that use password hash sync or pass-through authentication to protect on-premises Active Directory Domain Services (AD DS) accounts from being locked out by attackers. By setting smart lockout policies in Microsoft Entra ID appropriately, attacks can be filtered out before they reach on-premises AD DS.
+In hybrid deployments that use password hash sync or pass-through authentication, smart lockout can also protect on-premises Active Directory Domain Services (AD DS) accounts from being locked out by attackers. By setting smart lockout policies in Entra ID appropriately, attacks can be filtered out before they reach on-premises AD DS.
 
 When the admin configures pass-through authentication, the following considerations apply:
 
-- The Microsoft Entra lockout threshold is less than the AD DS account lockout threshold. Set the values so that the AD DS account lockout threshold is at least two or three times greater than the Microsoft Entra lockout threshold.
-- The Microsoft Entra lockout duration must be set longer than the AD DS account lockout duration. The duration is set in seconds, while the AD duration is set in minutes.
+- The Entra lockout threshold is less than the AD DS account lockout threshold. Set the values so that the AD DS account lockout threshold is at least two or three times greater than the Entra lockout threshold.
+- The Entra lockout duration must be set longer than the AD DS account lockout duration. The duration is set in seconds, while the AD duration is set in minutes.
 
-For example, if you want your smart lockout duration to be higher than AD DS, then Microsoft Entra ID would be 120 seconds (2 minutes) while your on-premises AD is set to 1 minute (60 seconds). If you want your lockout threshold to be 5, then you want your on-premises AD lockout threshold to be 10. This configuration would ensure smart lockout prevents your on-premises AD accounts from being locked out by brute force attacks on your Microsoft Entra accounts.
+For example, to make your smart lockout duration higher than AD DS, set Entra ID to 120 seconds (2 minutes) while your on-premises AD is set to 1 minute (60 seconds). If you want your lockout threshold to be 5, then you want your on-premises AD lockout threshold to be 10. This configuration would ensure smart lockout prevents your on-premises AD accounts from being locked out by brute force attacks on your Entra accounts.
 
 
-## Exercise - Manage Microsoft Entra smart lockout values
+## Exercise - Manage Entra smart lockout values
 
-### Manage Microsoft Entra smart lockout values
+### Manage Entra smart lockout values
 
-Based on your organizational requirements, you can customize the Microsoft Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID Premium P1 or higher licenses for your users.
+Based on your organizational requirements, you can customize the Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Entra ID Premium P1 or higher licenses for your users.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Protection**.
 3. On the Protection menu, select **Authentication Methods**.
 4. On Authentications methods menu, select **Password protection**.
@@ -844,18 +844,18 @@ When the smart lockout threshold is triggered, you will get the following messag
 Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
 
 
-## Implement Kerberos and certificate-based authentication in Microsoft Entra ID
+## Implement Kerberos and certificate-based authentication in Entra ID
 
 You can provide single sign-on for on-premises applications published through Application Proxy. The apps are secured with integrated Windows authentication. These applications require a Kerberos ticket for access. Application Proxy uses Kerberos Constrained Delegation (KCD) to support these applications. You can enable single sign-on to your applications using integrated Windows authentication. Give the Application Proxy connectors permission in Active Directory to impersonate users. The connectors use this permission to send and receive tokens on their behalf.
 
 #### Kerberos authentication process flow
 
-![Diagram of the process flow for Kerberos authentication in Microsoft Entra ID.  Full description of process is in the content.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/kerberos-authentication.png)
+![Diagram of the process flow for Kerberos authentication in Entra ID.  Full description of process is in the content.](https://learn.microsoft.com../../wwl-sci/manage-user-authentication/media/kerberos-authentication.png)
 
 1. The user enters the URL to access the on premises application through Application Proxy.
-2. Application Proxy redirects the request to Microsoft Entra authentication services to preauthenticate. At this point, Microsoft Entra ID applies any applicable authentication and authorization policies, such as multifactor authentication. If the user is validated, Microsoft Entra ID creates a token and sends it to the user.
+2. Application Proxy redirects the request to Entra authentication services to preauthenticate. At this point, Entra ID applies any applicable authentication and authorization policies, such as multifactor authentication. If the user is validated, Entra ID creates a token and sends it to the user.
 3. The user passes the token to Application Proxy.
-4. Application Proxy validates the token and retrieves the User Principal Name (UPN) from it, and then the Connector pulls the UPN, and the Service Principal Name (SPN) through a dually authenticated secure channel.
+4. Application Proxy validates the token and retrieves the User Principal Name (UPN) from it. The Connector then pulls the UPN, and the Service Principal Name (SPN), through a dually authenticated secure channel.
 5. The Connector performs Kerberos Constrained Delegation (KCD) negotiation with the on premises AD, impersonating the user to get a Kerberos token to the application.
 6. Active Directory sends the Kerberos token for the application to the Connector.
 7. The Connector sends the original request to the application server, using the Kerberos token it received from AD.
@@ -871,9 +871,9 @@ Before you get started with single sign-on for integrated windows authentication
 - The server running the Connector has access to read the TokenGroupsGlobalAndUniversal attribute for users.
 
 
-## Configure Microsoft Entra user authentication for virtual machines
+## Configure Entra user authentication for virtual machines
 
-Organizations can now improve the security of Windows and Linux virtual machines (VMs) in Azure by integrating with Microsoft Entra authentication. You can now use Microsoft Entra ID as a core authentication platform to connect to:
+Organizations can now improve the security of Windows and Linux virtual machines (VMs) in Azure by integrating with Entra authentication. You can now use Entra ID as a core authentication platform to connect to:
 
 - Windows Server 2022, 2025, or later installed with Desktop Experience.
 - Windows 11 24H2 or later.
@@ -883,25 +883,25 @@ You can then centrally control and enforce role-based-access and Conditional Acc
 
 #### Benefits
 
-- Use Microsoft Entra credentials to sign into Windows VMs in Azure.
+- Use Entra credentials to sign into Windows VMs in Azure.
 - Reduce reliance on local administrator accounts.
-- Password complexity and password lifetime policies configured for your Microsoft Entra ID.
+- Password complexity and password lifetime policies configured for your Entra ID.
 - Configure Conditional Access policies to require multifactor authentication and other signals such as risky-user or sign-in risk.
 
-#### Configure Microsoft Entra sign-in for Windows VMs
+#### Configure Entra sign-in for Windows VMs
 
-To use Microsoft Entra sign-in for Windows VM in Azure, you must:
+To use Entra sign-in for Windows VM in Azure, you must:
 
-- First enable the Microsoft Entra sign-in option for your Windows VM.
+- First enable the Entra sign-in option for your Windows VM.
 - Then configure Azure role assignments for users who are authorized to sign into the VM.
 
-#### Configure Microsoft Entra sign-in for Linux VMs
+#### Configure Entra sign-in for Linux VMs
 
-You can enable Microsoft Entra sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Microsoft Entra ID authentication:
+You can enable Entra sign-in for any of the supported Linux distributions mentioned using the Azure portal. As an example, to create an Ubuntu Server 18.04 Long Term Support (LTS) VM in Azure with Entra ID authentication:
 
 1. Sign into the Azure portal, with an account that has access to create VMs, and select + Create a resource.
 2. Select **Create** under Ubuntu Server 18.04 LTS in the Popular view.
-3. On the Management tab, Check the box to enable `Login with Microsoft Entra ID`.
+3. On the Management tab, Check the box to enable `Login with Entra ID`.
 4. Ensure System assigned managed identity is checked.
 5. Complete the Linux virtual machine setup.
 
@@ -922,20 +922,20 @@ Now that you have reviewed this module, you should be able to:
 - Configure and deploy self-service password reset.
 - Deploy and manage password protection and smart lockouts.
 - Implement Kerberos and certificate-based authentication.
-- Configure Microsoft Entra ID user authentication to virtual machines.
+- Configure Entra ID user authentication to virtual machines.
 
 ### Resources
 
 To learn more about some of the idea we've examined in this module, check out the following links to documentation.
 
-- [Enable combined security information registration in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-registration-mfa-sspr-combined)
-- [Create a resilient access control management strategy in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-resilient-controls)
+- [Enable combined security information registration in Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-registration-mfa-sspr-combined)
+- [Create a resilient access control management strategy in Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-resilient-controls)
 - [Windows Hello for Business overview](https://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/)
 - [Microsoft Authenticator app](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-authenticator-app)
-- [Passwordless authentication options for Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication)
-- [Authentication methods in Microsoft Entra ID - OATH tokens](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-oath-tokens)
-- [Configure and enable users for SMS-based authentication using Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-sms-signin)
-- [Enable on-premises Microsoft Entra Password Protection](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-password-ban-bad-on-premises-deploy)
+- [Passwordless authentication options for Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication)
+- [Authentication methods in Entra ID - OATH tokens](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-oath-tokens)
+- [Configure and enable users for SMS-based authentication using Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-sms-signin)
+- [Enable on-premises Entra Password Protection](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-password-ban-bad-on-premises-deploy)
 - [Single sign-on using Kerberos for Application Proxy applications](https://learn.microsoft.com/en-us/entra/identity/app-proxy/how-to-configure-sso)
 
 
@@ -948,7 +948,7 @@ _https://learn.microsoft.com/en-us/training/modules/plan-implement-administer-co
 
 ## Introduction
 
-Conditional Access gives a fine granularity of control over which users and identities can perform specific activities, access resources, and ensure data and systems are safe. With the introduction of Microsoft Entra Agent ID control, now extends to AI agents—you apply the same Zero Trust principles to agent identities that you apply to users and workload identities.
+Conditional Access gives a fine granularity of control over which users and identities can perform specific activities, access resources, and ensure data and systems are safe. With the introduction of Entra Agent ID, that control now extends to AI agents—you apply the same Zero Trust principles to agent identities that you apply to users and workload identities.
 
 ### Learning objectives
 
@@ -978,14 +978,14 @@ Managing security can be difficult with common identity-related attacks like pas
 
 Microsoft security defaults are available to everyone. The goal is to ensure that all organizations have a basic level of security enabled at no extra cost. If your tenant was created on or after October 22, 2019, security defaults might already be enabled. To protect all users, security defaults are enabled on all new tenants at creation.
 
-To enable or disable security defaults, sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Conditional Access Administrator, then browse to **Entra ID** > **Overview** > **Properties**, and select **Manage security defaults**.
+To enable or disable security defaults, sign in to the [Entra admin center](https://entra.microsoft.com) as at least a Conditional Access Administrator. Browse to **Entra ID** > **Overview** > **Properties**, then select **Manage security defaults**.
 
 #### Who's it for?
 
 | **Who should use security defaults?** | **Who shouldn't use security defaults?** |
 |---|---|
 | Organizations that want to increase their security posture but don't know how or where to start | Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies |
-| Organizations utilizing the free tier of Microsoft Entra ID Licensing | Organization with Microsoft Entra ID Premium licenses |
+| Organizations utilizing the free tier of Entra ID Licensing | Organization with Entra ID Premium licenses |
 |   | Organizations with complex security requirements that warrant using Conditional Access |
 
 ### Policies enforced
@@ -996,9 +996,9 @@ All users in your tenant must register for multifactor authentication (MFA) usin
 
 #### Protecting administrators
 
-Users with privileged access often increase access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Microsoft Entra ID, you can get a stronger account verification by requiring multifactor authentication.
+Users with privileged access often increase access to your environment. Due to the power these accounts have, you should treat them with special care. One common method to improve the protection of privileged accounts is to require a stronger form of account verification for sign-in. In Entra ID, you can get a stronger account verification by requiring multifactor authentication.
 
-After registration with multifactor authentication is finished, the following Microsoft Entra administrator roles are required to perform other authentication every time they sign in:
+After registration with multifactor authentication is finished, the following Entra administrator roles are required to perform other authentication every time they sign in:
 
 - Global Administrator
 - Application Administrator
@@ -1023,11 +1023,11 @@ We tend to think that administrator accounts are the only accounts that need ext
 
 After these attackers gain access, they can request access to privileged information on behalf of the original account holder. They can even download the entire directory to perform a phishing attack on your whole organization.
 
-One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Multifactor Authentication registration, they'll be prompted for extra authentication whenever necessary. This functionality protects all applications registered with Microsoft Entra ID, including SaaS applications.
+One common method to improve protection for all users is to require a stronger form of account verification, such as multifactor authentication, for everyone. After users complete Multifactor Authentication registration, they'll be prompted for extra authentication whenever necessary. This functionality protects all applications registered with Entra ID, including SaaS applications.
 
 #### Blocking legacy authentication
 
-To give your users easy access to your cloud apps, Microsoft Entra ID supports various authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
+To give your users easy access to your cloud apps, Entra ID supports various authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
 
 - Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
 - Client that uses mail protocols such as IMAP, SMTP, or POP3.
@@ -1047,7 +1047,7 @@ Security Defaults are enabled on new subscriptions, so you can review the proces
 
 To enable security defaults in your directory:
 
-1. Browse to the [Microsoft Entra admin center](https://entra.microsoft.com/) and sign in as a Security administrator, or a Conditional Access administrator.
+1. Browse to the [Entra admin center](https://entra.microsoft.com/) and sign in as a Security administrator, or a Conditional Access administrator.
 2. Select the Show portal menu hamburger icon and then select Identity - Overview.
 3. In the left navigation, in the Manage section, select **Properties**.
 4. At the bottom of the Properties dialog, select **Manage Security defaults**.
@@ -1061,7 +1061,7 @@ Organizations that choose to implement Conditional Access policies that replace 
 To disable security defaults in your directory:
 
 1. Browse to the [Azure portal](https://portal.azure.com/) and sign in using an Administrator account for the directory.
-2. Select the Show portal menu hamburger icon and then select Microsoft Entra ID.
+2. Select the Show portal menu hamburger icon and then select Entra ID.
 3. At the bottom of the Properties dialog, select **Manage Security defaults**.
 4. Set the **Enable security defaults** toggle to **No**.
 5. Select **Save**.
@@ -1073,7 +1073,7 @@ Planning your Conditional Access deployment is critical to achieving your organi
 
 In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using various devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
 
-Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
+Entra Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
 
 ![Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-overview-how-it-works.png)
 
@@ -1086,24 +1086,24 @@ The benefits of deploying CA are:
 - Increase productivity - only interrupt users with a sign-in condition like MFA when one or more signals warrants it. CA policies allow you to control when users are prompted for MFA, when access is blocked, and when they must use a trusted device.
 - Manage risk - automating risk assessment with policy conditions means risky sign-ins are at once identified and remediated or blocked. Coupling Conditional Access with Identity Protection, which detects anomalies and suspicious events, allows you to target when access to resources is blocked or gated.
 - Address compliance and governance - Conditional access enables you to audit access to applications, present terms of use for consent, and restrict access based on compliance policies.
-- Manage cost - moving access policies to Microsoft Entra ID reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
+- Manage cost - moving access policies to Entra ID reduces the reliance on custom or on-premises solutions for CA and their infrastructure costs.
 - Zero Trust - Conditional Access helps you move toward a zero-trust environment.
 
 ### Understand Conditional Access policy components
 
 CA policies are if-then statements: If an assignment is met, then apply these access controls. When the admin configures CA policies, conditions are called *assignments*. CA policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
-Assignments define the users and groups to be affected by the policy, the cloud apps or actions to which the policy will apply, and the conditions under which the policy will apply. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
+Assignments define who the policy affects (the users and groups), which cloud apps or actions it applies to, and the conditions under which it applies. Access control settings grant or block access to different cloud apps and can enable limited experiences within specific cloud apps.
 
 Some common questions about assignments, access controls, and session controls:
 
 - Users and Groups: Which users and groups will be included in or excluded from the policy? Does this policy include all users, specific group of users, directory roles, or external users?
 - Cloud apps or actions: What application(s) will the policy apply to? What user actions will be subject to this policy?
 - Conditions: Which device platforms will be included in or excluded from the policy? What are the organization’s trusted locations?
-- Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Microsoft Entra hybrid joined devices?
+- Access controls: Do you want to grant access to resources by implementing requirements such as MFA, devices marked as compliant, or Entra hybrid joined devices?
 - Session controls: Do you want to control access to cloud apps by implementing requirements such as app enforced permissions or Conditional Access App Control?
 
-With the introduction of Microsoft Entra Agent ID, agent identities are now first-class principals in Microsoft Entra ID. Like users or service principals, agents can be targeted by Conditional Access policies — allowing you to apply the same Zero Trust controls to AI agents that you apply to human identities. You treat agent identities similarly to how you treat workload identities: scope policies by identity type, enforce appropriate access controls, and exclude emergency or trusted agents where necessary.
+With the introduction of Entra Agent ID, agent identities are now first-class principals in Entra ID. Like users or service principals, agents can be targeted by Conditional Access policies, so you apply the same Zero Trust controls to AI agents that you apply to human identities. You treat agent identities similarly to how you treat workload identities: scope policies by identity type, enforce appropriate access controls, and exclude emergency or trusted agents where necessary.
 
 #### Access token issuance
 
@@ -1143,17 +1143,17 @@ Report-only mode allows administrators to evaluate the CA policies before enabli
 
 #### Exclude countries from which you never expect a sign-in
 
-Microsoft Entra ID allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
+Entra ID allows you to create named locations. Create a named location that includes all of the countries from which you would never expect a sign-in to occur. Then create a policy for all apps that blocks sign in from that named location. **Be sure to exempt your administrators from this policy**.
 
 ### Common policies
 
 When planning your CA policy solution, assess whether you need to create policies to achieve the following outcomes.
 
 - **Require MFA.** Common use cases include requiring MFA by admins, to specific apps, for all users, or from network locations you don't trust.
-- **Respond to potentially compromised accounts.** Three default policies can be enabled: require all users to register for MFA, require a password change for users who are high-risk, and require MFA for users with medium or high sign-in risk.
+- **Respond to potentially compromised accounts.** Three default policies can be enabled: require all users to register for MFA; require a password change for high-risk users; and require MFA for users with medium or high sign-in risk.
 - **Require managed devices.** The proliferation of supported devices to access your cloud resources helps to improve the productivity of your users. You probably don't want certain resources in your environment to be accessed by devices with an unknown protection level. For those resources, require that users can only access them using a managed device.
 - **Require approved client applications.** Employees use their mobile devices for both personal and work tasks. For BYOD scenarios, you must decide whether to manage the entire device or just the data on it. If managing only data and access, you can require approved cloud apps that can protect your corporate data.
-- **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you're migrating an app to Microsoft Entra ID, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.  Important If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
+- **Block access.** Blocking access overrides all other assignments for a user and has the power to block your entire organization from signing on to your tenant. It can be used, for example, when you're migrating an app to Entra ID, but you aren't ready for anyone to sign in to it yet. You can also block certain network locations from accessing your cloud apps or block apps using legacy authentication from accessing your tenant resources.  Important If you create a policy to block access for all users, be sure to exclude emergency access accounts and consider excluding all administrators from the policy.
 
 ### Build and test policies
 
@@ -1188,15 +1188,15 @@ The test plan is important to have a comparison between the expected results and
 
 ### License requirements
 
-- Free Microsoft Entra ID - No Conditional Access
+- Free Entra ID - No Conditional Access
 - Free Office 365 subscription - No Conditional Access
-- Microsoft Entra ID Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
-- Microsoft Entra ID Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)
+- Entra ID Premium 1 (or Microsoft 365 E3 and up) - Conditional access work based on standard rules
+- Entra ID Premium 2 - Conditional Access, and you get the ability to use Risky sign-in, Risky Users, and risk-based sign-in options as well (from Identity Protection)
 
 
 ## Implement Conditional Access policy controls and assignments
 
-Conditional Access is an advanced capability of Microsoft Entra ID that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on signals like group membership, device compliance, network location, and sign-in risk.
+Conditional Access is an advanced capability of Entra ID that enables you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on signals like group membership, device compliance, network location, and sign-in risk.
 
 ### Create a Conditional Access policy
 
@@ -1204,7 +1204,7 @@ This is an abbreviated guide to creating a Conditional Access policy. Full docum
 
 To create a new policy:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a Conditional Access Administrator.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com) as at least a Conditional Access Administrator.
 2. Browse to **Protection** > **Conditional Access**.
 3. Select **+ New policy**.
 4. Give the policy a meaningful name.
@@ -1220,28 +1220,28 @@ Microsoft recommends starting all new policies in report-only mode. Monitor sign
 
 Most users have a normal behavior that can be tracked. When they fall outside of this norm, it could be risky to allow them to just sign in. You want to block that user or ask them to perform multifactor authentication to prove that they are really who they say they are.
 
-A sign-in risk represents the probability that a given authentication request isn't authorized by the identity owner. Organizations with Microsoft Entra ID Premium P2 licenses can create Conditional Access policies incorporating Microsoft Entra Identity Protection sign-in risk detections.
+A sign-in risk represents the probability that a given authentication request isn't authorized by the identity owner. Organizations with Entra ID Premium P2 licenses can create Conditional Access policies incorporating Entra Identity Protection sign-in risk detections.
 
-This policy can be assigned either through Conditional Access itself or through Microsoft Entra Identity Protection. Organizations should choose one of two options to enable a sign-in risk-based Conditional Access policy requiring a secure password change.
+This policy can be assigned either through Conditional Access itself or through Entra Identity Protection. Organizations should choose one of two options to enable a sign-in risk-based Conditional Access policy requiring a secure password change.
 
 ### User risk-based Conditional Access
 
-Microsoft works with researchers, law enforcement, various security teams at Microsoft, and other trusted sources to find leaked username and password pairs. Organizations with Microsoft Entra ID Premium P2 licenses can create Conditional Access policies incorporating Microsoft Entra Identity Protection user risk detections.
+Microsoft works with researchers, law enforcement, various security teams at Microsoft, and other trusted sources to find leaked username and password pairs. Organizations with Entra ID Premium P2 licenses can create Conditional Access policies incorporating Entra Identity Protection user risk detections.
 
-Like sign-in risk-based Conditional Access, this policy can be assigned either through Conditional Access itself or through Microsoft Entra Identity Protection.
+Like sign-in risk-based Conditional Access, this policy can be assigned either through Conditional Access itself or through Entra Identity Protection.
 
 ### Securing security info registration
 
-Securing when and how users register for multifactor authentication and self-service password reset is now possible with user actions in Conditional Access policy. This preview feature is available to organizations that have enabled the combined registration preview. This functionality might be enabled in organizations where they want to use conditions like trusted network location to restrict access to register for multifactor authentication and self-service password reset (SSPR).
+Securing when and how users register for multifactor authentication and self-service password reset is now possible with user actions in Conditional Access policy. This preview feature is available to organizations that have enabled the combined registration preview. Organizations might enable this functionality when they want conditions like trusted network location to restrict who can register for multifactor authentication and self-service password reset (SSPR).
 
 #### Create a policy to require registration from a trusted location
 
-The following policy applies to all selected users who attempt to register using the combined registration experience, and it blocks access unless they are connecting from a location marked as a trusted network.
+The following policy applies to all selected users who attempt to register using the combined registration experience. It blocks access unless they connect from a location marked as a trusted network.
 
-1. In the **Microsoft Entra admin center**, browse to **Protection**, then **Conditional Access**.
+1. In the **Entra admin center**, browse to **Protection**, then **Conditional Access**.
 2. Select **+ Create new policy**.
 3. In **Name**, Enter a Name for this policy. For example, **Combined Security Info Registration on Trusted Networks**.
-4. Under **Assignments**, select **Users and groups**, and select the users and groups you want this policy to apply to.   Note If you were targeting AI agents instead of users, you would select **Workload identities** in the Assignments area and choose your agent identity from Microsoft Entra Agent ID at this step. The rest of the policy structure remains the same.
+4. Under **Assignments**, select **Users and groups**, and select the users and groups you want this policy to apply to.   Note If you were targeting AI agents instead of users, you would select **Workload identities** in the Assignments area, then choose your agent identity from Entra Agent ID at this step. The rest of the policy structure remains the same.
   1. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
   2. Select **Done**.
 
@@ -1268,7 +1268,7 @@ You can choose to use device state instead of location in step 6 above:
 1. Under **Conditions**, select **Device state (Preview)**.
 2. Configure **Yes**.
 3. Include **All device state**.
-4. Exclude **Device Hybrid Microsoft Entra joined** and/or **Device marked as compliant.**
+4. Exclude **Device Hybrid Entra joined** and/or **Device marked as compliant.**
 5. Select **Done** on the **Locations** screen.
 6. Select **Done** on the **Conditions** screen.
 
@@ -1278,7 +1278,7 @@ With the location condition in Conditional Access, you can control access to you
 
 #### Define locations
 
-1. Sign in to the **Microsoft Entra admin portal** as a Security Administrator, or Conditional Access Administrator.
+1. Sign in to the **Entra admin portal** as a Security Administrator, or Conditional Access Administrator.
 2. Browse to **Protection**, then **Conditional Access**, then **Named locations**.
 3. Choose **New location**.
 4. Give your location a name.
@@ -1291,7 +1291,7 @@ With the location condition in Conditional Access, you can control access to you
 
 #### Create a Conditional Access policy
 
-1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
+1. Sign in to the **Entra admin center** as a Security Administrator, or Conditional Access Administrator.
 2. Browse to **Protection**, then **Conditional Access**.
 3. Select **+ Create new policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -1320,13 +1320,13 @@ Organizations that have deployed Microsoft Intune can use the information return
 - Requiring a minimum or maximum operating system version.
 - Requiring a device is not jailbroken or rooted.
 
-This policy compliance information is forwarded to Microsoft Entra ID where Conditional Access can make decisions to grant or block access to resources.
+This policy compliance information is forwarded to Entra ID where Conditional Access can make decisions to grant or block access to resources.
 
 #### Create a Conditional Access policy
 
 The following steps will help create a Conditional Access policy to require devices accessing resources be marked as compliant with your organization's Intune compliance policies.
 
-1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
+1. Sign in to the **Entra admin center** as a Security Administrator, or Conditional Access Administrator.
 2. Browse to **Protection**, then **Conditional Access**.
 3. Select **+ Create new policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -1347,11 +1347,11 @@ The following steps will help create a Conditional Access policy to require devi
 
 Note
 
-You can enroll your new devices to Intune even if you select Require device to be marked as compliant for All users and All cloud apps using the steps above. Require device to be marked as compliant control does not block Intune enrollment.
+You can still enroll new devices to Intune when you select Require device to be marked as compliant for All users and All cloud apps using the steps above. Require device to be marked as compliant control does not block Intune enrollment.
 
 #### Known behavior
 
-On Windows 7, iOS, Android, macOS, and some third-party web browsers, Microsoft Entra ID identifies the device using a client certificate that is provisioned when the device is registered with Microsoft Entra ID. When a user first signs in through the browser, the user is prompted to select the certificate. The end user must select this certificate before they can continue to use the browser.
+On Windows 7, iOS, Android, macOS, and some third-party web browsers, Entra ID identifies the device with a client certificate, provisioned when the device is registered with Entra ID. When a user first signs in through the browser, the user is prompted to select the certificate. The end user must select this certificate before they can continue to use the browser.
 
 ### Block access
 
@@ -1367,19 +1367,19 @@ Policies like these can have unintended side effects. Proper testing and validat
 
 Conditional Access policies are powerful tools. We recommend excluding the following accounts from your policy:
 
-- **Emergency access** or **break-glass** accounts to prevent tenant-wide account lockout. In the unlikely scenario that all administrators are locked out of your tenant, your emergency-access administrative account can be used to sign into the tenant and take steps to recover access.
-- **Service accounts** and **service principals**, such as the Microsoft Entra Connect Sync Account. Service accounts are non-interactive accounts that are not tied to any particular user. They are normally used by back-end services allowing programmatic access to applications, but they are also used to sign in to systems for administrative purposes. Service accounts like these should be excluded since MFA can't be completed programmatically. Calls made by service principals are not blocked by Conditional Access.
+- **Emergency access** or **break-glass** accounts to prevent tenant-wide account lockout. In the unlikely event that all administrators are locked out of your tenant, use your emergency-access administrative account to sign in and take steps to recover access.
+- **Service accounts** and **service principals**, such as the Entra Connect Sync Account. Service accounts are non-interactive accounts that are not tied to any particular user. They are normally used by back-end services allowing programmatic access to applications, but they are also used to sign in to systems for administrative purposes. Service accounts like these should be excluded since MFA can't be completed programmatically. Calls made by service principals are not blocked by Conditional Access.
   - If your organization has these accounts in use in scripts or code, consider replacing them with managed identities. As a temporary workaround, you can exclude these specific accounts from the baseline policy.
 
-- **Agent identities**: AI agents registered in Microsoft Entra Agent ID can be targeted by or excluded from Conditional Access policies just like service principals. Ensure any trusted agents that require uninterrupted access are explicitly excluded, and review agent-targeted policies alongside your workload identity policies.
+- **Agent identities**: AI agents registered in Entra Agent ID can be targeted by or excluded from Conditional Access policies just like service principals. Ensure any trusted agents that require uninterrupted access are explicitly excluded, and review agent-targeted policies alongside your workload identity policies.
 
 ### Conditional Access Terms of Use (TOU)
 
-You can create Terms of Use (TOU) for your site in the Identity Governance tools. Launch the identity governance app, and choose **Terms of use** from the menu. You have to supply a PDF file with the terms for the user. You can set up several rules like when the terms will expire, or whether the user has to open them before accepting. Once created, you can build a custom conditional rule right in identity governance. Or you can save the terms and use Conditional Access in Microsoft Entra ID. To create new Terms of use you fill in the above dialog.
+You can create Terms of Use (TOU) for your site in the Identity Governance tools. Launch the identity governance app, and choose **Terms of use** from the menu. You have to supply a PDF file with the terms for the user. You can set up several rules like when the terms will expire, or whether the user has to open them before accepting. Once created, you can build a custom conditional rule right in identity governance. Or you can save the terms and use Conditional Access in Entra ID. To create new Terms of use you fill in the above dialog.
 
 The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use. Additionally, organizations can expire the consent given or change the terms of use, and request the user attests again.
 
-Before accessing certain cloud apps in your environment, you might want to get consent from users in form of accepting your terms of use (ToU). Microsoft Entra Conditional Access provides you with:
+Before accessing certain cloud apps in your environment, you might want to get consent from users in form of accepting your terms of use (ToU). Entra Conditional Access provides you with:
 
 - A simple method to configure ToU
 - The option to require accepting your terms of use through a Conditional Access policy
@@ -1389,9 +1389,9 @@ Before accessing certain cloud apps in your environment, you might want to get c
 
 In this exercise, create a conditional access policy.
 
-Microsoft Entra Conditional Access is an advanced feature of Microsoft Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
+Entra Conditional Access is an advanced feature of Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Identity**.
 3. Then select **Protection**.
 4. On the Security blade, in the left navigation, select **Conditional access**.
@@ -1435,7 +1435,7 @@ Organizations should avoid the following configurations:
 **For all users, all cloud apps:**
 
 - **Block access** - This configuration blocks your entire organization.
-- **Require Hybrid Microsoft Entra domain joined device** - This access-blocking policy also has the potential to block access for all users in your organization if they don't have a hybrid Microsoft Entra joined device.
+- **Require Hybrid Entra domain joined device** - This access-blocking policy can also block every user in your organization who doesn't have a hybrid Entra joined device.
 - **Require app protection policy** - This access-blocking policy also has the potential to block access for all users in your organization if you don't have an Intune policy. If you're an administrator without a client application that has an Intune app protection policy, this policy blocks you from getting back into portals such as Intune and Azure.
 
 **For all users, all cloud apps, all device platforms:**
@@ -1448,15 +1448,15 @@ The first way is to review the error message that appears. For problems signing 
 
 In the above error, the message states that the application can only be accessed from devices or client applications that meet the company's mobile device management policy. In this case, the application and device don't meet that policy.
 
-### Microsoft Entra sign-in events
+### Entra sign-in events
 
-The second method to get detailed information about the sign-in interruption is to review the Microsoft Entra sign-in events to see which Conditional Access policy or policies were applied and why.
+The second method for detailed information about the sign-in interruption is to review the Entra sign-in events, which show which Conditional Access policy or policies were applied and why.
 
-Find more information about the problem by clicking **More Details** in the initial error page. Clicking **More Details** will reveal troubleshooting information that's helpful when searching the Microsoft Entra sign-in events for the specific failure event the user saw or when opening a support incident with Microsoft.
+Find more information about the problem by clicking **More Details** in the initial error page. Clicking **More Details** reveals troubleshooting information. It helps when you search the Entra sign-in events for the specific failure event the user saw, or when you open a support incident with Microsoft.
 
 To find out which Conditional Access policy or policies applied and why, do the following steps:
 
-1. Sign into the Microsoft Entra admin center as a Security Administrator, or Global Reader.
+1. Sign into the Entra admin center as a Security Administrator, or Global Reader.
 2. Browse to **Identity - Monitoring and Health**, then **Sign-ins**.
 3. Find the event for the sign-in to review. Add or remove filters and columns to filter out unnecessary information.
   1. Add filters to narrow the scope:
@@ -1465,10 +1465,10 @@ To find out which Conditional Access policy or policies applied and why, do the 
     3. Username to see information related to specific users.
     4. Date scoped to the time frame in question.
 
-4. Once the sign-in event that corresponds to the user's sign-in failure has been found select the **Conditional Access** tab, the tab will show the specific policy or policies that resulted in the sign-in interruption.
+4. Once you find the sign-in event that corresponds to the user's sign-in failure, select the **Conditional Access** tab. It shows the specific policy or policies that resulted in the sign-in interruption.
   1. Information in the **Troubleshooting and support** tab provides a clear reason as to why a sign-in failed, such as a device that didn't meet compliance requirements.
   2. To investigate further, drill down into the configuration of the policies by clicking on the Policy Name. Clicking the Policy Name will show the policy configuration user interface for the selected policy for review and editing.
-  3. The client user and device details that were used for the Conditional Access policy assessment are also available in the **Basic Info**, **Location**, **Device Info**, **Authentication Details**, and **Additional Details** tabs of the sign-in event.
+  3. The **Basic Info**, **Location**, **Device Info**, **Authentication Details**, and **Additional Details** tabs of the sign-in event also show the client user and device details used for the Conditional Access policy assessment.
 
 #### Policy details
 
@@ -1487,13 +1487,13 @@ Conditional Access App Control enables user app access and sessions to be monito
 
 ### Conditional Access App Control
 
-Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Microsoft Entra Conditional Access. Microsoft Entra Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps where you can protect data with Conditional Access App Control by applying access and session controls.
+Conditional Access App Control uses a reverse proxy architecture and is uniquely integrated with Entra Conditional Access. Entra Conditional Access allows you to enforce access controls on your organization’s apps based on certain conditions. The conditions define who (user or group of users) and what (which cloud apps) and where (which locations and networks) a Conditional Access policy is applied to. After you’ve determined the conditions, you can route users to Microsoft Defender for Cloud Apps. There, Conditional Access App Control protects data by applying access and session controls.
 
 With the access and session policies, you can:
 
 - **Prevent data exfiltration:** You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 - **Protect on download:** Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
-- **Prevent upload of unlabeled files:** Before a sensitive file is uploaded, distributed, and used by others, it’s important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
+- **Prevent upload of unlabeled files:** Make sure a sensitive file has the right label and protection before it’s uploaded, distributed, and used by others. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 - **Monitor user sessions for compliance:** Risky users are monitored when they sign into apps and their actions are logged from within the session. You can investigate and analyze user behavior to understand where, and under what conditions, session policies should be applied in the future.
 - **Block access:** You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they're using client certificates as a form of device management.
 - **Block custom activities:** Some apps have unique scenarios that carry risk, for example, sending messages with sensitive content in apps like Microsoft Teams or Slack. In these kinds of scenarios, you can scan messages for sensitive content and block them in real time.
@@ -1506,17 +1506,17 @@ This section presents two scenarios to configure Conditional Access policies for
 
 Note
 
-In order to require approved client apps for iOS and Android devices, these devices must first register in Microsoft Entra ID.
+In order to require approved client apps for iOS and Android devices, these devices must first register in Entra ID.
 
 #### Scenario 1: Microsoft 365 apps require an approved client app
 
-In this scenario, Contoso has decided that users using mobile devices can access all Microsoft 365 services as long as they use approved client apps, like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
+In this scenario, Contoso decided that users on mobile devices can access all Microsoft 365 services, as long as they use approved client apps like Outlook mobile, OneDrive, and Microsoft Teams. All of their users already sign in with Entra credentials and have licenses assigned to them that include Entra ID Premium P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online.**
 
-1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
+1. Sign in to the **Entra admin center** as a Security Administrator, or Conditional Access Administrator.
 2. Browse to **Identity**, then **Protection**, and then **Conditional Access**.
 3. Select **+Create new policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -1536,7 +1536,7 @@ Organizations must complete the following three steps in order to require the us
 12. Confirm your settings and set **Enable policy** to **On**.
 13. Select **Create** to create and enable your policy.
 
-**Step 2: Configure an Microsoft Entra Conditional Access policy for Exchange Online with ActiveSync (EAS).**
+**Step 2: Configure an Entra Conditional Access policy for Exchange Online with ActiveSync (EAS).**
 
 1. Browse to **Identity**, then **Protection**, and then **Conditional Access**.
 2. Select **+Create new policy**.
@@ -1561,13 +1561,13 @@ Review the article [How to create and assign app protection policies](https://le
 
 #### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
-In this scenario, Contoso has decided that users can only access email and SharePoint data on mobile devices as long as they use an approved client app like Outlook mobile. All of their users already sign in with Microsoft Entra credentials and have licenses assigned to them that include Microsoft Entra ID Premium P1 or P2 and Microsoft Intune.
+In this scenario, Contoso decided that users on mobile devices can access only email and SharePoint data, and only from an approved client app like Outlook mobile. All of their users already sign in with Entra credentials and have licenses assigned to them that include Entra ID Premium P1 or P2 and Microsoft Intune.
 
 Organizations must complete the following three steps in order to require the use of an approved client app on mobile devices and Exchange ActiveSync clients.
 
 **Step 1: Policy for Android and iOS based modern authentication clients requiring the use of an approved client application when accessing Exchange Online and SharePoint Online.**
 
-1. Sign in to the **Microsoft Entra admin center** as a Security Administrator, or Conditional Access Administrator.
+1. Sign in to the **Entra admin center** as a Security Administrator, or Conditional Access Administrator.
 2. Browse to **Identity**, then **Protection**, and then **Conditional Access**.
 3. Select **New policy**.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -1613,7 +1613,7 @@ Review the article [How to create and assign app protection policies](https://le
 
 ### App protection policies overview
 
-App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. A managed app has app protection policies applied to it, and it can be managed by Intune.
+App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule enforced when the user attempts to access or move "corporate" data. It can also be a set of actions that are prohibited or monitored while the user is inside the app. A managed app has app protection policies applied to it, and it can be managed by Intune.
 
 Mobile Application Management (MAM) app protection policies allow you to manage and protect your organization's data within an application. With **MAM without enrollment** (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in **bring-your-own-device** (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM.
 
@@ -1636,7 +1636,7 @@ App protection policies can be configured for apps that run on devices that are:
 The important benefits of using app protection policies are the following:
 
 - **Protecting your company data at the app level.** Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
-- **End-user productivity isn't affected and policies don't apply when using the app in a personal context.** The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
+- **End-user productivity isn't affected and policies don't apply when using the app in a personal context.** The policies are applied only in a work context, so you can protect company data without touching personal data.
 - **App protection policies ensure that the app-layer protections are in place.** For example, you can:
   - Require a PIN to open an app in a work context.
   - Control the sharing of data between apps.
@@ -1646,7 +1646,7 @@ The important benefits of using app protection policies are the following:
 
 There are additional benefits to using MDM with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee who uses a phone issued by the company, as well as their personal tablet. The company phone is enrolled in MDM and protected by app protection policies, while the personal device is protected by app protection policies only.
 
-If you apply a MAM policy to the user without setting the device state, the user will get the MAM policy on both the BYOD device and the Intune-managed device. You can also apply a MAM policy based on the managed state. So when you create an app protection policy, next to **Target to all app types**, you'd select **No**. Then do any of the following:
+If you apply a MAM policy to the user without setting the device state, the user gets the MAM policy on both the BYOD device and the Intune-managed device. You can also apply a MAM policy based on the managed state. So when you create an app protection policy, next to **Target to all app types**, you'd select **No**. Then do any of the following:
 
 - Apply a less strict MAM policy to Intune managed devices, and apply a more restrictive MAM policy to non MDM-enrolled devices.
 - Apply a MAM policy to unenrolled devices only.
@@ -1669,9 +1669,9 @@ Before diving into details on how to configure the policy, let’s examine the d
 
 Sign-in frequency defines the time period before a user is asked to sign in again when attempting to access a resource.
 
-The Microsoft Entra ID default configuration for user sign-in frequency is a rolling window of 90 days. Asking users for credentials often seems like a sensible thing to do, but it can backfire: Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt.
+The Entra ID default configuration for user sign-in frequency is a rolling window of 90 days. Asking users for credentials often seems like a sensible thing to do, but it can backfire: Users who are trained to enter their credentials without thinking can unintentionally supply them to a malicious credential prompt.
 
-It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Microsoft Entra ID default configuration comes down to 'don’t ask users to provide their credentials if the security posture of their sessions hasn't changed.'
+It might sound alarming to not ask for a user to sign back in; in reality any violation of IT policies will revoke the session. Some examples include a password change, an incompliant device, or an account disable. You can also explicitly revoke users’ sessions using PowerShell. The Entra ID default configuration comes down to 'don’t ask users to provide their credentials if the security posture of their sessions hasn't changed.'
 
 The sign-in frequency setting works with apps that have implemented OAUTH2 or OIDC protocols according to the standards. Most apps for Windows, Mac, and mobile, including the following web applications, comply with the setting.
 
@@ -1685,34 +1685,34 @@ The sign-in frequency setting works with apps that have implemented OAUTH2 or OI
 - Dynamics CRM Online
 - Azure portal
 
-The sign-in frequency setting works with SAML applications as well, as long as they don't drop their own cookies and are redirected back to Microsoft Entra ID for authentication on a regular basis.
+The sign-in frequency setting also works with SAML applications, as long as they don't drop their own cookies and are redirected back to Entra ID for authentication on a regular basis.
 
 #### User sign-in frequency and multifactor authentication
 
-Sign-in frequency previously applied only to the first factor authentication on devices that were Microsoft Entra joined, Hybrid Microsoft Entra joined, and Microsoft Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
+Sign-in frequency previously applied only to the first factor authentication on devices that were Entra joined, Hybrid Entra joined, and Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
 
 ![Diagram of multifactor authentication sign-in process with sign-in frequency.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/conditional-access-flow-chart.png)
 
 #### User sign-in frequency and device identities
 
-If you have Microsoft Entra joined, hybrid Microsoft Entra joined, or Microsoft Entra registered devices, when a user unlocks their device or signs in interactively, this event will satisfy the sign-in frequency policy as well. In the following two examples user sign-in frequency is set to one hour:
+On Entra joined, hybrid Entra joined, or Entra registered devices, unlocking the device or signing in interactively also satisfies the sign-in frequency policy. In the following two examples user sign-in frequency is set to one hour:
 
 Example 1:
 
-- At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
+- At 00:00, a user signs in to their Windows 10 Entra joined device and starts work on a document stored on SharePoint Online.
 - The user continues working on the same document on their device for an hour.
 - At 01:00, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator.
 
 Example 2:
 
-- At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
+- At 00:00, a user signs in to their Windows 10 Entra joined device and starts work on a document stored on SharePoint Online.
 - At 00:30, the user gets up and takes a break, locking their device.
 - At 00:45, the user returns from their break and unlocks the device.
-- At 01:45, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator since the last sign-in happened at 00:45.
+- The last sign-in happened at 00:45, so at 01:45 the user is prompted to sign in again, per the sign-in frequency requirement in the Conditional Access policy their administrator configured.
 
 ### Persistence of browsing sessions
 
-A persistent browser session allows users to remain signed in after closing and reopening their browser window. The Microsoft Entra ID default for browser session persistence allows users on personal devices to choose whether to persist the session by showing a 'Stay signed in?' prompt after successful authentication.
+A persistent browser session allows users to remain signed in after closing and reopening their browser window. By default, Entra ID lets users on personal devices choose whether to persist the browser session: after successful authentication, it shows a 'Stay signed in?' prompt.
 
 ### Validation
 
@@ -1724,7 +1724,7 @@ To make sure that your policy works as expected, the recommended best practice i
 
 ### Continuous Access Evaluation (CAE)
 
-Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Microsoft Entra ID to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory.
+Token expiration and refresh are a standard mechanism in the industry. When a client application like Outlook connects to a service like Exchange Online, the API requests are authorized using OAuth 2.0 access tokens. By default, access tokens are valid for one hour, when they expire the client is redirected to Entra ID to refresh them. That refresh period provides an opportunity to reevaluate policies for user access. For example: we might choose not to refresh the token because of a Conditional Access policy, or because the user has been disabled in the directory.
 
 However, there is lag between when conditions change for a user, and when policy changes are enforced. Timely response to policy violations or security issues really requires a "conversation" between the token issuer, and the relying party (enlightened app). This two-way conversation gives us two important capabilities. The relying party can see when properties change, like network location, and tell the token issuer. It also gives the token issuer a way to tell the relying party to stop respecting tokens for a given user because of account compromise, disablement, or other concerns. The mechanism for this conversation is continuous access evaluation (CAE).
 
@@ -1740,19 +1740,19 @@ There are several key benefits to continuous access evaluation.
 
 ![Diagram of the process flow when an access token is revoked and a client has to reverify access.](https://learn.microsoft.com../../wwl-sci/plan-implement-administer-conditional-access/media/user-revocation-event-flow.png)
 
-1. A continuous access evaluation (CAE)-capable client presents credentials or a refresh token to Microsoft Entra ID asking for an access token for some resource.
+1. A continuous access evaluation (CAE)-capable client presents credentials or a refresh token to Entra ID asking for an access token for some resource.
 2. An access token is returned along with other artifacts to the client.
-3. An Administrator explicitly revokes all refresh tokens for the user. A revocation event will be sent to the resource provider from Microsoft Entra ID.
+3. An Administrator explicitly revokes all refresh tokens for the user. A revocation event will be sent to the resource provider from Entra ID.
 4. An access token is presented to the resource provider. The resource provider evaluates the validity of the token and checks whether there's any revocation event for the user. The resource provider uses this information to decide to grant access to the resource or not.
 5. In the case of the diagram, the resource provider denies access, and sends a 401+ claim challenge back to the client.
-6. The CAE-capable client understands the 401+ claim challenge. It bypasses the caches and goes back to step 1, sending its refresh token along with the claim challenge back to Microsoft Entra ID. Microsoft Entra ID will then reevaluate all the conditions and prompt the user to reauthenticate in this case.
+6. The CAE-capable client understands the 401+ claim challenge. It bypasses the caches and goes back to step 1, sending its refresh token along with the claim challenge back to Entra ID. Entra ID will then reevaluate all the conditions and prompt the user to reauthenticate in this case.
 
 
 ## Exercise - Configure authentication session controls
 
 In this exercise you will configure sign in frequency controls using a conditional access policy.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using an Administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using an Administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the Identity menu, then select **Protection**.
 4. On the Protection menu, select **Conditional access**.
@@ -1771,7 +1771,7 @@ In this exercise you will configure sign in frequency controls using a condition
 11. Select the units menu, select **Days**, and then select **Select**.
 12. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
-## Microsoft Entra Conditional Access Optimization agent
+## Entra Conditional Access Optimization agent
 
 The Conditional Access optimization agent helps you ensure all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft learning.
 
@@ -1781,7 +1781,7 @@ The agent also evaluates all existing enabled policies to propose potential cons
 
 #### Requirement to use the Conditional Access optimization agent
 
-- You must have at least the **Microsoft Entra ID P1 license**.
+- You must have at least the **Entra ID P1 license**.
 - You must have available **Security Compute Units (SCU)**.
 - To activate the agent the first time, you need the Security Administrator or higher role.
 - You can assign Conditional Access Administrators with Security Copilot access.
@@ -1834,30 +1834,30 @@ To learn more about the technology in this module, check out the following links
 - [How to deploy Conditional Access?](https://youtu.be/c_izIRNJNuk)
 - [How to roll out CA policies to end users?](https://youtu.be/0_Fze7Zpyvc)
 - [Conditional Access with device controls](https://youtu.be/NcONUf-jeS4)
-- [Conditional Access with Microsoft Entra MFA](https://youtu.be/Tbc-SU97G-w)
+- [Conditional Access with Entra MFA](https://youtu.be/Tbc-SU97G-w)
 - [Conditional Access in Enterprise Mobility + Security](https://youtu.be/A7IrxAH87wc)
 - [Using the location condition in a Conditional Access policy](https://learn.microsoft.com/en-us/entra/identity/conditional-access/howto-conditional-access-policy-location)
 - [Use compliance policies to set rules for devices you manage with Intune](https://learn.microsoft.com/en-us/mem/intune/fundamentals/deployment-plan-compliance-policies)
 - [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
 - [Plan a Conditional Access deployment](https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access)
 - [Continuous Access Evaluation (CAE](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-continuous-access-evaluation))
-- [Conditional Access for agent identities (Microsoft Entra Agent ID)](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policy-common)
+- [Conditional Access for agent identities (Entra Agent ID)](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-policy-common)
 
 
 ---
 
-# Manage Microsoft Entra Identity Protection
+# Manage Entra Identity Protection
 
 _https://learn.microsoft.com/en-us/training/modules/manage-azure-active-directory-identity-protection/_
 
 
 ## Introduction
 
-Protecting users' identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Microsoft Entra Identity Protection.
+Protecting users' identity by monitoring their usage and sign-in patterns ensures a secure cloud solution. Explore how to design and implement Entra Identity Protection.
 
 #### Watch this video
 
-In this video, get a high-level overview of Identity Protection, a feature of Microsoft Entra ID. You learn about different types of detections, risks, and risk policies that exist in Identity Protection. The video explains the benefits of the risk policies, recent UX enhancements, powerful APIs, improved risk assessment, and overall alignment along risky users and risky sign-ins.
+In this video, get a high-level overview of Identity Protection, a feature of Entra ID. You learn about different types of detections, risks, and risk policies that exist in Identity Protection. The video explains the benefits of the risk policies, recent UX enhancements, powerful APIs, improved risk assessment, and overall alignment along risky users and risky sign-ins.
 
 ### Learning objectives
 
@@ -1879,11 +1879,11 @@ Identity Protection is a service that enables organizations to view the security
 - Investigate risks using data in the portal.
 - Export risk detection data to third-party utilities for further analysis.
 
-Always remember that Microsoft Entra Identity Protection requires a Microsoft Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
+Always remember that Entra Identity Protection requires an Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
 
-Identity Protection uses the knowledge Microsoft has gained from its position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 6.5 trillion signals per day to identify and protect customers from threats.
+Identity Protection protects your users with the knowledge Microsoft has gained from its position in organizations with Entra ID, in the consumer space with Microsoft Accounts, and in gaming with Xbox. Microsoft analyzes 6.5 trillion signals per day to identify and protect customers from threats.
 
-The signals generated by and fed to Identity Protection can be further fed into tools like Conditional Access to make access decisions or fed back to a security information and event management (SIEM) tool for further investigation based on your organization's enforced policies.
+The signals generated by and fed to Identity Protection can then feed tools like Conditional Access, which use them to make access decisions. They can also feed back to a security information and event management (SIEM) tool for further investigation, based on your organization's enforced policies.
 
 ### Risk detection and remediation
 
@@ -1897,7 +1897,7 @@ Identity Protection identifies risks in the following classifications:
 | Unfamiliar sign in properties | Sign in with properties we've not seen recently for the given user. |
 | Leaked credentials | Indicates that the user's valid credentials have been leaked. |
 | Password spray | Indicates that multiple usernames are being attacked using common passwords in a unified brute-force manner. |
-| Microsoft Entra threat intelligence | Microsoft's internal and external threat intelligence sources have identified a known attack pattern. |
+| Entra threat intelligence | Microsoft's internal and external threat intelligence sources have identified a known attack pattern. |
 | Anomalous token | Detects unusual characteristics in a token, such as an unusual token lifetime or a token replayed from an unfamiliar location. |
 | Token issuer anomaly | Detects when the SAML token issuer for the associated SAML token is potentially compromised. |
 | Suspicious browser | Detects anomalous sign-in activity across multiple tenants from the same browser. |
@@ -1920,9 +1920,9 @@ The Security Operator role can't access the Risky sign-ins report. Conditional A
 
 ### License requirements
 
-Using this feature requires a Microsoft Entra ID Premium P2 license.
+Using this feature requires an Entra ID Premium P2 license.
 
-| **Capability** | **Details** | **Microsoft Entra ID Free / Microsoft 365 Apps** | **Microsoft Entra ID Premium P1** | **Microsoft Entra ID Premium P2** |
+| **Capability** | **Details** | **Entra ID Free / Microsoft 365 Apps** | **Entra ID Premium P1** | **Entra ID Premium P2** |
 |---|---|---|---|---|
 | Risk policies | User risk policy (via Identity Protection) | No | No | Yes |
 | Risk policies | Sign-in risk policy (via Identity Protection or Conditional Access) | No | No | Yes |
@@ -1946,7 +1946,7 @@ Both policies work to automate the response to risk detections in your environme
 
 #### Watch the video
 
-In this video, learn how to deploy Microsoft Entra Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
+In this video, learn how to deploy Entra Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
 
 ### Prerequisites
 
@@ -1971,7 +1971,7 @@ Configured trusted network locations are used by Identity Protection in some ris
 
 ### Enable user risk policy
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the Identity menu, select **Protection**.
 4. On the Security blade, in the left navigation, select **Identity protection**.
@@ -2000,19 +2000,19 @@ Microsoft's recommendation is to Allow access and Require password change.
 7. Under **Enforce Policy**, select **On** and then select **Save**.
 
 
-## Exercise configure Microsoft Entra multifactor authentication registration policy
+## Exercise configure Entra multifactor authentication registration policy
 
 ### Policy configuration
 
 Multifactor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for multifactor authentication.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
+1. Sign in to the [Entra admin center](https://entra.microsoft.com/) using a Global administrator account.
 2. Open the portal menu and then select **Identity**.
 3. On the Identity men, select **Protection**.
 4. On the Security blade, in the left navigation, select **Identity protection**.
 5. In the Identity protection blade, in the left navigation, select **Multifactor authentication registration policy**.
 6. Under **Assignments**, select **All users** and review the available options. You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
-7. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
+7. Under **Controls**, notice that the **Require Entra ID multifactor authentication registration** is selected and cannot be changed.
 8. Under **Enforce Policy**, select **Enabled** and then select **Save**.
 
 
@@ -2026,13 +2026,13 @@ All three reports allow for downloading of events in .CSV format for further ana
 
 Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they have access to as an organization.
 
-You can find the three reports in the **Microsoft Entra admin center**, then **Identity**, and then **Protection - Identity Protection**.
+You can find the three reports in the **Entra admin center**, then **Identity**, and then **Protection - Identity Protection**.
 
 #### Navigating the reports
 
 Each report launches with a list of all detections for the period shown at the top of the report. Each report allows for the addition or removal of columns based on administrator preference. Administrators can choose to download the data in .CSV or .JSON format. Reports can be filtered using the filters across the top of the report.
 
-Selecting individual entries enables more entries at the top of the report, such as the ability to confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
+Selecting individual entries enables more entries at the top of the report: you can confirm a sign-in as compromised or safe, confirm a user as compromised, or dismiss user risk.
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
@@ -2089,7 +2089,7 @@ The risk detection report also provides a clickable link to the detection in the
 
 Note
 
-Our system detects that the risk event that contributed to the risk user risk score was a false positive or that the user risk was remediated with policy enforcement such as completing an MFA prompt or secure password change. Therefore, our system dismisses the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
+Our system detects that the risk event behind the user risk score was a false positive, or that the user risk was remediated by policy enforcement, such as completing an MFA prompt or a secure password change. Therefore, our system dismisses the risk state, and a risk detail of “AI confirmed sign-in safe” will surface and no longer contribute to the user’s risk.
 
 ### Remediate risks and unblock users
 
@@ -2151,7 +2151,7 @@ To unblock an account blocked due to user risk, administrators have the followin
 
 - **Reset password** - You can reset the user's password.
 - **Dismiss user risk** - The user risk policy blocks a user if the configured user risk level for blocking access has been reached. You can reduce a user's risk level by dismissing user risk or manually closing reported risk detections.
-- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+- **Exclude the user from policy** - If you think the current configuration of your sign-in policy causes issues for specific users, you can exclude those users from it.
 - **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 #### Unblocking based on sign-in risk
@@ -2159,7 +2159,7 @@ To unblock an account blocked due to user risk, administrators have the followin
 To unblock an account based on sign-in risk, administrators have the following options:
 
 - **Sign in from a familiar location or device** - A common reason for blocked suspicious sign-ins are sign-in attempts from unfamiliar locations or devices. Your users can quickly determine whether this reason is the blocking reason by trying to sign in from a familiar location or device.
-- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+- **Exclude the user from policy** - If you think the current configuration of your sign-in policy causes issues for specific users, you can exclude those users from it.
 - **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 #### PowerShell preview
@@ -2168,15 +2168,15 @@ Using the Microsoft Graph PowerShell SDK Preview module, organizations can manag
 
 ### Use the Microsoft Graph API
 
-Microsoft Graph is the Microsoft unified API endpoint and the home of Microsoft Entra Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: `riskDetection, riskyUsers, and signIn`.
+Microsoft Graph is the Microsoft unified API endpoint and the home of Entra Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: `riskDetection, riskyUsers, and signIn`.
 
 `riskDetection`allows you to query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection.
 
 `riskyUsers`allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky.
 
-`signIn` allows you to query Microsoft Graph for information on Microsoft Entra ID sign-ins with specific properties related to risk state, detail, and level.
+`signIn` allows you to query Microsoft Graph for information on Entra ID sign-ins with specific properties related to risk state, detail, and level.
 
-This section gets you started with connecting to the Microsoft Graph and querying these APIs. For an in-depth introduction, full documentation, and access to the Graph Explorer, see the Microsoft Graph site ([https://graph.microsoft.io/](https://graph.microsoft.io/)) or the specific reference documentation for the `riskDetection, riskyUsers, and signIn` APIs.
+This section gets you started with connecting to the Microsoft Graph and querying these APIs. For an in-depth introduction, full documentation, and access to the Graph Explorer, see the Microsoft Graph site ([https://graph.microsoft.io/](https://graph.microsoft.io/)), or the specific reference documentation for the `riskDetection, riskyUsers, and signIn` APIs.
 
 #### Connect to Microsoft Graph
 
@@ -2184,16 +2184,16 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 #### Retrieve your domain name
 
-1. Sign in to the Microsoft Entra admin center.
+1. Sign in to the Entra admin center.
 2. Browse to **Identity**, then open Settings, and select **Domain names**.
 3. Take note of the .onmicrosoft.com domain. You need this information in a later step.
 
 #### Create a new app registration
 
-1. In the Microsoft Entra admin center, browse to **Identity and Applications**, then **App registrations**.
+1. In the Entra admin center, browse to **Identity and Applications**, then **App registrations**.
 2. Select **New registration**.
 3. On the **Create** page, perform the following steps:
-  1. In the **Name** textbox, type a name for your application (for example: Microsoft Entra Risk Detection API).
+  1. In the **Name** textbox, type a name for your application (for example: Entra Risk Detection API).
   2. Under **Supported account types**, select the type of accounts that use the APIs.
   3. Select **Register**.
 
@@ -2302,7 +2302,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=d
 
 #### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
 
-To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection has falsely detected as a risk and which of your legitimate users are performing actions that the AI deems risky.
+To understand the value Identity Protection risk-based policies bring to your organization, query all the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information shows which users Identity Protection falsely detected as a risk, and which of your legitimate users perform actions that the AI deems risky.
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
@@ -2311,7 +2311,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskD
 
 ## Implement security for workload identities
 
-Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.
+Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. Identity protection has extended these capabilities to workload identities to protect applications, service principals, and Managed Identities.
 
 A workload identity is an identity that allows an application or service principal access to resources, sometimes in the context of a user. These workload identities differ from traditional user accounts as they:
 
@@ -2323,9 +2323,9 @@ These differences make workload identities harder to manage and put them at high
 
 #### Requirements to use workload identity protection
 
-To make use of workload identity risk, including the Risky workload identities blade and the Workload identity detections tab in the Risk detections blade, in the Microsoft Entra admin center you must have the following.
+To use workload identity risk in the Entra admin center, including the Risky workload identities blade and the Workload identity detections tab in the Risk detections blade, you must have the following.
 
-- Microsoft Entra ID Premium P2 licensing
+- Entra ID Premium P2 licensing
 - Logged in user must be assigned either:
   - Security administrator
   - Security operator
@@ -2335,7 +2335,7 @@ To make use of workload identity risk, including the Risky workload identities b
 
 | **Detection name** | **Detection type** | **Description** |
 |---|---|---|
-| Microsoft Entra threat intelligence | Offline | This risk detection indicates some activity that's consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources. |
+| Entra threat intelligence | Offline | This risk detection indicates some activity that's consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources. |
 | Suspicious Sign-ins | Offline | This risk detection indicates sign-in properties or patterns that are unusual for this service principal. |
 |   |   | The detection learns the baselines sign-in behavior for workload identities in your tenant in between 2 and 60 days, and fires if one or more of the following unfamiliar properties appear during a later sign-in: IP address / ASN, target resource, user agent, hosting/non-hosting IP change, IP country, credential type. |
 | Unusual addition of credentials to an OAuth app | Offline | This detection is discovered by Microsoft Defender for Cloud Apps. This detection identifies the suspicious addition of privileged credentials to an OAuth app. This can indicate that an attacker has compromised the app, and is using it for malicious activity. |
@@ -2344,7 +2344,7 @@ To make use of workload identity risk, including the Risky workload identities b
 
 #### Add conditional access protection
 
-Using **Conditional Access for workload identities**, you can block access for specific accounts you choose when Identity Protection marks them "at risk." Policy can be applied to single-tenant service principals that have been registered in your tenant. Third-party SaaS, multi-tenanted apps, and managed identities are out of scope.
+**Conditional Access for workload identities** blocks access for specific accounts you choose when Identity Protection marks them "at risk." The policy can be applied to single-tenant service principals registered in your tenant. Third-party SaaS, multi-tenanted apps, and managed identities are out of scope.
 
 
 ## Explore Microsoft Defender for Identity
@@ -2372,13 +2372,13 @@ Defender for Identity consists of the following components:
 
 ## Explore the Identity Risk Management Agent
 
-The Identity Risk Management Agent in Microsoft Entra ID Protection provides proactive risk management capabilities by analyzing user behavior. The agent then suggests actions to mitigate potential identity risks. You can configure the settings to meet your organization's needs. By using a Large Language Model, the agent helps security administrators review and respond to risky activities before they lead to security incidents.
+The Identity Risk Management Agent in Entra ID Protection provides proactive risk management capabilities by analyzing user behavior. The agent then suggests actions to mitigate potential identity risks. You can configure the settings to meet your organization's needs. By using a Large Language Model, the agent helps security administrators review and respond to risky activities before they lead to security incidents.
 
 ### Prerequisites
 
-- You must have at least the Microsoft Entra ID P2 license.
+- You must have at least the Entra ID P2 license.
 - You must have available security compute units (SCU).
-- You must have the appropriate Microsoft Entra role.
+- You must have the appropriate Entra role.
   - **Security Administrator** - required to activate the agent the first time and view the agent and take action on the suggestions.
   - **Security Reader** and **Global Reader** - view the agent and any suggestions (can't take actions).
 
@@ -2401,7 +2401,7 @@ If the agent finds new suggestions, it takes the following steps (SCUs consumed)
 
 ### Using the agent
 
-1. Sign in to the **Microsoft Entra admin center** as at least a Security Administrator.
+1. Sign in to the **Entra admin center** as at least a Security Administrator.
 2. Browse to **ID Protection** > **Risky users**.
 3. Look for the banner at the top of the page.
 4. Select **Start agent**
@@ -2481,12 +2481,12 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- [Enabling combined security information registration in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-registration-mfa-sspr-combined)
-- [Manage emergency access accounts in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
+- [Enabling combined security information registration in Entra ID](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-registration-mfa-sspr-combined)
+- [Manage emergency access accounts in Entra ID](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access)
 - [How To: Configure and enable risk policies](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)
 - [What are managed identities for Azure resources?](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview)
 - [Remediate risks and unblock users](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-remediate-unblock)
-- [Microsoft Entra Identity Protection notifications](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-notifications)
+- [Entra Identity Protection notifications](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-notifications)
 - [Identity Protection policies](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies)
 - [What is Microsoft Defender for Identity](https://learn.microsoft.com/en-us/defender-for-identity/what-is)
 
@@ -2502,7 +2502,7 @@ _https://learn.microsoft.com/en-us/training/modules/implement-access-management-
 
 This module will cover how to assign and manage access to resources in Azure using Azure roles. When you create a resource, you want to know that only specific access is granted to users and groups. Only allow users that need to access data or a resource, the permissions to do so. How can you control access? By assigning a role with the specific permissions needed. There are built-in Azure roles and you can create custom-roles as needed.
 
-An application might also need to have permission to access data or other Azure resources. Learn how to set up managed identities, which allow the application to gain access to only resources you allow. You can give granular access to secrets, keys, and certificates stored in a key vault to your users and applications. You protect both the items stored in the key vault, and who can use them. And finally, you'll look at the new tool Microsoft Entra Permission Management. Learn to gather, review, and restrict the permission assigned across your cloud solutions.
+An application might also need to have permission to access data or other Azure resources. Learn how to set up managed identities, which allow the application to gain access to only resources you allow. You can give granular access to secrets, keys, and certificates stored in a key vault to your users and applications. You protect both the items stored in the key vault, and who can use them. And finally, you'll look at the new tool Entra Permission Management. Learn to gather, review, and restrict the permission assigned across your cloud solutions.
 
 #### Learning objectives
 
@@ -2512,7 +2512,7 @@ By the end of this module will be able to:
 - Create and manage application access with managed identities.
 - Configure and manage access into Azure Key Vault.
 - Retrieve object from a key vault securely.
-- Explore the capabilities of Microsoft Entra Permissions Management.
+- Explore the capabilities of Entra Permissions Management.
 
 #### Prerequisites
 
@@ -2540,8 +2540,8 @@ Azure role-based access control (Azure RBAC) is the authorization system you use
 
 1. Identify what level to assign the role (the Scope). Scope is the set of resources that the access applies to. In Azure, you can specify a scope at four levels: management group, subscription, resource group, and resource. Scopes are structured in a parent-child relationship. Each level of hierarchy makes the scope more specific. You can assign roles at any of these levels of scope. The level you select determines how widely the role is applied. Lower levels inherit role permissions from higher levels. Example:
   - If you assign the **Reader role** to a user at the **management group scope**, that user can read everything in all subscriptions in the management group.
-  - If you assign the **Billing Reader role** to a group at the **subscription scope**, the members of that group can read billing data for every resource group and resource in the subscription.
-  - If you assign the **Contributor role** to an application at the **resource group scope**, it can manage resources of all types in that resource group, but not other resource groups in the subscription. It's a best practice to grant security-principals the least privilege they need to perform their job. Avoid assigning broader roles at broader scopes even if it initially seems more convenient. By limiting roles and scopes, you limit what resources are at risk if the security-principal is ever compromised. For more information, see Understand scope.
+  - If you assign the **Billing Reader role** to a group at the **subscription scope**, its members can read billing data for every resource group and resource in the subscription.
+  - If you assign the **Contributor role** to an application at the **resource group scope**, it can manage resources of all types in that resource group, but not in other resource groups of the subscription. It's a best practice to grant security-principals the least privilege they need to perform their job. Avoid assigning broader roles at broader scopes even if it initially seems more convenient. By limiting roles and scopes, you limit what resources are at risk if the security-principal is ever compromised. For more information, see Understand scope.
 
 2. Confirm the currently logged in user has the rights need to assign the Azure role.
 3. Assign the role. Once you know the security-principal, role, and scope, you can assign the role. You can assign roles using the Azure portal, Azure PowerShell, Azure CLI, Azure SDKs, or REST APIs. You can have up to 4,000 role assignments in each subscription. This limit includes role assignments at the subscription, resource group, and resource scopes. You can have up to 500 role assignments in each management group.
@@ -2571,13 +2571,13 @@ az role assignment create --assignee "{assignee}" \
 
 ## Configure custom Azure roles
 
-If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in a Microsoft Entra ID and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
+If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in an Entra ID and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 #### Create the custom role from the user interface
 
 You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
 
-1. Open Microsoft Entra admin center.
+1. Open Entra admin center.
 2. From the **Identity** menu, Select **Roles and administration**.
 3. Select **+ New custom role**.
 4. Then name and assign the capabilities needed.
@@ -2621,18 +2621,18 @@ The asterisk (`*`) is used as a wildcard. If you need to assign all of the **rea
 
 A common challenge when creating a cloud solution is the management of secrets, credentials, certificates, and keys. These secure elements are used to secure communication between services. Managed identities eliminate the need for developers to manage these credentials.
 
-While developers can securely store the secrets in Azure Key Vault, services need a way to access Azure Key Vault. Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources. The managed identity supports authentication via Microsoft Entra ID. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials.
+While developers can securely store the secrets in Azure Key Vault, services need a way to access Azure Key Vault. Managed identities provide an automatically managed identity in Entra ID for applications to use when connecting to resources. The managed identity supports authentication via Entra ID. Applications can use managed identities to obtain Entra tokens without having to manage any credentials.
 
 #### Benefits of using managed identities
 
 - You don't need to manage credentials. Credentials aren’t even accessible to you.
-- You can use managed identities to authenticate to any resource that supports Microsoft Entra authentication, including your own applications. Managed identities can be used without any extra cost.
+- You can use managed identities to authenticate to any resource that supports Entra authentication, including your own applications. Managed identities can be used without any extra cost.
 
 #### Types of managed identity
 
 | **Identity type** | **Description and usage** |
 |---|---|
-| System-assigned | Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Microsoft Entra ID. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Microsoft Entra ID. |
+| System-assigned | Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Entra ID. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Entra ID. |
 | User-assigned | You might also create a managed identity as a standalone Azure resource. You can create a user-assigned managed identity and assign it to one or more instances of an Azure service. For user-assigned managed identities, the identity is managed separately from the resources that use it. |
 
 Always remember that managed identities are assigned to an application. So, you need to configure and manage the identity within the services they're being used. If you have an application running in a virtual machine (Linux or Windows), then you add and configure the identity there. If you're using a managed identity with a cloud-app, function, or app service, then you configure and manage it there. Let's look at adding a managed identity to a cloud-built app using the App Service.
@@ -2678,7 +2678,7 @@ As stated at the beginning of this page, when you build an app, you need a metho
 
 ## Access Azure resources with managed identities
 
-Managed identities for Azure resources are a feature of Microsoft Entra ID. Each Azure service that supports managed-identities are subject to their own timeline. Make sure you review the availability status of managed identities for your resource and known issues before you begin. After you've configured an Azure resource with a managed identity, you can give the managed identity access to another resource.
+Managed identities for Azure resources are a feature of Entra ID. Each Azure service that supports managed-identities are subject to their own timeline. Make sure you review the availability status of managed identities for your resource and known issues before you begin. After you've configured an Azure resource with a managed identity, you can give the managed identity access to another resource.
 
 #### Add access to other resources
 
@@ -2695,7 +2695,7 @@ After you've enabled managed identity on an Azure resource, such as an Azure App
 
 ## Analyze Azure role permissions
 
-What is a permission? The dictionary definition of permission is the **consent or authorization to perform a specific action**. In Microsoft Entra ID, you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
+What is a permission? The dictionary definition of permission is the **consent or authorization to perform a specific action**. In Entra ID, you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
 
 #### What is a sample of the default permissions for users?
 
@@ -2712,7 +2712,7 @@ This is just a small subset, to show differences. If you want a full list of the
 
 #### Controlling permissions - add and restrict
 
-You can use the **User Settings** inside of Microsoft Entra ID – Manage menu to restrict or control the default permissions of the default users. Or you can use Roles and administrators to add new permissions onto your users and group. Always use the concept of Least Privilege and make sure the users only have the rights they need. In User settings you can restrict the user's ability to:
+You can use the **User Settings** inside of Entra ID – Manage menu to restrict or control the default permissions of the default users. Or you can use Roles and administrators to add new permissions onto your users and group. Always use the concept of Least Privilege and make sure the users only have the rights they need. In User settings you can restrict the user's ability to:
 
 - Register applications
 - Access the Azure portal
@@ -2723,7 +2723,7 @@ By adding roles to a given user account or group, you can add permissions on to 
 
 #### Exploring available permissions
 
-You only want to grant the permissions a user needs. So be careful to know what all permissions are granted when you assign a role. You can see the list of permissions in the **Attribute definition reader**. To open it, launch Microsoft Entra ID, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu. Depending on the role you chose, you'll see a large number of permissions or possibly a small number. Two sets of permissions:
+You only want to grant the permissions a user needs. So be careful to know what all permissions are granted when you assign a role. You can see the list of permissions in the **Attribute definition reader**. To open it, launch Entra ID, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu. Depending on the role you chose, you'll see a large number of permissions or possibly a small number. Two sets of permissions:
 
 - Role permissions
 - Guest and service principal basic read permissions
@@ -2822,14 +2822,14 @@ During this module you have learned to:
 - Create and manage application access with managed identities.
 - Configure and manage access into Azure Key Vault.
 - Retrieve object from a key vault securely.
-- Explore the capabilities of Microsoft Entra Permissions Management.
+- Explore the capabilities of Entra Permissions Management.
 
 ### To learn more, research using these links
 
 - [Assign Azure roles using the Azure portal - Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-steps)
 - [Create or update Azure custom roles using the Azure portal - Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
-- [Configure managed identities using the Azure portal - Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)
-- [Assign a managed identity access to a resource using the Azure portal - Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource?pivots=identity-mi-access-cli)
+- [Configure managed identities using the Azure portal - Entra ID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/)
+- [Assign a managed identity access to a resource using the Azure portal - Entra ID](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-to-assign-access-azure-resource?pivots=identity-mi-access-cli)
 - [Understand Azure role definitions - Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions)
 - [Grant permission to applications to access an Azure key vault using Azure RBAC](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy)
 - [Create and access a secret in Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal)
@@ -2837,31 +2837,31 @@ During this module you have learned to:
 
 ---
 
-# Deploy and Configure Microsoft Entra Global Secure Access
+# Deploy and Configure Entra Global Secure Access
 
 _https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/_
 
 
 ## Introduction
 
-The modern workforce transitioned from traditional office settings to working from nearly anywhere. The transition in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Microsoft Entra Internet Access and Microsoft Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era.
+The modern workforce transitioned from traditional office settings to working from nearly anywhere. The transition in working location necessitates an identity-aware, cloud-delivered network perimeter. This identity-aware perimeter is known as Security Service Edge (SSE). The Microsoft SSE solution includes Entra Internet Access and Entra Private Access, collectively referred to as Global Secure Access. This solution is founded on Zero Trust principles, emphasizing least privilege, explicit verification, and an assumption of breach to ensure security in the cloud era.
 
-Scenario: Imagine your company has a sales representative working remotely from a coffee shop. The sales rep needs to access sensitive customer data stored in the company's cloud services. To ensure secure access, the representative would use Microsoft Security Service Edge (SSE) solution. In this case Microsoft Entra Private Access. The sales rep securely connects to the company's network, authenticates their identity, and accesses the required data. Access happens without exposing data to the public internet; all while adhering to the Zero Trust principles of least privilege and explicit verification.
+Scenario: Imagine your company has a sales representative working remotely from a coffee shop. The sales rep needs to access sensitive customer data stored in the company's cloud services. To ensure secure access, the representative would use Microsoft Security Service Edge (SSE) solution. In this case Entra Private Access. The sales rep securely connects to the company's network, authenticates their identity, and accesses the required data. Access happens without exposing data to the public internet; all while adhering to the Zero Trust principles of least privilege and explicit verification.
 
-In this module, you learn how to implement Microsoft Entra Private and Microsoft Entra Internet Access using Azure and Microsoft Entra.
+In this module, you learn how to implement Entra Private and Entra Internet Access using Azure and Entra.
 
 
 ## Explore Global Secure Access
 
-![Diagram of the high level process flow for Global Secure Access in Microsoft Entra. Microsoft Entra Private Access and Internet Access are the gateways to resources.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/global-secure-access-diagram.png)
+![Diagram of the high level process flow for Global Secure Access in Entra. Entra Private Access and Internet Access are the gateways to resources.](https://learn.microsoft.com../../wwl-sci/deploy-configure-microsoft-entra-global-secure-access/media/global-secure-access-diagram.png)
 
 ### Microsoft Security Service Edge (SSE) solution
 
-Microsoft Entra Internet Access and Microsoft Entra Private Access is a solution that merges network, identity, and endpoint access controls so you can securely access any app or resource, from anywhere. You can enable access orchestration for employees, business partners, and digital workloads. With existing functionality in Microsoft Entra, continuously monitor and adjust user access in real time if permissions or risk level changes. The Global Secure Access uses a unified portal to streamline the roll-out and management of the access control capabilities. Access is delivered from the Microsoft Wide Area Network across its global network of regions and edge locations. This private network enables organizations to connect users and devices to public and private resources seamlessly and securely.
+Entra Internet Access and Entra Private Access is a solution that merges network, identity, and endpoint access controls so you can securely access any app or resource, from anywhere. You can enable access orchestration for employees, business partners, and digital workloads. With existing functionality in Entra, continuously monitor and adjust user access in real time if permissions or risk level changes. The Global Secure Access uses a unified portal to streamline the roll-out and management of the access control capabilities. Access is delivered from the Microsoft Wide Area Network across its global network of regions and edge locations. This private network enables organizations to connect users and devices to public and private resources seamlessly and securely.
 
-### Microsoft Entra Internet Access
+### Entra Internet Access
 
-Microsoft Entra Internet Access secures access to Microsoft services, SaaS, and public internet apps while protecting users, devices, and data against internet threats. Secure access to public internet apps through the identity-centric, device-aware, cloud-delivered Secure Web Gateway (SWG) of Microsoft Entra Internet Access.
+Entra Internet Access secures access to Microsoft services, SaaS, and public internet apps while protecting users, devices, and data against internet threats. Secure access to public internet apps through the identity-centric, device-aware, cloud-delivered Secure Web Gateway (SWG) of Entra Internet Access.
 
 #### Key features
 
@@ -2875,9 +2875,9 @@ Microsoft Entra Internet Access secures access to Microsoft services, SaaS, and 
 - Regulate access to websites based on their content categories and domain names.
 - Apply universal Conditional Access policies for all internet destinations.
 
-### Microsoft Entra Private Access
+### Entra Private Access
 
-Microsoft Entra Private Access provides your users secure access to your private, corporate resources. Microsoft Entra Private Access builds on the capabilities of Microsoft Entra application proxy and extends access to any private resource, port, and protocol. Remote users connect to private apps across hybrid and multicloud environments, private networks, and data centers from any device and network without requiring a VPN. The service offers per-app adaptive access based on Conditional Access policies.
+Entra Private Access provides your users secure access to your private, corporate resources. Entra Private Access builds on the capabilities of Entra application proxy and extends access to any private resource, port, and protocol. Remote users connect to private apps across hybrid and multicloud environments, private networks, and data centers from any device and network without requiring a VPN. The service offers per-app adaptive access based on Conditional Access policies.
 
 #### Key features
 
@@ -2889,36 +2889,36 @@ Microsoft Entra Private Access provides your users secure access to your private
 
 Licensing:
 
-- Microsoft Entra ID P1 or P2 license
-- Microsoft Entra Internet Access license and/or Microsoft Entra Private Access license
+- Entra ID P1 or P2 license
+- Entra Internet Access license and/or Entra Private Access license
 
 Roles:
 
 - Global Secure Access Administrator role assigned to at least one administrator.
 
-It's recommended that you visit the [Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/) to plan out your implementation. Additionally, you can make all configuration changes in the Microsoft Entra admin center at [https://entra.microsoft.com](https://entra.microsoft.com).
+It's recommended that you visit the [Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/) to plan out your implementation. Additionally, you can make all configuration changes in the Entra admin center at [https://entra.microsoft.com](https://entra.microsoft.com).
 
 
-## Deploy and configure Microsoft Entra Internet Access
+## Deploy and configure Entra Internet Access
 
-There are four main steps for getting Microsoft Entra Internet Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on their Windows device can securely access Microsoft resources from anywhere. Conditional Access policies for Microsoft traffic are only enforced when the user has the Global Secure Access client. Microsoft traffic is accessible through remote network connectivity without the Global Secure Access client, but the Conditional Access policy isn't enforced in that path.
+There are four main steps for getting Entra Internet Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on their Windows device can securely access Microsoft resources from anywhere. Conditional Access policies for Microsoft traffic are only enforced when the user has the Global Secure Access client. Microsoft traffic is accessible through remote network connectivity without the Global Secure Access client, but the Conditional Access policy isn't enforced in that path.
 
 ##### Steps
 
 | Steps | Description |
 |---|---|
-| 1. Enable the Microsoft traffic forwarding profile. | With the Microsoft profile enabled, Microsoft Entra Internet Access acquires the traffic going to Microsoft services, like Exchange Online and SharePoint Online. |
+| 1. Enable the Microsoft traffic forwarding profile. | With the Microsoft profile enabled, Entra Internet Access acquires the traffic going to Microsoft services, like Exchange Online and SharePoint Online. |
 | 2. Install the Global Secure Access Client on end-user devices. | Download and install the client app to capture and control access from the client. |
 | 3. Enable tenant restrictions. | Configure which tenants / organizations are allowed or blocked |
 | 4. Enable enhanced Global Secure Access signaling and Conditional Access. | Use Conditional Access and Global Secure Access to prevent attacks. |
 
 ### Enable Microsoft traffic forwarding profile
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Traffic forwarding.
 3. Enable the Microsoft traffic profile.
 
-Turns on Microsoft traffic forwarding and creates the following configurations in Microsoft Entra:
+Turns on Microsoft traffic forwarding and creates the following configurations in Entra:
 
 | Configuration Setup | Description |
 |---|---|
@@ -2930,11 +2930,11 @@ For more information, refer to [Enable and manage Microsoft traffic forwarding](
 
 ### Deploy Global Secure Access client for Windows (or Android)
 
-The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device. You need to download the client from the Microsoft Entra admin center, then use your choice of deployment methods.
+The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device. You need to download the client from the Entra admin center, then use your choice of deployment methods.
 
 ##### Download the client
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Client download.
 3. Select Download Client.
 
@@ -2942,7 +2942,7 @@ The client is quick and easy to install. It can be deployed via mobile device ma
 
 1. Copy the Global Secure Access client setup file to your client machine.
 2. Run the GlobalSecureAccessClient.exe setup file. Accept the software license terms.
-3. The client is installed and users are prompted to sign in with their Microsoft Entra credentials.
+3. The client is installed and users are prompted to sign in with their Entra credentials.
 4. Users sign in and the connection icon turns green. Double-clicking on the connection icon opens a notification with client information showing a connected state.
 
 You can install the Android client instead using either Microsoft Intune or Microsoft Defender for Endpoint on Android. The process is similar, but you get the client app from the Android store.
@@ -2953,7 +2953,7 @@ Administrators use tenant restrictions to control user access to external tenant
 
 ##### Set up Tenant Restrictions
 
-1. Sign in to the Microsoft Entra admin center as at least a Security Administrator.
+1. Sign in to the Entra admin center as at least a Security Administrator.
 2. Browse to Identity > External Identities > Cross-tenant access settings, then select Organizational settings.
 3. Select **Add organization**.
 4. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
@@ -2964,7 +2964,7 @@ Administrators use tenant restrictions to control user access to external tenant
 
 Once you created the tenant restriction policies, you can utilize Global Secure Access to apply tagging for tenant restrictions. An administrator with both the Global Secure Access Administrator and Security Administrator roles must take the following steps to enable enforcement with Global Secure Access.
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Global Settings > Session Management > Tenant Restrictions.
 3. Select the toggle to Enable tagging to enforce tenant restrictions on your network.
 4. Select Save.
@@ -2976,9 +2976,9 @@ Once you created the tenant restriction policies, you can utilize Global Secure 
 | Steps | Description |
 |---|---|
 | 1. | Contoso configures a **tenant restrictions v2** policy in their cross-tenant access settings to block all external accounts and external apps. Contoso enforces the policy using Global Secure Access universal tenant restrictions. |
-| 2. | A user with a Contoso-managed device tries to access a Microsoft Entra integrated app with an unsanctioned external identity. |
-| 3. | Authentication plane protection: Microsoft Entra ID, with Contoso's policy, blocks unsanctioned external accounts from accessing external tenants. |
-| 4. | Data plane protection: With universal tenant restrictions v2 through Global Secure Access, data plane protection covers Microsoft Graph. If the user tries to reuse an infiltrated Microsoft Entra ID-issued token to access Microsoft Graph, the request is blocked. For SharePoint Online, any attempt at anonymously accessing resources is also blocked. Data plane protection for third-party apps such as Slack isn't in scope. |
+| 2. | A user with a Contoso-managed device tries to access an Entra integrated app with an unsanctioned external identity. |
+| 3. | Authentication plane protection: Entra ID, with Contoso's policy, blocks unsanctioned external accounts from accessing external tenants. |
+| 4. | Data plane protection: With universal tenant restrictions v2 through Global Secure Access, data plane protection covers Microsoft Graph. If the user tries to reuse an infiltrated Entra ID-issued token to access Microsoft Graph, the request is blocked. For SharePoint Online, any attempt at anonymously accessing resources is also blocked. Data plane protection for third-party apps such as Slack isn't in scope. |
 
 ### Enable enhanced Global Secure Access signaling and Conditional Access
 
@@ -2988,14 +2988,14 @@ The Global Secure Access Client installed on devices or users behind configured 
 
 ##### Enable Global Secure Access signaling
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Global settings > Session management > Adaptive access.
 3. Select the toggle to Enable Global Secure Access signaling in Conditional Access.
 4. Browse to Protection > Conditional Access > Named locations. Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
 
 ##### Build your Conditional Access policy for networks
 
-1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+1. Sign in to the Entra admin center as at least a Conditional Access Administrator.
 2. Browse to Protection > Conditional Access.
 3. Select Create new policy.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -3022,26 +3022,26 @@ The Global Secure Access Client installed on devices or users behind configured 
 10. Select the Create button to create to enable your policy.
 
 
-## Deploy and configure Microsoft Entra Private Access
+## Deploy and configure Entra Private Access
 
-Similar to configuring Microsoft Entra Internet Access, there are four main steps for getting Microsoft Entra Private Access deployed within your company. After you complete these four steps, users with the Global Secure Access client installed on a Windows device can connect to your primary resources, through a Quick Access app, and private network connector.
+Similar to configuring Entra Internet Access, there are four main steps for getting Entra Private Access deployed within your company. After these four steps, users with the Global Secure Access client installed on a Windows device can reach your primary resources through a Quick Access app and a private network connector.
 
 ##### Steps
 
 | Steps | Description |
 |---|---|
-| 1. Configure a Microsoft Entra private network connector and connector group. | Create connection between an on-premises server and Global Secure Access. |
-| 2. Configure Quick Access to your private resources. | Define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in Microsoft Entra Private Access. |
+| 1. Configure an Entra private network connector and connector group. | Create connection between an on-premises server and Global Secure Access. |
+| 2. Configure Quick Access to your private resources. | Define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in Entra Private Access. |
 | 3. Enable the Private Access traffic forwarding profile. | Turn on Private Access and link from on-premises router to remote networks. |
 | 4. Install and configure the Global Secure Access Client on end-user devices. | Deploy the client software onto devices, so they can access the traffic flow. |
 
-### Configure a Microsoft Entra private network connector and connector groups
+### Configure an Entra private network connector and connector groups
 
 Connectors are lightweight agents that sit on a server in a private network and facilitate the outbound connection to the Global Secure Access service. Connectors must be installed on a Windows Server that has access to the backend resources and applications. You can organize connectors into connector groups, with each group handling traffic to specific applications.
 
 ##### Configuring the Windows Server for connectors
 
-The Microsoft Entra private network connector requires a server running Windows Server 2016 or later. You install the private network connector on the server. This connector server needs to connect to the Microsoft Entra Private Access service and application proxy service and the private resources or applications that you plan to publish.
+The Entra private network connector requires a server running Windows Server 2016 or later. You install the private network connector on the server. This connector server needs to connect to the Entra Private Access service and application proxy service and the private resources or applications that you plan to publish.
 
 - For high availability in your environment, we recommend having more than one Windows server.
 - The minimum .NET version required for the connector is v4.7.2+.
@@ -3063,15 +3063,15 @@ Allow access to some URLs
 | login.windows.net, secure.aadcdn.microsoftonline-p.com, `site`.microsoftonline.com, `site`.microsoftonline-p.com, `site`.msauth.net, `site`.msauthimages.net, `site`.msecnd.net, `site`.msftauth.net, `site`.msftauthimages.net, `site`.phonefactor.net, enterpriseregistration.windows.net, management.azure.com, policykeyservice.dc.ad.msft.net, ctldl.windowsupdate.com, and [www.microsoft.com/pkiops](https://www.microsoft.com/pkiops) | 443/HTTPS | The connector uses these URLs during the registration process. |
 | ctldl.windowsupdate.com, and [www.microsoft.com/pkiops](https://www.microsoft.com/pkiops) | 80/HTTP | The connector uses these URLs during the registration process. |
 
-##### Install the connector using Microsoft Entra
+##### Install the connector using Entra
 
-1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
+1. Sign in to the Entra admin center as a Global Administrator of the directory that uses Application Proxy.
 2. Select your username in the upper-right corner. Verify sign-in to a directory that uses Application Proxy. If you need to change directories, select Switch directory and choose a directory that uses Application Proxy.
 3. Browse to Global Secure Access > Connect > Connectors.
 4. Select Download connector service.
 5. Read the Terms of Service. When ready, select Accept terms & Download.
 6. Install the connector using the Run option at the bottom of the screen.
-7. Install the service by following the instructions in the wizard. When prompted to register the connector with the Application Proxy for your Microsoft Entra tenant, provide your Global Administrator credentials.
+7. Install the service by following the instructions in the wizard. When prompted to register the connector with the Application Proxy for your Entra tenant, provide your Global Administrator credentials.
 
 ##### Verify the connector installed
 
@@ -3079,15 +3079,15 @@ On Windows Server:
 
 1. Select the Windows key and enter services.msc to open the Windows Services Manager.
 2. Check to see if the status for the following services is Running.
-  - Microsoft Entra private network connector enables connectivity.
-  - Microsoft Entra private network connector Updater is an automated update service.
+  - Entra private network connector enables connectivity.
+  - Entra private network connector Updater is an automated update service.
   - The updater checks for new versions of the connector and updates the connector as needed.
 
 3. If the status for the services isn't Running, right-click to select each service and choose Start.
 
-In Microsoft Entra:
+In Entra:
 
-1. Sign in to the Microsoft Entra admin center as a Global Administrator of the directory that uses Application Proxy.
+1. Sign in to the Entra admin center as a Global Administrator of the directory that uses Application Proxy.
 2. Browse to Global Secure Access > Connect > Connectors.
   - All of your connectors and connector groups appear on this page.
 
@@ -3105,13 +3105,13 @@ In Microsoft Entra:
 
 ### Configure Quick Access for Global Secure Access
 
-With Global Secure Access, you can define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in the traffic for Microsoft Entra Private Access. Your organization's employees can then access the apps and sites that you specify. Explore how to configure Quick Access for Microsoft Entra Private Access.
+With Global Secure Access, you can define specific fully qualified domain names (FQDNs) or IP addresses of private resources to include in the traffic for Entra Private Access. Your organization's employees can then access the apps and sites that you specify. Explore how to configure Quick Access for Entra Private Access.
 
 ##### Set up Quick Access name and connector group
 
 On the Quick Access page, you provide a name for the Quick Access app, select a connector group, and add application segments, which include FQDNs and IP addresses. You can complete all three steps at the same time, or you can add the application segments after the initial setup is complete.
 
-1. Sign in to the Microsoft Entra admin center with the appropriate roles.
+1. Sign in to the Entra admin center with the appropriate roles.
 2. Browse to Global Secure Access > Applications > Quick access.
 3. Enter a name. We recommend using the name Quick Access.
 4. Select a Connector group from the dropdown menu. Existing connector groups appear in the dropdown menu.
@@ -3121,9 +3121,9 @@ On the Quick Access page, you provide a name for the Quick Access app, select a 
 
 ##### Add an application segment
 
-The **Add Quick Access** application segment portion of this process is where you define the FQDNs and IP addresses that you want to include in the traffic for Microsoft Entra Private Access. You can add these resources when you create the Quick Access app or return to add more or edit them later.
+In the **Add Quick Access** application segment portion of this process, you define the FQDNs and IP addresses to include in the traffic for Entra Private Access. You can add these resources when you create the Quick Access app or return to add more or edit them later.
 
-1. Sign in to the Microsoft Entra admin center.
+1. Sign in to the Entra admin center.
 2. Browse to Global Secure Access > Applications > Quick Access.
 3. Select **Add Quick Access** application segment.
 4. In the **Create application segment** panel, select a Destination type.
@@ -3156,7 +3156,7 @@ The **Add Quick Access** application segment portion of this process is where yo
 
 ##### Assign users and groups for Quick Access
 
-1. Sign in to the Microsoft Entra admin center.
+1. Sign in to the Entra admin center.
 2. Browse to Global Secure Access > Applications > Quick Access.
 3. Select the Edit application settings button from Quick Access.
 4. Select Users and groups from the side menu.
@@ -3164,23 +3164,23 @@ The **Add Quick Access** application segment portion of this process is where yo
 
 You can enable specific Conditional Access policies as needed.
 
-### Enable Traffic forwarding - Microsoft Entra Private Access
+### Enable Traffic forwarding - Entra Private Access
 
-Now that you have your Quick Access app configured, your private resources added, users assigned to the app, you can enable the Private access profile from the Traffic forwarding area of Global Secure Access.
+With your Quick Access app configured, your private resources added, and users assigned to the app, you can now enable the Private access profile from the Traffic forwarding area of Global Secure Access.
 
-The Private Access traffic forwarding profile routes traffic to your private network through the Global Secure Access Client. Enabling this traffic forwarding profile allows remote workers to connect to internal resources without a VPN. With the features of Microsoft Entra Private Access, you can control which private resources to tunnel through the service and apply Conditional Access policies to secure access to those services. Once your configurations are in place, you can view and manage all of those configurations from one place.
+The Private Access traffic forwarding profile routes traffic to your private network through the Global Secure Access Client. Enabling this traffic forwarding profile allows remote workers to connect to internal resources without a VPN. With the features of Entra Private Access, you can control which private resources to tunnel through the service and apply Conditional Access policies to secure access to those services. Once your configurations are in place, you can view and manage all of those configurations from one place.
 
-1. Sign in to the Microsoft Entra admin center.
+1. Sign in to the Entra admin center.
 2. Browse to Global Secure Access > Connect > Traffic forwarding.
 3. Select the checkbox for Private access profile.
 
 ### Deploy Global Secure Access client for Windows (or Android)
 
-The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device. You need to download the client from the Microsoft Entra admin center, then use your choice of deployment methods.
+The client is quick and easy to install. It can be deployed via mobile device management tools like Microsoft Intune, or manually installed on each device. You need to download the client from the Entra admin center, then use your choice of deployment methods.
 
 ##### Download the client
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Client download.
 3. Select Download Client.
 
@@ -3188,7 +3188,7 @@ The client is quick and easy to install. It can be deployed via mobile device ma
 
 1. Copy the Global Secure Access client setup file to your client machine.
 2. Run the GlobalSecureAccessClient.exe setup file. Accept the software license terms.
-3. The client is installed and users are prompted to sign in with their Microsoft Entra credentials.
+3. The client is installed and users are prompted to sign in with their Entra credentials.
 4. Users sign in and the connection icon turns green. Double-clicking on the connection icon opens a notification with client information showing a connected state.
 
 You can install the Android client instead using either Microsoft Intune or Microsoft Defender for Endpoint on Android. The process is similar, but you get the client app from the Android store.
@@ -3198,10 +3198,10 @@ You can install the Android client instead using either Microsoft Intune or Micr
 
 To access the dashboard:
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Dashboard.
 
-The Global Secure Access dashboard provides you with visualizations of the network traffic acquired by the Microsoft Entra Private and Microsoft Entra Internet Access services. The dashboard aggregates data from your network configurations, including devices, users, and tenants. The dashboard uses several widgets that provide you with visibility into several different types of data:
+The Global Secure Access dashboard provides you with visualizations of the network traffic acquired by the Entra Private and Entra Internet Access services. The dashboard aggregates data from your network configurations, including devices, users, and tenants. The dashboard uses several widgets that provide you with visibility into several different types of data:
 
 - Volume of devices using the Global Secure Access client
 - Changes in the number of active devices
@@ -3253,7 +3253,7 @@ The top-visited destinations widget shows all types of traffic and sorts by the 
 
 Global Secure Access provides visibility into the number of users and devices that are accessing other tenants. This widget displays the following information:
 
-- Sign-ins: The number of sign-ins through Microsoft Entra ID to Microsoft services in the last 24 hours. This widget provides you with information about the activity in your tenant.
+- Sign-ins: The number of sign-ins through Entra ID to Microsoft services in the last 24 hours. This widget provides you with information about the activity in your tenant.
 - Total distinct tenants: The number of distinct tenant IDs seen in the last 24 hours.
 - Unseen tenants: The number of distinct tenant IDs that were seen in the last 24 hours, but not in the previous seven days.
 - Users: The number of distinct user sign-ins to other tenants in the last 24 hours.
@@ -3279,9 +3279,9 @@ The Device status widgets display the active and inactive devices that you deplo
 
 Remote networks are remote locations, such as a branch office, or networks that require internet connectivity. Setting up remote networks connects your users in remote locations to Global Secure Access. Once a remote network is configured, you can assign a traffic forwarding profile to manage your corporate network traffic. Global Secure Access provides remote network connectivity so you can apply network security policies to your outbound traffic.
 
-There are multiple ways to connect remote networks to Global Secure Access. In a nutshell, you're creating an Internet Protocol Security (IPSec) tunnel between a core router, known as the customer premises equipment (CPE), at your remote network and the nearest Global Secure Access endpoint. All internet-bound traffic is routed through the core router of the remote network for security policy evaluation in the cloud. Installation of a client isn't required on individual devices.
+There are multiple ways to connect remote networks to Global Secure Access. In a nutshell, you're creating an Internet Protocol Security (IPSec) tunnel between the nearest Global Secure Access endpoint and a core router at your remote network, known as the customer premises equipment (CPE). All internet-bound traffic is routed through the core router of the remote network for security policy evaluation in the cloud. Installation of a client isn't required on individual devices.
 
-There are five primary steps to configure a Remote Network. In this process, you're building a bridge from an on-premises router in your office to Global Secure Access. These steps can be performed in Microsoft Entra admin center or via the Microsoft Graph API. Note the final step is performed on the on-premises router.
+There are five primary steps to configure a Remote Network. In this process, you're building a bridge from an on-premises router in your office to Global Secure Access. These steps can be performed in Entra admin center or via the Microsoft Graph API. Note the final step is performed on the on-premises router.
 
 | Steps | Description |
 |---|---|
@@ -3293,7 +3293,7 @@ There are five primary steps to configure a Remote Network. In this process, you
 
 ### Configure - Basics
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Connect > Remote networks.
 3. Basics tab - Select the Create remote network button and provide the details.    Values requested     Name   Region
 
@@ -3304,26 +3304,26 @@ There are five primary steps to configure a Remote Network. In this process, you
 ### Enable - Traffic forwarding profiles
 
 1. Select **Next** to open the Traffic forwarding setup.
-  - You can create a new traffic forwarding profile, or select one created during Microsoft Entra Private Access or Microsoft Entra Internet Access.
+  - You can create a new traffic forwarding profile, or select one created during Entra Private Access or Entra Internet Access.
 
 ### Complete configuration - Set up your on-premises router
 
 All your remote networks appear on the Remote network page. Select the View configuration link in the Connectivity details column. These details contain the connectivity information from the Microsoft side of the bidirectional communication channel that you use to set up your CPE.
 
-With the Microsoft connection data, it's time to update the on-premises router configuration. This step is performed in the management console of your CPE, not in Microsoft Entra admin center. Until you complete this step, your IPsec isn't set up. IPsec is a bidirectional communication. Internet Key Exchange (IKE) negotiations happen between two parties before the tunnel is successfully set up. So, don't miss this step.
+With the Microsoft connection data, it's time to update the on-premises router configuration. This step is performed in the management console of your CPE, not in Entra admin center. Until you complete this step, your IPsec isn't set up. IPsec is a bidirectional communication. Internet Key Exchange (IKE) negotiations happen between two parties before the tunnel is successfully set up. So, don't miss this step.
 
 
 ## Use Conditional Access with Global Secure Access
 
-After deploying your Global Secure Access, you can use Conditional Access to add more layers of security and protection. Organizations who use Conditional Access along with the Global Secure Access, can prevent malicious access to Microsoft apps, SaaS apps, and private line-of-business (LoB) apps using multiple conditions to provide defense-in-depth. These conditions might include device compliance, location, and more to provide protection against user identity or token theft.
+After deploying your Global Secure Access, you can use Conditional Access to add more layers of security and protection. Organizations that use Conditional Access along with Global Secure Access can prevent malicious access to Microsoft apps, SaaS apps, and private line-of-business (LoB) apps, using multiple conditions for defense-in-depth. These conditions might include device compliance, location, and more to provide protection against user identity or token theft.
 
 There are several new types of checks introduced into Conditional Access with Global Secure Access:
 
 | Conditional Access check | What it does |
 |---|---|
 | Compliant network check | This compliant network check ensures users connect from a verified network connectivity model for their specific tenant and are compliant with security policies enforced by administrators. |
-| Private Access apps | Applying Conditional Access policies to your Microsoft Entra Private Access apps is a powerful way to enforce security policies for your internal, private resources. |
-| Source IP restoration | With a cloud based network proxy between users and their resources, the IP address that the resources see doesn't match the actual source IP address. Source IP restoration in Global Secure Access allows backward compatibility for Microsoft Entra customers to continue using original user Source IP. |
+| Private Access apps | Applying Conditional Access policies to your Entra Private Access apps is a powerful way to enforce security policies for your internal, private resources. |
+| Source IP restoration | With a cloud based network proxy between users and their resources, the IP address that the resources see doesn't match the actual source IP address. Source IP restoration in Global Secure Access allows backward compatibility for Entra customers to continue using original user Source IP. |
 
 To use the **Compliant network check** and the **Source IP restoration** capabilities, you need to have **Global Secure Access signaling for Conditional Access** enabled. This step only has to be performed once, before we go into the direct Conditional Access options. You perform this step before using any of the below features in Conditional Access.
 
@@ -3331,15 +3331,15 @@ To use the **Compliant network check** and the **Source IP restoration** capabil
 
 To enable the required setting to allow the compliant network check, an administrator must take the following steps.
 
-1. Sign in to the Microsoft Entra admin center as a Global Secure Access Administrator.
+1. Sign in to the Entra admin center as a Global Secure Access Administrator.
 2. Browse to Global Secure Access > Global settings > Session management > Adaptive access.
-3. Select the toggle to Enable CA Signaling for Microsoft Entra ID (covering all cloud apps). Continuous Access Evaluation (CAE) signaling is automatically enabled for Office 365 (preview).
+3. Select the toggle to Enable CA Signaling for Entra ID (covering all cloud apps). Continuous Access Evaluation (CAE) signaling is automatically enabled for Office 365 (preview).
 4. Browse to Protection > Conditional Access > Named locations.
   - Confirm you have a location called All Compliant Network locations with location type Network Access. Organizations can optionally mark this location as trusted.
 
 ### Compliant Network Check
 
-Compliant network enforcement happens at authentication plane and at the data plane (preview). Microsoft Entra ID performs Authentication plane enforcement at the time of user authentication. Data plane enforcement works with services that support Continuous Access Evaluation (CAE). Currently only Exchange Online and SharePoint Online support this capability. With CAE, you can enforce defense-in-depth with token theft replay protection.
+Compliant network enforcement happens at authentication plane and at the data plane (preview). Entra ID performs Authentication plane enforcement at the time of user authentication. Data plane enforcement works with services that support Continuous Access Evaluation (CAE). Currently only Exchange Online and SharePoint Online support this capability. With CAE, you can enforce defense-in-depth with token theft replay protection.
 
 Using this check you can ensure that other organizations using Microsoft's Global Secure Access services can't access your resources. For example: Contoso can protect their services like Exchange Online and SharePoint Online behind their compliant network check to ensure only Contoso users can access these resources. If another organization like Fabrikam was using a compliant network check, they wouldn't pass Contoso's compliant network check.
 
@@ -3347,7 +3347,7 @@ Using this check you can ensure that other organizations using Microsoft's Globa
 
 The compliant network Conditional Access policy can be used to protect your Microsoft and other applications. A typical policy will 'Block' access for all network locations except Compliant Network.
 
-1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+1. Sign in to the Entra admin center as at least a Conditional Access Administrator.
 2. Browse to Protection > Conditional Access.
 3. Select Create new policy.
 4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
@@ -3377,7 +3377,7 @@ The compliant network Conditional Access policy can be used to protect your Micr
 
 You can create a Conditional Access policy for your Quick Access or Private Access apps from Global Secure Access. Starting the process from Global Secure Access automatically adds the selected app as the Target resource for the policy. All you need to do is configure the policy settings.
 
-1. Sign in to the Microsoft Entra admin center as at least a Conditional Access Administrator.
+1. Sign in to the Entra admin center as at least a Conditional Access Administrator.
 2. Browse to Global Secure Access > Applications > Enterprise applications.
 3. Select an application from the list.
 4. Select Conditional Access from the side menu. Any existing Conditional Access policies appear in a list.
@@ -3388,11 +3388,11 @@ You see the addition of the Quick Access and Private Access selector from Global
 
 ### Source IP Restoration
 
-Source IP restoration in Global Secure Access allows backward compatibility for Microsoft Entra customers to continue using original user Source IP. Administrators can benefit from the following capabilities:
+Source IP restoration in Global Secure Access allows backward compatibility for Entra customers to continue using original user Source IP. Administrators can benefit from the following capabilities:
 
 - Continue to enforce Source IP-based location policies across both Conditional Access and continuous access evaluation.
 - Identity Protection risk detections get a consistent view of original user Source IP address for assessing various risk scores.
-- Original user Source IP is also made available in Microsoft Entra sign-in logs.
+- Original user Source IP is also made available in Entra sign-in logs.
 
 ##### Known limitations
 
@@ -3409,7 +3409,7 @@ Source IP Restoration is enabled when you turn on **Global Secure Access signali
 Conditional Access policies are powerful tools. We recommend excluding the following accounts from your policies:
 
 - **Emergency access or break-glass accounts** to prevent tenant-wide account lockout.
-- **Service accounts and service principals**, such as the Microsoft Entra Connect Sync Account. Service accounts are non-interactive accounts that aren't tied to any particular user.
+- **Service accounts and service principals**, such as the Entra Connect Sync Account. Service accounts are non-interactive accounts that aren't tied to any particular user.
 
 
 ## Explore logs and monitoring options with Global Secure Access
@@ -3418,18 +3418,18 @@ You need to monitor the activity of the traffic flowing through your networks. G
 
 ### Global Secure Access Audit logs
 
-The Microsoft Entra audit log is a valuable source of information when researching or troubleshooting changes to your Microsoft Entra environment. Changes related to Global Secure Access are captured in the audit logs. Logs have categories, such as filtering policy, forwarding profiles, remote network management, and more.
+The Entra audit log is a valuable source of information when researching or troubleshooting changes to your Entra environment. Changes related to Global Secure Access are captured in the audit logs. Logs have categories, such as filtering policy, forwarding profiles, remote network management, and more.
 
-#### Access audit logs from Global Secure Access or the Microsoft Entra admin center
+#### Access audit logs from Global Secure Access or the Entra admin center
 
 ##### From Global Secure Access
 
-1. Sign in to the Microsoft Entra admin center using one of the required roles.
+1. Sign in to the Entra admin center using one of the required roles.
 2. Browse to Global Secure Access > Audit logs. The filters are prepopulated with the categories and activities related to Global Secure Access.
 
-##### From Microsoft Entra monitoring and health
+##### From Entra monitoring and health
 
-1. Sign in to the Microsoft Entra admin center using one of the required roles.
+1. Sign in to the Entra admin center using one of the required roles.
 2. Browse to Identity > Monitoring & health > Audit logs.
 3. Select the Date range you want to query.
 4. Open the Service filter, select Global Secure Access, and select Apply.
@@ -3447,7 +3447,7 @@ A user accessing a website represents one session, and within that session there
 
 ### How to view the traffic logs
 
-1. Sign in to the Microsoft Entra admin center as at least a Reports Reader.
+1. Sign in to the Entra admin center as at least a Reports Reader.
 2. Global Secure Access > Monitor > Traffic logs.
 
 Various filters and export options are available for the traffic logs.
@@ -3468,11 +3468,11 @@ Viewing enriched Microsoft 365 audit logs is a one-time, two-step process. First
 
 Note
 
-Instead of a separate enriched log stream, use the two existing log tables — Microsoft 365 **OfficeActivity** and Global Secure Access **NetworkAccessTraffic** — and combine the data by using a Unique Token ID. At this time, only SharePoint Online logs are available for log enrichment.
+Instead of a separate enriched log stream, use the two existing log tables — Microsoft 365 **OfficeActivity** and Global Secure Access **NetworkAccessTraffic** — and combine their data with a Unique Token ID. At this time, only SharePoint Online logs are available for log enrichment.
 
 ##### Send logs to an endpoint
 
-1. Sign in to the Microsoft Entra admin center as at least a Security Administrator.
+1. Sign in to the Entra admin center as at least a Security Administrator.
 2. Browse to Identity > Monitoring & health > Diagnostic settings.
 3. Select Add Diagnostic setting.
 4. Give your diagnostic setting a name.
@@ -3487,7 +3487,7 @@ Instead of a separate enriched log stream, use the two existing log tables — M
 
 Traffic logs and remote network health logs: These logs are retained within the system for 30 days. This duration allows for ample time to review and analyze recent activities and network health status.
 
-- Audit logs: The retention period for audit logs varies depending on your Microsoft Entra ID license.
+- Audit logs: The retention period for audit logs varies depending on your Entra ID license.
 - Office logs: Office logs are maintained for a shorter duration, up to only 24 hours.
 
 
@@ -3500,9 +3500,9 @@ Choose the best response for each of the questions.
 
 ## Summary and resources
 
-In this module, you learned how to configure and manage Microsoft's Security Service Edge (SSE) solution through Microsoft Entra Global Secure Access. This comprehensive solution provides secure access to any app or resource from anywhere by merging network, identity, and endpoint access controls into a unified cloud-delivered platform.
+In this module, you learned how to configure and manage Microsoft's Security Service Edge (SSE) solution through Entra Global Secure Access. This comprehensive solution provides secure access to any app or resource from anywhere by merging network, identity, and endpoint access controls into a unified cloud-delivered platform.
 
-You explored the deployment and configuration of both Microsoft Entra Internet Access and Microsoft Entra Private Access, understanding how each component addresses different security needs. Microsoft Entra Internet Access protects users accessing Microsoft services, SaaS apps, and public internet resources through an identity-centric Secure Web Gateway. Microsoft Entra Private Access provides secure, VPN-less access to private corporate resources across hybrid and multicloud environments.
+You explored the deployment and configuration of both Entra Internet Access and Entra Private Access, understanding how each component addresses different security needs. Entra Internet Access protects users accessing Microsoft services, SaaS apps, and public internet resources through an identity-centric Secure Web Gateway. Entra Private Access provides secure, VPN-less access to private corporate resources across hybrid and multicloud environments.
 
 Throughout this module, you gained hands-on knowledge of key implementation tasks, including:
 
@@ -3514,10 +3514,10 @@ Throughout this module, you gained hands-on knowledge of key implementation task
 - Implementing Conditional Access policies with compliant network checks and source IP restoration
 - Monitoring network activity through the Global Secure Access dashboard and various log types
 
-By completing this module, you now have the foundational knowledge to implement Microsoft Entra Global Secure Access as part of a Zero Trust security strategy, enabling your organization to secure access to resources while maintaining visibility and control over network traffic.
+By completing this module, you now have the foundational knowledge to implement Entra Global Secure Access as part of a Zero Trust security strategy. Your organization can secure access to resources while maintaining visibility and control over network traffic.
 
 #### Additional reading
 
 - [Global Secure Access documentation](https://learn.microsoft.com/en-us/entra/global-secure-access/)
 - [Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)
-- [Microsoft Entra Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/)
+- [Entra Conditional Access documentation](https://learn.microsoft.com/en-us/entra/identity/conditional-access/)

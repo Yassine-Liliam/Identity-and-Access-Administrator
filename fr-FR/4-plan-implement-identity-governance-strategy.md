@@ -8,7 +8,7 @@
 - **Planifier et implémenter la gestion des droits d’utilisation** (10 units)
 - **Planifier, implémenter et gérer la révision d’accès** (10 units)
 - **Planifier et implémenter un accès privilégié** (11 units)
-- **Surveiller et gérer Microsoft Entra ID** (9 units)
+- **Surveiller et gérer Entra ID** (9 units)
 
 
 ---
@@ -30,7 +30,7 @@ De nouveaux utilisateurs ou utilisateurs externes qui rejoignent votre site ont 
 - Définir des packages d’accès.
 - Planifier, mettre en œuvre et gérer les droits.
 - Implémenter et gérer les conditions d’utilisation.
-- Gérez le cycle de vie des utilisateurs externes dans les paramètres Gouvernance des identités Microsoft Entra.
+- Gérez le cycle de vie des utilisateurs externes dans les paramètres Gouvernance des identités Entra.
 - Configurez et gérez les organisations connectées.
 - Passez en revue les droits par utilisateur.
 
@@ -48,11 +48,11 @@ Les entreprises souvent font face à des défis lorsqu’il leur faut gérer l�
 - Les utilisateurs ne connaissent pas l’accès dont ils ont besoin et même s’ils le connaissent, ils peuvent rencontrer des difficultés pour trouver les personnes habilitées à approuver leur accès
 - Après avoir localisé une ressource et obtenu l'accès correspondant, les utilisateurs y ont accès plus longtemps que nécessaire à des fins professionnelles
 
-Ces problèmes sont complexes pour les utilisateurs qui ont besoin d'un accès à partir d'une autre organisation, tels que les utilisateurs externes issus d'organisations de la chaîne logistique ou d'autres partenaires commerciaux. Par exemple, la gestion des droits d’utilisation Microsoft Entra peut aider les organisations à s’assurer que tout le monde a accès aux répertoires appropriés et que tous les accès utilisateur sont gérés de manière cohérente.
+Ces problèmes sont complexes pour les utilisateurs qui ont besoin d'un accès à partir d'une autre organisation, tels que les utilisateurs externes issus d'organisations de la chaîne logistique ou d'autres partenaires commerciaux. Par exemple, la gestion des droits d’utilisation Entra aide les organisations à garantir que chacun accède aux répertoires appropriés et que tous les accès utilisateur sont gérés de manière cohérente.
 
 Cette vidéo fournit une vue d’ensemble de la gestion des droits d’utilisation et de son intérêt :
 
-**Regardez cette vidéo pour en savoir plus sur la gestion des droits d’utilisation Microsoft Entra**
+**Regardez cette vidéo pour en savoir plus sur la gestion des droits d’utilisation Entra**
 
 ### À quoi sert la gestion des droits d'utilisation ?
 
@@ -74,7 +74,7 @@ Avant d’explorer la gestion des droits d’utilisation et sa documentation en 
 | affectation | L’affectation d’un package d’accès à un utilisateur garantit que l’utilisateur dispose de tous les rôles de ressources de ce package d’accès. Les affectations de package d’accès ont généralement une durée limite avant leur expiration. |
 | catalogue | Conteneur de ressources connexes et de packages d’accès. Les catalogues sont utilisés pour la délégation, si bien que les non-administrateurs peuvent créer leurs propres packages d’accès. Les propriétaires de catalogue peuvent ajouter les ressources qu’ils possèdent à un catalogue. |
 | créateur de catalogue | Regroupement d’utilisateurs autorisés à créer des catalogues. Lorsqu’un utilisateur non-administrateur, autorisé à être créateur de catalogue, crée un catalogue, il devient automatiquement le propriétaire de ce catalogue. |
-| organisation connectée | Un répertoire ou un domaine Microsoft Entra externe avec lequel vous entretenez une relation. Les utilisateurs provenant d’une organisation connectée peuvent être spécifiés dans une stratégie comme étant autorisés à demander l’accès. |
+| organisation connectée | Un répertoire ou un domaine Entra externe avec lequel vous entretenez une relation. Les utilisateurs provenant d’une organisation connectée peuvent être spécifiés dans une stratégie comme étant autorisés à demander l’accès. |
 | policy | Ensemble de règles définissant le cycle de vie d’un accès, telles que le mode d’accès des utilisateurs, les approbateurs et la durée d’accès par le biais d’une affectation. Une stratégie est liée à un package d’accès. Par exemple, un package d’accès peut avoir deux stratégies de demande d’accès : l’une pour les employés, l’autre pour les utilisateurs externes. |
 | resource | Ressource (un groupe Office, un groupe de sécurité, une application ou un site SharePoint Online, par exemple) dotée d’un rôle pour lequel un utilisateur peut obtenir des autorisations. |
 | répertoire de ressources | Répertoire comprenant une ou plusieurs ressources à partager. |
@@ -82,35 +82,35 @@ Avant d’explorer la gestion des droits d’utilisation et sa documentation en 
 
 ### Que sont les packages d’accès et quelles ressources gérer avec eux ?
 
-La gestion des droits d’utilisation introduit, dans Microsoft Entra ID, le concept de *package d’accès*. Un package d’accès regroupe toutes les ressources avec l’accès dont un utilisateur a besoin pour travailler sur un projet ou accomplir sa tâche. Les packages d’accès permettent de régir l’accès de vos employés et utilisateurs internes en dehors de votre organisation. Vous pouvez gérer l’accès des utilisateurs aux ressources suivantes avec la gestion des droits d’utilisation :
+La gestion des droits d’utilisation introduit, dans Entra ID, le concept de *package d’accès*. Un package d’accès regroupe toutes les ressources avec l’accès dont un utilisateur a besoin pour travailler sur un projet ou accomplir sa tâche. Les packages d’accès permettent de régir l’accès de vos employés et utilisateurs internes en dehors de votre organisation. Vous pouvez gérer l’accès des utilisateurs aux ressources suivantes avec la gestion des droits d’utilisation :
 
-- Appartenance à des groupes de sécurité Microsoft Entra.
+- Appartenance à des groupes de sécurité Entra.
 - Appartenance des groupes et équipes Microsoft 365.
-- Affectation aux applications d’entreprise Microsoft Entra, y compris aux applications SaaS et aux applications à intégration personnalisée qui prennent en charge la fédération/l’authentification unique et/ou le provisionnement.
+- Affectation aux applications d’entreprise Entra, y compris aux applications SaaS et aux applications à intégration personnalisée qui prennent en charge la fédération/l’authentification unique et/ou le provisionnement.
 - Appartenance des sites SharePoint Online.
 
-Vous pouvez également contrôler l'accès à d'autres ressources qui dépendent des groupes de sécurité Microsoft Entra ou des groupes Microsoft 365. Par exemple, vous pouvez accorder :
+Vous pouvez également contrôler l'accès à d'autres ressources qui dépendent des groupes de sécurité Entra ou des groupes Microsoft 365. Par exemple, vous pouvez accorder :
 
 - Des licences pour Microsoft 365 en utilisant un groupe de sécurité dans un package d’accès et en configurant la Gestion des licences par groupe pour ce groupe.
 - Un accès pour gérer des ressources Azure en utilisant un groupe de sécurité dans un package d’accès et en créant une attribution de rôle Azure pour ce groupe.
-- Un accès pour gérer des rôles Microsoft Entra en utilisant des groupes attribuables à des rôles dans un package d’accès et en attribuant un rôle à ce groupe.
+- Un accès pour gérer des rôles Entra en utilisant des groupes attribuables à des rôles dans un package d’accès et en attribuant un rôle à ce groupe.
 
 ### Comment contrôler qui a accès ?
 
 Avec un **package d’accès**, un administrateur ou un gestionnaire délégué de package d’accès liste les ressources (groupes, applications et sites) et les rôles dont les utilisateurs ont besoin pour ces ressources.
 
-Les packages d’accès incluent également une ou plusieurs *stratégies*. Une stratégie définit les règles ou barrières mises en place pour l’affectation d’un package d’accès. Chaque stratégie peut être utilisée pour s’assurer que seuls les utilisateurs appropriés sont en mesure de demander l’accès, qu’il existe des approbateurs pour leur requête, et que leur accès à ces ressources est limité dans le temps et qu’il expirera s’il n’est pas renouvelé.
+Les packages d’accès incluent également une ou plusieurs *stratégies*. Une stratégie définit les règles ou barrières mises en place pour l’affectation d’un package d’accès. Chaque stratégie garantit que seuls les utilisateurs appropriés peuvent demander l’accès, que leur requête a des approbateurs, et que leur accès à ces ressources est limité dans le temps et expire s’il n’est pas renouvelé.
 
-Dans chaque stratégie, un administrateur ou un gestionnaire de package d’accès définit les utilisateurs existants qui sont éligibles à la demande d’accès, le processus d’approbation ou de refus d’accès et la durée de l’accès d’un utilisateur.
+Dans chaque stratégie, un administrateur ou un gestionnaire de package d’accès définit trois éléments : les utilisateurs existants éligibles à la demande d’accès, le processus d’approbation ou de refus d’accès, et la durée de l’accès d’un utilisateur.
 
 ### Quand utiliser des packages d’accès ?
 
 Les packages d’accès ne remplacent pas d’autres mécanismes d’attribution d’accès. Ils sont particulièrement indiqués dans les cas suivants :
 
-- Les employés ont besoin d’un accès limité dans le temps pour une tâche particulière. Par exemple, vous pouvez utiliser la gestion de licences par groupe et un groupe dynamique pour vérifier que tous les employés disposent d’une boîte aux lettres Exchange Online, puis utiliser des packages d’accès pour les situations où les employés ont besoin d’un accès supplémentaire, par exemple pour lire les ressources d’un service à partir d’un autre service.
+- Les employés ont besoin d’un accès limité dans le temps pour une tâche particulière. Par exemple, la gestion de licences par groupe et un groupe dynamique permettent de vérifier que tous les employés disposent d’une boîte aux lettres Exchange Online. Les packages d’accès couvrent ensuite les situations où les employés ont besoin d’un accès supplémentaire, par exemple pour lire les ressources d’un service à partir d’un autre service.
 - Accès qui nécessite l’approbation du responsable d’un employé ou d’autres personnes désignées.
 - Les services souhaitent gérer leurs propres stratégies d’accès à leurs ressources sans implication informatique.
-- Deux organisations ou plus collaborent sur un projet et, par conséquent, plusieurs utilisateurs d'une organisation devront être amenés via Microsoft Entra B2B pour accéder aux ressources d'une autre organisation.
+- Deux organisations ou plus collaborent sur un projet et, par conséquent, plusieurs utilisateurs d'une organisation devront être amenés via Entra B2B pour accéder aux ressources d'une autre organisation.
 
 Le diagramme suivant montre un exemple des différents éléments en matière de gestion des droits d'utilisation :
 
@@ -119,9 +119,9 @@ Le diagramme suivant montre un exemple des différents éléments en matière de
 Dans **le package d'accès 1**, il n’y a qu’un seul groupe en tant que ressource. L’accès est défini par une stratégie qui autorise un ensemble d’utilisateurs du répertoire à demander un accès. Le **package d’accès 2** comprend un groupe, une application et un site SharePoint Online en tant que ressources. L’accès est défini par deux stratégies différentes. La première stratégie autorise un ensemble d’utilisateurs du répertoire à demander un accès. La seconde stratégie permet aux utilisateurs d'un répertoire externe de demander un accès.
 
 
-## Exercice : création et gestion d’un catalogue de ressources avec une gestion des droits d’utilisation de Microsoft Entra
+## Exercice : création et gestion d’un catalogue de ressources avec une gestion des droits d’utilisation d’Entra
 
-### Créer un compte Azure et ajouter des licences d’essai Microsoft Entra ID Premium P2
+### Créer un compte Azure et ajouter des licences d’essai Entra ID Premium P2
 
 Les tâches de cet exercice nécessitent un abonnement Azure. Vous trouverez également les exercices de ce parcours d’apprentissage nécessitant un abonnement Azure. Si vous n'en avez pas encore, vous pouvez vous inscrire à un compte d'essai Azure. Si vous avez déjà votre propre abonnement Azure, vous pouvez ignorer cette tâche.
 
@@ -129,26 +129,26 @@ Les tâches de cet exercice nécessitent un abonnement Azure. Vous trouverez ég
 2. Faites défiler la page pour découvrir tous les avantages et les services gratuits disponibles.
 3. Sélectionnez **Démarrer gratuitement**.
 4. Utilisez l’Assistant pour souscrire à votre abonnement d’essai gratuit Azure.
-5. Vous avez besoin d’une licence Microsoft Entra ID P2 pour effectuer certains des exercices. Dans l'organisation que vous avez créée, recherchez et sélectionnez **Microsoft Entra ID**.
+5. Vous avez besoin d’une licence Entra ID P2 pour effectuer certains des exercices. Dans l'organisation que vous avez créée, recherchez et sélectionnez **Entra ID**.
 6. Dans le menu de navigation gauche, sélectionnez **Prise en main**.
-7. Sous Bien démarrer avec Microsoft Entra ID, sélectionnez **Obtenir un essai gratuit pour Microsoft Entra ID Premium**.
-8. Dans le volet Activer, sous **Microsoft Entra ID PREMIUM P2**, sélectionnez **Essai gratuit**, puis **Activer**.
+7. Sous Bien démarrer avec Entra ID, sélectionnez **Obtenir un essai gratuit pour Entra ID Premium**.
+8. Dans le volet Activer, sous **Entra ID PREMIUM P2**, sélectionnez **Essai gratuit**, puis **Activer**.
 9. Dans le menu de navigation, sélectionnez **Vue d’ensemble**.
-10. Actualisez le navigateur jusqu’à ce que Microsoft Entra ID Premium P2 s’affiche sous le nom de l’organisation. Cela prend quelques minutes.
+10. Actualisez le navigateur jusqu’à ce qu’Entra ID Premium P2 s’affiche sous le nom de l’organisation. Cela prend quelques minutes.
 11. L’activation de la licence prend quelques minutes. Vous devez vous déconnecter et vous reconnecter à Microsoft Azure. Essayez de redémarrer si vous rencontrez des problèmes avec des fonctionnalités qui ne sont pas disponibles alors qu’elles devraient l’être.
 
 ### Créer un catalogue
 
 Un catalogue est un conteneur de ressources et de packages d’accès. Vous créez un catalogue lorsque vous souhaitez regrouper des ressources et packages d’accès liés. La personne qui crée le catalogue en devient le premier propriétaire. Un propriétaire de catalogue peut ajouter d’autres propriétaires de catalogue.
 
-1. Connectez-vous au [Centre d’administration Microsoft Entra](https://entra.microsoft.com/) en tant qu’administrateur.
-  - Abonnement Microsoft Entra ID Premium P1, P2, EMS E3 ou EMS E5.
-  - Si vous n’avez pas l’un de ces abonnements, vous pouvez obtenir Microsoft Entra ID Premium ou activer la version d’évaluation de Microsoft Entra ID Premium.
+1. Connectez-vous au [Centre d’administration Entra](https://entra.microsoft.com/) en tant qu’administrateur.
+  - Abonnement Entra ID Premium P1, P2, EMS E3 ou EMS E5.
+  - Si vous n’avez pas l’un de ces abonnements, vous pouvez obtenir Entra ID Premium ou activer la version d’évaluation d’Entra ID Premium.
   - Un des comptes d’administrateur suivants pour le répertoire que vous souhaitez configurer :
     - Administrateur de la sécurité
     - Administrateur de l’accès conditionnel
 
-2. Dans l’écran d’accueil de **Microsoft Entra ID**, sélectionnez **Gouvernance des identités**.
+2. Dans l’écran d’accueil de **Entra ID**, sélectionnez **Gouvernance des identités**.
 3. Dans le menu de gauche, sous **Gestion des droits d'utilisation**, sélectionnez **Catalogues**.
 4. Dans le menu supérieur, sélectionnez **+Nouveau catalogue**.
 5. Dans le volet Nouveau catalogue, dans la zone **Nom** , entrez **Marketing**.
@@ -159,7 +159,7 @@ Un catalogue est un conteneur de ressources et de packages d’accès. Vous cré
 
 ### Ajouter des ressources à un catalogue
 
-Pour inclure des ressources dans un package d’accès, les ressources doivent exister dans un catalogue. Les types de ressources que vous pouvez ajouter sont des groupes, des applications et des sites SharePoint Online. Les groupes peuvent être des groupes Microsoft 365 ou des groupes de sécurité Microsoft Entra créés sur le cloud. Pour les applications, il peut s’agir d’applications d’entreprise Microsoft Entra, ce qui comprend les applications SaaS et vos propres applications fédérées à Microsoft Entra ID. Pour les sites, il peut s’agir de sites ou de collection de sites SharePoint Online.
+Pour inclure des ressources dans un package d’accès, les ressources doivent exister dans un catalogue. Les types de ressources que vous pouvez ajouter sont des groupes, des applications et des sites SharePoint Online. Les groupes peuvent être des groupes Microsoft 365 ou des groupes de sécurité Entra créés sur le cloud. Pour les applications, il peut s’agir d’applications d’entreprise Entra, ce qui comprend les applications SaaS et vos propres applications fédérées à Entra ID. Pour les sites, il peut s’agir de sites ou de collection de sites SharePoint Online.
 
 1. Dans l’écran Gouvernance des identités, si nécessaire, sélectionnez **Catalogues**.
 2. Dans la liste **Catalogues**, sélectionnez **Marketing**.
@@ -173,7 +173,7 @@ Pour inclure des ressources dans un package d’accès, les ressources doivent e
 
 L’utilisateur qui a créé un catalogue devient le premier propriétaire de catalogue. Pour déléguer la gestion d’un catalogue, vous ajoutez des utilisateurs au rôle de propriétaire de catalogue. Ainsi, les responsabilités de la gestion du catalogue sont mieux partagées.
 
-1. Dans le catalogue marketing, dans le menu de navigation de gauche, sélectionnez Rôles et administrateurs. Au besoin, dans le portail Azure, accédez à **Microsoft Entra ID**, **Gouvernance des identités**, puis **Catalogues** et sélectionnez **Marketing**.
+1. Dans le catalogue marketing, dans le menu de navigation de gauche, sélectionnez Rôles et administrateurs. Au besoin, dans le portail Azure, accédez à **Entra ID**, **Gouvernance des identités**, puis **Catalogues** et sélectionnez **Marketing**.
 2. Dans le menu supérieur, passez en revue les rôles disponibles, puis sélectionnez **+ Ajouter un propriétaire**.
 3. Dans le volet Sélectionner un membre, sélectionnez votre compte administrateur, puis sélectionnez **Sélectionner**.
 4. Examinez le rôle qui vient d’être ajouté dans la liste rôles et administrateurs.
@@ -237,13 +237,13 @@ Vous pouvez également gérer les packages d’accès, les catalogues, les strat
 
 ### Quelles sont les conditions d’utilisation de la gestion des droits d’utilisation
 
-Les politiques de conditions d'utilisation de Microsoft Entra utilisent le format PDF pour présenter le contenu. Le fichier PDF peut contenir n'importe quel contenu, tel que des documents de contrats existants, ce qui vous permet de collecter les accords des utilisateurs finaux lors de la connexion des utilisateurs. Pour prendre en charge les utilisateurs sur les appareils mobiles, il est recommandé d’utiliser une taille de police de 24 points dans le fichier PDF. N’oubliez pas que les documents PDF des conditions d’utilisation peuvent contenir un contrat de licence utilisateur final (CLUF). L’utilisateur doit l’accepter avant d’accéder aux ressources en fonction de ses paramètres de droit d’utilisation.
+Les politiques de conditions d'utilisation d’Entra utilisent le format PDF pour présenter le contenu. Le fichier PDF peut contenir n'importe quel contenu, tel que des documents de contrats existants, ce qui vous permet de collecter les accords des utilisateurs finaux lors de la connexion des utilisateurs. Pour prendre en charge les utilisateurs sur les appareils mobiles, il est recommandé d’utiliser une taille de police de 24 points dans le fichier PDF. N’oubliez pas que les documents PDF des conditions d’utilisation peuvent contenir un contrat de licence utilisateur final (CLUF). L’utilisateur doit l’accepter avant d’accéder aux ressources en fonction de ses paramètres de droit d’utilisation.
 
 ### Ajouter des conditions d’utilisation
 
 Une fois que vous avez finalisé votre document de conditions d’utilisation, utilisez la procédure suivante pour l’ajouter.
 
-1. Connectez-vous au [Centre d'administration Microsoft Entra](https://entra.microsoft.com/) en tant qu'administrateur général.
+1. Connectez-vous au [Centre d'administration Entra](https://entra.microsoft.com/) en tant qu'administrateur général.
 2. Ouvrez **Gouvernance des ID**.
 3. Dans le menu de navigation de gauche, ouvrez Gestion des droits d'utilisation, puis, sous **Conditions d'utilisation**, sélectionnez **Conditions d'utilisation**.
 4. Dans la page Conditions d’utilisation, dans le menu supérieur, sélectionnez **+ Nouvelles conditions**.
@@ -252,7 +252,7 @@ Une fois que vous avez finalisé votre document de conditions d’utilisation, u
 7. Cochez la **case du document Conditions d'utilisation**, recherchez votre PDF de conditions d’utilisation finalisé et sélectionnez-le. Pour cet exercice, vous pouvez choisir n'importe quel PDF. Une autre option consiste à utiliser Microsoft Word pour créer un document de conditions d’utilisation, puis à l’enregistrer au format PDF.
 8. Sélectionnez la langue de votre document Conditions d’utilisation. L’option de langue vous permet de charger plusieurs conditions d’utilisation, chacune dans une langue différente. La version des conditions d’utilisation qu’un utilisateur final voit est basée sur ses préférences de navigateur.
 9. Pour obliger les utilisateurs finaux à afficher les conditions d’utilisation avant de les accepter, **définissez Exiger que les utilisateurs étendent les conditions d’utilisation** sur **On**.
-10. Pour exiger que les utilisateurs finaux acceptent vos conditions d’utilisation sur chaque appareil auquel ils accèdent, **définissez Exiger que les utilisateurs consentent sur chaque appareil** sur **Activé**. Les utilisateurs doivent installer d'autres applications si cette option est activée.  Avertissement Le consentement sur chaque appareil nécessite que les utilisateurs enregistrent chaque appareil avec l'ID Microsoft Entra avant d’obtenir l’accès.
+10. Pour exiger que les utilisateurs finaux acceptent vos conditions d’utilisation sur chaque appareil auquel ils accèdent, **définissez Exiger que les utilisateurs consentent sur chaque appareil** sur **Activé**. Les utilisateurs doivent installer d'autres applications si cette option est activée.  Avertissement Le consentement sur chaque appareil nécessite que les utilisateurs enregistrent chaque appareil avec l'ID Entra avant d’obtenir l’accès.
 11. Si vous voulez faire expirer les consentements pour les conditions d’utilisation selon une planification, définissez **Faire expirer les consentements** sur **Activé**. Lorsque la valeur est on, deux paramètres de planification supplémentaires sont affichés.
 12. Utilisez les paramètres **Expiration commençant le** et **Fréquence** pour spécifier la planification régissant l’expiration des conditions d’utilisation. Le tableau suivant présente deux exemples de paramètres et leur résultat :    **Expire à partir du** **Fréquence** **Résultat**     Date du jour Tous les mois À compter d’aujourd’hui, les utilisateurs doivent accepter les conditions d’utilisation et les accepter à nouveau chaque mois.   Date future Tous les mois À compter d’aujourd’hui, les utilisateurs doivent accepter les conditions d’utilisation. Quand la date future survient, les consentements expirent. Les utilisateurs doivent alors réaccepter les conditions d’utilisation chaque mois.    Par exemple, si vous définissez l’expiration à compter du **1er janvier** et la fréquence **mensuelle, voici** comment les expirations peuvent se produire pour deux utilisateurs :    **Utilisateur** **Date d’acceptation initiale** **Première date d’expiration** **Deuxième date d’expiration** **Troisième date d’expiration**     Alice 1er janvier 1er février 1er mars 1er avril   Bob 15 janvier 1er février 1er mars 1er avril
 13. Utilisez le paramètre **Durée avant nouvelle acceptation requise (jours)** pour spécifier le nombre de jours au bout duquel l’utilisateur doit réaccepter les conditions d’utilisation. Ce paramètre permet aux utilisateurs de suivre leur propre planification. Par exemple, si vous définissez la durée sur **30** jours, voici comment les expirations peuvent se produire pour deux utilisateurs :    **Utilisateur** **Date d’acceptation initiale** **Première date d’expiration** **Deuxième date d’expiration** **Troisième date d’expiration**     Alice 1er janvier 31 janvier 2 mars 1er avril   Bob 15 janvier 14 février 16 mars 15 avril
@@ -299,7 +299,7 @@ Les utilisateurs peuvent consulter et voir les conditions d’utilisation qu’i
 
 Vous pouvez modifier certains détails des conditions d’utilisation, mais il n’est pas possible de modifier un document existant. La procédure suivante explique comment modifier les détails.
 
-1. Connectez-vous au [Centre d'administration Microsoft Entra](https://entra.microsoft.com/) en tant qu'administrateur général.
+1. Connectez-vous au [Centre d'administration Entra](https://entra.microsoft.com/) en tant qu'administrateur général.
 2. Ouvrez la gouvernance des ID et sélectionnez **Gestion des droits d'utilisation**.
 3. Dans le menu de navigation de gauche, sous **Conditions d’utilisation**, sélectionnez **Conditions d’utilisation**.
 4. Sélectionnez les conditions d’utilisation à modifier.
@@ -326,41 +326,41 @@ Vous pouvez être amené à mettre à jour le document de conditions d'utilisati
 7. Vous voyez maintenant la version la plus récente sous la colonne Document.
 
 
-## Exercice : gérer le cycle de vie des utilisateurs externes avec la gouvernance des identités Microsoft Entra
+## Exercice : gérer le cycle de vie des utilisateurs externes avec la gouvernance des identités Entra
 
-### Gérer le cycle de vie des utilisateurs externes dans les paramètres de Gouvernance des ID Microsoft Entra
+### Gérer le cycle de vie des utilisateurs externes dans les paramètres de Gouvernance des ID Entra
 
-Vous pouvez sélectionner ce qui se passe lorsqu’un utilisateur externe, qui a été invité à accéder à votre annuaire par le biais d’une demande de package d’accès en cours d’approbation, ne dispose plus d’attributions de package d’accès. Cela peut se produire si l’utilisateur abandonne toutes les attributions de package d’accès, ou si l’attribution de son dernier package d’accès arrive à expiration. Par défaut, quand un utilisateur externe n’a plus d’attributions de package d’accès, il ne peut pas se connecter à votre annuaire. Au bout de 30 jours, son compte d’utilisateur invité est supprimé de votre annuaire.
+Vous pouvez choisir ce qui se passe lorsqu’un utilisateur externe ne dispose plus d’attributions de package d’accès, alors qu’il avait été invité à accéder à votre annuaire par le biais d’une demande de package d’accès en cours d’approbation. Cela peut se produire si l’utilisateur abandonne toutes les attributions de package d’accès, ou si l’attribution de son dernier package d’accès arrive à expiration. Par défaut, quand un utilisateur externe n’a plus d’attributions de package d’accès, il ne peut pas se connecter à votre annuaire. Au bout de 30 jours, son compte d’utilisateur invité est supprimé de votre annuaire.
 
-1. Connectez-vous au Centre d’administration Microsoft Entra en tant qu’administrateur. Un compte avec l’administrateur d’utilisateurs est requis pour effectuer ces tâches.
+1. Connectez-vous au Centre d’administration Entra en tant qu’administrateur. Un compte avec l’administrateur d’utilisateurs est requis pour effectuer ces tâches.
 2. Ouvrez **Gouvernance des ID**.
 3. Dans le menu de navigation de gauche, sous **Gestion des droits d’utilisation**, sélectionnez **Paramètres**.
 4. Dans le menu du haut, sélectionnez **Modifier**.
 5. Dans la section **Gérer le cycle de vie des utilisateurs externes**, sélectionnez les différents paramètres pour les utilisateurs externes. Si, lorsqu’un utilisateur externe perd sa dernière attribution aux packages d’accès, vous souhaitez l’empêcher de se connecter à cet annuaire, définissez **Empêcher l'utilisateur externe de se connecter à cet annuaire** sur **Oui**. Si un utilisateur est bloqué de se connecter à l’annuaire, l’utilisateur ne peut pas demander à nouveau le package d’accès ou demander un autre accès dans ce répertoire. Ne configurez pas leur blocage de la connexion s’ils devront ultérieurement demander l’accès à d’autres packages d’accès.
 6. Si, lorsqu’un utilisateur externe perd sa dernière attribution aux packages d’accès, vous souhaitez supprimer son compte d’utilisateur invité dans ce répertoire, définissez **Supprimer l’utilisateur externe**sur **Oui**.  Remarque La gestion des droits d'utilisation supprime uniquement les comptes qui ont été invités par l’intermédiaire de la gestion des droits d'utilisation. Un utilisateur est également bloqué pour se connecter. L’utilisateur est supprimé de ce répertoire même si cet utilisateur a été ajouté aux ressources de ce répertoire qui n’ont pas accès aux affectations de package. Si l’invité était présent dans ce répertoire avant de recevoir des attributions de package d’accès, il sera conservé. Toutefois, si l’invité a été invité par le biais d’une attribution de package d’accès, il sera toujours supprimé.
-7. Si vous souhaitez supprimer le compte d’utilisateur invité du répertoire, vous pouvez définir le nombre de jours avant sa suppression. Si vous souhaitez supprimer le compte d’utilisateur invité dès qu’il perd la dernière attribution à un package d’accès, définissez **Nombre de jours avant la suppression de l’utilisateur externe de cet annuaire** sur **0**.
+7. Si vous souhaitez supprimer le compte d’utilisateur invité du répertoire, vous pouvez définir le nombre de jours avant sa suppression. Pour supprimer le compte d’utilisateur invité dès qu’il perd la dernière attribution à un package d’accès, définissez **Nombre de jours avant la suppression de l’utilisateur externe de cet annuaire** sur **0**.
 8. Si vous avez apporté des modifications, sélectionnez **Enregistrer**.
 
 
 ## Configurer et gérer des organisations connectées
 
-Avec la gestion des droits d’utilisation Microsoft Entra, vous pouvez collaborer avec des personnes extérieures à votre organisation. Si vous collaborez fréquemment avec des utilisateurs dans un répertoire ou domaine externe, vous pouvez les ajouter en tant qu'organisation connectée. Cet article explique comment ajouter une organisation connectée afin de permettre aux utilisateurs extérieurs à votre organisation de demander des ressources dans votre annuaire.
+Avec la gestion des droits d’utilisation Entra, vous pouvez collaborer avec des personnes extérieures à votre organisation. Si vous collaborez fréquemment avec des utilisateurs dans un répertoire ou domaine externe, vous pouvez les ajouter en tant qu'organisation connectée. Cet article explique comment ajouter une organisation connectée afin de permettre aux utilisateurs extérieurs à votre organisation de demander des ressources dans votre annuaire.
 
 ### Qu’est-ce qu’une organisation connectée ?
 
-Une organisation connectée est une autre organisation avec laquelle vous avez une relation. Pour que les utilisateurs de cette organisation puissent accéder à vos ressources, telles que vos sites SharePoint Online ou vos applications, vous avez besoin d’une représentation des utilisateurs de cette organisation dans ce répertoire. Étant donné que dans la plupart des cas, les utilisateurs de cette organisation ne figurent pas déjà dans votre répertoire Microsoft Entra, vous pouvez utiliser la gestion des droits pour les importer dans votre répertoire Microsoft Entra si nécessaire.
+Une organisation connectée est une autre organisation avec laquelle vous avez une relation. Pour que les utilisateurs de cette organisation puissent accéder à vos ressources, telles que vos sites SharePoint Online ou vos applications, vous avez besoin d’une représentation de ces utilisateurs dans ce répertoire. Dans la plupart des cas, les utilisateurs de cette organisation ne figurent pas déjà dans votre répertoire Entra : la gestion des droits vous permet de les y importer si nécessaire.
 
 La gestion des droits d’utilisation vous permet de spécifier les utilisateurs qui forment une organisation connectée de trois façons. Il peut s’agir :
 
-- les utilisateurs dans un autre répertoire Microsoft Entra (depuis n'importe quel cloud Microsoft),
-- les utilisateurs d'un autre répertoire non Microsoft Entra configuré pour la fédération directe, ou
-- les utilisateurs d'un autre répertoire non Microsoft Entra, dont les adresses e-mail ont toutes le même nom de domaine en commun.
+- les utilisateurs dans un autre répertoire Entra (depuis n'importe quel cloud Microsoft),
+- les utilisateurs d'un autre répertoire non Entra configuré pour la fédération directe, ou
+- les utilisateurs d'un autre répertoire non Entra, dont les adresses e-mail ont toutes le même nom de domaine en commun.
 
 ### Ajouter une organisation connectée
 
 Pour ajouter un répertoire ou un domaine externe en tant qu'organisation connectée, suivez les instructions de cette section. **Rôle requis :** Administrateur de gouvernance des identités ou administrateur d’utilisateurs
 
-1. Dans le **Centre d’administration Microsoft Entra**, sélectionnez **Gouvernance des ID**, puis sélectionnez **Gestion des droits d’utilisation**.
+1. Dans le **Centre d’administration Entra**, sélectionnez **Gouvernance des ID**, puis sélectionnez **Gestion des droits d’utilisation**.
 2. Dans le volet gauche, sélectionnez **Organisations connectées**, puis **sélectionnez + Ajouter une organisation connectée**.
 3. Sélectionnez l’onglet **Informations de base** , puis entrez un nom complet et une description pour l’organisation.
   - L’état est automatiquement défini sur Configuré lorsque vous créez une organisation connectée. Pour plus d’informations sur les propriétés d’état, consultez Propriétés d’état des organisations connectées.
@@ -368,10 +368,10 @@ Pour ajouter un répertoire ou un domaine externe en tant qu'organisation connec
 4. Sélectionnez l’onglet **Répertoire + domaine** , puis **sélectionnez Ajouter un répertoire + domaine**.
   - Le volet Sélectionner des annuaires et des domaines s’ouvre.
 
-5. Dans la zone de recherche, entrez un nom de domaine pour rechercher le répertoire ou le domaine Microsoft Entra. Veillez à entrer le nom de domaine complet.
+5. Dans la zone de recherche, entrez un nom de domaine pour rechercher le répertoire ou le domaine Entra. Veillez à entrer le nom de domaine complet.
   - Confirmez que le nom de l’organisation et le type d’authentification sont corrects.
 
-6. Sélectionnez **Ajouter** pour ajouter le répertoire ou le domaine Microsoft Entra. Vous ne pouvez ajouter qu'un seul répertoire ou domaine par organisation connectée.
+6. Sélectionnez **Ajouter** pour ajouter le répertoire ou le domaine Entra. Vous ne pouvez ajouter qu'un seul répertoire ou domaine par organisation connectée.
 7. Une fois le répertoire ou le domaine ajouté, cliquez sur Sélectionner.
   - L’organisation apparaît dans la liste.
 
@@ -384,7 +384,7 @@ Pour ajouter un répertoire ou un domaine externe en tant qu'organisation connec
 
 ## Passer en revue les droits par utilisateur
 
-Dans la gestion des droits d'utilisation Microsoft Entra, vous pouvez voir qui a été affecté aux packages d’accès, ainsi que leur stratégie et leur état. Si un package d’accès a une stratégie appropriée, vous pouvez également affecter directement l’utilisateur à un package d’accès. Cet article explique comment afficher, ajouter et supprimer des affectations pour des packages d’accès.
+Dans la gestion des droits d'utilisation Entra, vous pouvez voir qui a été affecté aux packages d’accès, ainsi que leur stratégie et leur état. Si un package d’accès a une stratégie appropriée, vous pouvez également affecter directement l’utilisateur à un package d’accès. Cet article explique comment afficher, ajouter et supprimer des affectations pour des packages d’accès.
 
 ### Gouvernance
 
@@ -402,7 +402,7 @@ Comme l’exigent les règles **Confiance Zéro**, vous passez régulièrement e
 
 Procédez comme suit pour passer en revue les affectations :
 
-1. Dans le Centre d'administration Microsoft Entra, sélectionnez **Gouvernance des ID**, puis **gestion des droits d'utilisation**.
+1. Dans le Centre d'administration Entra, sélectionnez **Gouvernance des ID**, puis **gestion des droits d'utilisation**.
 2. Dans le menu de gauche, sélectionnez **Packages d’accès**, puis ouvrez le package d'accès.
 3. Sélectionnez Affectations pour afficher une liste des affectations actives.
 4. Sélectionnez une affectation spécifique pour voir plus de détails.
@@ -430,7 +430,7 @@ $assignments | ft Id,AssignmentState,TargetId,{$_.Target.DisplayName}
 
 Si vous identifiez une affectation obsolète, prenez les mesures qui s’imposent. Vous pouvez supprimer une affectation qu’un utilisateur ou un administrateur ont demandée précédemment.
 
-1. Dans le Centre d'administration Microsoft Entra, sélectionnez **Gouvernance des ID**, puis **gestion des droits d'utilisation**.
+1. Dans le Centre d'administration Entra, sélectionnez **Gouvernance des ID**, puis **gestion des droits d'utilisation**.
 2. Dans le menu de gauche, sélectionnez **Packages d’accès**, puis ouvrez le package d'accès.
 3. Dans le menu de gauche, sélectionnez **Affectations**.
 4. Cochez la case en regard de l’utilisateur dont vous souhaitez supprimer l’affectation du package d’accès.
@@ -452,7 +452,7 @@ Maintenant que vous avez passé en revue ce module, vous pouvez :
 - Définir des packages d’accès.
 - Planifier, implémenter et gérer des droits d’utilisation.
 - Implémenter et gérer les conditions d’utilisation.
-- Gérez le cycle de vie des utilisateurs externes dans les paramètres de Gouvernance des ID Microsoft Entra.
+- Gérez le cycle de vie des utilisateurs externes dans les paramètres de Gouvernance des ID Entra.
 - Configurez et gérez l’organisation connectée.
 - Passez en revue les droits d’utilisation par utilisateur.
 
@@ -463,10 +463,10 @@ Dans ce module, vous avez appris à gérer les autorisations et l’accès pour 
 Utilisez ces ressources pour approfondir vos connaissances.
 
 - FAQ [https://learn.microsoft.com/azure/active-directory/conditional-access/terms-of-use](https://learn.microsoft.com/fr-fr/azure/active-directory/conditional-access/terms-of-use)
-- [Qu’est-ce que la gestion des droits d’utilisation de Microsoft Entra ?](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-overview)
-- [Scénarios courants dans la gestion des droits d’utilisation de Microsoft Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-scenarios)
-- [Examen des affectations dans la gestion des droits d’utilisation Microsoft Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-access-package-assignments)
-- [Ajouter une organisation connectée dans la gestion des droits d’utilisation De Microsoft Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-organization)
+- [Qu’est-ce que la gestion des droits d’utilisation d’Entra ?](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-overview)
+- [Scénarios courants dans la gestion des droits d’utilisation d’Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-scenarios)
+- [Examen des affectations dans la gestion des droits d’utilisation Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-access-package-assignments)
+- [Ajouter une organisation connectée dans la gestion des droits d’utilisation D’Entra](https://learn.microsoft.com/fr-fr/azure/active-directory/governance/entitlement-management-organization)
 
 
 ---
@@ -480,9 +480,9 @@ _https://learn.microsoft.com/fr-fr/training/modules/plan-implement-manage-access
 
 À mesure que votre organisation se développe, la gestion de qui a accès à quoi devient difficile. Les employés modifient les rôles, les invités accumulent les autorisations dont ils n’ont plus besoin et les affectations privilégiées persistent longtemps après la fin d’un projet. Sans processus systématique d’examen et de recertification de l’accès, votre environnement accumule les risques et les résultats d’audit suivent rapidement.
 
-Les révisions d’accès Microsoft Entra vous donnent un moyen structuré de gérer la dérive des accès des utilisateurs. Ils vous permettent de planifier des révisions périodiques des appartenances aux groupes, des attributions d’applications et des attributions de rôles privilégiées, puis d’automatiser le résultat , en supprimant l’accès refusé par les réviseurs, sans suivi manuel.
+Les révisions d’accès Entra vous donnent un moyen structuré de gérer la dérive des accès des utilisateurs. Ils vous permettent de planifier des révisions périodiques des appartenances aux groupes, des attributions d’applications et des attributions de rôles privilégiées. Le résultat est ensuite automatisé : l’accès refusé par les réviseurs est supprimé, sans suivi manuel.
 
-Dans ce module, vous planifiez et implémentez des révisions d’accès dans Microsoft Entra ID Governance. Vous découvrez pourquoi les révisions d’accès concernent la posture de sécurité de votre organisation. Vous apprenez à les créer et à les configurer pour différents types de ressources, et comment surveiller et automatiser leurs résultats. Vous explorez également l’Agent de révision d’accès, qui utilise l’IA pour guider les réviseurs dans le processus directement dans Microsoft Teams.
+Dans ce module, vous planifiez et implémentez des révisions d’accès dans Entra ID Governance. Vous découvrez pourquoi les révisions d’accès concernent la posture de sécurité de votre organisation. Vous apprenez à les créer et à les configurer pour différents types de ressources, et comment surveiller et automatiser leurs résultats. Vous explorez également l’Agent de révision d’accès, qui utilise l’IA pour guider les réviseurs dans le processus directement dans Microsoft Teams.
 
 ### Objectifs d’apprentissage
 
@@ -498,18 +498,18 @@ Dans ce module, vous planifiez et implémentez des révisions d’accès dans Mi
 
 ### Conditions préalables
 
-- Connaissance de la création et de la gestion des accès des utilisateurs Microsoft Entra
+- Connaissance de la création et de la gestion des accès des utilisateurs Entra
 
 Note
 
-Certaines fonctionnalités des révisions d’accès nécessitent un abonnement **Microsoft Entra ID Governance** ou **Microsoft Entra Suite** . Certaines fonctionnalités fonctionnent avec un abonnement Microsoft Entra ID P2. Confirmez votre licence avant le déploiement.
+Certaines fonctionnalités des révisions d’accès nécessitent un abonnement **Entra ID Governance** ou **Entra Suite** . Certaines fonctionnalités fonctionnent avec un abonnement Entra ID P2. Confirmez votre licence avant le déploiement.
 
 
 ## Planifier des révisions d’accès
 
 ### Qu’est-ce qu’une révision d’accès ?
 
-Une **révision d’accès** est, comme son nom l’indique, une révision planifiée des besoins d’accès, des droits et de l’historique de l’accès utilisateur. Les révisions d’accès permettent de s’assurer que les bonnes personnes ont le droit d’accéder aux ressources appropriées. Elles permettent de limiter les risques d’accès en protégeant, en surveillant et en auditant l’accès aux ressources critiques tout en garantissant la productivité des employés et des partenaires. Les révisions d’accès sont une fonctionnalité de gouvernance des ID Microsoft Entra et nécessitent un abonnement **Microsoft Entra ID Governance** ou **Microsoft Entra Suite** . Certaines fonctionnalités fonctionnent avec un abonnement Microsoft Entra ID P2.
+Une **révision d’accès** est, comme son nom l’indique, une révision planifiée des besoins d’accès, des droits et de l’historique de l’accès utilisateur. Les révisions d’accès permettent de s’assurer que les bonnes personnes ont le droit d’accéder aux ressources appropriées. Elles permettent de limiter les risques d’accès en protégeant, en surveillant et en auditant l’accès aux ressources critiques tout en garantissant la productivité des employés et des partenaires. Les révisions d’accès sont une fonctionnalité de gouvernance des ID Entra et nécessitent un abonnement **Entra ID Governance** ou **Entra Suite** . Certaines fonctionnalités fonctionnent avec un abonnement Entra ID P2.
 
 Tenez compte des besoins de votre organisation pour déterminer la stratégie de déploiement des révisions d’accès dans votre environnement.
 
@@ -517,15 +517,15 @@ Tenez compte des besoins de votre organisation pour déterminer la stratégie de
 
 Lorsque des projets technologiques échouent, cela est généralement dû à des attentes qui ne correspondent pas, aux résultats et aux responsabilités réels. Pour éviter un tel cas de figure, prenez soin de faire appel aux bonnes parties prenantes et à clarifier les rôles du projet. Pour les révisions d’accès, incluez des représentants des équipes suivantes au sein de votre organisation :
 
-- **L’administration informatique** gère votre infrastructure informatique et administre vos investissements cloud et vos applications SaaS (Software as a service). Cette équipe examine l’accès privilégié à l’infrastructure et aux applications, planifie les révisions d’accès sur les groupes figurant sur la liste d'exceptions et garantit que l’accès programmatique via les entités de service est régi.
+- **L’administration informatique** gère votre infrastructure informatique et administre vos investissements cloud et vos applications SaaS (Software as a service). Cette équipe examine l’accès privilégié à l’infrastructure et aux applications, planifie les révisions d’accès sur les groupes figurant sur la liste d'exceptions et veille à ce que l’accès programmatique via les entités de service soit régi.
 - **Les équipes de sécurité** garantissent que le plan répond aux exigences de sécurité de l’organisation et applique la confiance zéro. Cette équipe réduit les risques, applique l’accès avec des privilèges minimum et utilise des outils pour maintenir une vue centralisée de qui a accès à quoi.
 - Les **équipes de développement** créent et entretiennent des applications pour votre organisation. Cette équipe contrôle qui peut accéder aux composants dans les ressources SaaS, PaaS et IaaS et gère les groupes utilisés pour le développement d’applications internes.
 - **Les unités commerciales** gèrent des projets et possèdent des applications. Cette équipe examine et approuve ou refuse l’accès aux groupes et applications pour les utilisateurs internes et externes.
 - **La gouvernance d’entreprise** garantit que l’organisation suit la stratégie interne et respecte les réglementations.  Note Pour les révisions nécessitant des évaluations manuelles, veillez à planifier les réviseurs et cycles de révision adéquats qui répondent à vos besoins en matière de stratégie et de conformité. Si les cycles de révision sont trop fréquents ou qu’il y a trop peu de réviseurs, la qualité est perdue et trop ou trop peu de personnes y ont accès.
 
-### Qu’est-ce que Microsoft Entra ID Governance ?
+### Qu’est-ce qu’Entra ID Governance ?
 
-Microsoft Entra ID Governance vous permet d’équilibrer le besoin de votre organisation pour la sécurité et la productivité des employés avec les processus et la visibilité appropriés. Il fournit des fonctionnalités pour garantir que les bonnes personnes ont le droit d’accéder aux ressources appropriées et vous aident à atténuer les risques d’accès en protégeant, en surveillance et en auditant l’accès aux ressources critiques, tout en garantissant la productivité des employés et des partenaires commerciaux.
+Entra ID Governance vous permet d’équilibrer le besoin de votre organisation pour la sécurité et la productivité des employés avec les processus et la visibilité appropriés. Il fournit des fonctionnalités qui garantissent que les bonnes personnes ont le droit d’accéder aux ressources appropriées. Elles vous aident aussi à atténuer les risques d’accès en protégeant, en surveillant et en auditant l’accès aux ressources critiques, tout en garantissant la productivité des employés et des partenaires commerciaux.
 
 Identity Governance offre aux organisations la possibilité d’effectuer des tâches complètes vis-à-vis des employés, des partenaires et des fournisseurs, pour différents services et applications en local comme dans le cloud. Plus précisément, il est destiné à aider les organisations à répondre à ces quatre questions clés :
 
@@ -536,26 +536,26 @@ Identity Governance offre aux organisations la possibilité d’effectuer des t�
 
 ### Prévoir un pilote
 
-Nous encourageons les clients à tester initialement les révisions d’accès avec un petit groupe et à cibler des ressources non critiques. Cette phase pilote peut vous aider à ajuster les processus et les communications en fonction des besoins et à augmenter la capacité des utilisateurs et des réviseurs à répondre aux exigences de conformité et de sécurité.
+Nous encourageons les clients à tester initialement les révisions d’accès avec un petit groupe et à cibler des ressources non critiques. Cette phase pilote vous aide à ajuster les processus et les communications en fonction des besoins, et à renforcer la capacité des utilisateurs et des réviseurs à répondre aux exigences de conformité et de sécurité.
 
 Dans votre pilote, nous vous recommandons d’effectuer les tâches suivantes :
 
 - Commencez par les révisions dont les résultats ne sont pas appliqués automatiquement, et vous pourrez en contrôler les implications.
-- Assurez-vous que tous les utilisateurs disposent d’adresses e-mail valides figurant dans Microsoft Entra ID et qu’ils reçoivent des communications par e-mail pour prendre les mesures appropriées.
+- Assurez-vous que tous les utilisateurs disposent d’adresses e-mail valides figurant dans Entra ID et qu’ils reçoivent des communications par e-mail pour prendre les mesures appropriées.
 - Documentez tout accès supprimé dans le cadre du pilote au cas où vous devriez le restaurer rapidement.
 - Analysez les journaux d’audit pour vous assurer que tous les événements sont correctement audités.
 
 #### Quels types de ressources peuvent être révisés ?
 
-Une fois que vous avez intégré les ressources de votre organisation à Microsoft Entra ID (telles que les utilisateurs, les applications et les groupes), elles peuvent être gérées et révisées.
+Une fois que vous avez intégré les ressources de votre organisation à Entra ID (telles que les utilisateurs, les applications et les groupes), elles peuvent être gérées et révisées.
 
 Les cibles classiques à réviser sont les suivantes :
 
-- Accès utilisateur aux applications intégrées à l’ID Microsoft Entra pour l’authentification unique (par exemple SaaS, métier).
-- Appartenances aux groupes (synchronisées avec Microsoft Entra ID ou créées dans Microsoft Entra ID / Microsoft 365, notamment Microsoft Teams).
+- Accès utilisateur aux applications intégrées à l’ID Entra pour l’authentification unique (par exemple SaaS, métier).
+- Appartenances aux groupes (synchronisées avec Entra ID ou créées dans Entra ID / Microsoft 365, notamment Microsoft Teams).
 - Package d’accès qui regroupe les ressources (groupes, applications et sites) en un seul package pour gérer l’accès.
-- Rôles Microsoft Entra et rôles de ressources Azure tels que définis dans Privileged Identity Management (PIM).
-- Ressources de données personnalisées (préversion) : droits d’accès gérés via des types de ressources externes connectés à Microsoft Entra ID Governance.
+- Rôles Entra et rôles de ressources Azure tels que définis dans Privileged Identity Management (PIM).
+- Ressources de données personnalisées (préversion) : droits d’accès gérés via des types de ressources externes connectés à Entra ID Governance.
 
 #### Qui crée et gère les révisions d’accès ?
 
@@ -566,11 +566,11 @@ Le rôle administratif requis pour créer, gérer ou lire une révision d’acc�
 | Groupe ou application | Administrateur général | Administrateur général |
 |   | Administrateur d'utilisateurs | Lecteur mondial |
 |   | Administrateur Identity Governance | Administrateur d’utilisateurs |
-|   | Administrateur de rôle privilégié (n’effectue la révision que pour les groupes Microsoft Entra assignables) | Administrateur de la gouvernance des identités |
+|   | Administrateur de rôle privilégié (n’effectue la révision que pour les groupes Entra assignables) | Administrateur de la gouvernance des identités |
 |   | Propriétaire de groupe | Administrateur de rôle privilégié |
 |   |   | Lecteur de sécurité |
 |   |   | Propriétaire de groupe |
-| Rôle Microsoft Entra | Administrateur général |   |
+| Rôle Entra | Administrateur général |   |
 |   | Administrateur de rôle privilégié | Administrateur général |
 |   |   | Lecteur mondial |
 |   |   | Administrateur d’utilisateurs |
@@ -633,7 +633,7 @@ Pour créer une stratégie de révision d’accès, vous devez disposer des info
 
 Les packages d’accès peuvent considérablement simplifier votre stratégie de gouvernance et de révision d’accès. Un package d’accès regroupe toutes les ressources avec l’accès dont un utilisateur a besoin pour travailler sur un projet ou accomplir sa tâche. Par exemple, vous pouvez créer un package d’accès qui comprend toutes les applications dont les développeurs de votre organisation ont besoin, ou toutes les applications auxquelles les utilisateurs externes doivent avoir accès. Un administrateur ou un gestionnaire délégué de package d’accès regroupe ensuite les ressources (groupes ou applications) et les rôles dont les utilisateurs ont besoin pour ces ressources.
 
-Lors de la création d’un package d’accès, vous pouvez créer une ou plusieurs stratégies d’accès qui définissent les conditions auxquelles les utilisateurs peuvent demander un package d’accès, le processus d’approbation et la fréquence à laquelle une personne doit redemander l’accès. Les révisions d’accès sont configurées lors de la création ou de la modification d’une stratégie de package d’accès.
+Lors de la création d’un package d’accès, vous pouvez créer une ou plusieurs stratégies d’accès. Elles définissent les conditions auxquelles les utilisateurs peuvent demander un package d’accès, le processus d’approbation et la fréquence à laquelle une personne doit redemander l’accès. Les révisions d’accès sont configurées lors de la création ou de la modification d’une stratégie de package d’accès.
 
 ### Planifier des révisions d’accès pour les groupes
 
@@ -652,9 +652,9 @@ Appartenance au groupe examinée par :
 
 Nous recommandons aux propriétaires de groupes de réviser leur appartenance, car ils sont les mieux placés pour savoir qui a besoin d’un accès. La propriété des groupes diffère selon le type de groupe.
 
-- Les groupes créés dans Microsoft 365 et Microsoft Entra ID ont un ou plusieurs propriétaires bien définis. Dans la plupart des cas, ces propriétaires font de parfaits réviseurs pour leurs propres groupes, car ils savent qui doit y avoir accès. Par exemple, Microsoft Teams utilise les groupes Microsoft 365 comme modèle d’autorisation sous-jacent pour accorder aux utilisateurs l’accès aux ressources qui se trouvent dans SharePoint, Exchange, OneNote ou d’autres services Microsoft 365. Le créateur de l’équipe devient automatiquement propriétaire et doit être responsable d’attester l’appartenance de ce groupe.
-- Les groupes créés manuellement dans le portail du centre d’administration Microsoft Entra ou par le biais d’un script via Microsoft Graph peuvent ne pas nécessairement avoir des propriétaires définis. Nous vous recommandons de les définir via le portail d’administration dans la section « Propriétaires » du groupe ou via Graph.
-- Les groupes qui sont synchronisés à partir du service Active Directory local ne peuvent pas avoir de propriétaire dans Microsoft Entra ID. Lors de la création d’une révision d’accès, vous devez sélectionner les personnes qui sont les plus aptes à décider de leur appartenance.  Note Nous vous recommandons de définir des stratégies d’entreprise qui définissent la façon dont les groupes sont créés afin de garantir la propriété et la responsabilité claires du groupe pour une révision régulière de ses membres.
+- Les groupes créés dans Microsoft 365 et Entra ID ont un ou plusieurs propriétaires bien définis. Dans la plupart des cas, ces propriétaires font de parfaits réviseurs pour leurs propres groupes, car ils savent qui doit y avoir accès. Par exemple, Microsoft Teams utilise les groupes Microsoft 365 comme modèle d’autorisation sous-jacent pour accorder aux utilisateurs l’accès aux ressources qui se trouvent dans SharePoint, Exchange, OneNote ou d’autres services Microsoft 365. Le créateur de l’équipe devient automatiquement propriétaire et doit être responsable d’attester l’appartenance de ce groupe.
+- Les groupes créés manuellement dans le portail du centre d’administration Entra ou par le biais d’un script via Microsoft Graph peuvent ne pas nécessairement avoir des propriétaires définis. Nous vous recommandons de les définir via le portail d’administration dans la section « Propriétaires » du groupe ou via Graph.
+- Les groupes qui sont synchronisés à partir du service Active Directory local ne peuvent pas avoir de propriétaire dans Entra ID. Lors de la création d’une révision d’accès, vous devez sélectionner les personnes qui sont les plus aptes à décider de leur appartenance.  Note Nous vous recommandons de définir des stratégies d’entreprise qui encadrent la création des groupes. La propriété et la responsabilité du groupe sont ainsi claires pour une révision régulière de ses membres.
 
 #### Examiner l’appartenance des groupes d’exclusion dans les politiques d’accès conditionnel
 
@@ -666,7 +666,7 @@ Pour minimiser le travail manuel et les erreurs potentielles associées, envisag
 
 #### Réviser l’accès aux groupes locaux
 
-Les révisions d'accès ne peuvent pas modifier l'appartenance des groupes que vous synchronisez à partir de votre site local avec Microsoft Entra Connect. Avec les groupes synchronisés, la source d’autorité est locale. Vous pouvez toujours utiliser les révisions d’accès pour planifier et gérer régulièrement des révisions de groupes locaux. Les réviseurs prennent des mesures dans le groupe local. Cette stratégie permet de garder les révisions d’accès comme outil pour toutes les révisions. Vous pouvez utiliser les résultats d’une révision d’accès sur les groupes locaux et les traiter plus avant. Les données sont disponibles dans un fichier CSV ou dans Microsoft Graph.
+Les révisions d'accès ne peuvent pas modifier l'appartenance des groupes que vous synchronisez à partir de votre site local avec Entra Connect. Avec les groupes synchronisés, la source d’autorité est locale. Vous pouvez toujours utiliser les révisions d’accès pour planifier et gérer régulièrement des révisions de groupes locaux. Les réviseurs prennent des mesures dans le groupe local. Cette stratégie permet de garder les révisions d’accès comme outil pour toutes les révisions. Vous pouvez utiliser les résultats d’une révision d’accès sur les groupes locaux et les traiter plus avant. Les données sont disponibles dans un fichier CSV ou dans Microsoft Graph.
 
 ### Planifier des révisions d’accès pour les applications
 
@@ -681,13 +681,13 @@ Nous vous recommandons de planifier des révisions d’applications dans les sc�
 
 #### Réviseurs pour une application
 
-Les révisions d’accès peuvent porter sur les membres d’un groupe ou sur les utilisateurs qui ont été assignés à une application. Les applications dans Microsoft Entra ID n'ont pas nécessairement de propriétaire. Par conséquent, l'option de sélection du propriétaire de l'application en tant que réviseur n'est pas possible. Vous pouvez en outre étendre la portée d’une révision pour n’examiner que les utilisateurs invités affectés à l’application, plutôt que d’examiner tous les accès.
+Les révisions d’accès peuvent porter sur les membres d’un groupe ou sur les utilisateurs qui ont été assignés à une application. Les applications dans Entra ID n'ont pas nécessairement de propriétaire. Par conséquent, l'option de sélection du propriétaire de l'application en tant que réviseur n'est pas possible. Vous pouvez en outre étendre la portée d’une révision pour n’examiner que les utilisateurs invités affectés à l’application, plutôt que d’examiner tous les accès.
 
-### Planification de la révision des rôles de Microsoft Entra ID et des ressources Azure
+### Planification de la révision des rôles d’Entra ID et des ressources Azure
 
-Privileged Identity Management (PIM) simplifie la gestion (par les entreprises) des accès privilégiés aux ressources dans Microsoft Entra ID. Cela permet de conserver la liste des rôles privilégiés, à la fois dans l’ID Microsoft Entra et les ressources Azure, plus petits et augmente la sécurité globale du répertoire.
+Privileged Identity Management (PIM) simplifie la gestion (par les entreprises) des accès privilégiés aux ressources dans Entra ID. Cela permet de conserver la liste des rôles privilégiés, à la fois dans l’ID Entra et les ressources Azure, plus petits et augmente la sécurité globale du répertoire.
 
-Les révisions d’accès permettent aux réviseurs d’attester si les utilisateurs doivent toujours appartenir à un rôle. Tout comme les révisions d’accès pour les packages d’accès, les révisions des rôles Microsoft Entra et des ressources Azure sont intégrées à l’expérience de l’utilisateur administrateur PIM. Nous vous recommandons de réviser régulièrement les attributions de rôle suivantes :
+Les révisions d’accès permettent aux réviseurs d’attester si les utilisateurs doivent toujours appartenir à un rôle. Tout comme les révisions d’accès pour les packages d’accès, les révisions des rôles Entra et des ressources Azure sont intégrées à l’expérience de l’utilisateur administrateur PIM. Nous vous recommandons de réviser régulièrement les attributions de rôle suivantes :
 
 - Administrateur général
 - Administrateur d'utilisateurs
@@ -698,7 +698,7 @@ Les révisions d’accès permettent aux réviseurs d’attester si les utilisat
 
 ### Déployer des révisions d’accès
 
-Après avoir préparé une stratégie et un plan de révision de l’accès aux ressources intégrées à l’ID Microsoft Entra, déployez et gérez les révisions à l’aide des ressources répertoriées.
+Après avoir préparé une stratégie et un plan de révision de l’accès aux ressources intégrées à l’ID Entra, déployez et gérez les révisions à l’aide des ressources répertoriées.
 
 #### Réviser des packages d’accès
 
@@ -708,11 +708,11 @@ Pour réduire le risque d’un accès obsolète, les administrateurs peuvent act
 
 Les besoins d'accès des employés et des invités aux groupes et applications évoluent probablement au fil du temps. Afin de réduire les risques associés aux attributions d’accès obsolètes, les administrateurs peuvent créer des révisions d’accès pour les membres de groupes ou pour l’accès aux applications.
 
-Vous pouvez créer des révisions d’accès pour les membres d’un groupe ou un accès aux applications, effectuer des révisions d’accès pour les membres d’un groupe ou les utilisateurs ayant accès à une application, autoriser les membres à réviser leur propre accès à un groupe ou à une application, afficher les révisions d’accès et prendre des mesures pour les groupes locaux avec PowerShell.
+Vous pouvez créer des révisions d’accès pour les membres d’un groupe ou un accès aux applications, et effectuer ces révisions pour les membres d’un groupe ou les utilisateurs ayant accès à une application. Vous pouvez aussi autoriser les membres à réviser leur propre accès à un groupe ou à une application, afficher les révisions d’accès et prendre des mesures pour les groupes locaux avec PowerShell.
 
-#### Réviser les rôles de Microsoft Entra
+#### Réviser les rôles d’Entra
 
-Pour réduire les risques associés aux attributions de rôles obsolètes, vous devez régulièrement réviser l’accès aux rôles privilégiés Microsoft Entra.
+Pour réduire les risques associés aux attributions de rôles obsolètes, vous devez régulièrement réviser l’accès aux rôles privilégiés Entra.
 
 #### Examiner les rôles de ressource Azure
 
@@ -720,7 +720,7 @@ Pour réduire les risques associés aux attributions de rôles obsolètes, vous 
 
 ### Utiliser l’API des révisions d’accès
 
-Les méthodes de révision d’accès dans l’API Microsoft Graph sont disponibles à la fois pour les applications et les utilisateurs. Lors de l’exécution de scripts dans le contexte de l’application, le compte utilisé pour exécuter l’API (le principal du service) doit obtenir l’autorisation « AccessReview.Read.All » pour interroger les informations de révision d’accès.
+Les méthodes de révision d’accès dans l’API Microsoft Graph sont disponibles à la fois pour les applications et les utilisateurs. Lors de l’exécution de scripts dans le contexte de l’application, le compte qui exécute l’API (le principal du service) doit obtenir l’autorisation « AccessReview.Read.All » pour interroger les informations de révision d’accès.
 
 Les tâches les plus courantes à automatiser à l’aide de l’API Graph pour les révisions d’accès sont les suivantes :
 
@@ -729,11 +729,11 @@ Les tâches les plus courantes à automatiser à l’aide de l’API Graph pour 
 - Répertorier toutes les révisions d’accès en cours d’exécution et leur état.
 - Consulter l’historique d’une série de révisions et les décisions et actions prises à chaque révision
 - Collecter les décisions d’une révision d’accès.
-- Collecter les décisions des révisions terminées où le réviseur a pris une décision différente de celle recommandée par le système  Note Lorsque vous créez de nouvelles requêtes de l’API Graph pour l’automatisation, nous vous recommandons d’utiliser Graph Explorer. Vous pouvez générer et explorer vos requêtes Graph avant de les placer dans des scripts et du code. Cela peut vous aider à itérer rapidement votre requête afin d’obtenir exactement les résultats que vous recherchez, sans changer le code de votre script.
+- Collecter les décisions des révisions terminées où le réviseur a pris une décision différente de celle recommandée par le système  Note Pour créer de nouvelles requêtes de l’API Graph destinées à l’automatisation, nous vous recommandons Graph Explorer. Vous pouvez générer et explorer vos requêtes Graph avant de les placer dans des scripts et du code. Cela peut vous aider à itérer rapidement votre requête afin d’obtenir exactement les résultats que vous recherchez, sans changer le code de votre script.
 
 ### Surveiller les révisions d’accès
 
-Les activités de révisions d'accès sont enregistrées et disponibles dans les journaux d'audit de Microsoft Entra. Vous pouvez filtrer les données d’audit par catégorie, type d’activité et plage de dates. Voici un exemple de requête :
+Les activités de révisions d'accès sont enregistrées et disponibles dans les journaux d'audit d’Entra. Vous pouvez filtrer les données d’audit par catégorie, type d’activité et plage de dates. Voici un exemple de requête :
 
 | **Catégorie** | **Stratégie** |
 |---|---|
@@ -747,7 +747,7 @@ Les activités de révisions d'accès sont enregistrées et disponibles dans les
 |   | Appliquer la décision |
 | Plage de dates | Sept jours |
 
-Pour les requêtes plus avancées et l’analyse des révisions d’accès, ainsi que le suivi des modifications et l’achèvement des révisions, nous vous recommandons d’exporter vos journaux d’audit Microsoft Entra vers Azure Log Analytics ou Azure Event Hubs. Lorsque les journaux sont stockés dans Azure Log Analytics, vous pouvez utiliser le puissant langage d’analytique et créer vos propres tableaux de bord.
+Pour les requêtes plus avancées et l’analyse des révisions d’accès, ainsi que pour le suivi des modifications et l’achèvement des révisions, nous vous recommandons d’exporter vos journaux d’audit Entra vers Azure Log Analytics ou Azure Event Hubs. Lorsque les journaux sont stockés dans Azure Log Analytics, vous pouvez utiliser le puissant langage d’analytique et créer vos propres tableaux de bord.
 
 ### Planifier les communications
 
@@ -767,11 +767,11 @@ L’e-mail envoyé aux réviseurs peut être personnalisé de façon à inclure 
 - Incluez un lien hypertexte ou une référence à des informations internes sur les attentes de la révision et d’autres documents de référence ou de formation.
 - Inclure un lien vers des instructions sur la façon d’effectuer une auto-révision de l’accès.
 
-Lorsque vous sélectionnez Démarrer la révision, les réviseurs sont dirigés vers le portail MyAccess pour les révisions d’accès aux groupes et aux applications. Le portail leur donne une vue d’ensemble de tous les utilisateurs qui ont accès à la ressource qu’ils révisent, ainsi que des recommandations système basées sur les dernières informations de connexion et d’accès.
+Lorsque vous sélectionnez Démarrer la révision, les réviseurs sont dirigés vers le portail MyAccess pour les révisions d’accès aux groupes et aux applications. Le portail leur donne une vue d’ensemble de tous les utilisateurs qui ont accès à la ressource révisée, ainsi que des recommandations système basées sur les dernières informations de connexion et d’accès.
 
 ### De combien de licences avez-vous besoin ?
 
-Une licence Microsoft Entra ID Premium P2 est requise pour chaque membre ou utilisateur invité qui :
+Une licence Entra ID Premium P2 est requise pour chaque membre ou utilisateur invité qui :
 
 - Est affecté en tant que réviseur
 - Effectue une auto-révision
@@ -780,21 +780,21 @@ Une licence Microsoft Entra ID Premium P2 est requise pour chaque membre ou util
 
 Les licences ne sont pas requises pour les utilisateurs disposant des rôles Administrateur général ou Administrateur utilisateur qui configurent des révisions d’accès, configurent des paramètres ou appliquent des décisions de révision.
 
-Les licences Microsoft Entra ID Premium P2 ne sont pas requises pour les utilisateurs disposant des rôles d’administrateur général ou d’administrateur d’utilisateurs qui configurent les révisions d’accès, configurent les paramètres ou appliquent les décisions des révisions.
+Les licences Entra ID Premium P2 ne sont pas requises pour les administrateurs généraux ou les administrateurs d’utilisateurs qui configurent les révisions d’accès, configurent les paramètres ou appliquent les décisions des révisions.
 
 
 ## Créer des révisions d’accès pour les groupes et les applications
 
-L’accès aux groupes et aux applications pour les employés et les invités change au fil du temps. Pour réduire le risque associé aux attributions d'accès obsolètes, les administrateurs peuvent utiliser Microsoft Entra ID pour créer des révisions d'accès pour les membres du groupe ou l'accès aux applications. Si vous devez régulièrement passer en revue les accès, vous pouvez aussi créer des révisions d’accès périodiques.
+L’accès aux groupes et aux applications pour les employés et les invités change au fil du temps. Pour réduire le risque associé aux attributions d'accès obsolètes, les administrateurs peuvent utiliser Entra ID pour créer des révisions d'accès pour les membres du groupe ou l'accès aux applications. Si vous devez régulièrement passer en revue les accès, vous pouvez aussi créer des révisions d’accès périodiques.
 
 ### Prérequis
 
-- Microsoft Entra ID Governance ou Microsoft Entra Suite (Microsoft Entra ID Premium P2 fournit des fonctionnalités limitées)
+- Entra ID Governance ou Entra Suite (Entra ID Premium P2 fournit des fonctionnalités limitées)
 - Administrateur de gouvernance des identités ou administrateur général
 
 ### Créer une ou plusieurs révisions d’accès
 
-1. Connectez-vous au [centre d’administration de Microsoft Entra](https://entra.microsoft.com) en tant qu’**administrateur de la gouvernance des identités** au minimum.
+1. Connectez-vous au [centre d’administration d’Entra](https://entra.microsoft.com) en tant qu’**administrateur de la gouvernance des identités** au minimum.
 2. Accédez à **Gouvernance d’ID**>**Revues d’accès**.
 3. Sélectionnez **Nouvelle révision d’accès** pour créer une révision d’accès.
 4. Dans l’écran du modèle Révisions d’accès, sélectionnez **Vérifier l’accès à un type de ressource**.
@@ -805,7 +805,7 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
 
 7. Si vous avez sélectionné **Applications**, sélectionnez une ou plusieurs applications.
 8. Sélectionnez une étendue pour la révision. Les options disponibles sont :  Si vous examinez l’appartenance au groupe, vous pouvez également cibler uniquement les utilisateurs inactifs. Dans la section **Étendue Utilisateurs** , sélectionnez **Utilisateurs inactifs (au niveau du locataire)** et spécifiez le nombre de jours inactifs (jusqu’à 730 jours).
-  - **Utilisateurs invités uniquement**. Limite la révision aux utilisateurs invités Microsoft Entra B2B dans votre annuaire.
+  - **Utilisateurs invités uniquement**. Limite la révision aux utilisateurs invités Entra B2B dans votre annuaire.
   - **Tout le monde**. Limite la révision à tous les objets utilisateur associés à la ressource.  Note Si vous avez sélectionné **tous les groupes Microsoft 365 avec des utilisateurs invités**, votre seule option consiste à passer en revue **les utilisateurs invités uniquement**.
 
 9. Sélectionnez **Suivant : Révisions**.
@@ -830,8 +830,8 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
 14. Dans la section **Activer les décideurs de révision** , choisissez si votre réviseur reçoit des recommandations pendant le processus de révision.
 15. Dans la section **Paramètres avancés**, vous pouvez choisir les options suivantes :
   - Définissez **Justification obligatoire** sur **Activer** afin d’exiger que le réviseur indique un motif d’approbation.
-  - Définissez **Notifications par e-mail** sur **Activer** pour que Microsoft Entra ID envoie des notifications par e-mail aux réviseurs quand une révision d’accès commence et aux administrateurs quand une révision s’achève.
-  - Définissez **Rappels** sur **Activer** pour que Microsoft Entra ID envoie des rappels concernant les révisions d’accès en cours aux réviseurs qui n’ont pas terminé leur révision. Ces rappels sont à mi-chemin de la période de révision.
+  - Définissez **Notifications par e-mail** sur **Activer** pour qu’Entra ID envoie des notifications par e-mail aux réviseurs quand une révision d’accès commence et aux administrateurs quand une révision s’achève.
+  - Définissez **Rappels** sur **Activer** pour qu’Entra ID envoie des rappels concernant les révisions d’accès en cours aux réviseurs qui n’ont pas terminé leur révision. Ces rappels sont à mi-chemin de la période de révision.
   - Le contenu de l’e-mail envoyé aux réviseurs est généré automatiquement en fonction des détails de révision, tels que le nom de révision, le nom de la ressource et la date d’échéance. Si vous devez communiquer des informations supplémentaires, telles que des instructions supplémentaires ou des informations de contact, spécifiez ces détails dans le **contenu supplémentaire de la section de messagerie du réviseur** . Les informations que vous entrez sont incluses dans les e-mails d’invitation et de rappel envoyés aux réviseurs affectés.
   - Sélectionnez **Access Review Agent (préversion)** pour permettre aux réviseurs de terminer la révision d’accès dans Microsoft Teams à l’aide du langage naturel, des insights et des recommandations. Cette option nécessite davantage de configuration. Pour plus d’informations, consultez l’unité de l’agent de révision d’accès.
 
@@ -843,7 +843,7 @@ L’accès aux groupes et aux applications pour les employés et les invités ch
 
 Une fois que vous avez spécifié les paramètres d’une révision d’accès, sélectionnez **Démarrer**. La révision d’accès apparaît dans votre liste avec un indicateur de son état.
 
-Par défaut, Microsoft Entra ID envoie un e-mail aux réviseurs peu de temps après le début de la révision. Si vous choisissez de ne pas laisser Microsoft Entra ID envoyer l'e-mail, assurez-vous d'informer les réviseurs qu'une révision d'accès les attend. Vous pouvez leur montrer les instructions relatives à la révision d’accès aux groupes ou aux applications. Si votre révision s’adresse à des invités qui doivent réviser leur propre accès, donnez-leur des instructions sur la méthode à suivre pour réviser leur accès à des groupes ou à des applications.
+Par défaut, Entra ID envoie un e-mail aux réviseurs peu de temps après le début de la révision. Si vous choisissez de ne pas laisser Entra ID envoyer l'e-mail, assurez-vous d'informer les réviseurs qu'une révision d'accès les attend. Vous pouvez leur montrer les instructions relatives à la révision d’accès aux groupes ou aux applications. Si votre révision s’adresse à des invités qui doivent réviser leur propre accès, donnez-leur des instructions sur la méthode à suivre pour réviser leur accès à des groupes ou à des applications.
 
 Si vous avez attribué des invités comme réviseurs et qu’ils n’ont pas accepté l’invitation, ils ne reçoivent pas d’e-mail des examens d’accès, car ils doivent d’abord accepter l’invitation.
 
@@ -864,12 +864,12 @@ Si vous avez attribué des invités comme réviseurs et qu’ils n’ont pas acc
 
 ### Créer des révisions via des API
 
-Vous pouvez également créer des révisions d’accès avec des API. Ce que vous faites pour gérer les révisions d’accès des groupes et des utilisateurs d’applications dans le Centre d’administration Microsoft Entra peut également être effectuée à l’aide des API Microsoft Graph.
+Vous pouvez également créer des révisions d’accès avec des API. Ce que vous faites pour gérer les révisions d’accès des groupes et des utilisateurs d’applications dans le Centre d’administration Entra peut également être effectuée à l’aide des API Microsoft Graph.
 
 
 ## Créer et configurer des révisions d’accès par programmation
 
-Les révisions d'accès Microsoft Entra sont une caractéristique de la gouvernance des ID Microsoft Entra. Les révisions d’accès permettent de s’assurer que les bonnes identités ont les droits d’accès pour les ressources appropriées dans l’organisation. Les révisions d'accès peuvent être implémentées par programme à l'aide de l'API des révisions d'accès dans Microsoft Graph.
+Les révisions d'accès Entra sont une caractéristique de la gouvernance des ID Entra. Les révisions d’accès permettent de s’assurer que les bonnes identités ont les droits d’accès pour les ressources appropriées dans l’organisation. Les révisions d'accès peuvent être implémentées par programme à l'aide de l'API des révisions d'accès dans Microsoft Graph.
 
 Pour créer une révision d’accès à l’aide de Graph, appelez l’API Graph pour créer une définition de planification de révision d’accès. L’appelant doit être un utilisateur disposant au moins du rôle **Administrateur de gouvernance** des identités avec une application disposant de l’autorisation déléguée `AccessReview.ReadWrite.All` ou d’une application disposant de l’autorisation `AccessReview.ReadWrite.All` d’application.
 
@@ -879,7 +879,7 @@ L’API des révisions d’accès dans Microsoft Graph permet aux organisations 
 
 ### API Révision d’accès pour les groupes de sécurité
 
-Ce module d’apprentissage ne recrée pas la méthode pas à pas pour utiliser l’API, pour obtenir ces informations, consultez l’article - [Passez en revue l’accès aux groupes de sécurité à l’aide des API de révision d’accès.](https://learn.microsoft.com/fr-fr/graph/tutorial-accessreviews-securitygroup) Pour passer en revue l’accès invité dans les groupes Microsoft 365 via l’API, consultez [Révision de l’accès aux groupes Microsoft 365 à l’aide des API de révision d’accès](https://learn.microsoft.com/fr-fr/graph/tutorial-accessreviews-m365group). Voici les étapes générales qui doivent être effectuées.
+Ce module d’apprentissage ne recrée pas la méthode pas à pas pour utiliser l’API. Pour obtenir ces informations, consultez l’article [Passez en revue l’accès aux groupes de sécurité à l’aide des API de révision d’accès.](https://learn.microsoft.com/fr-fr/graph/tutorial-accessreviews-securitygroup) Pour passer en revue l’accès invité dans les groupes Microsoft 365 via l’API, consultez [Révision de l’accès aux groupes Microsoft 365 à l’aide des API de révision d’accès](https://learn.microsoft.com/fr-fr/graph/tutorial-accessreviews-m365group). Voici les étapes générales qui doivent être effectuées.
 
 1. Créer une révision d’accès pour le groupe de sécurité
 2. Répertorier les instances de la révision d’accès
@@ -894,7 +894,7 @@ Ce module d’apprentissage ne recrée pas la méthode pas à pas pour utiliser 
 
 ## Surveiller les résultats de la révision d’accès
 
-Microsoft Entra ID simplifie la manière dont les entreprises gèrent l’accès aux groupes et aux applications avec les révisions d’accès Microsoft Entra. D’autres services Microsoft en ligne, comme Microsoft 365, peuvent également être gérés avec des révisions d’accès Microsoft Entra.
+Entra ID simplifie la manière dont les entreprises gèrent l’accès aux groupes et aux applications avec les révisions d’accès Entra. D’autres services Microsoft en ligne, comme Microsoft 365, peuvent également être gérés avec des révisions d’accès Entra.
 
 ### Effectuer une révision d’accès à l’aide de Mes applications
 
@@ -933,7 +933,7 @@ Il y a deux manières d’approuver ou de refuser l’accès :
 Pour rendre les révisions d’accès plus faciles et plus rapides pour vous, nous fournissons également des suggestions que vous pouvez accepter en une seule sélection. Le système génère des recommandations à l’aide de deux méthodes :
 
 - **Aucune connexion dans les 30 jours** : Il est recommandé de refuser les utilisateurs qui ne se sont pas connectés au cours des 30 derniers jours. La dernière date de connexion de l’utilisateur s’affiche en même temps que la recommandation.
-- **Valeur aberrante par rapport aux homologues :**si un utilisateur ne dispose pas des mêmes droits d'accès que ses homologues, le système recommande de refuser l'accès en fonction de la distance moyenne qui le sépare de ses homologues dans la hiérarchie de l'organisation.
+- **Valeur aberrante par rapport aux homologues :**si un utilisateur ne dispose pas des mêmes droits d'accès que ses homologues, le système recommande de refuser l'accès, en fonction de la distance moyenne qui le sépare d’eux dans la hiérarchie de l'organisation.
 
 Pour accepter les recommandations :
 
@@ -949,7 +949,7 @@ Vous pouvez choisir d’avoir la suppression d’accès automatisée en définis
 
 Les recommandations sont affichées aux réviseurs dans le cadre de l’expérience du réviseur et indiquent la dernière connexion d’une personne au locataire ou au dernier accès à une application. Ces informations aident les réviseurs à prendre la décision appropriée en matière d’accès. La sélection de « Suivre les recommandations » permet de prendre en compte les recommandations issues de l’analyse des accès. À la fin d’une révision d’accès, le système applique automatiquement ces recommandations aux utilisateurs auxquels les réviseurs n’ont pas répondu.
 
-Les recommandations sont basées sur les critères de la révision d’accès. Par exemple, si vous configurez la révision pour supprimer l’accès sans connexion pendant 30 jours, il recommande que tous les utilisateurs qui correspondent à ce critère soient supprimés , s’applique à la fois aux connexions interactives et non interactives. Les recommandations peuvent également être basées sur l’analyse hors **norme de pair** ( si un utilisateur n’a pas le même accès que d’autres personnes dans leur structure de création de rapports, le système recommande le déni. Microsoft travaille continuellement à l’amélioration des recommandations.
+Les recommandations sont basées sur les critères de la révision d’accès. Par exemple, si vous configurez la révision pour supprimer l’accès sans connexion pendant 30 jours, elle recommande de supprimer tous les utilisateurs qui correspondent à ce critère. Cela s’applique à la fois aux connexions interactives et non interactives. Les recommandations peuvent également être basées sur l’analyse hors **norme de pair** ( si un utilisateur n’a pas le même accès que d’autres personnes dans leur structure de création de rapports, le système recommande le déni. Microsoft travaille continuellement à l’amélioration des recommandations.
 
 ### Réviser l’accès des utilisateurs invités
 
@@ -960,33 +960,33 @@ Les identités externes peuvent être autorisées à accéder aux ressources de 
 - Ajouté à un groupe.
 - Invitée dans Teams.
 - Affectée à une application d’entreprise ou à un package d’accès.
-- Assignation d'un rôle privilégié dans Microsoft Entra ID ou dans un abonnement Azure.
+- Assignation d'un rôle privilégié dans Entra ID ou dans un abonnement Azure.
 
-Cet [exemple de script](https://github.com/microsoft/access-reviews-samples/tree/master/ExternalIdentityUse) indique où les identités externes invitées dans l'organisation sont utilisées. Vous pouvez voir l’appartenance à un groupe, les attributions de rôles et les attributions d’applications des utilisateurs externes dans Microsoft Entra ID. Le script n’affiche aucune attribution en dehors de Microsoft Entra ID, tel que l’attribution directe des droits aux ressources SharePoint, sans l’utilisation de groupes.
+Cet [exemple de script](https://github.com/microsoft/access-reviews-samples/tree/master/ExternalIdentityUse) indique où les identités externes invitées dans l'organisation sont utilisées. Vous pouvez voir l’appartenance à un groupe, les attributions de rôles et les attributions d’applications des utilisateurs externes dans Entra ID. Le script n’affiche aucune attribution en dehors d’Entra ID, tel que l’attribution directe des droits aux ressources SharePoint, sans l’utilisation de groupes.
 
-Lorsque vous créez une révision d’accès pour des groupes ou des applications, vous pouvez choisir de laisser le réviseur se concentrer sur **Toute personne ayant un accès**, ou sur **Utilisateurs invités uniquement**. En sélectionnant uniquement les utilisateurs invités, les réviseurs sont fournis une liste ciblée d’identités externes de Microsoft Entra B2B qui ont accès à la ressource.
+Lorsque vous créez une révision d’accès pour des groupes ou des applications, vous pouvez choisir de laisser le réviseur se concentrer sur **Toute personne ayant un accès**, ou sur **Utilisateurs invités uniquement**. En sélectionnant uniquement les utilisateurs invités, les réviseurs sont fournis une liste ciblée d’identités externes d’Entra B2B qui ont accès à la ressource.
 
 
 ## Configurer des révisions d’accès récurrentes
 
-Les révisions d’accès peuvent être définies de manière récurrente. Nommez votre révision d’accès, sélectionnez une date de début, une fréquence, une durée et spécifiez quand la série se termine : vous pouvez choisir **Jamais**, une date de fin spécifique ou un nombre défini d’occurrences. Les réviseurs sont avertis au début de chaque révision. Les réviseurs peuvent approuver ou refuser l’accès avec une interface conviviale et avec l’aide de recommandations intelligentes.
+Les révisions d’accès peuvent être définies de manière récurrente. Nommez votre révision d’accès, sélectionnez une date de début, une fréquence et une durée, puis indiquez quand la série se termine : **Jamais**, une date de fin spécifique ou un nombre défini d’occurrences. Les réviseurs sont avertis au début de chaque révision. Les réviseurs peuvent approuver ou refuser l’accès avec une interface conviviale et avec l’aide de recommandations intelligentes.
 
 Pourquoi les révisions d’accès périodiques sont-elles importantes ? En raison de la gestion du cycle de vie. Tout ce qui commence doit avoir une date de fin. Entre le début et la fin, nous devons vérifier que les autorisations sont bien ce qu’elles doivent être. Ni trop, ni trop peu. Nous demandons aussi régulièrement à un propriétaire si tout est bien toujours comme il le souhaite. Avec la périodicité, nous nous assurons que cette vérification est effectuée régulièrement.
 
 Une fois qu’une série de révisions périodiques démarre, vous pouvez mettre à jour ses paramètres ou réviseurs à tout moment. Lors de la mise à jour, vous pouvez appliquer des modifications uniquement à l’instance **actuelle** (révision active) ou à la **série** (toutes les périodicités futures). Par exemple, si un réviseur quitte l’organisation, mettez à jour la série afin de le remplacer pour toutes les révisions futures. Si vous devez uniquement ajuster les paramètres de la révision en cours, mettez à jour l’instance actuelle à la place.
 
 
-## Explorer l’agent de révision d’accès dans Microsoft Entra
+## Explorer l’agent de révision d’accès dans Entra
 
 Historiquement, les révisions d’accès sont un processus manuel qui peut entraîner des erreurs et des erreurs potentielles. Les réviseurs n’ont pas toujours accès aux enregistrements et aux données pour prendre des décisions de révision et n’ont souvent pas suffisamment de temps pour terminer la révision. Que se passe-t-il s’il y avait un agent qui pouvait aider à la tâche ?
 
-### Agent de révision d'accès dans Microsoft Entra
+### Agent de révision d'accès dans Entra
 
-Permettre à vos réviseurs de prendre des décisions d’accès rapides et précises. L’agent de révision d’accès avec Microsoft Entra ID Governance fournit des insights et des recommandations afin que les réviseurs puissent effectuer leur travail par le biais d’une conversation simple, directement dans Microsoft Teams.
+Permettre à vos réviseurs de prendre des décisions d’accès rapides et précises. L’agent de révision d’accès avec Entra ID Governance fournit des insights et des recommandations afin que les réviseurs puissent effectuer leur travail par le biais d’une conversation simple, directement dans Microsoft Teams.
 
 #### Fonctionnement de l’agent
 
-L’agent de révision d’accès procède à une analyse proactive des révisions d’accès actives dans votre locataire Azure AD. L’agent analyse ensuite les révisions identifiées en collectant des insights supplémentaires et génère une recommandation (approuver/refuser). La recommandation inclut également un résumé de justification pour chaque décision. L’agent guide les réviseurs, en langage naturel, par le biais du processus de révision dans Microsoft Teams. À mesure que l’agent les guide tout au long de la révision, il peut examiner le raisonnement de l’agent derrière les recommandations, poser des questions dans le contexte de l’examen lui-même et enfin prendre sa propre décision éclairée. La recommandation des agents (approuver/refuser) pour chaque décision s’appuie sur un mécanisme de scoring déterministe alimenté par plusieurs signaux.
+L’agent de révision d’accès procède à une analyse proactive des révisions d’accès actives dans votre locataire Azure AD. L’agent analyse ensuite les révisions identifiées en collectant des insights supplémentaires et génère une recommandation (approuver/refuser). La recommandation inclut également un résumé de justification pour chaque décision. L’agent guide les réviseurs, en langage naturel, par le biais du processus de révision dans Microsoft Teams. À mesure que l’agent le guide tout au long de la révision, le réviseur peut examiner le raisonnement derrière les recommandations, poser des questions dans le contexte de l’examen lui-même et prendre enfin sa propre décision éclairée. La recommandation des agents (approuver/refuser) pour chaque décision s’appuie sur un mécanisme de scoring déterministe alimenté par plusieurs signaux.
 
 ##### L’agent prend en compte les signaux suivants :
 
@@ -1000,11 +1000,11 @@ L’agent de révision d’accès procède à une analyse proactive des révisio
 
 #### Prerequisites
 
-Pour utiliser l’Agent de révision d’accès dans Microsoft Entra, vous avez besoin des éléments suivants :
+Pour utiliser l’Agent de révision d’accès dans Entra, vous avez besoin des éléments suivants :
 
-- Licences Microsoft Entra ID Governance *ou* Microsoft Entra Suite.
+- Licences Entra ID Governance *ou* Entra Suite.
 - Intégration à Security Copilot avec au moins une unité de calcul de sécurité (SCU).
-- Les administrateurs doivent avoir au moins tous les rôles suivants pour configurer et gérer l’agent dans le Centre d’administration Microsoft Entra :
+- Les administrateurs doivent avoir au moins tous les rôles suivants pour configurer et gérer l’agent dans le Centre d’administration Entra :
   - Administrateur de gouvernance des identités
   - Administrateur de workflows de cycle de vie
   - Contributeur de Copilot de sécurité dans Security Copilot
@@ -1013,11 +1013,11 @@ Pour utiliser l’Agent de révision d’accès dans Microsoft Entra, vous avez 
 
 #### Limites
 
-Une fois les agents démarrés, ils ne peuvent pas être arrêtés ou suspendus. L'exécution peut prendre quelques minutes. Nous vous recommandons d’exécuter l’agent à partir du Centre d’administration Microsoft Entra.
+Une fois les agents démarrés, ils ne peuvent pas être arrêtés ou suspendus. L'exécution peut prendre quelques minutes. Nous vous recommandons d’exécuter l’agent à partir du Centre d’administration Entra.
 
 ### Activation de l’agent de révision d’accès
 
-1. Avec un compte qui a au moins tous les rôles suivants, connectez-vous au Centre d’administration Microsoft Entra :
+1. Avec un compte qui a au moins tous les rôles suivants, connectez-vous au Centre d’administration Entra :
   - Administrateur de gouvernance des identités
   - Administrateur de workflows de cycle de vie
   - Contributeur Copilot de sécurité
@@ -1033,7 +1033,7 @@ Une fois les agents démarrés, ils ne peuvent pas être arrêtés ou suspendus.
 
 Pour mettre à jour une révision d’accès existante pour l’agent de révision d’accès, procédez comme suit :
 
-1. Connectez-vous au Centre d’administration Microsoft Entra en tant qu’administrateur de gouvernance des identités au moins.
+1. Connectez-vous au Centre d’administration Entra en tant qu’administrateur de gouvernance des identités au moins.
 2. Accédez à **Gouvernance des ID**, puis **Révisions d'accès**.
 3. Sélectionnez la révision d’accès à prendre en charge par l’agent.
 4. Dans la page vue d’ensemble de la révision d’accès, sélectionnez **Paramètres** sous **Gérer** (révision ponctuelle) ou **Paramètres** sous **Série** (révision périodique).
@@ -1068,7 +1068,7 @@ Utilisez ces ressources pour approfondir vos connaissances.
 
 - [Qu’est-ce que les révisions d’accès ?](https://learn.microsoft.com/fr-fr/entra/id-governance/access-reviews-overview)
 - [Gérer l’accès utilisateur et invité avec révisions d’accès](https://learn.microsoft.com/fr-fr/entra/id-governance/manage-access-review)
-- [Passer en revue votre accès aux ressources avec Microsoft Entra Access Reviews](https://learn.microsoft.com/fr-fr/entra/id-governance/self-access-review)
+- [Passer en revue votre accès aux ressources avec Entra Access Reviews](https://learn.microsoft.com/fr-fr/entra/id-governance/self-access-review)
 - [Vue d’ensemble de l’API révision d’accès](https://learn.microsoft.com/fr-fr/entra/id-governance/create-access-review#create-an-access-review-programmatically)
 - [Agent de révision d’accès](https://learn.microsoft.com/fr-fr/entra/id-governance/access-review-agent)
 - [Passer en revue l’accès aux groupes de sécurité grâce aux API de révision d'accès](https://learn.microsoft.com/fr-fr/graph/tutorial-accessreviews-securitygroup)
@@ -1098,7 +1098,7 @@ Pour renforcer la sécurité de votre solution de Azure, vous devez vous assurer
 - Créez et gérez des comptes d’accès d’urgence.
 - Configurer des groupes d’accès privilégiés
 
-Les organisations souhaitent réduire le nombre de personnes qui ont accès à des informations ou ressources sécurisées. La réduction de l’accès réduit le risque qu’un acteur malveillant obtienne cet accès. Il peut également empêcher un utilisateur autorisé d’affecter par inadvertance une ressource sensible. Toutefois, les utilisateurs doivent toujours effectuer des opérations privilégiées dans les applications Microsoft Entra ID, Azure, Microsoft 365 ou SaaS. Les organisations peuvent accorder aux utilisateurs un accès privilégié juste-à-temps aux ressources Azure. Ensuite, vous pouvez suivre et gérer la nécessité de surveiller ce que font ces utilisateurs avec leurs privilèges d’administrateur.
+Les organisations souhaitent réduire le nombre de personnes qui ont accès à des informations ou ressources sécurisées. La réduction de l’accès réduit le risque qu’un acteur malveillant obtienne cet accès. Il peut également empêcher un utilisateur autorisé d’affecter par inadvertance une ressource sensible. Toutefois, les utilisateurs doivent toujours effectuer des opérations privilégiées dans les applications Entra ID, Azure, Microsoft 365 ou SaaS. Les organisations peuvent accorder aux utilisateurs un accès privilégié juste-à-temps aux ressources Azure. Ensuite, vous pouvez suivre et gérer la nécessité de surveiller ce que font ces utilisateurs avec leurs privilèges d’administrateur.
 
 ### Conditions préalables
 
@@ -1109,13 +1109,13 @@ Aucun
 
 ### Qu’est-ce que Privileged Identity Management (PIM) ?
 
-PIM est un service dans Microsoft Entra ID, pour gérer l’accès aux ressources privilégiées. PIM vous permet de gérer, contrôler et surveiller l’accès aux ressources importantes de votre organisation. Ces ressources incluent celles de Microsoft Entra ID, Azure et d’autres services Microsoft Online, tels que Microsoft 365 ou Microsoft Intune.
+PIM est un service dans Entra ID, pour gérer l’accès aux ressources privilégiées. PIM vous permet de gérer, contrôler et surveiller l’accès aux ressources importantes de votre organisation. Ces ressources incluent celles d’Entra ID, Azure et d’autres services Microsoft Online, tels que Microsoft 365 ou Microsoft Intune.
 
 ### Que fait PIM ?
 
 PIM fournit une activation de rôle basée sur le temps et basée sur l’approbation pour accéder aux ressources. Cela permet d’atténuer les risques d’autorisations d’accès excessives, inutiles ou incorrectes sur les ressources dont vous vous souciez. Les principales fonctionnalités de PIM sont les suivantes :
 
-- Fournir un accès privilégié juste-à-temps aux ressources Microsoft Entra ID et Azure
+- Fournir un accès privilégié juste-à-temps aux ressources Entra ID et Azure
 - Attribuer un accès limité à l’heure aux ressources à l’aide des dates de début et de fin
 - Exiger l’approbation pour activer des rôles privilégiés
 - Appliquer l’authentification multifacteur Azure pour activer n’importe quel rôle
@@ -1132,7 +1132,7 @@ PIM nécessite une licence Premium P2.
 
 ### Identifier vos parties prenantes
 
-La section suivante vous aide à identifier toutes les parties prenantes impliquées dans le projet. Vous regardez qui a besoin d’approuver, de réviser ou de rester informé. Il inclut des tables distinctes pour le déploiement de PIM pour les rôles Microsoft Entra et PIM pour les rôles Azure. Ajoutez des parties prenantes au tableau suivant selon les besoins de votre organisation.
+La section suivante vous aide à identifier toutes les parties prenantes impliquées dans le projet. Vous regardez qui a besoin d’approuver, de réviser ou de rester informé. Il inclut des tables distinctes pour le déploiement de PIM pour les rôles Entra et PIM pour les rôles Azure. Ajoutez des parties prenantes au tableau suivant selon les besoins de votre organisation.
 
 SO = Approbation sur ce projet
 
@@ -1140,7 +1140,7 @@ R = Passer en revue ce projet et apporter des commentaires
 
 I = Informé de ce projet
 
-#### Parties prenantes : Gestion des identités privilégiées pour les rôles Microsoft Entra
+#### Parties prenantes : Gestion des identités privilégiées pour les rôles Entra
 
 | **Name** (Nom) | **Rôle** | **Action** |
 |---|---|---|
@@ -1163,24 +1163,24 @@ I = Informé de ce projet
 
 Dans le cadre du processus de planification, préparez PIM en suivant notre article « Commencer à utiliser Privileged Identity Management ». PIM vous donne accès à certaines fonctionnalités conçues pour faciliter votre déploiement.
 
-Si votre objectif est de déployer PIM pour les ressources Azure, suivez notre article « Découvrir les ressources Azure à gérer dans Privileged Identity Management ». Seuls les propriétaires d’abonnements et de groupes d’administration peuvent mettre ces ressources sous gestion par PIM. Une fois sous gestion, la fonctionnalité PIM est accessible aux propriétaires à tous les niveaux, y compris le groupe d’administration, l’abonnement, le groupe de ressources et la ressource. Si vous êtes administrateur général qui tente de déployer PIM pour vos ressources Azure, vous pouvez élever l’accès pour gérer tous les abonnements Azure afin de vous donner accès à toutes les ressources Azure dans l’annuaire pour la découverte. Toutefois, nous vous conseillons d’obtenir l’approbation de chacun de vos propriétaires d’abonnements avant de gérer leurs ressources avec PIM.
+Si votre objectif est de déployer PIM pour les ressources Azure, suivez notre article « Découvrir les ressources Azure à gérer dans Privileged Identity Management ». Seuls les propriétaires d’abonnements et de groupes d’administration peuvent mettre ces ressources sous gestion par PIM. Une fois sous gestion, la fonctionnalité PIM est accessible aux propriétaires à tous les niveaux, y compris le groupe d’administration, l’abonnement, le groupe de ressources et la ressource. Si vous êtes administrateur général et que vous tentez de déployer PIM pour vos ressources Azure, vous pouvez élever l’accès pour gérer tous les abonnements Azure. Cela vous donne accès à toutes les ressources Azure de l’annuaire pour la découverte. Toutefois, nous vous conseillons d’obtenir l’approbation de chacun de vos propriétaires d’abonnements avant de gérer leurs ressources avec PIM.
 
 ### Appliquer le principe du privilège minimum
 
-Il est important de vous assurer que vous avez appliqué le principe des privilèges minimum dans votre organisation pour votre ID Microsoft Entra et vos rôles Azure.
+Il est important de vous assurer que vous avez appliqué le principe des privilèges minimum dans votre organisation pour votre ID Entra et vos rôles Azure.
 
 #### Planifier la délégation du moindre privilège
 
-Pour les rôles Microsoft Entra, il est courant pour les organisations d’attribuer le rôle Administrateur général à un certain nombre d’administrateurs lorsque la plupart des administrateurs n’ont besoin que d’un ou deux rôles d’administrateur spécifiques et moins puissants. Avec un grand nombre d’administrateurs généraux ou d’autres rôles à privilèges élevés, il est difficile de suivre de près vos attributions de rôles privilégiés.
+Pour les rôles Entra, les organisations attribuent couramment le rôle Administrateur général à un certain nombre d’administrateurs, alors que la plupart n’ont besoin que d’un ou deux rôles d’administrateur spécifiques et moins puissants. Avec un grand nombre d’administrateurs généraux ou d’autres rôles à privilèges élevés, il est difficile de suivre de près vos attributions de rôles privilégiés.
 
-Suivez ces étapes pour implémenter le principe de privilège minimum pour vos rôles Microsoft Entra.
+Suivez ces étapes pour implémenter le principe de privilège minimum pour vos rôles Entra.
 
-1. Comprendre la granularité des rôles en lisant et en comprenant les rôles d’administrateur Microsoft Entra disponibles. Vous et votre équipe devez également référencer des rôles d’administrateur par tâche d’identité dans l’ID Microsoft Entra, ce qui explique le rôle le moins privilégié pour des tâches spécifiques.
+1. Comprendre la granularité des rôles en lisant et en comprenant les rôles d’administrateur Entra disponibles. Vous et votre équipe devez également référencer des rôles d’administrateur par tâche d’identité dans l’ID Entra, ce qui explique le rôle le moins privilégié pour des tâches spécifiques.
 2. Répertoriez qui a des rôles privilégiés dans votre organisation. Vous pouvez utiliser PIM Discovery et Insights (version préliminaire) pour réduire votre exposition.
-3. Pour tous les administrateurs généraux de votre organisation, découvrez pourquoi ils ont besoin du rôle. Supprimez-les ensuite du rôle Administrateur général et attribuez des rôles intégrés ou des rôles personnalisés avec des privilèges inférieurs à l’intérieur de l’ID Microsoft Entra. Pour l’instant, Microsoft n’a qu’environ 10 administrateurs disposant du rôle Administrateur général.
-4. Pour tous les autres rôles Microsoft Entra, passez en revue la liste des affectations, identifiez les administrateurs qui n’ont plus besoin du rôle et supprimez-les de leurs attributions.
+3. Pour tous les administrateurs généraux de votre organisation, découvrez pourquoi ils ont besoin du rôle. Supprimez-les ensuite du rôle Administrateur général et attribuez des rôles intégrés ou des rôles personnalisés avec des privilèges inférieurs à l’intérieur de l’ID Entra. Pour l’instant, Microsoft n’a qu’environ 10 administrateurs disposant du rôle Administrateur général.
+4. Pour tous les autres rôles Entra, passez en revue la liste des affectations, identifiez les administrateurs qui n’ont plus besoin du rôle et supprimez-les de leurs attributions.
 
-Pour automatiser les deux dernières étapes, vous pouvez utiliser les révisions d’accès dans PIM. En suivant les étapes décrites dans « Démarrer une révision d’accès pour les rôles Microsoft Entra dans Privileged Identity Management », vous pouvez configurer une révision d’accès pour chaque rôle d’ID Microsoft Entra qui a un ou plusieurs membres.
+Pour automatiser les deux dernières étapes, vous pouvez utiliser les révisions d’accès dans PIM. En suivant les étapes décrites dans « Démarrer une révision d’accès pour les rôles Entra dans Privileged Identity Management », vous pouvez configurer une révision d’accès pour chaque rôle d’ID Entra comptant un ou plusieurs membres.
 
 Définissez les réviseurs sur **Membres (soi-même)**. Tous les utilisateurs du rôle recevront un e-mail leur demandant de confirmer qu’ils ont besoin de l’accès. En outre, activez **Exiger une raison d’approbation** dans les paramètres avancés afin que les utilisateurs doivent indiquer pourquoi ils ont besoin du rôle. En fonction de ces informations, vous pouvez supprimer les utilisateurs des rôles inutiles ou les déléguer à des rôles d’administrateur plus précis.
 
@@ -1190,21 +1190,21 @@ Les revues d’accès s’appuient sur les e-mails pour informer les utilisateur
 
 Pour les abonnements et ressources Azure, vous pouvez configurer un processus de révision d’accès similaire pour passer en revue les rôles dans chaque abonnement ou ressource. L’objectif de ce processus est de réduire les affectations propriétaire et administrateur d’accès utilisateur attachées à chaque abonnement ou ressource et de supprimer les affectations inutiles. Toutefois, les organisations délèguent souvent ces tâches au propriétaire de chaque abonnement ou ressource, car elles ont une meilleure compréhension des rôles spécifiques (en particulier des rôles personnalisés).
 
-Si vous êtes dans le rôle Administrateur général qui tente de déployer PIM pour les rôles Azure dans votre organisation, vous pouvez élever l’accès pour gérer tous les abonnements Azure afin d’accéder à chaque abonnement. Vous pouvez ensuite trouver chaque propriétaire d’abonnement et travailler avec eux pour supprimer les attributions inutiles et réduire l’attribution du rôle de propriétaire.
+Si vous avez le rôle Administrateur général et que vous tentez de déployer PIM pour les rôles Azure dans votre organisation, vous pouvez élever l’accès pour gérer tous les abonnements Azure, ce qui vous donne accès à chacun d’eux. Vous pouvez ensuite trouver chaque propriétaire d’abonnement et travailler avec eux pour supprimer les attributions inutiles et réduire l’attribution du rôle de propriétaire.
 
-Les utilisateurs disposant du rôle Propriétaire pour un abonnement Azure peuvent également utiliser des révisions d’accès pour les ressources Azure pour auditer et supprimer des attributions de rôles inutiles similaires au processus décrit précédemment pour les rôles Microsoft Entra.
+Les utilisateurs disposant du rôle Propriétaire pour un abonnement Azure peuvent également utiliser les révisions d’accès pour les ressources Azure, afin d’auditer et de supprimer des attributions de rôles inutiles, comme dans le processus décrit précédemment pour les rôles Entra.
 
 ### Décider quelles attributions de rôles doivent être protégées par Privileged Identity Management
 
 Après le nettoyage des attributions de rôle privilégié dans votre organisation, vous devez choisir les rôles à protéger avec Privileged Identity Management.
 
-Si un rôle est protégé par PIM, les utilisateurs éligibles qui lui sont affectés doivent élever pour utiliser les privilèges accordés par le rôle. Le processus d’élévation peut également inclure l’obtention de l’approbation, l’utilisation d’Azure Multifactor Authentication et la raison pour laquelle ils sont activés. PIM peut également suivre les élévations via les notifications et les journaux d’événements d’audit PIM et Microsoft Entra.
+Si un rôle est protégé par PIM, les utilisateurs éligibles qui lui sont affectés doivent élever pour utiliser les privilèges accordés par le rôle. Le processus d’élévation peut également inclure l’obtention de l’approbation, l’utilisation d’Azure Multifactor Authentication et la raison pour laquelle ils sont activés. PIM peut également suivre les élévations via les notifications et les journaux d’événements d’audit PIM et Entra.
 
-Choisir les rôles à protéger avec PIM peut être difficile et sera différent pour chaque organisation. Cette section fournit nos meilleures pratiques pour les rôles Microsoft Entra et les rôles Azure.
+Choisir les rôles à protéger avec PIM peut être difficile et sera différent pour chaque organisation. Cette section fournit nos meilleures pratiques pour les rôles Entra et les rôles Azure.
 
-#### Rôles Microsoft Entra
+#### Rôles Entra
 
-Il est important de hiérarchiser la protection des rôles Microsoft Entra qui disposent des autorisations les plus importantes. En fonction des modèles d’utilisation parmi tous les clients PIM, les 10 principaux rôles Microsoft Entra gérés par PIM sont les suivants :
+Il est important de hiérarchiser la protection des rôles Entra qui disposent des autorisations les plus importantes. En fonction des modèles d’utilisation parmi tous les clients PIM, les 10 principaux rôles Entra gérés par PIM sont les suivants :
 
 - Administrateur général
 - Administrateur de sécurité
@@ -1215,9 +1215,9 @@ Il est important de hiérarchiser la protection des rôles Microsoft Entra qui d
 - Lecteur de sécurité
 - Administrateur de service
 - Administrateur de facturation
-- Administrateur Skype Entreprise  Conseil Microsoft vous recommande de gérer tous vos administrateurs généraux et administrateurs de sécurité à l’aide de PIM en première étape, car il s’agit des utilisateurs qui peuvent faire le plus de mal lorsqu’ils sont compromis.
+- Administrateur Skype Entreprise  Conseil Microsoft vous recommande de gérer d’abord tous vos administrateurs généraux et administrateurs de sécurité à l’aide de PIM : ce sont les utilisateurs qui peuvent faire le plus de mal lorsqu’ils sont compromis.
 
-Il est important de prendre en compte les données et autorisations les plus sensibles pour votre organisation. Par exemple, certaines organisations souhaitent protéger leur rôle d’administrateur Power BI ou leur rôle d’administrateur Teams à l’aide de PIM, car elles peuvent accéder aux données et modifier les flux de travail principaux.
+Il est important de prendre en compte les données et autorisations les plus sensibles pour votre organisation. Par exemple, certaines organisations souhaitent protéger leur rôle d’administrateur Power BI ou d’administrateur Teams à l’aide de PIM, car ces rôles peuvent accéder aux données et modifier les flux de travail principaux.
 
 S’il existe des rôles auxquels les utilisateurs invités sont affectés, ils sont vulnérables aux attaques.
 
@@ -1225,7 +1225,7 @@ Conseil
 
 Microsoft vous recommande de gérer tous les rôles avec des utilisateurs invités à l’aide de PIM pour réduire les risques associés aux comptes d’utilisateurs invités compromis.
 
-Les rôles de lecteur comme le lecteur d’annuaire, le lecteur du centre de messages et le lecteur de sécurité sont parfois considérés comme moins importants que d’autres rôles, car ils n’ont pas d’autorisation d’écriture. Toutefois, nous avons certains clients qui protègent également ces rôles, car les attaquants ayant accès à ces comptes peuvent être en mesure de lire des données sensibles, y compris des données personnelles. Prenez ce risque en considération lorsque vous décidez si vous souhaitez que les rôles de lecteur de votre organisation soient gérés à l’aide de PIM.
+Les rôles de lecteur, comme le lecteur d’annuaire, le lecteur du centre de messages et le lecteur de sécurité, sont parfois considérés comme moins importants que d’autres, car ils n’ont pas d’autorisation d’écriture. Toutefois, nous avons certains clients qui protègent également ces rôles, car les attaquants ayant accès à ces comptes peuvent être en mesure de lire des données sensibles, y compris des données personnelles. Prenez ce risque en considération lorsque vous décidez si vous souhaitez que les rôles de lecteur de votre organisation soient gérés à l’aide de PIM.
 
 #### Rôles Azure
 
@@ -1234,7 +1234,7 @@ Lorsque vous décidez quelles attributions de rôles doivent être gérées à l
 - Ressources qui hébergent les données les plus sensibles.
 - Les ressources dont dépendent les principales applications client.
 
-Si vous êtes administrateur général ayant des difficultés à décider quels abonnements et ressources sont les plus importants, vous devez contacter les propriétaires d’abonnements de votre organisation pour rassembler une liste de ressources gérées par chaque abonnement. Ensuite, collaborez avec les propriétaires d’abonnements pour regrouper les ressources en fonction du niveau de gravité dans le cas où elles sont compromises (faible, moyenne, élevée). Hiérarchisez la gestion des ressources avec PIM en fonction de ce niveau de gravité.
+Si vous êtes administrateur général et que vous avez des difficultés à décider quels abonnements et ressources sont les plus importants, contactez les propriétaires d’abonnements de votre organisation pour rassembler la liste des ressources gérées par chaque abonnement. Ensuite, collaborez avec les propriétaires d’abonnements pour regrouper les ressources en fonction du niveau de gravité dans le cas où elles sont compromises (faible, moyenne, élevée). Hiérarchisez la gestion des ressources avec PIM en fonction de ce niveau de gravité.
 
 Conseil
 
@@ -1261,28 +1261,28 @@ Suivre manuellement qui est affecté à un rôle et gérer ses attributions en f
 
 #### Vous souhaitez déléguer l’attribution du rôle
 
-Un propriétaire de groupe peut gérer l’appartenance à un groupe. Pour les groupes assignables aux rôles d’ID Microsoft Entra, seuls l’administrateur de rôle privilégié, l’administrateur général et les propriétaires de groupe peuvent gérer l’appartenance au groupe. Lorsqu’un administrateur ajoute de nouveaux membres au groupe, le membre accède aux rôles auxquels le groupe est affecté, que l’affectation soit éligible ou active. Utilisez les propriétaires de groupes pour déléguer la gestion de l’appartenance à un groupe pour un rôle affecté afin de réduire l’étendue des privilèges requis.
+Un propriétaire de groupe peut gérer l’appartenance à un groupe. Pour les groupes assignables aux rôles d’ID Entra, seuls l’administrateur de rôle privilégié, l’administrateur général et les propriétaires de groupe peuvent gérer l’appartenance au groupe. Lorsqu’un administrateur ajoute de nouveaux membres au groupe, le membre accède aux rôles auxquels le groupe est affecté, que l’affectation soit éligible ou active. Utilisez les propriétaires de groupes pour déléguer la gestion de l’appartenance à un groupe pour un rôle affecté afin de réduire l’étendue des privilèges requis.
 
 Conseil
 
-Microsoft vous recommande de placer les groupes auxquels un rôle Microsoft Entra ID peut être attribué sous la gestion de PIM. Une fois qu’un groupe assignable à un rôle est géré par PIM, il s’agit d’un groupe d’accès privilégié. Utilisez PIM pour exiger que les propriétaires de groupes activent leur attribution de rôle Propriétaire avant de pouvoir gérer l’appartenance au groupe.
+Microsoft vous recommande de placer les groupes auxquels un rôle Entra ID peut être attribué sous la gestion de PIM. Une fois qu’un groupe assignable à un rôle est géré par PIM, il s’agit d’un groupe d’accès privilégié. Utilisez PIM pour exiger que les propriétaires de groupes activent leur attribution de rôle Propriétaire avant de pouvoir gérer l’appartenance au groupe.
 
 ### Déterminer quelles attributions de rôles doivent être permanentes ou éligibles
 
-Une fois que vous avez choisi la liste des rôles à gérer par PIM, vous devez décider quels utilisateurs doivent obtenir le rôle éligible par rapport au rôle actif permanent. **Les rôles actifs permanents sont les rôles normaux attribués via l'ID Microsoft Entra et les ressources Azure, tandis que les rôles éligibles peuvent uniquement être attribués dans PIM.**
+Une fois que vous avez choisi la liste des rôles à gérer par PIM, vous devez décider quels utilisateurs doivent obtenir le rôle éligible par rapport au rôle actif permanent. **Les rôles actifs permanents sont les rôles normaux attribués via l'ID Entra et les ressources Azure, tandis que les rôles éligibles peuvent uniquement être attribués dans PIM.**
 
-Microsoft vous recommande de ne pas avoir d’attributions actives en permanence pour les rôles Microsoft Entra et les rôles Azure autres que les deux comptes d’accès d’urgence recommandés, qui doivent avoir le rôle permanent Administrateur général.
+Microsoft vous recommande de n’avoir aucune attribution active en permanence pour les rôles Entra et les rôles Azure, hormis les deux comptes d’accès d’urgence recommandés, qui doivent avoir le rôle permanent Administrateur général.
 
 Même si nous recommandons zéro administrateur permanent, il est parfois difficile pour les organisations d’y parvenir immédiatement. Les éléments à prendre en compte lors de la prise de cette décision sont les suivants :
 
 - Fréquence d’élévation : si l’utilisateur a uniquement besoin de l’affectation privilégiée une seule fois, il ne doit pas avoir l’affectation permanente. En revanche, si l’utilisateur a besoin du rôle pour son travail quotidien et que l’utilisation de PIM réduirait considérablement sa productivité, il peut être considéré comme étant permanent.
-- Cas spécifiques à votre organisation : si la personne qui reçoit le rôle éligible est d’une équipe distante ou d’un cadre de haut rang jusqu’à ce que la communication et l’application du processus d’élévation soit difficile, elle peut être considérée comme étant permanente.  Conseil Microsoft vous recommande de configurer des révisions d’accès périodiques pour les utilisateurs disposant d’attributions de rôles permanentes.
+- Cas spécifiques à votre organisation : la personne qui reçoit le rôle éligible peut venir d’une équipe distante ou être un cadre de haut rang, au point que la communication et l’application du processus d’élévation deviennent difficiles. Elle peut alors être considérée comme permanente.  Conseil Microsoft vous recommande de configurer des révisions d’accès périodiques pour les utilisateurs disposant d’attributions de rôles permanentes.
 
 ### Configurez vos paramètres de gestion des identités privilégiées
 
 Avant d’implémenter votre solution PIM, il est recommandé de rédiger vos paramètres PIM pour chaque rôle privilégié que votre organisation utilise. Cette section contient quelques exemples de paramètres PIM pour des rôles particuliers ; ils sont à des fins de référence uniquement et peuvent être différents pour votre organisation. Chacun de ces paramètres est expliqué en détail avec les recommandations de Microsoft après les tables.
 
-#### Paramètres de gestion des identités privilégiées pour les rôles Microsoft Entra
+#### Paramètres de gestion des identités privilégiées pour les rôles Entra
 
 | **Paramètre** | **Administrateur global** | Administrateur Exchange | **administrateur du support technique** |
 |---|---|---|---|
@@ -1320,29 +1320,29 @@ Le tableau suivant décrit chacun des paramètres.
 | Exiger l’approbation | Indique si l’utilisateur éligible doit obtenir l’approbation pour activer le rôle. |
 |   | **Microsoft recommande** de configurer l’approbation pour les rôles avec le plus d’autorisations. En fonction des modèles d’utilisation de tous les clients PIM, Administrateur général, Administrateur utilisateur, Administrateur Exchange, Administrateur de sécurité et Administrateur de mot de passe sont les rôles les plus courants avec approbation requise. |
 | Approbateur | Si l’approbation est requise pour activer le rôle éligible, répertoriez les personnes qui doivent approuver la demande. Par défaut, PIM définit l’approbateur sur tous les utilisateurs qui sont des administrateurs de rôles privilégiés, qu’ils soient permanents ou éligibles. |
-|   | Si un utilisateur est éligible à la fois pour un rôle Microsoft Entra et pour un approbateur du rôle, il ne sera pas en mesure de s’approuver lui-même. |
+|   | Si un utilisateur est éligible à la fois pour un rôle Entra et pour un approbateur du rôle, il ne sera pas en mesure de s’approuver lui-même. |
 |   | **Microsoft recommande** de choisir des approbateurs en tant qu'utilisateurs qui connaissent le mieux le rôle et ses utilisateurs fréquents plutôt qu'un administrateur global. |
 | Durée de l’activation | Durée d’activation d’un utilisateur dans le rôle avant son expiration. |
 | Administrateur permanent | Liste des utilisateurs qui seront des administrateurs permanents pour ce rôle (qui n'auront jamais besoin d'être activés). |
 |   | **Microsoft recommande** que vous n'ayez aucun administrateur permanent pour tous les rôles, à l'exception des administrateurs globaux. |
-| Administrateur actif | Pour les ressources Azure, l’administrateur actif est la liste des utilisateurs qui n’auront jamais à activer pour utiliser le rôle. Cette liste n’est pas appelée administrateur permanent comme dans les rôles Microsoft Entra, car vous pouvez définir une heure d’expiration pour laquelle l’utilisateur perdra ce rôle. |
+| Administrateur actif | Pour les ressources Azure, l’administrateur actif est la liste des utilisateurs qui n’auront jamais à activer pour utiliser le rôle. Cette liste n’est pas appelée administrateur permanent comme dans les rôles Entra, car vous pouvez définir une heure d’expiration pour laquelle l’utilisateur perdra ce rôle. |
 | Expiration active | Les attributions de rôles actives pour les rôles Azure expirent après la durée configurée. Vous pouvez choisir entre 15 jours, 1 mois, 3 mois, 6 mois, 1 an ou actif définitivement. |
 | Expiration admissible | Les attributions de rôles éligibles pour les rôles Azure expirent après cette durée. Vous pouvez choisir entre 15 jours, 1 mois, 3 mois, 6 mois, 1 an ou éligible définitivement. |
 
 
 ## Configurer Privileged Identity Management pour les ressources Azure
 
-À l’aide de Microsoft Entra PIM, vous pouvez améliorer la protection de vos ressources Azure. Ceci est utile pour :
+À l’aide d’Entra PIM, vous pouvez améliorer la protection de vos ressources Azure. Ceci est utile pour :
 
-- Organisations qui utilisent déjà PIM pour protéger les rôles Microsoft Entra.
+- Organisations qui utilisent déjà PIM pour protéger les rôles Entra.
 - Les propriétaires d’abonnements et de groupes d’administration qui tentent de sécuriser des ressources de production.
 
 Lorsque vous configurez PIM pour les ressources Azure pour la première fois, vous devez découvrir et sélectionner les ressources à protéger avec PIM. Il n’existe aucune limite au nombre de ressources que vous pouvez gérer avec PIM. Toutefois, nous vous recommandons de commencer par vos ressources de production les plus critiques.
 
 ### Découvrir les ressources
 
-1. Connectez-vous au Centre d’administration Microsoft Entra.
-2. Ouvrez **Microsoft Entra Privileged Identity Management**.
+1. Connectez-vous au Centre d’administration Entra.
+2. Ouvrez **Entra Privileged Identity Management**.
 3. Si c’est la première fois que vous utilisez PIM pour des **ressources Azure**, vous voyez s’afficher un volet **Découvrir les ressources**.
 4. Si un autre administrateur de votre organisation gère déjà des ressources Azure dans PIM, vous verrez une liste des ressources actuellement gérées.
 5. Sélectionnez **Découvrir des ressources** pour lancer l'expérience de découverte.
@@ -1352,17 +1352,17 @@ Lorsque vous configurez PIM pour les ressources Azure pour la première fois, vo
 9. Si vous voyez un message pour confirmer l’intégration de la ressource sélectionnée pour la gestion, sélectionnez **Oui**
 
 
-## Exercice de configuration de Privileged Identity Management pour les rôles Microsoft Entra
+## Exercice de configuration de Privileged Identity Management pour les rôles Entra
 
-### Configurer les paramètres de rôle Microsoft Entra
+### Configurer les paramètres de rôle Entra
 
 #### Ouvrir les paramètres de rôle
 
-Suivez ces étapes pour ouvrir les paramètres d’un rôle Microsoft Entra.
+Suivez ces étapes pour ouvrir les paramètres d’un rôle Entra.
 
-1. Connectez-vous au centre d’administration Microsoft Entra  en tant qu’administrateur client.
-2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
-3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Microsoft Entra.**
+1. Connectez-vous au centre d’administration Entra  en tant qu’administrateur client.
+2. Recherchez, puis sélectionnez **Entra Privileged Identity Management.**
+3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Entra.**
 4. Dans la page Démarrage rapide, dans le volet de navigation gauche, sélectionnez **Paramètres.**
 5. Passez en revue la liste des rôles, puis, dans la **Recherche par nom de rôle**, entrez **Compliance**.
 6. Dans les résultats, sélectionnez **Administrateur de conformité**.
@@ -1379,19 +1379,19 @@ Si vous définissez plusieurs approbateurs, l’approbation se termine dès qu�
 5. Une fois que vous avez configuré les paramètres de rôle, sélectionnez **Mettre à jour** pour enregistrer vos modifications.
 
 
-## Exercice d’attribution de rôles Microsoft Entra dans Privileged Identity Management
+## Exercice d’attribution de rôles Entra dans Privileged Identity Management
 
-Avec l’ID Microsoft Entra, un administrateur général peut effectuer des attributions de rôle d’administrateur Microsoft Entra permanentes. Ces attributions de rôles peuvent être créées à l’aide du portail Azure ou à l’aide de commandes PowerShell.
+Avec l’ID Entra, un administrateur général peut effectuer des attributions de rôle d’administrateur Entra permanentes. Ces attributions de rôles peuvent être créées à l’aide du portail Azure ou à l’aide de commandes PowerShell.
 
-Le service Microsoft Entra Privileged Identity Management (PIM) permet également aux administrateurs de rôles privilégiés d’effectuer des attributions de rôles d’administrateur permanents. En outre, les administrateurs de rôles privilégiés peuvent rendre les utilisateurs éligibles pour les rôles d’administrateur Microsoft Entra. Un administrateur éligible peut activer le rôle quand il en a besoin, puis ses autorisations expirent une fois qu’ils ont terminé.
+Le service Entra Privileged Identity Management (PIM) permet également aux administrateurs de rôles privilégiés d’effectuer des attributions de rôles d’administrateur permanents. En outre, les administrateurs de rôles privilégiés peuvent rendre les utilisateurs éligibles pour les rôles d’administrateur Entra. Un administrateur éligible peut activer le rôle quand il en a besoin, puis ses autorisations expirent une fois qu’ils ont terminé.
 
 ### Attribuer un rôle
 
-Suivez ces étapes pour rendre un utilisateur éligible à un rôle d’administrateur Microsoft Entra.
+Suivez ces étapes pour rendre un utilisateur éligible à un rôle d’administrateur Entra.
 
-1. Connectez-vous au centre d’administration Microsoft Entra  en tant qu’administrateur client.
-2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
-3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Microsoft Entra.**
+1. Connectez-vous au centre d’administration Entra  en tant qu’administrateur client.
+2. Recherchez, puis sélectionnez **Entra Privileged Identity Management.**
+3. Dans l’écran Privileged Identity Management, dans la navigation de gauche, sélectionnez **rôles Entra.**
 4. Sur la page Démarrage rapide, dans le volet de navigation de gauche, sélectionnez **Rôles.**
 5. Dans le menu supérieur, sélectionnez **+ Ajouter des affectations.**
 6. Dans le volet Ajouter des affectations, sous l’onglet **Appartenance**, passez en revue les paramètres.
@@ -1405,9 +1405,9 @@ Suivez ces étapes pour rendre un utilisateur éligible à un rôle d’administ
 
 12. Passez en revue les paramètres restants, puis sélectionnez **Affecter**.
 
-### Activer vos rôles Microsoft Entra
+### Activer vos rôles Entra
 
-Lorsque vous devez assumer un rôle Microsoft Entra, vous pouvez demander l’activation en ouvrant **Mes rôles** dans Privileged Identity Management.
+Lorsque vous devez assumer un rôle Entra, vous pouvez demander l’activation en ouvrant **Mes rôles** dans Privileged Identity Management.
 
 1. Dans l’écran Privileged Identity Management, dans le menu de navigation de gauche, sélectionnez **Mes rôles.**
 2. Dans le volet Mes rôles, passez en revue la liste des affectations éligibles.
@@ -1420,17 +1420,17 @@ Lorsque vous devez assumer un rôle Microsoft Entra, vous pouvez demander l’ac
 
 Pour certains rôles, l’étendue des autorisations accordées peut être limitée à une seule unité d’administration, un principal de service ou une application. Cette procédure est un exemple si vous attribuez un rôle qui a l’étendue d’une unité administrative.
 
-1. Dans l’écran Privileged Identity Management, dans le volet de navigation de gauche, sélectionnez **Rôles Microsoft Entra**.
+1. Dans l’écran Privileged Identity Management, dans le volet de navigation de gauche, sélectionnez **Rôles Entra**.
 2. Dans le volet Rôles, dans le menu supérieur, sélectionnez **+ Ajouter des affectations.**
 3. Dans l’écran Ajouter des affectations, sélectionnez le menu **Sélectionner le rôle**, puis sélectionnez **administrateur d'utilisateur.**
-4. Sélectionnez le menu de type d'étendue  et passez en revue les options disponibles. Pour l’instant, vous allez utiliser le type d’étendue **Directory**.  Conseil Accédez à [Gérer les unités administratives dans Microsoft Entra ID](https://learn.microsoft.com/fr-fr/azure/active-directory/roles/administrative-units) pour trouver plus d’informations sur le type d’étendue de l’unité administrative.
+4. Sélectionnez le menu de type d'étendue  et passez en revue les options disponibles. Pour l’instant, vous allez utiliser le type d’étendue **Directory**.  Conseil Accédez à [Gérer les unités administratives dans Entra ID](https://learn.microsoft.com/fr-fr/azure/active-directory/roles/administrative-units) pour trouver plus d’informations sur le type d’étendue de l’unité administrative.
 5. Similaire à l’attribution d’un rôle sans étendue restreinte. Ajoutez des membres et terminez les options de paramètres. Pour l’instant, sélectionnez **Annuler**.
 
 ### Mettre à jour ou supprimer une attribution de rôle existante
 
 Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle existante.
 
-1. Dans l’écran Ouvrir Microsoft Entra Privileged Identity Management, puis Rôles Microsoft Entra, dans le volet de navigation de gauche, sélectionnez **Attributions**.
+1. Dans l’écran Ouvrir Entra Privileged Identity Management, puis Rôles Entra, dans le volet de navigation de gauche, sélectionnez **Attributions**.
 2. Dans la liste **Affectations**, pour l’Administrateur de la conformité, passez en revue les options de la colonne **Action** .
 3. Sélectionnez **mettre à jour** et passez en revue les options disponibles dans le volet Paramètres d’appartenance. Une fois terminé, fermez le volet.
 4. Sélectionnez **Supprimer**.
@@ -1441,7 +1441,7 @@ Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle exi
 
 ### Attribuer des rôles de ressources Azure
 
-Microsoft Entra Privileged Identity Management (PIM) peut gérer les rôles de ressources Azure intégrés, ainsi que les rôles personnalisés, notamment (mais pas limité à) :
+Entra Privileged Identity Management (PIM) peut gérer les rôles de ressources Azure intégrés, ainsi que les rôles personnalisés, notamment (mais pas limité à) :
 
 - Propriétaire
 - Administrateur de l’accès utilisateur
@@ -1451,8 +1451,8 @@ Microsoft Entra Privileged Identity Management (PIM) peut gérer les rôles de r
 
 Suivez ces étapes pour rendre un utilisateur éligible à un rôle de ressource Azure.
 
-1. Connectez-vous au centre d’administration Microsoft Entra  en tant qu’administrateur client.
-2. Recherchez, puis sélectionnez **Microsoft Entra Privileged Identity Management.**
+1. Connectez-vous au centre d’administration Entra  en tant qu’administrateur client.
+2. Recherchez, puis sélectionnez **Entra Privileged Identity Management.**
 3. Dans le menu Privileged Identity Management, dans le volet de navigation gauche, sélectionnez **ressources Azure.**
 4. Dans le menu supérieur, sélectionnez **Découvrir les ressources**.
 5. Dans l’écran Ressources Azure – Découverte, sélectionnez votre abonnement, puis, dans le menu supérieur, sélectionnez **Gérer la ressource**.
@@ -1477,7 +1477,7 @@ Suivez ces étapes pour rendre un utilisateur éligible à un rôle de ressource
 
 Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle existante.
 
-1. Ouvrez **Microsoft Entra Privileged Identity Management**.
+1. Ouvrez **Entra Privileged Identity Management**.
 2. Sélectionnez **Ressources Azure**.
 3. Sélectionnez la ressource que vous souhaitez gérer pour ouvrir sa page de vue d’ensemble.
 4. Sous **Gérer**, sélectionnez **Attributions**.
@@ -1488,21 +1488,21 @@ Suivez ces étapes pour mettre à jour ou supprimer une attribution de rôle exi
 
 ## Planifier et configurer des groupes d’accès privilégiés
 
-Dans Privileged Identity Management (PIM), vous pouvez désormais attribuer l’éligibilité à l’appartenance ou à la propriété des groupes d’accès privilégiés. Vous pouvez affecter des rôles intégrés d’ID Microsoft Entra aux groupes cloud et utiliser PIM pour gérer l’éligibilité et l’activation des membres du groupe et des propriétaires. Avec la préversion des groupes d’accès privilégié, vous pouvez accorder aux administrateurs spécifiques à une charge de travail un accès rapide à plusieurs rôles avec une seule requête juste-à-temps.
+Dans Privileged Identity Management (PIM), vous pouvez désormais attribuer l’éligibilité à l’appartenance ou à la propriété des groupes d’accès privilégiés. Vous pouvez affecter des rôles intégrés d’ID Entra aux groupes cloud et utiliser PIM pour gérer l’éligibilité et l’activation des membres du groupe et des propriétaires. Avec la préversion des groupes d’accès privilégié, vous pouvez accorder aux administrateurs spécifiques à une charge de travail un accès rapide à plusieurs rôles avec une seule requête juste-à-temps.
 
 **Exemple** : vos **administrateurs Office de niveau 0** peuvent avoir besoin d’un accès juste-à-temps à **l’administrateur Exchange**, à **l’administrateur Office**, à **l’administrateur Teams** et aux rôles **d’administrateur de recherche** pour examiner minutieusement les incidents quotidiennement.
 
-Vous pouvez créer un groupe assignable de rôles appelé « Administrateurs Office de niveau 0 » et le rendre éligible pour l’attribution aux quatre rôles mentionnés précédemment (ou tous les rôles intégrés Microsoft Entra). Ensuite, vous l’activez pour l’accès privilégié dans la section Activité du groupe. Une fois activé pour l’accès privilégié, vous pouvez affecter vos administrateurs et propriétaires au groupe. Lorsque les administrateurs élèvent le groupe aux rôles, votre personnel dispose des autorisations des quatre rôles Microsoft Entra.
+Vous pouvez créer un groupe assignable de rôles appelé « Administrateurs Office de niveau 0 », puis le rendre éligible à l’attribution des quatre rôles mentionnés précédemment (ou de tous les rôles intégrés Entra). Ensuite, vous l’activez pour l’accès privilégié dans la section Activité du groupe. Une fois activé pour l’accès privilégié, vous pouvez affecter vos administrateurs et propriétaires au groupe. Lorsque les administrateurs élèvent le groupe aux rôles, votre personnel dispose des autorisations des quatre rôles Entra.
 
 ### Exiger des stratégies différentes pour chaque groupe assignable de rôle
 
-Certaines organisations utilisent des outils comme Microsoft Entra business-to-business (B2B) collaboration pour inviter leurs partenaires en tant qu’invités à leur organisation Microsoft Entra. Au lieu d’utiliser une seule stratégie juste-à-temps pour toutes les attributions à un rôle privilégié, vous pouvez créer deux groupes d’accès privilégié différents avec leurs propres stratégies. Vous pouvez appliquer des exigences moins strictes pour vos employés de confiance, et des exigences plus strictes, comme un flux de travail d'approbation, pour vos partenaires lorsqu'ils demandent l'activation dans le rôle qui leur est attribué.
+Certaines organisations utilisent des outils comme Entra business-to-business (B2B) collaboration pour inviter leurs partenaires en tant qu’invités à leur organisation Entra. Au lieu d’utiliser une seule stratégie juste-à-temps pour toutes les attributions à un rôle privilégié, vous pouvez créer deux groupes d’accès privilégié différents avec leurs propres stratégies. Vous pouvez appliquer des exigences moins strictes à vos employés de confiance, et des exigences plus strictes, comme un flux de travail d'approbation, à vos partenaires lorsqu'ils demandent l'activation dans le rôle qui leur est attribué.
 
 ## Analyser l’historique et les rapports d’audit Privileged Identity Management
 
-Avec PIM, vous pouvez afficher l’activité, les activations et l’historique d’audit pour les membres et les propriétaires de groupe d’accès privilégié au sein de votre organisation Microsoft Entra.
+Avec PIM, vous pouvez afficher l’activité, les activations et l’historique d’audit pour les membres et les propriétaires de groupe d’accès privilégié au sein de votre organisation Entra.
 
-Si votre organisation a externalisé des fonctions de gestion à un fournisseur de services qui utilise [la gestion des ressources déléguées Azure](https://learn.microsoft.com/fr-fr/azure/lighthouse/concepts/azure-delegated-resource-management), les attributions de rôles autorisées par ce fournisseur de services ne seront pas affichées ici.
+Si votre organisation a externalisé des fonctions de gestion à un fournisseur de services qui utilise [la gestion des ressources déléguées Azure](https://learn.microsoft.com/fr-fr/azure/lighthouse/concepts/azure-delegated-resource-management), les attributions de rôles autorisées par ce fournisseur n’apparaîtront pas ici.
 
 Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès privilégiés.
 
@@ -1510,7 +1510,7 @@ Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès
 
 ### **L’audit des ressources** vous donne une vue de toutes les activités associées à vos groupes d’accès privilégiés.
 
-1. Ouvrez **Microsoft Entra Privileged Identity Management**.
+1. Ouvrez **Entra Privileged Identity Management**.
 2. Sélectionnez **Groupes**.
 3. Sélectionnez le groupe d’accès privilégié pour lequel vous souhaitez afficher l’historique d’audit.
 4. Sous **Activité**, sélectionnez **Audit des ressources**.
@@ -1520,7 +1520,7 @@ Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès
 
 **Mon audit** vous permet d’afficher votre activité de rôle personnel pour un groupe d’accès privilégié.
 
-1. Ouvrez **Microsoft Entra Privileged Identity Management**.
+1. Ouvrez **Entra Privileged Identity Management**.
 2. Sélectionnez **Groupes**.
 3. Sélectionnez le groupe d’accès privilégié pour lequel vous souhaitez afficher l’historique d’audit.
 4. Sous **Activité**, sélectionnez **Mon audit**.
@@ -1529,19 +1529,19 @@ Suivez ces étapes pour afficher l’historique d’audit des groupes d’accès
 
 ## Créer et gérer des comptes d’accès d’urgence
 
-Il est important que vous empêchez d’être verrouillé accidentellement hors de votre ID Microsoft Entra. Avec l’ID Microsoft Entra, vous ne pouvez pas vous connecter ni activer le compte d’un autre utilisateur en tant qu’administrateur. Vous pouvez atténuer le risque d’absence accidentelle d’accès administratif. Le secret, créez au moins deux comptes d’accès d’urgence  dans votre organisation.
+Il est important que vous empêchez d’être verrouillé accidentellement hors de votre ID Entra. Avec l’ID Entra, vous ne pouvez pas vous connecter ni activer le compte d’un autre utilisateur en tant qu’administrateur. Vous pouvez atténuer le risque d’absence accidentelle d’accès administratif. Le secret, créez au moins deux comptes d’accès d’urgence  dans votre organisation.
 
 Les comptes d’accès d’urgence sont hautement privilégiés et ne sont pas attribués à des personnes spécifiques. Les comptes d’accès d’urgence sont réservés aux situations d'urgence ou de « dernière chance » où les comptes administratifs habituels ne peuvent pas être utilisés. Nous vous recommandons de restreindre l’accès au compte d’urgence. Utilisez les comptes uniquement quand il est nécessaire.
 
-Cet article fournit des instructions pour la gestion des comptes d’accès d’urgence dans Microsoft Entra ID.
+Cet article fournit des instructions pour la gestion des comptes d’accès d’urgence dans Entra ID.
 
 ### Pourquoi utiliser un compte d’accès d’urgence
 
 Une organisation peut avoir besoin d’utiliser un compte d’accès d’urgence dans les situations suivantes :
 
-- Les comptes d’utilisateur sont fédérés et la fédération n’est actuellement pas disponible en raison d’une panne de réseau cellulaire ou d’une panne de fournisseur d’identité. Par exemple, si l’hôte du fournisseur d’identité dans votre environnement est tombé en panne, les utilisateurs risquent de ne pas pouvoir se connecter lorsque l’ID Microsoft Entra redirige vers son fournisseur d’identité.
-- Les administrateurs sont inscrits via l’authentification multifacteur Microsoft Entra. Tous leurs appareils individuels ne sont pas disponibles ou le service n’est pas disponible. Les utilisateurs peuvent ne pas pouvoir terminer l’authentification multifacteur pour activer un rôle. Par exemple, une panne de réseau cellulaire empêche les personnes de répondre aux appels téléphoniques ou de recevoir des sms. Surtout quand ces méthodes d’authentification sont les deux seuls mécanismes d’authentification qu’ils ont inscrits.
-- La personne disposant de l’accès administrateur général le plus récent a quitté l’organisation. Microsoft Entra ID empêche la suppression du dernier compte d’administrateur général, mais il n’empêche pas le compte d’être supprimé ou désactivé localement. L’une ou l’autre situation peut rendre l’organisation incapable de récupérer le compte.
+- Les comptes d’utilisateur sont fédérés et la fédération n’est actuellement pas disponible en raison d’une panne de réseau cellulaire ou d’une panne de fournisseur d’identité. Par exemple, si l’hôte du fournisseur d’identité dans votre environnement est tombé en panne, les utilisateurs risquent de ne pas pouvoir se connecter lorsque l’ID Entra redirige vers son fournisseur d’identité.
+- Les administrateurs sont inscrits via l’authentification multifacteur Entra. Tous leurs appareils individuels ne sont pas disponibles ou le service n’est pas disponible. Les utilisateurs peuvent ne pas pouvoir terminer l’authentification multifacteur pour activer un rôle. Par exemple, une panne de réseau cellulaire empêche les personnes de répondre aux appels téléphoniques ou de recevoir des sms. Surtout quand ces méthodes d’authentification sont les deux seuls mécanismes d’authentification qu’ils ont inscrits.
+- La personne disposant de l’accès administrateur général le plus récent a quitté l’organisation. Entra ID empêche la suppression du dernier compte d’administrateur général, mais il n’empêche pas le compte d’être supprimé ou désactivé localement. L’une ou l’autre situation peut rendre l’organisation incapable de récupérer le compte.
 - Des circonstances imprévues telles qu’une urgence naturelle en cas de catastrophe naturelle, pendant lesquelles un téléphone mobile ou d’autres réseaux peuvent être indisponibles.
 
 ### Créer des comptes d’accès d’urgence
@@ -1550,16 +1550,16 @@ Créez deux comptes d’accès d’urgence ou plus. Ces comptes doivent être de
 
 Lorsqu’un administrateur configure des comptes d’urgence, les exigences suivantes doivent être remplies :
 
-- Les comptes d’accès d’urgence ne doivent pas être associés à un utilisateur individuel de l’organisation. Assurez-vous que vos comptes ne sont pas connectés à des téléphones mobiles fournis par les employés, aux jetons matériels qui voyagent avec des employés individuels ou à d’autres informations d’identification spécifiques aux employés. Cette précaution couvre les cas où un employé individuel est inaccessible lorsque les informations d’identification sont nécessaires. Tous les appareils inscrits doivent être conservés à un emplacement connu et sécurisé. Ces emplacements ont besoin de plusieurs moyens de communication avec l’ID Microsoft Entra.
+- Les comptes d’accès d’urgence ne doivent pas être associés à un utilisateur individuel de l’organisation. Vérifiez que vos comptes ne sont pas connectés à des téléphones mobiles fournis par les employés, à des jetons matériels qui voyagent avec des employés individuels, ni à d’autres informations d’identification spécifiques aux employés. Cette précaution couvre les cas où un employé individuel est inaccessible lorsque les informations d’identification sont nécessaires. Tous les appareils inscrits doivent être conservés à un emplacement connu et sécurisé. Ces emplacements ont besoin de plusieurs moyens de communication avec l’ID Entra.
 - Le mécanisme d’authentification utilisé pour un compte d’accès d’urgence doit être distinct. Séparez-le de celui utilisé par vos autres comptes d’administration, y compris d’autres comptes d’accès d’urgence. Par exemple, si votre connexion administrateur normale se fait via une authentification multifacteur sur site, un autre mécanisme d'authentification multifacteur serait utilisé. Toutefois, si l’authentification multifacteur est votre principale partie de l’authentification pour vos comptes d’administration, envisagez une approche différente pour les comptes d’urgence. Essayez des éléments tels que l’utilisation de l’accès conditionnel avec un fournisseur MFA tiers via des contrôles personnalisés.
 - L'appareil ou les informations d'identification ne doivent pas expirer ou faire partie du processus automatisé d'effacement en raison d'un manque d'utilisation.
 - Vous devez rendre l’attribution de rôle Administrateur général permanente pour vos comptes d’accès d’urgence.
 
 #### Exclure au moins un compte de l’authentification multifacteur basée sur un téléphone
 
-Pour réduire le risque d’une attaque résultant d’un mot de passe compromis, Microsoft Entra ID vous recommande d’exiger l’authentification multifacteur pour tous les utilisateurs individuels. Ce groupe comprend les administrateurs et tous les autres (par exemple, les agents financiers) dont le compte compromis aurait une occasion importante de causer des dommages.
+Pour réduire le risque d’une attaque résultant d’un mot de passe compromis, Entra ID vous recommande d’exiger l’authentification multifacteur pour tous les utilisateurs individuels. Ce groupe comprend les administrateurs et tous les autres (par exemple, les agents financiers) dont le compte compromis aurait une occasion importante de causer des dommages.
 
-Toutefois, au moins l’un de vos comptes d’accès d’urgence ne doit pas avoir le même mécanisme d’authentification multifacteur que vos autres comptes d’urgence. Cela inclut des solutions d’authentification multifacteur tierces. Si vous avez une stratégie d’accès conditionnel pour exiger l’authentification multifacteur pour chaque administrateur de Microsoft Entra ID et d’autres applications SaaS (Software as a Service), vous devez exclure les comptes d’accès d’urgence de cette exigence et configurer un autre mécanisme à la place. En outre, vous devez vous assurer que les comptes n’ont pas de stratégie d’authentification multifacteur par utilisateur.
+Toutefois, au moins l’un de vos comptes d’accès d’urgence ne doit pas avoir le même mécanisme d’authentification multifacteur que vos autres comptes d’urgence. Cela inclut des solutions d’authentification multifacteur tierces. Vous avez peut-être une stratégie d’accès conditionnel qui exige l’authentification multifacteur pour chaque administrateur d’Entra ID et des autres applications SaaS (Software as a Service). Excluez alors les comptes d’accès d’urgence de cette exigence et configurez un autre mécanisme à la place. En outre, vous devez vous assurer que les comptes n’ont pas de stratégie d’authentification multifacteur par utilisateur.
 
 #### Exclure au moins un compte des stratégies d’accès conditionnel
 
@@ -1567,7 +1567,7 @@ Lors d’une urgence, vous ne souhaitez pas qu’une stratégie bloque potentiel
 
 ### Conseils de fédération
 
-Une autre option pour les organisations qui utilisent ad Domain Services et ADFS ou un fournisseur d’identité similaire pour fédérer à Microsoft Entra ID, consiste à configurer un compte d’accès d’urgence dont la revendication MFA peut être fournie par ce fournisseur d’identité. Par exemple, le compte d’accès d’urgence peut être soutenu par un certificat et une paire de clés, comme celle stockée sur une carte à puce. Lorsque cet utilisateur est authentifié auprès d’AD, ADFS peut fournir une revendication à Microsoft Entra ID indiquant que l’utilisateur a satisfait aux exigences de l’authentification multifacteur. Même avec cette approche, les organisations doivent toujours avoir des comptes d’accès d’urgence basés sur le cloud si la fédération ne peut pas être établie.
+Les organisations qui utilisent ad Domain Services et ADFS, ou un fournisseur d’identité similaire, pour fédérer à Entra ID disposent d’une autre option : configurer un compte d’accès d’urgence dont la revendication MFA peut être fournie par ce fournisseur d’identité. Par exemple, le compte d’accès d’urgence peut être soutenu par un certificat et une paire de clés, comme celle stockée sur une carte à puce. Lorsque cet utilisateur est authentifié auprès d’AD, ADFS peut fournir une revendication à Entra ID indiquant que l’utilisateur a satisfait aux exigences de l’authentification multifacteur. Même avec cette approche, les organisations doivent toujours avoir des comptes d’accès d’urgence basés sur le cloud si la fédération ne peut pas être établie.
 
 ### Surveiller les journaux de connexion et d’audit
 
@@ -1580,15 +1580,15 @@ Lorsque vous entraînez les membres du personnel à utiliser des comptes d’acc
 - Assurez-vous que le personnel de surveillance de la sécurité est conscient que l’activité de vérification des comptes est en cours.
 - Assurez-vous que le processus d'urgence pour utiliser ces comptes est documenté et à jour.
 - Assurez-vous que les administrateurs et les agents de sécurité qui peuvent avoir besoin d’effectuer ces étapes pendant une urgence sont formés sur le processus.
-- Mettez à jour les informations d’identification du compte, en particulier les mots de passe, pour vos comptes d’accès d’urgence, puis vérifiez que les comptes d’accès d’urgence peuvent se connecter et effectuer des tâches administratives.
+- Mettez à jour les informations d’identification de vos comptes d’accès d’urgence, en particulier les mots de passe. Vérifiez ensuite que ces comptes peuvent se connecter et effectuer des tâches administratives.
 - Assurez-vous que les utilisateurs n’ont pas inscrit l’authentification multifacteur ou la réinitialisation de mot de passe en libre-service (SSPR) sur l’appareil ou les détails personnels de chaque utilisateur.
-- Si les comptes sont inscrits pour l’authentification multifacteur sur un appareil, pour une utilisation lors de la connexion ou de l’activation du rôle, assurez-vous que l’appareil est accessible à tous les administrateurs susceptibles de devoir l’utiliser lors d’une urgence. Vérifiez également que l’appareil peut communiquer via au moins deux chemins réseau qui ne partagent pas de mode d’échec commun. Par exemple, l’appareil peut communiquer avec Internet par le biais du réseau sans fil d’une installation et d’un réseau de fournisseurs de cellules.
+- Si les comptes sont inscrits pour l’authentification multifacteur sur un appareil, pour une utilisation lors de la connexion ou de l’activation du rôle, assurez-vous que cet appareil est accessible à tous les administrateurs susceptibles d’en avoir besoin lors d’une urgence. Vérifiez également que l’appareil peut communiquer via au moins deux chemins réseau qui ne partagent pas de mode d’échec commun. Par exemple, l’appareil peut communiquer avec Internet par le biais du réseau sans fil d’une installation et d’un réseau de fournisseurs de cellules.
 
 Ces étapes doivent être effectuées à intervalles réguliers et pour les modifications clés :
 
 - Au moins tous les 90 jours
 - Lorsqu’il y a eu un changement récent dans le personnel informatique, tel qu’un changement d’emploi, un départ ou un nouvel employé
-- Lorsque les abonnements Microsoft Entra dans l’organisation ont changé
+- Lorsque les abonnements Entra dans l’organisation ont changé
 
 
 ## Évaluation du module
@@ -1603,7 +1603,7 @@ Choisissez la meilleure réponse à chacune des questions ci-dessous.
 Maintenant que vous avez passé en revue ce module, vous pouvez :
 
 - Définissez une stratégie d’accès privilégié pour les utilisateurs administratifs (ressources, rôles, approbations, seuils).
-- Configurez PIM pour les rôles Microsoft Entra.
+- Configurez PIM pour les rôles Entra.
 - Configurez PIM pour les ressources Azure.
 - Attribuer des rôles.
 - Gérer les demandes PIM.
@@ -1611,7 +1611,7 @@ Maintenant que vous avez passé en revue ce module, vous pouvez :
 - Créez et gérez des comptes d’accès d’urgence.
 - Configurer des groupes d’accès privilégiés
 
-Dans ce module, vous avez appris à développer une stratégie d’accès privilégié. Cela inclut des étapes telles que l’identification des parties prenantes, la détermination des attributions de rôles et l’identification des groupes à attribuer des rôles. Vous avez attribué des rôles Microsoft Entra dans PIM et appris à analyser l’historique et les rapports d’audit. Avec cette nouvelle connaissance, vous pouvez désormais implémenter un accès privilégié dans votre organisation.
+Dans ce module, vous avez appris à développer une stratégie d’accès privilégié. Cela inclut des étapes telles que l’identification des parties prenantes, la détermination des attributions de rôles et l’identification des groupes à attribuer des rôles. Vous avez attribué des rôles Entra dans PIM et appris à analyser l’historique et les rapports d’audit. Avec cette nouvelle connaissance, vous pouvez désormais implémenter un accès privilégié dans votre organisation.
 
 ### Ressources
 
@@ -1625,25 +1625,25 @@ Pour en savoir plus sur ces rubriques, consultez ces liens.
 
 ---
 
-# Surveiller et gérer Microsoft Entra ID
+# Surveiller et gérer Entra ID
 
 _https://learn.microsoft.com/fr-fr/training/modules/monitor-maintain-azure-active-directory/_
 
 
 ## Présentation
 
-Les journaux d'audit et de diagnostic de Microsoft Entra ID fournissent une vue détaillée de la façon dont les utilisateurs accèdent à votre solution Azure. Découvrez comment surveiller, dépanner et analyser les données de connexion.
+Les journaux d'audit et de diagnostic d’Entra ID fournissent une vue détaillée de la façon dont les utilisateurs accèdent à votre solution Azure. Découvrez comment surveiller, dépanner et analyser les données de connexion.
 
 ### Objectifs d’apprentissage
 
 À la fin de ce module, vous pouvez :
 
 - Analyser et examiner les journaux de connexion pour résoudre les problèmes d’accès.
-- Examinez et surveillez les journaux d’audit Microsoft Entra.
-- Activez et intégrez les journaux de diagnostic Microsoft Entra avec Log Analytics/Microsoft Sentinel.
+- Examinez et surveillez les journaux d’audit Entra.
+- Activez et intégrez les journaux de diagnostic Entra avec Log Analytics/Microsoft Sentinel.
 - Exporter les journaux de connexion et d’audit vers une SIEM tierce.
-- Examinez les activités Microsoft Entra à l’aide de Log Analytics/Microsoft Sentinel, en excluant l’utilisation de KQL.
-- Analysez des classeurs et des rapports Microsoft Entra.
+- Examinez les activités Entra à l’aide de Log Analytics/Microsoft Sentinel, en excluant l’utilisation de KQL.
+- Analysez des classeurs et des rapports Entra.
 - Surveillez la posture de sécurité avec le score d'identité sécurisée.
 - configurer les notifications.
 
@@ -1654,12 +1654,12 @@ Aucun
 
 ## Analyser et examiner les journaux de connexion pour résoudre les problèmes d’accès
 
-L'architecture de génération de rapports dans Microsoft Entra ID se compose des composants suivants :
+L'architecture de génération de rapports dans Entra ID se compose des composants suivants :
 
 - **Activité**
   - **Connexions** : Il s’agit d’informations sur l’utilisation des applications managées et les activités de connexion des utilisateurs.
   - **Journaux d’audit** : Fournissent des informations sur les activités du système liées aux utilisateurs et à la gestion des groupes, les applications gérées et les activités de répertoire.
-  - **Les journaux de provisionnement** : permettent aux clients de superviser l’activité effectuée par le service de provisionnement, telle que la création d’un groupe dans ServiceNow ou l’importation d’un utilisateur à partir de Workday.
+  - **Les journaux de provisionnement** : ils permettent aux clients de superviser l’activité du service de provisionnement, par exemple la création d’un groupe dans ServiceNow ou l’importation d’un utilisateur à partir de Workday.
 
 - **Sécurité**
   - **Connexions risquées** : Une connexion risquée signale une tentative de connexion par une personne qui n’est pas le propriétaire légitime d’un compte d’utilisateur.
@@ -1670,9 +1670,9 @@ L'architecture de génération de rapports dans Microsoft Entra ID se compose de
 - Utilisateurs dans les rôles Administrateur de sécurité, Lecteur de sécurité ou Administrateur, Lecteur général et Lecteur de rapport
 - Tous les utilisateurs (non administrateurs) peuvent accéder à leurs propres connexions
 
-#### De quelle licence Microsoft Entra avez-vous besoin pour accéder à l'activité de connexion ?
+#### De quelle licence Entra avez-vous besoin pour accéder à l'activité de connexion ?
 
-Le rapport relatif à l’activité de connexion est disponible dans toutes les éditions de Microsoft Entra ID, mais également accessible par l’API Microsoft Graph.
+Le rapport relatif à l’activité de connexion est disponible dans toutes les éditions d’Entra ID, mais également accessible par l’API Microsoft Graph.
 
 ### Rapport de connexions
 
@@ -1682,7 +1682,7 @@ Le rapport de connexions des utilisateurs permet de répondre aux questions suiv
 - Combien d’utilisateurs se sont connectés au cours d’une semaine ?
 - Quel est l’état de ces connexions ?
 
-Dans le menu du Portail Azure, sélectionnez **Microsoft Entra ID** ou recherchez et sélectionnez **Microsoft Entra ID** dans n’importe quelle page.
+Dans le menu du Portail Azure, sélectionnez **Entra ID** ou recherchez et sélectionnez **Entra ID** dans n’importe quelle page.
 
 Sous **Surveillance**, sélectionnez **Connexions** pour ouvrir le Rapport de connexions.
 
@@ -1707,11 +1707,11 @@ La boîte de dialogue Colonnes vous permet d’accéder aux attributs sélection
 
 Sélectionnez un élément dans la vue sous forme de liste pour obtenir des informations plus détaillées.
 
-Les clients peuvent maintenant résoudre les problèmes de stratégies d’accès conditionnel grâce à tous les rapports de connexion. Les clients peuvent examiner l’état de l’accès conditionnel et consulter en détail les stratégies applicables à la connexion et les résultats de chaque stratégie lorsqu’un administrateur sélectionne l’onglet Accès conditionnel pour obtenir un rapport de connexion. Pour en savoir plus, consultez le [Forum aux questions sur les informations de l’accès conditionnel dans toutes les connexions](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reports-faq).
+Les clients peuvent maintenant résoudre les problèmes de stratégies d’accès conditionnel grâce à tous les rapports de connexion. Lorsqu’un administrateur sélectionne l’onglet Accès conditionnel pour obtenir un rapport de connexion, les clients peuvent examiner l’état de l’accès conditionnel. Ils consultent aussi en détail les stratégies applicables à la connexion et les résultats de chacune. Pour en savoir plus, consultez le [Forum aux questions sur les informations de l’accès conditionnel dans toutes les connexions](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reports-faq).
 
 ### Filtrer les activités de connexion
 
-Commencez par réduire les données signalées jusqu’au niveau qui vous convient. Ensuite, filtrez les données de connexions en utilisant le champ de date comme filtre par défaut. Microsoft Entra ID fournit une large gamme de filtres supplémentaires que vous pouvez définir :
+Commencez par réduire les données signalées jusqu’au niveau qui vous convient. Ensuite, filtrez les données de connexions en utilisant le champ de date comme filtre par défaut. Entra ID fournit une large gamme de filtres supplémentaires que vous pouvez définir :
 
 **ID de demande** : ID de la demande qui vous intéresse.
 
@@ -1768,7 +1768,7 @@ Commencez par réduire les données signalées jusqu’au niveau qui vous convie
 
 - **Non appliqué** : aucune stratégie n’est appliquée à l’utilisateur et à l’application lors de la connexion.
 - **Réussite** : une ou plusieurs stratégies d’accès conditionnel sont appliquées à l’utilisateur et à l’application (mais pas nécessairement les autres conditions) lors de la connexion.
-- **Échec** : la connexion a satisfait à la condition d’utilisateur et d’application d’au moins une stratégie d’accès conditionnel et les contrôles d’octroi ne sont pas satisfaisants ou ne sont pas configurés pour bloquer l’accès.
+- **Échec** : la connexion a satisfait à la condition d’utilisateur et d’application d’au moins une stratégie d’accès conditionnel, et les contrôles d’octroi ne sont pas satisfaits ou ne sont pas configurés pour bloquer l’accès.
 
 ### Télécharger les activités de connexion
 
@@ -1776,13 +1776,13 @@ Sélectionnez l’option **Télécharger** pour créer un fichier CSV ou JSON de
 
 Important
 
-Le nombre d'enregistrements que vous pouvez télécharger est limité par les [politiques de rétention de rapport Microsoft Entra ID](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Le nombre d'enregistrements que vous pouvez télécharger est limité par les [politiques de rétention de rapport Entra ID](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ### Raccourcis vers les données de connexions
 
-Microsoft Entra ID et le Portail Azure vous offrent d’autres points d’entrée pour accéder aux données de connexions :
+Entra ID et le Portail Azure vous offrent d’autres points d’entrée pour accéder aux données de connexions :
 
-- Identity Protection dans Microsoft Entra ID – Sécurité – Identity Protection
+- Identity Protection dans Entra ID – Sécurité – Identity Protection
 - Utilisateurs
 - Groupes
 - Applications d’entreprise
@@ -1812,7 +1812,7 @@ Lorsque l’administrateur sélectionne un lien, vous obtenez plus d’informati
 - Adresse IP
 - Date
 - MFA obligatoire
-- État de la connexion  Remarque Les adresses IP sont émises de manière à ce qu’il n’existe aucune connexion définitive entre une adresse IP et l’endroit où se trouve physiquement l’ordinateur avec cette adresse. Le mappage des adresses IP est compliqué par le fait que les fournisseurs mobiles et les VPN qui émettent des adresses IP à partir de pools centraux sont souvent très éloignés de l’endroit où l’appareil client est réellement utilisé. Pour le moment, la conversion de l’adresse IP en un emplacement physique constitue la meilleure solution pour les suivis, les données de registre, les recherches inversées et d’autres informations dans les rapports Microsoft Entra.
+- État de la connexion  Remarque Les adresses IP sont émises de manière à ce qu’il n’existe aucun lien définitif entre une adresse IP et l’emplacement physique de l’ordinateur qui l’utilise. Le mappage des adresses IP est également compliqué parce que les fournisseurs mobiles et les VPN émettent des adresses IP à partir de pools centraux, souvent très éloignés de l’endroit où l’appareil client est réellement utilisé. Pour le moment, la conversion de l’adresse IP en emplacement physique reste la meilleure solution pour les suivis, les données de registre, les recherches inversées et les autres informations des rapports Entra.
 
 Sur la page **Utilisateurs**, vous obtenez une vue d’ensemble complète de toutes les connexions des utilisateurs en sélectionnant **Connexions** dans la section **Activité**.
 
@@ -1836,14 +1836,14 @@ L’option **Connexions** vous fournit une vue d’ensemble complète de tous le
 
 ### Journaux d’activité Microsoft 365
 
-Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d’administration Microsoft 365. Les journaux d’activité de Microsoft 365 et de Microsoft Entra partagent un nombre important de ressources de l’annuaire. Seul le centre d’administration Microsoft 365 fournit une vue complète des journaux d’activité d’Microsoft 365.
+Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d’administration Microsoft 365. Les journaux d’activité de Microsoft 365 et d’Entra partagent un nombre important de ressources de l’annuaire. Seul le centre d’administration Microsoft 365 fournit une vue complète des journaux d’activité d’Microsoft 365.
 
 Vous pouvez également accéder par programme aux journaux d’activité de Microsoft 365 en utilisant les API de gestion Microsoft 365.
 
 
-## Examiner et surveiller les journaux d’audit Microsoft Entra
+## Examiner et surveiller les journaux d’audit Entra
 
-Les journaux d’audit Microsoft Entra fournissent des enregistrements des activités du système pour la conformité. Pour accéder au rapport d’audit, sélectionnez **Journaux d’audit** dans la section **Supervision** de **Microsoft Entra ID**.
+Les journaux d’audit Entra fournissent des enregistrements des activités du système pour la conformité. Pour accéder au rapport d’audit, sélectionnez **Journaux d’audit** dans la section **Supervision** de **Entra ID**.
 
 Un journal de connexions comporte un affichage de liste par défaut qui indique :
 
@@ -1939,11 +1939,11 @@ Le filtre de **plage de dates** vous permet de définir une période pour les va
 
 Lorsque vous sélectionnez une plage personnalisée, vous pouvez configurer une heure de début et une heure de fin.
 
-Vous pouvez également télécharger les données filtrées, jusqu’à 250 000 enregistrements, en sélectionnant le bouton **Télécharger**. Vous pouvez télécharger les journaux d’activité au format CSV ou JSON. Le nombre d’enregistrements que vous pouvez télécharger est limité par les stratégies de rétention de rapport Microsoft Entra.
+Vous pouvez également télécharger les données filtrées, jusqu’à 250 000 enregistrements, en sélectionnant le bouton **Télécharger**. Vous pouvez télécharger les journaux d’activité au format CSV ou JSON. Le nombre d’enregistrements que vous pouvez télécharger est limité par les stratégies de rétention de rapport Entra.
 
 ### Raccourcis de journaux d’audit
 
-Outre **l’ID Microsoft Entra**, le portail Azure vous fournit deux autres points d’entrée pour auditer les données :
+Outre **l’ID Entra**, le portail Azure vous fournit deux autres points d’entrée pour auditer les données :
 
 - Utilisateurs et groupes
 - Applications d’entreprise
@@ -1979,10 +1979,10 @@ Si vous souhaitez consulter les données d’audit associées à vos application
 
 ### Journaux d’activité Microsoft 365
 
-Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d’administration Microsoft 365. Même si les journaux d’activité Microsoft 365 et Microsoft Entra partagent de nombreuses ressources d’annuaire, seul le Centre d’administration Microsoft 365 fournit une vue complète des journaux d’activité Microsoft 365. Vous pouvez également accéder par programme aux journaux d’activité de Microsoft 365 en utilisant les API de gestion Microsoft 365.
+Vous pouvez consulter les journaux d’activité Microsoft 365 dans le centre d’administration Microsoft 365. Même si les journaux d’activité Microsoft 365 et Entra partagent de nombreuses ressources d’annuaire, seul le Centre d’administration Microsoft 365 fournit une vue complète des journaux d’activité Microsoft 365. Vous pouvez également accéder par programme aux journaux d’activité de Microsoft 365 en utilisant les API de gestion Microsoft 365.
 
 
-## Exercice : connexion de données de Microsoft Entra ID à Microsoft Sentinel
+## Exercice : connexion de données d’Entra ID à Microsoft Sentinel
 
 Dans cette unité, nous examinons ce qu’est Microsoft Sentinel ?
 
@@ -1995,10 +1995,10 @@ Un système de gestion des informations et des événements de sécurité (SIEM)
 
 ### Prérequis
 
-- Une licence Microsoft Entra ID P1 ou P2 est nécessaire pour ingérer des journaux de connexion dans Microsoft Sentinel. Toute licence Microsoft Entra ID (gratuite/O365/P1/P2) suffit pour ingérer les autres types de journaux. Des frais supplémentaires par gigaoctet peuvent s'appliquer pour Azure Monitor (analytique des journaux d'activité) et Microsoft Sentinel.
+- Une licence Entra ID P1 ou P2 est nécessaire pour ingérer des journaux de connexion dans Microsoft Sentinel. Toute licence Entra ID (gratuite/O365/P1/P2) suffit pour ingérer les autres types de journaux. Des frais supplémentaires par gigaoctet peuvent s'appliquer pour Azure Monitor (analytique des journaux d'activité) et Microsoft Sentinel.
 - Le rôle Contributeur Microsoft Sentinel doit être attribué à votre utilisateur sur l’espace de travail.
 - Votre utilisateur doit se voir attribuer le rôle d’administrateur de sécurité sur le locataire à partir duquel vous souhaitez diffuser les journaux.
-- Votre utilisateur doit disposer d’autorisations en lecture et en écriture sur les paramètres de diagnostic Microsoft Entra pour pouvoir consulter l’état de la connexion.
+- Votre utilisateur doit disposer d’autorisations en lecture et en écriture sur les paramètres de diagnostic Entra pour pouvoir consulter l’état de la connexion.
 
 ### Créer et ajouter un espace de travail Microsoft Sentinel
 
@@ -2011,25 +2011,25 @@ Utilisez ces instructions si vous n’avez pas encore d’espace de travail disp
 5. Pour créer un espace de travail Log Analytics, fournissez les informations suivantes :    **Paramètre** **Valeur**     Abonnement Utiliser votre abonnement actif.   groupe de ressources Utilisez un groupe de ressources existant ou créez-en un.   Nom Laboratoire-espace de travail-vosinitialesetdate.    L'espace de travail doit être une valeur unique globale.   Niveau tarifaire Paiement à l'utilisation
 6. Lorsque vous avez terminé, sélectionnez votre nouvel espace de travail, puis sélectionnez **Ajouter** pour ajouter l’espace de travail à Microsoft Sentinel.
 
-### Connectez-vous à Microsoft Entra ID
+### Connectez-vous à Entra ID
 
-Vous pouvez utiliser un connecteur Microsoft Sentinel intégré pour collecter des données à partir de Microsoft Entra ID et les diffuser en continu dans Microsoft Sentinel. Le connecteur vous permet d’envoyer en streaming des [journaux de connexion](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-sign-ins) et des [journaux d’audit](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-audit-logs).
+Vous pouvez utiliser un connecteur Microsoft Sentinel intégré pour collecter des données à partir d’Entra ID et les diffuser en continu dans Microsoft Sentinel. Le connecteur vous permet d’envoyer en streaming des [journaux de connexion](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-sign-ins) et des [journaux d’audit](https://learn.microsoft.com/fr-fr/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 1. Dans Microsoft Sentinel, dans le menu de navigation à gauche, sous **Configuration**, sélectionnez **Connecteurs de données**.
-2. Dans la liste des **Connecteurs de données**, sélectionnez **Microsoft Entra ID**, puis **Ouvrir la page du connecteur**.
-3. Sous **Configuration**, cochez les cases **Journaux de connexion Microsoft Entra** et **Journaux d'audit**, puis sélectionnez **Appliquer les modifications**.
-4. Fermez la page du connecteur Microsoft Entra ID.
+2. Dans la liste des **Connecteurs de données**, sélectionnez **Entra ID**, puis **Ouvrir la page du connecteur**.
+3. Sous **Configuration**, cochez les cases **Journaux de connexion Entra** et **Journaux d'audit**, puis sélectionnez **Appliquer les modifications**.
+4. Fermez la page du connecteur Entra ID.
 
 
 ## Exporter les journaux vers un système de gestion des événements et des informations de sécurité tiers
 
 Depuis l’introduction d’Azure Monitor, des Strides significatives ont été apportés pour consolider les services Azure sur un pipeline de journalisation unique. La plupart des principaux services Azure, y compris Azure Resource Manager et Microsoft Defender pour le cloud, ont été intégrés à Azure Monitor et produisent des journaux de sécurité pertinents.
 
-Le processus d’intégration a également été simplifié avec des fonctionnalités clés telles que les outils SIEM, le routage des données vers Azure Event Hubs et l’activation de plusieurs paramètres de diagnostic par ressource. Le travail en vol facilite l’installation et la gestion du routage des journaux dans les environnements Azure volumineux.
+Le processus d’intégration a également été simplifié avec des fonctionnalités clés telles que les outils SIEM : routage des données vers Azure Event Hubs et activation de plusieurs paramètres de diagnostic par ressource. Le travail en vol facilite l’installation et la gestion du routage des journaux dans les environnements Azure volumineux.
 
 Azure est également partenaire des principaux partenaires SIEM pour créer des connecteurs qui obtiennent les données d’Azure Monitor dans ces outils. Ces connecteurs consomment les données qui sont routées vers Azure Event Hubs par Azure Monitor. Il s’agit d’une approche simple, scalable et gérable pour la transmission des données de journal à une application externe, et donc de l’approche recommandée par Microsoft pour l’intégration d’Azure aux outils SIEM.
 
-Nous avons continué à prendre en charge les clients qui utilisent l’outil Azure Log Integration (AzLog) pour s’intégrer à ces mêmes SIEM. AzLog a été initialement publié pour aider les clients à naviguer dans le processus complexe de consolidation, de traduction et de transfert des journaux d’un large éventail de services Azure à un outil SIEM. À l’époque, Azure Monitor n’existait pas et il y avait très peu de normalisation en ce qui concerne la façon dont les services Azure exposaient les données de journal aux clients. Certaines données vidées dans un compte de stockage, d’autres à exposer une API, etc.
+Nous avons continué à prendre en charge les clients qui utilisent l’outil Azure Log Integration (AzLog) pour s’intégrer à ces mêmes SIEM. AzLog a été initialement publié pour aider les clients à naviguer dans le processus complexe de consolidation, de traduction et de transfert des journaux d’un large éventail de services Azure vers un outil SIEM. À l’époque, Azure Monitor n’existait pas et il y avait très peu de normalisation en ce qui concerne la façon dont les services Azure exposaient les données de journal aux clients. Certaines données vidées dans un compte de stockage, d’autres à exposer une API, etc.
 
 ### Recommandations en matière d’intégration
 
@@ -2045,18 +2045,18 @@ Le tableau ci-dessous indique ce que vous devez faire en fonction des outils SIE
 
 Aujourd’hui, les fonctionnalités d’intégration SIEM d’Azure Monitor ne peuvent pas faire tout ce que l’outil Azure Log Integration peut faire. Voici notre feuille de route pour traiter les lacunes connues entre ce que vous pourriez faire avec Azure Log Integration et ce que vous pouvez accomplir avec Azure Monitor.
 
-**Journaux Microsoft Entra** : les journaux Microsoft Entra sont le seul type de journal directement intégré à AzLog, sans être encore disponibles dans Azure Monitor.
+**Journaux Entra** : les journaux Entra sont le seul type de journal directement intégré à AzLog, sans être encore disponibles dans Azure Monitor.
 
 **Intégrer les journaux des machines virtuelles Azure** : AzLog a fourni l’option permettant d’intégrer les journaux du système d’exploitation invité de votre machine virtuelle Azure (par exemple, les événements de sécurité Windows) avec SELECT Siems. Azure Monitor comprend des agents disponibles pour Linux et Windows. Ces agents sont capables de router les journaux du système d’exploitation vers Azure Event Hubs, cependant, l’intégration de bout en bout aux outils SIEM est une tâche conséquente.
 
-**Configuration de bout en bout** : AzLog a un script qui automatise la configuration de bout en bout des sources de journaux. Bien que Azure Monitor offre la possibilité de générer un script pour la création de paramètres de diagnostic, nous travaillons en collaboration avec l’équipe Azure Policy pour fournir une activation transparente via des stratégies de Gestionnaire des ressources qui garantissent que les données de journal sont acheminées à partir de toutes les sources.
+**Configuration de bout en bout** : AzLog a un script qui automatise la configuration de bout en bout des sources de journaux. Azure Monitor offre déjà la possibilité de générer un script pour la création de paramètres de diagnostic. En complément, nous travaillons avec l’équipe Azure Policy pour fournir une activation transparente via des stratégies de Gestionnaire des ressources, qui garantissent que les données de journal sont acheminées à partir de toutes les sources.
 
 **Intégration à d’autres outils Siem** : AzLog a fourni une fonctionnalité générique permettant d’envoyer des journaux Azure standardisés au format JSON sur disque. Alors que les autres outils SIEM n’étaient pas officiellement pris en charge par AzLog, cela offrait un moyen d’obtenir facilement des données de journal dans des outils tels que LogRhythm. Notre recommandation pour les clients qui utilisent AzLog pour ces outils est de collaborer avec le producteur de cet outil pour fournir une intégration Azure Monitor Event Hubs.
 
-La sécurité de votre environnement Azure est toujours prioritaire sur l’équipe Azure, à la fois en termes de conception de la plateforme Azure et de fonctionnalités que nous vous proposons pour sécuriser vos propres ressources sur cette plateforme. Le déplacement de l’intégration SIEM vers Azure Monitor est une étape vers laquelle vous pouvez sécuriser vos applications sur Azure à l’échelle.
+La sécurité de votre environnement Azure est toujours prioritaire pour l’équipe Azure, à la fois dans la conception de la plateforme Azure et dans les fonctionnalités que nous vous proposons pour sécuriser vos propres ressources sur cette plateforme. Le déplacement de l’intégration SIEM vers Azure Monitor est une étape vers laquelle vous pouvez sécuriser vos applications sur Azure à l’échelle.
 
 
-## Analyser des classeurs et des rapports Microsoft Entra
+## Analyser des classeurs et des rapports Entra
 
 Le rapport d’utilisation et d’insights vous fournit une vue centrée sur les applications de vos données de connexion. Vous y trouverez des réponses aux questions suivantes :
 
@@ -2068,8 +2068,8 @@ Le rapport d’utilisation et d’insights vous fournit une vue centrée sur les
 
 Pour accéder aux données du rapport d’utilisation et d’insights, vous avez besoin des éléments suivants :
 
-- Un locataire Microsoft Entra.
-- Licence Microsoft Entra ID P1 ou P2.
+- Un locataire Entra.
+- Licence Entra ID P1 ou P2.
 - Un utilisateur dans les rôles Administrateur de sécurité, Lecteur de sécurité ou Lecteur de rapport.
 
 De plus, tous les utilisateurs (non administrateurs) peuvent accéder à leurs propres connexions.
@@ -2077,12 +2077,12 @@ De plus, tous les utilisateurs (non administrateurs) peuvent accéder à leurs p
 ### Accès au rapport d’utilisation et d’insights
 
 1. Accédez au portail Azure.
-2. Sélectionnez l’annuaire approprié, puis **Microsoft Entra ID** et choisissez **Applications d’entreprise**.
+2. Sélectionnez l’annuaire approprié, puis **Entra ID** et choisissez **Applications d’entreprise**.
 3. Dans la section **Activité**, sélectionnez **Utilisation et insights** pour ouvrir le rapport.
 
 ### Utiliser le rapport
 
-Le rapport d’utilisation et d’insights affiche la liste des applications avec une ou plusieurs tentatives de connexion, et vous permet de trier selon le nombre de connexions réussies, de connexions échouées, et le taux de réussite.
+Le rapport d’utilisation et d’insights affiche la liste des applications ayant enregistré une ou plusieurs tentatives de connexion. Vous pouvez le trier selon le nombre de connexions réussies, de connexions échouées, et le taux de réussite.
 
 L’option **Charger plus** en bas de la liste vous permet d’afficher d’autres applications sur la page. Vous pouvez sélectionner la plage de dates afin d’afficher toutes les applications utilisées dans cette plage.
 
@@ -2114,16 +2114,16 @@ La mise en œuvre des actions d’amélioration vous offre les possibilités sui
 
 ### Comment puis-je obtenir mon score de sécurité ?
 
-Le degré de sécurisation Identity Secure Score est disponible avec toutes les éditions de Microsoft Entra ID. Les organisations peuvent consulter leur score d'identité sécurisée en procédant comme suit :
+Le degré de sécurisation Identity Secure Score est disponible avec toutes les éditions d’Entra ID. Les organisations peuvent consulter leur score d'identité sécurisée en procédant comme suit :
 
 1. Portail Azure.
-2. ID Microsoft Entra.
+2. ID Entra.
 3. Sécurité.
 4. Score de sécurité de l'identité.
 
 ### Comment les contrôles sont-ils notés ?
 
-Les contrôles peuvent être évalués de deux manières. Certains sont évalués de façon binaire - vous obtenez 100 % du score si vous disposez de la fonctionnalité ou du paramètre configuré conformément à notre recommandation. Les autres scores sont calculés sous forme de pourcentage de la configuration totale. Par exemple, si la recommandation d’amélioration indique que vous obtiendrez un maximum de 10,71 % si vous protégez tous vos utilisateurs avec l’authentification multifacteur et que vous avez seulement 5 utilisateurs protégés sur 100, vous obtiendrez un score partiel autour de 0,53 % (5 protégés / 100 au total * 10,71 % maximum = 0,53 % de score partiel).
+Les contrôles peuvent être évalués de deux manières. Certains sont évalués de façon binaire - vous obtenez 100 % du score si vous disposez de la fonctionnalité ou du paramètre configuré conformément à notre recommandation. Les autres scores sont calculés sous forme de pourcentage de la configuration totale. Par exemple, la recommandation d’amélioration peut indiquer que vous obtiendrez un maximum de 10,71 % en protégeant tous vos utilisateurs avec l’authentification multifacteur. Si seuls 5 utilisateurs sur 100 sont protégés, vous obtiendrez un score partiel autour de 0,53 % (5 protégés / 100 au total * 10,71 % maximum = 0,53 % de score partiel).
 
 ### Comment dois-je interpréter mon score ?
 
@@ -2144,19 +2144,19 @@ Une fois que vous avez implémenté une solution d’identité dans Azure, vous 
 Maintenant que vous avez passé en revue ce module, vous pouvez :
 
 - Analyser et examiner les journaux de connexion pour résoudre les problèmes d’accès.
-- Examinez et surveillez les journaux d’audit Microsoft Entra.
-- Activez et intégrez les journaux de diagnostic de Microsoft Entra à Log Analytics et Microsoft Sentinel.
+- Examinez et surveillez les journaux d’audit Entra.
+- Activez et intégrez les journaux de diagnostic d’Entra à Log Analytics et Microsoft Sentinel.
 - Exporter les journaux de connexion et d’audit vers une SIEM tierce.
-- Examinez les activités Microsoft Entra à l’aide de Log Analytics/Microsoft Sentinel, en excluant l’utilisation de KQL.
-- Analysez des classeurs et des rapports Microsoft Entra.
+- Examinez les activités Entra à l’aide de Log Analytics/Microsoft Sentinel, en excluant l’utilisation de KQL.
+- Analysez des classeurs et des rapports Entra.
 - Surveillez la posture de sécurité avec le score d'identité sécurisée.
 - configurer les notifications.
 
-Dans ce module, vous avez appris à surveiller et à gérer votre Microsoft Entra ID en analysant tous les types de journaux.
+Dans ce module, vous avez appris à surveiller et à gérer votre Entra ID en analysant tous les types de journaux.
 
 Pour aller plus loin, consultez les articles suivants :
 
 - [Présentation de Microsoft Sentinel](https://learn.microsoft.com/fr-fr/azure/sentinel/overview)
 - [Connecteurs de données Microsoft Sentinel](https://learn.microsoft.com/fr-fr/azure/sentinel/connect-data-sources)
 - [Langage de requête Kusto dans Microsoft Sentinel](https://learn.microsoft.com/fr-fr/kusto/query)
-- [Score de sécurisation des identités dans Microsoft Entra ID](https://learn.microsoft.com/fr-fr/entra/identity/monitoring-health/concept-identity-secure-score)
+- [Score de sécurisation des identités dans Entra ID](https://learn.microsoft.com/fr-fr/entra/identity/monitoring-health/concept-identity-secure-score)
